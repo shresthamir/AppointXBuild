@@ -5281,8 +5281,13 @@ let BaMenuService = class BaMenuService {
         if ((prepared.selected || prepared.expanded) && parent) {
             parent.expanded = true;
         }
-        if (prepared.title == "Treatment Entry") {
+        var treatmentMenus = ["Treatment Entry", "Treatment Details", "Disease", "Medication", "Prescription", "Follow Up Report"];
+        if (treatmentMenus.indexOf(prepared.title) != -1) {
             prepared.hidden = !this.setting.EnableTreatment;
+        }
+        var seriesMenus = ["Series", "Series Sales", "Series Report"];
+        if (seriesMenus.indexOf(prepared.title) != -1) {
+            prepared.hidden = !this.setting.EnableSeries;
         }
         if (prepared.title == "Appointments") {
             prepared.hidden = !this.setting.EnableAppointment;
