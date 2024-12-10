@@ -9925,13 +9925,15 @@ let CustomerList = class CustomerList {
         //console.log(this.settings.mode);
     }
     onAddClick() {
+        this.router.navigate(['/pages/masters/cus/detail-cus', { mode: "add", returnUrl: this.router.url }]);
+        /*
         if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
-            this.router.navigate(['/pages/masters/cus/detail-cus', { mode: "add", returnUrl: this.router.url }]);
         }
         else {
-            this.DialogMessage = `You are not authorized to add ${this.lable_pipe.transform('customer')}.`;
-            this.childModal.show();
+          this.DialogMessage = `You are not authorized to add ${this.lable_pipe.transform('customer')}.`
+          this.childModal.show();
         }
+        */
     }
     onDeleteConfirm(event) {
         this.selectedRow = event;
