@@ -2645,7 +2645,11 @@ let CanActivateTeam = class CanActivateTeam {
         console.log({ views: this.viewPermission });
     }
     menuRight(menuId) {
-        return this._authService.getRole.menuRights.find(x => x.menuId === menuId);
+        var role = this._authService.getRole;
+        if (role && role.menuRights)
+            return role.menuRights.find(x => x.menuId === menuId);
+        else
+            return null;
     }
     canActivate(route, state) {
         //return true;
