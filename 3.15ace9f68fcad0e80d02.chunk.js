@@ -9893,7 +9893,6 @@ let UserList = class UserList {
         this.adduserService.getUserList()
             .flatMap(d => d || [])
             .subscribe(res => {
-            console.log(res);
             data.push(res);
             this.source.load(data);
         }, error => {

@@ -1443,6 +1443,8 @@ let LabelPipe = class LabelPipe {
     }
     transform(input, params) {
         let data = this.state.getGlobalSetting("label-dictionary");
+        if (!data)
+            data = JSON.parse(sessionStorage.getItem("label-dictionary"));
         return data.filter(item => item.key === input)[0].value;
     }
 };
@@ -2762,6 +2764,7 @@ let App = class App {
             .map(res => res.json())
             .subscribe(data => {
             this._state.setGlobalSetting("label-dictionary", data);
+            sessionStorage.setItem("label-dictionary", JSON.stringify(data));
         });
         //Uncomment following line to disable all logs
         //console.log = function() {}
