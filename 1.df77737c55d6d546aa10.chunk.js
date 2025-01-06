@@ -10048,6 +10048,8 @@ let CheckIn = class CheckIn {
         this.GetAppointmentForCheckIn();
     }
     GetAppointmentForCheckIn() {
+        if (!this.checkIn.CUSTOMER)
+            return;
         let model = {
             CUSID: this.checkIn.CUSTOMER.CUSID,
             outletId: this.checkIn.branch.branchId,
