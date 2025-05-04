@@ -1,35 +1,42 @@
-webpackJsonp([1],{
+webpackJsonp([0],{
 
-/***/ 1377:
+/***/ 1374:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScheduleModule", (function() { return ScheduleModule; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MastersModule", (function() { return MastersModule; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_bootstrap__ = __webpack_require__(1379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__schedule_component__ = __webpack_require__(1538);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__schedule_routing__ = __webpack_require__(1548);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_ScheduleInput_masterSchedule_component__ = __webpack_require__(1532);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__scheduleInput_service__ = __webpack_require__(1488);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__common_services_permission_guard_service__ = __webpack_require__(639);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_ScheduleInput_scheduleInput_component__ = __webpack_require__(1533);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_TreatmentEntry_Treatment_component__ = __webpack_require__(1535);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_FollowUp_followup_component__ = __webpack_require__(1531);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_ng2_ckeditor__ = __webpack_require__(1551);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_ng2_ckeditor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_ng2_ckeditor__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ng2_smart_table__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_ng2_smart_table__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_CustomerSelect_customerSelect_component__ = __webpack_require__(1530);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_TreatmentEntry_TreatmentList_component__ = __webpack_require__(1537);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_TreatmentEntry_TreatmentDetails_component__ = __webpack_require__(1536);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_CustomerSelect_customerSelect_pipe__ = __webpack_require__(1546);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_CustomerSelect_mobileSelect_pipe__ = __webpack_require__(1547);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__common_nepali_date_picker_nepali_date_picker_module__ = __webpack_require__(1491);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_ScheduleSearch_customer_all_schedule_component__ = __webpack_require__(1534);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__masters_routing__ = __webpack_require__(1543);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__masters_component__ = __webpack_require__(1516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_services_permission_guard_service__ = __webpack_require__(639);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Employee_EmployeeList_component__ = __webpack_require__(1501);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Customer_CustomerList_component__ = __webpack_require__(1497);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Customer_AddCustomer_component__ = __webpack_require__(1496);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_Rooms_RoomList_component__ = __webpack_require__(1509);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_Rooms_AddRoom_component__ = __webpack_require__(1508);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_Services_ServiceList_component__ = __webpack_require__(1515);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Services_AddService_component__ = __webpack_require__(1514);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_Employee_AddEmployee_component__ = __webpack_require__(1500);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_Series_SeriesList_component__ = __webpack_require__(1513);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_Series_AddSeries_component__ = __webpack_require__(1512);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_SeriesSales_AddSeriesSales_component__ = __webpack_require__(1510);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_SeriesSales_SeriesSalesList_component__ = __webpack_require__(1511);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_Medication_MedicationList_component__ = __webpack_require__(1505);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_Disease_DiseaseList_component__ = __webpack_require__(1499);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_Disease_AddDisease_component__ = __webpack_require__(1498);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_Medication_AddMedication_component__ = __webpack_require__(1504);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_HolidayEntry_holidayEntry_component__ = __webpack_require__(1503);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_HolidayEntry_addHoliday_component__ = __webpack_require__(1502);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__common_nepali_date_picker_nepali_date_picker_module__ = __webpack_require__(1491);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_Prescription_PrescriptionList_component__ = __webpack_require__(1507);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_Prescription_AddPrescription_component__ = __webpack_require__(1506);
 
 
 
@@ -52,36 +59,56 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-//import {DayPilot} from "daypilot-pro-angular";
-let ScheduleModule = class ScheduleModule {
+
+
+
+
+
+
+
+
+let MastersModule = class MastersModule {
 };
-ScheduleModule = __decorate([
+MastersModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
         imports: [
+            //TreeModule,
             __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
-            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormsModule"],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormsModule"], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["ReactiveFormsModule"],
             __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__["a" /* NgaModule */],
-            __WEBPACK_IMPORTED_MODULE_6__schedule_routing__["a" /* routing */],
-            __WEBPACK_IMPORTED_MODULE_13_ng2_ckeditor__["CKEditorModule"],
-            __WEBPACK_IMPORTED_MODULE_4_ng2_bootstrap__["a" /* ModalModule */].forRoot(),
-            __WEBPACK_IMPORTED_MODULE_14_ng2_smart_table__["Ng2SmartTableModule"],
-            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["ReactiveFormsModule"],
-            __WEBPACK_IMPORTED_MODULE_20__common_nepali_date_picker_nepali_date_picker_module__["a" /* NepaliDateModule */]
+            __WEBPACK_IMPORTED_MODULE_6__masters_routing__["a" /* routing */],
+            __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__["a" /* ModalModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__["Ng2SmartTableModule"],
+            __WEBPACK_IMPORTED_MODULE_27__common_nepali_date_picker_nepali_date_picker_module__["a" /* NepaliDateModule */]
         ],
-        declarations: [
-            //   DayPilot.Angular.Scheduler,
-            //  DayPilot.Angular.Modal,
-            //  DayPilot.Angular.Navigator,
-            __WEBPACK_IMPORTED_MODULE_5__schedule_component__["a" /* Schedule */], __WEBPACK_IMPORTED_MODULE_7__components_ScheduleInput_masterSchedule_component__["a" /* MasterSchedule */], __WEBPACK_IMPORTED_MODULE_10__components_ScheduleInput_scheduleInput_component__["a" /* ScheduleInput */],
-            __WEBPACK_IMPORTED_MODULE_11__components_TreatmentEntry_Treatment_component__["a" /* TreatmentEntry */], __WEBPACK_IMPORTED_MODULE_12__components_FollowUp_followup_component__["a" /* FollowUp */], __WEBPACK_IMPORTED_MODULE_15__components_CustomerSelect_customerSelect_component__["a" /* CustomerSelect */], __WEBPACK_IMPORTED_MODULE_16__components_TreatmentEntry_TreatmentList_component__["a" /* TreatmentList */], __WEBPACK_IMPORTED_MODULE_17__components_TreatmentEntry_TreatmentDetails_component__["a" /* TreatmentDetails */],
-            __WEBPACK_IMPORTED_MODULE_18__components_CustomerSelect_customerSelect_pipe__["a" /* CustomerPipe */], __WEBPACK_IMPORTED_MODULE_19__components_CustomerSelect_mobileSelect_pipe__["a" /* MobilePipe */], __WEBPACK_IMPORTED_MODULE_21__components_ScheduleSearch_customer_all_schedule_component__["a" /* CustomerAllSchedule */]
+        declarations: [__WEBPACK_IMPORTED_MODULE_9__components_Employee_EmployeeList_component__["a" /* EmployeeList */],
+            __WEBPACK_IMPORTED_MODULE_7__masters_component__["a" /* Masters */],
+            __WEBPACK_IMPORTED_MODULE_16__components_Employee_AddEmployee_component__["a" /* AddEmployee */],
+            __WEBPACK_IMPORTED_MODULE_12__components_Rooms_RoomList_component__["a" /* RoomList */],
+            __WEBPACK_IMPORTED_MODULE_10__components_Customer_CustomerList_component__["a" /* CustomerList */],
+            __WEBPACK_IMPORTED_MODULE_14__components_Services_ServiceList_component__["a" /* ServiceList */],
+            __WEBPACK_IMPORTED_MODULE_17__components_Series_SeriesList_component__["a" /* SeriesList */],
+            __WEBPACK_IMPORTED_MODULE_11__components_Customer_AddCustomer_component__["a" /* AddCustomer */],
+            __WEBPACK_IMPORTED_MODULE_13__components_Rooms_AddRoom_component__["a" /* AddRoom */],
+            __WEBPACK_IMPORTED_MODULE_15__components_Services_AddService_component__["a" /* AddService */],
+            __WEBPACK_IMPORTED_MODULE_18__components_Series_AddSeries_component__["a" /* AddSeries */],
+            __WEBPACK_IMPORTED_MODULE_20__components_SeriesSales_SeriesSalesList_component__["a" /* SeriesSalesList */],
+            __WEBPACK_IMPORTED_MODULE_19__components_SeriesSales_AddSeriesSales_component__["a" /* AddSeriesSales */],
+            __WEBPACK_IMPORTED_MODULE_21__components_Medication_MedicationList_component__["a" /* MedicationList */],
+            __WEBPACK_IMPORTED_MODULE_28__components_Prescription_PrescriptionList_component__["a" /* PrescriptionList */],
+            __WEBPACK_IMPORTED_MODULE_24__components_Medication_AddMedication_component__["a" /* AddMedication */],
+            __WEBPACK_IMPORTED_MODULE_29__components_Prescription_AddPrescription_component__["a" /* AddPrescription */],
+            __WEBPACK_IMPORTED_MODULE_22__components_Disease_DiseaseList_component__["a" /* DiseaseList */],
+            __WEBPACK_IMPORTED_MODULE_23__components_Disease_AddDisease_component__["a" /* AddDisease */],
+            __WEBPACK_IMPORTED_MODULE_25__components_HolidayEntry_holidayEntry_component__["a" /* HolidayEntryComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__components_HolidayEntry_addHoliday_component__["a" /* AddHolidayComponent */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_8__scheduleInput_service__["a" /* ScheduleInputService */], __WEBPACK_IMPORTED_MODULE_9__common_services_permission_guard_service__["a" /* CanActivateTeam */]
-        ],
+            __WEBPACK_IMPORTED_MODULE_8__common_services_permission_guard_service__["a" /* CanActivateTeam */]
+        ]
     }), 
     __metadata('design:paramtypes', [])
-], ScheduleModule);
+], MastersModule);
 
 
 /***/ }),
@@ -7664,13 +7691,6 @@ var Utils = (function () {
 
 /***/ }),
 
-/***/ 1465:
-/***/ (function(module, exports) {
-
-module.exports = "select{max-height:35px}input{max-height:35px}.time-slot label{padding:10px 20px;color:#FFF;cursor:pointer;background:darkred;border-radius:5px;transition:0.3s ease all;font-size:small}.time-slot label:hover{transform:scale(1.3)}.employeeRow{border-bottom:1px solid rgba(0,0,0,0.12);box-shadow:0 1px 0 0 rgba(255,255,255,0.12)}#tblSchedule{overflow-x:scroll;margin-left:135px;margin-right:5px;overflow-y:visible;padding:0}table,tr{border-collapse:collapse}table#dayWiseSchedule tr{height:30px}table#dayWiseSchedule td{width:30px}table#dayWiseSchedule{width:-moz-available;color:black;background:white;text-align:center;box-shadow:0px 10px 10px #888888;height:100%}.dayWiseSchedule{color:black;background:white;text-align:center;box-shadow:0px 10px 10px #888888}.headcol{position:absolute;width:5em;left:50px;top:auto}table#tblPatientInfo{text-align:left}table#tblPatientInfo tr{height:25px}table#tblPatientInfo td:nth-child(1){width:100px}table#tblPatientInfo td:nth-child(2){width:350px;font-weight:600}table#tblPatientInfo td:nth-child(3){width:100px}table#tblPatientInfo td:nth-child(4){width:150px;font-weight:600}.verticalTimeTableLabel label{display:block;overflow:hidden;background-color:#98D6EB;width:100px;margin:0px;border:1px solid darkblue;background:#4286f4;color:white;font-size:11px}.tabelRowWithAutoScroll div{overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;scrollbar-shadow-color:#0033CC}.timeline{display:inline-block;position:relative;overflow:hidden;background-color:#98D6EB;height:50px;margin:0px;border:1px solid darkblue;background:#4286f4;color:white;font-size:10px;width:100%;border-radius:5px}.emptooltip{position:relative;flex:1}.tooltiptext{display:none;width:200px;border:1px solid #4286f4;background:white;padding:5px 0;border-radius:6px;font-family:calibri;padding:2px;position:absolute;z-index:100;top:40px;left:40px}table#tooltipTable{text-align:left;border-collapse:collapse}table#tooltipTable tr{height:20px}.emptooltip:hover span.tooltiptext{display:block}.close-pdf{position:absolute;height:5px;width:5px;padding:0px;left:107px}.d-none{display:none !important}.d-inline{display:inline !important}.d-inline-block{display:inline-block !important}.d-block{display:block !important}.d-table{display:table !important}.d-table-row{display:table-row !important}.d-table-cell{display:table-cell !important}.d-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}.d-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}@media (min-width: 576px){.d-sm-none{display:none !important}.d-sm-inline{display:inline !important}.d-sm-inline-block{display:inline-block !important}.d-sm-block{display:block !important}.d-sm-table{display:table !important}.d-sm-table-row{display:table-row !important}.d-sm-table-cell{display:table-cell !important}.d-sm-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}.d-sm-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}}@media (min-width: 768px){.d-md-none{display:none !important}.d-md-inline{display:inline !important}.d-md-inline-block{display:inline-block !important}.d-md-block{display:block !important}.d-md-table{display:table !important}.d-md-table-row{display:table-row !important}.d-md-table-cell{display:table-cell !important}.d-md-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}.d-md-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}}@media (min-width: 992px){.d-lg-none{display:none !important}.d-lg-inline{display:inline !important}.d-lg-inline-block{display:inline-block !important}.d-lg-block{display:block !important}.d-lg-table{display:table !important}.d-lg-table-row{display:table-row !important}.d-lg-table-cell{display:table-cell !important}.d-lg-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}.d-lg-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}}@media (min-width: 1200px){.d-xl-none{display:none !important}.d-xl-inline{display:inline !important}.d-xl-inline-block{display:inline-block !important}.d-xl-block{display:block !important}.d-xl-table{display:table !important}.d-xl-table-row{display:table-row !important}.d-xl-table-cell{display:table-cell !important}.d-xl-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}.d-xl-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}}.switch{position:relative;display:inline-block;width:42px;height:20px}.switch input{opacity:0;width:0;height:0}.slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s}.slider:before{position:absolute;content:\"\";height:14px;width:14px;left:4px;bottom:3px;background-color:white;-webkit-transition:.4s;transition:.4s}input:checked+.slider{background-color:#2196F3}input:focus+.slider{box-shadow:0 0 1px #2196F3}input:checked+.slider:before{-webkit-transform:translateX(20px);-ms-transform:translateX(20px);transform:translateX(20px)}.slider.round{border-radius:26px}.slider.round:before{border-radius:50%}.centeredColumn{text-align:center}\n"
-
-/***/ }),
-
 /***/ 1466:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8424,88 +8444,6 @@ function listenToTriggers(renderer, target, triggers, showFn, hideFn, toggleFn) 
 
 /***/ }),
 
-/***/ 1488:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return ScheduleInputService; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_permission_authService_service__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_subject__ = __webpack_require__(649);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__global_state__ = __webpack_require__(58);
-
-
-
-
-
-let ScheduleInputService = class ScheduleInputService {
-    constructor(http, authService, state) {
-        this.http = http;
-        this.authService = authService;
-        this.state = state;
-        this._scheduleList = [{}];
-    }
-    get apiUrl() {
-        let url = this.state.getGlobalSetting("apiUrl");
-        let apiUrl = "";
-        if (!!url && url.length > 0) {
-            apiUrl = url[0];
-        }
-        ;
-        //console.log({ apiUrl: apiUrl })
-        return apiUrl;
-    }
-    getRequestOption() {
-        let headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]({ 'Content-type': 'application/json', 'Authorization': this.authService.getAuth().token });
-        //console.log({ headers: headers });
-        return new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* RequestOptions */]({ headers: headers });
-    }
-    getUser() {
-        return this.authService.getUserProfile();
-    }
-    getEmployeeSchedule(param) {
-        let returnSubject = new __WEBPACK_IMPORTED_MODULE_3_rxjs_subject__["Subject"]();
-        this.http.post(this.apiUrl + '/getEmpScheduleList', param, this.getRequestOption())
-            .flatMap(res => res.json())
-            .subscribe((data) => {
-            returnSubject.next(data);
-            returnSubject.unsubscribe();
-        }, Error => console.log(Error), () => {
-        });
-        return returnSubject;
-    }
-    getRoomSchedule(param) {
-        let returnSubject = new __WEBPACK_IMPORTED_MODULE_3_rxjs_subject__["Subject"]();
-        this.http.post(this.apiUrl + '/getRoomScheduleList', param, this.getRequestOption())
-            .flatMap(res => res.json())
-            .subscribe((data) => {
-            returnSubject.next(data);
-            returnSubject.unsubscribe();
-        }, Error => console.log(Error), () => {
-        });
-        //console.log("Api Response",returnSubject);
-        return returnSubject;
-    }
-    getCustomerSchedule(param) {
-        return this.http.post(this.apiUrl + '/GetCustomerSchedule', param, this.getRequestOption());
-    }
-    getGUID() {
-        return this.http.get(this.apiUrl + '/getGuid', this.getRequestOption());
-    }
-    checkHoliday(param) {
-        return this.http.post(this.apiUrl + '/checkHoliday', param, this.getRequestOption());
-    }
-};
-ScheduleInputService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */], __WEBPACK_IMPORTED_MODULE_2__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_4__global_state__["a" /* GlobalState */]])
-], ScheduleInputService);
-
-
-/***/ }),
-
 /***/ 1490:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8666,437 +8604,18 @@ module.exports = "<div class=\"input-group\" style=\"height: 30px, i !important;
 
 /***/ }),
 
-/***/ 1495:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1465);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(38)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../../node_modules/raw-loader/index.js!../../../../node_modules/sass-loader/lib/loader.js!./schedule.scss", (function() {
-			var newContent = require("!!../../../../node_modules/raw-loader/index.js!../../../../node_modules/sass-loader/lib/loader.js!./schedule.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		}));
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose((function() { update(); }));
-}
-
-/***/ }),
-
-/***/ 1530:
+/***/ 1496:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return CustomerSelect; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AddCustomer; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__ = __webpack_require__(638);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_services_permission__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_src_facade_async__ = __webpack_require__(59);
-
-
-
-
-
-
-let CustomerSelect = class CustomerSelect {
-    constructor(router, masterService, elementRef, activatedRoute, _authService) {
-        this.router = router;
-        this.masterService = masterService;
-        this.elementRef = elementRef;
-        this.activatedRoute = activatedRoute;
-        this._authService = _authService;
-        this.DialogMessage = "Saving data please wait ...";
-        this.subcriptions = [];
-        this.CustomerList = [];
-        this.mobileNo = "";
-        this.name = "";
-        this.customerChanged = new __WEBPACK_IMPORTED_MODULE_5__angular_common_src_facade_async__["a" /* EventEmitter */]();
-        this.mobileChanged = new __WEBPACK_IMPORTED_MODULE_5__angular_common_src_facade_async__["a" /* EventEmitter */]();
-        this.ncw = new __WEBPACK_IMPORTED_MODULE_5__angular_common_src_facade_async__["a" /* EventEmitter */]();
-        this.historyChange = new __WEBPACK_IMPORTED_MODULE_5__angular_common_src_facade_async__["a" /* EventEmitter */]();
-        this.timeout = null;
-        var setting = _authService.getSetting();
-        this.EnableCustomerEntryInAppointment = setting.EnableCustomerEntryInAppointment;
-    }
-    ngOnInit() {
-        this.CustomerList = [];
-    }
-    getCustomerList(name, mobile) {
-        var pageNumer = 1;
-        var rowCount = 10;
-        var totalPages = 1;
-        this.CustomerList = [];
-        this.masterService.getPagedCustomerList(pageNumer, rowCount, name, mobile).subscribe((data) => {
-            this.CustomerList.push(data);
-        }, Error => console.log(Error), () => {
-            this.masterService._customerList = this.CustomerList;
-        });
-    }
-    customer_keyup(event) {
-        if (!event.keyCode)
-            return;
-        clearTimeout(this.timeout);
-        var $this = this;
-        this.timeout = setTimeout((function () {
-            $this.getCustomerList(event.target.value, null);
-        }), 500);
-    }
-    mobile_keyup(event) {
-        if (!event.keyCode)
-            return;
-        clearTimeout(this.timeout);
-        var $this = this;
-        this.timeout = setTimeout((function () {
-            $this.getCustomerList(null, event.target.value);
-        }), 500);
-    }
-    customerChange(event) {
-        var customer = this.CustomerList.filter(x => event.target.value == x.NAME)[0];
-        if (customer) {
-            this.MobileInput = customer.MOBILE;
-            this.customerChanged.emit(customer);
-        }
-    }
-    mobileChange(event) {
-        var customer = this.CustomerList.filter(x => event.target.value == x.MOBILE)[0];
-        if (customer) {
-            this.CustomerInput = customer.NAME;
-            this.customerChanged.emit(customer);
-        }
-    }
-    onAddNewCustomer() {
-        if (this.EnableCustomerEntryInAppointment) {
-            this.CustomerEntryVisible = true;
-        }
-        else {
-            this.router.navigate(['/pages/masters/cus/detail-cus', { mode: "add", returnUrl: "/pages/schedule/scheInput" }]);
-        }
-    }
-    redirectToPatient() {
-        if (this.CustomerEntryVisible) {
-            this.CustomerEntryVisible = false;
-        }
-    }
-    SaveCustomerClickEvent() {
-        try {
-            if (this.newCustomerName == null || this.newCustomerName == "") {
-                this.DialogMessage = "Customer Name is compulsory.";
-                this.childModal.show();
-                setTimeout(() => {
-                    this.childModal.hide();
-                }, 3000);
-                return;
-            }
-            if (this.newCustomerAge == null || this.newCustomerAge == "") {
-                this.DialogMessage = "Pateint Age is compulsory.";
-                this.childModal.show();
-                setTimeout(() => {
-                    this.childModal.hide();
-                }, 3000);
-                return;
-            }
-            if (this.newCustomerWeight == null || this.newCustomerWeight == "") {
-                this.DialogMessage = "Pateint Weight is compulsory.";
-                this.childModal.show();
-                setTimeout(() => {
-                    this.childModal.hide();
-                }, 3000);
-                return;
-            }
-            if (this.gender == null || this.gender == "") {
-                this.DialogMessage = "Pateint Gender is compulsory.";
-                this.childModal.show();
-                setTimeout(() => {
-                    this.childModal.hide();
-                }, 3000);
-                return;
-            }
-            if (this.newCustomerMobile == null || this.newCustomerMobile == "") {
-                this.DialogMessage = "Mobile Number is compulsory.";
-                this.childModal.show();
-                setTimeout(() => {
-                    this.childModal.hide();
-                }, 3000);
-                return;
-            }
-            else if (this.newCustomerMobile.toString().length != 10 || isNaN(Number(this.newCustomerMobile))) {
-                this.DialogMessage = "Invalid Mobile No.";
-                this.childModal.show();
-                setTimeout(() => {
-                    this.childModal.hide();
-                }, 3000);
-                return;
-            }
-            this.DialogMessage = "Saving Data please wait...";
-            this.childModal.show();
-            let cus = {
-                NAME: this.newCustomerName,
-                ADDRESS: this.newCustomerAddress,
-                EMAIL: this.newCustomerEmail,
-                MOBILE: this.newCustomerMobile,
-                Age: this.newCustomerAge,
-                DOB: this.newcustomerDOB,
-                PATIENT_ID: this.newCustomerPatientID,
-                Patient_Weight: this.newCustomerWeight,
-                GENDER: this.gender,
-                Membership: this.Membership
-            };
-            //console.log("CUSTOMER DETAILS", cus);
-            let sub = this.masterService.postmaster("add", cus, "/saveCustomer")
-                .subscribe(data => {
-                if (data.status == 'ok') {
-                    //Displaying dialog message for save with timer of 1 secs
-                    this.DialogMessage = "Data Saved Successfully";
-                    this.masterService.refreshCustomerList();
-                    this.ncw.emit(this.newCustomerWeight);
-                    cus.CUSID = data.result.cusid;
-                    this.customerChanged.emit(cus);
-                    const __this = this;
-                    this.CustomerInput = data.result.name;
-                    this.MobileInput = data.result.mobile;
-                    setTimeout(() => {
-                        __this.childModal.hide();
-                        __this.CustomerEntryVisible = false;
-                        __this.mobileNo = __this.newCustomerMobile;
-                        __this.SelectedCustomer = __this.SelectedCustomer;
-                        __this.CustomerList = __this.masterService._customerList;
-                        __this.onSearchChange(__this.newCustomerMobile);
-                        __this.newCustomerName = "";
-                        this.newCustomerAge = "";
-                        this.newCustomerWeight = "";
-                        this.newCustomerPatientID = "";
-                        this.gender = "";
-                        __this.newCustomerAddress = "";
-                        __this.newCustomerEmail = "";
-                        __this.newCustomerWeight = "";
-                        __this.newCustomerMobile = "";
-                        __this.newCustomerPatientID = "";
-                    }, 1000);
-                }
-                else {
-                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
-                    if (data.result._body == "The ConnectionString property has not been initialized.") {
-                        this.router.navigate(['/login', this.router.url]);
-                        return;
-                    }
-                    //Some other issues need to check
-                    var error = JSON.parse(data.result._body);
-                    this.DialogMessage = "Error in Saving Data : " + error.result;
-                    //console.log(data.result._body);
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                }
-            }, error => { alert(error); });
-            this.subcriptions.push(sub);
-        }
-        catch (e) {
-            alert(e);
-        }
-    }
-    changeDOB(event) {
-        this.newcustomerDOB = event.target.value;
-        let birthDate = new Date(this.newcustomerDOB);
-        //console.log("NEW CUSTOMER DOB", this.newcustomerDOB);
-        let timeDiff = Math.abs(Date.now() - birthDate.getTime());
-        let age = Math.floor((timeDiff / (1000 * 3600 * 24)) / 365.25);
-        //console.log('AGE',age)
-        this.newCustomerAge = age.toString();
-    }
-    onMobileChange(e) {
-        if (e.target.value.length >= 10) {
-            e.target.value = e.target.value.substring(0, 10);
-        }
-    }
-    onSearchChange(searchValue) {
-        var cus = this.CustomerList.find(x => x.MOBILE == searchValue);
-        //console.log("cus",cus);
-        if (cus != null) {
-            this.SelectedCustomer = cus;
-            this.mobileNo = cus.MOBILE;
-            this.customerChanged.emit(cus);
-        }
-        //console.log(this.SelectedCustomer)
-    }
-    onBarcodeChange(searchValue) {
-        var cus = this.CustomerList.find(x => x.BARCODE == searchValue);
-        //console.log("barcode",cus);
-        if (cus != null) {
-            this.SelectedCustomer = cus;
-            this.customerChanged.emit(cus);
-        }
-    }
-    selectedCustomerChanged(e) {
-        this.customerChanged.emit(this.SelectedCustomer);
-        this.mobileNo = this.SelectedCustomer.MOBILE;
-    }
-    selectCustomer(event) {
-        //console.log('EVENT', event);   
-    }
-};
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], CustomerSelect.prototype, "childModal", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(), 
-    __metadata('design:type', Object)
-], CustomerSelect.prototype, "customerChanged", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(), 
-    __metadata('design:type', Object)
-], CustomerSelect.prototype, "mobileChanged", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(), 
-    __metadata('design:type', Object)
-], CustomerSelect.prototype, "ncw", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(), 
-    __metadata('design:type', Object)
-], CustomerSelect.prototype, "historyChange", void 0);
-CustomerSelect = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'customer-select',
-        styles: [__webpack_require__(1465)],
-        template: __webpack_require__(1588)
-    }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_4__common_services_permission__["a" /* AuthService */]])
-], CustomerSelect);
-
-
-/***/ }),
-
-/***/ 1531:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return FollowUp; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_masters_components_smartTables_scss__ = __webpack_require__(1411);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_masters_components_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_style_loader_masters_components_smartTables_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_repositories_masterRepo_service__ = __webpack_require__(638);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__forms_components_inputs_components_datepicker_datepicker_component__ = __webpack_require__(644);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__forms_components_inputs_components_timepicker_timepicker_component__ = __webpack_require__(646);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__forms_components_inputs_components_employee_selector_employee_selector_component__ = __webpack_require__(645);
-
-
-
-
-
-
-
-
-
-let FollowUp = class FollowUp {
-    constructor(service, _authService, router) {
-        this.service = service;
-        this._authService = _authService;
-        this.router = router;
-        this.settings = {
-            columns: {
-                PatientName: {
-                    title: 'Patient',
-                    type: 'string',
-                    editable: false
-                },
-                Mobile: {
-                    title: 'Mobile',
-                    type: 'string',
-                    editable: false
-                },
-                Staff: {
-                    title: 'Staff',
-                    type: 'string',
-                    editor: {
-                        type: 'custom',
-                        component: __WEBPACK_IMPORTED_MODULE_8__forms_components_inputs_components_employee_selector_employee_selector_component__["a" /* EmployeeSelector */]
-                    }
-                },
-                TreatmentDate: {
-                    title: 'Treatment Date',
-                    type: 'date',
-                    editable: false
-                },
-                FollowupDate: {
-                    title: 'Follow-Up Date',
-                    type: 'string',
-                    editor: {
-                        type: 'custom',
-                        component: __WEBPACK_IMPORTED_MODULE_6__forms_components_inputs_components_datepicker_datepicker_component__["a" /* DatePicker */]
-                    }
-                },
-                Time: {
-                    title: 'Time',
-                    type: 'string',
-                    editor: {
-                        type: 'custom',
-                        component: __WEBPACK_IMPORTED_MODULE_7__forms_components_inputs_components_timepicker_timepicker_component__["a" /* TimePicker */]
-                    }
-                },
-            }
-        };
-        this.data = [];
-        this.subcriptions = [];
-        this.source = new __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__["LocalDataSource"]();
-        this.source.load(this.data);
-    }
-    OnDateChangeEvent(v) {
-        this.data = [];
-        this.service.getFollowUpList(v).subscribe((data) => {
-            this.data.push(data);
-        }, Error => console.log(Error), () => {
-            //console.log(this.data)
-            this.source.load(this.data);
-        });
-    }
-    ngOnInit() {
-        this.OnDateChangeEvent(new Date());
-    }
-};
-FollowUp = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'followup',
-        template: __webpack_require__(1589),
-        providers: [],
-    }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_4__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_5__angular_router__["b" /* Router */]])
-], FollowUp);
-
-
-/***/ }),
-
-/***/ 1532:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return MasterSchedule; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scheduleInput_service__ = __webpack_require__(1488);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_schedule_scss__ = __webpack_require__(1495);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_schedule_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_schedule_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__ = __webpack_require__(638);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_global_state__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ngx_export_as__ = __webpack_require__(648);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_common__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ScheduleSearch_customer_all_schedule_component__ = __webpack_require__(1534);
 
 
 
@@ -9104,649 +8623,286 @@ FollowUp = __decorate([
 
 
 
-
-
-
-let MasterSchedule = class MasterSchedule {
-    constructor(_authService, exportAsService, router, scheduleService, masterRepo, datePipe) {
+let AddCustomer = class AddCustomer {
+    constructor(_authService, router, activatedRoute, fb, masterRepo, state) {
         this._authService = _authService;
-        this.exportAsService = exportAsService;
         this.router = router;
-        this.scheduleService = scheduleService;
-        this.masterRepo = masterRepo;
-        this.datePipe = datePipe;
-        // @ViewChild("scheduler") scheduler: DayPilot.Angular.Scheduler;
-        this.DialogMessage = "You are not authorized";
-        this.minList = [];
-        this.employeeList = [];
-        this.startingTime = "12AM";
-        this.closingTime = "12AM";
-        this.noOfTimeHeaderInHour = 1;
-        this.minuteCellWidth = 25;
-        this.totalNoOfMinCell = 4;
-        this.hourHeaderList = [];
-        this.mList = [];
-        this.ScheduleDate = new Date("2017-09-13");
-        this.et = {};
-        this.rt = {};
-        this.roomList = [];
-        this.DisplayRoomTimeLine = true;
-        this.TimeLineBlock = 15;
-        this.SectionPerHour = 4;
-        this.DefaultTimeLineScroll = 2000;
-        this.exportAsConfig = {
-            type: 'pdf',
-            elementIdOrContent: 'employeeSchedule'
-        };
-        var setting = _authService.getSetting();
-        this.DisplayRoomTimeLine = setting.DisplayRoomTimeLine;
-        this.TimeLineBlock = setting.TimeLineBlock;
-        this.minuteCellWidth = setting.TimeLineBlockWidth;
-        this.IntegrateTreatmentWithAppointment = setting.IntegrateTreatmentWithAppointment;
-        this.SectionPerHour = 60 / this.TimeLineBlock;
-        this.DefaultTimeLineScroll = setting.DefaultTimeLineScroll;
-        var st = parseInt(this.startingTime.slice(0, -2));
-        var stp = this.startingTime.slice(-2);
-        var ct = parseInt(this.closingTime.slice(0, -2));
-        var ctp = this.closingTime.slice(-2);
-        if (ctp.toUpperCase() == "PM") {
-            ct = ct + 12;
-        }
-        if (stp.toUpperCase() == "PM") {
-            st = st + 12;
-        }
-        if (st == 12 && stp.toUpperCase() == "AM") {
-            st = 0;
-        }
-        if (ct == 12 && ctp.toUpperCase() == "AM") {
-            ct = 24;
-        }
-        let starttime = st;
-        let ap = stp.toUpperCase();
-        for (let h = st; h < ct; h++) {
-            let pred = "AM";
-            if (h >= 12) {
-                pred = "PM";
-            }
-            h;
-            this.hourHeaderList.push((h > 12 ? (h - 12) : h == 0 ? 12 : h) + pred);
-        }
-        this.noOfTimeHeaderInHour = ct - st;
-        this.totalNoOfMinCell = this.noOfTimeHeaderInHour * this.SectionPerHour;
-        for (let j = 1; j <= this.noOfTimeHeaderInHour; j++) {
-            if (starttime >= 12) {
-                ap = "PM";
-            }
-            for (let i = 0; i < this.SectionPerHour; i++) {
-                this.minList.push({ min: i * this.TimeLineBlock, booked: 0, startTime: starttime, minPart: i + 1, ampm: ap, colspan: 1 });
-            }
-            if (starttime == 12) {
-                starttime = 0;
-                ap = "PM";
-            }
-            starttime++;
-        }
-    }
-    changeEntryDate(value, format) {
-        if (format == "AD") {
-            this.ScheduleDateBS = this.masterRepo.toBSDate(value);
-            this.OnDateChangeEvent(value);
-        }
-        else if (format == "BS") {
-            this.ScheduleDateAD = this.masterRepo.toADDate(value);
-            this.OnDateChangeEvent(this.ScheduleDateAD);
-        }
-    }
-    OnDateChangeEvent(v) {
-        this.searchCustomer = '';
-        this.ScheduleDate = v;
-        this.employeeList = [];
-        this.roomList = [];
-        this.et = [];
-        this.rt = [];
-        this.scheduleService.getEmployeeSchedule({ FDate: v }).subscribe(data => {
-            this.et = data;
-            //console.log("et value", this.et);
-            this.emptimeTableMaker();
-        }, Error => {
-            try {
-                let t = Error.json();
-                //console.log(t);
-                if (t.result == "Authorization Failed") {
-                    this.router.navigate(['/login', this.router.url]);
-                }
-                else {
-                    alert("Error in Loading Data:" + t.result);
-                }
-            }
-            catch (e) {
-                alert(e);
-            }
-        });
-        this.scheduleService.getRoomSchedule({ FDate: v }).subscribe(data => {
-            this.rt = data;
-            //console.log("room",this.rt);
-            //console.log("rt.DATE",this.rt.DATE)
-            var rtNewDate = new Date(this.rt.DATE);
-            this.rtFormat = this.datePipe.transform(rtNewDate, "yyyy-MM-dd");
-            this.rtFormatNepali = this.masterRepo.toBSDate(this.rtFormat);
-            this.roomtimeTableMaker();
-            for (let r of this.rt.ROOMS) {
-                let bt = r.BOOKEDTIMES;
-                //console.log("before",r)
-                r.BOOKEDTIMES = bt.sort((x, y) => new Date(x.STARTDATETIME).getTime() - new Date(y.STARTDATETIME).getTime());
-            }
-        });
-        $('div#tblSchedule').scrollLeft(this.DefaultTimeLineScroll);
-    }
-    ngOnInit() {
-        this.OnDateChangeEvent(new Date());
-    }
-    customerSearchChange(event) {
-        this.childCustomerSchedule.showDialog();
-    }
-    roomCellClick(m) {
-        //console.log(m);
-    }
-    ngAfterViewInit() {
-        //$(' <script type="text/javascript" src="../../assets/js/jquery-ui.js"></script>').appendTo(document.body);
-        $(" <script> (function() { var elem = document.createElement('input'); elem.setAttribute('type', 'date');if ( elem.type === 'text' ) {$('#date').datepicker(); }})();</script>").appendTo(document.body);
-        $('div#tblSchedule').scrollLeft(this.DefaultTimeLineScroll);
-    }
-    roomtimeTableMaker() {
-        this.roomList = [];
-        for (let e of this.rt.ROOMS) {
-            this.mList = JSON.parse(JSON.stringify(this.minList));
-            for (let b of e.BOOKEDTIMES) {
-                //console.log(b);
-                this.setBookedInCell(this.mList, b.STARTTIME, b.ENDTIME, b.TIMEDURATION_IN_MIN, b.EMPLOYEE, b.SERVICE, b.CUSTOMER, b.SCHEDULEID, b.STATUS);
-            }
-            this.removeCellToSplice();
-            this.roomList.push({ ID: e.ROOMNO, NAME: e.DESCRIPTION, minList: this.mList });
-        }
-    }
-    emptimeTableMaker() {
-        this.employeeList = [];
-        for (let e of this.et.EMPLOYEES) {
-            this.mList = JSON.parse(JSON.stringify(this.minList));
-            for (let b of e.BOOKEDTIMES) {
-                this.setBookedInCell(this.mList, b.STARTTIME, b.ENDTIME, b.TIMEDURATION_IN_MIN, b.ROOM, b.SERVICE, b.CUSTOMER, b.SCHEDULEID, b.STATUS);
-            }
-            this.removeCellToSplice();
-            //console.log({ mlist: this.mList });
-            this.employeeList.push({ ID: e.EMPLOYEEID, NAME: e.EMPLOYEENAME, minList: this.mList });
-        }
-    }
-    removeCellToSplice() {
-        var i = this.mList.findIndex(x => x.cellToSplice == 1);
-        if (i > -1) {
-            this.mList.splice(i, 1);
-            this.removeCellToSplice();
-        }
-    }
-    setBookedInCell(initialCellList, starttime, endtime, duration, room, service, customer, sid, status) {
-        var s = starttime.slice(0, -5);
-        var ampm = starttime.slice(-2);
-        var onlyMin = parseInt(starttime.slice(-4).slice(0, -2));
-        //console.log({ sid: sid, Tstarttime: starttime, Tampm: ampm, starttime: s, ampm: ampm.toUpperCase(), onlyMin: onlyMin });
-        if (ampm === "00")
-            ampm = "AM";
-        var noOfBLock = Math.ceil(duration / this.TimeLineBlock);
-        //console.log({ noOfBLock: noOfBLock });
-        let isBooked = 0;
-        let skip = 0;
-        for (let t of initialCellList) {
-            //console.log({ sid:sid, Tstarttime: t.startTime, Tampm: t.ampm, starttime: s, ampm: ampm.toUpperCase(), onlyMin: onlyMin, minPart: t.minPart });
-            if (t.startTime == s && t.ampm == ampm.toUpperCase()) {
-                if (Math.floor(onlyMin / this.TimeLineBlock) == t.minPart - 1) {
-                    t.booked = 1;
-                    isBooked = 1;
-                    skip = 1;
-                    if (t.colspan < noOfBLock) {
-                        t.colspan = noOfBLock;
-                    }
-                    t.width = this.minuteCellWidth * noOfBLock + 'px';
-                    if (t.appointments == null) {
-                        t.appointments = [];
-                    }
-                    t.appointments.push({ room: room, service: service, customer: customer, time: starttime, sid: sid, status: status });
-                }
-            }
-            if (isBooked == 1 && noOfBLock > 0) {
-                if (skip == 1) {
-                    skip = 0;
-                }
-                else {
-                    t.booked = 1;
-                    t.cellToSplice = 1;
-                }
-                noOfBLock = noOfBLock - 1;
-                if (noOfBLock == 0) {
-                    isBooked = 0;
-                }
-            }
-        }
-        return initialCellList;
-    }
-    onAddClick() {
-        this.router.navigate(['/pages/schedule/scheInput', { mode: "add", returnUrl: this.router.url }]);
-    }
-    labelClickEvent(id) {
-        this.router.navigate(['/pages/schedule/scheInput', { mode: "edit", id: id, returnUrl: this.router.url }]);
-    }
-    treatmentClickEvent(id) {
-        this.router.navigate(['/pages/schedule/treatment', { mode: "", id: id, returnUrl: this.router.url }]);
-    }
-    showDetails() {
-        this.childScheduleForMailModal.show();
-    }
-    sendEmail() {
-        let Content = `
-          <html>              
-              <body >${this.el.nativeElement.outerHTML}
-              </body>
-          </html>`;
-        //console.log(Content);
-        this.masterRepo.postmaster(this.ScheduleDate, Content, '/SendEmail').subscribe((data) => {
-            //console.log(data);
-        });
-        this.childScheduleForMailModal.hide();
-    }
-    downloadToPdf() {
-        let pdf = new jsPDF();
-        let options = {
-            pagesplit: true,
-            background: '#fff',
-        };
-        pdf.addHTML(document.getElementById("employeeSchedule"), 10, 10, options, () => {
-            pdf.save("EmpSchedule.pdf");
-        });
-        // pdf.text(document.getElementById("employeeSchedule")
-        // );
-        // pdf.save("test.pdf")
-        this.childScheduleForMailModal.hide();
-    }
-    downloadPDF() {
-        this.exportAsService.save(this.exportAsConfig, 'EmpSchedule').subscribe(() => { });
-    }
-    getAppointmentBackground(ap) {
-        switch (ap.status) {
-            default:
-                return "#4286f4";
-            case 1:
-                return "yellow";
-            case 2:
-                return "#9ef315";
-            case 3:
-                return "#d3d4d0";
-        }
-    }
-    getAppointmentTextColor(ap) {
-        switch (ap.status) {
-            default:
-                return "white";
-            case 1:
-                return "black";
-            case 2:
-                return "black";
-            case 3:
-                return "black";
-        }
-    }
-};
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('ScheduleForMail'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], MasterSchedule.prototype, "childScheduleForMailModal", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('customerSchedule'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_9__ScheduleSearch_customer_all_schedule_component__["a" /* CustomerAllSchedule */])
-], MasterSchedule.prototype, "childCustomerSchedule", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('employeeEmailSchedule'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"])
-], MasterSchedule.prototype, "el", void 0);
-MasterSchedule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'masterschedule',
-        styles: [__webpack_require__(1465)],
-        template: __webpack_require__(1590),
-        providers: [__WEBPACK_IMPORTED_MODULE_8__angular_common__["DatePipe"]],
-    }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_7_ngx_export_as__["b" /* ExportAsService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__scheduleInput_service__["a" /* ScheduleInputService */], __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_8__angular_common__["DatePipe"]])
-], MasterSchedule);
-
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(13)))
-
-/***/ }),
-
-/***/ 1533:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return ScheduleInput; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scheduleInput_service__ = __webpack_require__(1488);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_schedule_scss__ = __webpack_require__(1495);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_schedule_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_schedule_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__ = __webpack_require__(638);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(328);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_common__ = __webpack_require__(41);
-
-
-
-
-
-
-
-
-
-let ScheduleInput = class ScheduleInput {
-    constructor(_scheduleInputService, router, masterService, elementRef, activatedRoute, _authService, disableDateService, masterRepo, datePipe) {
-        //this.date = new Date().toISOString();
-        //this.enddate = "00:00";
-        //console.log("Value",this.enddate);
-        this._scheduleInputService = _scheduleInputService;
-        this.router = router;
-        this.masterService = masterService;
-        this.elementRef = elementRef;
         this.activatedRoute = activatedRoute;
-        this._authService = _authService;
-        this.disableDateService = disableDateService;
+        this.fb = fb;
         this.masterRepo = masterRepo;
-        this.datePipe = datePipe;
+        this.state = state;
         this.DialogMessage = "Saving data please wait ...";
-        this.mode = "";
+        this.mode = "add";
+        this.viewMode = false;
         this.modeTitle = '';
+        this.customer = {};
+        this.initialTextReadOnly = false;
+        this.disableForm = false;
+        this.rategroup = [];
         this.subcriptions = [];
-        this.scheduleInput = {};
-        this.employeeBookedTimes = {};
-        this.roomBookedDetails = {};
-        this.user = {};
-        this.SNO = 0;
-        this.CustomerList = [];
-        this.ServiceList = [];
-        this.roomList = [];
-        this.employeeList = [];
-        this.replacementEmployeeList = [];
-        this.bookedEmployee = {};
-        this.multipleServiceList = [];
-        this.multipleServiceObj = {};
-        this.minList = [];
-        this.hourHeaderList = [];
-        this.disableScheduleInput = false;
-        this.statusList = [];
-        this.disabledDates = [];
-        this.formatDates = [];
-        this.et = {};
-        this.rt = {};
-        this.mList = [];
-        this.employeeTimeList = [];
-        this.roomTimeList = [];
-        const setting = this._authService.getSetting();
-        this.IntegrateTreatmentWithAppointment = setting.IntegrateTreatmentWithAppointment;
+        this.showAgeFlag = false;
         if (!!this.activatedRoute.snapshot.params['returnUrl']) {
             this.returnUrl = this.activatedRoute.snapshot.params['returnUrl'];
         }
         if (!!this.activatedRoute.snapshot.params['mode']) {
             this.mode = this.activatedRoute.snapshot.params['mode'];
         }
-        var TSH = this.masterService.TimeScheduleHeader("9AM", "8PM");
-        this.minList = TSH.minList;
-        this.hourHeaderList = TSH.hourHeaderList;
-        this.router.events.subscribe((val) => {
-            let data = {
-                GUID: this.scheduleInput.GUID,
-                SNO: 0
-            };
-            //this.masterService.postmaster('remove_row', data, "/DeleteTempSchedule")
-        });
-    }
-    ngAfterViewInit() {
-        // $(' ').appendTo(document.body);
-        // $("").appendTo(document.body);
-        // $('</script>  <script src="../../assets/js/datepair.js"></script>; <script src="../../assets/js/jquery.datepair.js"></script> ').appendTo(document.body);
-        // $("<script>  $('#timepairExample .time').timepicker({'showDuration': true,'timeFormat': 'g:ia'}); $('#datepairExample .date').datepicker({'format': 'm/d/yyyy','autoclose': true}); $('#timepairExample').datepair(); </script>").appendTo(document.body);
+        if (_authService.getUserProfile() && _authService.getUserProfile().Role == "admin") {
+            this.disableForm = false;
+        }
+        else {
+            this.disableForm = true;
+        }
+        if (this.mode == "view") {
+            this.disableForm = true;
+        }
     }
     ngOnInit() {
-        this.roomList = [];
-        this.CustomerList = [];
-        this.employeeList = [];
-        this.ServiceList = [];
-        //this.multipleServiceObj.STARTTIME = this.date;
-        //this.multipleServiceObj.ENDTIME = this.date;
-        if (this.masterService._customerList.length > 0) {
-            this.CustomerList = this.masterService._customerList;
-        }
-        else {
-            this.masterService.getCustomerList().subscribe((data) => {
-                this.CustomerList.push(data);
-            }, Error => console.log(Error), () => {
-                this.masterService._customerList = this.CustomerList;
-            });
-        }
-        if (this.masterService._employeeList.length > 0) {
-            this.employeeList = this.masterService._employeeList;
-        }
-        else {
-            this.masterService.getEmployeeList().subscribe((data) => {
-                this.employeeList.push(data);
-            }, Error => console.log(Error), () => {
-                this.masterService._employeeList = this.employeeList;
-            });
-        }
-        if (this.masterService._roomList.length > 0) {
-            this.roomList = this.masterService._roomList;
-        }
-        else {
-            this.masterService.getRoomList().subscribe((data) => {
-                this.roomList.push(data);
-            });
-        }
-        if (this.masterService._serviceList.length > 0) {
-            this.ServiceList = this.masterService._serviceList;
-        }
-        else {
-            this.masterService.getServiceList().subscribe((data) => {
-                this.ServiceList.push(data);
-            }, Error => console.log(Error), () => {
-                this.masterService._serviceList = this.ServiceList;
-            });
-        }
-        this.user = this._scheduleInputService.getUser();
-        if (this.mode == "edit") {
-            //  this.DialogMessage = "Loading Data please wait..."
-            //this.childModal.show();
-            //console.log("inside edit");
-            let sid = this.activatedRoute.snapshot.params['id'];
-            this.masterService.postmaster(this.mode, { sid: sid }, "/loadScheduleById").subscribe(data => {
-                if (data.status == 'ok') {
-                    this.scheduleInput = data.result;
-                    this.scheduleInput.DATE = this.scheduleInput.DATE.toString().substring(0, 10);
-                    this.multipleServiceList = this.scheduleInput.multipleServiceList;
-                    this.getStatusList();
-                    //console.log(this.scheduleInput);
-                    if (this.scheduleInput.billableSchedule == 1) {
-                        this.disableScheduleInput = true;
+        let self = this;
+        this.form = this.fb.group({
+            CUSID: [''],
+            NAME: [''],
+            ADDRESS: [''],
+            TELNO: [''],
+            MOBILE: [''],
+            IMOBILE: [''],
+            PANNO: [''],
+            EMAIL: [''],
+            DOB: [''],
+            BS_DOB: [''],
+            Age: [''],
+            Patient_Weight: [''],
+            MSTATUS: [''],
+            GENDER: [''],
+            OCCUPATION: [''],
+            EMERGENCYCONTACTNAME: [''],
+            EMERGENCYCONTACTNO: [''],
+            REGDATE: [''],
+            BARCODE: [''],
+            Membership: ['']
+        });
+        this.form.get('BS_DOB').valueChanges.subscribe(data => {
+            const adDate = this.masterRepo.toADDate(data);
+            if (this.form.get('DOB').value != adDate)
+                this.form.patchValue({ DOB: adDate });
+        });
+        this.form.get('DOB').valueChanges.subscribe(data => {
+            if (data == null || data == undefined || new Date(data) <= new Date("1900-01-01"))
+                return;
+            const bsDate = this.masterRepo.toBSDate(data);
+            if (this.form.get('BS_DOB').value != bsDate)
+                this.form.patchValue({ BS_DOB: bsDate });
+        });
+        if ((this.mode == "edit") || (this.mode == "view")) {
+            console.log("ENTERING VIEW MODE");
+            if (!!this.activatedRoute.snapshot.params['id']) {
+                let id = this.activatedRoute.snapshot.params['id'];
+                let loadedValue; // = this.masterRepo._customerList.filter(r => r.CUSID == id)[0];
+                this.masterRepo.getCustomerById(id).subscribe((data) => {
+                    loadedValue = data.json();
+                    console.log("LOADED VALUES", loadedValue);
+                    if (loadedValue) {
+                        console.log(loadedValue.NAME);
+                        if ((loadedValue.Membership == null) || loadedValue.Membership == undefined) {
+                            loadedValue.Membership = "";
+                        }
+                        this.form.patchValue({
+                            CUSID: loadedValue.CUSID,
+                            NAME: loadedValue.NAME,
+                            ADDRESS: loadedValue.ADDRESS,
+                            TELNO: loadedValue.TELNO,
+                            MOBILE: loadedValue.MOBILE,
+                            PANNO: loadedValue.PANNO,
+                            EMAIL: loadedValue.EMAIL,
+                            BARCODE: loadedValue.BARCODE,
+                            Membership: loadedValue.Membership,
+                            DOB: loadedValue.DOB.startsWith("0001") ? null : loadedValue.DOB.toString().substring(0, 10),
+                            Age: loadedValue.Age,
+                            Patient_Weight: loadedValue.Patient_Weight,
+                            MSTATUS: loadedValue.MSTATUS,
+                            GENDER: (loadedValue.GENDER ? loadedValue.GENDER : "Female").toLocaleLowerCase(),
+                            OCCUPATION: loadedValue.OCCUPATION,
+                            EMERGENCYCONTACTNAME: loadedValue.EMERGENCYCONTACTNAME,
+                            EMERGENCYCONTACTNO: loadedValue.EMERGENCYCONTACTNO,
+                            REGDATE: loadedValue.REGDATE == null ? loadedValue.REGDATE : loadedValue.REGDATE.toString().substring(0, 10)
+                        });
+                        this.showAgeFlag = !loadedValue.isAgeAccurate;
                     }
-                    else {
-                        this.disableScheduleInput = false;
-                    }
-                    //  this.DialogMessage = "Data Loaded Successfully."
-                    setTimeout(() => {
-                        //    this.childModal.hide();
-                    }, 1000);
-                }
-                else {
-                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
-                    if (data.result._body == "The ConnectionString property has not been initialized.") {
-                        this.router.navigate(['/login', this.router.url]);
-                        return;
-                    }
-                    //Some other issues need to check
-                    //   this.DialogMessage = "Error in Updaing Data:" + data.result._body;
-                    //console.log(data.result._body);
-                    setTimeout(() => {
-                        //     this.childModal.hide();
-                    }, 3000);
-                }
-            }, error => { alert(error); });
+                }, Error => console.log(Error), () => {
+                });
+            }
+        }
+        // if (!!this.activatedRoute.snapshot.params['mode']) {
+        //     if(this.activatedRoute.snapshot.params['mode'] == "view"){
+        //         this.viewMode = true;
+        //         this.form.get('RATEGROUPID').disable();
+        //         this.form.get('INITIAL').disable();
+        //         this.form.get('ID').disable();
+        //         this.form.get('NAME').disable();
+        //     }
+        // }
+        // if (!!this.activatedRoute.snapshot.params['returnUrl']) {
+        //     this.returnUrl = this.activatedRoute.snapshot.params['returnUrl'];
+        //     console.log(this.router.url);
+        //     if(this.router.url == "pages/masters/divisions/ViewDivision"){
+        //         this.viewMode = true;
+        //     }
+        // }
+        // if (!!this.activatedRoute.snapshot.params['initial']) {
+        //     let initial = this.activatedRoute.snapshot.params['initial'];
+        //     this.addDivisionService.getDivision(initial)
+        //         .subscribe(data => {
+        //             if (data.status == 'ok') {
+        //                 this.form.setValue({
+        //                     ID : data.result.ID || '',
+        //                     INITIAL : data.result.INITIAL,
+        //                     NAME : data.result.NAME,
+        //                     RATEGROUPID : data.result.RATEGROUPID || 0,
+        //                 });
+        //                 if(this.activatedRoute.snapshot.params['mode'] == null){
+        //                     self.modeTitle = "Edit Division";
+        //                     if(this._authService.checkMenuRight("divisions", "edit") == false){
+        //                         this.router.navigate(['pages/masters/divisions/']);
+        //                     }
+        //                 }else if(this.activatedRoute.snapshot.params['mode'] == "view"){
+        //                     self.modeTitle = "View Division";
+        //                     if(this._authService.checkMenuRight("divisions", "view") == false){
+        //                         this.router.navigate(['pages/masters/divisions/']);
+        //                     }
+        //                 }
+        //                 self.mode = 'edit';
+        //                 self.initialTextReadOnly = true;
+        //             }
+        //             else {
+        //                 this.mode = '';
+        //                 this.modeTitle = "Edit -Error in Division";
+        //                 this.initialTextReadOnly = true;
+        //             }
+        //         }, error => {
+        //             this.mode = '';
+        //             this.modeTitle = "Edit2 -Error in Division";
+        //         }
+        //         )
+        // }
+        // else {
+        //     this.mode = "add";
+        //     this.modeTitle = "Add Division";
+        //     this.initialTextReadOnly = false;
+        //     if(this._authService.checkMenuRight("divisions", "add") == false){
+        //         this.router.navigate(['pages/masters/divisions/']);
+        //     }
+        // }
+        // //this.model.id = this.returnUrl;
+        // //console.log(this.division.INITIAL);
+        // let v = self.division;
+        // //console.log(v.INITIAL);
+    }
+    disabled() {
+        if (this.viewMode == true) {
+            return "#EBEBE4";
         }
         else {
-            this._scheduleInputService.getGUID().subscribe(respose => {
-                this.scheduleInput.GUID = respose.text();
-            });
+            return "";
         }
     }
-    changeEntryDate(value, format) {
-        if (format == "AD") {
-            this.ScheduleDateBS = this.masterService.toBSDate(value);
+    changeToArray(data) {
+        //console.log(data);
+        if (data) {
+            let retData = [];
+            retData.concat([], data);
+            return retData;
         }
-        else if (format == "BS") {
-            this.scheduleInput.DATE = this.masterService.toADDate(value);
-        }
-        this.checkHoliday(this.scheduleInput.DATE, 0, "00:00", "00:00");
+        return [];
     }
-    SaveClickEvent() {
-        this.scheduleInput.multipleServiceList = this.multipleServiceList;
-        //console.log("multipleServiceList",this.multipleServiceList);
-        //console.log("Schedule",this.scheduleInput);
+    onSave() {
+        let cus = this.form.value;
+        //console.log(cus, "NEW CUSTOMER", this.form.value);
+        if (cus.NAME == null || cus.NAME == "") {
+            this.DialogMessage = "Customer Name is compulsory.";
+            this.childModal.show();
+            setTimeout(() => {
+                this.childModal.hide();
+            }, 3000);
+            return;
+        }
+        // if(cus.DOB == null || cus.DOB == "" ){
+        //     this.DialogMessage = "Patient DOB is compulsory.";
+        //     this.childModal.show();
+        //     setTimeout(() => {
+        //         this.childModal.hide();
+        //     }, 3000);
+        //     return
+        // }
+        // if(cus.Age == null || cus.Age == "" ){
+        //     this.DialogMessage = "Patient Age is compulsory.";
+        //     this.childModal.show();
+        //     setTimeout(() => {
+        //         this.childModal.hide();
+        //     }, 3000);
+        //     return
+        // }
+        // if(cus.Patient_Weight == null || cus.Patient_Weight == "" ){
+        //     this.DialogMessage = "Patient Weight is compulsory.";
+        //     this.childModal.show();
+        //     setTimeout(() => {
+        //         this.childModal.hide();
+        //     }, 3000);
+        //     return
+        // }
+        if (cus.PANNO != null && cus.PANNO != "") {
+            if (cus.PANNO.toString().length != 9 || isNaN(Number(cus.PANNO))) {
+                this.DialogMessage = "Invalid Pan No.";
+                this.childModal.show();
+                setTimeout(() => {
+                    this.childModal.hide();
+                }, 3000);
+                return;
+            }
+        }
+        if (cus.MOBILE == null || cus.MOBILE == "") {
+            this.DialogMessage = "Mobile Number is compulsory.";
+            this.childModal.show();
+            setTimeout(() => {
+                this.childModal.hide();
+            }, 3000);
+            return;
+        }
+        else if (cus.MOBILE.toString().length != 10 || isNaN(Number(cus.MOBILE))) {
+            this.DialogMessage = "Invalid Mobile No.";
+            this.childModal.show();
+            setTimeout(() => {
+                this.childModal.hide();
+            }, 3000);
+            return;
+        }
+        //validate before Saving
         this.DialogMessage = "Saving Data please wait...";
         this.childModal.show();
+        //console.log("BEFORE SUBMITTING", cus )
         this.onsubmit();
-    }
-    starttimeChange(value) {
-        console.log({ starttime: value });
-        if (value == null || value == "")
-            return;
-        let timeComponent = value.split(':');
-        if (timeComponent) {
-            let hour = parseInt(timeComponent[0]);
-            let min = parseInt(timeComponent[1].substring(0, 2));
-            if (timeComponent[1].toLowerCase().endsWith("pm"))
-                hour += 12;
-            let ampm = "am";
-            if (timeComponent[1].length > 2)
-                ampm = timeComponent[1].substring(3, 2);
-            //console.log({ ampm: ampm });
-            if (ampm.toLowerCase() == "pm" && hour < 12)
-                hour = hour + 12;
-            this.SetStartTime(hour, min);
-            if (this.multipleServiceObj.SERVICE != null) {
-                //  calculate end time as service duration            
-                min = min + this.multipleServiceObj.SERVICE.TIMEDURATION_MIN;
-                //console.log(min);
-                while (min >= 60) {
-                    //console.log({ hour: hour, min: min, ampm: ampm });
-                    hour = hour + 1;
-                    min = min - 60;
-                }
-                //console.log({ hour: hour, min: min, ampm: ampm });
-                this.SetEndTime(hour, min);
-            }
-            else {
-                this.SetEndTime(0, 0);
-            }
-        }
-        //console.log('this.EndTime',this.EndTime);
-        //console.log(this.multipleServiceObj.ENDTIME);
-    }
-    SetStartTime(hour, min) {
-        this.StartTime = hour.toString().padStart(2, '0') + ":" + min.toString().padStart(2, '0');
-        this.multipleServiceObj.STARTTIME = this.GetTimeString(hour, min);
-    }
-    SetEndTime(hour, min) {
-        this.EndTime = hour.toString().padStart(2, '0') + ":" + min.toString().padStart(2, '0');
-        this.multipleServiceObj.ENDTIME = this.GetTimeString(hour, min);
-    }
-    GetTimeString(hour, min) {
-        var ampm = " AM";
-        if (hour >= 12) {
-            if (hour > 12)
-                hour = hour - 12;
-            ampm = " PM";
-        }
-        return hour.toString().padStart(2, '0') + ":" + min.toString().padStart(2, '0') + ampm;
-    }
-    TypeChange(value) {
-        console.log("type", value);
-        this.multipleServiceObj.TYPE = value;
-    }
-    EmployeeChange(emp) {
-        this.employeeTimeList = [];
-        this._scheduleInputService.getEmployeeSchedule({ FDate: this.scheduleInput.DATE, EMPLOYEEID: emp.EMPLOYEEID }).subscribe(data => {
-            this.et = data;
-            this.emptimeTableMaker();
-        });
-        // this.employeeBookedTimes = this._scheduleInputService.getScheduleByEmployee({ FDate: this.scheduleInput.DATE, EMPLOYEEID: emp.EMPLOYEEID, NAME: emp.NAME })
-        // this.et = this.employeeBookedTimes;
-        // this.emptimeTableMaker();
-    }
-    RoomChange(room) {
-        this.roomTimeList = [];
-        this._scheduleInputService.getRoomSchedule({ FDate: this.scheduleInput.DATE, ROOMNO: room.ROOMNO }).subscribe(data => {
-            this.rt = data;
-            this.roomtimeTableMaker();
-        });
-    }
-    bookedEmployeeClickEvent(value) {
-        if (value.EMPLOYEE_BOOKED_BYCUSTOMER == 1)
-            return;
-        this.bookedEmployee = value;
-        this.replacementEmployeeList = [];
-        this.childEmployeeModal.show();
-    }
-    saveChildModal(replacementEmp) {
-        this.childEmployeeModal.hide();
-        this.DialogMessage = "Updating Data please wait...";
-        this.childModal.show();
-        try {
-            let sub = this.masterService.postmaster("addEdit", { replacementEmployee: replacementEmp, ToBeReplacedEmployee: this.bookedEmployee }, "/postReplacementEmployee")
-                .subscribe(data => {
-                if (data.status == 'ok') {
-                    //Displaying dialog message for save with timer of 1 secs
-                    this.DialogMessage = "Data Exchanges Successfully";
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 1000);
-                }
-                else {
-                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
-                    if (data.result._body == "The ConnectionString property has not been initialized.") {
-                        this.router.navigate(['/login', this.router.url]);
-                        return;
-                    }
-                    //Some other issues need to check
-                    this.DialogMessage = "Error in Updaing Data:" + data.result._body;
-                    //console.log(data.result._body);
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                }
-            }, error => { alert(error); });
-            this.subcriptions.push(sub);
-        }
-        catch (e) {
-            alert(e);
-        }
     }
     hideChildModal() {
         this.childModal.hide();
     }
     onsubmit() {
         try {
-            //console.log("finaldata",this.scheduleInput);
-            let sub = this.masterService.postmaster(this.mode, this.scheduleInput, "/saveSchedule")
+            //console.log("INITIALIZE SUBMISSION")
+            let cus = this.form.value;
+            let sub = this.masterRepo.postmaster(this.mode, cus, "/saveCustomer")
                 .subscribe(data => {
+                //console.log(data, "DATA RESPONSE SAVE CUSTOMER", cus, "CUSTOMER");
                 if (data.status == 'ok') {
                     //Displaying dialog message for save with timer of 1 secs
                     this.DialogMessage = "Data Saved Successfully";
+                    this.masterRepo.refreshCustomerList();
                     setTimeout(() => {
                         this.childModal.hide();
-                        this.router.navigate([this.returnUrl]);
+                        if (this.returnUrl == "/pages/schedule/scheInput") {
+                            this.router.navigate([this.returnUrl, { mode: "add", MOBILE: cus.MOBILE, returnUrl: "/pages/schedule/mastersche" }]);
+                        }
+                        else {
+                            this.router.navigate([this.returnUrl]);
+                        }
                     }, 1000);
                 }
                 else {
@@ -9770,516 +8926,240 @@ let ScheduleInput = class ScheduleInput {
         }
     }
     onCancel() {
+        //console.log(this.returnUrl)
         this.router.navigate([this.returnUrl]);
     }
-    AddClickEvent() {
-        return __awaiter(this, void 0, void 0, (function* () {
-            try {
-                if (this.multipleServiceObj.EMPLOYEE.OFFDAY.find(x => x == this.getWeekDay(new Date(this.scheduleInput.DATE)))) {
-                    if (this.user.Role == "admin") {
-                        if (!confirm('Employee will not be available on selected date. Do you want to add anyway?'))
-                            return;
-                    }
-                    else {
-                        this.DialogMessage = 'Employee will not be available on selected date.';
-                        this.childModal.show();
-                        setTimeout(() => {
-                            this.childModal.hide();
-                        }, 3000);
-                        return;
-                    }
-                }
-                if (this.StartTime === undefined) {
-                    this.DialogMessage = 'Please set Appointment Time first';
-                    this.childModal.show();
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                    return;
-                }
-                if (!(yield this.checkHoliday(this.scheduleInput.DATE, this.multipleServiceObj.EMPLOYEE.EMPLOYEEID, this.multipleServiceObj.STARTTIME, this.multipleServiceObj.ENDTIME)))
-                    return;
-                let data = {
-                    Date: this.scheduleInput.DATE,
-                    Service: this.multipleServiceObj.SERVICE,
-                    CustomerId: this.scheduleInput.CUSTOMER.CUSID,
-                    EmployeeId: this.multipleServiceObj.EMPLOYEE.EMPLOYEEID,
-                    RoomNo: this.multipleServiceObj.ROOM.ROOMNO,
-                    STARTTIME: this.multipleServiceObj.STARTTIME,
-                    ENDTIME: this.multipleServiceObj.ENDTIME,
-                    StartTime: this.StartTime,
-                    EndTime: this.EndTime,
-                    GUID: this.scheduleInput.GUID,
-                    SNO: this.SNO + 1,
-                    ScheduleId: this.scheduleInput.ScheduleId
-                };
-                //console.log(data);
-                this.DialogMessage = "Validting Data please wait...";
-                this.childModal.show();
-                let sub = this.masterService.postmaster('validate', data, "/ValidateSchedule")
-                    .subscribe(data => {
-                    //console.log(data);
-                    if (data.status == 'ok') {
-                        if (this.multipleServiceList == null) {
-                            this.multipleServiceList = [];
-                        }
-                        this.multipleServiceObj.SNO = ++this.SNO;
-                        this.multipleServiceObj.Series = data.result;
-                        this.multipleServiceList.push(this.multipleServiceObj);
-                        let e = this.multipleServiceObj.EMPLOYEE;
-                        let r = this.multipleServiceObj.ROOM;
-                        this.multipleServiceObj = {};
-                        this.SetStartTime(0, 0);
-                        this.SetEndTime(0, 0);
-                        this.multipleServiceObj.ROOM = r;
-                        this.multipleServiceObj.EMPLOYEE = e;
-                        setTimeout(() => {
-                            this.childModal.hide();
-                        }, 1000);
-                    }
-                    else {
-                        //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
-                        if (data.result._body == "The ConnectionString property has not been initialized.") {
-                            this.router.navigate(['/login', this.router.url]);
-                            return;
-                        }
-                        //Some other issues need to check
-                        this.DialogMessage = data.result._body;
-                        //console.log(data.result._body);
-                        setTimeout(() => {
-                            this.childModal.hide();
-                        }, 3000);
-                    }
-                }, error => { alert(error); });
-            }
-            catch (e) {
-                alert(e);
-            }
-        }));
+    ngOnDestroy() {
+        //if(this.subitSubscription)
+        //  this.subitSubscription.unsubscribe();
+        this.subcriptions.forEach(subs => {
+            subs.unsubscribe();
+        });
     }
-    test() {
-        //console.log({ multipleServiceObj: this.multipleServiceObj });
-    }
-    onSearchChange(searchValue) {
-        var cus = this.CustomerList.find(x => x.MOBILE == searchValue);
-        if (cus != null)
-            this.scheduleInput.CUSTOMER = cus;
-        //console.log(searchValue);
-    }
-    onBarcodeChange(searchValue) {
-        var cus = this.CustomerList.find(x => x.BARCODE == searchValue);
-        if (cus != null)
-            this.scheduleInput.CUSTOMER = cus;
-        //console.log(searchValue);
-    }
-    editSchedule(index) {
-        try {
-            console.log(this.multipleServiceList[index]);
-            let selectedSchedule = this.multipleServiceList[index];
-            let data = {
-                GUID: this.scheduleInput.GUID,
-                SNO: this.multipleServiceObj.SNO
-            };
-            this.multipleServiceObj = {
-                SERVICE: this.ServiceList.find(x => x.SERVICEID == selectedSchedule.SERVICE.SERVICEID),
-                ROOM: this.roomList.find(x => x.ROOMNO == selectedSchedule.ROOM.ROOMNO),
-                EMPLOYEE: this.employeeList.find(x => x.EMPLOYEEID == selectedSchedule.EMPLOYEE.EMPLOYEEID),
-                SNO: selectedSchedule.SNO,
-                CUSTOMERID: selectedSchedule.CUSTOMERID,
-                STARTTIME: selectedSchedule.STARTTIME,
-                ENDTIME: selectedSchedule.ENDTIME,
-                EMPLOYEE_BOOKED_BYCUSTOMER: selectedSchedule.EMPLOYEE_BOOKED_BYCUSTOMER,
-                RATE: selectedSchedule.RATE,
-                TYPE: selectedSchedule.TYPE
-            };
-            this.starttimeChange(selectedSchedule.STARTTIME);
-            let sub = this.masterService.postmaster('remove_row', data, "/DeleteTempSchedule")
-                .subscribe(data => {
-                //console.log(data);
-                if (data.status == 'ok') {
-                    this.multipleServiceList.splice(index, 1);
-                }
-                else {
-                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
-                    if (data.result._body == "Authorization Failed") {
-                        this.router.navigate(['/login', this.router.url]);
-                        return;
-                    }
-                }
-            }, error => { alert(error); });
-        }
-        catch (e) {
-            alert(e);
+    onMobileChange(e) {
+        if (e.target.value.length >= 10) {
+            e.target.value = e.target.value.substring(0, 10);
         }
     }
-    removeSchedule(index) {
-        try {
-            let data = {
-                GUID: this.scheduleInput.GUID,
-                SNO: this.multipleServiceList[index].SNO
-            };
-            this.DialogMessage = "Removing Schedule please wait...";
+    onBarcodeChange(e) {
+        if (e.target.value.length == 9) {
+            e.target.value = e.target.value.substring(0, 9);
+        }
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
+], AddCustomer.prototype, "childModal", void 0);
+AddCustomer = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'addCustomer',
+        template: __webpack_require__(1556),
+        providers: [],
+        styles: [`
+        input{
+            color: black;
+        }
+    `],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__app_global_state__["a" /* GlobalState */]])
+], AddCustomer);
+
+
+/***/ }),
+
+/***/ 1497:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return CustomerList; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__ = __webpack_require__(638);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_http__ = __webpack_require__(42);
+
+
+
+
+
+
+
+
+let CustomerList = class CustomerList {
+    constructor(service, _authService, router) {
+        this.service = service;
+        this._authService = _authService;
+        this.router = router;
+        this.query = '';
+        this.DialogMessage = "You are not authorized";
+        this.settings = {
+            mode: 'external',
+            delete: {
+                deleteButtonContent: '<i class="ion-trash-a"></i>',
+                confirmDelete: true
+            },
+            columns: {
+                NAME: {
+                    title: 'Name',
+                    type: 'string'
+                },
+                // ADDRESS: {
+                //   title: 'Address',
+                //   type: 'string'
+                // },
+                // TELNO: {
+                //   title: 'Tel No.',
+                //   type: 'string'
+                // },
+                MOBILE: {
+                    title: 'Mobile',
+                    type: 'string'
+                },
+                // EMAIL: {
+                //   title: 'Email',
+                //   type: 'string'
+                // },
+                EMERGENCYCONTACTNAME: {
+                    title: 'Emg. Name',
+                    type: 'string'
+                },
+                EMERGENCYCONTACTNO: {
+                    title: 'Emg. Number',
+                    type: 'string'
+                },
+            }
+        };
+        this.subcriptions = [];
+        const connection = new __WEBPACK_IMPORTED_MODULE_7__angular_http__["e" /* XHRBackend */](new __WEBPACK_IMPORTED_MODULE_7__angular_http__["f" /* BrowserXhr */](), new __WEBPACK_IMPORTED_MODULE_7__angular_http__["g" /* ResponseOptions */](), new __WEBPACK_IMPORTED_MODULE_7__angular_http__["h" /* CookieXSRFStrategy */]());
+        var http = new __WEBPACK_IMPORTED_MODULE_7__angular_http__["d" /* Http */](connection, this.service.getRequestOption());
+        this.source = new __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__["ServerDataSource"](http, {
+            endPoint: this.service.apiUrl + '/getCustomerListPaged',
+            dataKey: 'data.result',
+            pagerPageKey: 'currentPage',
+            pagerLimitKey: 'maxResultCount',
+            totalKey: 'data.total',
+        });
+    }
+    setMode() {
+        // this.divService.create();
+        //this.settings.mode='inline';
+        //console.log(this.settings.mode);
+    }
+    onAddClick() {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(['/pages/masters/cus/detail-cus', { mode: "add", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to add Customer.";
             this.childModal.show();
-            let sub = this.masterService.postmaster('remove_row', data, "/DeleteTempSchedule")
-                .subscribe(data => {
-                //console.log(data);
-                if (data.status == 'ok') {
-                    this.multipleServiceList.splice(index, 1);
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 1000);
-                }
-                else {
-                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
-                    if (data.result._body == "Authorization Failed") {
-                        this.router.navigate(['/login', this.router.url]);
-                        return;
-                    }
-                    //Some other issues need to check
-                    this.DialogMessage = data.result._body;
-                    //console.log(data.result._body);
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                }
-            }, error => { alert(error); });
-        }
-        catch (e) {
-            alert(e);
         }
     }
-    emptimeTableMaker() {
-        this.employeeTimeList = [];
-        for (let e of this.et.EMPLOYEES) {
-            this.mList = JSON.parse(JSON.stringify(this.minList));
-            for (let b of e.BOOKEDTIMES) {
-                this.masterService.setBookedInCell(this.mList, b.STARTTIME, b.ENDTIME, b.TIMEDURATION_IN_MIN, b.ROOM, b.SERVICE, b.CUSTOMER, 15);
-            }
-            this.removeCellToSplice();
-            this.employeeTimeList.push({ ID: e.EMPLOYEEID, NAME: e.EMPLOYEENAME, minList: this.mList });
-        }
-    }
-    roomtimeTableMaker() {
-        this.roomTimeList = [];
-        for (let e of this.rt.ROOMS) {
-            this.mList = JSON.parse(JSON.stringify(this.minList));
-            for (let b of e.BOOKEDTIMES) {
-                //console.log(b);
-                this.masterService.setBookedInCell(this.mList, b.STARTTIME, b.ENDTIME, b.TIMEDURATION_IN_MIN, b.EMPLOYEE, b.SERVICE, b.CUSTOMER, 15);
-            }
-            this.removeCellToSplice();
-            this.roomTimeList.push({ ID: e.ROOMNO, NAME: e.DESCRIPTION, minList: this.mList });
-        }
-    }
-    removeCellToSplice() {
-        var i = this.mList.findIndex(x => x.cellToSplice == 1);
-        if (i > -1) {
-            this.mList.splice(i, 1);
-            this.removeCellToSplice();
-        }
-    }
-    getWeekDay(date) {
-        switch (date.getDay()) {
-            case 0:
-                return "sunday";
-            case 1:
-                return "monday";
-            case 2:
-                return "tuesday";
-            case 3:
-                return "wednesday";
-            case 4:
-                return "thursday";
-            case 5:
-                return "friday";
-            case 6:
-                return "saturday";
-            default:
-                return "saturday";
-        }
-    }
-    serviceChangeEvent(rate) {
-        //console.log("hrs", this.multipleServiceObj.SERVICE.TIMEDURATION_HRS);
-        //console.log("min", this.multipleServiceObj.SERVICE.TIMEDURATION_MIN);
-        //console.log("service", this.multipleServiceObj.SERVICE);
-        this.addHour = this.multipleServiceObj.SERVICE.TIMEDURATION_HRS;
-        this.addMin = this.multipleServiceObj.SERVICE.TIMEDURATION_MIN;
-        this.multipleServiceObj.RATE = rate;
-    }
-    canBeBillable() {
-        return (new Date() >= new Date(this.scheduleInput.DATE) && this._authService.getSetting().IntegratePos);
-    }
-    ProceedBill() {
-        this.scheduleInput.billableSchedule = 1;
-        this.SaveClickEvent();
-    }
-    CancelBill() {
-        this.scheduleInput.multipleServiceList = this.multipleServiceList;
-        this.DialogMessage = "Saving Data please wait...";
-        this.childModal.show();
-        try {
-            let sub = this.masterService.postmaster(this.mode, this.scheduleInput, "/cancelBill")
-                .subscribe(data => {
-                if (data.status == 'ok') {
-                    //Displaying dialog message for save with timer of 1 secs
-                    this.DialogMessage = "Data Saved Successfully";
-                    setTimeout(() => {
-                        this.childModal.hide();
-                        this.router.navigate([this.returnUrl]);
-                    }, 1000);
-                }
-                else {
-                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
-                    if (data.result._body == "The ConnectionString property has not been initialized.") {
-                        this.router.navigate(['/login', this.router.url]);
-                        return;
-                    }
-                    //Some other issues need to check
-                    this.DialogMessage = "Error in Saving Data:" + data.result._body;
-                    //console.log(data.result._body);
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                }
-            }, error => { alert(error); });
-            this.subcriptions.push(sub);
-        }
-        catch (e) {
-            alert(e);
-        }
-    }
-    DeleteConformation() {
+    onDeleteConfirm(event) {
+        this.selectedRow = event;
         this.deleteModal.show();
     }
     DeleteEvent() {
         this.deleteModal.hide();
-        this.DialogMessage = "Deleting this schedule please wait...";
-        this.childModal.show();
-        let sub = this.masterService.postmaster('delete', this.scheduleInput, "/DeleteSchedule")
-            .subscribe(data => {
-            //console.log(data);
-            if (data.status == 'ok') {
-                this.DialogMessage = "Delete Successfull...";
-                this.childModal.hide();
-                this.router.navigate([this.returnUrl]);
-            }
-            else {
-                //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
-                if (data.result._body == "Authorization Failed") {
-                    this.router.navigate(['/login', this.router.url]);
-                    return;
-                }
-                //Some other issues need to check
-                //console.log(data.result._body);
-                this.childModal.hide();
-            }
-        }, error => { alert(error); });
-    }
-    customerChanged(e) {
-        this.scheduleInput.CUSTOMER = e;
-    }
-    checkHoliday(date, employee, startTime, endTime) {
-        return __awaiter(this, void 0, void 0, (function* () {
-            var roleRes = this.masterService.getRole();
-            var roleJSON = JSON.parse(roleRes);
-            var response = yield this._scheduleInputService.checkHoliday({ date, employee, startTime, endTime }).toPromise();
-            var res = response.json();
-            if (res.status == "ok" && res.result == true) {
-                if (roleJSON.Role == "admin") {
-                    if (confirm("Staff is not available for selected Date/Time. Do you still want to add appointment?")) {
-                        this.scheduleInput.OverrideHoliday = true;
-                        return true;
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            try {
+                this.DialogMessage = "Deleting please wait...";
+                this.childModal.show();
+                let sub = this.service.postmaster("delete", this.selectedRow.data, "/saveCustomer")
+                    .subscribe(data => {
+                    //console.log("value",data);
+                    // if (data.status == 'ok') {
+                    //Displaying dialog message for save with timer of 1 secs
+                    if (data.status == "ok") {
+                        this.DialogMessage = "Data Deleted Successfully";
+                        if (this.service._customerList.length > 0) {
+                            this.service._customerList.splice(this.service._customerList.indexOf(this.selectedRow.data), 1);
+                            this.source.load(this.service._customerList);
+                        }
                     }
-                    else
-                        return false;
-                }
-                else {
-                    this.DialogMessage = "Staff is not available for selected Date/Time.";
-                    this.childModal.show();
+                    else {
+                        this.DialogMessage = "An appointment has already been booked for this customer and cannot be deleted.";
+                    }
                     setTimeout(() => {
                         this.childModal.hide();
-                    }, 3000);
-                    return false;
-                }
+                    }, 4000);
+                    //  }
+                    // else {
+                    //   //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                    //   if (data.result._body == "The ConnectionString property has not been initialized.") {
+                    //     this.router.navigate(['/login', this.router.url]);
+                    //     return;
+                    //   }
+                    //   //Some other issues need to check
+                    //   this.DialogMessage = "Error in Deleting Data:" + data.result._body;
+                    //   console.log(data.result._body);
+                    //   setTimeout(() => {
+                    //     this.childModal.hide();
+                    //   }, 3000)
+                    // }
+                }, error => { alert(error); });
+                this.subcriptions.push(sub);
             }
-            return true;
-        }));
+            catch (e) {
+                alert(e);
+            }
+        }
+        else {
+            this.DialogMessage = "You are not authorize to delete the customer";
+            this.childModal.show();
+        }
     }
-    getStatusList() {
-        this.statusList = [];
-        console.log(this.scheduleInput.STATUS);
-        switch (this.scheduleInput.STATUS) {
-            case 0:
-                this.statusList.push({ status: 1, description: "Patient Arrived" });
-                break;
-            case 1:
-                this.statusList.push({ status: 0, description: "Initial" });
-                this.statusList.push({ status: 2, description: "Patient In Session" });
-                break;
-            case 2:
-                this.statusList.push({ status: 0, description: "Initial" });
-                this.statusList.push({ status: 1, description: "Patient Arrived" });
-                this.statusList.push({ status: 3, description: "Session Completed" });
-                break;
-            case 3:
-                this.statusList.push({ status: 0, description: "Initial" });
-                this.statusList.push({ status: 1, description: "Patient Arrived" });
-                this.statusList.push({ status: 2, description: "Patient In Session" });
-                break;
+    onViewClick(event) {
+        this.router.navigate(["/pages/masters/cus/detail-cus", { id: event.data.CUSID, mode: "view", returnUrl: this.router.url }]);
+    }
+    onEditClick(event) {
+        console.log({ editData: event.data });
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(["/pages/masters/cus/detail-cus", { id: event.data.CUSID, mode: "edit", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to edit Customer.";
+            this.childModal.show();
         }
     }
 };
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childEmployeeModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], ScheduleInput.prototype, "childEmployeeModal", void 0);
-__decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], ScheduleInput.prototype, "childModal", void 0);
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], CustomerList.prototype, "childModal", void 0);
 __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('deleteModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], ScheduleInput.prototype, "deleteModal", void 0);
-ScheduleInput = __decorate([
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], CustomerList.prototype, "deleteModal", void 0);
+CustomerList = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'schedule',
-        styles: [__webpack_require__(1465)],
-        template: __webpack_require__(1591),
-        providers: [__WEBPACK_IMPORTED_MODULE_8__angular_common__["DatePipe"]]
+        selector: 'cuslist',
+        template: __webpack_require__(1557),
+        providers: [],
     }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_3__scheduleInput_service__["a" /* ScheduleInputService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_6__common_services_permission__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_7__common_services_disable_date_picker_disable_date_picker_service__["a" /* DisableDateService */], __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_8__angular_common__["DatePipe"]])
-], ScheduleInput);
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_6__angular_router__["b" /* Router */]])
+], CustomerList);
 
 
 /***/ }),
 
-/***/ 1534:
+/***/ 1498:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return CustomerAllSchedule; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AddDisease; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scheduleInput_service__ = __webpack_require__(1488);
-
-
-
-
-let CustomerAllSchedule = class CustomerAllSchedule {
-    constructor(router, scheduleService) {
-        this.router = router;
-        this.scheduleService = scheduleService;
-        this.mobile = "";
-        this.schedules = [];
-        this.Customer = {};
-        this.ShowAll = false;
-        this.schedules = [];
-    }
-    ngOnInit() {
-        this.schedules = [];
-    }
-    showDialog() {
-        this.Customer = {};
-        this.schedules = [];
-        this.ShowAll = false;
-        this.scheduleService.getCustomerSchedule({ FDate: this.date, CUSTOMER: this.mobile }).subscribe(res => {
-            var response = res.json();
-            if (response.customer != null) {
-                this.schedules = response.schedule;
-                this.Customer.NAME = response.customer.name;
-                this.Customer.MOBILE = response.customer.mobile;
-            }
-            setTimeout(() => {
-                this.childCustomerScheduleModal.show();
-            }, 100);
-        }, Error => {
-            try {
-                let t = Error.json();
-                //console.log(t);
-                if (t.result == "Authorization Failed") {
-                    this.router.navigate(['/login', this.router.url]);
-                }
-                else {
-                    alert("Error in Loading Data:" + t.result);
-                }
-            }
-            catch (e) {
-                alert(e);
-            }
-        });
-    }
-    labelClickEvent(id) {
-        this.router.navigate(['/pages/schedule/scheInput', { mode: "edit", id: id, returnUrl: this.router.url }]);
-    }
-    CheckAllChanged(e) {
-        this.scheduleService.getCustomerSchedule({ FDate: (e ? new Date(2000, 1, 1) : this.date), CUSTOMER: this.mobile }).subscribe(res => {
-            var response = res.json();
-            if (response.customer != null) {
-                this.schedules = response.schedule;
-                this.Customer.NAME = response.customer.name;
-                this.Customer.MOBILE = response.customer.mobile;
-                console.log(this.Customer);
-            }
-        }, Error => {
-            try {
-                let t = Error.json();
-                //console.log(t);
-                if (t.result == "Authorization Failed") {
-                    this.router.navigate(['/login', this.router.url]);
-                }
-                else {
-                    alert("Error in Loading Data:" + t.result);
-                }
-            }
-            catch (e) {
-                alert(e);
-            }
-        });
-    }
-};
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('CustomerSchedule'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], CustomerAllSchedule.prototype, "childCustomerScheduleModal", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
-    __metadata('design:type', String)
-], CustomerAllSchedule.prototype, "mobile", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
-    __metadata('design:type', Date)
-], CustomerAllSchedule.prototype, "date", void 0);
-CustomerAllSchedule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'customer-all-schedule',
-        styles: [__webpack_require__(1465)],
-        template: __webpack_require__(1592)
-    }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__scheduleInput_service__["a" /* ScheduleInputService */]])
-], CustomerAllSchedule);
-
-
-/***/ }),
-
-/***/ 1535:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return TreatmentEntry; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scheduleInput_service__ = __webpack_require__(1488);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_style_loader_schedule_scss__ = __webpack_require__(1495);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_style_loader_schedule_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_style_loader_schedule_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_repositories_masterRepo_service__ = __webpack_require__(638);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_services_permission__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__CustomerSelect_customerSelect_component__ = __webpack_require__(1530);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_http__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_global_state__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__ = __webpack_require__(101);
 
 
 
@@ -10287,305 +9167,81 @@ CustomerAllSchedule = __decorate([
 
 
 
-
-
-
-let TreatmentEntry = class TreatmentEntry {
-    constructor(_scheduleInputService, router, masterService, elementRef, activatedRoute, _authService, http) {
-        this._scheduleInputService = _scheduleInputService;
-        this.router = router;
-        this.masterService = masterService;
-        this.elementRef = elementRef;
-        this.activatedRoute = activatedRoute;
+let AddDisease = class AddDisease {
+    constructor(_authService, router, activatedRoute, fb, masterRepo, state) {
         this._authService = _authService;
-        this.http = http;
+        this.router = router;
+        this.activatedRoute = activatedRoute;
+        this.fb = fb;
+        this.masterRepo = masterRepo;
+        this.state = state;
         this.DialogMessage = "Saving data please wait ...";
-        this.mode = "";
+        this.mode = "add";
+        this.viewMode = false;
         this.modeTitle = '';
-        this.subcriptions = [];
-        this.user = {};
-        this.SNO = 0;
-        this.prescriptionList = [];
-        this.diseaseList = [];
-        this.medicationList = [];
-        this._prescriptionList = [];
-        this.uploadFilesUrl = [];
-        this.employeeList = [];
-        this.selectedImage = "";
-        this.model = {
-            Patient: {},
-            Healer: {},
-            PatientComplaint: "",
-            TreatmentNotes: "",
+        this.disease = {
+            DISEASEID: "",
+            DESCRIPTION: "",
             Prescriptions: [],
             Medications: [],
-            Diseases: [],
-            EveningPrescriptions: [],
-            TreatmentDocuments: [],
-            FollowUpPeriod: 0,
-            remarks: ""
+            eveningPrescriptions: []
         };
-        this.settings = {
-            mode: 'external',
-            actions: {
-                delete: false,
-                edit: false
-            },
-            view: {
-                viewButtonContent: '<i class="fa  fa-eye"></i>'
-            },
-            pager: {
-                display: true,
-                perPage: 5
-            },
-            columns: {
-                DATE: {
-                    title: 'Date',
-                    type: 'string',
-                    valuePrepareFunction: (data) => {
-                        return data.substring(0, 10);
-                    }
-                },
-                Healer: {
-                    title: 'Staff',
-                    type: 'string',
-                    valuePrepareFunction: (data) => {
-                        return data.NAME;
-                    }
-                },
-            }
-        };
-        this.ckPatientComplaintConfig = {
-            width: '100%',
-            height: 200,
-            allowedContent: false,
-            forcePasteAsPlainText: true,
-            font_names: 'Arial;Times New Roman;Verdana',
-            toolbarGroups: [
-                { name: 'document', groups: ['mode', 'document', 'doctools'] },
-                { name: 'clipboard', groups: ['clipboard', 'undo'] },
-                { name: 'editing', groups: ['find', 'selection', 'spellchecker', 'editing'] },
-                { name: 'forms', groups: ['forms'] },
-                '/',
-                { name: 'basicstyles', groups: ['basicstyles', 'cleanup'] },
-                { name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi', 'paragraph'] },
-                { name: 'links', groups: ['links'] },
-                { name: 'insert', groups: ['insert'] },
-                '/',
-                { name: 'styles', groups: ['styles'] },
-                { name: 'colors', groups: ['colors'] },
-                { name: 'tools', groups: ['tools'] },
-                { name: 'others', groups: ['others'] },
-                { name: 'about', groups: ['about'] }
-            ],
-            removeButtons: 'Source,Save,NewPage,Preview,Print,Templates,Cut,Copy,Paste,PasteText,PasteFromWord,Undo,Redo,Find,Replace,SelectAll,Scayt,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Strike,Subscript,Superscript,CopyFormatting,RemoveFormat,Outdent,Indent,CreateDiv,Blockquote,BidiLtr,BidiRtl,Language,Unlink,Anchor,Image,Flash,Table,HorizontalRule,Smiley,SpecialChar,PageBreak,Iframe,Maximize,ShowBlocks,About'
-        };
-        this.ckNotesRemarksConfig = {
-            width: '100%',
-            height: 150,
-            allowedContent: false,
-            forcePasteAsPlainText: true,
-            font_names: 'Arial;Times New Roman;Verdana',
-            toolbarGroups: [
-                { name: 'document', groups: ['mode', 'document', 'doctools'] },
-                { name: 'clipboard', groups: ['clipboard', 'undo'] },
-                { name: 'editing', groups: ['find', 'selection', 'spellchecker', 'editing'] },
-                { name: 'forms', groups: ['forms'] },
-                '/',
-                { name: 'basicstyles', groups: ['basicstyles', 'cleanup'] },
-                { name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi', 'paragraph'] },
-                { name: 'links', groups: ['links'] },
-                { name: 'insert', groups: ['insert'] },
-                '/',
-                { name: 'styles', groups: ['styles'] },
-                { name: 'colors', groups: ['colors'] },
-                { name: 'tools', groups: ['tools'] },
-                { name: 'others', groups: ['others'] },
-                { name: 'about', groups: ['about'] }
-            ],
-            removeButtons: 'Source,Save,NewPage,Preview,Print,Templates,Cut,Copy,Paste,PasteText,PasteFromWord,Undo,Redo,Find,Replace,SelectAll,Scayt,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Strike,Subscript,Superscript,CopyFormatting,RemoveFormat,Outdent,Indent,CreateDiv,Blockquote,BidiLtr,BidiRtl,Language,Unlink,Anchor,Image,Flash,Table,HorizontalRule,Smiley,SpecialChar,PageBreak,Iframe,Maximize,ShowBlocks,About'
-        };
-        this.ckTreatmentNoteConfig = {
-            width: '100%',
-            height: 200,
-            allowedContent: false,
-            forcePasteAsPlainText: true,
-            font_names: 'Arial;Times New Roman;Verdana',
-            toolbarGroups: [
-                { name: 'document', groups: ['mode', 'document', 'doctools'] },
-                { name: 'clipboard', groups: ['clipboard', 'undo'] },
-                { name: 'editing', groups: ['find', 'selection', 'spellchecker', 'editing'] },
-                { name: 'forms', groups: ['forms'] },
-                '/',
-                { name: 'basicstyles', groups: ['basicstyles', 'cleanup'] },
-                { name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi', 'paragraph'] },
-                { name: 'links', groups: ['links'] },
-                { name: 'insert', groups: ['insert'] },
-                '/',
-                { name: 'styles', groups: ['styles'] },
-                { name: 'colors', groups: ['colors'] },
-                { name: 'tools', groups: ['tools'] },
-                { name: 'others', groups: ['others'] },
-                { name: 'about', groups: ['about'] }
-            ],
-            removeButtons: 'Source,Save,NewPage,Preview,Print,Templates,Cut,Copy,Paste,PasteText,PasteFromWord,Undo,Redo,Find,Replace,SelectAll,Scayt,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Strike,Subscript,Superscript,CopyFormatting,RemoveFormat,Outdent,Indent,CreateDiv,Blockquote,BidiLtr,BidiRtl,Language,Unlink,Anchor,Image,Flash,Table,HorizontalRule,Smiley,SpecialChar,PageBreak,Iframe,Maximize,ShowBlocks,About'
-        };
-        this.rotationAmount = 0;
-        var setting = _authService.getSetting();
-        this.IntegrateTreatmentWithAppointment = setting.IntegrateTreatmentWithAppointment;
+        this.initialTextReadOnly = false;
+        this.prescriptionList = [];
+        this.medicationList = [];
+        this.rategroup = [];
+        this.subcriptions = [];
         if (!!this.activatedRoute.snapshot.params['returnUrl']) {
             this.returnUrl = this.activatedRoute.snapshot.params['returnUrl'];
         }
         if (!!this.activatedRoute.snapshot.params['mode']) {
             this.mode = this.activatedRoute.snapshot.params['mode'];
         }
-        //this.model.DATE = new Date();
-    }
-    ;
-    editList(event) {
-        //console.log(event, "ADDING?!?!?!");
-        var modelHistory;
-        modelHistory = event.data;
-        modelHistory.remarks = event.data.remarks;
-        modelHistory.Healer = event.data.Healer;
-        modelHistory.PatientComplaint = event.data.PatientComplaint;
-        modelHistory.TreatmentNotes = event.data.TreatmentNotes;
-        this.printTreatmentEntry(modelHistory, false);
-        //console.log("THIS.MODEL", this.model)
     }
     ngOnInit() {
-        //this.model.User = this._scheduleInputService.getUser();
-        let sid = this.activatedRoute.snapshot.params['id'];
-        //console.log({ beforeTreatment: this.mode });
-        if (this.mode != 'add') {
-            this.masterService.postmaster(this.mode, { sid: sid }, "/loadTreatmentByScheduleId").subscribe(data => {
-                //console.log(data);
-                if (data.status == 'ok') {
-                    if (data.result != null) {
-                        this.model = data.result;
-                        this.model.remarks = data.result.remarks;
-                    }
+        let self = this;
+        if (this.mode == "edit") {
+            if (!!this.activatedRoute.snapshot.params['id']) {
+                let id = this.activatedRoute.snapshot.params['id'];
+                let loadedValue = this.masterRepo._diseaseList.filter(r => r.DISEASEID == id)[0];
+                if (loadedValue != null) {
+                    this.disease = loadedValue;
                 }
-                else {
-                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
-                    if (data.result._body == "The ConnectionString property has not been initialized.") {
-                        this.router.navigate(['/login', this.router.url]);
-                        return;
-                    }
-                    //Some other issues need to check
-                    //   this.DialogMessage = "Error in Updaing Data:" + data.result._body;
-                    //console.log(data.result._body);
-                    setTimeout(() => {
-                        //     this.childModal.hide();
-                    }, 3000);
-                }
-            }, error => { alert(error); });
-        }
-        this.contentUrl = this.masterService.contentUrl;
-        setTimeout(() => {
-            this.historyChange(this.model.Patient.CUSID);
-            this.PatientComplaint = this.model.PatientComplaint;
-            this.TreatmentNotes = this.model.TreatmentNotes;
-            this.remarks = this.model.remarks;
-            //console.log("MODEL", this.model)
-            //console.log('TREATMENT DOCUMENTS', this.model.TreatmentDocuments);
-            this.model.TreatmentDocuments.forEach(x => {
-                x = this.masterService.contentUrl + x;
-                //console.log('CONTENT URL AND DOCUMENTS', this.masterService.contentUrl, x   )
-                this.uploadFilesUrl.push(x);
-                //console.log("uploadFilesUrl ngOnInit", this.uploadFilesUrl);
-            });
-            if (this.model.Patient.NAME == null && this.IntegrateTreatmentWithAppointment) {
-                this.masterService.postmaster(this.mode, { sid: sid }, "/loadScheduleById").subscribe(data => {
-                    if (data.status == 'ok') {
-                        //console.log(data);
-                        var schedule = data.result;
-                        this.model.Patient = schedule.CUSTOMER;
-                        this.model.Healer = schedule.multipleServiceList[0].EMPLOYEE;
-                        this.model.ScheduleId = sid;
-                        this.model.DATE = schedule.DATE;
-                        this.mode = "add";
-                    }
-                    else {
-                        //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
-                        if (data.result._body == "The ConnectionString property has not been initialized.") {
-                            this.router.navigate(['/login', this.router.url]);
-                            return;
-                        }
-                        //Some other issues need to check
-                        //   this.DialogMessage = "Error in Updaing Data:" + data.result._body;
-                        //console.log(data.result._body);
-                        setTimeout(() => {
-                            //     this.childModal.hide();
-                        }, 3000);
-                    }
-                }, error => { alert(error); });
             }
-        }, 1000);
-        if (this.masterService._medicationList.length > 0) {
-            this.medicationList = this.masterService._medicationList;
+        }
+        if (this.masterRepo._medicationList.length > 0) {
+            this.medicationList = this.masterRepo._medicationList;
         }
         else {
-            this.masterService.getMedicationList().subscribe((data) => {
+            this.masterRepo.getMedicationList().subscribe((data) => {
                 this.medicationList.push(data);
             }, Error => console.log(Error), () => {
-                this.masterService._medicationList = this.medicationList;
+                this.masterRepo._medicationList = this.medicationList;
             });
         }
-        if (this.masterService._diseaseList.length > 0) {
-            this.diseaseList = this.masterService._diseaseList;
+        if (this.masterRepo._prescriptionList.length > 0) {
+            this.prescriptionList = this.masterRepo._prescriptionList;
         }
         else {
-            this.masterService.getDiseaseList().subscribe((data) => {
-                this.diseaseList.push(data);
-            }, Error => console.log(Error), () => {
-                this.masterService._diseaseList = this.diseaseList;
-            });
-        }
-        if (this.masterService._employeeList.length > 0) {
-            this.employeeList = this.masterService._employeeList;
-        }
-        else {
-            this.masterService.getEmployeeList().subscribe((data) => {
-                this.employeeList.push(data);
-            }, Error => console.log(Error), () => {
-                this.masterService._employeeList = this.employeeList;
-            });
-        }
-        if (this.masterService._prescriptionList.length > 0) {
-            this.prescriptionList = this.masterService._prescriptionList;
-        }
-        else {
-            this.masterService.getPrescriptionList().subscribe((data) => {
+            this.masterRepo.getPrescriptionList().subscribe((data) => {
                 this.prescriptionList.push(data);
             }, Error => console.log(Error), () => {
-                this.masterService._prescriptionList = this.prescriptionList;
-            });
-        }
-        if (this.masterService._prescriptionList.length > 0) {
-            this.prescriptionList = this.masterService._prescriptionList;
-        }
-        else {
-            this.masterService.getPrescriptionList().subscribe((data) => {
-                this.prescriptionList.push(data);
-            }, error => console.log(error), () => {
-                this.masterService._prescriptionList = this.prescriptionList;
+                this.masterRepo._prescriptionList = this.prescriptionList;
             });
         }
     }
-    onImageClick($direction) {
-        this.rotationAmount = this.rotationAmount + 90;
-        document.getElementById('image').style.transform = `rotate(${this.rotationAmount}deg)`;
-    }
-    SaveClickEvent() {
-        // // // this.scheduleInput.multipleServiceList = this.multipleServiceList;
-        // // // console.log(this.scheduleInput);
-        if (this.disease && this.disease !== "") {
-            this.DialogMessage = "Please add pending Disease";
-            this.childModal.show();
-            return;
+    disabled() {
+        if (this.viewMode == true) {
+            return "#EBEBE4";
         }
+        else {
+            return "";
+        }
+    }
+    onSave() {
+        //validate before Saving 
         if (this.medication && this.medication !== "") {
+            //console.log(this.medication);
             this.DialogMessage = "Please add pending Medication";
             this.childModal.show();
             return;
@@ -10596,12 +9252,7 @@ let TreatmentEntry = class TreatmentEntry {
             return;
         }
         if (this.eveningPrescription && this.eveningPrescription !== "") {
-            this.DialogMessage = "Please add pending Evening Prescription";
-            this.childModal.show();
-            return;
-        }
-        if (!this.model.Healer || !this.model.Healer.NAME || this.model.Healer.NAME === "") {
-            this.DialogMessage = "Staff is not selected. Please select a staff and try again";
+            this.DialogMessage = "Please add pending evening Prescription";
             this.childModal.show();
             return;
         }
@@ -10609,47 +9260,21 @@ let TreatmentEntry = class TreatmentEntry {
         this.childModal.show();
         this.onsubmit();
     }
-    saveChildModal(replacementEmp) {
-        this.DialogMessage = "Updating Data please wait...";
-        this.childModal.show();
-    }
     hideChildModal() {
         this.childModal.hide();
     }
-    sendEmail(model) {
-        if (confirm("Do you want to send Email?")) {
-            //console.log("CONFIRM SEND EMAIL")
-            this.masterService.sendTreatmentEmai(model);
-        }
-        else {
-        }
-    }
     onsubmit() {
         try {
-            this.model.PatientComplaint = this.PatientComplaint;
-            this.model.TreatmentNotes = this.TreatmentNotes;
-            this.model.remarks;
-            // this.model.Diseases = this.dList;
-            // this.model.Medications = this.mList;
-            //console.log(this.masterService._customerList, "customer list")
-            if (this.mode == 'add') {
-                this.model.Patient.NAME = this.CustomerSelect.CustomerInput;
-                this.model.Patient.MOBILE = this.CustomerSelect.MobileInput;
-            }
-            //console.log(this.model, 'SAVE MODEL');
-            let sub = this.masterService.postform(this.mode, this.model, "/saveTreatment", this.uploadFiles)
+            let disease = this.disease;
+            let sub = this.masterRepo.postmaster(this.mode, disease, "/SaveDisease")
                 .subscribe(data => {
                 if (data.status == 'ok') {
-                    //console.log("data status ok ----", data.status, "------", data)
                     //Displaying dialog message for save with timer of 1 secs
                     this.DialogMessage = "Data Saved Successfully";
                     setTimeout(() => {
                         this.childModal.hide();
-                        this.sendEmail(this.model);
                         this.router.navigate([this.returnUrl]);
                     }, 1000);
-                    //console.log("this.model", this.model);
-                    this.printTreatmentEntry(this.model, true);
                 }
                 else {
                     //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
@@ -10672,89 +9297,23 @@ let TreatmentEntry = class TreatmentEntry {
         }
     }
     onCancel() {
-        let new_date = this.masterService.getDate();
-        this.masterService.saveDate(new_date);
+        //console.log(this.returnUrl)
         this.router.navigate([this.returnUrl]);
     }
-    pcChange() {
-        // alert("editor changed");
-        // console.log("editor changed");
-        //this.model.PatientComplaint = rate;
+    ngOnDestroy() {
+        //if(this.subitSubscription)
+        //  this.subitSubscription.unsubscribe();
+        this.subcriptions.forEach(subs => {
+            subs.unsubscribe();
+        });
     }
-    canBeBillable() {
-        return (new Date() >= new Date(this.model.DATE));
-    }
-    ProceedBill() {
-        alert(this.model.PatientComplaint);
-        //this.scheduleInput.billableSchedule = 1;
-        //this.SaveClickEvent();
-    }
-    DeleteConformation() {
-        this.deleteModal.show();
-    }
-    DeleteEvent() {
-        this.deleteModal.hide();
-        this.DialogMessage = "Deleting this schedule please wait...";
-        this.childModal.show();
-        let sub = this.masterService.postmaster('delete', this.model, "/DeleteSchedule")
-            .subscribe(data => {
-            //console.log(data);
-            if (data.status == 'ok') {
-                this.DialogMessage = "Delete Successfull...";
-                this.childModal.hide();
-                this.router.navigate([this.returnUrl]);
-            }
-            else {
-                //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
-                if (data.result._body == "Authorization Failed") {
-                    this.router.navigate(['/login', this.router.url]);
-                    return;
-                }
-                //Some other issues need to check
-                //console.log(data.result._body);
-                this.childModal.hide();
-            }
-        }, error => { alert(error); });
-    }
-    addDisease(e) {
+    addMedications(e) {
         if (e.target.value !== "") {
-            if (e.key == "Enter") {
-                if (this.model.Diseases == null) {
-                    this.model.Diseases = [];
-                }
-                if (!this.model.Diseases.find(x => x == e.target.value)) {
-                    this.model.Diseases.push(e.target.value);
-                    let disease = this.diseaseList.filter(x => x.DESCRIPTION == e.target.value)[0];
-                    if (disease) {
-                        if (disease.Medications)
-                            disease.Medications.forEach(item => {
-                                if (!this.model.Medications.find(x => x.DESCRIPTION == item.DESCRIPTION))
-                                    this.model.Medications.push(item);
-                            });
-                        if (disease.Prescriptions)
-                            disease.Prescriptions.forEach(item => {
-                                if (!this.model.Prescriptions.find(x => x.DESCA == item.DESCA))
-                                    this.model.Prescriptions.push(item);
-                            });
-                        if (disease.eveningPrescriptions)
-                            disease.eveningPrescriptions.forEach(item => {
-                                if (!this.model.EveningPrescriptions.find(x => x.DESCA == item.DESCA))
-                                    this.model.EveningPrescriptions.push(item);
-                            });
-                    }
-                }
-                e.target.value = "";
-                this.disease = "";
+            if (this.disease.Medications == null) {
+                this.disease.Medications = [];
             }
-        }
-    }
-    addMedication(e) {
-        if (e.target.value !== "") {
-            if (this.model.Medications == null) {
-                this.model.Medications = [];
-            }
-            if (!this.model.Medications.find(x => x.DESCRIPTION == e.target.value))
-                this.model.Medications.push(this.medicationList.find(x => x.DESCRIPTION == e.target.value));
+            if (!this.disease.Medications.find(x => x.DESCRIPTION == e.target.value))
+                this.disease.Medications.push(this.medicationList.find(x => x.DESCRIPTION == e.target.value));
             e.target.value = "";
             this.medication = "";
         }
@@ -10775,356 +9334,42 @@ let TreatmentEntry = class TreatmentEntry {
                 this.eveningPrescription = "";
         }
     }
-    onFileChanged(e) {
-        if (this.model.TreatmentDocuments == null) {
-            this.model.TreatmentDocuments = [];
-        }
-        if (this.uploadFiles == null) {
-            this.uploadFiles = [];
-        }
-        var length = e.target.files.length;
-        //console.log( e, e.target.value )
-        for (var i = 0; i < e.target.files.length; i++) {
-            //console.log('TARGET FILES ', e.target.files[i]);
-            this.uploadFiles.push(e.target.files[i]);
-            //this.model.TreatmentDocuments.push(e.target.value);    
-            var reader = new FileReader();
-            reader.readAsDataURL(e.target.files[i]);
-            reader.onload = (_event) => {
-                var img = reader.result;
-                this.uploadFilesUrl.push(img);
-            };
-        }
-        //console.log(this.uploadFiles, this.uploadFilesUrl);
-    }
-    previewImage(e) {
-        this.selectedImage = e.target.src;
-        this.childPreviewModal.show();
-    }
-    changeImage(e) {
-        this.selectedImage = e.target.src;
-    }
-    nextImage(e) {
-        var index = this.uploadFilesUrl.indexOf(this.selectedImage);
-        //console.log("Inde",index)
-        this.selectedImage = this.uploadFilesUrl[index + 1];
-        //console.log("selectedImage", this.selectedImage)
-    }
-    deleteImage(e) {
-        //console.log("DeleteImage",e);
-        const index = this.model.TreatmentDocuments.indexOf(e);
-        if (index !== -1) {
-            this.model.TreatmentDocuments.splice(index, 1);
-        }
-        //console.log("Docs",this.model.TreatmentDocuments);    
-    }
-    historyChange(event) {
-        const connection = new __WEBPACK_IMPORTED_MODULE_9__angular_http__["e" /* XHRBackend */](new __WEBPACK_IMPORTED_MODULE_9__angular_http__["f" /* BrowserXhr */](), new __WEBPACK_IMPORTED_MODULE_9__angular_http__["g" /* ResponseOptions */](), new __WEBPACK_IMPORTED_MODULE_9__angular_http__["h" /* CookieXSRFStrategy */]());
-        this.http = new __WEBPACK_IMPORTED_MODULE_9__angular_http__["d" /* Http */](connection, this.masterService.getRequestOption());
-        this.historySource = new __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__["ServerDataSource"](this.http, {
-            endPoint: this.masterService.apiUrl + '/getPatientTreatmentHistory?id=' + event,
-            dataKey: 'data.result',
-            pagerPageKey: 'currentPage',
-            pagerLimitKey: 'maxResultCount',
-            totalKey: 'data.total',
-        });
-    }
-    customerChanged(e) {
-        //console.log('new event', e);
-        // this.employeeList.push(e);
-        this.model.Patient = e;
-    }
-    customerWeight(event) {
-        this.newCurrentWeight = event;
-    }
-    headTable() {
-        let thead = "";
-        thead = thead + `THEAD <thead> <th style="height:10px; padding-top:50px;" > fuck you </th> WORK ASSHOLE </thead> `;
-        return thead;
-    }
-    printTreatmentEntry(data, print) {
-        //console.log("printTreatmentEntry Function");
-        let popupWin;
-        let tableData = `<table style='width: 100%;font-size: 12px;
-            border-collapse: collapse;border-top: none;border: none;min-height:500px'>`;
-        let body = this.body(data);
-        let prescriptions = this.prescriptions(data);
-        let medications = this.medications(data);
-        let diseases = this.diseases(data);
-        tableData = tableData + `<tbody>` + body + diseases + medications + prescriptions + this.cautions(data) + this.footer() + `
-        </tbody>` + `</table>`;
-        popupWin = window.open('', '_blank', 'top=0,left=0,height=100%,width=auto');
-        popupWin.document.write(`
-        <html> 
-            <head>
-                <title>Skin Care - Treatment History</title>
-                <style type="text/css">
-                    td{ padding:2px; }
-                    ` + (print ? `@page{
-                        margin-top:50mm
-                    }` : ``) + `
-                </style>
-            </head>
-            <body ` + (print ? `onload="window.print();window.close();"` : ``) + `>
-                ${tableData}
-                <div style="position: fixed;height: 50px;bottom: 0;"></div>
-            </body>
-          </html>`);
-        if (print)
-            popupWin.document.close();
-    }
-    body(data) {
-        let tbody = "";
-        tbody = tbody + `
-
-        <tr>
-            <td colspan='5' style='font-size:14px;'><b>Patient Details</b></td>
-        </tr>
-        <tr>
-            <td colspan='1' style='font-size:12px;'><div style="width:120px">Patient ID</div></td>
-            <td colspan='1' style='font-size:12px;'><b>:&nbsp;${data && data.Patient && data.Patient.CUSID}</b></td>     
-        </tr>
-        <tr>
-            <td colspan='1' style='font-size:12px;'>Patient Name</td>
-            <td colspan='1' style='font-size:12px; Width:40%;'><b>:&nbsp;${data && data.Patient && data.Patient.NAME}</b></td>
-            <td colspan='1' style='width:20%'></td>
-            <td colspan='1' style='font-size:12px;width:100px;'>Mobile No</td>
-            <td colspan='1' style='font-size:12px;; Width:40%;'><b>:&nbsp;${data && data.Patient && data.Patient.MOBILE}</b></td>        
-        </tr>   
-        <tr>
-            <td colspan='1' style='font-size:12px;'>Address</td>
-            <td colspan='1' style='font-size:12px;'><b>:&nbsp;${data && data.Patient && data.Patient.ADDRESS}</b></td>
-            <td colspan='1' style='width:20%'></td>
-            <td colspan='1' style='font-size:12px;'>Patient Age</td>
-            <td colspan='1' style='font-size:12px;'><b>:&nbsp;${data && data.Patient && data.Patient.Age ? data.Patient.Age : ""}</b></td>    
-        </tr>
-        <tr>
-            <td colspan='1' style='font-size:12px;'>Staff</td>
-            <td colspan='1' style='font-size:12px;'><b>:&nbsp;${data && data.Healer && data.Healer.NAME}</b></td>
-            <td colspan='1' style='width:20%'></td>
-            <td colspan='1' style='font-size:12px;'>Weight</td>
-            <td colspan='1' style='font-size:12px;'><b>:&nbsp;${data && data.Patient && data.Patient.Patient_Weight ? data.Patient.Patient_Weight : ""}</b></td>
-        </tr>
-        <tr>
-            <td colspan='5'><div style="height:10px"></div</td>
-        </tr>
-  
-        <tr>
-            <td colspan='3' style='font-size:14px;padding-top:10px;'><b>Patient Complaint</b></td>
-            <td colspan='2' style='font-size:14px;padding-top:10px;'><b>Treatment Notes</b></td>
-        </tr>
-        <tr>
-            <td colspan='3' style='font-size:12px;vertical-align: top;text-indent: 20px;'>${data && data.Patient && data.PatientComplaint}</td>
-            <td colspan='2' style='font-size:12px;vertical-align: top;text-indent: 20px;'>${data && data.Patient && data.TreatmentNotes}</td>
-        </tr>
-        <tr>
-            <td colspan='5'><div style="height:10px"></div</td>
-        </tr>   
-   
-   `;
-        return tbody;
-    }
-    diseases(data) {
-        var row = "";
-        //console.log("data.Diseases", data.Diseases);
-        if (data.Diseases == null) {
-            data.Diseases = [];
-        }
-        if (data.Diseases.length > 0) {
-            row = row + `
-            <tr style="margin-top: 20px" >
-                <td colspan='5' style='font-size:14px;padding-top:10px;'><b>Diagnosis</b></td>
-            </tr>
-            `;
-            for (let i = 0; i < data.Diseases.length; i++) {
-                row = row + `
-            <tr>
-                <td colspan='5' style="text-indent:10px">${i + 1}. ${data.Diseases[i]}</td>
-            <tr>
-            `;
-            }
-        }
-        return row;
-    }
-    medications(data) {
-        var row = "";
-        //console.log("data.Medications", data.Medications);
-        if (data.Medications == null) {
-            data.Medications = [];
-        }
-        if (data.Medications.length > 0) {
-            row = row + `
-            <tr style="margin-top: 10px" >
-                <td colspan='5' style='font-size:14px;padding-top:10px;'><b>Medications </b></td>
-            </tr>
-            `;
-            for (let i = 0; i < data.Medications.length; i++) {
-                row = row + `
-            <tr>
-                <td colspan='5' style="text-indent:10px">${i + 1}. ${data.Medications[i].DESCRIPTION}</td>
-            <tr>
-            <tr>
-                <td colspan='5' style="text-indent:30px"><i>${data.Medications[i].REMARKS ? data.Medications[i].REMARKS : ""}</i></td>
-            <tr>
-            `;
-            }
-        }
-        return row;
-    }
-    prescriptions(data) {
-        var row = "";
-        row = row + `        
-            <tr>
-                <td colspan='2' style='vertical-align:top;border-style:solid;border-width:thin;'>
-                    <table >
-                        <tr>
-                            <td colspan='5' style='font-size:14px;padding-top:10px;'><b>Morning Routine </b></td>
-                        </tr>
-                        ${this.getPrescriptionForPrint(data.Prescriptions)}
-                    </table>
-                </td>
-                <td></td>
-                <td colspan='2' style='vertical-align:top;border-style:solid;border-width:thin;'>
-                    <table>
-                        <tr>
-                            <td colspan='5' style='font-size:14px;padding-top:10px;'><b>Evening Routine </b></td>
-                        </tr>
-                        ${this.getPrescriptionForPrint(data.EveningPrescriptions)}
-                    </table>
-                </td>
-            </tr>
-            `;
-        return row;
-    }
-    getPrescriptionForPrint(data) {
-        var row = "";
-        var hasCautions;
-        if (data == null) {
-            data = [];
-        }
-        if (data.length > 0) {
-            for (let i = 0; i < data.length; i++) {
-                row = row + `
-            <tr>
-                <td colspan='5' style='text-indent:10px'>${i + 1}. ${data[i].DESCA}</td>
-            <tr>
-            <tr>
-                <td colspan='5' style='text-indent:30px'><i>${data[i].directives ? data[i].directives : ""}</i></td>
-            <tr>
-            `;
-            }
-        }
-        return row;
-    }
-    cautions(data) {
-        var row = "";
-        var rn = 1;
-        var cns = [];
-        row = row + `
-            <tr>
-            <td colspan='2' style='font-size:14px;padding-top:10px;'><b>Cautions </b></td>
-            </tr>
-            `;
-        if (data.Prescriptions) {
-            for (let i = 0; i < data.Prescriptions.length; i++) {
-                if (data.Prescriptions[i].cautions && data.Prescriptions[i].cautions !== "" && !cns.find(x => x === data.Prescriptions[i].DESCA)) {
-                    row = row + `
-                    <tr>
-                        <td colspan='5' style='text-indent:10px'>${++rn}. ${data.Prescriptions[i].DESCA} : ${data.Prescriptions[i].cautions ? data.Prescriptions[i].cautions : ""}</td>
-                    <tr>
-                    `;
-                    cns.push(data.Prescriptions[i].DESCA);
-                }
-            }
-        }
-        if (data.EveningPrescriptions) {
-            for (let i = 0; i < data.EveningPrescriptions.length; i++) {
-                if (data.EveningPrescriptions[i].cautions && data.EveningPrescriptions[i].cautions !== "" && !cns.find(x => x === data.EveningPrescriptions[i].DESCA)) {
-                    row = row + `
-                    <tr>
-                        <td colspan='5' style='text-indent:10px'>${++rn}. ${data.EveningPrescriptions[i].DESCA} : ${data.EveningPrescriptions[i].cautions ? data.EveningPrescriptions[i].cautions : ""}</td>
-                    <tr>
-                    `;
-                    cns.push(data.EveningPrescriptions[i].DESCA);
-                }
-            }
-        }
-        return row;
-    }
-    footer() {
-        return `
-            <tr>
-                <td colspan='5' style='font-size:14px;padding-top:10px;'><b>Notes </b></td>
-            </tr>
-            <tr>
-                <td colspan='5' style='text-indent:10px'>Follow up after ${this.getFollowUpLabel(this.model.FollowUpPeriod)}</td>
-            <tr>
-            <tr>
-                <td colspan='5' style='text-indent:10px'>Consultation charge is valid till one month of your previous consultation date.</td>
-            <tr>
-            <tr>
-                <td colspan='5' style='text-indent:10px'>Contact 1 month prior for follow up appointment.</td>
-            <tr>`;
-    }
-    getFollowUpLabel(followUpDays) {
-        const followUpDaysMap = {
-            7: "1 Week",
-            14: "2 Weeks",
-            42: "6 Weeks",
-            30: "1 Month",
-            60: "2 Months",
-            90: "3 Months",
-            180: "6 Months"
-        };
-        const result = followUpDaysMap[followUpDays] || `${followUpDays} Days`; // Default value if no match
-        return result;
-    }
 };
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childPreviewModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], TreatmentEntry.prototype, "childPreviewModal", void 0);
 __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
     __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], TreatmentEntry.prototype, "childModal", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('deleteModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], TreatmentEntry.prototype, "deleteModal", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_8__CustomerSelect_customerSelect_component__["a" /* CustomerSelect */]), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_8__CustomerSelect_customerSelect_component__["a" /* CustomerSelect */])
-], TreatmentEntry.prototype, "CustomerSelect", void 0);
-TreatmentEntry = __decorate([
+], AddDisease.prototype, "childModal", void 0);
+AddDisease = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'treatment',
-        styles: [__webpack_require__(1465)],
-        template: __webpack_require__(1593),
+        selector: 'addDisease',
+        template: __webpack_require__(1558),
+        providers: [],
+        styles: [`
+        input{
+            color: black;
+        }
+    `],
     }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_3__scheduleInput_service__["a" /* ScheduleInputService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_6__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_7__common_services_permission__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_9__angular_http__["d" /* Http */]])
-], TreatmentEntry);
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__app_global_state__["a" /* GlobalState */]])
+], AddDisease);
 
 
 /***/ }),
 
-/***/ 1536:
+/***/ 1499:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return TreatmentDetails; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return DiseaseList; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1379);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_masters_components_smartTables_scss__ = __webpack_require__(1411);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_masters_components_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_masters_components_smartTables_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__ = __webpack_require__(638);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_http__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_jquery__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_jquery__);
 
 
 
@@ -11132,9 +9377,7 @@ TreatmentEntry = __decorate([
 
 
 
-
-
-let TreatmentDetails = class TreatmentDetails {
+let DiseaseList = class DiseaseList {
     constructor(service, _authService, router) {
         this.service = service;
         this._authService = _authService;
@@ -11144,53 +9387,25 @@ let TreatmentDetails = class TreatmentDetails {
         this.settings = {
             mode: 'external',
             columns: {
-                Patient: {
-                    title: 'Patient',
-                    type: 'string',
-                },
-                Healer: {
-                    title: 'Staff',
-                    type: 'string',
-                },
-                Mobile: {
-                    title: 'Mobile',
-                    type: 'string',
-                },
-                DATE: {
-                    title: 'Date',
+                //   ROOMNO: {
+                //     title: 'Room No.',
+                //     type: 'string'
+                //   },
+                DESCRIPTION: {
+                    title: 'Disease Description',
                     type: 'string'
-                },
-                Miti: {
-                    title: 'Miti',
-                    type: 'string'
-                },
-                hasDocument: {
-                    title: 'Has Attachment',
-                    type: 'text',
-                    class: 'centeredColumn'
                 }
             }
         };
         this.subcriptions = [];
-        /*
-        let Clist: Array<Treatment> = [];
-        this.service.getTreatmentList(true).subscribe((data) => {
-          Clist.push(<Treatment>data);
-        },
-          Error => console.log(Error),
-          () => {
-            this.service._treatmentList = Clist;
-            this.source.load(Clist);
-          });
-    */
-        const connection = new __WEBPACK_IMPORTED_MODULE_7__angular_http__["e" /* XHRBackend */](new __WEBPACK_IMPORTED_MODULE_7__angular_http__["f" /* BrowserXhr */](), new __WEBPACK_IMPORTED_MODULE_7__angular_http__["g" /* ResponseOptions */](), new __WEBPACK_IMPORTED_MODULE_7__angular_http__["h" /* CookieXSRFStrategy */]());
-        var http = new __WEBPACK_IMPORTED_MODULE_7__angular_http__["d" /* Http */](connection, this.service.getRequestOption());
-        this.source = new __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__["ServerDataSource"](http, {
-            endPoint: this.service.apiUrl + '/getTreatmentList',
-            dataKey: 'data.result',
-            pagerPageKey: 'currentPage',
-            pagerLimitKey: 'maxResultCount',
-            totalKey: 'data.total',
+        this.source = new __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__["LocalDataSource"]();
+        var Dlist = [];
+        this.service.getDiseaseList().subscribe((data) => {
+            Dlist.push(data);
+            //console.log(Dlist);
+        }, Error => console.log(Error), () => {
+            this.service._diseaseList = Dlist;
+            this.source.load(Dlist);
         });
     }
     setMode() {
@@ -11199,11 +9414,11 @@ let TreatmentDetails = class TreatmentDetails {
         //console.log(this.settings.mode);
     }
     onAddClick() {
-        if (this._authService.getUserProfile()) {
-            this.router.navigate(['/pages/schedule/treatment', { mode: "add", returnUrl: this.router.url }]);
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(['/pages/masters/disease/detail-disease', { mode: "add", returnUrl: this.router.url }]);
         }
         else {
-            this.DialogMessage = "You are not authorized to add Customer.";
+            this.DialogMessage = "You are not authorized to add Room.";
             this.childModal.show();
         }
     }
@@ -11217,41 +9432,32 @@ let TreatmentDetails = class TreatmentDetails {
             try {
                 this.DialogMessage = "Deleting please wait...";
                 this.childModal.show();
-                //console.log("delete",this.selectedRow.data);
-                let sub = this.service.postmaster("delete", { DocumentId: this.selectedRow.data.DocumentId }, "/deleteTreatment")
+                let sub = this.service.postmaster("delete", this.selectedRow.data, "/SaveDisease")
                     .subscribe(data => {
-                    //console.log("sub",sub);
-                    // if (data.status == 'ok') {
-                    //console.log("data", data);
-                    //Displaying dialog message for save with timer of 1 secs
-                    if (data.status == "ok") {
-                        this.DialogMessage = "Data Deleted Successfully";
-                        if (this.service._customerList.length > 0) {
-                            this.service._customerList.splice(this.service._customerList.indexOf(this.selectedRow.data), 1);
-                            this.source.load(this.service._customerList);
+                    if (data.status == 'ok') {
+                        //Displaying dialog message for save with timer of 1 secs
+                        if (this.service._diseaseList.length > 0) {
+                            this.service._diseaseList.splice(this.service._diseaseList.indexOf(this.selectedRow.data), 1);
+                            this.source.load(this.service._diseaseList);
                         }
+                        this.DialogMessage = "Data Deleted Successfully";
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 1000);
                     }
                     else {
-                        var error = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_8_jquery__["parseJSON"])(data.result._body);
-                        this.DialogMessage = error.result;
+                        //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                        if (data.result._body == "The ConnectionString property has not been initialized.") {
+                            this.router.navigate(['/login', this.router.url]);
+                            return;
+                        }
+                        //Some other issues need to check
+                        this.DialogMessage = "Error in Deleting Data:" + data.result._body;
+                        //console.log(data.result._body);
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 3000);
                     }
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                    // }
-                    // else {
-                    //   //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
-                    //   if (data.result._body == "The ConnectionString property has not been initialized.") {
-                    //     this.router.navigate(['/login', this.router.url]);
-                    //     return;
-                    //   }
-                    //   //Some other issues need to check
-                    //   this.DialogMessage = "Error in Deleting Data:" + data.result._body;
-                    //   console.log(data.result._body);
-                    //   setTimeout(() => {
-                    //     this.childModal.hide();
-                    //   }, 3000)
-                    // }
                 }, error => { alert(error); });
                 this.subcriptions.push(sub);
             }
@@ -11260,59 +9466,294 @@ let TreatmentDetails = class TreatmentDetails {
             }
         }
         else {
-            this.DialogMessage = "You are not authorize to delete the customer";
+            this.DialogMessage = "You are not authorized to delete  disease.";
             this.childModal.show();
         }
     }
-    onViewClick(event) {
-        this.router.navigate(["/pages/schedule/treatment", { id: event.data.DocumentId, mode: "view", returnUrl: this.router.url }]);
-    }
     onEditClick(event) {
-        // if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
-        //   this.router.navigate(["/pages/schedule/treatment", { id: event.data.DocumentId, mode: "edit", returnUrl: this.router.url }])
-        // } else {
-        //   this.DialogMessage = "You are not authorized to edit Customer."
-        //   this.childModal.show();
-        // }
-        this.router.navigate(["/pages/schedule/treatment", { id: event.data.DocumentId, mode: "edit", returnUrl: this.router.url }]);
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            //console.log("edit",event.data);
+            this.router.navigate(["/pages/masters/disease/detail-disease", { id: event.data.DISEASEID, mode: "edit", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to edit disease.";
+            this.childModal.show();
+        }
     }
 };
 __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
     __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
-], TreatmentDetails.prototype, "childModal", void 0);
+], DiseaseList.prototype, "childModal", void 0);
 __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('deleteModal'), 
     __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
-], TreatmentDetails.prototype, "deleteModal", void 0);
-TreatmentDetails = __decorate([
+], DiseaseList.prototype, "deleteModal", void 0);
+DiseaseList = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'treatment-details',
-        template: __webpack_require__(1594),
-        styles: [__webpack_require__(1465)],
+        selector: 'diseaselist',
+        template: __webpack_require__(1559),
         providers: [],
     }), 
     __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_6__angular_router__["b" /* Router */]])
-], TreatmentDetails);
+], DiseaseList);
 
 
 /***/ }),
 
-/***/ 1537:
+/***/ 1500:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return TreatmentList; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AddEmployee; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_global_state__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__ = __webpack_require__(101);
+
+
+
+
+
+
+
+let AddEmployee = class AddEmployee {
+    constructor(_authService, router, activatedRoute, fb, masterRepo, state) {
+        this._authService = _authService;
+        this.router = router;
+        this.activatedRoute = activatedRoute;
+        this.fb = fb;
+        this.masterRepo = masterRepo;
+        this.state = state;
+        this.DialogMessage = "Saving data please wait ...";
+        this.mode = "";
+        this.modeTitle = '';
+        this.subcriptions = [];
+        this.employeeObj = { OFFDAY: [] };
+        this.Days = [{ day: 'sunday', checked: false },
+            { day: 'monday', checked: false },
+            { day: 'tuesday', checked: false },
+            { day: 'wednesday', checked: false },
+            { day: 'thursday', checked: false },
+            { day: 'friday', checked: false },
+            { day: 'saturday', checked: false }];
+        this.disableForm = false;
+        if (!!this.activatedRoute.snapshot.params['returnUrl']) {
+            this.returnUrl = this.activatedRoute.snapshot.params['returnUrl'];
+        }
+        if (!!this.activatedRoute.snapshot.params['mode']) {
+            this.mode = this.activatedRoute.snapshot.params['mode'];
+        }
+        if (_authService.getUserProfile() && _authService.getUserProfile().Role == "admin") {
+            this.disableForm = false;
+        }
+        else {
+            this.disableForm = true;
+        }
+        if (this.mode == "view") {
+            this.disableForm = true;
+        }
+    }
+    ngOnInit() {
+        let self = this;
+        this.form = this.fb.group({
+            EMPLOYEEID: [''],
+            NAME: [''],
+            ADDRESS: [''],
+            TELNO: [''],
+            MOBILE: [''],
+            DESIGNATION: [''],
+            OFFDAY: [''],
+            EMERGENCYCONTACTNAME: [''],
+            EMERGENCYCONTACTNO: [''],
+            Inactive: ['']
+        });
+        if (this.mode == 'edit') {
+            if (!!this.activatedRoute.snapshot.params['id']) {
+                let id = this.activatedRoute.snapshot.params['id'];
+                let loadedValue = this.masterRepo._employeeList.filter(r => r.EMPLOYEEID == id)[0];
+                if (loadedValue != null) {
+                    this.form.setValue({
+                        EMPLOYEEID: loadedValue.EMPLOYEEID,
+                        NAME: loadedValue.NAME,
+                        ADDRESS: loadedValue.ADDRESS,
+                        TELNO: loadedValue.TELNO,
+                        MOBILE: loadedValue.MOBILE,
+                        DESIGNATION: loadedValue.DESIGNATION,
+                        OFFDAY: loadedValue.OFFDAY,
+                        EMERGENCYCONTACTNAME: loadedValue.EMERGENCYCONTACTNAME,
+                        EMERGENCYCONTACTNO: loadedValue.EMERGENCYCONTACTNO,
+                        Inactive: loadedValue.Inactive
+                    });
+                    for (let d of this.Days) {
+                        d.checked = loadedValue.OFFDAY.indexOf(d.day) > -1;
+                    }
+                }
+            }
+        }
+        //     this.addDivisionService.getDivision(initial)
+        //         .subscribe(data => {
+        //             if (data.status == 'ok') {
+        //                 this.form.setValue({
+        //                     ID : data.result.ID || '',
+        //                     INITIAL : data.result.INITIAL,
+        //                     NAME : data.result.NAME,
+        //                     RATEGROUPID : data.result.RATEGROUPID || 0,
+        //                 });
+        //                 if(this.activatedRoute.snapshot.params['mode'] == null){
+        //                     self.modeTitle = "Edit Division";
+        //                     if(this._authService.checkMenuRight("divisions", "edit") == false){
+        //                         this.router.navigate(['pages/masters/divisions/']);
+        //                     }
+        //                 }else if(this.activatedRoute.snapshot.params['mode'] == "view"){
+        //                     self.modeTitle = "View Division";
+        //                     if(this._authService.checkMenuRight("divisions", "view") == false){
+        //                         this.router.navigate(['pages/masters/divisions/']);
+        //                     }
+        //                 }
+        //                 self.mode = 'edit';
+        //                 self.initialTextReadOnly = true;
+        //             }
+        //             else {
+        //                 this.mode = '';
+        //                 this.modeTitle = "Edit -Error in Division";
+        //                 this.initialTextReadOnly = true;
+        //             }
+        //         }, error => {
+        //             this.mode = '';
+        //             this.modeTitle = "Edit2 -Error in Division";
+        //         }
+        //         )
+        // }
+        // else {
+        //     this.mode = "add";
+        //     this.modeTitle = "Add Division";
+        //     this.initialTextReadOnly = false;
+        //     if(this._authService.checkMenuRight("divisions", "add") == false){
+        //         this.router.navigate(['pages/masters/divisions/']);
+        //     }
+        // //this.model.id = this.returnUrl;
+        // //console.log(this.division.INITIAL);
+        // let v = self.division;
+        // //console.log(v.INITIAL);
+    }
+    disabled() {
+        if (this.mode == 'view') {
+            return "#EBEBE4";
+        }
+        else {
+            return "";
+        }
+    }
+    changeToArray(data) {
+        //console.log(data);
+        if (data) {
+            let retData = [];
+            retData.concat([], data);
+            return retData;
+        }
+        return [];
+    }
+    onSave() {
+        //validate before Saving
+        this.DialogMessage = "Saving Data please wait...";
+        this.childModal.show();
+        this.onsubmit();
+    }
+    hideChildModal() {
+        this.childModal.hide();
+    }
+    onsubmit() {
+        try {
+            let offDays = [];
+            for (let d of this.Days) {
+                if (d.checked) {
+                    offDays.push(d.day);
+                }
+            }
+            this.form.controls['OFFDAY'].setValue(offDays);
+            let emp = this.form.value;
+            //console.log("saved list");
+            //console.log(emp);
+            let sub = this.masterRepo.postmaster(this.mode, emp, "/SaveEmployee")
+                .subscribe(data => {
+                if (data.status == 'ok') {
+                    //Displaying dialog message for save with timer of 1 secs
+                    this.DialogMessage = "Data Saved Successfully";
+                    setTimeout(() => {
+                        this.childModal.hide();
+                        this.router.navigate([this.returnUrl]);
+                    }, 1000);
+                }
+                else {
+                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                    if (data.result._body == "The ConnectionString property has not been initialized.") {
+                        this.router.navigate(['/login', this.router.url]);
+                        return;
+                    }
+                    //Some other issues need to check
+                    this.DialogMessage = "Error in Saving Data:" + data.result._body;
+                    //console.log(data.result._body);
+                    setTimeout(() => {
+                        this.childModal.hide();
+                    }, 3000);
+                }
+            }, error => { alert(error); });
+            this.subcriptions.push(sub);
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    onCancel() {
+        this.router.navigate([this.returnUrl]);
+    }
+    ngOnDestroy() {
+        //if(this.subitSubscription)
+        //  this.subitSubscription.unsubscribe();
+        this.subcriptions.forEach(subs => {
+            subs.unsubscribe();
+        });
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
+], AddEmployee.prototype, "childModal", void 0);
+AddEmployee = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'addEmployee',
+        template: __webpack_require__(1560),
+        providers: [],
+        styles: [`
+        input{
+            color: black;
+        }
+    `],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__app_global_state__["a" /* GlobalState */]])
+], AddEmployee);
+
+
+/***/ }),
+
+/***/ 1501:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return EmployeeList; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1379);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_masters_components_smartTables_scss__ = __webpack_require__(1411);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_masters_components_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_masters_components_smartTables_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__ = __webpack_require__(638);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common__ = __webpack_require__(41);
 
 
 
@@ -11320,8 +9761,7 @@ TreatmentDetails = __decorate([
 
 
 
-
-let TreatmentList = class TreatmentList {
+let EmployeeList = class EmployeeList {
     constructor(service, _authService, router) {
         this.service = service;
         this._authService = _authService;
@@ -11330,79 +9770,42 @@ let TreatmentList = class TreatmentList {
         this.DialogMessage = "You are not authorized";
         this.settings = {
             mode: 'external',
-            edit: {
-                editButtonContent: '<i class="fa  fa-pencil"></i>'
-            },
-            view: {
-                viewButtonContent: '<i class="fa  fa-eye"></i>'
-            },
             delete: {
                 deleteButtonContent: '<i class="ion-trash-a"></i>',
                 confirmDelete: true
             },
             columns: {
-                Patient: {
-                    title: 'Patient',
-                    type: 'string',
-                    valuePrepareFunction: (Patient) => {
-                        return Patient.NAME;
-                    },
-                    filterFunction: (Patient, search) => {
-                        if (search.length > 0) {
-                            return Patient.NAME.toLowerCase().match(search.toLowerCase());
-                        }
-                        else {
-                            return Patient.NAME;
-                        }
-                    }
+                NAME: {
+                    title: 'Name',
+                    type: 'string'
                 },
-                Healer: {
-                    title: 'Staff',
-                    type: 'string',
-                    valuePrepareFunction: (Patient) => {
-                        return Patient.NAME;
-                    },
-                    filterFunction: (Patient, search) => {
-                        if (search.length > 0) {
-                            return Patient.NAME.toLowerCase().match(search.toLowerCase());
-                        }
-                        else {
-                            return Patient.NAME;
-                        }
-                    }
+                ADDRESS: {
+                    title: 'Address',
+                    type: 'string'
                 },
-                Mobile: {
-                    title: 'Mobile',
-                    type: 'string',
+                TELNO: {
+                    title: 'Tel No.',
+                    type: 'string'
+                },
+                DESIGNATION: {
+                    title: 'Designation',
+                    type: 'string'
+                },
+                OFFDAY: {
+                    title: 'Off Day',
+                    type: 'string'
                 },
             }
         };
         this.subcriptions = [];
         this.source = new __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__["LocalDataSource"]();
-        let Clist = [];
-        if (this.service.selected_Date != null) {
-            //console.log('VALIDATED');
-            // var date = new DatePipe("en-US").transform(Date.now(), "MM/dd/yyyy");
-            //console.log(this.service.selected_Date, typeof this.service.selected_Date);
-            var date = this.service.getDate();
-            //console.log('saveDate',date,typeof date)
-            this.service.getTreatmentListDetails(encodeURIComponent(date)).subscribe((data) => {
-                Clist.push(data);
-            }, Error => console.log(Error), () => {
-                //console.log(Clist, "CLIST NG2")
-                this.service._treatmentList = Clist;
-                this.source.load(Clist);
-            });
-        }
-        else {
-            var date = new __WEBPACK_IMPORTED_MODULE_7__angular_common__["DatePipe"]("en-US").transform(Date.now(), "MM/dd/yyyy");
-            this.service.getTreatmentListDetails(encodeURIComponent(date)).subscribe((data) => {
-                Clist.push(data);
-            }, Error => console.log(Error), () => {
-                this.service._treatmentList = Clist;
-                this.source.load(Clist);
-            });
-        }
+        let elist = [];
+        this.service.getEmployeeList(true).subscribe((data) => {
+            elist.push(data);
+        }, Error => console.log(Error), () => {
+            this.service._employeeList = elist;
+            this.source.load(elist);
+        });
     }
     setMode() {
         // this.divService.create();
@@ -11410,11 +9813,11 @@ let TreatmentList = class TreatmentList {
         //console.log(this.settings.mode);
     }
     onAddClick() {
-        if (this._authService.getUserProfile()) {
-            this.router.navigate(['/pages/schedule/treatment', { mode: "add", returnUrl: this.router.url }]);
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(['/pages/masters/emp/detail-emp', { mode: "add", returnUrl: this.router.url }]);
         }
         else {
-            this.DialogMessage = "You are not authorized to add Customer.";
+            this.DialogMessage = "You are not authorized to add Employee.";
             this.childModal.show();
         }
     }
@@ -11428,38 +9831,32 @@ let TreatmentList = class TreatmentList {
             try {
                 this.DialogMessage = "Deleting please wait...";
                 this.childModal.show();
-                let sub = this.service.postmaster("delete", this.selectedRow.data, "/deleteTreatment")
+                let sub = this.service.postmaster("delete", this.selectedRow.data, "/SaveEmployee")
                     .subscribe(data => {
-                    // if (data.status == 'ok') {
-                    //console.log("data", data);
-                    //Displaying dialog message for save with timer of 1 secs
-                    if (data.status == "ok") {
-                        this.DialogMessage = "Data Deleted Successfully";
-                        if (this.service._customerList.length > 0) {
-                            this.service._customerList.splice(this.service._customerList.indexOf(this.selectedRow.data), 1);
-                            this.source.load(this.service._customerList);
+                    if (data.status == 'ok') {
+                        if (this.service._employeeList.length > 0) {
+                            this.service._employeeList.splice(this.service._employeeList.indexOf(this.selectedRow.data), 1);
+                            this.source.load(this.service._employeeList);
                         }
+                        //Displaying dialog message for save with timer of 1 secs
+                        this.DialogMessage = "Data Deleted Successfully";
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 1000);
                     }
                     else {
-                        this.DialogMessage = "An appointment has already been booked for this customer and cannot be deleted.";
+                        //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                        if (data.result._body == "The ConnectionString property has not been initialized.") {
+                            this.router.navigate(['/login', this.router.url]);
+                            return;
+                        }
+                        //Some other issues need to check
+                        this.DialogMessage = "Error in Deleting Data:" + data.result._body;
+                        //console.log(data.result._body);
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 3000);
                     }
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                    // }
-                    // else {
-                    //   //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
-                    //   if (data.result._body == "The ConnectionString property has not been initialized.") {
-                    //     this.router.navigate(['/login', this.router.url]);
-                    //     return;
-                    //   }
-                    //   //Some other issues need to check
-                    //   this.DialogMessage = "Error in Deleting Data:" + data.result._body;
-                    //   console.log(data.result._body);
-                    //   setTimeout(() => {
-                    //     this.childModal.hide();
-                    //   }, 3000)
-                    // }
                 }, error => { alert(error); });
                 this.subcriptions.push(sub);
             }
@@ -11468,320 +9865,2508 @@ let TreatmentList = class TreatmentList {
             }
         }
         else {
-            this.DialogMessage = "You are not authorize to delete the customer";
+            this.DialogMessage = "You are not authorized to delete the Employee..";
             this.childModal.show();
         }
     }
     onViewClick(event) {
-        this.router.navigate(["/pages/schedule/treatment", { id: event.data.DocumentId, mode: "view", returnUrl: this.router.url }]);
+        this.router.navigate(["/pages/masters/emp/detail-emp", { mode: "view", returnUrl: this.router.url, id: event.data.EMPLOYEEID }]);
     }
     onEditClick(event) {
         if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
-            this.router.navigate(["/pages/schedule/treatment", { id: event.data.DocumentId, mode: "edit", returnUrl: this.router.url }]);
+            this.router.navigate(["/pages/masters/emp/detail-emp", { mode: "edit", returnUrl: this.router.url, id: event.data.EMPLOYEEID }]);
         }
         else {
-            this.DialogMessage = "You are not authorized to edit Customer.";
+            this.DialogMessage = "You are not authorized to edit employee.";
             this.childModal.show();
         }
-    }
-    OnDateChangeEvent(v) {
-        let Clist = [];
-        //console.log('Before v:',v,typeof v);
-        // var date = new DatePipe("en-US").transform(v, "MM/dd/yyyy"); 
-        //console.log('After v:',v,typeof v);
-        // this.service.saveDate(date);
-        var date = v;
-        //console.log('before date:',date,typeof date)
-        this.service.saveDate(date);
-        this.service.getTreatmentListDetails(encodeURIComponent(date)).subscribe((data) => {
-            Clist.push(data);
-        }, Error => console.log(Error), () => {
-            this.service._treatmentList = Clist;
-            this.source.load(Clist);
-        });
     }
 };
 __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
     __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
-], TreatmentList.prototype, "childModal", void 0);
+], EmployeeList.prototype, "childModal", void 0);
 __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('deleteModal'), 
     __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
-], TreatmentList.prototype, "deleteModal", void 0);
-TreatmentList = __decorate([
+], EmployeeList.prototype, "deleteModal", void 0);
+EmployeeList = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'treatment-list',
-        template: __webpack_require__(1595),
+        selector: 'employeelist',
+        template: __webpack_require__(1561),
         providers: [],
     }), 
     __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_6__angular_router__["b" /* Router */]])
-], TreatmentList);
+], EmployeeList);
 
 
 /***/ }),
 
-/***/ 1538:
+/***/ 1502:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return Schedule; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AddHolidayComponent; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_repositories__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__(41);
+
+
+
+
+
+
+let AddHolidayComponent = class AddHolidayComponent {
+    constructor(activatedRoute, router, masterRepo, disableDateService, datePipe) {
+        this.activatedRoute = activatedRoute;
+        this.router = router;
+        this.masterRepo = masterRepo;
+        this.disableDateService = disableDateService;
+        this.datePipe = datePipe;
+        this.DialogMessage = "Saving data please wait ...";
+        this.employeeList = [];
+        this.selectedEmployees = [];
+        this.modeTitle = "";
+        this.IsMultipleDays = false;
+        this.IsTimeWise = false;
+        this.IsEmpWise = false;
+        this.mode = "add";
+        this.holiday = {};
+        this.valid = true;
+        this.adisable = new Date('2077-12-09');
+        this.subscription = [];
+        this.options = {
+            disableDaysAfter: 3,
+            disableDaysBefore: 3
+        };
+        if (!!this.activatedRoute.snapshot.params['returnUrl']) {
+            this.returnUrl = this.activatedRoute.snapshot.params['returnUrl'];
+        }
+        if (!!this.activatedRoute.snapshot.params['mode']) {
+            this.mode = this.activatedRoute.snapshot.params['mode'];
+        }
+    }
+    ngOnInit() {
+        //console.log('MODE',this.mode)
+        if (this.masterRepo._employeeList.length > 0) {
+            this.employeeList = this.masterRepo._employeeList;
+        }
+        else {
+            this.masterRepo.getEmployeeList().subscribe((data) => {
+                this.employeeList.push(data);
+            }, Error => console.log(Error), () => {
+                this.masterRepo._employeeList = this.employeeList;
+            });
+        }
+        if (this.mode == "edit") {
+            if (!!this.activatedRoute.snapshot.params['id']) {
+                let id = this.activatedRoute.snapshot.params['id'];
+                let loadedValue = this.masterRepo._holidayList.filter(r => r.HOLIDAYID == id)[0];
+                //console.log('LOADED VALUE', loadedValue)
+                if (loadedValue != null) {
+                    this.holiday.HOLIDAYID = loadedValue.HOLIDAYID;
+                    this.holidayName = loadedValue.DESCRIPTION;
+                    //console.log('LOADED VALUE',loadedValue)
+                    if (loadedValue.BEGINDATE == loadedValue.ENDDATE) {
+                        this.IsMultipleDays = false;
+                        this.ScheduleDateAD = this.datePipe.transform(loadedValue.BEGINDATE, 'yyyy-MM-dd').toString();
+                        this.changeOnDate(this.ScheduleDateAD, 'AD');
+                    }
+                    else {
+                        this.IsMultipleDays = true;
+                        // this.fromDate = loadedValue.BEGINDATE.toString();
+                        // this.toDate = loadedValue.ENDDATE.toString();
+                        this.fromDate = this.datePipe.transform(loadedValue.BEGINDATE, 'yyyy-MM-dd').toString();
+                        this.toDate = this.datePipe.transform(loadedValue.ENDDATE, 'yyyy-MM-dd');
+                        this.changeFromDate(this.fromDate, 'AD');
+                        this.changeToDate(this.toDate, 'AD');
+                    }
+                    if (loadedValue.StartTime && loadedValue.EndTime) {
+                        this.IsTimeWise = true;
+                        this.StartTime = loadedValue.StartTime;
+                        this.EndTime = loadedValue.EndTime;
+                    }
+                    if (loadedValue.EmployeeList) {
+                        this.IsEmpWise = true;
+                        this.selectedEmployees = this.employeeList.filter(x => loadedValue.EmployeeList.some(y => y === x.EMPLOYEEID));
+                    }
+                }
+            }
+        }
+        this.onEmpWiseChange();
+    }
+    onSave() {
+        this.DialogMessage = "Saving data please wait ...";
+        this.childModal.show();
+        this.onSubmit();
+    }
+    changeOnDate(value, format) {
+        if (format == "AD") {
+            this.ScheduleDateBS = this.masterRepo.toBSDate(value);
+        }
+        else if (format == "BS") {
+            this.ScheduleDateAD = this.masterRepo.toADDate(value);
+        }
+    }
+    changeFromDate(value, format) {
+        if (format == "AD") {
+            this.fromDateBS = this.masterRepo.toBSDate(value);
+        }
+        else if (format == "BS") {
+            this.fromDate = this.masterRepo.toADDate(value);
+        }
+    }
+    changeToDate(value, format) {
+        if (format == "AD") {
+            this.toDateBS = this.masterRepo.toBSDate(value);
+        }
+        else if (format == "BS") {
+            this.toDate = this.masterRepo.toADDate(value);
+        }
+    }
+    onSubmit() {
+        try {
+            this.holiday.DESCRIPTION = this.holidayName;
+            if (!this.IsMultipleDays) {
+                let newOnDate = new Date(this.ScheduleDateAD);
+                this.holiday.BEGINDATE = newOnDate;
+            }
+            else {
+                let newFromDate = new Date(this.fromDate);
+                let newToDate = new Date(this.toDate);
+                this.holiday.BEGINDATE = newFromDate;
+                this.holiday.ENDDATE = newToDate;
+            }
+            //console.log('HOLIDAY MODEL AND DATA',this.holiday, this.onDate, this.toDate, this.fromDate);
+            if (!this.IsMultipleDays) {
+                let newEndDate = new Date(this.ScheduleDateAD);
+                this.holiday.ENDDATE = newEndDate;
+                //console.log('SINGLE')
+                if (this.ScheduleDateAD == undefined || this.ScheduleDateAD == null) {
+                    this.valid = false;
+                }
+            }
+            else if (this.IsMultipleDays) {
+                //console.log('MULTIPLE')
+                if (this.toDate == undefined || this.fromDate == undefined) {
+                    this.valid = false;
+                }
+            }
+            else {
+                this.valid = false;
+            }
+            if (this.holidayName == null || this.holidayName == undefined || this.holidayName == "") {
+                this.valid = false;
+            }
+            if (this.IsTimeWise) {
+                if (this.validateTime()) {
+                    this.holiday.StartTime = this.StartTime;
+                    this.holiday.EndTime = this.EndTime;
+                }
+                else {
+                    return;
+                }
+            }
+            if (this.IsEmpWise) {
+                this.holiday.EmployeeList = this.selectedEmployees.map(x => x.EMPLOYEEID);
+            }
+            //console.log(this.holiday);
+            if (this.valid == true) {
+                //if (false) {
+                let sub = this.masterRepo.postmaster(this.mode, this.holiday, "/SaveHoliday")
+                    .subscribe(data => {
+                    if (data.status == 'ok') {
+                        //Displaying dialog message for save with timer of 1 secs
+                        this.DialogMessage = "Data Saved Successfully";
+                        setTimeout(() => {
+                            this.childModal.hide();
+                            this.router.navigate([this.returnUrl]);
+                        }, 1000);
+                    }
+                    else {
+                        //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                        if (data.result._body == "The ConnectionString property has not been initialized.") {
+                            this.router.navigate(['/login', this.router.url]);
+                            return;
+                        }
+                        //Some other issues need to check
+                        this.DialogMessage = "Error in Saving Data:" + data.result._body;
+                        //console.log(data.result._body);
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 3000);
+                    }
+                }, error => { alert(error); });
+                (() => {
+                    //SEND TO NEPALIDATE PICKER FOR DISABLE
+                    this.disableDateService.getDisableDates();
+                    this.subscription.push(sub);
+                });
+            }
+            else {
+                this.DialogMessage = "Form is Invalid";
+                this.childModal.show();
+            }
+        }
+        catch (e) {
+            console.log(e);
+        }
+    }
+    hideChildModal() {
+        this.childModal.hide();
+    }
+    onCancel() {
+        this.router.navigate([this.returnUrl]);
+    }
+    validateTime() {
+        if (!(this.StartTime && this.EndTime)) {
+            this.DialogMessage = "Please select the time";
+            this.childModal.show();
+            return false;
+        }
+        else if (this.StartTime > this.EndTime) {
+            this.DialogMessage = "End time is earlier than Start Time";
+            this.childModal.show();
+            return false;
+        }
+        return true;
+    }
+    onEmpWiseChange() {
+        setTimeout(() => {
+            MultiselectDropdown(null);
+        }, 1);
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], AddHolidayComponent.prototype, "childModal", void 0);
+AddHolidayComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'add-holiday',
+        template: __webpack_require__(1562),
+        providers: [__WEBPACK_IMPORTED_MODULE_5__angular_common__["DatePipe"]]
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__common_repositories__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__common_services_disable_date_picker_disable_date_picker_service__["a" /* DisableDateService */], __WEBPACK_IMPORTED_MODULE_5__angular_common__["DatePipe"]])
+], AddHolidayComponent);
+
+
+/***/ }),
+
+/***/ 1503:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return HolidayEntryComponent; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission__ = __webpack_require__(221);
+
+
+
+
+
+
+
+
+let HolidayEntryComponent = class HolidayEntryComponent {
+    constructor(_authService, router, service, datePipe) {
+        this._authService = _authService;
+        this.router = router;
+        this.service = service;
+        this.datePipe = datePipe;
+        this.DialogMessage = "You are not authorized";
+        this.subcriptions = [];
+        this.settings = {
+            mode: 'external',
+            columns: {
+                // ROOMNO: {
+                //   title: 'Room No.',
+                //   type: 'string'
+                // },
+                DESCRIPTION: {
+                    title: 'Holiday Description',
+                    type: 'string'
+                },
+                BEGINDATE: {
+                    title: 'From/On Date',
+                    valuePrepareFunction: (date) => {
+                        var raw = new Date(date);
+                        var formatted = this.datePipe.transform(raw, 'dd MMM yyyy');
+                        return formatted;
+                    },
+                    type: 'date'
+                },
+                ENDDATE: {
+                    title: 'To Date',
+                    valuePrepareFunction: (date) => {
+                        var raw = new Date(date);
+                        var formatted = this.datePipe.transform(raw, 'dd MMM yyyy');
+                        return formatted;
+                    },
+                    type: 'date'
+                }
+            }
+        };
+        var Hlist = [];
+        this.service.getHolidayList().subscribe((data) => {
+            Hlist.push(data);
+            //console.log("data",Hlist)
+        }, Error => console.log(Error), () => {
+            this.service._holidayList = Hlist;
+            //console.log(Hlist);
+            // this.source.load(Hlist);
+            this.source = new __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__["LocalDataSource"](Hlist);
+        });
+    }
+    onAddClick() {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(['/pages/masters/holiday/detail-holiday', { mode: "add", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to add Medication.";
+            this.childModal.show();
+        }
+    }
+    onEditClick(event) {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            //console.log("ID OF HOLIDAY", event.data.HOLIDAYID)
+            this.router.navigate(["/pages/masters/holiday/detail-holiday", { id: event.data.HOLIDAYID, mode: "edit", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to edit room.";
+            this.childModal.show();
+        }
+    }
+    onDeleteConfirm(event) {
+        this.selectedRow = event;
+        this.deleteModal.show();
+    }
+    DeleteEvent() {
+        this.deleteModal.hide();
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            try {
+                this.DialogMessage = "Deleting please wait...";
+                this.childModal.show();
+                let sub = this.service.postmaster("delete", this.selectedRow.data, "/SaveHoliday")
+                    .subscribe(data => {
+                    if (data.status == 'ok') {
+                        //Displaying dialog message for save with timer of 1 secs
+                        if (this.service._holidayList.length > 0) {
+                            this.service._holidayList.splice(this.service._holidayList.indexOf(this.selectedRow.data), 1);
+                            this.source.load(this.service._holidayList);
+                        }
+                        this.DialogMessage = "Data Deleted Successfully";
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 1000);
+                    }
+                    else {
+                        //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                        if (data.result._body == "The ConnectionString property has not been initialized.") {
+                            this.router.navigate(['/login', this.router.url]);
+                            return;
+                        }
+                        //Some other issues need to check
+                        this.DialogMessage = "Error in Deleting Data:" + data.result._body;
+                        //console.log(data.result._body);
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 3000);
+                    }
+                }, error => { alert(error); });
+                this.subcriptions.push(sub);
+            }
+            catch (e) {
+                alert(e);
+            }
+        }
+        else {
+            this.DialogMessage = "You are not authorized to delete  room.";
+            this.childModal.show();
+        }
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_3_ng2_bootstrap__["b" /* ModalDirective */])
+], HolidayEntryComponent.prototype, "childModal", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewChild"])('deleteModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_3_ng2_bootstrap__["b" /* ModalDirective */])
+], HolidayEntryComponent.prototype, "deleteModal", void 0);
+HolidayEntryComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
+        selector: 'holiday-entry',
+        template: __webpack_require__(1563),
+        providers: [__WEBPACK_IMPORTED_MODULE_0__angular_common__["DatePipe"]]
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__common_services_permission__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_0__angular_common__["DatePipe"]])
+], HolidayEntryComponent);
+
+
+/***/ }),
+
+/***/ 1504:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AddMedication; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__global_state__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__ = __webpack_require__(101);
+
+
+
+
+
+
+
+let AddMedication = class AddMedication {
+    constructor(_authService, router, activatedRoute, fb, masterRepo, state) {
+        this._authService = _authService;
+        this.router = router;
+        this.activatedRoute = activatedRoute;
+        this.fb = fb;
+        this.masterRepo = masterRepo;
+        this.state = state;
+        this.DialogMessage = "Saving data please wait ...";
+        this.mode = "add";
+        this.viewMode = false;
+        this.modeTitle = '';
+        this.medication = {};
+        this.initialTextReadOnly = false;
+        this.model = {
+            //MEDICATIONID: '',
+            DESCRIPTION: '',
+            REMARKS: ''
+        };
+        this.rategroup = [];
+        this.subcriptions = [];
+        if (!!this.activatedRoute.snapshot.params['returnUrl']) {
+            this.returnUrl = this.activatedRoute.snapshot.params['returnUrl'];
+        }
+        if (!!this.activatedRoute.snapshot.params['mode']) {
+            this.mode = this.activatedRoute.snapshot.params['mode'];
+        }
+    }
+    ngOnInit() {
+        let self = this;
+        this.form = this.fb.group({
+            MEDICATIONID: [''],
+            DESCRIPTION: [''],
+            REMARKS: ['']
+        });
+        if (this.mode == "edit") {
+            if (!!this.activatedRoute.snapshot.params['id']) {
+                let id = this.activatedRoute.snapshot.params['id'];
+                let loadedValue = this.masterRepo._medicationList.filter(r => r.MEDICATIONID == id)[0];
+                if (loadedValue != null) {
+                    this.form.setValue({ MEDICATIONID: id, DESCRIPTION: loadedValue.DESCRIPTION, REMARKS: loadedValue.REMARKS });
+                }
+            }
+        }
+    }
+    disabled() {
+        if (this.viewMode == true) {
+            return "#EBEBE4";
+        }
+        else {
+            return "";
+        }
+    }
+    changeToArray(data) {
+        //console.log(data);
+        if (data) {
+            let retData = [];
+            retData.concat([], data);
+            return retData;
+        }
+        return [];
+    }
+    onSave() {
+        //validate before Saving
+        this.DialogMessage = "Saving Data please wait...";
+        this.childModal.show();
+        this.onsubmit();
+    }
+    hideChildModal() {
+        this.childModal.hide();
+    }
+    onsubmit() {
+        try {
+            let medication = this.form.value;
+            //console.log(medication);
+            let sub = this.masterRepo.postmaster(this.mode, medication, "/SaveMedication")
+                .subscribe(data => {
+                if (data.status == 'ok') {
+                    //Displaying dialog message for save with timer of 1 secs
+                    this.DialogMessage = "Data Saved Successfully";
+                    setTimeout(() => {
+                        this.childModal.hide();
+                        this.router.navigate([this.returnUrl]);
+                    }, 1000);
+                }
+                else {
+                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                    if (data.result._body == "The ConnectionString property has not been initialized.") {
+                        this.router.navigate(['/login', this.router.url]);
+                        return;
+                    }
+                    //Some other issues need to check
+                    this.DialogMessage = "Error in Saving Data:" + data.result._body;
+                    //console.log(data.result._body);
+                    setTimeout(() => {
+                        this.childModal.hide();
+                    }, 3000);
+                }
+            }, error => { alert(error); });
+            this.subcriptions.push(sub);
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    onCancel() {
+        //console.log(this.returnUrl)
+        this.router.navigate([this.returnUrl]);
+    }
+    ngOnDestroy() {
+        //if(this.subitSubscription)
+        //  this.subitSubscription.unsubscribe();
+        this.subcriptions.forEach(subs => {
+            subs.unsubscribe();
+        });
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
+], AddMedication.prototype, "childModal", void 0);
+AddMedication = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'addMedication',
+        template: __webpack_require__(1564),
+        providers: [],
+        styles: [`
+        input{
+            color: black;
+        }
+    `],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__global_state__["a" /* GlobalState */]])
+], AddMedication);
+
+
+/***/ }),
+
+/***/ 1505:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return MedicationList; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__ = __webpack_require__(638);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(34);
+
+
+
+
+
+
+
+let MedicationList = class MedicationList {
+    constructor(service, _authService, router) {
+        this.service = service;
+        this._authService = _authService;
+        this.router = router;
+        this.query = '';
+        this.DialogMessage = "You are not authorized";
+        this.settings = {
+            mode: 'external',
+            columns: {
+                // ROOMNO: {
+                //   title: 'Room No.',
+                //   type: 'string'
+                // },
+                DESCRIPTION: {
+                    title: 'Medication Description',
+                    type: 'string'
+                }
+            }
+        };
+        this.subcriptions = [];
+        var Mlist = [];
+        this.service.getMedicationList().subscribe((data) => {
+            Mlist.push(data);
+            console.log("data", Mlist);
+        }, Error => console.log(Error), () => {
+            this.service._medicationList = Mlist;
+            console.log(Mlist);
+            // this.source.load(Mlist);
+            this.source = new __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__["LocalDataSource"](Mlist);
+        });
+    }
+    setMode() {
+        // this.divService.create();
+        //this.settings.mode='inline';
+        console.log(this.settings.mode);
+    }
+    onAddClick() {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(['/pages/masters/medication/detail-medication', { mode: "add", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to add Medication.";
+            this.childModal.show();
+        }
+    }
+    onDeleteConfirm(event) {
+        this.selectedRow = event;
+        this.deleteModal.show();
+    }
+    DeleteEvent() {
+        this.deleteModal.hide();
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            try {
+                this.DialogMessage = "Deleting please wait...";
+                this.childModal.show();
+                let sub = this.service.postmaster("delete", this.selectedRow.data, "/SaveMedication")
+                    .subscribe(data => {
+                    if (data.status == 'ok') {
+                        //Displaying dialog message for save with timer of 1 secs
+                        if (this.service._medicationList.length > 0) {
+                            this.service._medicationList.splice(this.service._medicationList.indexOf(this.selectedRow.data), 1);
+                            this.source.load(this.service._medicationList);
+                        }
+                        this.DialogMessage = "Data Deleted Successfully";
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 1000);
+                    }
+                    else {
+                        //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                        if (data.result._body == "The ConnectionString property has not been initialized.") {
+                            this.router.navigate(['/login', this.router.url]);
+                            return;
+                        }
+                        //Some other issues need to check
+                        this.DialogMessage = "Error in Deleting Data:" + data.result._body;
+                        console.log(data.result._body);
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 3000);
+                    }
+                }, error => { alert(error); });
+                this.subcriptions.push(sub);
+            }
+            catch (e) {
+                alert(e);
+            }
+        }
+        else {
+            this.DialogMessage = "You are not authorized to delete  room.";
+            this.childModal.show();
+        }
+    }
+    onEditClick(event) {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(["/pages/masters/medication/detail-medication", { id: event.data.MEDICATIONID, mode: "edit", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to edit room.";
+            this.childModal.show();
+        }
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], MedicationList.prototype, "childModal", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('deleteModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], MedicationList.prototype, "deleteModal", void 0);
+MedicationList = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'medicationlist',
+        template: __webpack_require__(1565),
+        providers: [],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_6__angular_router__["b" /* Router */]])
+], MedicationList);
+
+
+/***/ }),
+
+/***/ 1506:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AddPrescription; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__global_state__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__ = __webpack_require__(101);
+
+
+
+
+
+
+
+let AddPrescription = class AddPrescription {
+    constructor(_authService, router, activatedRoute, fb, masterRepo, state) {
+        this._authService = _authService;
+        this.router = router;
+        this.activatedRoute = activatedRoute;
+        this.fb = fb;
+        this.masterRepo = masterRepo;
+        this.state = state;
+        this.DialogMessage = "Saving data please wait ...";
+        this.mode = "add";
+        this.viewMode = false;
+        this.modeTitle = '';
+        this.prescription = {};
+        this.initialTextReadOnly = false;
+        this.model = {
+            //MEDICATIONID: '',
+            DESCA: '',
+            directives: '',
+            cautions: ''
+        };
+        this.subcriptions = [];
+        if (!!this.activatedRoute.snapshot.params['returnUrl']) {
+            this.returnUrl = this.activatedRoute.snapshot.params['returnUrl'];
+        }
+        if (!!this.activatedRoute.snapshot.params['mode']) {
+            this.mode = this.activatedRoute.snapshot.params['mode'];
+        }
+    }
+    ngOnInit() {
+        let self = this;
+        this.form = this.fb.group({
+            id: [''],
+            DESCA: [''],
+            directives: [''],
+            cautions: ['']
+        });
+        if (this.mode == "edit") {
+            if (!!this.activatedRoute.snapshot.params['id']) {
+                let id = this.activatedRoute.snapshot.params['id'];
+                let loadedValue = this.masterRepo._prescriptionList.filter(r => r.id == id)[0];
+                if (loadedValue != null) {
+                    this.form.setValue({
+                        id: id,
+                        DESCA: loadedValue.DESCA,
+                        directives: loadedValue.directives,
+                        cautions: loadedValue.cautions
+                    });
+                }
+            }
+        }
+    }
+    disabled() {
+        if (this.viewMode == true) {
+            return "#EBEBE4";
+        }
+        else {
+            return "";
+        }
+    }
+    changeToArray(data) {
+        //console.log(data);
+        if (data) {
+            let retData = [];
+            retData.concat([], data);
+            return retData;
+        }
+        return [];
+    }
+    onSave() {
+        //validate before Saving
+        this.DialogMessage = "Saving Data please wait...";
+        this.childModal.show();
+        this.onsubmit();
+    }
+    hideChildModal() {
+        this.childModal.hide();
+    }
+    onsubmit() {
+        try {
+            let prescription = this.form.value;
+            //console.log(medication);
+            let sub = this.masterRepo.postmaster(this.mode, prescription, "/SavePrescription")
+                .subscribe(data => {
+                if (data.status == 'ok') {
+                    //Displaying dialog message for save with timer of 1 secs
+                    this.DialogMessage = "Data Saved Successfully";
+                    setTimeout(() => {
+                        this.childModal.hide();
+                        this.router.navigate([this.returnUrl]);
+                    }, 1000);
+                }
+                else {
+                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                    if (data.result._body == "The ConnectionString property has not been initialized.") {
+                        this.router.navigate(['/login', this.router.url]);
+                        return;
+                    }
+                    //Some other issues need to check
+                    this.DialogMessage = "Error in Saving Data:" + data.result._body;
+                    //console.log(data.result._body);
+                    setTimeout(() => {
+                        this.childModal.hide();
+                    }, 3000);
+                }
+            }, error => { alert(error); });
+            this.subcriptions.push(sub);
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    onCancel() {
+        //console.log(this.returnUrl)
+        this.router.navigate([this.returnUrl]);
+    }
+    ngOnDestroy() {
+        //if(this.subitSubscription)
+        //  this.subitSubscription.unsubscribe();
+        this.subcriptions.forEach(subs => {
+            subs.unsubscribe();
+        });
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
+], AddPrescription.prototype, "childModal", void 0);
+AddPrescription = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'addPrescription',
+        template: __webpack_require__(1566),
+        providers: [],
+        styles: [`
+        input{
+            color: black;
+        }
+    `],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__global_state__["a" /* GlobalState */]])
+], AddPrescription);
+
+
+/***/ }),
+
+/***/ 1507:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return PrescriptionList; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__ = __webpack_require__(638);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(34);
+
+
+
+
+
+
+
+let PrescriptionList = class PrescriptionList {
+    constructor(service, _authService, router) {
+        this.service = service;
+        this._authService = _authService;
+        this.router = router;
+        this.DialogMessage = "You are not authorized";
+        this.settings = {
+            mode: 'external',
+            columns: {
+                // ROOMNO: {
+                //   title: 'Room No.',
+                //   type: 'string'
+                // },
+                DESCA: {
+                    title: 'Prescription',
+                    type: 'string'
+                }
+            }
+        };
+        this.subcriptions = [];
+        var Plist = [];
+        this.service.getPrescriptionList().subscribe((data) => {
+            Plist.push(data);
+        }, Error => console.log(Error), () => {
+            this.service._prescriptionList = Plist;
+            console.log(Plist);
+            // this.source.load(Mlist);
+            this.source = new __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__["LocalDataSource"](Plist);
+        });
+    }
+    setMode() {
+        // this.divService.create();
+        //this.settings.mode='inline';
+        console.log(this.settings.mode);
+    }
+    onAddClick() {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(['/pages/masters/prescription/detail-prescription', { mode: "add", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to add Prescription.";
+            this.childModal.show();
+        }
+    }
+    onDeleteConfirm(event) {
+        this.selectedRow = event;
+        this.deleteModal.show();
+    }
+    DeleteEvent() {
+        this.deleteModal.hide();
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            try {
+                this.DialogMessage = "Deleting please wait...";
+                this.childModal.show();
+                let sub = this.service.postmaster("delete", this.selectedRow.data, "/SavePrescription")
+                    .subscribe(data => {
+                    if (data.status == 'ok') {
+                        //Displaying dialog message for save with timer of 1 secs
+                        if (this.service._prescriptionList.length > 0) {
+                            this.service._prescriptionList.splice(this.service._prescriptionList.indexOf(this.selectedRow.data), 1);
+                            this.source.load(this.service._prescriptionList);
+                        }
+                        this.DialogMessage = "Data Deleted Successfully";
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 1000);
+                    }
+                    else {
+                        //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                        if (data.result._body == "The ConnectionString property has not been initialized.") {
+                            this.router.navigate(['/login', this.router.url]);
+                            return;
+                        }
+                        //Some other issues need to check
+                        this.DialogMessage = "Error in Deleting Data:" + data.result._body;
+                        console.log(data.result._body);
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 3000);
+                    }
+                }, error => { alert(error); });
+                this.subcriptions.push(sub);
+            }
+            catch (e) {
+                alert(e);
+            }
+        }
+        else {
+            this.DialogMessage = "You are not authorized to delete  room.";
+            this.childModal.show();
+        }
+    }
+    onEditClick(event) {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(["/pages/masters/prescription/detail-prescription", { id: event.data.id, mode: "edit", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to edit Prescription.";
+            this.childModal.show();
+        }
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], PrescriptionList.prototype, "childModal", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('deleteModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], PrescriptionList.prototype, "deleteModal", void 0);
+PrescriptionList = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'prescriptionlist',
+        template: __webpack_require__(1567),
+        providers: [],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_6__angular_router__["b" /* Router */]])
+], PrescriptionList);
+
+
+/***/ }),
+
+/***/ 1508:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AddRoom; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_global_state__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__ = __webpack_require__(101);
+
+
+
+
+
+
+
+let AddRoom = class AddRoom {
+    constructor(_authService, router, activatedRoute, fb, masterRepo, state) {
+        this._authService = _authService;
+        this.router = router;
+        this.activatedRoute = activatedRoute;
+        this.fb = fb;
+        this.masterRepo = masterRepo;
+        this.state = state;
+        this.DialogMessage = "Saving data please wait ...";
+        this.mode = "add";
+        this.viewMode = false;
+        this.modeTitle = '';
+        this.room = {};
+        this.initialTextReadOnly = false;
+        this.model = {
+            ROOMNO: '',
+            DESCRIPTION: ''
+        };
+        this.rategroup = [];
+        this.subcriptions = [];
+        if (!!this.activatedRoute.snapshot.params['returnUrl']) {
+            this.returnUrl = this.activatedRoute.snapshot.params['returnUrl'];
+        }
+        if (!!this.activatedRoute.snapshot.params['mode']) {
+            this.mode = this.activatedRoute.snapshot.params['mode'];
+        }
+    }
+    ngOnInit() {
+        let self = this;
+        this.form = this.fb.group({
+            ROOMNO: [''],
+            DESCRIPTION: ['']
+        });
+        if (this.mode == "edit") {
+            if (!!this.activatedRoute.snapshot.params['id']) {
+                let id = this.activatedRoute.snapshot.params['id'];
+                let loadedValue = this.masterRepo._roomList.filter(r => r.ROOMNO == id)[0];
+                if (loadedValue != null) {
+                    this.form.setValue({ ROOMNO: loadedValue.ROOMNO, DESCRIPTION: loadedValue.DESCRIPTION });
+                }
+            }
+        }
+        // if (!!this.activatedRoute.snapshot.params['mode']) {
+        //     if(this.activatedRoute.snapshot.params['mode'] == "view"){
+        //         this.viewMode = true;
+        //         this.form.get('RATEGROUPID').disable();
+        //         this.form.get('INITIAL').disable();
+        //         this.form.get('ID').disable();
+        //         this.form.get('NAME').disable();
+        //     }
+        // }
+        // if (!!this.activatedRoute.snapshot.params['returnUrl']) {
+        //     this.returnUrl = this.activatedRoute.snapshot.params['returnUrl'];
+        //     console.log(this.router.url);
+        //     if(this.router.url == "pages/masters/divisions/ViewDivision"){
+        //         this.viewMode = true;
+        //     }
+        // }
+        // if (!!this.activatedRoute.snapshot.params['initial']) {
+        //     let initial = this.activatedRoute.snapshot.params['initial'];
+        //     this.addDivisionService.getDivision(initial)
+        //         .subscribe(data => {
+        //             if (data.status == 'ok') {
+        //                 this.form.setValue({
+        //                     ID : data.result.ID || '',
+        //                     INITIAL : data.result.INITIAL,
+        //                     NAME : data.result.NAME,
+        //                     RATEGROUPID : data.result.RATEGROUPID || 0,
+        //                 });
+        //                 if(this.activatedRoute.snapshot.params['mode'] == null){
+        //                     self.modeTitle = "Edit Division";
+        //                     if(this._authService.checkMenuRight("divisions", "edit") == false){
+        //                         this.router.navigate(['pages/masters/divisions/']);
+        //                     }
+        //                 }else if(this.activatedRoute.snapshot.params['mode'] == "view"){
+        //                     self.modeTitle = "View Division";
+        //                     if(this._authService.checkMenuRight("divisions", "view") == false){
+        //                         this.router.navigate(['pages/masters/divisions/']);
+        //                     }
+        //                 }
+        //                 self.mode = 'edit';
+        //                 self.initialTextReadOnly = true;
+        //             }
+        //             else {
+        //                 this.mode = '';
+        //                 this.modeTitle = "Edit -Error in Division";
+        //                 this.initialTextReadOnly = true;
+        //             }
+        //         }, error => {
+        //             this.mode = '';
+        //             this.modeTitle = "Edit2 -Error in Division";
+        //         }
+        //         )
+        // }
+        // else {
+        //     this.mode = "add";
+        //     this.modeTitle = "Add Division";
+        //     this.initialTextReadOnly = false;
+        //     if(this._authService.checkMenuRight("divisions", "add") == false){
+        //         this.router.navigate(['pages/masters/divisions/']);
+        //     }
+        // }
+        // //this.model.id = this.returnUrl;
+        // //console.log(this.division.INITIAL);
+        // let v = self.division;
+        // //console.log(v.INITIAL);
+    }
+    disabled() {
+        if (this.viewMode == true) {
+            return "#EBEBE4";
+        }
+        else {
+            return "";
+        }
+    }
+    changeToArray(data) {
+        //console.log(data);
+        if (data) {
+            let retData = [];
+            retData.concat([], data);
+            return retData;
+        }
+        return [];
+    }
+    onSave() {
+        //validate before Saving
+        this.DialogMessage = "Saving Data please wait...";
+        this.childModal.show();
+        this.onsubmit();
+    }
+    hideChildModal() {
+        this.childModal.hide();
+    }
+    onsubmit() {
+        try {
+            let room = this.form.value;
+            //console.log(room);
+            let sub = this.masterRepo.postmaster(this.mode, room, "/saveRoom")
+                .subscribe(data => {
+                if (data.status == 'ok') {
+                    //Displaying dialog message for save with timer of 1 secs
+                    this.DialogMessage = "Data Saved Successfully";
+                    setTimeout(() => {
+                        this.childModal.hide();
+                        this.router.navigate([this.returnUrl]);
+                    }, 1000);
+                }
+                else {
+                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                    if (data.result._body == "The ConnectionString property has not been initialized.") {
+                        this.router.navigate(['/login', this.router.url]);
+                        return;
+                    }
+                    //Some other issues need to check
+                    this.DialogMessage = "Error in Saving Data:" + data.result._body;
+                    //console.log(data.result._body);
+                    setTimeout(() => {
+                        this.childModal.hide();
+                    }, 3000);
+                }
+            }, error => { alert(error); });
+            this.subcriptions.push(sub);
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    onCancel() {
+        //console.log(this.returnUrl)
+        this.router.navigate([this.returnUrl]);
+    }
+    ngOnDestroy() {
+        //if(this.subitSubscription)
+        //  this.subitSubscription.unsubscribe();
+        this.subcriptions.forEach(subs => {
+            subs.unsubscribe();
+        });
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
+], AddRoom.prototype, "childModal", void 0);
+AddRoom = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'addRoom',
+        template: __webpack_require__(1568),
+        providers: [],
+        styles: [`
+        input{
+            color: black;
+        }
+    `],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__app_global_state__["a" /* GlobalState */]])
+], AddRoom);
+
+
+/***/ }),
+
+/***/ 1509:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return RoomList; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__ = __webpack_require__(638);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(34);
+
+
+
+
+
+
+
+let RoomList = class RoomList {
+    constructor(service, _authService, router) {
+        this.service = service;
+        this._authService = _authService;
+        this.router = router;
+        this.query = '';
+        this.DialogMessage = "You are not authorized";
+        this.settings = {
+            mode: 'external',
+            columns: {
+                ROOMNO: {
+                    title: 'Room No.',
+                    type: 'string'
+                },
+                DESCRIPTION: {
+                    title: 'Room Description',
+                    type: 'string'
+                }
+            }
+        };
+        this.subcriptions = [];
+        this.source = new __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__["LocalDataSource"]();
+        var Rlist = [];
+        this.service.getRoomList().subscribe((data) => {
+            Rlist.push(data);
+        }, Error => console.log(Error), () => {
+            this.service._roomList = Rlist;
+            this.source.load(Rlist);
+        });
+    }
+    setMode() {
+        // this.divService.create();
+        //this.settings.mode='inline';
+        //console.log(this.settings.mode);
+    }
+    onAddClick() {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(['/pages/masters/room/detail-room', { mode: "add", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to add Room.";
+            this.childModal.show();
+        }
+    }
+    onDeleteConfirm(event) {
+        this.selectedRow = event;
+        this.deleteModal.show();
+    }
+    DeleteEvent() {
+        this.deleteModal.hide();
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            try {
+                this.DialogMessage = "Deleting please wait...";
+                this.childModal.show();
+                let sub = this.service.postmaster("delete", this.selectedRow.data, "/saveRoom")
+                    .subscribe(data => {
+                    if (data.status == 'ok') {
+                        //Displaying dialog message for save with timer of 1 secs
+                        if (this.service._roomList.length > 0) {
+                            this.service._roomList.splice(this.service._roomList.indexOf(this.selectedRow.data), 1);
+                            this.source.load(this.service._roomList);
+                        }
+                        this.DialogMessage = "Data Deleted Successfully";
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 1000);
+                    }
+                    else {
+                        //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                        if (data.result._body == "The ConnectionString property has not been initialized.") {
+                            this.router.navigate(['/login', this.router.url]);
+                            return;
+                        }
+                        //Some other issues need to check
+                        this.DialogMessage = "Error in Deleting Data:" + data.result._body;
+                        //console.log(data.result._body);
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 3000);
+                    }
+                }, error => { alert(error); });
+                this.subcriptions.push(sub);
+            }
+            catch (e) {
+                alert(e);
+            }
+        }
+        else {
+            this.DialogMessage = "You are not authorized to delete  room.";
+            this.childModal.show();
+        }
+    }
+    onEditClick(event) {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(["/pages/masters/room/detail-room", { id: event.data.ROOMNO, mode: "edit", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to edit room.";
+            this.childModal.show();
+        }
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], RoomList.prototype, "childModal", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('deleteModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], RoomList.prototype, "deleteModal", void 0);
+RoomList = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'roomlist',
+        template: __webpack_require__(1569),
+        providers: [],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_6__angular_router__["b" /* Router */]])
+], RoomList);
+
+
+/***/ }),
+
+/***/ 1510:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AddSeriesSales; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_global_state__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__ = __webpack_require__(101);
+
+
+
+
+
+
+
+let AddSeriesSales = class AddSeriesSales {
+    constructor(_authService, router, activatedRoute, fb, masterRepo, state) {
+        this._authService = _authService;
+        this.router = router;
+        this.activatedRoute = activatedRoute;
+        this.fb = fb;
+        this.masterRepo = masterRepo;
+        this.state = state;
+        this.DialogMessage = "Saving data please wait ...";
+        this.mode = "add";
+        this.viewMode = false;
+        this.modeTitle = '';
+        this.series = {};
+        this.initialTextReadOnly = false;
+        this.seriesSale = {};
+        this.rategroup = [];
+        this.subcriptions = [];
+        if (!!this.activatedRoute.snapshot.params['returnUrl']) {
+            this.returnUrl = this.activatedRoute.snapshot.params['returnUrl'];
+        }
+        if (!!this.activatedRoute.snapshot.params['mode']) {
+            this.mode = this.activatedRoute.snapshot.params['mode'];
+        }
+    }
+    ngOnInit() {
+        let self = this;
+        let _iList = [];
+        this.masterRepo.getSeriesList().subscribe((data) => {
+            _iList.push(data);
+        }, Error => console.log(Error), () => {
+            //console.log({ itemlist: _iList });
+            this.SeriesList = _iList;
+        });
+        let _cusList = [];
+        this.masterRepo.getCustomerList().subscribe((data) => {
+            _cusList.push(data);
+        }, Error => console.log(Error), () => {
+            //console.log({ cuslist: _cusList });
+            this.CustomerList = _cusList;
+            if (this.mode == "edit") {
+                if (!!this.activatedRoute.snapshot.params['id']) {
+                    let id = this.activatedRoute.snapshot.params['id'];
+                    let loadedValue = this.masterRepo._seriesSalesList.filter(r => r.TranId == id)[0];
+                    this.seriesSale.TranId = loadedValue.TranId;
+                    this.seriesSale.series = this.SeriesList.filter(x => x.ServiceId == loadedValue.series.ServiceId)[0];
+                    this.seriesSale.customer = this.CustomerList.filter(x => x.CUSID == loadedValue.customer.CUSID)[0];
+                    this.seriesSale.employee = this.EmployeeList.filter(x => x.EMPLOYEEID == loadedValue.employee.EMPLOYEEID)[0];
+                    this.seriesSale.salesman = this.EmployeeList.filter(x => x.EMPLOYEEID == loadedValue.salesman.EMPLOYEEID)[0];
+                }
+            }
+        });
+        let _empList = [];
+        this.masterRepo.getEmployeeList().subscribe((data) => {
+            _empList.push(data);
+        }, Error => console.log(Error), () => {
+            //console.log({ emplist: _empList });
+            this.EmployeeList = _empList;
+        });
+    }
+    disabled() {
+        if (this.viewMode == true) {
+            return "#EBEBE4";
+        }
+        else {
+            return "";
+        }
+    }
+    changeToArray(data) {
+        //console.log(data);
+        if (data) {
+            let retData = [];
+            retData.concat([], data);
+            return retData;
+        }
+        return [];
+    }
+    onSave() {
+        //validate before Saving
+        this.DialogMessage = "Saving Data please wait...";
+        this.childModal.show();
+        this.onsubmit();
+    }
+    hideChildModal() {
+        this.childModal.hide();
+    }
+    onsubmit() {
+        try {
+            let sub = this.masterRepo.postmaster(this.mode, this.seriesSale, "/saveSeriesSale")
+                .subscribe(data => {
+                if (data.status == 'ok') {
+                    //Displaying dialog message for save with timer of 1 secs
+                    this.DialogMessage = "Data Saved Successfully";
+                    setTimeout(() => {
+                        this.childModal.hide();
+                        this.router.navigate([this.returnUrl]);
+                    }, 1000);
+                }
+                else {
+                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                    if (data.result._body == "The ConnectionString property has not been initialized.") {
+                        this.router.navigate(['/login', this.router.url]);
+                        return;
+                    }
+                    //Some other issues need to check
+                    this.DialogMessage = "Error in Saving Data:" + data.result._body;
+                    //console.log(data.result._body);
+                    setTimeout(() => {
+                        this.childModal.hide();
+                    }, 3000);
+                }
+            }, error => { alert(error); });
+            this.subcriptions.push(sub);
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    onCancel() {
+        //console.log(this.returnUrl)
+        this.router.navigate([this.returnUrl]);
+    }
+    ngOnDestroy() {
+        //if(this.subitSubscription)
+        //  this.subitSubscription.unsubscribe();
+        this.subcriptions.forEach(subs => {
+            subs.unsubscribe();
+        });
+    }
+    CancelBill() {
+        this.DialogMessage = "Saving Data please wait...";
+        this.childModal.show();
+        try {
+            let sub = this.masterRepo.postmaster(this.mode, this.seriesSale, "/CancelSeriesSale")
+                .subscribe(data => {
+                if (data.status == 'ok') {
+                    //Displaying dialog message for save with timer of 1 secs
+                    this.DialogMessage = "Data Saved Successfully";
+                    setTimeout(() => {
+                        this.childModal.hide();
+                        this.router.navigate([this.returnUrl]);
+                    }, 1000);
+                }
+                else {
+                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                    if (data.result._body == "The ConnectionString property has not been initialized.") {
+                        this.router.navigate(['/login', this.router.url]);
+                        return;
+                    }
+                    //Some other issues need to check
+                    this.DialogMessage = "Error in Saving Data:" + data.result._body;
+                    //console.log(data.result._body);
+                    setTimeout(() => {
+                        this.childModal.hide();
+                    }, 3000);
+                }
+            }, error => { alert(error); });
+            this.subcriptions.push(sub);
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
+], AddSeriesSales.prototype, "childModal", void 0);
+AddSeriesSales = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'addSeriesSales',
+        template: __webpack_require__(1570),
+        providers: [],
+        styles: [`
+        input{
+            color: black;
+        }
+    `],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__app_global_state__["a" /* GlobalState */]])
+], AddSeriesSales);
+
+
+/***/ }),
+
+/***/ 1511:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return SeriesSalesList; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__ = __webpack_require__(638);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(34);
+
+
+
+
+
+
+
+let SeriesSalesList = class SeriesSalesList {
+    constructor(series, _authService, router) {
+        this.series = series;
+        this._authService = _authService;
+        this.router = router;
+        this.query = '';
+        this.DialogMessage = "You are not authorized";
+        this.settings = {
+            mode: 'external',
+            columns: {
+                SeriesName: {
+                    title: 'Series',
+                    type: 'string'
+                },
+                CustomerName: {
+                    title: 'Customer',
+                    type: 'string'
+                },
+                ServiceName: {
+                    title: 'Service',
+                    type: 'string'
+                }
+            }
+        };
+        this.subcriptions = [];
+        this.source = new __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__["LocalDataSource"]();
+        let Slist = [];
+        let SList1 = [];
+        this.series.getSeriesSalesList().subscribe((data) => {
+            let ss = data;
+            let tt = {
+                TranId: ss.TranId,
+                ServiceName: ss.series.ServiceName,
+                SeriesName: ss.series.ServiceName,
+                CustomerName: ss.customer.NAME
+            };
+            Slist.push(tt);
+            SList1.push(ss);
+        }, Error => console.log(Error), () => {
+            this.series._seriesSalesList = SList1;
+            this.source.load(Slist);
+        });
+    }
+    setMode() {
+        // this.divService.create();
+        //this.settings.mode='inline';
+        //console.log(this.settings.mode);
+    }
+    onAddClick() {
+        if (this._authService.getUserProfile()) {
+            this.router.navigate(['/pages/masters/seriesSales/detail-seriesSales', { mode: "add", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to add series.";
+            this.childModal.show();
+        }
+    }
+    onDeleteConfirm(event) {
+        this.selectedRow = event;
+        this.deleteModal.show();
+    }
+    DeleteEvent() {
+        this.deleteModal.hide();
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            try {
+                this.DialogMessage = "Deleting please wait...";
+                this.childModal.show();
+                let sub = this.series.postmaster("delete", this.selectedRow.data, "/saveSeries")
+                    .subscribe(data => {
+                    if (data.status == 'ok') {
+                        if (this.series._seriesList.length > 0) {
+                            this.series._seriesList.splice(this.series._seriesList.indexOf(this.selectedRow.data), 1);
+                            this.source.load(this.series._seriesList);
+                        }
+                        //Displaying dialog message for save with timer of 1 secs
+                        this.DialogMessage = "Data Deleted Successfully";
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 1000);
+                    }
+                    else {
+                        //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                        if (data.result._body == "The ConnectionString property has not been initialized.") {
+                            this.router.navigate(['/login', this.router.url]);
+                            return;
+                        }
+                        //Some other issues need to check
+                        this.DialogMessage = "Error in Deleting Data:" + data.result._body;
+                        //console.log(data.result._body);
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 3000);
+                    }
+                }, error => { alert(error); });
+                this.subcriptions.push(sub);
+            }
+            catch (e) {
+                alert(e);
+            }
+        }
+        else {
+            this.DialogMessage = "You are not authorized to edit Series.";
+            this.childModal.show();
+        }
+    }
+    // onViewClick(event): void {
+    //   if (this._authService.checkMenuRight("divisions", "view") == true) {
+    //     this.router.navigate(["pages/masters/divisions/add-division", { initial: event.data.INITIAL, mode: "view", returnUrl: this.router.url }]);
+    //   } else {
+    //     this.DialogMessage = "You are not authorized to view division."
+    //     this.childModal.show();
+    //   }
+    // }
+    onEditClick(event) {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(["/pages/masters/seriesSales/detail-seriesSales", { id: event.data.TranId, mode: "edit", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to edit Series Sale.";
+            this.childModal.show();
+        }
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], SeriesSalesList.prototype, "childModal", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('deleteModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], SeriesSalesList.prototype, "deleteModal", void 0);
+SeriesSalesList = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'seriessaleslist',
+        template: __webpack_require__(1571),
+        providers: [],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_6__angular_router__["b" /* Router */]])
+], SeriesSalesList);
+
+
+/***/ }),
+
+/***/ 1512:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AddSeries; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_global_state__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__ = __webpack_require__(101);
+
+
+
+
+
+
+
+let AddSeries = class AddSeries {
+    constructor(_authService, router, activatedRoute, fb, masterRepo, state) {
+        this._authService = _authService;
+        this.router = router;
+        this.activatedRoute = activatedRoute;
+        this.fb = fb;
+        this.masterRepo = masterRepo;
+        this.state = state;
+        this.DialogMessage = "Saving data please wait ...";
+        this.mode = "add";
+        this.viewMode = false;
+        this.modeTitle = '';
+        this.series = {};
+        this.initialTextReadOnly = false;
+        this.Item = {};
+        this.service = {};
+        this.rategroup = [];
+        this.subcriptions = [];
+        if (!!this.activatedRoute.snapshot.params['returnUrl']) {
+            this.returnUrl = this.activatedRoute.snapshot.params['returnUrl'];
+        }
+        if (!!this.activatedRoute.snapshot.params['mode']) {
+            this.mode = this.activatedRoute.snapshot.params['mode'];
+        }
+    }
+    ngOnInit() {
+        let self = this;
+        this.form = this.fb.group({
+            MappingCode: [''],
+            ServiceCount: [''],
+            ValidityPeriod: [''],
+            ServiceId: ['']
+        });
+        if (this.mode == "edit") {
+            if (!!this.activatedRoute.snapshot.params['id']) {
+                let id = this.activatedRoute.snapshot.params['id'];
+                let loadedValue = this.masterRepo._seriesList.filter(r => r.MappingCode == id)[0];
+                if (loadedValue != null) {
+                    this.form.setValue({
+                        MappingCode: loadedValue.MappingCode,
+                        ServiceCount: loadedValue.ServiceCount,
+                        ValidityPeriod: loadedValue.ValidityPeriod,
+                        ServiceId: loadedValue.ServiceId,
+                    });
+                }
+            }
+        }
+        let _iList = [];
+        this.masterRepo.getSeriesItemList().subscribe((data) => {
+            _iList.push(data);
+        }, Error => console.log(Error), () => {
+            //console.log({itemlist: _iList});
+            this.ItemList = _iList;
+        });
+        let _serviceList = [];
+        this.masterRepo.getServiceList().subscribe((data) => {
+            _serviceList.push(data);
+        }, Error => console.log(Error), () => {
+            //console.log({servicelist: _serviceList});
+            this.ServiceList = _serviceList;
+        });
+    }
+    disabled() {
+        if (this.viewMode == true) {
+            return "#EBEBE4";
+        }
+        else {
+            return "";
+        }
+    }
+    changeToArray(data) {
+        //console.log(data);
+        if (data) {
+            let retData = [];
+            retData.concat([], data);
+            return retData;
+        }
+        return [];
+    }
+    onSave() {
+        //validate before Saving
+        this.DialogMessage = "Saving Data please wait...";
+        this.childModal.show();
+        this.onsubmit();
+    }
+    hideChildModal() {
+        this.childModal.hide();
+    }
+    onsubmit() {
+        try {
+            let ser = this.form.value;
+            ser.ServiceName = this.ServiceList.find(x => x.SERVICEID == ser.ServiceId).DESCRIPTION;
+            ser.SeriesName = this.ItemList.find(x => x.MCODE == ser.MappingCode).DESCA;
+            //console.log(this.service.DESCRIPTION);
+            let sub = this.masterRepo.postmaster(this.mode, ser, "/saveSeries")
+                .subscribe(data => {
+                if (data.status == 'ok') {
+                    //Displaying dialog message for save with timer of 1 secs
+                    this.DialogMessage = "Data Saved Successfully";
+                    setTimeout(() => {
+                        this.childModal.hide();
+                        this.router.navigate([this.returnUrl]);
+                    }, 1000);
+                }
+                else {
+                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                    if (data.result._body == "The ConnectionString property has not been initialized.") {
+                        this.router.navigate(['/login', this.router.url]);
+                        return;
+                    }
+                    //Some other issues need to check
+                    this.DialogMessage = "Error in Saving Data:" + data.result._body;
+                    //console.log(data.result._body);
+                    setTimeout(() => {
+                        this.childModal.hide();
+                    }, 3000);
+                }
+            }, error => { alert(error); });
+            this.subcriptions.push(sub);
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    onCancel() {
+        //console.log(this.returnUrl)
+        this.router.navigate([this.returnUrl]);
+    }
+    ngOnDestroy() {
+        //if(this.subitSubscription)
+        //  this.subitSubscription.unsubscribe();
+        this.subcriptions.forEach(subs => {
+            subs.unsubscribe();
+        });
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
+], AddSeries.prototype, "childModal", void 0);
+AddSeries = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'addSeries',
+        template: __webpack_require__(1572),
+        providers: [],
+        styles: [`
+        input{
+            color: black;
+        }
+    `],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__app_global_state__["a" /* GlobalState */]])
+], AddSeries);
+
+
+/***/ }),
+
+/***/ 1513:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return SeriesList; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__ = __webpack_require__(638);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(34);
+
+
+
+
+
+
+
+let SeriesList = class SeriesList {
+    constructor(series, _authService, router) {
+        this.series = series;
+        this._authService = _authService;
+        this.router = router;
+        this.query = '';
+        this.DialogMessage = "You are not authorized";
+        this.settings = {
+            mode: 'external',
+            columns: {
+                SeriesName: {
+                    title: 'Description',
+                    type: 'string'
+                },
+                ServiceName: {
+                    title: 'Service',
+                    type: 'string'
+                },
+                ServiceCount: {
+                    title: 'Count',
+                    type: 'string'
+                }
+            }
+        };
+        this.subcriptions = [];
+        this.source = new __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__["LocalDataSource"]();
+        let Slist = [];
+        this.series.getSeriesList().subscribe((data) => {
+            Slist.push(data);
+        }, Error => console.log(Error), () => {
+            this.series._seriesList = Slist;
+            this.source.load(Slist);
+        });
+    }
+    setMode() {
+        // this.divService.create();
+        //this.settings.mode='inline';
+        //console.log(this.settings.mode);
+    }
+    onAddClick() {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(['/pages/masters/series/detail-series', { mode: "add", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to add series.";
+            this.childModal.show();
+        }
+    }
+    onDeleteConfirm(event) {
+        this.selectedRow = event;
+        this.deleteModal.show();
+    }
+    DeleteEvent() {
+        this.deleteModal.hide();
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            try {
+                this.DialogMessage = "Deleting please wait...";
+                this.childModal.show();
+                let sub = this.series.postmaster("delete", this.selectedRow.data, "/saveSeries")
+                    .subscribe(data => {
+                    if (data.status == 'ok') {
+                        if (this.series._seriesList.length > 0) {
+                            this.series._seriesList.splice(this.series._seriesList.indexOf(this.selectedRow.data), 1);
+                            this.source.load(this.series._seriesList);
+                        }
+                        //Displaying dialog message for save with timer of 1 secs
+                        this.DialogMessage = "Data Deleted Successfully";
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 1000);
+                    }
+                    else {
+                        //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                        if (data.result._body == "The ConnectionString property has not been initialized.") {
+                            this.router.navigate(['/login', this.router.url]);
+                            return;
+                        }
+                        //Some other issues need to check
+                        this.DialogMessage = "Error in Deleting Data:" + data.result._body;
+                        //console.log(data.result._body);
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 3000);
+                    }
+                }, error => { alert(error); });
+                this.subcriptions.push(sub);
+            }
+            catch (e) {
+                alert(e);
+            }
+        }
+        else {
+            this.DialogMessage = "You are not authorized to edit Series.";
+            this.childModal.show();
+        }
+    }
+    // onViewClick(event): void {
+    //   if (this._authService.checkMenuRight("divisions", "view") == true) {
+    //     this.router.navigate(["pages/masters/divisions/add-division", { initial: event.data.INITIAL, mode: "view", returnUrl: this.router.url }]);
+    //   } else {
+    //     this.DialogMessage = "You are not authorized to view division."
+    //     this.childModal.show();
+    //   }
+    // }
+    onEditClick(event) {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(["/pages/masters/series/detail-series", { id: event.data.MappingCode, mode: "edit", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to edit Service.";
+            this.childModal.show();
+        }
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], SeriesList.prototype, "childModal", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('deleteModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], SeriesList.prototype, "deleteModal", void 0);
+SeriesList = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'serieslist',
+        template: __webpack_require__(1573),
+        providers: [],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_6__angular_router__["b" /* Router */]])
+], SeriesList);
+
+
+/***/ }),
+
+/***/ 1514:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AddService; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_global_state__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__ = __webpack_require__(101);
+
+
+
+
+
+
+
+let AddService = class AddService {
+    constructor(_authService, router, activatedRoute, fb, masterRepo, state) {
+        this._authService = _authService;
+        this.router = router;
+        this.activatedRoute = activatedRoute;
+        this.fb = fb;
+        this.masterRepo = masterRepo;
+        this.state = state;
+        this.DialogMessage = "Saving data please wait ...";
+        this.mode = "add";
+        this.viewMode = false;
+        this.modeTitle = '';
+        this.service = {};
+        this.initialTextReadOnly = false;
+        this.ShowPosItem = true;
+        this.rategroup = [];
+        this.subcriptions = [];
+        if (!!this.activatedRoute.snapshot.params['returnUrl']) {
+            this.returnUrl = this.activatedRoute.snapshot.params['returnUrl'];
+        }
+        if (!!this.activatedRoute.snapshot.params['mode']) {
+            this.mode = this.activatedRoute.snapshot.params['mode'];
+        }
+        this.ShowPosItem = _authService.getSetting().IntegratePos;
+    }
+    ngOnInit() {
+        let self = this;
+        this.form = this.fb.group({
+            DESCRIPTION: [''],
+            MappingCode: [''],
+            SkipTimeValidation: [''],
+            SkipTimeValidationSS: [''],
+            SkipTimeValidationRoom: [''],
+            SkipTimeValidationRoomSS: [''],
+            SkipTimeValidationCustomer: [''],
+            // TIMEDURATION_HRS: ['',Validators.compose([Validators.maxLength(2)])],
+            TIMEDURATION_MIN: [''],
+            RATE: [''],
+            SERVICEID: ['']
+        });
+        if (this.mode == "edit") {
+            if (!!this.activatedRoute.snapshot.params['id']) {
+                let id = this.activatedRoute.snapshot.params['id'];
+                let loadedValue = this.masterRepo._serviceList.filter(r => r.SERVICEID == id)[0];
+                if (loadedValue != null) {
+                    this.form.setValue({
+                        SERVICEID: loadedValue.SERVICEID,
+                        MappingCode: loadedValue.MappingCode,
+                        DESCRIPTION: loadedValue.DESCRIPTION,
+                        TIMEDURATION_MIN: loadedValue.TIMEDURATION_MIN,
+                        RATE: loadedValue.RATE,
+                        SkipTimeValidation: loadedValue.SkipTimeValidation,
+                        SkipTimeValidationSS: loadedValue.SkipTimeValidationSS,
+                        SkipTimeValidationRoom: loadedValue.SkipTimeValidationRoom,
+                        SkipTimeValidationRoomSS: loadedValue.SkipTimeValidationRoomSS,
+                        SkipTimeValidationCustomer: loadedValue.SkipTimeValidationCustomer
+                    });
+                }
+            }
+        }
+        let _iList = [];
+        this.masterRepo.getItemList().subscribe((data) => {
+            _iList.push(data);
+        }, Error => console.log(Error), () => {
+            //console.log({itemlist: _iList});
+            this.ItemList = _iList;
+        });
+    }
+    disabled() {
+        if (this.viewMode == true) {
+            return "#EBEBE4";
+        }
+        else {
+            return "";
+        }
+    }
+    changeToArray(data) {
+        //console.log(data);
+        if (data) {
+            let retData = [];
+            retData.concat([], data);
+            return retData;
+        }
+        return [];
+    }
+    onSave() {
+        //validate before Saving
+        this.DialogMessage = "Saving Data please wait...";
+        this.childModal.show();
+        this.onsubmit();
+    }
+    hideChildModal() {
+        this.childModal.hide();
+    }
+    onsubmit() {
+        try {
+            let ser = this.form.value;
+            let sub = this.masterRepo.postmaster(this.mode, ser, "/saveService")
+                .subscribe(data => {
+                if (data.status == 'ok') {
+                    //Displaying dialog message for save with timer of 1 secs
+                    this.DialogMessage = "Data Saved Successfully";
+                    setTimeout(() => {
+                        this.childModal.hide();
+                        this.router.navigate([this.returnUrl]);
+                    }, 1000);
+                }
+                else {
+                    //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                    if (data.result._body == "The ConnectionString property has not been initialized.") {
+                        this.router.navigate(['/login', this.router.url]);
+                        return;
+                    }
+                    //Some other issues need to check
+                    this.DialogMessage = "Error in Saving Data:" + data.result._body;
+                    //console.log(data.result._body);
+                    setTimeout(() => {
+                        this.childModal.hide();
+                    }, 3000);
+                }
+            }, error => { alert(error); });
+            this.subcriptions.push(sub);
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    onCancel() {
+        //console.log(this.returnUrl)
+        this.router.navigate([this.returnUrl]);
+    }
+    ngOnDestroy() {
+        //if(this.subitSubscription)
+        //  this.subitSubscription.unsubscribe();
+        this.subcriptions.forEach(subs => {
+            subs.unsubscribe();
+        });
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
+], AddService.prototype, "childModal", void 0);
+AddService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'addService',
+        template: __webpack_require__(1574),
+        providers: [],
+        styles: [`
+        input{
+            color: black;
+        }
+    `],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__app_global_state__["a" /* GlobalState */]])
+], AddService);
+
+
+/***/ }),
+
+/***/ 1515:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return ServiceList; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__ = __webpack_require__(638);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(34);
+
+
+
+
+
+
+
+let ServiceList = class ServiceList {
+    constructor(service, _authService, router) {
+        this.service = service;
+        this._authService = _authService;
+        this.router = router;
+        this.query = '';
+        this.DialogMessage = "You are not authorized";
+        this.settings = {
+            mode: 'external',
+            columns: {
+                DESCRIPTION: {
+                    title: 'Description',
+                    type: 'string'
+                },
+                TIMEDURATION_MIN: {
+                    title: 'Time Duration(min)',
+                    type: 'string'
+                },
+                RATE: {
+                    title: 'Rate',
+                    type: 'string'
+                }
+            }
+        };
+        this.subcriptions = [];
+        this.source = new __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__["LocalDataSource"]();
+        let Slist = [];
+        this.service.getServiceList().subscribe((data) => {
+            Slist.push(data);
+        }, Error => console.log(Error), () => {
+            this.service._serviceList = Slist;
+            this.source.load(Slist);
+        });
+    }
+    setMode() {
+        // this.divService.create();
+        //this.settings.mode='inline';
+        //console.log(this.settings.mode);
+    }
+    onAddClick() {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(['/pages/masters/ser/detail-ser', { mode: "add", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to add service.";
+            this.childModal.show();
+        }
+    }
+    onDeleteConfirm(event) {
+        this.selectedRow = event;
+        this.deleteModal.show();
+    }
+    DeleteEvent() {
+        this.deleteModal.hide();
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            try {
+                this.DialogMessage = "Deleting please wait...";
+                this.childModal.show();
+                let sub = this.service.postmaster("delete", this.selectedRow.data, "/saveService")
+                    .subscribe(data => {
+                    if (data.status == 'ok') {
+                        if (this.service._serviceList.length > 0) {
+                            this.service._serviceList.splice(this.service._serviceList.indexOf(this.selectedRow.data), 1);
+                            this.source.load(this.service._serviceList);
+                        }
+                        //Displaying dialog message for save with timer of 1 secs
+                        this.DialogMessage = "Data Deleted Successfully";
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 1000);
+                    }
+                    else {
+                        //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                        if (data.result._body == "The ConnectionString property has not been initialized.") {
+                            this.router.navigate(['/login', this.router.url]);
+                            return;
+                        }
+                        //Some other issues need to check
+                        this.DialogMessage = "Error in Deleting Data:" + data.result._body;
+                        //console.log(data.result._body);
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 3000);
+                    }
+                }, error => { alert(error); });
+                this.subcriptions.push(sub);
+            }
+            catch (e) {
+                alert(e);
+            }
+        }
+        else {
+            this.DialogMessage = "You are not authorized to edit Service.";
+            this.childModal.show();
+        }
+    }
+    // onViewClick(event): void {
+    //   if (this._authService.checkMenuRight("divisions", "view") == true) {
+    //     this.router.navigate(["pages/masters/divisions/add-division", { initial: event.data.INITIAL, mode: "view", returnUrl: this.router.url }]);
+    //   } else {
+    //     this.DialogMessage = "You are not authorized to view division."
+    //     this.childModal.show();
+    //   }
+    // }
+    onEditClick(event) {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(["/pages/masters/ser/detail-ser", { id: event.data.SERVICEID, mode: "edit", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to edit Service.";
+            this.childModal.show();
+        }
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], ServiceList.prototype, "childModal", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('deleteModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__["b" /* ModalDirective */])
+], ServiceList.prototype, "deleteModal", void 0);
+ServiceList = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'serlist',
+        template: __webpack_require__(1575),
+        providers: [],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_6__angular_router__["b" /* Router */]])
+], ServiceList);
+
+
+/***/ }),
+
+/***/ 1516:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return Masters; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 
-let Schedule = class Schedule {
+let Masters = class Masters {
     constructor() {
     }
     ;
 };
-Schedule = __decorate([
+Masters = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'schedule',
+        selector: 'masters',
         template: '<router-outlet></router-outlet>'
     }), 
     __metadata('design:paramtypes', [])
-], Schedule);
+], Masters);
 
 
 /***/ }),
 
-/***/ 1542:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// Imports
-var core_1 = __webpack_require__(0);
-var forms_1 = __webpack_require__(29);
-/**
- * CKEditor component
- * Usage :
- *  <ckeditor [(ngModel)]="data" [config]="{...}" debounce="500"></ckeditor>
- */
-var CKEditorComponent = (function () {
-    /**
-     * Constructor
-     */
-    function CKEditorComponent(zone) {
-        this.change = new core_1.EventEmitter();
-        this.ready = new core_1.EventEmitter();
-        this.blur = new core_1.EventEmitter();
-        this.focus = new core_1.EventEmitter();
-        this._value = '';
-        this.zone = zone;
-    }
-    Object.defineProperty(CKEditorComponent.prototype, "value", {
-        get: function () { return this._value; },
-        set: function (v) {
-            if (v !== this._value) {
-                this._value = v;
-                this.onChange(v);
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    ;
-    /**
-     * On component destroy
-     */
-    CKEditorComponent.prototype.ngOnDestroy = function () {
-        var _this = this;
-        if (this.instance) {
-            setTimeout((function () {
-                _this.instance.removeAllListeners();
-                _this.instance.destroy();
-                _this.instance = null;
-            }));
-        }
-    };
-    /**
-     * On component view init
-     */
-    CKEditorComponent.prototype.ngAfterViewInit = function () {
-        // Configuration
-        this.ckeditorInit(this.config || {});
-    };
-    /**
-     * Value update process
-     */
-    CKEditorComponent.prototype.updateValue = function (value) {
-        var _this = this;
-        this.zone.run((function () {
-            _this.value = value;
-            _this.onChange(value);
-            _this.onTouched();
-            _this.change.emit(value);
-        }));
-    };
-    /**
-     * CKEditor init
-     */
-    CKEditorComponent.prototype.ckeditorInit = function (config) {
-        var _this = this;
-        if (!CKEDITOR) {
-            console.error('Please include CKEditor in your page');
-            return;
-        }
-        // CKEditor replace textarea
-        this.instance = CKEDITOR.replace(this.host.nativeElement, config);
-        // Set initial value
-        this.instance.setData(this.value);
-        // listen for instanceReady event
-        this.instance.on('instanceReady', (function (evt) {
-            // send the evt to the EventEmitter
-            _this.ready.emit(evt);
-        }));
-        // CKEditor change event
-        this.instance.on('change', (function () {
-            _this.onTouched();
-            var value = _this.instance.getData();
-            // Debounce update
-            if (_this.debounce) {
-                if (_this.debounceTimeout)
-                    clearTimeout(_this.debounceTimeout);
-                _this.debounceTimeout = setTimeout((function () {
-                    _this.updateValue(value);
-                    _this.debounceTimeout = null;
-                }), parseInt(_this.debounce));
-            }
-            else {
-                _this.updateValue(value);
-            }
-        }));
-        // CKEditor blur event
-        this.instance.on('blur', (function (evt) {
-            _this.blur.emit(evt);
-        }));
-        // CKEditor focus event
-        this.instance.on('focus', (function (evt) {
-            _this.focus.emit(evt);
-        }));
-    };
-    /**
-     * Implements ControlValueAccessor
-     */
-    CKEditorComponent.prototype.writeValue = function (value) {
-        this._value = value;
-        if (this.instance)
-            this.instance.setData(value);
-    };
-    CKEditorComponent.prototype.onChange = function (_) { };
-    CKEditorComponent.prototype.onTouched = function () { };
-    CKEditorComponent.prototype.registerOnChange = function (fn) { this.onChange = fn; };
-    CKEditorComponent.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
-    CKEditorComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'ckeditor',
-                    providers: [
-                        {
-                            provide: forms_1.NG_VALUE_ACCESSOR,
-                            useExisting: core_1.forwardRef((function () { return CKEditorComponent; })),
-                            multi: true
-                        }
-                    ],
-                    template: "<textarea #host></textarea>",
-                },] },
-    ];
-    /** @nocollapse */
-    CKEditorComponent.ctorParameters = [
-        { type: core_1.NgZone, },
-    ];
-    CKEditorComponent.propDecorators = {
-        'config': [{ type: core_1.Input },],
-        'debounce': [{ type: core_1.Input },],
-        'change': [{ type: core_1.Output },],
-        'ready': [{ type: core_1.Output },],
-        'blur': [{ type: core_1.Output },],
-        'focus': [{ type: core_1.Output },],
-        'host': [{ type: core_1.ViewChild, args: ['host',] },],
-        'value': [{ type: core_1.Input },],
-    };
-    return CKEditorComponent;
-}());
-exports.CKEditorComponent = CKEditorComponent;
-//# sourceMappingURL=ckeditor.component.js.map
-
-/***/ }),
-
-/***/ 1546:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return CustomerPipe; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-
-let CustomerPipe = class CustomerPipe {
-    transform(data, query) {
-        if (data) {
-            if (query.length) {
-                return data.filter(item => {
-                    const searchedQuery = query.replace(/[^A-Z0-9]/ig, '').toLowerCase();
-                    const comId = (item.NAME) ? (item.NAME).replace(/[^A-Z0-9]/ig, '').toLowerCase() : '';
-                    if (comId.indexOf(searchedQuery) !== -1) {
-                        return item;
-                    }
-                });
-            }
-            else {
-                return data;
-            }
-        }
-    }
-};
-CustomerPipe = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'searchData', pure: false }), 
-    __metadata('design:paramtypes', [])
-], CustomerPipe);
-
-
-/***/ }),
-
-/***/ 1547:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return MobilePipe; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-
-let MobilePipe = class MobilePipe {
-    transform(data, query) {
-        if (data) {
-            if (query.length) {
-                return data.filter(item => {
-                    const searchedQuery = query.replace(/[^0-9]/ig, '').toLowerCase();
-                    const comId = (item.MOBILE) ? (item.MOBILE).replace(/[^0-9]/ig, '').toLowerCase() : '';
-                    if (comId.indexOf(searchedQuery) !== -1) {
-                        return item;
-                    }
-                });
-            }
-            else {
-                return data;
-            }
-        }
-    }
-};
-MobilePipe = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'searchMobile', pure: false }), 
-    __metadata('design:paramtypes', [])
-], MobilePipe);
-
-
-/***/ }),
-
-/***/ 1548:
+/***/ 1543:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_guard_service__ = __webpack_require__(639);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__schedule_component__ = __webpack_require__(1538);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_ScheduleInput_masterSchedule_component__ = __webpack_require__(1532);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_ScheduleInput_scheduleInput_component__ = __webpack_require__(1533);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_TreatmentEntry_Treatment_component__ = __webpack_require__(1535);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_FollowUp_followup_component__ = __webpack_require__(1531);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_TreatmentEntry_TreatmentList_component__ = __webpack_require__(1537);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_TreatmentEntry_TreatmentDetails_component__ = __webpack_require__(1536);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__masters_component__ = __webpack_require__(1516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__ = __webpack_require__(639);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Employee_EmployeeList_component__ = __webpack_require__(1501);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Employee_AddEmployee_component__ = __webpack_require__(1500);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Customer_CustomerList_component__ = __webpack_require__(1497);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Customer_AddCustomer_component__ = __webpack_require__(1496);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Rooms_RoomList_component__ = __webpack_require__(1509);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_Rooms_AddRoom_component__ = __webpack_require__(1508);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Services_ServiceList_component__ = __webpack_require__(1515);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Services_AddService_component__ = __webpack_require__(1514);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Series_SeriesList_component__ = __webpack_require__(1513);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_Series_AddSeries_component__ = __webpack_require__(1512);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_SeriesSales_AddSeriesSales_component__ = __webpack_require__(1510);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_SeriesSales_SeriesSalesList_component__ = __webpack_require__(1511);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_Disease_AddDisease_component__ = __webpack_require__(1498);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_Disease_DiseaseList_component__ = __webpack_require__(1499);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_Medication_AddMedication_component__ = __webpack_require__(1504);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_Medication_MedicationList_component__ = __webpack_require__(1505);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_HolidayEntry_holidayEntry_component__ = __webpack_require__(1503);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_HolidayEntry_addHoliday_component__ = __webpack_require__(1502);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_Prescription_PrescriptionList_component__ = __webpack_require__(1507);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_Prescription_AddPrescription_component__ = __webpack_require__(1506);
 
 
 
@@ -11791,23 +12376,48 @@ MobilePipe = __decorate([
 
 
 
-// noinspection TypeScriptValidateTypes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const routes = [
     {
         path: '',
-        component: __WEBPACK_IMPORTED_MODULE_2__schedule_component__["a" /* Schedule */],
+        component: __WEBPACK_IMPORTED_MODULE_1__masters_component__["a" /* Masters */],
         children: [
-            { path: 'mastersche', component: __WEBPACK_IMPORTED_MODULE_3__components_ScheduleInput_masterSchedule_component__["a" /* MasterSchedule */], canActivate: [__WEBPACK_IMPORTED_MODULE_1__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'scheInput', component: __WEBPACK_IMPORTED_MODULE_4__components_ScheduleInput_scheduleInput_component__["a" /* ScheduleInput */], canActivate: [__WEBPACK_IMPORTED_MODULE_1__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'treatment', component: __WEBPACK_IMPORTED_MODULE_5__components_TreatmentEntry_Treatment_component__["a" /* TreatmentEntry */], canActivate: [__WEBPACK_IMPORTED_MODULE_1__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'followup', component: __WEBPACK_IMPORTED_MODULE_6__components_FollowUp_followup_component__["a" /* FollowUp */], canActivate: [__WEBPACK_IMPORTED_MODULE_1__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'treatment-list', component: __WEBPACK_IMPORTED_MODULE_7__components_TreatmentEntry_TreatmentList_component__["a" /* TreatmentList */], canActivate: [__WEBPACK_IMPORTED_MODULE_1__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'treatment-details', component: __WEBPACK_IMPORTED_MODULE_8__components_TreatmentEntry_TreatmentDetails_component__["a" /* TreatmentDetails */], canActivate: [__WEBPACK_IMPORTED_MODULE_1__common_services_permission_guard_service__["a" /* CanActivateTeam */]] }
+            { path: 'emp', component: __WEBPACK_IMPORTED_MODULE_3__components_Employee_EmployeeList_component__["a" /* EmployeeList */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'cus', component: __WEBPACK_IMPORTED_MODULE_5__components_Customer_CustomerList_component__["a" /* CustomerList */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'room', component: __WEBPACK_IMPORTED_MODULE_7__components_Rooms_RoomList_component__["a" /* RoomList */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'ser', component: __WEBPACK_IMPORTED_MODULE_9__components_Services_ServiceList_component__["a" /* ServiceList */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'series', component: __WEBPACK_IMPORTED_MODULE_11__components_Series_SeriesList_component__["a" /* SeriesList */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'seriesSales', component: __WEBPACK_IMPORTED_MODULE_14__components_SeriesSales_SeriesSalesList_component__["a" /* SeriesSalesList */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'emp/detail-emp', component: __WEBPACK_IMPORTED_MODULE_4__components_Employee_AddEmployee_component__["a" /* AddEmployee */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'room/detail-room', component: __WEBPACK_IMPORTED_MODULE_8__components_Rooms_AddRoom_component__["a" /* AddRoom */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'cus/detail-cus', component: __WEBPACK_IMPORTED_MODULE_6__components_Customer_AddCustomer_component__["a" /* AddCustomer */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'ser/detail-ser', component: __WEBPACK_IMPORTED_MODULE_10__components_Services_AddService_component__["a" /* AddService */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'series/detail-series', component: __WEBPACK_IMPORTED_MODULE_12__components_Series_AddSeries_component__["a" /* AddSeries */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'seriesSales/detail-seriesSales', component: __WEBPACK_IMPORTED_MODULE_13__components_SeriesSales_AddSeriesSales_component__["a" /* AddSeriesSales */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'disease/detail-disease', component: __WEBPACK_IMPORTED_MODULE_15__components_Disease_AddDisease_component__["a" /* AddDisease */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'disease', component: __WEBPACK_IMPORTED_MODULE_16__components_Disease_DiseaseList_component__["a" /* DiseaseList */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'medication/detail-medication', component: __WEBPACK_IMPORTED_MODULE_17__components_Medication_AddMedication_component__["a" /* AddMedication */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'medication', component: __WEBPACK_IMPORTED_MODULE_18__components_Medication_MedicationList_component__["a" /* MedicationList */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'prescription/detail-prescription', component: __WEBPACK_IMPORTED_MODULE_22__components_Prescription_AddPrescription_component__["a" /* AddPrescription */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'prescription', component: __WEBPACK_IMPORTED_MODULE_21__components_Prescription_PrescriptionList_component__["a" /* PrescriptionList */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'holiday', component: __WEBPACK_IMPORTED_MODULE_19__components_HolidayEntry_holidayEntry_component__["a" /* HolidayEntryComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
+            { path: 'holiday/detail-holiday', component: __WEBPACK_IMPORTED_MODULE_20__components_HolidayEntry_addHoliday_component__["a" /* AddHolidayComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
         ]
-    },
+    }
 ];
-/* unused harmony export routes */
-
 const routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forChild(routes);
 /* harmony export (immutable) */ __webpack_exports__["a"] = routing;
 
@@ -11815,108 +12425,143 @@ const routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModul
 
 /***/ }),
 
-/***/ 1550:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var core_1 = __webpack_require__(0);
-var common_1 = __webpack_require__(41);
-var ckeditor_component_1 = __webpack_require__(1542);
-/**
- * CKEditorModule
- */
-var CKEditorModule = (function () {
-    function CKEditorModule() {
-    }
-    CKEditorModule.decorators = [
-        { type: core_1.NgModule, args: [{
-                    imports: [
-                        common_1.CommonModule
-                    ],
-                    declarations: [
-                        ckeditor_component_1.CKEditorComponent,
-                    ],
-                    exports: [
-                        ckeditor_component_1.CKEditorComponent,
-                    ]
-                },] },
-    ];
-    /** @nocollapse */
-    CKEditorModule.ctorParameters = [];
-    return CKEditorModule;
-}());
-exports.CKEditorModule = CKEditorModule;
-//# sourceMappingURL=ckeditor.module.js.map
-
-/***/ }),
-
-/***/ 1551:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var ckeditor_module_1 = __webpack_require__(1550);
-exports.CKEditorModule = ckeditor_module_1.CKEditorModule;
-var ckeditor_component_1 = __webpack_require__(1542);
-exports.CKEditorComponent = ckeditor_component_1.CKEditorComponent;
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-
-/***/ 1588:
+/***/ 1556:
 /***/ (function(module, exports) {
 
-module.exports = "<style type=\"text/css\">\r\n  input{\r\n    margin-bottom: 2px;\r\n  }\r\n</style>\r\n<div class=\"form-group\">\r\n  <label for=\"customerEntry\" style=\"font-weight:600; font-size: 14px;cursor: pointer;\"\r\n    (click)=\"redirectToPatient()\">Patient</label>\r\n  <button type=\"submit\" class=\"btn \" style=\"margin-left:20px;\" (click)=\"onAddNewCustomer()\">New</button>\r\n  <div class=\"row\" *ngIf=\"!CustomerEntryVisible\">\r\n    <div class=\"col-md-4 col-lg-3\">\r\n      <input [(ngModel)]=\"barcode\" style=\"color:black\" type=\"text\" class=\"form-control \" name=\"cusBarcode\"\r\n        id=\"cusBarcode\" [readOnly]=\"mode=='edit'?true:false\" (input)=\"onBarcodeChange($event.target.value)\"\r\n        placeholder=\"Barcode\">\r\n    </div>\r\n\r\n    <div class=\"col-12 col-md-4 col-lg-2\">\r\n      <!-- <input [(ngModel)]=\"mobileNo\" style=\"color:black\" type=\"text\" class=\"form-control \" name=\"cusMobile\"\r\n          id=\"cusMobile\" [readOnly]=\"mode=='edit'?true:false\" (input)=\"onSearchChange($event.target.value)\"\r\n          placeholder=\"Mobile No\"> -->\r\n      <!-- (input)=\"onSearchChange($event.target.value)\" -->\r\n      <input type=\"text\" (change)=\"mobileChange($event)\" id=\"customerSelectMobile\" list=\"mobileList\" (keyup)=\"mobile_keyup($event)\" [(ngModel)]=\"MobileInput\" class=\"form-control\"        \r\n        placeholder=\"Mobile No\">\r\n\r\n      <div style=\"position: absolute; background-color: white; \" *ngIf=\"!searchV\">\r\n        <datalist *ngIf=\"CustomerList && CustomerList.length>0\" id=\"mobileList\">\r\n          <option *ngFor=\"let r of CustomerList\" [value]=\"r.MOBILE\">\r\n            {{r.MOBILE}} </option>\r\n        </datalist>\r\n      </div>\r\n    </div>\r\n    \r\n    <div class=\"col-12 col-md-4 col-lg-4\">\r\n      <input type=\"text\" (change)=\"customerChange($event)\"  id=\"customerSelect\" list=\"customerList\" (keyup)=\"customer_keyup($event)\" [(ngModel)]=\"CustomerInput\" class=\"form-control\"\r\n        placeholder=\"Customer\">\r\n\r\n      <div style=\"position: absolute; background-color: white; \">\r\n        <datalist *ngIf=\"CustomerList && CustomerList.length>0\" id=\"customerList\" >\r\n          <option *ngFor=\"let r of CustomerList\" [value]=\"r.NAME\">\r\n            {{r.NAME}} </option>\r\n        </datalist>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div *ngIf=\"CustomerEntryVisible\" class=\"form-group\">\r\n  <fieldset style=\"  border: 1px solid #dcdcdc; padding:10px; margin: 0;\">\r\n    <div class=\"form-group row \">\r\n      <label for=\"name\" class=\"col-sm-2 form-control-label \">Name</label>\r\n      <div class=\"col-sm-6 \">\r\n        <input style=\"color:black\" type=\"text \" class=\"form-control \" name=\"name\" id=\"name\"\r\n          [(ngModel)]=\"newCustomerName\" placeholder=\"Name \">\r\n      </div>\r\n    </div>\r\n\r\n\r\n    <div class=\"form-group row\">\r\n      <label for=\"DOB\" class=\"col-sm-2 form-control-label\">DOB</label>\r\n      <div class=\"col-sm-6 \">\r\n        <input [(ngModel)]=\"newCustomerDOB\" (change)=\"changeDOB($event)\" style=\"color:black\" type=\"date\"\r\n          class=\"form-control \" name=\"DOB\" id=\"DOB\" placeholder=\"DOB \">\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"form-group row\">\r\n      <label for=\"gender\" class=\"col-sm-2 form-control-label\">Age</label>\r\n      <div class=\"col-sm-6 \">\r\n        <input [(ngModel)]=\"newCustomerAge\" style=\"color:black\" type=\"text \" class=\"form-control \" name=\"age\" id=\"age\"\r\n          placeholder=\"Age \">\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"form-group row\">\r\n      <label for=\"gender\" class=\"col-sm-2 form-control-label\">Gender</label>\r\n      <div class=\"col-sm-6 \">\r\n        <!-- <input [(ngModel)]=\"newCustomerAge\" style=\"color:black\" type=\"text \" class=\"form-control \" name=\"age\" id=\"age\"\r\n          placeholder=\"Age \"> -->\r\n        <select class=\"form-control\" [(ngModel)]=\"gender\" placeholder=\"Select Gender\">\r\n          <option value=\"Male\">Male</option>\r\n          <option value=\"Female\">Female</option>\r\n          <option value=\"Others\">Others</option>\r\n        </select>\r\n      </div>\r\n    </div>\r\n\r\n\r\n    <div class=\"form-group row \">\r\n      <label for=\"address\" class=\"col-sm-2 form-control-label \">Address</label>\r\n      <div class=\"col-sm-6 \">\r\n        <input [(ngModel)]=\"newCustomerAddress\" style=\"color:black\" type=\"text \" class=\"form-control \" name=\"address\"\r\n          id=\"address\" placeholder=\"Address \">\r\n      </div>\r\n    </div>\r\n    <div class=\"form-group row \">\r\n      <label for=\"email\" class=\"col-sm-2 form-control-label \">Email</label>\r\n      <div class=\"col-sm-6 \">\r\n        <input [(ngModel)]=\"newCustomerEmail\" style=\"color:black\" type=\"email\" class=\"form-control \" name=\"email\"\r\n          id=\"email\" placeholder=\"Email \">\r\n      </div>\r\n    </div>\r\n\r\n\r\n    <div class=\"form-group row\">\r\n      <label for=\"Membership\" class=\"col-sm-2 form-control-label\">Membership</label>\r\n      <div class=\"col-sm-6 \">\r\n        <!-- <input [(ngModel)]=\"newCustomerAge\" style=\"color:black\" type=\"text \" class=\"form-control \" name=\"age\" id=\"age\"\r\n          placeholder=\"Age \"> -->\r\n        <select class=\"form-control\" [(ngModel)]=\"Membership\" placeholder=\"Select Membership\">\r\n          <option value=\"Gold\">Gold</option>\r\n          <option value=\"Silver\">Silver</option>\r\n          <option value=\"Platinum\">Platinum</option>\r\n        </select>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"form-group row \">\r\n      <label for=\"address\" class=\"col-sm-2 form-control-label \">Patient ID</label>\r\n      <div class=\"col-sm-6 \">\r\n        <input [(ngModel)]=\"newCustomerPatientID\" style=\"color:black\" type=\"text \" class=\"form-control \"\r\n          name=\"patientid\" id=\"patientid\" placeholder=\"patientid \">\r\n      </div>\r\n\r\n    </div>\r\n    <div class=\"form-group row \">\r\n      <label for=\"address\" class=\"col-sm-2 form-control-label \">Patient Weight</label>\r\n      <div class=\"col-sm-6 \">\r\n        <input [(ngModel)]=\"newCustomerWeight\" style=\"color:black\" type=\"text \" class=\"form-control \" name=\"patientid\"\r\n          id=\"patientid\" placeholder=\"patientweight \">\r\n      </div>\r\n\r\n    </div>\r\n\r\n\r\n    <div class=\"form-group row \">\r\n      <label for=\"mobile\" class=\"col-sm-2 form-control-label \">Mobile</label>\r\n      <div class=\"col-sm-6 \">\r\n        <input [(ngModel)]=\"newCustomerMobile\" style=\"color:black\" type=\"number\" (input)=\"onMobileChange($event)\"\r\n          class=\"form-control \" name=\"mobile\" id=\"mobile\" placeholder=\"Mobile No\">\r\n      </div>\r\n      <button type=\"button\" [disabled]=\"false\" class=\"btn btn-primary\" (click)=\"SaveCustomerClickEvent()\"\r\n        style=\"margin-top:3px\">Save\r\n        Patient</button>\r\n    </div>\r\n  </fieldset>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n  aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n\r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        {{DialogMessage}}\r\n      </div>\r\n      <!--<div class=\"modal-footer\">\r\n                        <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                    </div>!-->\r\n\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div>\r\n    <form id=formId class=\"form-horizontal\" [formGroup]=\"form\">\r\n        <ba-card [title]=\"modeTitle\">\r\n            <fieldset [disabled]=\"disableForm\" style=\" border: none;padding: 0; margin: 0;\">\r\n                <div class=\"form-group row \">\r\n                    <label for=\"name\" class=\"col-sm-2 form-control-label \">Name</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [style.background-color]=\"disabled()\" style=\"color:black\" type=\"text \"\r\n                            class=\"form-control \" name=\"name\" id=\"name\" formControlName=\"NAME\" placeholder=\"Name \">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"address\" class=\"col-sm-2 form-control-label \">Address</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"text \" class=\"form-control \" name=\"address\" id=\"address\" formControlName=\"ADDRESS\"\r\n                            placeholder=\"Address \">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"telno\" class=\"col-sm-2 form-control-label \">Tel No</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" type=\"number\"\r\n                            [style.background-color]=\"disabled()\" class=\"form-control \" name=\"telno\" id=\"telno\"\r\n                            formControlName=\"TELNO\" placeholder=\"Telephone No\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"mobile\" class=\"col-sm-2 form-control-label \">Mobile</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" type=\"number\"\r\n                            (input)=\"onMobileChange($event)\" [style.background-color]=\"disabled()\" class=\"form-control \"\r\n                            name=\"mobile\" id=\"mobile\" formControlName=\"MOBILE\" placeholder=\"Mobile No\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"mobile\" class=\"col-sm-2 form-control-label \">Internation Mobile</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" type=\"number\"\r\n                            [style.background-color]=\"disabled()\" class=\"form-control \"\r\n                            name=\"mobile\" id=\"mobile\" formControlName=\"IMOBILE\" placeholder=\"Mobile No\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"mobile\" class=\"col-sm-2 form-control-label \">PAN No</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" type=\"number\"\r\n                            (input)=\"onPanChange($event)\" [style.background-color]=\"disabled()\" class=\"form-control \"\r\n                            name=\"panno\" id=\"panno\" formControlName=\"PANNO\" placeholder=\"PAN No\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"email\" class=\"col-sm-2 form-control-label \">Email</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"text \" class=\"form-control \" name=\"email\" id=\"email\" formControlName=\"EMAIL\"\r\n                            placeholder=\"Email\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"barcode\" class=\"col-sm-2 form-control-label \">Barcode</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"text \" class=\"form-control \" name=\"barcode\" id=\"barcode\" formControlName=\"BARCODE\"\r\n                            placeholder=\"Barcode\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"Membership\" class=\"col-sm-2 form-control-label \">Membership</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <select class=\"form-control\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            name=\"Membership\" id=\"Membership\" formControlName=\"Membership\">\r\n                            <option value=\"Gold\">Gold</option>\r\n                            <option value=\"Silver\">Silver</option>\r\n                            <option value=\"Platinum\">Platinum</option>\r\n                        </select>\r\n\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"dob\" class=\"col-sm-2 form-control-label \">DOB</label>\r\n                    <div class=\"col-sm-6 col-md-3 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"date\" class=\"form-control \" name=\"dob\" id=\"dob\" formControlName=\"DOB\"\r\n                            placeholder=\"Date Of Birth\">\r\n                    </div>\r\n                    <div class=\"col-sm-6 col-md-3\">\r\n                        <nepali-date-picker name=\"bsDob\" [id]=\"'bsDob'\" [label]=\"'yyyy-mm-dd'\" formControlName=\"BS_DOB\" >\r\n                      </nepali-date-picker>\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"Age\" class=\"col-sm-2 form-control-label \">Age</label>\r\n                    <div class=\"col-sm-6 \" style=\"display: flex; align-items: center;\">\r\n                        <input readOnly style=\"color:black;width: 90%;\" [style.background-color]=\"disabled()\"\r\n                            type=\"number\" class=\"form-control \" name=\"Age\" id=\"Age\" formControlName=\"Age\"\r\n                            placeholder=\"Age\">\r\n                        <span style=\"width: 10%; margin-left: 5px;\" *ngIf=\"showAgeFlag==true\">\r\n                            <i title=\"Age is calculated from previously entered value & registration date and may not be accurate. Please enter DOB for accurate Age.\" class=\"ion-alert\"></i></span>\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"Weight\" class=\"col-sm-2 form-control-label \">Weight</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"number\" class=\"form-control \" name=\"Weight\" id=\"Weight\"\r\n                            formControlName=\"Patient_Weight\" placeholder=\"Weight\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"mstatus\" class=\"col-sm-2 form-control-label \">M.Status</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <select class=\"form-control\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            name=\"mstatus\" id=\"mstatus\" formControlName=\"MSTATUS\">\r\n                            <option value=\"single\">Single</option>\r\n                            <option value=\"married\">Married</option>\r\n                        </select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"gender\" class=\"col-sm-2 form-control-label \">Gender</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <select class=\"form-control\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            name=\"gender\" id=\"gender\" formControlName=\"GENDER\">\r\n                            <option value=\"male\">Male</option>\r\n                            <option value=\"female\">Female</option>\r\n                            <option value=\"other\">Other</option>\r\n                        </select>\r\n\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"occupation\" class=\"col-sm-2 form-control-label \">Occupation</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"text \" class=\"form-control \" name=\"occupation\" id=\"occupation\"\r\n                            formControlName=\"OCCUPATION\" placeholder=\"Occupation\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"econtactname\" class=\"col-sm-2 form-control-label \">Emg. Contact Name</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"text \" class=\"form-control \" name=\"econtactname\" id=\"econtactname\"\r\n                            formControlName=\"EMERGENCYCONTACTNAME\" placeholder=\"Emergency Contact Name\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"econtactno\" class=\"col-sm-2 form-control-label \">Emg. Contact No</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"text \" class=\"form-control \" name=\"econtactno\" id=\"econtactno\"\r\n                            formControlName=\"EMERGENCYCONTACTNO\" placeholder=\"Emergency Contact Number\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"regdate\" class=\"col-sm-2 form-control-label \">Register Date</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"date\" class=\"form-control \" name=\"regdate\" id=\"regdate\" formControlName=\"REGDATE\"\r\n                            placeholder=\"Register Date\">\r\n                    </div>\r\n                </div>\r\n            </fieldset>\r\n        </ba-card>\r\n        <div style=\"padding-bottom: 10px; margin-top: -8px;\">\r\n            <button [disabled]=\"disableForm\" *ngIf=\"mode=='add' || mode=='edit'\" (click)=\"onSave()\"\r\n                style=\"margin-right: 4px;\" class=\"btn btn-primary \" [disabled]=\"!form.valid\">Save</button>\r\n            <button type=\"button \" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\"\r\n            role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-sm\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n\r\n                        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    <div class=\"modal-body\">\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                    <!--<div class=\"modal-footer\">\r\n                        <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                    </div>!-->\r\n\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </form>\r\n\r\n</div>"
 
 /***/ }),
 
-/***/ 1589:
+/***/ 1557:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"widgets\">\r\n    <div class=\"row\">\r\n      <input type=\"date\" name=\"date\" id=\"date\" value=\"{{ScheduleDate}}\"\r\n            (change)=\"OnDateChangeEvent($event.target.value)\" />\r\n    </div>\r\n    <div class=\"row\">\r\n      <ba-card title=\"Customers\" baCardClass=\"with-scroll\">\r\n        <ng2-smart-table [settings]=\"settings\" [source]=\"source\"></ng2-smart-table>\r\n      </ba-card>\r\n    </div>\r\n  </div>"
+module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" (click)=\"onAddClick()\">Add Customer</button>\r\n  </div>\r\n  <div class=\"row\">\r\n    <ba-card title=\"Customers\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\"\r\n        (view)=\"onViewClick($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-md\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n\r\n      <div class=\"modal-body\">\r\n        <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n        {{DialogMessage}}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the Customer you can't recover it back. Are U sure you want to delete this Customer?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>!\r\n\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
-/***/ 1590:
+/***/ 1558:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"row\">\r\n        <div class=\"col-sm-4 col-md-3 col-lg-3 col-xl-3\">\r\n            <button class=\"btn btn-primary\" style=\"margin-bottom: 5px;\" (click)=\"onAddClick()\">New\r\n                Appointment</button>\r\n        </div>\r\n        <div class=\"col-xs-6 col-sm-4 col-md-3  col-lg-2 col-xl-2\">\r\n            <nepali-date-picker name=\"nepaliDateFrom\" [id]=\"'nepaliDatefrom'\"\r\n                (change)=\"changeEntryDate($event.detail.value,'BS')\" [label]=\"'yyyy-mm-dd'\"\r\n                [(ngModel)]=\"this.ScheduleDateBS\" >\r\n            </nepali-date-picker>\r\n        </div>\r\n        <div class=\"col-xs-6 col-sm-4 col-md-2  col-lg-2 col-xl-2\">\r\n            <input type=\"date\" class=\"date-input form-control\" [(ngModel)]=\"this.ScheduleDateAD\"\r\n                (change)=\"changeEntryDate($event.target.value,'AD')\" style=\"max-width: 150px; height: 30px;\">\r\n        </div>\r\n        <div class=\"w-100 d-inline-block d-md-none\">.</div>\r\n        <div class=\"col-xs-6 col-sm-4 col-md-2  col-lg-2 col-xl-2\">\r\n            <input #inputBox type=\"number\" name=\"searchCustomer\" id=\"searchCustomer\"\r\n                style=\"max-width: 150px;height:30px;\" [(ngModel)]=\"searchCustomer\"\r\n                (keydown.enter)=\"customerSearchChange($event)\" placeholder=\"Search Mobile\" class=\"form-control\" />\r\n        </div>\r\n        <div class=\"col-xs-6 col-sm-4 col-md-2  col-lg-2 col-xl-2\">\r\n            <button class=\"btn btn-primary\" style=\"margin-bottom: 5px;\" (click)=\"showDetails()\">View Details</button>\r\n        </div>\r\n    </div>\r\n\r\n    <!-- <div class=\"row\">\r\n        \r\n        \r\n         <input type=\"date\" name=\"date\" id=\"date\" value=\"{{ScheduleDate}}\"\r\n            (change)=\"OnDateChangeEvent($event.target.value)\" /> \r\n         \r\n        \r\n            \r\n         <input type=\"text\" (change)=\"customerSearchChange($event)\" id=\"customer\"\r\n        list=\"dynmicUserIds\" [(ngModel)]=\"searchCustomer\" class=\"form-control\" placeholder=\"Customer\" style=\"width: 150px;\">\r\n\r\n          <datalist id=\"dynmicUserIds\" (keyEnter)=\"keyenterCustomer($event)\" >\r\n            <option *ngFor=\"let r of CustomerList | customerSearch: searchCustomer | slice: 0: 10\" [value]=\"r.NAME\" > \r\n              {{r.NAME}} </option>\r\n          </datalist> \r\n        </div>\r\n        <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px;margin-right:20px;float:right\"\r\n            (click)=\"showDetails()\">View Details</button> \r\n    </div> -->\r\n\r\n    <div class=\"dayWiseSchedule\">\r\n        <div class=\"row\" style=\"height: 30px; line-height: 30px;  vertical-align: middle;  \">{{ScheduleDate |\r\n            date:'EEEE, MMMM d, y'}}</div>\r\n\r\n        <div class=\"row\" id=\"tblSchedule\" style=\"min-height: 380px\">\r\n            <table>\r\n                <thead>\r\n                    <tr>\r\n                        <th class=\"headcol\"\r\n                            style=\"border: 1px solid #dcdcdc;font-size: 17px;font-weight:400;text-shadow: 0px 1px 2px;width:110px;height: 41px; text-align: center; line-height: 40px;margin-top: -1px;\">\r\n                            Employee\r\n                        </th>\r\n                        <th *ngFor=\"let h of hourHeaderList\" [attr.colspan]=\"SectionPerHour\"\r\n                            style=\" border: 1px solid #dcdcdc;height: 30px\">{{h}}</th>\r\n                    </tr>\r\n                    <tr style=\"height: 10px;\">\r\n                        <th></th>\r\n                        <th [style.max-width]=\"minuteCellWidth+'px'\" [style.min-width]=\"minuteCellWidth+'px'\"\r\n                            style=\"border: 1px solid #dcdcdc;\" *ngFor=\"let m of minList\">\r\n                        </th>\r\n                    </tr>\r\n                </thead>\r\n                <tbody>\r\n                    <tr *ngFor=\"let e of employeeList \" style=\"border: 1px solid #dcdcdc;\">\r\n                        <td class=\"headcol\"\r\n                            style=\"border: 1px solid #dcdcdc;font-size:11px;font-weight:bold; width:110px; vertical-align: middle; height: 60px;\">\r\n                            {{e.NAME}}\r\n                        </td>\r\n                        <td id=\"tdDataCont\" (click)=\"roomCellClick(e)\" *ngFor=\"let a of e.minList\"\r\n                            [attr.colspan]=\"a.colspan\" [style.max-width]=\"minuteCellWidth+'px'\"\r\n                            [style.min-width]=\"minuteCellWidth+'px'\">\r\n                            <div *ngFor=\"let m of a.appointments\" class=\"emptooltip\">\r\n                                <div class=\"timeline\" [style.background] = \"getAppointmentBackground(m)\" \r\n                                [style.color]=\"getAppointmentTextColor(m)\" (click)=\"labelClickEvent(m.sid)\">\r\n                                    {{m.customer}}<br>{{m.service}}<br>{{m.room}}\r\n                                </div>\r\n                                <span *ngIf=\"IntegrateTreatmentWithAppointment\" class=\"tooltiptext\">\r\n                                    <table id=\"tooltipTable\">\r\n                                        <tr>\r\n                                            <td style=\"width: 100px\">\r\n                                                Patient</td>\r\n                                            <td style=\"font-weight: 600; width: 150px;\">\r\n                                                : {{m.customer}}</td>\r\n                                        </tr>\r\n                                        <tr>\r\n                                            <td style=\"width: 100px\">\r\n                                                Service</td>\r\n                                            <td style=\"font-weight: 600; width: 150px;\">\r\n                                                : {{m.service}}</td>\r\n                                        </tr>\r\n                                        <tr>\r\n                                            <td style=\"width: 100px\">\r\n                                                Time</td>\r\n                                            <td style=\"font-weight: 600; width: 150px;\">\r\n                                                : {{m.time}}</td>\r\n                                        </tr>\r\n                                        <tr>\r\n                                            <td colspan=\"2\">\r\n                                                <button class=\"btn btn-primary\" style=\"width:100%\"\r\n                                                    (click)=\"treatmentClickEvent(m.sid)\">Treatment</button>\r\n                                            </td>\r\n                                        </tr>\r\n                                    </table>\r\n                                </span>\r\n                            </div>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n        </div>\r\n    </div>\r\n\r\n\r\n    <div class=\"row\" style=\"margin-top:50px;\" *ngIf=\"DisplayRoomTimeLine\">\r\n        <table id=\"dayWiseSchedule\">\r\n            <tr>\r\n                <td rowspan=\"3\"\r\n                    style=\"color: black;font-size: 17px;font-weight: bold;text-shadow: 0px 1px 2px;width:100px\">\r\n                    Rooms Schedule</td>\r\n                <td [attr.colspan]=\"totalNoOfMinCell\">{{ScheduleDate | date:'EEEE, MMMM d, y'}}</td>\r\n            </tr>\r\n            <tr>\r\n                <td [attr.rowspan]=\"roomList.length+3\">\r\n                    <div id=\"tblSchedule\" style=\"width:1000px; overflow:scroll\">\r\n                        <table>\r\n                            <thead>\r\n                                <tr>\r\n                                    <th *ngFor=\"let h of hourHeaderList\" [attr.colspan]=\"SectionPerHour\"\r\n                                        style=\" border: 1px solid #dcdcdc; \">{{h}}</th>\r\n                                </tr>\r\n                                <tr>\r\n                                    <th [style.max-width]=\"minuteCellWidth+'px'\"\r\n                                        [style.min-width]=\"minuteCellWidth+'px'\" style=\"border: 1px solid #dcdcdc;\"\r\n                                        *ngFor=\"let m of minList\"></th>\r\n                                </tr>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let e of roomList\" style=\"border: 1px solid #dcdcdc;\">\r\n                                    <td [attr.colspan]=\"totalNoOfMinCell\">\r\n                                <tr>\r\n                                    <td id=\"tdDataCont\" (click)=\"roomCellClick(e)\" *ngFor=\"let m of e.minList\"\r\n                                        [attr.colspan]=\"m.colspan\" [style.max-width]=\"m.width\"\r\n                                        [style.min-width]=\"m.width\">\r\n                                        <label class=\"timeline\" *ngIf=\"m.booked==1\"\r\n                                            (click)=\"labelClickEvent(m.sid)\">{{m.room}}<br>{{m.service}}<br>{{m.customer}}</label>\r\n\r\n                                    </td>\r\n                                </tr>\r\n                </td>\r\n            </tr>\r\n            </tbody>\r\n        </table>\r\n    </div>\r\n    </td>\r\n    </tr>\r\n    <tr></tr>\r\n    <tr *ngFor=\"let e of roomList\" style=\"border: 1px solid #dcdcdc;\">\r\n        <td style=\"font-size:11px;font-weight:bold; height:52px\">{{e.ID}}({{e.NAME}})</td>\r\n    </tr>\r\n    <tr style=\"height:7px\">\r\n        <td>\r\n            <div style=\"height:5px\"></div>\r\n        </td>\r\n    </tr>\r\n    </table>\r\n</div>\r\n\r\n<!--<daypilot-scheduler [config]=\"config\" [events]=\"events\"  #scheduler></daypilot-scheduler>-->\r\n<!--<table>\r\n        <tr style=\"display: block; float: left;\">\r\n          <td rowspan=\"4\" colspan=\"4\" *ngFor=\"let h of hourHeaderList\" style=\" border: 1px solid #dcdcdc;display: block;height:100px\">{{h}}</td>\r\n        </tr>\r\n        <tr style=\"display: block; float: left;\">\r\n          <td *ngFor=\"let m of minList\" style=\" border: 1px solid #dcdcdc;display: block;height:25px;width:25px\"></td>\r\n        </tr>\r\n        <tr *ngFor=\"let e of employeeList\" style=\"display: block; float: left;\">\r\n\r\n          <td [attr.colspan]=\"totalNoOfMinCell\" style=\"display: block;\">\r\n            <tr style=\"display: block; float: left;margin-top:-2px\">\r\n              <td style=\"display: block;width:50px;height:25px\"  id=\"tdDataCont\" *ngFor=\"let m of e.minList\"  [style.max-height]=\"m.width\" [style.min-height]=\"m.width\"\r\n                (click)=\"CellClick(m)\">\r\n                <div ><label style=\"width:50px;background:brown\"  [style.height]=\"m.width\" *ngIf=\"m.booked==1\">{{m.room}}<br>{{m.service}}<br>{{m.customer}}</label></div>\r\n              </td>\r\n            </tr>\r\n          </td>\r\n        </tr>\r\n          <tr *ngFor=\"let e of roomList\" style=\"display: block; float: left;\">\r\n               <td [attr.colspan]=\"totalNoOfMinCell\" style=\"display: block;\">\r\n                    <tr style=\"display: block; float: left;margin-top:-2px\">\r\n                        <td style=\"display: block;width:50px;height:25px\" id=\"tdDataCont\" *ngFor=\"let m of e.minList\"  [style.max-height]=\"m.width\" [style.min-height]=\"m.width\">\r\n                            <div><label style=\"width:50px;background:brown\" *ngIf=\"m.booked==1\" [style.height]=\"m.width\">{{m.room}}{{m.service}}{{m.customer}}</label></div>\r\n                        </td>\r\n                    </tr>\r\n                </td>\r\n            </tr>\r\n\r\n      </table>-->\r\n\r\n\r\n</div>\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-md\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n\r\n                </button>\r\n                <h4 class=\"modal-title\">Information</h4>\r\n            </div>\r\n\r\n            <div class=\"modal-body\">\r\n                <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n                {{DialogMessage}}\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #scheduleInputModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\"\r\n    role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-md\">\r\n        <div #employeeEmailSchedule class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"scheduleInputModal.hide()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n\r\n                </button>\r\n                <h4 class=\"modal-title\">Schedule:</h4>\r\n            </div>\r\n\r\n            <div class=\"modal-body\">\r\n                <div class=\"form-group\">\r\n                    <label for=\"time\">Time</label>\r\n                    <!--<input type=\"input\" class=\"form-control\" id=\"time\" [(ngModel)]=\"scheduleInput.startTime\">-->\r\n\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #ScheduleForMail=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-md\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"ScheduleForMail.hide()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n\r\n                </button>\r\n                <h4 class=\"modal-title\">Employee Schedule:</h4>\r\n            </div>\r\n\r\n            <div class=\"modal-body\" style=\"overflow: scroll;\">\r\n                <div class=\"row\" id=\"employeeSchedule\"\r\n                    style=\" background: white;margin-left:20px;padding-right: 5px;width:750px; height: 400px;\">\r\n                    <label style=\"width:100%;font-weight: bold;font-size: 16px;text-decoration: underline;\">Date :\r\n                        {{rtFormat}} AD, {{rtFormatNepali}} BS </label>\r\n                    <!-- <div  *ngFor=\"let e of et.EMPLOYEES\" style=\"margin-bottom:25px\" class=\"row\">\r\n                        <label\r\n                            style=\"width:100%;font-weight: bold;font-size: 14px;text-decoration: underline;\">{{e.EMPLOYEENAME}}</label><br>\r\n                        <div style=\"width:20%;float:left;font-weight: bold;font-size: 12px;text-decoration: underline;\">\r\n                            Time </div>\r\n                        <div style=\"width:12%;float:left;font-weight: bold;font-size: 12px;text-decoration: underline;\">\r\n                            Service</div>\r\n                        <div style=\"width:12%;float:left;font-weight: bold;font-size: 12px;text-decoration: underline;\">\r\n                            Customer</div>\r\n                            <div style=\"width:11%;float:left;font-weight: bold;font-size: 12px;text-decoration: underline;\">\r\n                                Mobile</div>\r\n                        <div style=\"width:15%;float:left;font-weight: bold;font-size: 12px;text-decoration: underline;\">\r\n                            Room No.</div>\r\n\r\n                    <div style=\"width:8%;float:left;font-weight: bold;font-size: 12px;text-decoration: underline;\">\r\n                        Fee</div>\r\n                        <div  *ngFor=\"let t of e.BOOKEDTIMES\">\r\n                            <div style=\"clear:left\">\r\n                                <span style=\"width:20%;float:left;font-size: 12px;\">\r\n                                    {{t.STARTTIME}} &nbsp;&nbsp;</span>\r\n                                <span style=\"width:12%;float:left;font-size: 12px;\">{{t.SERVICE}}</span>\r\n                                <span style=\"width:12%;float:left;font-size: 12px;\">{{t.CUSTOMER}}</span>\r\n                                <span style=\"width:11%;float:left;font-size: 12px;\">{{t.MOBILE}}</span>\r\n                                <span style=\"width:15%;float:left;font-size: 12px;\">{{t.ROOM}}</span>\r\n                                <span style=\"width:8%;float:left;font-size: 12px;\">{{t.TYPE}}</span>\r\n                                <span\r\n                                    style=\"width:10%;float:left;font-size: 12px;color:blue;cursor: pointer; margin-left: 5px\"\r\n                                    (click)=\"labelClickEvent(t.SCHEDULEID)\">Details</span>\r\n                            </div>\r\n                        </div>\r\n\r\n                    </div> -->\r\n                    <div *ngIf=\"rt.length == 0\">\r\n                        <h1 style=\"margin-left:100px; margin-top:50px;\"> NO SCHEDULE</h1>\r\n                    </div>\r\n                    <div *ngFor=\"let r of rt.ROOMS\" style=\"margin-bottom:25px\" class=\"row\">\r\n                        <label\r\n                            style=\"width:100%;font-weight: bold;font-size: 14px;text-decoration: underline;\">{{r.ROOMNO}}</label><br>\r\n                        <div style=\"width:10%;float:left;font-weight: bold;font-size: 12px;text-decoration: underline;\">\r\n                            Time </div>\r\n                        <div style=\"width:12%;float:left;font-weight: bold;font-size: 12px;text-decoration: underline;\">\r\n                            Service</div>\r\n                        <div style=\"width:12%;float:left;font-weight: bold;font-size: 12px;text-decoration: underline;\">\r\n                            Customer</div>\r\n                        <div style=\"width:11%;float:left;font-weight: bold;font-size: 12px;text-decoration: underline;\">\r\n                            Mobile</div>\r\n                        <div style=\"width:15%;float:left;font-weight: bold;font-size: 12px;text-decoration: underline;\">\r\n                            Employee</div>\r\n\r\n                        <div style=\"width:8%;float:left;font-weight: bold;font-size: 12px;text-decoration: underline;\">\r\n                            Fee</div>\r\n                        <div *ngFor=\"let t of r.BOOKEDTIMES\">\r\n                            <div style=\"clear:left\">\r\n                                <span style=\"width:10%;float:left;font-size: 12px;\">\r\n                                    {{t.STARTTIME}} &nbsp;&nbsp;</span>\r\n                                <span style=\"width:12%;float:left;font-size: 12px;\">{{t.SERVICE}}</span>\r\n                                <span style=\"width:12%;float:left;font-size: 12px;\">{{t.CUSTOMER}}</span>\r\n                                <span style=\"width:11%;float:left;font-size: 12px;\">{{t.MOBILE}}</span>\r\n                                <span style=\"width:15%;float:left;font-size: 12px;\">{{t.EMPLOYEE}}</span>\r\n                                <span *ngIf=\"t.TYPE!=null\"\r\n                                    style=\"width:8%;float:left;font-size: 12px;\">{{t.TYPE}}</span>\r\n                                <span *ngIf=\"t.TYPE==null\" style=\"width:8%;float:left;font-size: 12px;\">&nbsp;</span>\r\n                                <!-- <span\r\n                                    style=\"width:10%;float:left;font-size: 12px;color:blue;cursor: pointer; margin-left: 5px\"\r\n                                    (click)=\"labelClickEvent(t.SCHEDULEID)\">Details</span> -->\r\n                                <span class=\"target-light fa fa-ellipsis-h\"\r\n                                    style=\"width:10%;float:left;font-size: 12px;color:blue;cursor: pointer; margin-left: 5px\"\r\n                                    (click)=\"labelClickEvent(t.SCHEDULEID)\"></span>\r\n                            </div>\r\n                        </div>\r\n\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button class=\"btn btn-primary confirm-btn\" (click)=\"sendEmail()\">Send Mail</button>\r\n                <button class=\"btn btn-primary confirm-btn\" (click)=\"downloadPDF()\">Download PDF</button>\r\n                <button class=\"btn btn-primary confirm-btn\" type=\"button\"\r\n                    (click)=\"ScheduleForMail.hide()\">Cancel</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n<customer-all-schedule [mobile]=\"searchCustomer\" [date]=\"ScheduleDate\" #customerSchedule></customer-all-schedule>\r\n<router-outlet></router-outlet>"
+module.exports = "<div>\r\n    <ba-card [title]=\"modeTitle\">\r\n\r\n        <!-- <div class=\"form-group row \">\r\n                <label for=\"roomno\" class=\"col-sm-2 form-control-label \">Disease ID</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [style.background-color]=\"disabled()\" style=\"color:black\" type=\"text \" class=\"form-control \" name=\"diseaseid\" id=\"diseaseid\" formControlName=\"DISEASEID\" [readOnly]=\"mode=='edit'?true:false\"\r\n                        placeholder=\"Disease discription\">\r\n                </div>\r\n            </div> -->\r\n        <div class=\"form-group row \">\r\n            <label for=\"description\" class=\"col-sm-2 form-control-label \">Disease Name</label>\r\n            <div class=\"col-sm-9 col-md-5 col-xl-4\">\r\n                <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                    type=\"text \" class=\"form-control \" name=\"description\" id=\"description\" [(ngModel)]=\"disease.DESCRIPTION\"\r\n                    placeholder=\"Disease Description\">\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"form-group row\">\r\n            <label for=\"medication\" class=\"col-sm-2 form-control-label \">Medication: </label>\r\n            <div class=\"col-sm-9 col-md-4 col-xl-3\">\r\n                <ol style=\"padding-inline-start: 0px;\">\r\n                    <li *ngFor=\"let e of disease.Medications;let i=index\">{{e.DESCRIPTION}}\r\n                        <i (click)=\"disease.Medications.splice($event.target.id,1)\" id=\"{{i}}\" class=\"fa fa-times\" aria-hidden=\"true\"></i>\r\n                    </li>\r\n                    <input type=\"text\" class=\"form-control\" list=\"medicationsCode\" [(ngModel)]=\"medication\"\r\n                        placeholder=\"Enter Medication\" (keyup.enter)=\"addMedications($event)\" />\r\n                    <small>Please press \"Enter\" to add Medications</small>\r\n\r\n                    <datalist id=\"medicationsCode\">\r\n                        <option *ngFor=\"let d of medicationList\" [value]=\"d.DESCRIPTION\">{{d.DESCRIPTION}}\r\n                        </option>\r\n                    </datalist>\r\n                </ol>\r\n            </div>\r\n        </div>\r\n\r\n\r\n        <div class=\"form-group row\">\r\n            <label for=\"prescription\" class=\"col-sm-2 form-control-label \">Morning Routines:</label>\r\n            <div class=\"col-sm-9 col-md-4 col-xl-3\">\r\n                <ol style=\"padding-inline-start: 0px;\">\r\n                    <li *ngFor=\"let e of disease.Prescriptions;let i=index\">\r\n                        {{e.DESCA}}  <i (click)=\"disease.Prescriptions.splice($event.target.id, 1)\" id=\"{{i}}\" class=\"fa fa-times\" aria-hidden=\"true\"></i>\r\n                    </li>\r\n\r\n                    <input type=\"text\" class=\"form-control\" list=\"codes\" [(ngModel)]=\"prescription\" name=\"prescription\"\r\n                        id=\"morningPrescription\" placeholder=\"Enter Prescriptions\" (keyup.enter)=\"addPrescription($event, disease.Prescriptions)\" />\r\n                    <small>Please press \"Enter\" to add Prescriptions</small>\r\n\r\n                    <datalist id=\"codes\">\r\n                        <option *ngFor=\"let p of prescriptionList\" [value]=\"p.DESCA\">{{p.DESCA}}\r\n                        </option>\r\n                    </datalist>\r\n                </ol>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"form-group row\">\r\n            <label for=\"eveningPrescription\" class=\"col-sm-2 form-control-label \">Evening Routines:</label>\r\n            <div class=\"col-sm-9 col-md-4 col-xl-3\">\r\n                <ol style=\"padding-inline-start: 0px;\">\r\n                    <li *ngFor=\"let e of disease.eveningPrescriptions;let i=index\">\r\n                        {{e.DESCA}}  <i (click)=\"disease.eveningPrescriptions.splice($event.target.id, 1)\" id=\"{{i}}\" class=\"fa fa-times\" aria-hidden=\"true\"></i>\r\n                    </li>\r\n\r\n                    <input type=\"text\" class=\"form-control\" list=\"codes\" [(ngModel)]=\"eveningPrescription\" name=\"eveningPrescription\"\r\n                        id=\"eveningPrescription\" placeholder=\"Enter Prescriptions\" (keyup.enter)=\"addPrescription($event, disease.eveningPrescriptions)\" />\r\n                    <small>Please press \"Enter\" to add Prescriptions</small>\r\n                </ol>\r\n            </div>\r\n        </div>\r\n\r\n    </ba-card>\r\n    <div style=\"padding-bottom: 10px; margin-top: -8px;\">\r\n        <button *ngIf=\"mode=='add' || mode=='edit'\" (click)=\"onSave()\" style=\"margin-right: 4px;\"\r\n            class=\"btn btn-primary \" >Save</button>\r\n        <button type=\"button \" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n    </div>\r\n    <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n        aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n        <div class=\"modal-dialog modal-sm\">\r\n            <div class=\"modal-content\">\r\n                <div class=\"modal-header\">\r\n                    <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n                        <span aria-hidden=\"true\">&times;</span>\r\n\r\n                    </button>\r\n                    <h4 class=\"modal-title\">Information</h4>\r\n                </div>\r\n                <div class=\"modal-body\">\r\n                    {{DialogMessage}}\r\n                </div>\r\n                <!--<div class=\"modal-footer\">\r\n                        <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                    </div>!-->\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</div>"
 
 /***/ }),
 
-/***/ 1591:
+/***/ 1559:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n  <div class=\"col-12 col-xl-8 col-lg-8\">\r\n    <ba-card title=\"Schedule Input\">\r\n      <div style=\"height: 100%;\">\r\n        <fieldset style=\" border: none;padding: 0; margin: 0;\" [disabled]=\"disableScheduleInput\">\r\n          <div class=\"form-group\" *ngIf=\"IntegrateTreatmentWithAppointment || mode != 'add'\">\r\n            <table id=\"tblPatientInfo\">\r\n              <tr>\r\n                <td>Patient Name</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.NAME}}</td>\r\n                <td>Mobile No</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.MOBILE}}</td>\r\n              </tr>\r\n              <tr>\r\n                <td>Address</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.ADDRESS}}</td>\r\n                <td>Patient Id</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.PATIENT_ID}}</td>\r\n              </tr>\r\n              <tr>\r\n                <td>Check In</td>\r\n                <td>: {{scheduleInput.checkInTime}}</td>\r\n                <td>Entry User</td>\r\n                <td>: {{scheduleInput.UserId}}</td>\r\n              </tr>\r\n            </table>\r\n          </div>\r\n          <customer-select (customerChanged)=\"customerChanged($event)\"\r\n            *ngIf=\"!IntegrateTreatmentWithAppointment && mode == 'add'\"></customer-select>\r\n\r\n          <div class=\"form-group\">\r\n            <label for=\"date\">Date</label>\r\n            <div class=\"row\">\r\n              <div class=\"col-sm-5 col-md-4  col-lg-4 col-xl-3\">\r\n                <nepali-date-picker name=\"nepaliDateFrom\" [id]=\"'nepaliDatefrom'\"\r\n                  (change)=\"changeEntryDate($event.detail.value, 'BS')\" [label]=\"'yyyy-mm-dd'\"\r\n                  [(ngModel)]=\"ScheduleDateBS\">\r\n                </nepali-date-picker>\r\n              </div>\r\n              <div class=\"col-md-4 col-sm-4 col-lg-6\">\r\n                <input type=\"date\" class=\"form-control col-md-12\" id=\"date\" style=\"width: 160px;height: 30px;\"\r\n                  [disabled]=\"multipleServiceList.length>0 || mode=='edit'\" [(ngModel)]=\"scheduleInput.DATE\"\r\n                  (change)=\"changeEntryDate($event.target.value, 'AD')\">\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <div class=\"row\" *ngIf=\"mode=='edit'\">\r\n            <div class=\"form-group col-md-4 col-xl-3\">\r\n              <label for=\"Status\">Status</label>\r\n              <select class=\"form-control\" name=\"Status\" id=\"Status\" [(ngModel)]=\"scheduleInput.STATUS\">\r\n                <option *ngFor=\"let s of statusList\" [ngValue]=\"s.status\">{{s.description}}</option>\r\n              </select>\r\n            </div>\r\n          </div>\r\n\r\n          <div style=\" border: 1px solid #dcdcdc;padding:10px;\">\r\n            <fieldset style=\" border: none;padding: 0; margin: 0;\"\r\n              [disabled]=\"scheduleInput.DATE==null || scheduleInput.DATE==''\">\r\n              <div class=\"row\">\r\n                <div class=\"form-group col-md-6\">\r\n                  <label for=\"sserviceselect\">Service</label>\r\n                  <select class=\"form-control\" name=\"serviceselect\" id=\"serviceselect\"\r\n                    [(ngModel)]=\"multipleServiceObj.SERVICE\"\r\n                    (ngModelChange)=\"serviceChangeEvent(multipleServiceObj.SERVICE.RATE)\">\r\n                    <option *ngFor=\"let s of ServiceList\" [ngValue]=\"s\">{{s.DESCRIPTION}}</option>\r\n                  </select>\r\n                </div>\r\n                <div class=\"form-group col-md-6\">\r\n                  <label for=\"employeeselect\" style=\"margin-left:10px\">Staff</label>\r\n                  <label style=\"width: 160px;font-size: 13px;margin-left:10px\">\r\n                    <input type=\"checkbox\" style=\"vertical-align: middle\"\r\n                      (change)=\"$event.target.checked?(multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER=1):(multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER=0)\"\r\n                      [checked]=\"multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER==1\"\r\n                      [disabled]=\"mode == 'edit' && multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER==1 && user.Role == 'user' && multipleServiceObj.SNO > 0\">\r\n                    Is Booked By Pateint\r\n                  </label>\r\n\r\n                  <select class=\"form-control\" name=\"employeeselect\" id=\"employeeselect\"\r\n                    [(ngModel)]=\"multipleServiceObj.EMPLOYEE\"\r\n                    [disabled]=\"mode == 'edit' && multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER==1 && user.Role == 'user' && multipleServiceObj.SNO > 0\"\r\n                    (ngModelChange)=\"EmployeeChange(multipleServiceObj.EMPLOYEE)\">\r\n                    <option *ngFor=\"let em of employeeList\" [ngValue]=\"em\">{{em.NAME}}</option>\r\n                  </select>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"form-group col-md-6\">\r\n                  <label for=\"roomselect\">Room</label>\r\n                  <select class=\"form-control\" name=\"roomselect\" id=\"roomselect\" [(ngModel)]=\"multipleServiceObj.ROOM\"\r\n                    (ngModelChange)=\"RoomChange(multipleServiceObj.ROOM)\">\r\n                    <option *ngFor=\"let r of roomList\" [ngValue]=\"r\">{{r.ROOMNO}}({{r.DESCRIPTION}})</option>\r\n                  </select>\r\n                </div>\r\n\r\n                <div class=\"form-group col-12 col-md-6\">\r\n                  <label for=\"roomselect\">Fee</label>\r\n                  <select class=\"form-control\" name=\"typeselect\" id=\"typeselect\" [(ngModel)]=\"multipleServiceObj.TYPE\"\r\n                    (ngModelChange)=\"TypeChange(multipleServiceObj.TYPE)\">\r\n                    <option Value=\"NotPaid\">NotPaid </option>\r\n                    <option Value=\"Paid\">Paid</option>\r\n                    <option Value=\"Free\">Free</option>\r\n                  </select>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"form-group col-12 col-md-10 col-sm-10 col-xs-8\">\r\n                  <label for=\"time\">Time</label>\r\n                  <!--<input type=\"input\" class=\"form-control\" id=\"time\" [(ngModel)]=\"scheduleInput.startTime\">-->\r\n                  <div class=\"demo row\">\r\n                    <div class=\"col-12 col-md-5 col-sm-4 col-xs-3\">\r\n                      <input type=\"time\" class=\"form-control\" style=\"width: 150px;\"\r\n                        (change)=\"starttimeChange($event.target.value)\" [(ngModel)]=\"StartTime\" />\r\n                    </div>\r\n                    <div class=\"col-12 col-md-1 col-sm-1  col-xs-1\">\r\n                      <label style=\"margin: 10px;\">To</label>\r\n                    </div>\r\n                    <div class=\"col-12 col-md-5 col-sm-4  col-xs-3\">\r\n                      <input type=\"time\" class=\"form-control\" style=\"width: 150px;\" disabled [(ngModel)]=\"EndTime\" />\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-12 col-md-2 col-sm-2 col-xs-2\">\r\n                  <button type=\"button\"\r\n                    [disabled]=\"multipleServiceObj==null|| multipleServiceObj.SERVICE==null || multipleServiceObj.EMPLOYEE==null || multipleServiceObj.ROOM==null || scheduleInput.billableSchedule==1\"\r\n                    class=\"btn btn-primary\" (click)=\"AddClickEvent()\" style=\"margin-top:20px;\">Add</button>\r\n                </div>\r\n              </div>\r\n\r\n              <Table id=\"BlueHeaderResizableTable\" style=\"width:100%;max-height:300px\">\r\n                <thead>\r\n                  <tr>\r\n                    <th style=\"width:30px\">SN.</th>\r\n                    <th style=\"width:35%\">Service</th>\r\n                    <th style=\"width:35%\">Therapist</th>\r\n                    <th style=\"width:20%\">Room</th>\r\n                    <th style=\"width:10%\">Time</th>\r\n                    <th style=\"width:60px\"></th>\r\n                  </tr>\r\n                </thead>\r\n                <tbody class=\"tabelRowWithAutoScroll\">\r\n                  <tr *ngFor=\"let ir of multipleServiceList;let i=index\" style=\"height:28px;font-size:small\">\r\n                    <td style=\"width:30px\">{{i+1}}</td>\r\n                    <td style=\"width:35%\">{{ir.SERVICE.DESCRIPTION}}</td>\r\n                    <td style=\"width:35%\">{{ir.EMPLOYEE.NAME}}</td>\r\n                    <td style=\"width:20%\">{{ir.ROOM.ROOMNO}}</td>\r\n                    <td style=\"width:10%\">{{ir.STARTTIME}}</td>\r\n                    <td>\r\n                      <button class=\"glyphicon glyphicon-edit\" (click)=\"editSchedule(i)\"\r\n                        [disabled]=\"scheduleInput.billableSchedule==1\"></button>\r\n                      <button class=\"glyphicon glyphicon-remove\" (click)=\"removeSchedule(i)\" style=\"float: right;\"\r\n                        [disabled]=\"(mode == 'edit' && ir.EMPLOYEE_BOOKED_BYCUSTOMER==1 && user.Role == 'user') || scheduleInput.billableSchedule==1\"></button>\r\n                    </td>\r\n                  </tr>\r\n                </tbody>\r\n              </Table>\r\n            </fieldset>\r\n          </div>\r\n        </fieldset>\r\n\r\n        <button type=\"submit\" class=\"btn btn-primary\"\r\n          *ngIf=\"mode=='edit' && canBeBillable() && scheduleInput.billableSchedule!=1\" (click)=\"ProceedBill()\">\r\n          Proceed To Bill\r\n        </button>\r\n        <button type=\"button\" class=\"btn btn-primary\"\r\n          *ngIf=\"mode=='edit' && canBeBillable() && scheduleInput.billableSchedule==1\" (click)=\"CancelBill()\">\r\n          Cancel Bill\r\n        </button>\r\n        <button type=\"submit\" class=\"btn btn-primary\" (click)=\"SaveClickEvent()\"\r\n          [disabled]=\"multipleServiceList.length==0 || scheduleInput.CUSTOMER==null || scheduleInput.DATE==null ||disableScheduleInput || scheduleInput.billableSchedule==1\">Submit</button>\r\n        <button type=\"button\" class=\"btn btn-danger\" (click)=\"DeleteConformation()\"\r\n          *ngIf=\"mode=='edit'&& disableScheduleInput==false && scheduleInput.billableSchedule!=1\">Delete</button>\r\n        <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n      </div>\r\n    </ba-card>\r\n  </div>\r\n  <div class=\"col-12 col-xl-3 col-lg-4\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-3\">Time</div>\r\n      <div class=\"col-md-4\" *ngIf=\"employeeTimeList.length>0\">Employee</div>\r\n      <div class=\"col-md-4\" *ngIf=\"roomTimeList.length>0\">Room</div>\r\n    </div>\r\n    <div class=\"row\">\r\n      <table style=\"background:white\">\r\n        <tr style=\"display: block; float: left;\">\r\n          <td colspan=\"3\" style=\"font-size:11px;font-weight:bold\">Schedule Info</td>\r\n          <td rowspan=\"4\" colspan=\"4\" *ngFor=\"let h of hourHeaderList\"\r\n            style=\" border: 1px solid #dcdcdc;display: block;height:60px\">{{h}}</td>\r\n        </tr>\r\n        <tr style=\"display: block; float: left;\">\r\n          <td colspan=\"3\" style=\"font-size:11px;font-weight:bold\">:</td>\r\n          <td *ngFor=\"let m of minList\" style=\" border: 1px solid #dcdcdc;display: block;height:15px;width:25px\"></td>\r\n        </tr>\r\n        <tr *ngFor=\"let e of employeeTimeList\" style=\"display: block; float: left;\">\r\n          <td colspan=\"3\" style=\"font-size:11px;font-weight:bold\">{{e.NAME}}</td>\r\n          <td [attr.colspan]=\"totalNoOfMinCell\" style=\"display: block;\">\r\n        <tr style=\"display: block; float: left;margin-top:-2px\">\r\n          <td style=\"display: block;width:100px;height:15px\" id=\"tdDataCont\" *ngFor=\"let m of e.minList\"\r\n            [style.max-height]=\"m.width\" [style.min-height]=\"m.width\" (click)=\"CellClick(m)\">\r\n            <div class=\"verticalTimeTableLabel\"><label [style.height]=\"m.width\"\r\n                *ngIf=\"m.booked==1\">{{m.room}}<br>{{m.service}}<br>{{m.customer}}</label></div>\r\n          </td>\r\n        </tr>\r\n        </td>\r\n        </tr>\r\n        <tr *ngFor=\"let e of roomTimeList\" style=\"display: block; float: left;\">\r\n          <td colspan=\"3\" style=\"font-size:11px;font-weight:bold\">{{e.ID}}</td>\r\n          <td [attr.colspan]=\"totalNoOfMinCell\" style=\"display: block;\">\r\n        <tr style=\"display: block; float: left;margin-top:-2px\">\r\n          <td style=\"display: block;width:100px;height:15px\" id=\"tdDataCont\" *ngFor=\"let m of e.minList\"\r\n            [style.max-height]=\"m.width\" [style.min-height]=\"m.width\">\r\n            <div class=\"verticalTimeTableLabel\"><label *ngIf=\"m.booked==1\"\r\n                [style.height]=\"m.width\">{{m.room}}<br>{{m.service}}<br>{{m.customer}}</label></div>\r\n          </td>\r\n        </tr>\r\n        </td>\r\n        </tr>\r\n\r\n      </table>\r\n\r\n\r\n      <!--<ba-card class=\"col-xlg-8 col-xl-12 col-lg-12 col-md-7 col-sm-12 col-xs-12\" title=\"Employee Schedule({{employeeBookedTimes.DATE}})(Booked Only)\">\r\n        <div class=\"employeeRow\" *ngFor=\"let emp of employeeBookedTimes.EMPLOYEES\">\r\n          {{emp.EMPLOYEENAME}}\r\n          <div class=\"time-slot\">\r\n            <label [style.background]=\"(t.EMPLOYEE_BOOKED_BYCUSTOMER == 0) ?'green':'darkred'\" *ngFor=\"let t of emp.BOOKEDTIMES\" (click)=\"bookedEmployeeClickEvent(t)\">{{t.STARTTIME}}-{{t.ENDTIME}}<br/>(Service Detail)<br/>(Room No)</label>\r\n          </div>\r\n        </div>\r\n\r\n      </ba-card>\r\n      <ba-card class=\"col-xlg-4 col-xl-12 col-lg-12 col-md-5 col-sm-12 col-xs-12\" title=\"Room Info ({{roomBookedDetails.DATE}})(Booked Only)\">\r\n        <div class=\"employeeRow\" *ngFor=\"let r of roomBookedDetails.ROOMS\">\r\n          Room No.: {{r.ROOMNO}} ({{r.DESCRIPTION}})\r\n          <div class=\"time-slot\">\r\n            <label *ngFor=\"let t of r.BOOKEDTIMES\">{{t.STARTTIME}}-{{t.ENDTIME}}<br/>(Service Detail)<br/>(Employee Name)</label>\r\n          </div>\r\n        </div>\r\n      </ba-card>-->\r\n    </div>\r\n  </div>\r\n\r\n\r\n\r\n</div>\r\n<div bsModal #childEmployeeModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\"\r\n  aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childEmployeeModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n        <h4 class=\"modal-title\">Replace Therapist</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        <label for=\"employeeselectForEdit\">Available Therapist</label>\r\n        <select class=\"form-control\" name=\"employeeselectForEdit\" id=\"employeeselectForEdit\"\r\n          [(ngModel)]=\"ReplacedEmployee\">\r\n          <option *ngFor=\"let em of replacementEmployeeList\" [ngValue]=\"em\">{{em.NAME}}</option>\r\n        </select>\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"saveChildModal(ReplacedEmployee)\">Save changes</button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n  aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n\r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        {{DialogMessage}}\r\n      </div>\r\n      <!--<div class=\"modal-footer\">\r\n                        <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                    </div>!-->\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n  aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the schedule you can't recover it back. Are U sure you want to delete this Schedule?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>\r\n\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"widgets\">\r\n    <div class=\"row\">\r\n      <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" (click)=\"onAddClick()\" >Add Disease</button>\r\n    </div>\r\n    <div class=\"row\">\r\n      <ba-card title=\"Diseases\" baCardClass=\"with-scroll\">\r\n        <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\" ></ng2-smart-table>\r\n      </ba-card>\r\n    </div>\r\n  </div>\r\n  \r\n  <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n              aria-hidden=\"true\">\r\n              <div class=\"modal-dialog modal-md\">\r\n                  <div class=\"modal-content\">\r\n                      <div class=\"modal-header\">\r\n                          <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n            \r\n          </button>\r\n                          <h4 class=\"modal-title\">Information</h4>\r\n                      </div>\r\n                      \r\n                      <div class=\"modal-body\">\r\n                        <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n                          {{DialogMessage}}\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n          <div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-sm\">\r\n      <div class=\"modal-content\">\r\n        <div class=\"modal-header\">\r\n          <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                              <span aria-hidden=\"true\">&times;</span>\r\n                          </button>\r\n          <h4 class=\"modal-title\">Warning</h4>\r\n        </div>\r\n        <div class=\"modal-body\">\r\n          Once you delete the Disease you can't recover it back. Are U sure you want to delete this Disease?\r\n        </div>\r\n        <div class=\"modal-footer\">\r\n          <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n          <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n        </div>!\r\n  \r\n      </div>\r\n    </div>\r\n  </div>"
 
 /***/ }),
 
-/***/ 1592:
+/***/ 1560:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal fade\" bsModal #CustomerSchedule=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-lg\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"CustomerSchedule.hide()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Patient Schedule:</h4>\r\n                \r\n                <label class=\"switch\" style=\"float: right; margin-left: 5px;\">\r\n                    <input type=\"checkbox\" [(ngModel)]=\"ShowAll\" (change)=\"CheckAllChanged($event.target.checked)\">\r\n                    <span class=\"slider round\"></span>\r\n                </label>\r\n                <label style=\"float: right;line-height: 20px;\">Show All</label>\r\n            </div>\r\n\r\n            <div class=\"modal-body\">\r\n                <div class=\"row\" id=\"customerSchedule\">\r\n                    <div class=\"col-5 col-sm-7 col-md-7\">\r\n                        <div class=\"input-group\">\r\n                            <span class=\"input-group-addon\" id=\"basic-addon1\">Patient Name</span>\r\n                            <input type=\"text\" class=\"form-control\" [(ngModel)]=\"Customer.NAME\" readonly\r\n                                aria-label=\"Username\" aria-describedby=\"basic-addon1\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-5 col-sm-5 col-md-5\">\r\n                        <div class=\"input-group\">\r\n                            <span class=\"input-group-addon\" id=\"basic-addon1\">Mobile No</span>\r\n                            <input type=\"text\" class=\"form-control\" [(ngModel)]=\"Customer.MOBILE\" readonly\r\n                                aria-label=\"Username\" aria-describedby=\"basic-addon1\">\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <table class=\"table table-bordered table-hover\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th>Sn.</th>\r\n                            <th>Date</th>\r\n                            <th>Time</th>\r\n                            <th>Employee</th>\r\n                            <th>Service</th>\r\n                            <th>Room</th>\r\n                            <th></th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let t of schedules\">\r\n                            <td>1</td>\r\n                            <td>{{t.strDate}}</td>\r\n                            <td>{{t.STARTTIME}}</td>\r\n                            <td>{{t.EMPLOYEE}}</td>\r\n                            <td>{{t.SERVICE}}</td>\r\n                            <td>{{t.ROOMNO}}</td>\r\n                            <td> <span style=\"color:blue;cursor: pointer; margin-left: 5px\"\r\n                                    (click)=\"labelClickEvent(t._id)\">Details</span></td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n\r\n                <div class=\"modal-footer\">\r\n                    <button class=\"btn btn-primary confirm-btn\" type=\"button\"\r\n                        (click)=\"CustomerSchedule.hide()\">Close</button>\r\n                </div>\r\n\r\n            </div>\r\n        </div>\r\n    </div>"
+module.exports = "<div>\r\n    <form id=formId class=\"form-horizontal\" [formGroup]=\"form\">\r\n        <ba-card [title]=\"modeTitle\">\r\n            <fieldset [disabled]=\"disableForm\" style=\" border: none;padding: 0; margin: 0;\">\r\n                <div class=\"form-group row \">\r\n                    <label for=\"name\" class=\"col-sm-2 form-control-label \">Name</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [style.background-color]=\"disabled()\" style=\"color:black\" type=\"text \"\r\n                            class=\"form-control \" name=\"name\" id=\"name\" formControlName=\"NAME\" placeholder=\"Name \">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"address\" class=\"col-sm-2 form-control-label \">Address</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"text \" class=\"form-control \" name=\"address\" id=\"address\" formControlName=\"ADDRESS\"\r\n                            placeholder=\"Address \">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"telno\" class=\"col-sm-2 form-control-label \">Tel No</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"text \" class=\"form-control \" name=\"telno\" id=\"telno\" formControlName=\"TELNO\"\r\n                            placeholder=\"Telephone No\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"mobile\" class=\"col-sm-2 form-control-label \">Mobile</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"text \" class=\"form-control \" name=\"mobile\" id=\"mobile\" formControlName=\"MOBILE\"\r\n                            placeholder=\"Mobile No\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"designation\" class=\"col-sm-2 form-control-label \">Designation</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"text \" class=\"form-control \" name=\"designation\" id=\"designation\"\r\n                            formControlName=\"DESIGNATION\" placeholder=\"Designation\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"EMERGENCYCONTACTNAME\" class=\"col-sm-2 form-control-label \">Emergency Contact\r\n                        Person</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"text \" class=\"form-control \" name=\"emergencycontactname\" id=\"emergencycontactname\"\r\n                            formControlName=\"EMERGENCYCONTACTNAME\" placeholder=\"Emergency Contact Person\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"EMERGENCYCONTACTNO\" class=\"col-sm-2 form-control-label \">Phone No</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                            type=\"text \" class=\"form-control \" name=\"emergencycontactno\" id=\"emergencycontactno\"\r\n                            formControlName=\"EMERGENCYCONTACTNO\" placeholder=\"Contact No\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"offday\" class=\"col-sm-2 form-control-label \">Off Day</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <fieldset>\r\n                            <div>\r\n                                <label style=\"width: 150px;font-size: 13px;height: 20px\" *ngFor=\"let d of Days\"><input\r\n                                        type=\"checkbox\" style=\"vertical-align: middle\"\r\n                                        (change)=\"$event.target.checked?(d.checked=true):(d.checked=false)\"\r\n                                        [checked]=\"d.checked\">{{d.day}}</label>\r\n                            </div>\r\n                        </fieldset>\r\n                        <!--<input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\" type=\"text \" class=\"form-control \" name=\"offday\" id=\"offday\" formControlName=\"OFFDAY\" placeholder=\"Off Day\">-->\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group row \">\r\n                    <label for=\"inactive\" class=\"col-sm-2 form-control-label \">Status</label>\r\n                    <div class=\"col-sm-6 \">\r\n                        <select class=\"form-control\" name=\"inactive\" id=\"inactive\" formControlName=\"Inactive\">\r\n                            <option value=\"false\">Active</option>\r\n                            <option value=\"true\">Inactive</option>\r\n                        </select>\r\n                    </div>\r\n                </div>\r\n                <!--<div class=\"form-group row\">\r\n                <label for=\"rategroup \" class=\"col-sm-2 form-control-label \">RateGroup</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <select class=\"form-control\" style=\"color:black\" [style.background-color]=\"disabled()\" name=\"rategroup\" id=\"rategroup\" formControlName=\"RATEGROUPID\">E\r\n                    <option *ngFor=\"let item of rategroup;\" value=\"item.RID \" >{{item.DESCRIPTION}}</option>\r\n                    \r\n                </select>\r\n                </div>\r\n            </div>-->\r\n            </fieldset>\r\n        </ba-card>\r\n        <div style=\"padding-bottom: 10px; margin-top: -8px;\">\r\n            <button *ngIf=\"mode=='add' || mode=='edit'\" (click)=\"onSave()\" style=\"margin-right: 4px;\"\r\n                class=\"btn btn-primary \" [disabled]=\"!form.valid\">Save</button>\r\n            <button type=\"button \" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\"\r\n            role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-sm\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n\r\n                        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    <div class=\"modal-body\">\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                    <!--<div class=\"modal-footer\">\r\n                        <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                    </div>!-->\r\n\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </form>\r\n\r\n</div>"
 
 /***/ }),
 
-/***/ 1593:
+/***/ 1561:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-xlg-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12\" style=\"width:100%;\">\r\n        <ba-card title=\"Patient Information\">\r\n            <div>\r\n                <div class=\"form-group\" *ngIf=\"IntegrateTreatmentWithAppointment || mode != 'add'\">\r\n                    <table id=\"tblPatientInfo\">\r\n                        <tr>\r\n                            <td>Patient Name</td>\r\n                            <td>: {{model.Patient.NAME}}</td>\r\n                            <td>Mobile No</td>\r\n                            <td>: {{model.Patient.MOBILE}}</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Address</td>\r\n                            <td>: {{model.Patient.ADDRESS}}</td>\r\n                            <td>Patient Id</td>\r\n                            <td>: {{model.Patient.PATIENT_ID}}</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Age</td>\r\n                            <td>: {{model.Patient.Age}}</td>\r\n                            <td>Gender</td>\r\n                            <td>: {{model.Patient.GENDER}}</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Staff</td>\r\n                            <td>: {{model.Healer.NAME}}</td>\r\n                            <td>Weight</td>\r\n                            <td>: {{model.Patient.Patient_Weight}}</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Membership</td>\r\n                            <td>: {{model.Patient.Membership}}</td>\r\n                            <td>Email</td>\r\n                            <td style=\"width: 35%;\">: {{model.Patient.EMAIL}}</td>\r\n                        </tr>\r\n                    </table>\r\n                </div>\r\n                <div *ngIf=\"!IntegrateTreatmentWithAppointment && mode == 'add'\">\r\n                    <customer-select (customerChanged)=\"customerChanged($event)\" (ncw)=\"customerWeight($event)\"\r\n                        (historyChange)=\"historyChange($event)\">\r\n                    </customer-select>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"employeeselect\" style=\"font-weight: 600;\">Staff</label>\r\n                        <div>\r\n                            <select class=\"form-control\" style=\"width: 200px;\" name=\"employeeselect\" id=\"employeeselect\"\r\n                                [(ngModel)]=\"model.Healer\">\r\n                                <option *ngFor=\"let em of employeeList\" [ngValue]=\"em\">{{em.NAME}}</option>\r\n                            </select>\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </ba-card>\r\n        <div class=\"row\">\r\n            <div class=\"col-xl-6\">\r\n                <ba-card title=\"Patient Complaint\">\r\n                    <ckeditor [config]=\"ckPatientComplaintConfig\" [(ngModel)]=\"PatientComplaint\">\r\n                        {{model.PatientComplaint}}\r\n                    </ckeditor>\r\n                </ba-card>\r\n            </div>\r\n            <div class=\"col-xl-6\">\r\n                <ba-card title=\"Treatment Notes\">\r\n                    <ckeditor [(ngModel)]=\"TreatmentNotes\" [config]=\"ckTreatmentNoteConfig\">{{model.TreatmentNotes}}\r\n                    </ckeditor>\r\n                </ba-card>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-xl-6\">\r\n                <ba-card title=\"Disease & Medication\">\r\n                    <div class=\"form-group\">\r\n                        <label for=\"diseases\">Diseases: </label>\r\n\r\n                        <ol style=\"width: 300px\">\r\n\r\n                            <li style=\"display: flex;\" *ngFor=\"let e of model.Diseases;let i=index\">{{e}} <i\r\n                                    (click)=\"model.Diseases.splice($event.target.id,1)\" id=\"{{i}}\" style=\"margin-left: auto;\" class=\"fa fa-times\"\r\n                                    aria-hidden=\"true\"></i> </li>\r\n                            <input type=\"text\" class=\"form-control\" list=\"diseasesCode\" [(ngModel)]=\"disease\"\r\n                                placeholder=\"Enter Disease\" (keyup.enter)=\"addDisease($event)\" />\r\n                            <small>Please press \"Enter\" to add Disease</small>\r\n\r\n                            <datalist id=\"diseasesCode\">\r\n                                <option *ngFor=\"let d of diseaseList\" [value]=\"d.DESCRIPTION\">{{d.DESCRIPTION}}\r\n                                </option>\r\n                            </datalist>\r\n\r\n                        </ol>\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"medication\">Medication: </label>\r\n\r\n                        <ol style=\"width: 300px\">\r\n\r\n                            <input type=\"text\" class=\"form-control\" list=\"medicationsCode\" [(ngModel)]=\"medication\"\r\n                                placeholder=\"Enter Medication\" (keyup.enter)=\"addMedication($event)\" />\r\n                            <small>Please press \"Enter\" to add Medication</small>\r\n\r\n                            <datalist id=\"medicationsCode\">\r\n                                <option *ngFor=\"let d of medicationList\" [value]=\"d.DESCRIPTION\">{{d.DESCRIPTION}}\r\n                                </option>\r\n                            </datalist>\r\n                            <div *ngFor=\"let e of model.Medications;let i=index\">\r\n                                <h5 style=\"display: flex;\">\r\n                                    {{e.DESCRIPTION}} <i (click)=\"model.Medications.splice($event.target.id,1)\" id=\"{{i}}\" style=\"margin-left: auto;\"\r\n                                        class=\"fa fa-times\" aria-hidden=\"true\"></i>\r\n\r\n                                </h5>\r\n                                <p *ngIf=\"!e.RemarksEditable\" style=\"margin-left:20px; display: flex;\">{{e.REMARKS}}<i\r\n                                        (click)=\"e.RemarksEditable=true\" id=\"{{i}}\" style=\"margin-left: auto;\"\r\n                                        class=\"fa fa-pencil\" aria-hidden=\"true\"></i></p>\r\n                                <input type=\"text\" class=\"form-control\" *ngIf=\"e.RemarksEditable\" [(ngModel)]=\"e.REMARKS\" (keyup.enter)=\"e.RemarksEditable=false\" />\r\n                            </div>\r\n                        </ol>\r\n                    </div>\r\n                </ba-card>\r\n            </div>\r\n\r\n            <div class=\"col-xl-6\">\r\n                <ba-card title=\"Prescriptions\">\r\n                    <!-- Fix this code later : Amir May 30 2022 -->\r\n                    <div class=\"form-group\">\r\n                        <label for=\"prescription\">Morning Prescriptions:</label>\r\n\r\n                        <ol style=\"width: 300px\">\r\n                            <input id=\"morningPrescription\" type=\"text\" class=\"form-control\" list=\"codes\" [(ngModel)]=\"prescription\"\r\n                                placeholder=\"Enter Prescriptions\" (keyup.enter)=\"addPrescription($event, model.Prescriptions)\" />\r\n                            <small>Please press \"Enter\" to add Prescription</small>\r\n                            <datalist id=\"codes\">\r\n                                <option *ngFor=\"let p of prescriptionList\" [value]=\"p.DESCA\">{{p.DESCA}}\r\n                                </option>\r\n                            </datalist>\r\n\r\n                            <div *ngFor=\"let e of model.Prescriptions;let i=index\">\r\n                                <h5 style=\"display: flex;\">\r\n                                    {{e.DESCA}} <i (click)=\"model.Prescriptions.splice($event.target.id, 1)\" id=\"{{i}}\" style=\"margin-left: auto;\"\r\n                                        class=\"fa fa-times\" aria-hidden=\"true\"></i>\r\n\r\n                                </h5>\r\n                                <p *ngIf=\"!e.DirectiveEditable\" style=\"margin-left:20px; display: flex;\">{{e.directives}}<i\r\n                                        (click)=\"e.DirectiveEditable=true\" id=\"{{i}}\" style=\"margin-left: auto;\"\r\n                                        class=\"fa fa-pencil\" aria-hidden=\"true\"></i></p>\r\n                                <input type=\"text\" class=\"form-control\" *ngIf=\"e.DirectiveEditable\" [(ngModel)]=\"e.directives\" (keyup.enter)=\"e.DirectiveEditable=false\" />\r\n                            </div>\r\n                        </ol>\r\n                    </div>\r\n\r\n                    <div class=\"form-group\">\r\n                        <label for=\"prescription\">Evening Prescriptions:</label>\r\n\r\n                        <ol style=\"width: 300px\">\r\n                            <input id=\"eveningPrescription\" type=\"text\" class=\"form-control\" list=\"codes\" [(ngModel)]=\"eveningPrescription\"\r\n                                placeholder=\"Enter Prescriptions\" (keyup.enter)=\"addPrescription($event, model.EveningPrescriptions)\" />\r\n                            <small>Please press \"Enter\" to add Prescription</small>\r\n                           \r\n\r\n                            <div *ngFor=\"let e of model.EveningPrescriptions;let i=index\">\r\n                                <h5 style=\"display: flex;\">\r\n                                    {{e.DESCA}} <i (click)=\"model.EveningPrescriptions.splice($event.target.id, 1)\" id=\"{{i}}\" style=\"margin-left: auto;\"\r\n                                        class=\"fa fa-times\" aria-hidden=\"true\"></i>\r\n                                </h5>\r\n                                <p *ngIf=\"!e.DirectiveEditable\" style=\"margin-left:20px; display: flex;\">{{e.directives}}<i\r\n                                        (click)=\"e.DirectiveEditable=true\" id=\"{{i}}\" style=\"margin-left: auto;\"\r\n                                        class=\"fa fa-pencil\" aria-hidden=\"true\"></i></p>\r\n                                <input type=\"text\" class=\"form-control\" *ngIf=\"e.DirectiveEditable\" [(ngModel)]=\"e.directives\" (keyup.enter)=\"e.DirectiveEditable=false\" />\r\n                            </div>\r\n                        </ol>\r\n                    </div>                    \r\n                    \r\n                </ba-card>\r\n            </div>\r\n        </div>\r\n        <ba-card title=\"Followup & Session Documents\">\r\n            <div class=\"form-group\" style=\"display: inline-block; vertical-align: top;\">\r\n                <label for=\"followup\">Followup Period</label>\r\n                <select class=\"form-control\" style=\"min-width: 150px;\" [(ngModel)]=\"model.FollowUpPeriod\">\r\n                    <option value=\"7\">1 Week</option>\r\n                    <option value=\"14\">2 Weeks</option>\r\n                    <option value=\"42\">6 Weeks</option>\r\n                    <option value=\"30\">1 Month</option>\r\n                    <option value=\"60\">2 Months</option>\r\n                    <option value=\"90\">3 Months</option>\r\n                    <option value=\"180\">6 Months</option>\r\n                </select>\r\n            </div>\r\n            <div style=\"display: flex; margin-bottom: 10px; overflow: scroll; \">\r\n                <li *ngFor=\"let f of model.TreatmentDocuments\" style=\"margin-right: 5px;\">\r\n\r\n                    <button type=\"button \" class=\"btn btn-danger close-pdf\" (click)=\"deleteImage(f)\">x</button>\r\n\r\n                    <ng-container *ngIf=\"!f.endsWith('pdf')\">\r\n                        <img height=\"80px\" width=\"80px\" style=\"object-fit: contain;\" src=\"{{contentUrl + f}}\"\r\n                            (click)=\"previewImage($event)\" />\r\n                    </ng-container>\r\n\r\n                    <a *ngIf=\"f.endsWith('pdf')\" target=\"_blank\" href=\"{{contentUrl + f}}\">\r\n                        <img height=\"50px\"\r\n                            src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/833px-PDF_file_icon.svg.png\" />\r\n                    </a>\r\n\r\n                </li>\r\n            </div>\r\n            <!-- <img *ngFor=\"let e of uploadFilesUrl\" height=\"80px\" width=\"80px\" src=\"{{e}}\"\r\n            (click)=\"previewImage($event)\" /> -->\r\n            <input type=\"file\" (change)=\"onFileChanged($event)\" multiple=\"multiple\" />\r\n            <!-- // <button type=\"button \" class=\"btn btn-danger\" (click)=\"removeDocument(e)\">X</button>\r\n        </ba-card>\r\n        <ba-card title=\"NOTES & REMARKS\">\r\n            <textarea class=\"form-control\" [(ngModel)]=\"model.remarks\">{{model.remarks}}</textarea>\r\n\r\n       // <button type=\"button \" class=\"btn btn-danger\" (click)=\"removeDocument(e)\">X</button> -->\r\n        </ba-card>\r\n\r\n        <ba-card title=\"NOTES & REMARKS\">\r\n            <textarea class=\"form-control\" [(ngModel)]=\"model.remarks\">{{model.remarks}}</textarea>\r\n        </ba-card>\r\n\r\n        <ba-card>\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"SaveClickEvent()\">Submit</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"DeleteConformation()\" *ngIf=\"mode=='edit'\">Delete\r\n            </button>\r\n            <button type=\"submit\" class=\"btn btn-primary\" *ngIf=\"mode!='add'\" (click)=\"printTreatmentEntry(model, true)\">Print</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n        </ba-card>\r\n\r\n        <!-- PATIENT HISTORY -->\r\n        <ba-card title=\"Patient Treatment History\">\r\n            <ng2-smart-table [settings]=\"settings\" [(source)]=\"historySource\" (view)=\"editList($event)\">\r\n            </ng2-smart-table>\r\n        </ba-card>\r\n    </div>\r\n\r\n    <!-- END FORM -->\r\n\r\n    <div bsModal #childPreviewModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\"\r\n        aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n        <div class=\"modal-dialog modal-lg\">\r\n            <div class=\"modal-content\">\r\n                <div class=\"modal-header\">\r\n                    <button class=\"close\" aria-label=\"Close\" (click)=\"childPreviewModal.hide()\">\r\n                        <span aria-hidden=\"true\">&times;</span>\r\n                    </button>\r\n                    <h4 class=\"modal-title\">Treatment Documents</h4>\r\n                </div>\r\n                <button id=\"button\" class=\"btn btn-primary confirm-btn\" (click)=\"nextImage($event)\">Next</button>\r\n                <div id=\"container\" style=\"text-align: center;\">\r\n                    <img width=\"600px\" height=\"600px\" style=\"object-fit: contain;\" [src]=\"selectedImage\" id=\"image\"\r\n                        (click)=\"onImageClick($event)\" />\r\n                </div>\r\n\r\n                <div class=\"modal-footer\" style=\"text-align: center;\">\r\n                    <img *ngFor=\"let e of uploadFilesUrl\" height=\"80px\" width=\"80px\" style=\"object-fit: contain;\"\r\n                        src=\"{{e}}\" (click)=\"changeImage($event)\" />\r\n\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n        aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n        <div class=\"modal-dialog modal-sm\">\r\n            <div class=\"modal-content\">\r\n                <div class=\"modal-header\">\r\n                    <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n                        <span aria-hidden=\"true\">&times;</span>\r\n\r\n                    </button>\r\n                    <h4 class=\"modal-title\">Information</h4>\r\n                </div>\r\n                <div class=\"modal-body\">\r\n                    {{DialogMessage}}\r\n                </div>\r\n                <!--<div class=\"modal-footer\">\r\n                      <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                      <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                  </div>!-->\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n        aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n        <div class=\"modal-dialog modal-sm\">\r\n            <div class=\"modal-content\">\r\n                <div class=\"modal-header\">\r\n                    <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                        <span aria-hidden=\"true\">&times;</span>\r\n                    </button>\r\n                    <h4 class=\"modal-title\">Warning</h4>\r\n                </div>\r\n                <div class=\"modal-body\">\r\n                    Once you delete the schedule you can't recover it back. Are U sure you want to delete this\r\n                    Schedule?\r\n                </div>\r\n                <div class=\"modal-footer\">\r\n                    <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n                    <button class=\"btn btn-primary confirm-btn\" type=\"button\"\r\n                        (click)=\"deleteModal.hide()\">Cancel</button>\r\n                </div>\r\n\r\n            </div>\r\n        </div>\r\n    </div>"
+module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" (click)=\"onAddClick()\">Add Employee</button>\r\n  </div>\r\n  <div class=\"row\">\r\n    <ba-card title=\"Employees\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\"\r\n        (view)=\"onViewClick($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-md\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n\r\n      <div class=\"modal-body\">\r\n        <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n        {{DialogMessage}}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the Employee you can't recover it back. Are U sure you want to delete this Employee?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>!\r\n\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
-/***/ 1594:
+/***/ 1562:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"widgets\">\r\n    <div class=\"row\">\r\n      <!-- <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" (click)=\"onAddClick()\">New Treatment Entry</button> -->\r\n      <!-- <input type=\"date\" name=\"date\" id=\"date\" \r\n      (change)=\"OnDateChangeEvent($event.target.value)\" /> -->\r\n    </div>\r\n    <div class=\"row\">\r\n      <ba-card title=\"Treatment Details\" baCardClass=\"with-scroll\">\r\n        <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\"\r\n          (view)=\"onViewClick($event)\"></ng2-smart-table>\r\n      </ba-card>\r\n    </div>\r\n  </div>\r\n  \r\n  <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-md\">\r\n      <div class=\"modal-content\">\r\n        <div class=\"modal-header\">\r\n          <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n            \r\n          </button>\r\n          <h4 class=\"modal-title\">Information</h4>\r\n        </div>\r\n  \r\n        <div class=\"modal-body\">\r\n          <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n          {{DialogMessage}}\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-sm\">\r\n      <div class=\"modal-content\">\r\n        <div class=\"modal-header\">\r\n          <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                              <span aria-hidden=\"true\">&times;</span>\r\n                          </button>\r\n          <h4 class=\"modal-title\">Warning</h4>\r\n        </div>\r\n        <div class=\"modal-body\">\r\n          Once you delete the Treatment you can't recover it back. Are U sure you want to delete this Treatment?\r\n        </div>\r\n        <div class=\"modal-footer\">\r\n          <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n          <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n        </div>!\r\n  \r\n      </div>\r\n    </div>\r\n  </div>"
+module.exports = "<div>\r\n    <form id=formId class=\"form-horizontal\">\r\n        <ba-card [title]=\"modeTitle\">\r\n\r\n            <div class=\"form-group row \">\r\n                <div class=\"col-2 col-lg-2 col-sm-4\">\r\n                    <label for=\"holidayName\" class=\"form-control-label \">Holiday Name:</label>\r\n                </div>\r\n                <div class=\"col-4 col-lg-4 col-md-6 col-sm-8 \">\r\n                    <input required type=\"text \" class=\"form-control \" name=\"holidayName\" id=\"holidayName\"\r\n                        [(ngModel)]=\"holidayName\" placeholder=\"Holiday Name\">\r\n                </div>\r\n                <div class=\"col-4 col-lg-4 col-md-6 col-sm-6\">\r\n                    <input type=\"checkbox\" name=\"days\" [(ngModel)]=\"IsMultipleDays\" style=\"vertical-align:middle;\"\r\n                        id=\"days\">\r\n                    <label for=\"days\">Multiple Days</label>\r\n\r\n                    <input type=\"checkbox\" name=\"timeWise\" [(ngModel)]=\"IsTimeWise\" style=\"vertical-align:middle;\"\r\n                        id=\"timeWise\">\r\n                    <label for=\"timeWise\">Time Wise</label>\r\n\r\n                    <input type=\"checkbox\" name=\"empWise\" [(ngModel)]=\"IsEmpWise\" (change)=\"onEmpWiseChange()\" style=\"vertical-align:middle;\"\r\n                        id=\"empWise\">\r\n                    <label for=\"empWise\">Staff Wise</label>\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"form-group row\" *ngIf=\"!IsMultipleDays\">\r\n\r\n                <div class=\"col-2 col-lg-2 col-sm-4\">\r\n                    <label class=\"form-control-label\" for=\"nepaliDateFrom\"> On Date: </label>\r\n                </div>\r\n\r\n                <div class=\"col-2 col-lg-2 col-sm-4\">\r\n                    <nepali-date-picker name=\"nepaliDateOn\" [id]=\"'nepaliDateon'\"\r\n                        (change)=\"changeOnDate($event.detail.value,'BS')\" [label]=\"'yyyy-mm-dd'\"\r\n                        [(ngModel)]=\"this.ScheduleDateBS\">\r\n                    </nepali-date-picker>\r\n                </div>\r\n                <div class=\"col-2 col-lg-2 col-sm-4\">\r\n                    <input type=\"date\" (change)=\"changeOnDate($event.target.value,'AD')\" class=\"date-input form-control\"\r\n                        name=\"onDate\" [(ngModel)]=\"this.ScheduleDateAD\" style=\"width: 150px;\"\r\n                        placeholder=\"Year Start Date\">\r\n                </div>\r\n\r\n            </div>\r\n\r\n            <div class=\"form-group row\" *ngIf=\"IsMultipleDays\">\r\n\r\n                <div class=\"col-2 col-lg-2 col-sm-4\">\r\n                    <label for=\"nepaliDateFrom\" class=\"form-control-label\">From Date: </label>\r\n                </div>\r\n\r\n                <div class=\"col-2 col-lg-2 col-sm-4\">\r\n                    <nepali-date-picker name=\"nepaliDateFrom\" [id]=\"'nepaliDatefrom'\"\r\n                        (change)=\"changeFromDate($event.detail.value,'BS')\" [label]=\"'yyyy-mm-dd'\"\r\n                        [(ngModel)]=\"this.fromDateBS\">\r\n                    </nepali-date-picker>\r\n                </div>\r\n\r\n                <div class=\"col-2 col-lg-2 col-sm-4\">\r\n                    <input type=\"date\" (change)=\"changeFromDate($event.target.value,'AD')\"\r\n                        class=\"date-input form-control\" name=\"fromDate\" style=\"width: 150px;\" [(ngModel)]=\"fromDate\"\r\n                        placeholder=\"Year Start Date\">\r\n                </div>\r\n            </div>\r\n\r\n\r\n            <div class=\"form-group row\" *ngIf=\"IsMultipleDays\">\r\n\r\n                <div class=\"col-2 col-lg-2 col-sm-4\">\r\n                    <label for=\"nepaliDateTo\" class=\"form-control-label\"> To Date: </label>\r\n                </div>\r\n\r\n                <div class=\"col-2 col-lg-2 col-sm-4\">\r\n                    <nepali-date-picker name=\"nepaliDateTo\" [id]=\"'nepaliDateto'\"\r\n                        (change)=\"changeToDate($event.detail.value,'BS')\" [label]=\"'yyyy-mm-dd'\" disableDaysAfter=\"9\"\r\n                        [(ngModel)]=\"this.toDateBS\">\r\n                    </nepali-date-picker>\r\n                </div>\r\n\r\n                <div class=\"col-2 col-lg-2 col-sm-4\">\r\n                    <input type=\"date\" class=\"date-input form-control\" name=\"toDate\"\r\n                        (change)=\"changeToDate($event.target.value, 'AD')\" style=\"width: 150px;\" [(ngModel)]=\"toDate\"\r\n                        placeholder=\"Year Start Date\">\r\n                </div>\r\n\r\n            </div>\r\n\r\n            <div class=\"form-group row\" *ngIf=\"IsTimeWise\">\r\n                <div class=\"col-2 col-lg-2 col-sm-6\">\r\n                    <label for=\"time\" class=\"form-control-label\">Time Period</label>\r\n                </div>\r\n\r\n                <div class=\"col-2 col-lg-2 col-sm-6\">\r\n                    <input name=\"time\" type=\"time\" class=\"form-control\" style=\"width: 150px;\" [(ngModel)]=\"StartTime\" />\r\n                </div>\r\n                <div class=\"col-2 col-lg-2 col-sm-6\">\r\n                    <input name=\"toTime\" type=\"time\" class=\"form-control\" style=\"width: 150px;\" [(ngModel)]=\"EndTime\" />\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"form-group row\" *ngIf=\"IsEmpWise\">\r\n                <div class=\"col-2 col-lg-2 col-sm-6\">\r\n                    <label for=\"employee\" class=\"form-control-label\">Staff</label>\r\n                </div>\r\n\r\n                <div class=\"col-2 col-lg-2 col-sm-12\">\r\n                    <select class=\"form-control\" name=\"employee\" multiple multiselect-search=\"true\"\r\n                    [(ngModel)]=\"selectedEmployees\">\r\n                    <option *ngFor=\"let em of employeeList\" [ngValue]=\"em\">{{em.NAME}}</option>\r\n                  </select>\r\n                </div>\r\n            </div>\r\n\r\n        </ba-card>\r\n\r\n        <button *ngIf=\"mode=='add' || mode=='edit'\" (click)=\"onSave()\" class=\"btn btn-primary \">Save</button>\r\n        <button type=\"button \" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n    </form>\r\n</div>\r\n\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-sm\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n\r\n                </button>\r\n                <h4 class=\"modal-title\">Information</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                {{DialogMessage}}\r\n            </div>\r\n\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-sm\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Warning</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                Once you delete the Room you can't recover it back. Are U sure you want to delete this Room?\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n                <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n            </div>!\r\n\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
-/***/ 1595:
+/***/ 1563:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" (click)=\"onAddClick()\">New Treatment Entry</button>\r\n    <input type=\"date\" name=\"date\" id=\"date\" \r\n    (change)=\"OnDateChangeEvent($event.target.value)\" />\r\n  </div>\r\n  <div class=\"row\">\r\n    <ba-card title=\"Treatments\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\"\r\n        (view)=\"onViewClick($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-md\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>          \r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n\r\n      <div class=\"modal-body\">\r\n        <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n        {{DialogMessage}}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the Treatment you can't recover it back. Are U sure you want to delete this Treatment?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>!\r\n\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"widgets\">\r\n    <div class=\"row\">\r\n        <div class=\"btn btn-primary\" \r\n        (click)=\"onAddClick()\"\r\n        style=\"margin-bottom: 10px;margin-left: 18px; background-color: #209e91; border-color: #209e91;\" > \r\n        Add Holiday </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <ba-card title=\"holiday\" baCardClass=\"with-scroll\">\r\n            <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\" ></ng2-smart-table>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-md\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    \r\n                    <div class=\"modal-body\">\r\n                      <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n    <div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n    aria-hidden=\"true\">\r\n        <div class=\"modal-dialog modal-sm\">\r\n          <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n              <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                                  <span aria-hidden=\"true\">&times;</span>\r\n                              </button>\r\n              <h4 class=\"modal-title\">Warning</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n              Once you delete the Holiday you can't recover it back. Are U sure you want to delete this Holiday?\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n              <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\" >Yes</button>\r\n              <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n            </div>!\r\n      \r\n          </div>\r\n        </div>\r\n      </div>"
+
+/***/ }),
+
+/***/ 1564:
+/***/ (function(module, exports) {
+
+module.exports = "<div>\r\n    <form id=formId class=\"form-horizontal\" [formGroup]=\"form\">\r\n        <ba-card [title]=\"modeTitle\">\r\n\r\n            <!-- <div class=\"form-group row \">\r\n                <label for=\"roomno\" class=\"col-sm-2 form-control-label \">Room No</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [style.background-color]=\"disabled()\" style=\"color:black\" type=\"text \" class=\"form-control \" name=\"roomno\" id=\"roomno\" formControlName=\"ROOMNO\" [readOnly]=\"mode=='edit'?true:false\"\r\n                        placeholder=\"Room number\">\r\n                </div>\r\n            </div> -->\r\n            <div class=\"form-group row \">\r\n                <label for=\"description\" class=\"col-sm-2 form-control-label \">Description</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\" type=\"text \" class=\"form-control \" name=\"description\" id=\"description\" formControlName=\"DESCRIPTION\" placeholder=\"Medication Description\">\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group row \">\r\n                <label for=\"remarks\" class=\"col-sm-2 form-control-label \">Special Notes</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\" type=\"text \" class=\"form-control \" name=\"remarks\" id=\"remarks\" formControlName=\"REMARKS\" placeholder=\"Special Notes\">\r\n                </div>\r\n            </div>\r\n        </ba-card>\r\n        <div style=\"padding-bottom: 10px; margin-top: -8px;\">\r\n            <button *ngIf=\"mode=='add' || mode=='edit'\" (click)=\"onSave()\" style=\"margin-right: 4px;\" class=\"btn btn-primary \" [disabled]=\"!form.valid\">Save</button>\r\n            <button type=\"button \" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-sm\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    <div class=\"modal-body\">\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                    <!--<div class=\"modal-footer\">\r\n                        <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                    </div>!-->\r\n\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </form>\r\n\r\n</div>"
+
+/***/ }),
+
+/***/ 1565:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" (click)=\"onAddClick()\" >Add Medication</button>\r\n  </div>\r\n  <div class=\"row\">\r\n    <ba-card title=\"Medications\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\" ></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-md\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    \r\n                    <div class=\"modal-body\">\r\n                      <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the Medication you can't recover it back. Are U sure you want to delete this Medication?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>!\r\n\r\n    </div>\r\n  </div>\r\n</div>"
+
+/***/ }),
+
+/***/ 1566:
+/***/ (function(module, exports) {
+
+module.exports = "<div>\r\n    <form id=formId class=\"form-horizontal\" [formGroup]=\"form\">\r\n        <ba-card [title]=\"modeTitle\">\r\n\r\n            <!-- <div class=\"form-group row \">\r\n                <label for=\"roomno\" class=\"col-sm-2 form-control-label \">Room No</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [style.background-color]=\"disabled()\" style=\"color:black\" type=\"text \" class=\"form-control \" name=\"roomno\" id=\"roomno\" formControlName=\"ROOMNO\" [readOnly]=\"mode=='edit'?true:false\"\r\n                        placeholder=\"Room number\">\r\n                </div>\r\n            </div> -->\r\n            <div class=\"form-group row \">\r\n                <label for=\"prescription\" class=\"col-sm-2 form-control-label \">Prescription</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                        type=\"text \" class=\"form-control \" name=\"prescription\" id=\"prescription\"\r\n                        formControlName=\"DESCA\" placeholder=\"Prescription\">\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group row \">\r\n                <label for=\"directives\" class=\"col-sm-2 form-control-label \">Directives</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                        type=\"text \" class=\"form-control \" name=\"directives\" id=\"directives\" formControlName=\"directives\"\r\n                        placeholder=\"Directives\">\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group row \">\r\n                <label for=\"cautions\" class=\"col-sm-2 form-control-label \">Cautions</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\"\r\n                        type=\"text \" class=\"form-control \" name=\"cautions\" id=\"cautions\" formControlName=\"cautions\"\r\n                        placeholder=\"Cautions\">\r\n                </div>\r\n            </div>\r\n        </ba-card>\r\n        <div style=\"padding-bottom: 10px; margin-top: -8px;\">\r\n            <button *ngIf=\"mode=='add' || mode=='edit'\" (click)=\"onSave()\" style=\"margin-right: 4px;\"\r\n                class=\"btn btn-primary \" [disabled]=\"!form.valid\">Save</button>\r\n            <button type=\"button \" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\"\r\n            role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-sm\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n\r\n                        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    <div class=\"modal-body\">\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </form>\r\n\r\n</div>"
+
+/***/ }),
+
+/***/ 1567:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" (click)=\"onAddClick()\" >Add Prescription</button>\r\n  </div>\r\n  <div class=\"row\">\r\n    <ba-card title=\"Prescriptions\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\" ></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-md\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    \r\n                    <div class=\"modal-body\">\r\n                      <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the Prescription you can't recover it back. Are U sure you want to delete this Prescription?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>!\r\n\r\n    </div>\r\n  </div>\r\n</div>"
+
+/***/ }),
+
+/***/ 1568:
+/***/ (function(module, exports) {
+
+module.exports = "<div>\r\n    <form id=formId class=\"form-horizontal\" [formGroup]=\"form\">\r\n        <ba-card [title]=\"modeTitle\">\r\n\r\n            <div class=\"form-group row \">\r\n                <label for=\"roomno\" class=\"col-sm-2 form-control-label \">Room No</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [style.background-color]=\"disabled()\" style=\"color:black\" type=\"text \" class=\"form-control \" name=\"roomno\" id=\"roomno\" formControlName=\"ROOMNO\" [readOnly]=\"mode=='edit'?true:false\"\r\n                        placeholder=\"Room number\">\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group row \">\r\n                <label for=\"description\" class=\"col-sm-2 form-control-label \">Description</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\" type=\"text \" class=\"form-control \" name=\"description\" id=\"description\" formControlName=\"DESCRIPTION\" placeholder=\"Room Description\">\r\n                </div>\r\n            </div>\r\n           \r\n        </ba-card>\r\n        <div style=\"padding-bottom: 10px; margin-top: -8px;\">\r\n            <button *ngIf=\"mode=='add' || mode=='edit'\" (click)=\"onSave()\" style=\"margin-right: 4px;\" class=\"btn btn-primary \" [disabled]=\"!form.valid\">Save</button>\r\n            <button type=\"button \" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-sm\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    <div class=\"modal-body\">\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                    <!--<div class=\"modal-footer\">\r\n                        <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                    </div>!-->\r\n\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </form>\r\n\r\n</div>"
+
+/***/ }),
+
+/***/ 1569:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" (click)=\"onAddClick()\" >Add Room</button>\r\n  </div>\r\n  <div class=\"row\">\r\n    <ba-card title=\"Rooms\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\" ></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-md\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    \r\n                    <div class=\"modal-body\">\r\n                      <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the Room you can't recover it back. Are U sure you want to delete this Room?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>!\r\n\r\n    </div>\r\n  </div>\r\n</div>"
+
+/***/ }),
+
+/***/ 1570:
+/***/ (function(module, exports) {
+
+module.exports = "<div>\r\n    <ba-card [title]=\"modeTitle\">\r\n        <div class=\"form-group row \">\r\n            <label for=\"customerid\" class=\"col-sm-2 form-control-label \">Customer</label>\r\n            <div class=\"col-sm-6 \">\r\n                <select [(ngModel)]=\"seriesSale.customer\" class=\"form-control\" name=\"customerselect\"\r\n                    id=\"customerselect\">\r\n                    <option *ngFor=\"let c of CustomerList\" [ngValue]=\"c\">{{c.NAME}}</option>\r\n                </select>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group row \">\r\n            <label for=\"serviceid\" class=\"col-sm-2 form-control-label \">Series</label>\r\n            <div class=\"col-sm-6 \">\r\n                <select [(ngModel)]=\"seriesSale.series\" class=\"form-control\" name=\"seriesselect\" id=\"seriesselect\">\r\n                    <option *ngFor=\"let c of SeriesList\" [ngValue]=\"c\">{{c.SeriesName}}</option>\r\n                </select>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group row \">\r\n            <label for=\"employeeid\" class=\"col-sm-2 form-control-label \">Operator</label>\r\n            <div class=\"col-sm-6 \">\r\n                <select [(ngModel)]=\"seriesSale.employee\" class=\"form-control\" name=\"employeeselect\"\r\n                    id=\"employeeselect\">\r\n                    <option *ngFor=\"let c of EmployeeList\" [ngValue]=\"c\">{{c.NAME}}</option>\r\n                </select>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group row \">\r\n            <label for=\"salesmanid\" class=\"col-sm-2 form-control-label \">Sales Man</label>\r\n            <div class=\"col-sm-6 \">\r\n                <select [(ngModel)]=\"seriesSale.salesman\" class=\"form-control\" name=\"salesmanselect\"\r\n                    id=\"salesmanselect\">\r\n                    <option *ngFor=\"let c of EmployeeList\" [ngValue]=\"c\">{{c.NAME}}</option>\r\n                </select>\r\n            </div>\r\n        </div>\r\n    </ba-card>\r\n    <div style=\"padding-bottom: 10px; margin-top: -8px;\">\r\n        <button *ngIf=\"mode=='add'\" (click)=\"onSave()\" style=\"margin-right: 4px;\" class=\"btn btn-primary \">Save</button>\r\n        <button type=\"button\" class=\"btn btn-primary\"\r\n            *ngIf=\"mode=='edit'\" (click)=\"CancelBill()\">Cancel Bill</button>\r\n        <button type=\"button \" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n    </div>\r\n    <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n        aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n        <div class=\"modal-dialog modal-sm\">\r\n            <div class=\"modal-content\">\r\n                <div class=\"modal-header\">\r\n                    <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n                        <span aria-hidden=\"true\">&times;</span>\r\n\r\n                    </button>\r\n                    <h4 class=\"modal-title\">Information</h4>\r\n                </div>\r\n                <div class=\"modal-body\">\r\n                    {{DialogMessage}}\r\n                </div>\r\n                <!--<div class=\"modal-footer\">\r\n                            <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                            <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                        </div>!-->\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</div>"
+
+/***/ }),
+
+/***/ 1571:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" (click)=\"onAddClick()\" >New Series Sales</button>\r\n  </div>\r\n  <div class=\"row\">\r\n    <ba-card title=\"Series\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\" (view)=\"onViewClick($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-md\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    \r\n                    <div class=\"modal-body\">\r\n                      <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the Series you can't recover it back. Are U sure you want to delete this Service?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>!\r\n\r\n    </div>\r\n  </div>\r\n</div>"
+
+/***/ }),
+
+/***/ 1572:
+/***/ (function(module, exports) {
+
+module.exports = "<div>\r\n    <form id=formId class=\"form-horizontal\" [formGroup]=\"form\">\r\n        <ba-card [title]=\"modeTitle\">            \r\n            <div class=\"form-group row \">\r\n                <label for=\"serviceid\" class=\"col-sm-2 form-control-label \">Series Name</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <select formControlName = \"MappingCode\" class=\"form-control\" name=\"mappingCode\" id=\"mappingCode\"> \r\n                        <option *ngFor=\"let c of ItemList\" [value]=\"c.MCODE\">{{c.DESCA}}</option>\r\n                    </select>  \r\n                </div>                 \r\n            </div>\r\n            <div class=\"form-group row \">\r\n                <label for=\"serviceid\" class=\"col-sm-2 form-control-label \">Service</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <select formControlName = \"ServiceId\" class=\"form-control\" name=\"serviceId\" id=\"serviceId\"> \r\n                        <option *ngFor=\"let c of ServiceList\" [value]=\"c.SERVICEID\">{{c.DESCRIPTION}}</option>\r\n                    </select>  \r\n                </div>                 \r\n            </div>\r\n            <div class=\"form-group row \">\r\n                <label for=\"servicecount\" class=\"col-sm-2 form-control-label \">No. of Service</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black;width:30%;float:left\" [style.background-color]=\"disabled()\" type=\"number\"\r\n                        class=\"form-control \" name=\"servicecount\" id=\"servicecount\" formControlName=\"ServiceCount\" >                 \r\n                </div>\r\n            </div>\r\n            <div class=\"form-group row \">\r\n                <label for=\"validity\" class=\"col-sm-2 form-control-label \">Validity Period [Days]</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black;width:30%;float:left\" [style.background-color]=\"disabled()\" type=\"number\"\r\n                        class=\"form-control \" name=\"validity\" id=\"validity\" formControlName=\"ValidityPeriod\" placeholder=\"Days\" >                 \r\n                </div>\r\n            </div>\r\n\r\n        </ba-card>\r\n        <div style=\"padding-bottom: 10px; margin-top: -8px;\">\r\n            <button *ngIf=\"mode=='add' || mode=='edit'\" (click)=\"onSave()\" style=\"margin-right: 4px;\" class=\"btn btn-primary \" [disabled]=\"!form.valid\">Save</button>\r\n            <button type=\"button \" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-sm\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    <div class=\"modal-body\">\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                    <!--<div class=\"modal-footer\">\r\n                        <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                    </div>!-->\r\n\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </form>\r\n\r\n</div>"
+
+/***/ }),
+
+/***/ 1573:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" (click)=\"onAddClick()\" >Add Series</button>\r\n  </div>\r\n  <div class=\"row\">\r\n    <ba-card title=\"Series\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\" (view)=\"onViewClick($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-md\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    \r\n                    <div class=\"modal-body\">\r\n                      <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the Series you can't recover it back. Are U sure you want to delete this Service?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>!\r\n\r\n    </div>\r\n  </div>\r\n</div>"
+
+/***/ }),
+
+/***/ 1574:
+/***/ (function(module, exports) {
+
+module.exports = "<div>\r\n    <form id=formId class=\"form-horizontal\" [formGroup]=\"form\">\r\n        <ba-card [title]=\"modeTitle\">\r\n\r\n            \r\n            <div class=\"form-group row \">\r\n                <label for=\"description\" class=\"col-sm-2 form-control-label \">Description</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\" type=\"text \" class=\"form-control \"\r\n                        name=\"description\" id=\"description\" formControlName=\"DESCRIPTION\" placeholder=\"Service Description\">\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group row \"  *ngIf=\"ShowPosItem\">\r\n                <label for=\"serviceid\" class=\"col-sm-2 form-control-label \">Billing Item</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <select formControlName = \"MappingCode\" class=\"form-control\" name=\"mappingCode\" id=\"mappingCode\"> \r\n                        <option *ngFor=\"let c of ItemList\" [value]=\"c.MCODE\">{{c.DESCA}}</option>\r\n                    </select>  \r\n                </div>                 \r\n            </div>\r\n            <div class=\"form-group row \">\r\n                <label for=\"timeduration\" class=\"col-sm-2 form-control-label \">Time Duration(minute)</label>\r\n                <div class=\"col-sm-6 \">\r\n\r\n                    <!--<input  [readOnly]=\"viewMode == true\" style=\"color:black;margin-left:15px;width:30%;float:left\" [style.background-color]=\"disabled()\" type=\"number\" class=\"form-control \" name=\"timeduration\" id=\"timeduration\" formControlName=\"TIMEDURATION_HRS\" placeholder=\"Hour\">\r\n                    <label style=\"float:left\">hr</label>-->\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black;width:30%;float:left\" [style.background-color]=\"disabled()\" type=\"number\"\r\n                        class=\"form-control \" name=\"timeduration\" id=\"timeduration\" formControlName=\"TIMEDURATION_MIN\" placeholder=\"Minute\">\r\n                    <!--<label style=\"float:left\">min</label>-->\r\n                </div>\r\n            </div>\r\n            <!-- <div class=\"form-group row \">\r\n                <label for=\"rate\" class=\"col-sm-2 form-control-label \">Rate</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\" type=\"number\" class=\"form-control \"\r\n                        name=\"rate\" id=\"rate\" formControlName=\"RATE\" placeholder=\"Rate\">\r\n                </div>\r\n            </div> -->\r\n            <div class=\"form-group row \">\r\n                <label style=\"width: 350px;font-size: 13px;height: 20px\"><input type=\"checkbox\" style=\"vertical-align: middle\"   formControlName=\"SkipTimeValidation\">Allow Overlapping Schedule for Employee</label>\r\n                <label style=\"width: 350px;font-size: 13px;height: 20px\"><input type=\"checkbox\" style=\"vertical-align: middle\"   formControlName=\"SkipTimeValidationSS\">Allow Overlapping Schedule for Employee(Same Service)</label>\r\n            </div>\r\n            <div class=\"form-group row \">\r\n                <label style=\"width: 350px;font-size: 13px;height: 20px\"><input type=\"checkbox\" style=\"vertical-align: middle\"   formControlName=\"SkipTimeValidationRoom\">Allow Overlapping Schedule for Room</label>\r\n                <label style=\"width: 350px;font-size: 13px;height: 20px\"><input type=\"checkbox\" style=\"vertical-align: middle\"   formControlName=\"SkipTimeValidationRoomSS\">Allow Overlapping Schedule for Room(Same Service)</label>\r\n            </div>\r\n            <div class=\"form-group row \">\r\n                <label style=\"width: 350px;font-size: 13px;height: 20px\"><input type=\"checkbox\" style=\"vertical-align: middle\"   formControlName=\"SkipTimeValidationCustomer\">Allow Overlapping Schedule for Customer</label>\r\n            </div>\r\n\r\n        </ba-card>\r\n        <div style=\"padding-bottom: 10px; margin-top: -8px;\">\r\n            <button *ngIf=\"mode=='add' || mode=='edit'\" (click)=\"onSave()\" style=\"margin-right: 4px;\" class=\"btn btn-primary \" [disabled]=\"!form.valid\">Save</button>\r\n            <button type=\"button \" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-sm\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    <div class=\"modal-body\">\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                    <!--<div class=\"modal-footer\">\r\n                        <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                    </div>!-->\r\n\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </form>\r\n\r\n</div>"
+
+/***/ }),
+
+/***/ 1575:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" (click)=\"onAddClick()\" >Add Service</button>\r\n  </div>\r\n  <div class=\"row\">\r\n    <ba-card title=\"Services\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\" (view)=\"onViewClick($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-md\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    \r\n                    <div class=\"modal-body\">\r\n                      <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the Serivce you can't recover it back. Are U sure you want to delete this Service?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>!\r\n\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ })
 
