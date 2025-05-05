@@ -10011,8 +10011,8 @@ let AppointmentRequest = class AppointmentRequest {
         }
     }
     getServices(branchId) {
-        this.masterService.getServices(branchId).subscribe((response) => {
-            this.serviceList = response.json();
+        this.masterService.getServices(branchId).subscribe(services => {
+            this.serviceList = services;
             this.appRequest.items.forEach(element => {
                 element.service = this.serviceList.filter(x => x.SERVICEID == element.serviceId)[0] || {};
             });
@@ -10272,8 +10272,8 @@ let CheckIn = class CheckIn {
         }
     }
     getServices(branchId) {
-        this.masterService.getServices(branchId).subscribe((response) => {
-            this.ServiceList = response.json();
+        this.masterService.getServices(branchId).subscribe(services => {
+            this.ServiceList = services;
         });
     }
     getEmployees(branchId, service, index) {
@@ -11317,8 +11317,8 @@ let ScheduleInput = class ScheduleInput {
     }
     getServices(branchId) {
         this.masterService.getServices(branchId)
-            .subscribe((response) => {
-            this.ServiceList = response.json();
+            .subscribe(services => {
+            this.ServiceList = services;
             this.clearEmpRoom();
         });
     }

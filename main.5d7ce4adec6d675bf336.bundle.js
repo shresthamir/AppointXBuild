@@ -2043,7 +2043,16 @@ let MasterRepo = class MasterRepo {
             .flatMap((res, index) => res.json() || []);
     }
     getServices(branchId) {
-        return this.http.get(this.apiUrl + `/GetServiceList?branchId=${branchId}`, this.getRequestOption());
+        const cacheKey = `service_${branchId}`;
+        const cached = this.cache.get(cacheKey);
+        if (cached) {
+            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(cached);
+        }
+        return this.http.get(this.apiUrl + `/GetServiceList?branchId=${branchId}`, this.getRequestOption())
+            .flatMap(res => {
+            this.cache.set(cacheKey, res.json(), 10); // TTL: 10 minutes
+            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(res.json());
+        });
     }
     getBranchList() {
         return this.http.get(this.apiUrl + "/getOutlet", this.getRequestOption());
