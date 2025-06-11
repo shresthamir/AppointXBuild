@@ -7,31 +7,18 @@ webpackJsonp([3],{
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserManagerModule", (function() { return UserManagerModule; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__userManager_component__ = __webpack_require__(1554);
-<<<<<<< Updated upstream:3.846e9ac1c53950772d8c.chunk.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_guard_service__ = __webpack_require__(639);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_guard_service__ = __webpack_require__(640);
->>>>>>> Stashed changes:3.a57cd52d71a4757df77e.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_userManger_adduser_component__ = __webpack_require__(1550);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_userManger_userList_component__ = __webpack_require__(1553);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_forms__ = __webpack_require__(26);
-<<<<<<< Updated upstream:3.846e9ac1c53950772d8c.chunk.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__theme_nga_module__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_smart_table__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_ng2_smart_table__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ng2_bootstrap__ = __webpack_require__(1378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__userManager_routing__ = __webpack_require__(1564);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__login_login_module__ = __webpack_require__(330);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__theme_nga_module__ = __webpack_require__(223);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_smart_table__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_ng2_smart_table__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ng2_bootstrap__ = __webpack_require__(1378);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__userManager_routing__ = __webpack_require__(1564);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__login_login_module__ = __webpack_require__(331);
->>>>>>> Stashed changes:3.a57cd52d71a4757df77e.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_multiselect_dropdown__ = __webpack_require__(1495);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_userManger_roles_roleList_component__ = __webpack_require__(1552);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_userManger_roles_addRole_component__ = __webpack_require__(1551);
@@ -7263,17 +7250,17 @@ var TypeaheadMatch = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__typeahead_utils__ = __webpack_require__(1408);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Observable__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_from__ = __webpack_require__(640);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_from__ = __webpack_require__(641);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_from__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__ = __webpack_require__(641);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__ = __webpack_require__(642);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_filter__ = __webpack_require__(642);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_filter__ = __webpack_require__(643);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_filter__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_map__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_mergeMap__ = __webpack_require__(224);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_mergeMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_toArray__ = __webpack_require__(643);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_toArray__ = __webpack_require__(644);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_toArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_toArray__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__typeahead_match_class__ = __webpack_require__(1460);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__component_loader__ = __webpack_require__(1380);
@@ -8411,11 +8398,7 @@ var AngularMultiSelectModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return DataService; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-<<<<<<< Updated upstream:3.846e9ac1c53950772d8c.chunk.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs__ = __webpack_require__(101);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs__ = __webpack_require__(86);
->>>>>>> Stashed changes:3.a57cd52d71a4757df77e.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs__);
 
 
@@ -9211,11 +9194,7 @@ function listenToTriggers(renderer, target, triggers, showFn, hideFn, toggleFn) 
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AddUserService; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(42);
-<<<<<<< Updated upstream:3.846e9ac1c53950772d8c.chunk.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_permission__ = __webpack_require__(221);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_permission__ = __webpack_require__(222);
->>>>>>> Stashed changes:3.a57cd52d71a4757df77e.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global_state__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
@@ -9581,15 +9560,9 @@ AddUser = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__adduser_service__ = __webpack_require__(1493);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_repositories__ = __webpack_require__(119);
-<<<<<<< Updated upstream:3.846e9ac1c53950772d8c.chunk.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_menu__ = __webpack_require__(648);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__ = __webpack_require__(1378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_common_service__ = __webpack_require__(329);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_menu__ = __webpack_require__(649);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__ = __webpack_require__(1378);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_common_service__ = __webpack_require__(330);
->>>>>>> Stashed changes:3.a57cd52d71a4757df77e.chunk.js
 
 
 
@@ -9734,22 +9707,14 @@ AddRole = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return RoleList; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1378);
-<<<<<<< Updated upstream:3.846e9ac1c53950772d8c.chunk.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__ = __webpack_require__(220);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__ = __webpack_require__(221);
->>>>>>> Stashed changes:3.a57cd52d71a4757df77e.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss__ = __webpack_require__(1557);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_services_permission_authService_service__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__adduser_service__ = __webpack_require__(1493);
-<<<<<<< Updated upstream:3.846e9ac1c53950772d8c.chunk.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_repositories_masterRepo_service__ = __webpack_require__(638);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_repositories_masterRepo_service__ = __webpack_require__(639);
->>>>>>> Stashed changes:3.a57cd52d71a4757df77e.chunk.js
 
 
 
@@ -9882,11 +9847,7 @@ RoleList = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return UserList; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1378);
-<<<<<<< Updated upstream:3.846e9ac1c53950772d8c.chunk.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__ = __webpack_require__(220);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__ = __webpack_require__(221);
->>>>>>> Stashed changes:3.a57cd52d71a4757df77e.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss__ = __webpack_require__(1557);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss__);

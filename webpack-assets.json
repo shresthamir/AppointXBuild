@@ -1,15 +1,5 @@
 {
   "vendor": {
-<<<<<<< Updated upstream
-    "js": "vendor.41db4cbd8a5f588bb74f.bundle.js"
-  },
-  "main": {
-    "js": "main.5d7ce4adec6d675bf336.bundle.js",
-    "css": "initial.css"
-  },
-  "polyfills": {
-    "js": "polyfills.06d3488689476b00483a.bundle.js"
-=======
     "js": "vendor.b7a1af725aab17b51b09.bundle.js"
   },
   "main": {
@@ -18,6 +8,5 @@
   },
   "polyfills": {
     "js": "polyfills.fd3c8cfa4e5780f7245d.bundle.js"
->>>>>>> Stashed changes
   }
 }

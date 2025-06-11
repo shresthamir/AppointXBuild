@@ -4,236 +4,236 @@ webpackJsonp([6],{
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 461,
-	"./af.js": 461,
-	"./ar": 468,
-	"./ar-dz": 462,
-	"./ar-dz.js": 462,
-	"./ar-kw": 463,
-	"./ar-kw.js": 463,
-	"./ar-ly": 464,
-	"./ar-ly.js": 464,
-	"./ar-ma": 465,
-	"./ar-ma.js": 465,
-	"./ar-sa": 466,
-	"./ar-sa.js": 466,
-	"./ar-tn": 467,
-	"./ar-tn.js": 467,
-	"./ar.js": 468,
-	"./az": 469,
-	"./az.js": 469,
-	"./be": 470,
-	"./be.js": 470,
-	"./bg": 471,
-	"./bg.js": 471,
-	"./bn": 472,
-	"./bn.js": 472,
-	"./bo": 473,
-	"./bo.js": 473,
-	"./br": 474,
-	"./br.js": 474,
-	"./bs": 475,
-	"./bs.js": 475,
-	"./ca": 476,
-	"./ca.js": 476,
-	"./cs": 477,
-	"./cs.js": 477,
-	"./cv": 478,
-	"./cv.js": 478,
-	"./cy": 479,
-	"./cy.js": 479,
-	"./da": 480,
-	"./da.js": 480,
-	"./de": 483,
-	"./de-at": 481,
-	"./de-at.js": 481,
-	"./de-ch": 482,
-	"./de-ch.js": 482,
-	"./de.js": 483,
-	"./dv": 484,
-	"./dv.js": 484,
-	"./el": 485,
-	"./el.js": 485,
-	"./en-au": 486,
-	"./en-au.js": 486,
-	"./en-ca": 487,
-	"./en-ca.js": 487,
-	"./en-gb": 488,
-	"./en-gb.js": 488,
-	"./en-ie": 489,
-	"./en-ie.js": 489,
-	"./en-nz": 490,
-	"./en-nz.js": 490,
-	"./eo": 491,
-	"./eo.js": 491,
-	"./es": 493,
-	"./es-do": 492,
-	"./es-do.js": 492,
-	"./es.js": 493,
-	"./et": 494,
-	"./et.js": 494,
-	"./eu": 495,
-	"./eu.js": 495,
-	"./fa": 496,
-	"./fa.js": 496,
-	"./fi": 497,
-	"./fi.js": 497,
-	"./fo": 498,
-	"./fo.js": 498,
-	"./fr": 501,
-	"./fr-ca": 499,
-	"./fr-ca.js": 499,
-	"./fr-ch": 500,
-	"./fr-ch.js": 500,
-	"./fr.js": 501,
-	"./fy": 502,
-	"./fy.js": 502,
-	"./gd": 503,
-	"./gd.js": 503,
-	"./gl": 504,
-	"./gl.js": 504,
-	"./gom-latn": 505,
-	"./gom-latn.js": 505,
-	"./he": 506,
-	"./he.js": 506,
-	"./hi": 507,
-	"./hi.js": 507,
-	"./hr": 508,
-	"./hr.js": 508,
-	"./hu": 509,
-	"./hu.js": 509,
-	"./hy-am": 510,
-	"./hy-am.js": 510,
-	"./id": 511,
-	"./id.js": 511,
-	"./is": 512,
-	"./is.js": 512,
-	"./it": 513,
-	"./it.js": 513,
-	"./ja": 514,
-	"./ja.js": 514,
-	"./jv": 515,
-	"./jv.js": 515,
-	"./ka": 516,
-	"./ka.js": 516,
-	"./kk": 517,
-	"./kk.js": 517,
-	"./km": 518,
-	"./km.js": 518,
-	"./kn": 519,
-	"./kn.js": 519,
-	"./ko": 520,
-	"./ko.js": 520,
-	"./ky": 521,
-	"./ky.js": 521,
-	"./lb": 522,
-	"./lb.js": 522,
-	"./lo": 523,
-	"./lo.js": 523,
-	"./lt": 524,
-	"./lt.js": 524,
-	"./lv": 525,
-	"./lv.js": 525,
-	"./me": 526,
-	"./me.js": 526,
-	"./mi": 527,
-	"./mi.js": 527,
-	"./mk": 528,
-	"./mk.js": 528,
-	"./ml": 529,
-	"./ml.js": 529,
-	"./mr": 530,
-	"./mr.js": 530,
-	"./ms": 532,
-	"./ms-my": 531,
-	"./ms-my.js": 531,
-	"./ms.js": 532,
-	"./my": 533,
-	"./my.js": 533,
-	"./nb": 534,
-	"./nb.js": 534,
-	"./ne": 535,
-	"./ne.js": 535,
-	"./nl": 537,
-	"./nl-be": 536,
-	"./nl-be.js": 536,
-	"./nl.js": 537,
-	"./nn": 538,
-	"./nn.js": 538,
-	"./pa-in": 539,
-	"./pa-in.js": 539,
-	"./pl": 540,
-	"./pl.js": 540,
-	"./pt": 542,
-	"./pt-br": 541,
-	"./pt-br.js": 541,
-	"./pt.js": 542,
-	"./ro": 543,
-	"./ro.js": 543,
-	"./ru": 544,
-	"./ru.js": 544,
-	"./sd": 545,
-	"./sd.js": 545,
-	"./se": 546,
-	"./se.js": 546,
-	"./si": 547,
-	"./si.js": 547,
-	"./sk": 548,
-	"./sk.js": 548,
-	"./sl": 549,
-	"./sl.js": 549,
-	"./sq": 550,
-	"./sq.js": 550,
-	"./sr": 552,
-	"./sr-cyrl": 551,
-	"./sr-cyrl.js": 551,
-	"./sr.js": 552,
-	"./ss": 553,
-	"./ss.js": 553,
-	"./sv": 554,
-	"./sv.js": 554,
-	"./sw": 555,
-	"./sw.js": 555,
-	"./ta": 556,
-	"./ta.js": 556,
-	"./te": 557,
-	"./te.js": 557,
-	"./tet": 558,
-	"./tet.js": 558,
-	"./th": 559,
-	"./th.js": 559,
-	"./tl-ph": 560,
-	"./tl-ph.js": 560,
-	"./tlh": 561,
-	"./tlh.js": 561,
-	"./tr": 562,
-	"./tr.js": 562,
-	"./tzl": 563,
-	"./tzl.js": 563,
-	"./tzm": 565,
-	"./tzm-latn": 564,
-	"./tzm-latn.js": 564,
-	"./tzm.js": 565,
-	"./uk": 566,
-	"./uk.js": 566,
-	"./ur": 567,
-	"./ur.js": 567,
-	"./uz": 569,
-	"./uz-latn": 568,
-	"./uz-latn.js": 568,
-	"./uz.js": 569,
-	"./vi": 570,
-	"./vi.js": 570,
-	"./x-pseudo": 571,
-	"./x-pseudo.js": 571,
-	"./yo": 572,
-	"./yo.js": 572,
-	"./zh-cn": 573,
-	"./zh-cn.js": 573,
-	"./zh-hk": 574,
-	"./zh-hk.js": 574,
-	"./zh-tw": 575,
-	"./zh-tw.js": 575
+	"./af": 462,
+	"./af.js": 462,
+	"./ar": 469,
+	"./ar-dz": 463,
+	"./ar-dz.js": 463,
+	"./ar-kw": 464,
+	"./ar-kw.js": 464,
+	"./ar-ly": 465,
+	"./ar-ly.js": 465,
+	"./ar-ma": 466,
+	"./ar-ma.js": 466,
+	"./ar-sa": 467,
+	"./ar-sa.js": 467,
+	"./ar-tn": 468,
+	"./ar-tn.js": 468,
+	"./ar.js": 469,
+	"./az": 470,
+	"./az.js": 470,
+	"./be": 471,
+	"./be.js": 471,
+	"./bg": 472,
+	"./bg.js": 472,
+	"./bn": 473,
+	"./bn.js": 473,
+	"./bo": 474,
+	"./bo.js": 474,
+	"./br": 475,
+	"./br.js": 475,
+	"./bs": 476,
+	"./bs.js": 476,
+	"./ca": 477,
+	"./ca.js": 477,
+	"./cs": 478,
+	"./cs.js": 478,
+	"./cv": 479,
+	"./cv.js": 479,
+	"./cy": 480,
+	"./cy.js": 480,
+	"./da": 481,
+	"./da.js": 481,
+	"./de": 484,
+	"./de-at": 482,
+	"./de-at.js": 482,
+	"./de-ch": 483,
+	"./de-ch.js": 483,
+	"./de.js": 484,
+	"./dv": 485,
+	"./dv.js": 485,
+	"./el": 486,
+	"./el.js": 486,
+	"./en-au": 487,
+	"./en-au.js": 487,
+	"./en-ca": 488,
+	"./en-ca.js": 488,
+	"./en-gb": 489,
+	"./en-gb.js": 489,
+	"./en-ie": 490,
+	"./en-ie.js": 490,
+	"./en-nz": 491,
+	"./en-nz.js": 491,
+	"./eo": 492,
+	"./eo.js": 492,
+	"./es": 494,
+	"./es-do": 493,
+	"./es-do.js": 493,
+	"./es.js": 494,
+	"./et": 495,
+	"./et.js": 495,
+	"./eu": 496,
+	"./eu.js": 496,
+	"./fa": 497,
+	"./fa.js": 497,
+	"./fi": 498,
+	"./fi.js": 498,
+	"./fo": 499,
+	"./fo.js": 499,
+	"./fr": 502,
+	"./fr-ca": 500,
+	"./fr-ca.js": 500,
+	"./fr-ch": 501,
+	"./fr-ch.js": 501,
+	"./fr.js": 502,
+	"./fy": 503,
+	"./fy.js": 503,
+	"./gd": 504,
+	"./gd.js": 504,
+	"./gl": 505,
+	"./gl.js": 505,
+	"./gom-latn": 506,
+	"./gom-latn.js": 506,
+	"./he": 507,
+	"./he.js": 507,
+	"./hi": 508,
+	"./hi.js": 508,
+	"./hr": 509,
+	"./hr.js": 509,
+	"./hu": 510,
+	"./hu.js": 510,
+	"./hy-am": 511,
+	"./hy-am.js": 511,
+	"./id": 512,
+	"./id.js": 512,
+	"./is": 513,
+	"./is.js": 513,
+	"./it": 514,
+	"./it.js": 514,
+	"./ja": 515,
+	"./ja.js": 515,
+	"./jv": 516,
+	"./jv.js": 516,
+	"./ka": 517,
+	"./ka.js": 517,
+	"./kk": 518,
+	"./kk.js": 518,
+	"./km": 519,
+	"./km.js": 519,
+	"./kn": 520,
+	"./kn.js": 520,
+	"./ko": 521,
+	"./ko.js": 521,
+	"./ky": 522,
+	"./ky.js": 522,
+	"./lb": 523,
+	"./lb.js": 523,
+	"./lo": 524,
+	"./lo.js": 524,
+	"./lt": 525,
+	"./lt.js": 525,
+	"./lv": 526,
+	"./lv.js": 526,
+	"./me": 527,
+	"./me.js": 527,
+	"./mi": 528,
+	"./mi.js": 528,
+	"./mk": 529,
+	"./mk.js": 529,
+	"./ml": 530,
+	"./ml.js": 530,
+	"./mr": 531,
+	"./mr.js": 531,
+	"./ms": 533,
+	"./ms-my": 532,
+	"./ms-my.js": 532,
+	"./ms.js": 533,
+	"./my": 534,
+	"./my.js": 534,
+	"./nb": 535,
+	"./nb.js": 535,
+	"./ne": 536,
+	"./ne.js": 536,
+	"./nl": 538,
+	"./nl-be": 537,
+	"./nl-be.js": 537,
+	"./nl.js": 538,
+	"./nn": 539,
+	"./nn.js": 539,
+	"./pa-in": 540,
+	"./pa-in.js": 540,
+	"./pl": 541,
+	"./pl.js": 541,
+	"./pt": 543,
+	"./pt-br": 542,
+	"./pt-br.js": 542,
+	"./pt.js": 543,
+	"./ro": 544,
+	"./ro.js": 544,
+	"./ru": 545,
+	"./ru.js": 545,
+	"./sd": 546,
+	"./sd.js": 546,
+	"./se": 547,
+	"./se.js": 547,
+	"./si": 548,
+	"./si.js": 548,
+	"./sk": 549,
+	"./sk.js": 549,
+	"./sl": 550,
+	"./sl.js": 550,
+	"./sq": 551,
+	"./sq.js": 551,
+	"./sr": 553,
+	"./sr-cyrl": 552,
+	"./sr-cyrl.js": 552,
+	"./sr.js": 553,
+	"./ss": 554,
+	"./ss.js": 554,
+	"./sv": 555,
+	"./sv.js": 555,
+	"./sw": 556,
+	"./sw.js": 556,
+	"./ta": 557,
+	"./ta.js": 557,
+	"./te": 558,
+	"./te.js": 558,
+	"./tet": 559,
+	"./tet.js": 559,
+	"./th": 560,
+	"./th.js": 560,
+	"./tl-ph": 561,
+	"./tl-ph.js": 561,
+	"./tlh": 562,
+	"./tlh.js": 562,
+	"./tr": 563,
+	"./tr.js": 563,
+	"./tzl": 564,
+	"./tzl.js": 564,
+	"./tzm": 566,
+	"./tzm-latn": 565,
+	"./tzm-latn.js": 565,
+	"./tzm.js": 566,
+	"./uk": 567,
+	"./uk.js": 567,
+	"./ur": 568,
+	"./ur.js": 568,
+	"./uz": 570,
+	"./uz-latn": 569,
+	"./uz-latn.js": 569,
+	"./uz.js": 570,
+	"./vi": 571,
+	"./vi.js": 571,
+	"./x-pseudo": 572,
+	"./x-pseudo.js": 572,
+	"./yo": 573,
+	"./yo.js": 573,
+	"./zh-cn": 574,
+	"./zh-cn.js": 574,
+	"./zh-hk": 575,
+	"./zh-hk.js": 575,
+	"./zh-tw": 576,
+	"./zh-tw.js": 576
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -340,11 +340,7 @@ module.exports = "@-webkit-keyframes pulsate{30%{-webkit-transform:scale(0.1, 0.
 /***/ 1079:
 /***/ (function(module, exports) {
 
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-module.exports = "@-webkit-keyframes pulsate{30%{-webkit-transform:scale(0.1, 0.1);opacity:0.0}35%{opacity:1.0}40%{-webkit-transform:scale(1.2, 1.2);opacity:0.0}}.al-msg-center{float:right;padding:0;list-style:none;margin:13px 47px 0 0}.al-msg-center li{list-style:none;float:left;margin-left:30px}.al-msg-center li:first-child{margin-left:0}.al-msg-center li>a{color:#fff;text-decoration:none;font-size:13px;position:relative}.al-msg-center li>a span{display:inline-block;min-width:10px;padding:2px 4px 2px 4px;color:#fff;vertical-align:baseline;white-space:nowrap;text-align:center;border-radius:13px;text-shadow:none;line-height:11px;background-color:#e85656;position:absolute;top:-5px;right:-14px;font-size:11px}.al-msg-center li>a .notification-ring{border:1px solid #e85656;border-radius:100px;height:40px;width:40px;position:absolute;top:-18px;right:-27px;animation:pulsate 8s ease-out;animation-iteration-count:infinite;opacity:0.0}.al-msg-center li>a:hover{color:#e85656}.al-msg-center li>a:hover.msg{color:#209e91}.al-msg-center li>a.msg span{background-color:#209e91}.al-msg-center li>a.msg .notification-ring{border-color:#209e91}.al-msg-center li.open>a{color:#e85656}.al-msg-center li.open>a.msg{color:#209e91}@media (max-width: 435px){.al-msg-center{margin-right:20px}.al-msg-center li{margin-left:20px}.al-msg-center li:first-child{margin-left:0}}.msg-block-header{display:inline-block;padding:0;font-size:13px;margin:0 0 0 6px}.top-dropdown-menu{width:316px;left:auto;right:-47px;top:26px}.top-dropdown-menu ::-webkit-scrollbar{width:1em;height:1em}.top-dropdown-menu ::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.5);cursor:pointer}.top-dropdown-menu ::-webkit-scrollbar-track{background:#fff}.top-dropdown-menu body{scrollbar-face-color:rgba(0,0,0,0.5);scrollbar-track-color:#fff}.top-dropdown-menu .header{padding:10px 12px;border-bottom:1px solid #fff;font-size:12px}.top-dropdown-menu .header strong{float:left;color:#7d7d7d}.top-dropdown-menu .header>a{float:right;margin-left:12px;text-decoration:none}.top-dropdown-menu .header>a:hover{color:#7d7d7d}.top-dropdown-menu .msg-list{max-height:296px;overflow:scroll;overflow-x:hidden}.top-dropdown-menu .msg-list>a{border-top:1px solid #fff;padding:10px 12px;display:block;text-decoration:none;color:#7d7d7d;font-size:12px}.top-dropdown-menu .msg-list>a:first-child{border-top:none}.top-dropdown-menu .msg-list>a .img-area{float:left;width:36px}.top-dropdown-menu .msg-list>a .img-area img{width:36px;height:36px}.top-dropdown-menu .msg-list>a .img-area img.photo-msg-item{border-radius:18px}.top-dropdown-menu .msg-list>a .img-area>div{width:36px;height:36px;border-radius:4px;font-size:24px;text-align:center}.top-dropdown-menu .msg-list>a .img-area>div.comments{color:#dfb81c}.top-dropdown-menu .msg-list>a .img-area>div.orders{color:#dfb81c}.top-dropdown-menu .msg-list>a .img-area>div i{width:36px;line-height:36px}.top-dropdown-menu .msg-list>a .msg-area{float:right;width:230px}.top-dropdown-menu .msg-list>a .msg-area div{max-height:34px;overflow:hidden;text-overflow:ellipsis}.top-dropdown-menu .msg-list>a .msg-area span{font-style:italic;text-align:right;display:block;font-size:11px}.top-dropdown-menu .msg-list>a:hover{background:#E2F0FF}.top-dropdown-menu>a{border-top:1px solid #fff;display:block;text-align:center;padding:10px;font-size:12px;text-decoration:none}.top-dropdown-menu>a:hover{color:#7d7d7d}.top-dropdown-menu.profile-dropdown{width:145px;top:55px;right:-25px}.top-dropdown-menu.profile-dropdown a{text-align:left;border:none;text-decoration:none;color:#7d7d7d;padding:4px 16px 4px 20px}.top-dropdown-menu.profile-dropdown a.signout{border-top:1px solid #fff}.top-dropdown-menu.profile-dropdown a i{margin-right:10px}.top-dropdown-menu.profile-dropdown a:hover{background:#f4fcff}.top-dropdown-menu.profile-dropdown i.dropdown-arr{right:25px}.top-dropdown-menu i.dropdown-arr{position:absolute;top:-22px;right:42px;display:block;width:0;height:0;border:11px solid transparent;border-bottom-color:rgba(0,0,0,0.15)}.top-dropdown-menu i.dropdown-arr:after{top:-9px;left:0px;margin-left:-10px;content:\" \";position:absolute;display:block;width:0;height:0;border:10px solid transparent;border-bottom-color:#fff}@media (max-width: 415px){.top-dropdown-menu{right:-81px}.top-dropdown-menu i.dropdown-arr{right:75px}}.page-top{background-color:#1C2B36;position:fixed;z-index:904;box-shadow:2px 0 3px rgba(0,0,0,0.5);height:66px;width:100%;min-width:320px;padding:0 32px 0 40px}.page-top .dropdown-toggle::after{display:none}.blur .page-top.scrolled{background-color:rgba(0,0,0,0.85)}a.al-logo{color:#fff;display:block;font-size:24px;font-family:\"Roboto\",sans-serif;white-space:nowrap;float:left;outline:none !important;line-height:60px}a.al-logo span{color:#209e91}a.al-logo:hover{color:#209e91}.user-profile{float:right;min-width:230px;margin-top:10px;color:white}.al-user-profile{float:right;margin-right:12px;transition:all .15s ease-in-out;padding:0;width:36px;height:36px;border:0;opacity:1;position:relative}.al-user-profile a{display:block}.al-user-profile img{width:45px;height:45px;border-radius:50%}a.refresh-data{color:#fff;font-size:13px;text-decoration:none;font-weight:400;float:right;margin-top:13px;margin-right:26px}a.refresh-data:hover{color:#dfb81c !important}a.collapse-menu-link{font-size:31px;cursor:pointer;display:block;text-decoration:none;line-height:42px;color:#fff;padding:0;float:left;margin:11px 0 0 25px}a.collapse-menu-link:hover{text-decoration:none;color:#dfb81c}.al-skin-dropdown{float:right;margin-top:14px;margin-right:26px}.al-skin-dropdown .tpl-skin-panel{max-height:300px;overflow-y:scroll;overflow-x:hidden}.icon-palette{display:inline-block;width:14px;height:13px;background:url(\"assets/img/theme/palette.png\");background-size:cover}.search{text-shadow:none;font-size:13px;line-height:25px;transition:all 0.5s ease;white-space:nowrap;overflow:hidden;width:162px;float:left;margin:20px 0 0 30px}.search label{cursor:pointer}.search i{width:16px;display:inline-block;cursor:pointer;padding-left:1px;font-size:16px;margin-right:13px}.search input{color:#fff;background:none;border:none;outline:none;width:120px;padding:0;margin:0 0 0 -3px;height:27px}@media screen and (max-width: 660px){.search{display:none}}@media screen and (max-width: 500px){.page-top{padding:0 20px}}@media (max-width: 435px){.user-profile{min-width:136px}a.refresh-data{margin-right:10px}a.collapse-menu-link{margin-left:10px}.al-skin-dropdown{display:none}}.profile-toggle-link{cursor:pointer}\n"
-=======
 module.exports = "@-webkit-keyframes pulsate{30%{-webkit-transform:scale(0.1, 0.1);opacity:0.0}35%{opacity:1.0}40%{-webkit-transform:scale(1.2, 1.2);opacity:0.0}}.al-msg-center{float:right;padding:0;list-style:none;margin:13px 47px 0 0}.al-msg-center li{list-style:none;float:left;margin-left:30px}.al-msg-center li:first-child{margin-left:0}.al-msg-center li>a{color:#fff;text-decoration:none;font-size:13px;position:relative}.al-msg-center li>a span{display:inline-block;min-width:10px;padding:2px 4px 2px 4px;color:#fff;vertical-align:baseline;white-space:nowrap;text-align:center;border-radius:13px;text-shadow:none;line-height:11px;background-color:#e85656;position:absolute;top:-5px;right:-14px;font-size:11px}.al-msg-center li>a .notification-ring{border:1px solid #e85656;border-radius:100px;height:40px;width:40px;position:absolute;top:-18px;right:-27px;animation:pulsate 8s ease-out;animation-iteration-count:infinite;opacity:0.0}.al-msg-center li>a:hover{color:#e85656}.al-msg-center li>a:hover.msg{color:#209e91}.al-msg-center li>a.msg span{background-color:#209e91}.al-msg-center li>a.msg .notification-ring{border-color:#209e91}.al-msg-center li.open>a{color:#e85656}.al-msg-center li.open>a.msg{color:#209e91}@media (max-width: 435px){.al-msg-center{margin-right:20px}.al-msg-center li{margin-left:20px}.al-msg-center li:first-child{margin-left:0}}.msg-block-header{display:inline-block;padding:0;font-size:13px;margin:0 0 0 6px}.top-dropdown-menu{width:316px;left:auto;right:-47px;top:26px}.top-dropdown-menu ::-webkit-scrollbar{width:1em;height:1em}.top-dropdown-menu ::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.5);cursor:pointer}.top-dropdown-menu ::-webkit-scrollbar-track{background:#fff}.top-dropdown-menu body{scrollbar-face-color:rgba(0,0,0,0.5);scrollbar-track-color:#fff}.top-dropdown-menu .header{padding:10px 12px;border-bottom:1px solid #fff;font-size:12px}.top-dropdown-menu .header strong{float:left;color:#7d7d7d}.top-dropdown-menu .header>a{float:right;margin-left:12px;text-decoration:none}.top-dropdown-menu .header>a:hover{color:#7d7d7d}.top-dropdown-menu .msg-list{max-height:296px;overflow:scroll;overflow-x:hidden}.top-dropdown-menu .msg-list>a{border-top:1px solid #fff;padding:10px 12px;display:block;text-decoration:none;color:#7d7d7d;font-size:12px}.top-dropdown-menu .msg-list>a:first-child{border-top:none}.top-dropdown-menu .msg-list>a .img-area{float:left;width:36px}.top-dropdown-menu .msg-list>a .img-area img{width:36px;height:36px}.top-dropdown-menu .msg-list>a .img-area img.photo-msg-item{border-radius:18px}.top-dropdown-menu .msg-list>a .img-area>div{width:36px;height:36px;border-radius:4px;font-size:24px;text-align:center}.top-dropdown-menu .msg-list>a .img-area>div.comments{color:#dfb81c}.top-dropdown-menu .msg-list>a .img-area>div.orders{color:#dfb81c}.top-dropdown-menu .msg-list>a .img-area>div i{width:36px;line-height:36px}.top-dropdown-menu .msg-list>a .msg-area{float:right;width:230px}.top-dropdown-menu .msg-list>a .msg-area div{max-height:34px;overflow:hidden;text-overflow:ellipsis}.top-dropdown-menu .msg-list>a .msg-area span{font-style:italic;text-align:right;display:block;font-size:11px}.top-dropdown-menu .msg-list>a:hover{background:#E2F0FF}.top-dropdown-menu>a{border-top:1px solid #fff;display:block;text-align:center;padding:10px;font-size:12px;text-decoration:none}.top-dropdown-menu>a:hover{color:#7d7d7d}.top-dropdown-menu.profile-dropdown{width:145px;top:55px;right:-25px}.top-dropdown-menu.profile-dropdown a{text-align:left;border:none;text-decoration:none;color:#7d7d7d;padding:4px 16px 4px 20px}.top-dropdown-menu.profile-dropdown a.signout{border-top:1px solid #fff}.top-dropdown-menu.profile-dropdown a i{margin-right:10px}.top-dropdown-menu.profile-dropdown a:hover{background:#f4fcff}.top-dropdown-menu.profile-dropdown i.dropdown-arr{right:25px}.top-dropdown-menu i.dropdown-arr{position:absolute;top:-22px;right:42px;display:block;width:0;height:0;border:11px solid transparent;border-bottom-color:rgba(0,0,0,0.15)}.top-dropdown-menu i.dropdown-arr:after{top:-9px;left:0px;margin-left:-10px;content:\" \";position:absolute;display:block;width:0;height:0;border:10px solid transparent;border-bottom-color:#fff}@media (max-width: 415px){.top-dropdown-menu{right:-81px}.top-dropdown-menu i.dropdown-arr{right:75px}}.page-top{background-color:#1C2B36;position:fixed;z-index:904;box-shadow:2px 0 3px rgba(0,0,0,0.5);height:66px;width:100%;min-width:320px;padding:0 32px 0 40px}.page-top .dropdown-toggle::after{display:none}.blur .page-top.scrolled{background-color:rgba(0,0,0,0.85)}a.al-logo{color:#fff;display:block;font-size:24px;font-family:\"Roboto\",sans-serif;white-space:nowrap;float:left;outline:none !important;line-height:60px}a.al-logo span{color:#209e91}a.al-logo:hover{color:#209e91}.user-profile{float:right;min-width:230px;margin-top:10px;color:white}.al-user-profile{float:right;margin-right:12px;transition:all .15s ease-in-out;padding:0;width:36px;height:36px;border:0;opacity:1;position:relative}.al-user-profile a{display:block}.al-user-profile img{width:45px;height:45px;border-radius:50%}a.refresh-data{color:#fff;font-size:13px;text-decoration:none;font-weight:400;float:right;margin-top:13px;margin-right:26px}a.refresh-data:hover{color:#dfb81c !important}a.collapse-menu-link{font-size:31px;cursor:pointer;display:block;text-decoration:none;line-height:42px;color:#fff;padding:0;float:left;margin:11px 0 0 25px}a.collapse-menu-link:hover{text-decoration:none;color:#dfb81c}.al-skin-dropdown{float:right;margin-top:14px;margin-right:26px}.al-skin-dropdown .tpl-skin-panel{max-height:300px;overflow-y:scroll;overflow-x:hidden}.icon-palette{display:inline-block;width:14px;height:13px;background:url(\"assets/img/theme/palette.png\");background-size:cover}.search{text-shadow:none;font-size:13px;line-height:25px;transition:all 0.5s ease;white-space:nowrap;overflow:hidden;width:162px;float:left;margin:20px 0 0 30px}.search label{cursor:pointer}.search i{width:16px;display:inline-block;cursor:pointer;padding-left:1px;font-size:16px;margin-right:13px}.search input{color:#fff;background:none;border:none;outline:none;width:120px;padding:0;margin:0 0 0 -3px;height:27px}@media screen and (max-width: 660px){.search{display:none}}@media screen and (max-width: 500px){.page-top{padding:0 20px}}@media (max-width: 435px){.user-profile{min-width:136px}a.refresh-data{margin-right:10px}a.collapse-menu-link{margin-left:10px}.al-skin-dropdown{display:none}}.profile-toggle-link{cursor:pointer}.fa-bell{color:white;transition:color 0.3s, text-shadow 0.3s}.fa-bell.notified{color:red;text-shadow:0 0 5px red, 0 0 10px red;animation:vibrate 1s linear infinite;transform-origin:top center}@keyframes vibrate{0%{transform:rotate(0deg)}10%{transform:rotate(-10deg)}20%{transform:rotate(10deg)}30%{transform:rotate(-10deg)}40%{transform:rotate(10deg)}50%{transform:rotate(0deg)}100%{transform:rotate(0deg)}}\n"
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 /***/ }),
 
@@ -442,11 +438,7 @@ module.exports = "<div class=\"{{baMultiCheckboxClass}}\">\r\n  <ba-checkbox *ng
 /***/ 1093:
 /***/ (function(module, exports) {
 
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-module.exports = "<div class=\"page-top clearfix\" baScrollPosition maxHeight=\"50\" (scrollChange)=\"scrolledChanged($event)\"\r\n  [ngClass]=\"{scrolled: isScrolled}\">\r\n  <a *ngIf=\"EnableTreatment && !EnableAppointment\" routerLink=\"/pages/schedule/treatment-list\"\r\n    class=\"al-logo clearfix\"><span>IMS</span>-AppointX</a>\r\n  <a *ngIf=\"EnableAppointment\" routerLink=\"/pages/schedule/mastersche\"\r\n    class=\"al-logo clearfix\"><span>IMS</span>-AppointX</a>\r\n  <a href (click)=\"toggleMenu()\" class=\"collapse-menu-link ion-navicon\"></a>\r\n\r\n  <div class=\"search\">\r\n    <i class=\"ion-ios-search-strong\" ng-click=\"startSearch()\"></i>\r\n    <input id=\"searchInput\" type=\"text\" placeholder=\"Search for...\">\r\n  </div>\r\n\r\n  <div class=\"user-profile clearfix\">\r\n    <a class=\"userLink\">User :{{user}}<br>SMS Credits : {{smsCredits}}</a>\r\n\r\n    <div style=\"vertical-align: middle;\" class=\"btn-group\" dropdown>\r\n      <button type=\"button\" class=\"btn btn-primary\" (click)=\"LogoutClick()\">\r\n        Logout\r\n      </button>\r\n      <ul class=\"dropdown-menu\" dropdownMenu>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Action</a></li>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Another action</a></li>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Something else here</a></li>\r\n        <li class=\"dropdown-divider\"></li>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Separated link</a></li>\r\n      </ul>\r\n    </div>\r\n\r\n    <!--<div class=\"dropdown al-user-profile\">\r\n      <a class=\"profile-toggle-link dropdown-toggle\" id=\"user-profile-dd\" data-toggle=\"dropdown\" aria-expanded=\"false\">\r\n        <img src=\"{{ ( 'Nasta' | baProfilePicture ) }}\">\r\n      </a>\r\n      <ul class=\"dropdown-menu top-dropdown-menu profile-dropdown\" aria-labelledby=\"user-profile-dd\">\r\n        <li class=\"dropdown-item\"><i class=\"dropdown-arr\"></i></li>\r\n        <li class=\"dropdown-item\"><a href><i class=\"fa fa-user\"></i>Profile</a></li>\r\n        <li class=\"dropdown-item\"><a href><i class=\"fa fa-cog\"></i>Settings</a></li>\r\n        <li class=\"dropdown-item\"><a href class=\"signout\"><i class=\"fa fa-power-off\"></i>Sign out</a></li>\r\n      </ul>\r\n    </div>!-->\r\n    <ba-msg-center></ba-msg-center>\r\n  </div>\r\n</div>"
-=======
 module.exports = "<div class=\"page-top clearfix\" baScrollPosition maxHeight=\"50\" (scrollChange)=\"scrolledChanged($event)\"\r\n  [ngClass]=\"{scrolled: isScrolled}\">\r\n  <a *ngIf=\"EnableTreatment && !EnableAppointment\" routerLink=\"/pages/schedule/treatment-list\"\r\n    class=\"al-logo clearfix\"><span>IMS</span>-AppointX</a>\r\n  <a *ngIf=\"EnableAppointment\" routerLink=\"/pages/schedule/mastersche\"\r\n    class=\"al-logo clearfix\"><span>IMS</span>-AppointX</a>\r\n  <a href (click)=\"toggleMenu()\" class=\"collapse-menu-link ion-navicon\"></a>\r\n\r\n  <div class=\"search\">\r\n    <i class=\"ion-ios-search-strong\" ng-click=\"startSearch()\"></i>\r\n    <input id=\"searchInput\" type=\"text\" placeholder=\"Search for...\">\r\n  </div>\r\n\r\n  <div class=\"user-profile clearfix\">\r\n    <a class=\"userLink\">User :{{user}}<br>SMS Credits : {{smsCredits}}</a>\r\n\r\n    <div style=\"vertical-align: middle;\" class=\"btn-group\" dropdown>\r\n      <button type=\"button\" class=\"btn btn-primary\" (click)=\"LogoutClick()\">\r\n        Logout\r\n      </button>\r\n      <ul class=\"dropdown-menu\" dropdownMenu>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Action</a></li>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Another action</a></li>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Something else here</a></li>\r\n        <li class=\"dropdown-divider\"></li>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Separated link</a></li>\r\n      </ul>\r\n    </div>\r\n\r\n    <div style=\"float: right;margin-left: 10px;margin-top: 2px\">\r\n      <a  class=\"notification notification-sticky\">\r\n        <span><i class=\"fa fa-bell\"\r\n          [ngClass]=\"{ 'notified': hasNewNotification }\"\r\n          (click)=\"clearNotification()\">\r\n       </i>\r\n       </span>\r\n        </a>\r\n    </div>\r\n   \r\n    <audio #notificationAudio src=\"assets/sounds/notification-sound.mp3\"></audio>\r\n\r\n    <!--<div class=\"dropdown al-user-profile\">\r\n      <a class=\"profile-toggle-link dropdown-toggle\" id=\"user-profile-dd\" data-toggle=\"dropdown\" aria-expanded=\"false\">\r\n        <img src=\"{{ ( 'Nasta' | baProfilePicture ) }}\">\r\n      </a>\r\n      <ul class=\"dropdown-menu top-dropdown-menu profile-dropdown\" aria-labelledby=\"user-profile-dd\">\r\n        <li class=\"dropdown-item\"><i class=\"dropdown-arr\"></i></li>\r\n        <li class=\"dropdown-item\"><a href><i class=\"fa fa-user\"></i>Profile</a></li>\r\n        <li class=\"dropdown-item\"><a href><i class=\"fa fa-cog\"></i>Settings</a></li>\r\n        <li class=\"dropdown-item\"><a href class=\"signout\"><i class=\"fa fa-power-off\"></i>Sign out</a></li>\r\n      </ul>\r\n    </div>!-->\r\n    <ba-msg-center></ba-msg-center>\r\n  </div>\r\n</div>"
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 /***/ }),
 
@@ -470,11 +462,7 @@ module.exports = "<aside class=\"al-sidebar\" sidebarResize>\r\n  <ba-menu [menu
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AuthService; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cacheService_service__ = __webpack_require__(421);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cacheService_service__ = __webpack_require__(422);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(42);
 
 
@@ -588,11 +576,7 @@ AuthService = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__masterRepo_service__ = __webpack_require__(638);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__masterRepo_service__ = __webpack_require__(639);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return __WEBPACK_IMPORTED_MODULE_0__masterRepo_service__["a"]; }));
 
 
@@ -903,9 +887,6 @@ if(false) {
 
 /***/ }),
 
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/***/ 198:
-=======
 /***/ 159:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -956,7 +937,6 @@ AppState = __decorate([
 /***/ }),
 
 /***/ 199:
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1024,21 +1004,13 @@ const isMobile = () => (/android|webos|iphone|ipad|ipod|blackberry|windows phone
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__guard_service__ = __webpack_require__(639);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__guard_service__ = __webpack_require__(640);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", (function() { return __WEBPACK_IMPORTED_MODULE_0__guard_service__["a"]; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sessionStorage_service__ = __webpack_require__(813);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__authService_service__ = __webpack_require__(118);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return __WEBPACK_IMPORTED_MODULE_2__authService_service__["a"]; }));
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cacheService_service__ = __webpack_require__(421);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cacheService_service__ = __webpack_require__(422);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", (function() { return __WEBPACK_IMPORTED_MODULE_3__cacheService_service__["a"]; }));
 
 
@@ -1057,27 +1029,16 @@ const isMobile = () => (/android|webos|iphone|ipad|ipod|blackberry|windows phone
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ngx_uploader__ = __webpack_require__(582);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__theme_config__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__theme_configProvider__ = __webpack_require__(284);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ngx_uploader__ = __webpack_require__(583);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__theme_config__ = __webpack_require__(284);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__theme_configProvider__ = __webpack_require__(285);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components__ = __webpack_require__(850);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_baCard_baCardBlur_directive__ = __webpack_require__(824);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives__ = __webpack_require__(857);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pipes__ = __webpack_require__(864);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services__ = __webpack_require__(143);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__validators__ = __webpack_require__(649);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pipes_label_pipe__ = __webpack_require__(328);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__validators__ = __webpack_require__(650);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pipes_label_pipe__ = __webpack_require__(329);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -1171,11 +1132,7 @@ NgaModule = NgaModule_1 = __decorate([
 
 /***/ }),
 
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/***/ 282:
-=======
 /***/ 283:
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1185,11 +1142,7 @@ NgaModule = NgaModule_1 = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_style_loader_login_scss__ = __webpack_require__(1357);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_style_loader_login_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_style_loader_login_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__loginService_service__ = __webpack_require__(422);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__loginService_service__ = __webpack_require__(423);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(42);
 
 
@@ -1277,19 +1230,14 @@ Login = __decorate([
 
 /***/ }),
 
-/***/ 283:
+/***/ 284:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return BaThemeConfig; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme_configProvider__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__theme_constants__ = __webpack_require__(198);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme_configProvider__ = __webpack_require__(285);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__theme_constants__ = __webpack_require__(199);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -1348,7 +1296,7 @@ BaThemeConfig = __decorate([
 
 /***/ }),
 
-/***/ 284:
+/***/ 285:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1440,11 +1388,7 @@ BaThemeConfigProvider = __decorate([
 
 /***/ }),
 
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/***/ 326:
-=======
 /***/ 327:
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1493,11 +1437,7 @@ const ENV_PROVIDERS = [
 
 /***/ }),
 
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/***/ 327:
-=======
 /***/ 328:
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1538,11 +1478,7 @@ DisableDateService = __decorate([
 
 /***/ }),
 
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/***/ 328:
-=======
 /***/ 329:
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1571,61 +1507,6 @@ LabelPipe = __decorate([
 
 /***/ }),
 
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/***/ 329:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return CommonService; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(26);
-
-
-let CommonService = class CommonService {
-    setFormPreference(form, fields) {
-        fields.forEach((field) => {
-            if (field.hidden)
-                form.removeControl(field.fieldName);
-            if (field.required)
-                this.addValidation(form, field.fieldName, [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required]);
-        });
-    }
-    addValidation(form, controlName, validations) {
-        const control = form.get(controlName);
-        if (control) {
-            control.setValidators(validations); // Set the new validators
-            control.updateValueAndValidity(); // Refresh the validation state
-        }
-    }
-    getFormValue(form, fieldName) {
-        if (form.contains(fieldName))
-            return form.get(fieldName).value;
-    }
-    recursiveForEach(array, callback) {
-        array.forEach(item => {
-            callback(item);
-            if (Array.isArray(item)) {
-                this.recursiveForEach(item, callback);
-            }
-            else if (Array.isArray(item.children)) {
-                this.recursiveForEach(item.children, callback);
-            }
-        });
-    }
-    coalesce(value, defaultValue) {
-        return value != null ? value : defaultValue;
-    }
-};
-CommonService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
-    __metadata('design:paramtypes', [])
-], CommonService);
-
-
-/***/ }),
-
-=======
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ 330:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1687,13 +1568,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(26);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_component__ = __webpack_require__(282);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(223);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_component__ = __webpack_require__(283);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_routing__ = __webpack_require__(815);
 
 
@@ -1723,20 +1599,12 @@ LoginModule = __decorate([
 
 /***/ }),
 
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/***/ 420:
-=======
 /***/ 421:
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return TTLCacheService; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-
-let TTLCacheService = class TTLCacheService {
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_service__ = __webpack_require__(159);
 
 
@@ -1755,7 +1623,6 @@ let TTLCacheService = class TTLCacheService {
             }
         });
     }
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
     set(key, data, ttlMinutes) {
         const expires = new Date().getTime() + ttlMinutes * 60 * 1000;
         const payload = { data, expires };
@@ -1779,21 +1646,13 @@ let TTLCacheService = class TTLCacheService {
 };
 TTLCacheService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-    __metadata('design:paramtypes', [])
-=======
     __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__app_service__["a" /* AppState */]])
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 ], TTLCacheService);
 
 
 /***/ }),
 
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/***/ 421:
-=======
 /***/ 422:
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1847,18 +1706,14 @@ CacheService = __decorate([
 
 /***/ }),
 
-/***/ 422:
+/***/ 423:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return LoginService; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(42);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_permission__ = __webpack_require__(221);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_permission__ = __webpack_require__(222);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global_state__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(34);
 
@@ -1935,24 +1790,17 @@ LoginService = __decorate([
 
 /***/ }),
 
-/***/ 423:
+/***/ 424:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return Pages; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme__ = __webpack_require__(78);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_menu__ = __webpack_require__(648);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_services_permission__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_repositories__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_services_common_service__ = __webpack_require__(329);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_menu__ = __webpack_require__(649);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_services_permission__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_repositories__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_services_common_service__ = __webpack_require__(330);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -2065,7 +1913,7 @@ GlobalState = __decorate([
 
 /***/ }),
 
-/***/ 613:
+/***/ 614:
 /***/ (function(module, exports) {
 
 var NepaliFunctions=(function(){"use strict";function e(){function e(){return p}function t(){return f}function n(e){var t=0;return e.forEach((function(e){t+=e})),t}function a(e,t){var n=Date.UTC(e.year,e.month-1,e.day),r=Date.UTC(t.year,t.month-1,t.day);return Math.abs((r-n)/864e5)}function o(e,t){var r=0,a=0;for(a=e.year;a<=t.year;a+=1)r+=n(c[a]);for(a=0;a<e.month;a+=1)r-=c[e.year][a];for(r+=c[e.year][11],a=t.month-1;a<12;a+=1)r-=c[t.year][a];return r-=e.day+1,r+=t.day-1}function i(e,t){var n=new Date(r(e,"MM/DD/YYYY"));return n.setDate(n.getDate()+t),{year:n.getFullYear(),month:n.getMonth()+1,day:n.getDate()}}function u(e,t){for(e.day+=t;e.day>c[e.year][e.month-1];)e.day-=c[e.year][e.month-1],e.month+=1,e.month>12&&(e.month=1,e.year+=1);return{year:e.year,month:e.month,day:e.day}}function d(e){var t=o(m,e);return i(h,t)}function l(e){var t=a(h,e);return u(m,t)}function s(e,t){return c[e][t-1]}var c=[],m={year:2e3,month:9,day:17},h={year:1944,month:1,day:1};c[1970]=[31,31,32,31,31,31,30,29,30,29,30,30],c[1971]=[31,31,32,31,32,30,30,29,30,29,30,30],c[1972]=[31,32,31,32,31,30,30,30,29,29,30,31],c[1973]=[30,32,31,32,31,30,30,30,29,30,29,31],c[1974]=[31,31,32,31,31,31,30,29,30,29,30,30],c[1975]=[31,31,32,32,31,30,30,29,30,29,30,30],c[1976]=[31,32,31,32,31,30,30,30,29,29,30,31],c[1977]=[30,32,31,32,31,31,29,30,29,30,29,31],c[1978]=[31,31,32,31,31,31,30,29,30,29,30,30],c[1979]=[31,31,32,32,31,30,30,29,30,29,30,30],c[1980]=[31,32,31,32,31,30,30,30,29,29,30,31],c[1981]=[31,31,31,32,31,31,29,30,30,29,30,30],c[1982]=[31,31,32,31,31,31,30,29,30,29,30,30],c[1983]=[31,31,32,32,31,30,30,29,30,29,30,30],c[1984]=[31,32,31,32,31,30,30,30,29,29,30,31],c[1985]=[31,31,31,32,31,31,29,30,30,29,30,30],c[1986]=[31,31,32,31,31,31,30,29,30,29,30,30],c[1987]=[31,32,31,32,31,30,30,29,30,29,30,30],c[1988]=[31,32,31,32,31,30,30,30,29,29,30,31],c[1989]=[31,31,31,32,31,31,30,29,30,29,30,30],c[1990]=[31,31,32,31,31,31,30,29,30,29,30,30],c[1991]=[31,32,31,32,31,30,30,30,29,29,30,30],c[1992]=[31,32,31,32,31,30,30,30,29,30,29,31],c[1993]=[31,31,31,32,31,31,30,29,30,29,30,30],c[1994]=[31,31,32,31,31,31,30,29,30,29,30,30],c[1995]=[31,32,31,32,31,30,30,30,29,29,30,30],c[1996]=[31,32,31,32,31,30,30,30,29,30,29,31],c[1997]=[31,31,32,31,31,31,30,29,30,29,30,30],c[1998]=[31,31,32,31,31,31,30,29,30,29,30,30],c[1999]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2e3]=[30,32,31,32,31,30,30,30,29,30,29,31],c[2001]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2002]=[31,31,32,32,31,30,30,29,30,29,30,30],c[2003]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2004]=[30,32,31,32,31,30,30,30,29,30,29,31],c[2005]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2006]=[31,31,32,32,31,30,30,29,30,29,30,30],c[2007]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2008]=[31,31,31,32,31,31,29,30,30,29,29,31],c[2009]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2010]=[31,31,32,32,31,30,30,29,30,29,30,30],c[2011]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2012]=[31,31,31,32,31,31,29,30,30,29,30,30],c[2013]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2014]=[31,31,32,32,31,30,30,29,30,29,30,30],c[2015]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2016]=[31,31,31,32,31,31,29,30,30,29,30,30],c[2017]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2018]=[31,32,31,32,31,30,30,29,30,29,30,30],c[2019]=[31,32,31,32,31,30,30,30,29,30,29,31],c[2020]=[31,31,31,32,31,31,30,29,30,29,30,30],c[2021]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2022]=[31,32,31,32,31,30,30,30,29,29,30,30],c[2023]=[31,32,31,32,31,30,30,30,29,30,29,31],c[2024]=[31,31,31,32,31,31,30,29,30,29,30,30],c[2025]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2026]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2027]=[30,32,31,32,31,30,30,30,29,30,29,31],c[2028]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2029]=[31,31,32,31,32,30,30,29,30,29,30,30],c[2030]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2031]=[30,32,31,32,31,30,30,30,29,30,29,31],c[2032]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2033]=[31,31,32,32,31,30,30,29,30,29,30,30],c[2034]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2035]=[30,32,31,32,31,31,29,30,30,29,29,31],c[2036]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2037]=[31,31,32,32,31,30,30,29,30,29,30,30],c[2038]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2039]=[31,31,31,32,31,31,29,30,30,29,30,30],c[2040]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2041]=[31,31,32,32,31,30,30,29,30,29,30,30],c[2042]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2043]=[31,31,31,32,31,31,29,30,30,29,30,30],c[2044]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2045]=[31,32,31,32,31,30,30,29,30,29,30,30],c[2046]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2047]=[31,31,31,32,31,31,30,29,30,29,30,30],c[2048]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2049]=[31,32,31,32,31,30,30,30,29,29,30,30],c[2050]=[31,32,31,32,31,30,30,30,29,30,29,31],c[2051]=[31,31,31,32,31,31,30,29,30,29,30,30],c[2052]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2053]=[31,32,31,32,31,30,30,30,29,29,30,30],c[2054]=[31,32,31,32,31,30,30,30,29,30,29,31],c[2055]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2056]=[31,31,32,31,32,30,30,29,30,29,30,30],c[2057]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2058]=[30,32,31,32,31,30,30,30,29,30,29,31],c[2059]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2060]=[31,31,32,32,31,30,30,29,30,29,30,30],c[2061]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2062]=[30,32,31,32,31,31,29,30,29,30,29,31],c[2063]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2064]=[31,31,32,32,31,30,30,29,30,29,30,30],c[2065]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2066]=[31,31,31,32,31,31,29,30,30,29,29,31],c[2067]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2068]=[31,31,32,32,31,30,30,29,30,29,30,30],c[2069]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2070]=[31,31,31,32,31,31,29,30,30,29,30,30],c[2071]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2072]=[31,32,31,32,31,30,30,29,30,29,30,30],c[2073]=[31,32,31,32,31,30,30,30,29,29,30,31],c[2074]=[31,31,31,32,31,31,30,29,30,29,30,30],c[2075]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2076]=[31,32,31,32,31,30,30,30,29,29,30,30],c[2077]=[31,32,31,32,31,30,30,30,29,30,29,31],c[2078]=[31,31,31,32,31,31,30,29,30,29,30,30],c[2079]=[31,31,32,31,31,31,30,29,30,29,30,30],c[2080]=[31,32,31,32,31,30,30,30,29,29,30,30],c[2081]=[31,32,31,32,31,30,30,30,29,30,29,31],c[2082]=[30,32,31,32,31,30,30,30,29,30,30,30],c[2083]=[31,31,32,31,31,30,30,30,29,30,30,30],c[2084]=[31,31,32,31,31,30,30,30,29,30,30,30],c[2085]=[31,32,31,32,30,31,30,30,29,30,30,30],c[2086]=[30,32,31,32,31,30,30,30,29,30,30,30],c[2087]=[31,31,32,31,31,31,30,30,29,30,30,30],c[2088]=[30,31,32,32,30,31,30,30,29,30,30,30],c[2089]=[30,32,31,32,31,30,30,30,29,30,30,30],c[2090]=[30,32,31,32,31,30,30,30,29,30,30,30],c[2091]=[31,31,32,31,31,31,30,30,29,30,30,30],c[2092]=[30,31,32,32,31,30,30,30,29,30,30,30],c[2093]=[30,32,31,32,31,30,30,30,29,30,30,30],c[2094]=[31,31,32,31,31,30,30,30,29,30,30,30],c[2095]=[31,31,32,31,31,31,30,29,30,30,30,30],c[2096]=[30,31,32,32,31,30,30,29,30,29,30,30],c[2097]=[31,32,31,32,31,30,30,30,29,30,30,30],c[2098]=[31,31,32,31,31,31,29,30,29,30,29,31],c[2099]=[31,31,32,31,31,31,30,29,29,30,30,30];var p={year:1970,month:1,day:1},f={year:2099,month:12,day:30};return{minDate:e,maxDate:t,countAdDays:a,countBsDays:o,addBsDays:u,addAdDays:i,bs2ad:d,ad2bs:l,getDaysInMonth:s}}function t(e){function t(e){var t={},n=[],r=[];e.forEach((function(e,t){var n=parseInt(e),a={index:t,value:n,year:!1,month:!1,day:!1};n>0&&n>999?a.year=!0:n>0&&n>12?a.day=!0:n>0&&n<=12&&(a.month=!0,a.day=!0),r.push(a)}));var a=r.filter((function(e){return 1==e.year}))[0];if(a){t.year=a.value,n[a.index]="YYYY";var o=r.filter((function(e){return 1==e.day})),i=r.filter((function(e){return 1==e.month}));1==i.length?(t.month=i[0].value,n[i[0].index]="MM",1==o.length?(t.day=o[0].value,n[o[0].index]="DD"):(o=o.find((function(e){return!e.month})),t.day=o.value,n[o.index]="DD")):2==i.length&&0==o.length?(t.month=i[0].value,t.day=i[1].value,n[i[0].index]="MM",n[i[1].index]="DD"):2==i.length&&2==o.length&&(t.month=o[0].value,t.day=o[1].value,n[o[0].index]="MM",n[o[1].index]="DD")}if(t&&NaN==t.year||null==t.year||NaN==t.month||null==t.month||NaN==t.day||null==t.day)t=null,n=null;else{var u=L(t.year,t.month);t.day>u&&(t=null,n=null)}return{parsedDate:t,parsedFormat:n}}var n=e.indexOf("/")>-1,r=e.indexOf("-")>-1,a=null;if(n){var o=e.split("/");3==o.length&&(a=t(o),a.parsedFormat=a.parsedFormat.join("/"))}else if(r){var i=e.split("-");3==i.length&&(a=t(i),a.parsedFormat=a.parsedFormat.join("-"))}return a}function n(e,t){var n=[],r={year:null,month:null,day:null};switch(t){case"MM/DD/YYYY":n=e.split("/"),3==n.length&&(r={year:Number(n[2]),month:Number(n[0]),day:Number(n[1])});break;case"MM-DD-YYYY":n=e.split("-"),3==n.length&&(r={year:Number(n[2]),month:Number(n[0]),day:Number(n[1])});break;case"YYYY-MM-DD":n=e.split("-"),3==n.length&&(r={year:Number(n[0]),month:Number(n[1]),day:Number(n[2])});break;case"YYYY/MM/DD":n=e.split("/"),3==n.length&&(r={year:Number(n[0]),month:Number(n[1]),day:Number(n[2])});break;case"DD-MM-YYYY":n=e.split("-"),3==n.length&&(r={year:Number(n[2]),month:Number(n[1]),day:Number(n[0])});break;case"DD/MM/YYYY":n=e.split("/"),3==n.length&&(r={year:Number(n[2]),month:Number(n[1]),day:Number(n[0])})}return(r&&NaN==r.year||null==r.year||NaN==r.month||null==r.month||NaN==r.day||null==r.day)&&(r=null),r}function r(e,t){function n(e){return e=Number(e),e<10?"0"+e:e}var r="";switch(t=t&&J.indexOf(t)>-1?t:"YYYY-MM-DD"){case"MM/DD/YYYY":r=n(e.month)+"/"+n(e.day)+"/"+e.year;break;case"MM-DD-YYYY":r=n(e.month)+"-"+n(e.day)+"-"+e.year;break;case"YYYY-MM-DD":r=e.year+"-"+n(e.month)+"-"+n(e.day);break;case"YYYY/MM/DD":r=e.year+"/"+n(e.month)+"/"+n(e.day);break;case"DD-MM-YYYY":r=n(e.day)+"-"+n(e.month)+"-"+e.year;break;case"DD/MM/YYYY":r=n(e.day)+"/"+n(e.month)+"/"+e.year}return r}function a(t){return(new e).ad2bs(t)}function o(t){return(new e).bs2ad(t)}function i(t){var n=new e,r=n.minDate(),a=n.maxDate();if(t.year<r.year||t.year>a.year||t.month<r.month||t.month>a.month||t.day<r.day||t.day>a.day)return!1;var o=L(t.year,t.month);return t.month>0&&t.month<=12&&t.day>0&&t.day<=o}function u(){var e=new Date;e.setHours(e.getHours()+5),e.setMinutes(e.getMinutes()+45);var t=(e.toDateString(),e.getUTCDate()),n=e.getUTCMonth()+1;return{year:e.getUTCFullYear(),month:n,day:t}}function d(){var e=u();return Number(e.year)}function l(){var e=u();return Number(e.month)}function s(){var e=u();return Number(e.day)}function c(){return a(u())}function m(){var e=c();return Number(e.year)}function h(){var e=c();return Number(e.month)}function p(){var e=c();return Number(e.day)}function f(){return["January","February","March","April","May","June","July","August","September","October","November","December"]}function y(e){return e=Number(e),isNaN(e)||e<0||e>11?null:f()[e]}function v(){return["Baisakh","Jestha","Ashar","Shrawan","Bhadra","Ashoj","Kartik","Mangsir","Poush","Magh","Falgun","Chaitra"]}function g(e){return e=Number(e),isNaN(e)||e<0||e>11?null:v()[e]}function b(){return["बैशाख","जेठ","अषाढ","श्रावण","भाद्र","आश्विन","कार्तिक","मङ्सिर","पौष","माघ","फाल्गुन","चैत्र"]}function D(e){return e=Number(e),isNaN(e)||e<0||e>11?null:b()[e]}function N(){return["आइतवार","सोमवार","मङ्गलवार","बुधवार","बिहिवार","शुक्रवार","शनिवार"]}function A(e){return e=Number(e),isNaN(e)||e<0||e>6?null:N()[Number(e)]}function M(){return["आ","सो","मं","बु","बि","शु","श"]}function Y(){return["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}function B(){return["S","M","T","W","T","F","S"]}function C(e){return e=Number(e),isNaN(e)||e<0||e>6?null:Y()[Number(e)]}function E(e,t){var n=[],r="";return t?(n=b(),r=k(e.day)+" "+n[e.month-1]+" "+k(e.year)):(n=v(),r=e.day+" "+n[e.month-1]+" "+e.year),r}function F(e){return e.day+" "+NepaliFunctions.GetAdMonth(e.month-1)+" "+e.year}function T(e){var t=NepaliFunctions.BS2AD(e);return t=new Date(t.year,t.month-1,t.day),C(t.getDay())}function S(e){var t=NepaliFunctions.BS2AD(e);return t=new Date(t.year,t.month-1,t.day),A(t.getDay())}function I(e){return e=new Date(e.year,e.month-1,e.day),C(e.getDay())}function x(t,n){var r=new e,a=r.bs2ad(t);return a=new Date(a.year,a.month-1,a.day),a.setDate(a.getDate()+n),a={year:a.getFullYear(),month:a.getMonth()+1,day:a.getDate()},r.ad2bs(a)}function G(t,n){return(new e).countAdDays(t,n)}function w(t,n){if(!i(t)||!i(n))return!1;var r=new e;return t=r.bs2ad(t),n=r.bs2ad(n),r.countAdDays(t,n)}function O(e,t){return new Date(e,t,0).getDate()}function L(t,n){var r=new e,a=r.minDate(),o=r.maxDate();return(t<a.year||t>o.year)&&(n<a.month||n>a.month)?0:r.getDaysInMonth(t,n)}function k(e){e=e.toString();var t="",n=0;for(n=0;n<e.length;n+=1)t+=(function(e){switch(e){case"0":return"०";case"1":return"१";case"2":return"२";case"3":return"३";case"4":return"४";case"5":return"५";case"6":return"६";case"7":return"७";case"8":return"८";case"9":return"९";default:return e}})(e[n]);return t}function j(e){e=e.toString();for(var t="",n=0;n<e.length;)t+=(function(e){switch(e){case"०":return 0;case"१":return 1;case"२":return 2;case"३":return 3;case"४":return 4;case"५":return 5;case"६":return 6;case"७":return 7;case"८":return 8;case"९":return 9;default:return e}})(e[n]),n++;return t}function P(e){return e<10?"0"+Number(e):e}function U(e,t){function n(e){var t={0:"",1:"One",2:"Two",3:"Three",4:"Four",5:"Five",6:"Six",7:"Seven",8:"Eight",9:"Nine",10:"Ten",11:"Eleven",12:"Twelve",13:"Thirteen",14:"Fourteen",15:"Fifteen",16:"Sixteen",17:"Seventeen",18:"Eighteen",19:"Nineteen",20:"Twenty",30:"Thirty",40:"Forty",50:"Fifty",60:"Sixty",70:"Seventy",80:"Eighty",90:"Ninety"};e=Number(e);var n=e.toString();return e<20?t[e]:t[10*n[0]]+" "+t[n[1]]}if(e=e||0,isNaN(e)||Math.floor(e).toString().length>13)return null;var r="",a=0,o=e.toString();if(o.indexOf(".")>-1){var i=o.split(".");a=Number(i[1])}var u=Math.floor(e%100),d=null;e.toString().length>2&&(d=e.toString().substring(e.toString().length-3,e.toString().length-2));var l=Math.floor(e%1e5);l=l.toString(),l=l.substring(0,l.length-3);var s=Math.floor(e%1e7);s=s.toString(),s=s.substring(0,s.length-5);var c=Math.floor(e%1e9);c=c.toString(),c=c.substring(0,c.length-7);var m=Math.floor(e%1e11);m=m.toString(),m=m.substring(0,m.length-9);var h=Math.floor(e%1e13);for(h=h.toString(),h=h.substring(0,h.length-11),h>0&&(r+=n(h)+" Kharab"),m>0&&(r+=" "+n(m)+" Arab"),c>0&&(r+=" "+n(c)+" Crore"),s>0&&(r+=" "+n(s)+" Lakh"),l>0&&(r+=" "+n(l)+" Thousand"),d>0&&(r+=" "+n(d)+" Hundred"),u>0&&(r+=" "+n(u)),""!=r.trim()&&t&&(r+=" Rupees"),a>0&&t&&(r+=" and "+n(a)+" Paisa");r.indexOf("  ")>-1;)r=r.replace("  "," ");return r.trim()}function H(e,t){if(e=e||0,isNaN(e)||Math.floor(e).toString().length>13)return null;var n=["सुन्य","एक","दुई","तीन","चार","पाँच","छ","सात","आठ","नौ","दस","एघार","बाह्र","तेह्र","चौध","पन्ध्र","सोह्र","सत्र","अठाह्र","उन्नाइस","बीस","एकाइस","बाइस","तेइस","चौबीस","पचीस","छब्बीस","सत्ताइस","अठ्ठाइस","उनन्तीस","तीस","एकतीस","बतीस","तेतीस","चौतीस","पैतीस","छतीस","सरतीस","अरतीस","उननचालीस","चालीस","एकचालीस","बयालिस","तीरचालीस","चौवालिस","पैंतालिस","छयालिस","सरचालीस","अरचालीस","उननचास","पचास","एकाउन्न","बाउन्न","त्रिपन्न","चौवन्न","पच्पन्न","छपन्न","सन्ताउन्न","अन्ठाउँन्न","उनान्न्साठी ","साठी","एकसाठी","बासाठी","तीरसाठी","चौंसाठी","पैसाठी","छैसठी","सत्सठ्ठी","अर्सठ्ठी","उनन्सत्तरी","सतरी","एकहत्तर","बहत्तर","त्रिहत्तर","चौहत्तर","पचहत्तर","छहत्तर","सत्हत्तर","अठ्हत्तर","उनास्सी","अस्सी","एकासी","बयासी","त्रीयासी","चौरासी","पचासी","छयासी","सतासी","अठासी","उनान्नब्बे","नब्बे","एकान्नब्बे","बयान्नब्बे","त्रियान्नब्बे","चौरान्नब्बे","पंचान्नब्बे","छयान्नब्बे","सन्तान्‍नब्बे","अन्ठान्नब्बे","उनान्सय"],r="",a=0,o="";if(e=e.toString(),-1!=e.indexOf(".")){var i=e.split(".");e=i[0],a=i[1];var u=a.substring(0,2).toString();1==u.length&&(u=u.toString()+"0"),o=n[parseInt(u)].toString()+" पैसा"}if(e.length>13)return void alert("Number greater than kharab not supported");var d=Math.floor(e%100),l="";e.toString().length>2&&(l=e.toString().substring(e.toString().length-3,e.toString().length-2));var s=Math.floor(e%1e5);s=s.toString(),s=s.substring(0,s.length-3);var c=Math.floor(e%1e7);c=c.toString(),c=c.substring(0,c.length-5);var m=Math.floor(e%1e9);m=m.toString(),m=m.substring(0,m.length-7);var h=Math.floor(e%1e11);h=h.toString(),h=h.substring(0,h.length-9);var p=Math.floor(e%1e13);return p=p.toString(),p=p.substring(0,p.length-11),p>0&&(r+=n[p]+" खरब"),h>0&&(r+=" "+n[h]+" अरब"),m>0&&(r+=" "+n[m]+" करोड"),c>0&&(r+=" "+n[c]+" लाख"),s>0&&(r+=" "+n[s]+" हजार"),l>0&&(r+=" "+n[l]+" सय"),d>0&&(r+=" "+n[d]),""!=r.trim()&&t&&(r+=" रुपैंया"),a>0&&t&&(r+=(""!=r.trim()?" ":"")+o),r.trim()}function R(e,t){if(i(e)&&i(t)){e=this.BS2AD(e),t=this.BS2AD(t);var n=new Date(e.year,e.month-1,e.day),r=new Date(t.year,t.month-1,t.day);return n.getTime()>r.getTime()}return 1e4*e.year+100*e.month+e.day>1e4*t.year+100*t.month+t.day}var J=["MM-DD-YYYY","MM/DD/YYYY","YYYY-MM-DD","YYYY/MM/DD","DD-MM-YYYY","DD/MM/YYYY"];return{ParseDate:t,ValidateBsDate:i,CompareBsDates:R,ConvertToDateObject:n,ConvertDateFormat:r,AD2BS:a,BS2AD:o,GetCurrentAdDate:u,GetCurrentAdYear:d,GetCurrentAdMonth:l,GetCurrentAdDay:s,GetCurrentBsDate:c,GetCurrentBsYear:m,GetCurrentBsMonth:h,GetCurrentBsDay:p,GetAdMonths:f,GetAdMonth:y,GetBsMonths:v,GetBsMonth:g,GetBsDaysUnicode:N,GetBsDaysUnicodeShort:M,GetBsDayUnicode:A,GetAdDays:Y,GetAdDaysShort:B,GetAdDay:C,GetBsMonthsInUnicode:b,GetBsMonthInUnicode:D,GetDaysInAdMonth:O,GetDaysInBsMonth:L,AdDatesDiff:G,BsDatesDiff:w,BsAddDays:x,GetBsFullDate:E,GetAdFullDate:F,GetAdFullDay:I,GetBsFullDay:T,GetBsFullDayInUnicode:S,ConvertToUnicode:k,ConvertToNumber:j,Get2DigitNo:P,NumberToWords:U,NumberToWordsUnicode:H}})();!(function(){function e(e,t){var n=e,r=t+1;return r>12&&(n+=1,r=1),{year:n,month:r}}function t(e,t){var n=e,r=t-1;return r<1&&(n-=1,r=12),{year:n,month:r}}function n(){B=!0}function r(){B=!1}function a(e){var t=document.getElementById("ndp-nepali-box");t&&t.remove(),Y=!1}function o(e){var t={};if(Y)a("showNdpCalendarBox");else{var n=document.getElementById(e);A(e),t=b(e),E=e;var r=n.value;t.unicodeDate&&(r=NepaliFunctions.ConvertToNumber(r));var o="";r?o=NepaliFunctions.ConvertToDateObject(r,t.dateFormat):(o=NepaliFunctions.GetCurrentBsDate(),t.disableAfter&&NepaliFunctions.CompareBsDates(o,t.disableAfter)&&(o=t.disableAfter));var u=null;null==o?(o=NepaliFunctions.GetCurrentBsDate(),u=""):u=NepaliFunctions.ConvertDateFormat(o,"YYYY-MM-DD");i(o.year,o.month,u),d(n),Y=!0}}function i(n,r,a){var o=document.getElementById("ndp-nepali-box"),d=b(null),l="english"==d.language,s=o.getElementsByTagName("table")[0].getElementsByTagName("tbody");s.length>0&&s[0].parentNode.removeChild(s[0]);var c=d.ndpYearCount||0,m=document.getElementById("currentMonth");m.innerHTML="";var h=document.createElement("SPAN");h.innerHTML=" ";var p=document.createElement("SPAN");p.innerHTML=l?NepaliFunctions.GetBsMonth(r-1):NepaliFunctions.GetBsMonthInUnicode(r-1);var v=document.createElement("SPAN");v.innerHTML=l?n:NepaliFunctions.ConvertToUnicode(n),d.ndpMonth&&d.ndpYear?(m.appendChild(f(r,n,a)),m.appendChild(y(r,n,c,a))):d.ndpMonth?(m.appendChild(f(r,n,a)),m.appendChild(h),m.appendChild(v)):d.ndpYear?(m.appendChild(p),m.appendChild(h),m.appendChild(y(r,n,c,a))):(m.appendChild(p),m.appendChild(h),m.appendChild(v));var g=e(n,r),D=t(n,r),N=g.year,A=g.month,M=D.year,Y=D.month,B=document.getElementById("ndp-header"),C=document.getElementById("prev");C&&C.parentNode.removeChild(C);var E=document.getElementById("next");E&&E.parentNode.removeChild(E);var F=!0;d.disableBefore&&NepaliFunctions.CompareBsDates(d.disableBefore,{year:M,month:Y,day:NepaliFunctions.GetDaysInBsMonth(M,Y)})&&(F=!1);var T=document.createElement("SPAN");T.setAttribute("class","ndc-chevron ndc-left");var S=document.createElement("A");S.setAttribute("id","prev"),S.setAttribute("title","Previous Month"),S.setAttribute("class",F?"ndp-prev":"ndp-prev ndp-disabled"),S.setAttribute("href","javascript:void(0)"),S.appendChild(T),F&&S.addEventListener("click",(function(){i(M,Y,a)}));var I=!0;d.disableAfter&&NepaliFunctions.CompareBsDates({year:N,month:A,day:1},d.disableAfter)&&(I=!1);var x=document.createElement("SPAN");x.setAttribute("class","ndc-chevron ndc-right");var G=document.createElement("A");G.setAttribute("id","next"),G.setAttribute("title","Next Month"),G.setAttribute("class",I?"ndp-next":"ndp-next ndp-disabled"),G.setAttribute("href","javascript:void(0)"),G.appendChild(x),I&&G.addEventListener("click",(function(){i(N,A,a)})),B.appendChild(S),B.appendChild(G),o.getElementsByTagName("table")[0].insertAdjacentElement("beforeend",u(n,r,a))}function u(e,t,n){var r,a,o,i=b(null),u="english"==i.language;if(n){var d=NepaliFunctions.ConvertToDateObject(n,"YYYY-MM-DD");r=d.year,a=d.month,o=d.day}var l=NepaliFunctions.GetCurrentBsDate(),s=l.year,c=l.month,m=l.day,h=NepaliFunctions.GetDaysInBsMonth(e,t),f={year:e,month:t,day:1},y=NepaliFunctions.BS2AD(f),v=y.year,g=y.month,D=y.day,N=new Date(v,g-1,D),A=N.getDay(),M=0,Y=0,B=A+h,C="",E="",F=0;"object"!=typeof i.disableBefore&&i.disableBefore&&i.dateFormat&&(i.disableBefore=NepaliFunctions.ConvertToDateObject(i.disableBefore,i.dateFormat)),"object"!=typeof i.disableAfter&&i.disableAfter&&i.dateFormat&&(i.disableAfter=NepaliFunctions.ConvertToDateObject(i.disableAfter,i.dateFormat)),!i.disableBefore&&Number.isInteger(i.disableDaysBefore)&&parseInt(i.disableDaysBefore)>=0&&(i.disableBefore=NepaliFunctions.BsAddDays(NepaliFunctions.GetCurrentBsDate(),-1*parseInt(i.disableDaysBefore))),!i.disableAfter&&Number.isInteger(i.disableDaysAfter)&&parseInt(i.disableDaysAfter)>=0&&(i.disableAfter=NepaliFunctions.BsAddDays(NepaliFunctions.GetCurrentBsDate(),parseInt(i.disableDaysAfter)));for(var T=document.createElement("TBODY"),S=document.createElement("TR"),I=document.createElement("TD"),x=document.createElement("A");Y<B;){if(M=Y,M%7==0&&(S=document.createElement("TR")),F=M-A+1,E=e.toString()+"-"+NepaliFunctions.Get2DigitNo(t)+"-"+NepaliFunctions.Get2DigitNo(F),C="",C=e===r&&t===a&&F===o?"ndp-selected":e===s&&t===c&&F===m?"ndp-current":"ndp-date",M<A)I=document.createElement("TD"),S.appendChild(I);else{if(I=document.createElement("TD"),I.setAttribute("class",C),i.disableAfter&&NepaliFunctions.CompareBsDates(NepaliFunctions.ConvertToDateObject(E,"YYYY-MM-DD"),i.disableAfter)||i.disableBefore&&NepaliFunctions.CompareBsDates(i.disableBefore,NepaliFunctions.ConvertToDateObject(E,"YYYY-MM-DD")))x=document.createElement("A"),x.setAttribute("class","ndp-disabled"),x.setAttribute("href","javascript:void(0)"),x.setAttribute("title",E),x.innerHTML=u?F:NepaliFunctions.ConvertToUnicode(F),I.appendChild(x);else{var G=NepaliFunctions.ConvertToDateObject(E,"YYYY-MM-DD"),w=NepaliFunctions.ConvertDateFormat(G,i.dateFormat);x=document.createElement("A"),x.setAttribute("href","javascript:void(0)"),x.setAttribute("title",E),x.setAttribute("data-value",w),x.innerHTML=u?F:NepaliFunctions.ConvertToUnicode(F),x.addEventListener("click",(function(){p(this)})),I.appendChild(x)}S.appendChild(I)}M%7==6&&(T.appendChild(S),S=document.createElement("TR")),Y+=1}return S.children.length>0&&T.appendChild(S),T}function d(e){var t=l(e),n=m(t),r=h(e,t),a=document.getElementById("ndp-nepali-box"),o=a.offsetHeight,i=t.y+e.offsetHeight;r<o&&r<n&&(i=i-o-e.offsetHeight),a.style.top=i+"px",a.style.left=t.x+"px"}function l(e){var t=0,n=0;return t+=s(e),n+=c(e),{x:t,y:n}}function s(e){for(var t=0;e;)t+=e.offsetLeft,e=e.offsetParent;return t+=document.firstChild.offsetLeft||0}function c(e){for(var t=0;e;)t+=e.offsetTop,e=e.offsetParent;return t+=document.firstChild.offsetTop||0}function m(e){var t=window.pageYOffset||(document.documentElement||document.body.parentNode||document.body).scrollTop;return e.y-t}function h(e,t){var n=window.pageYOffset||(document.documentElement||document.body.parentNode||document.body).scrollTop;return window.innerHeight-t.y-e.offsetHeight+n}function p(e){var t=e.getAttribute("data-value"),n=b(),r=NepaliFunctions.ConvertToDateObject(t,n.dateFormat);n.ndpEnglishInput&&(document.getElementById(n.ndpEnglishInput).value=NepaliFunctions.ConvertDateFormat(NepaliFunctions.BS2AD(r),n.dateFormat)),document.getElementById(E).value=n.unicodeDate?NepaliFunctions.ConvertToUnicode(t):t,n.onChange&&n.onChange({bs:t,ad:NepaliFunctions.ConvertDateFormat(NepaliFunctions.BS2AD(r),n.dateFormat),object:r}),a("setSelectedDay")}function f(e,t,n){var r=b(),a="english"==r.language,o=1,i=12;r.disableBefore&&r.disableBefore.year==t&&(o=r.disableBefore.month),r.disableAfter&&r.disableAfter.year==t&&(i=r.disableAfter.month);var u=a?NepaliFunctions.GetBsMonths():NepaliFunctions.GetBsMonthsInUnicode(),d=document.createElement("SELECT");return d.setAttribute("id","ndp-month-select"),u.forEach((function(t,n){if(n>=o-1&&n<=i-1){var r=document.createElement("OPTION");r.setAttribute("value",n+1),r.innerHTML=t,n+1==e&&r.setAttribute("selected","selected"),d.appendChild(r)}})),d.addEventListener("change",(function(){v(t,n)})),d}function y(e,t,n,r){var a=b(),o="english"==a.language,i=1970,u=2099;a.disableBefore&&a.disableBefore.year>i&&(i=a.disableBefore.year),a.disableAfter&&a.disableAfter.year<u&&(u=a.disableAfter.year);var d=document.createElement("SELECT");d.setAttribute("id","ndp-year-select");for(var l=Math.round(n/2)>0&&parseInt(t)-Math.round(n/2)>=i?parseInt(t)-Math.round(n/2):i,s=Math.round(n/2)>0&&parseInt(t)+Math.round(n/2)<=u?parseInt(t)+Math.round(n/2):u;l<=s;){var c=document.createElement("OPTION");c.setAttribute("value",l),c.innerHTML=o?l:NepaliFunctions.ConvertToUnicode(l),t==l&&c.setAttribute("selected","selected"),d.appendChild(c),l+=1}return d.addEventListener("change",(function(){g(e,r)})),d}function v(e,t){e=b().ndpYear?parseInt(document.getElementById("ndp-year-select").value):e,i(e,parseInt(document.getElementById("ndp-month-select").value),t)}function g(e,t){var n=b(),r=document.getElementById("ndp-year-select"),a=document.getElementById("ndp-month-select"),o=parseInt(r.value);e=n.ndpMonth?parseInt(a.value):e;var u=n.disableDaysBefore,d=n.disableDaysAfter;u&&u.year==o&&e<=u.month&&(e=u.month),d&&d.year==o&&e>=d.month&&(e=d.month),i(o,e,t)}function b(e){var t={};if(e||(e=E),e){var n=C[e],r=n.dateFormat||"YYYY-MM-DD",a=n.disableBefore?NepaliFunctions.ConvertToDateObject(n.disableBefore,r):{year:1970,month:1,day:1},o=n.disableAfter?NepaliFunctions.ConvertToDateObject(n.disableAfter,r):{year:2099,month:12,day:30},i=n.disableDaysBefore||(0==n.disableDaysBefore?0:null),u=n.disableDaysAfter||(0==n.disableDaysAfter?0:null);Number.isInteger(i)&&i>=0&&(a=NepaliFunctions.BsAddDays(NepaliFunctions.GetCurrentBsDate(),-1*i)),Number.isInteger(u)&&u>=0&&(o=NepaliFunctions.BsAddDays(NepaliFunctions.GetCurrentBsDate(),u)),n&&(t={ndpTriggerButton:n.ndpTriggerButton||null,ndpTriggerButtonClass:n.ndpTriggerButtonClass||null,ndpTriggerButtonText:n.ndpTriggerButtonText||null,ndpEnglishInput:n.ndpEnglishInput||null,ndpYearCount:n.ndpYearCount||null,ndpYear:n.ndpYear||null,ndpMonth:n.ndpMonth||null,disableDaysBefore:i,disableDaysAfter:u,disableBefore:a,disableAfter:o,dateFormat:r,onChange:n.onChange||null,unicodeDate:n.unicodeDate||null,readOnlyInput:n.readOnlyInput||!1,container:n.container||"body",language:n.language||"nepali"})}return t}function D(){var e=document.activeElement,t=e.getAttribute("id");a("ndpInputOnFocus"),o(t)}function N(){var e=window.event||arguments.callee.caller.arguments[0];27==e.which&&(a("ndpKeyDown-Esc"),e.stopPropagation())}function A(e){if(!document.getElementById("ndp-nepali-box")){var t=b(e);document.querySelector(t.container).insertAdjacentElement("beforeend",M(t));var a=document.getElementById("ndp-nepali-box");a.addEventListener("mouseenter",n),a.addEventListener("mouseleave",r)}}function M(e){var t="english"==e.language,n=document.createElement("DIV");n.setAttribute("id","ndp-nepali-box"),n.setAttribute("tabindex","-1"),n.setAttribute("class","ndp-corner-all"),n.addEventListener("keydown",N);var r=document.createElement("DIV");r.setAttribute("id","ndp-header"),r.setAttribute("class","ndp-corner-all ndp-header");var a=document.createElement("SPAN");a.setAttribute("id","currentMonth"),r.appendChild(a);var o=document.createElement("DIV");o.setAttribute("id","currentMonth");var i=document.createElement("TABLE");o.setAttribute("id","ndp-table");var u=document.createElement("TR");u.setAttribute("class","ndp-days"),(t?NepaliFunctions.GetAdDaysShort():NepaliFunctions.GetBsDaysUnicodeShort()).forEach((function(e){var t=document.createElement("TH");t.innerHTML=e,u.appendChild(t)}));var d=document.createElement("THEAD");d.appendChild(u);var l=document.createElement("TBODY");return i.appendChild(d),i.appendChild(l),o.appendChild(i),n.appendChild(r),n.appendChild(o),n}var Y=!1,B=!1,C=[],E=null;Object.prototype.nepaliDatePicker=function(e){function t(e){e.classList.remove("ndp-nepali-calendar"),e.removeAttribute("ndp-calendar-data"),e.removeAttribute("readonly"),e.removeEventListener("focus",D),e.removeEventListener("mouseenter",n),e.removeEventListener("mouseleave",r),e.removeEventListener("keydown",N);var t=e.getAttribute("id");delete C[t];var a=e.nextSibling;a&&"BUTTON"==a.tagName&&"ndp-click-trigger"==a.getAttribute("id")&&a.parentNode.removeChild(a)}function i(e,t){var n=e.getAttribute("id");if(C[n]=t,C[n].raw=u(t),e.value){var r=NepaliFunctions.ParseDate(e.value);r&&r.parsedFormat&&(t.dateFormat=t.dateFormat?t.dateFormat:r.parsedFormat)}}function u(e){if(null==e||"object"!=typeof e)return e;var t=e.constructor();for(var n in e)e.hasOwnProperty(n)&&(t[n]=e[n]);return t}function d(e,t){for(var n=!1;e;){e.getAttribute("id")==t&&(n=!0,e=null),e=e?e.offsetParent:null}return n}function l(){var e=document.getElementById(E),t=document.activeElement,n=e==t,r=d(t,"ndp-nepali-box"),o="ndp-click-trigger"==t.getAttribute("id"),i="ndp-month-select"==t.getAttribute("id")||"ndp-year-select"==t.getAttribute("id");("BODY"==t.tagName||r||o)&&(n=!0),Y&&(!B&&!i||B&&!n)&&a("ndpInputOnBlur")}function s(e,t){var n=e.getAttribute("id");if(null==n){var r=btoa((new Date).toISOString()+Math.random());e.setAttribute("id",r)}if(e.classList.add("ndp-nepali-calendar"),i(e,t),t.ndpTriggerButton||e.addEventListener("focus",D),e.addEventListener("blur",l),e.setAttribute("autocomplete","off"),e.addEventListener("keydown",N),t.readOnlyInput&&e.setAttribute("readonly","readonly"),t.ndpTriggerButton){var a=t.ndpTriggerButtonClass&&""!==t.ndpTriggerButtonClass?t.ndpTriggerButtonClass:"",o=t.ndpTriggerButtonText&&""!==t.ndpTriggerButtonText?t.ndpTriggerButtonText:"Pick Date",u=document.createElement("BUTTON");u.setAttribute("id","ndp-click-trigger"),u.setAttribute("class",a),u.addEventListener("click",(function(){h(n)})),u.addEventListener("blur",c),u.innerHTML=o,e.insertAdjacentElement("afterend",u)}}function c(){l()}function m(){var e=document.getElementById("ndp-nepali-box");return e&&parseInt(e.style.top)>0}function h(e){v||(v=!0,m()?a("toggleCalendar"):o(e),v=!1)}var p=this;if("remove"!=e){if(e=void 0===e?{}:e,p.length&&p.length>0)for(var f=0;f<p.length;f++)s(p[f],e);else s(p,e);var y=document.querySelectorAll(".ndp-nepali-calendar");if(y.length>0)for(var f=0;f<y.length;f++)y[f].addEventListener("mouseenter",n),y[f].addEventListener("mouseleave",r);window.addEventListener("mouseup",(function(){if(m()){"ndp-click-trigger"==document.activeElement.getAttribute("id")||l()}}));var v=!1}else if(p.length&&p.length>0)for(var f=0;f<p.length;f++)t(p[f]);else t(p)},Object.defineProperty(Object.prototype,"nepaliDatePicker",{enumerable:!1,value:nepaliDatePicker})})();
@@ -2086,14 +1934,14 @@ exports.ad2bs = ad2bs;
 
 /***/ }),
 
-/***/ 614:
+/***/ 615:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 615:
+/***/ 616:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2104,7 +1952,7 @@ exports.ad2bs = ad2bs;
 
 /***/ }),
 
-/***/ 638:
+/***/ 639:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2112,22 +1960,14 @@ exports.ad2bs = ad2bs;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_permission_authService_service__ = __webpack_require__(118);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__(101);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__(86);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__global_state__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_cache_service__ = __webpack_require__(420);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_cache_service__ = __webpack_require__(421);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -2608,17 +2448,13 @@ let MasterRepo = class MasterRepo {
             return this.toBSDate(adDate);
         }
         else {
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-            var nepFunction = __webpack_require__(613);
-=======
             var nepFunction = __webpack_require__(614);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
             var bsDate = nepFunction.ad2bs(date);
             return bsDate.year + '-' + bsDate.month.toString().padStart(2, '0') + '-' + bsDate.day.toString().padStart(2, '0');
         }
     }
     toADDate(bsDate) {
-        var nepFunction = __webpack_require__(613);
+        var nepFunction = __webpack_require__(614);
         var adDate = nepFunction.bs2ad(bsDate);
         return adDate.year + '-' + adDate.month.toString().padStart(2, '0') + '-' + adDate.day.toString().padStart(2, '0');
     }
@@ -2643,7 +2479,7 @@ MasterRepo = __decorate([
 
 /***/ }),
 
-/***/ 639:
+/***/ 640:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2701,47 +2537,6 @@ CanActivateTeam = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["Injectable"])(), 
     __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_3__global_state__["a" /* GlobalState */], __WEBPACK_IMPORTED_MODULE_1__authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_4__repositories_index__["a" /* MasterRepo */]])
 ], CanActivateTeam);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-
-
-/***/ }),
-
-/***/ 644:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return TimeFormatService; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-
-let TimeFormatService = class TimeFormatService {
-    // Convert time to 12-hour format
-    to12HourFormat(time) {
-        const [hours, minutes] = time.split(':').map(Number);
-        const period = hours >= 12 ? 'PM' : 'AM';
-        const adjustedHours = hours % 12 || 12; // Convert 0 to 12 for 12-hour format
-        return `${this.padZero(adjustedHours)}:${this.padZero(minutes)} ${period}`;
-    }
-    // Convert time to 24-hour format
-    to24HourFormat(time12) {
-        const [time, modifier] = time12.trim().toUpperCase().split(' ');
-        let [hour, minute] = time.split(':').map(str => parseInt(str, 10));
-        if (modifier === 'PM' && hour < 12)
-            hour += 12;
-        if (modifier === 'AM' && hour === 12)
-            hour = 0;
-        return `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
-    }
-    // Helper method to pad single-digit numbers with a leading zero
-    padZero(num) {
-        return num < 10 ? `0${num}` : `${num}`;
-    }
-};
-TimeFormatService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
-    __metadata('design:paramtypes', [])
-], TimeFormatService);
-=======
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 /***/ }),
@@ -3050,121 +2845,6 @@ const PAGES_MENU = [
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-const PAGES_MENU = [
-    {
-        path: 'pages',
-        children: [
-            // {
-            //   path: 'dashboard',
-            //   data: {
-            //     menu: {
-            //       title: 'Dashboard',re
-            //       icon: 'ion-android-home',
-            //       selected: false,
-            //       expanded: false,
-            //       order: 0
-            //     }
-            //   }
-            // },
-            {
-                path: 'schedule',
-                data: {
-                    menu: {
-                        title: 'Schedule',
-                        icon: 'ion-android-home',
-                        selected: false,
-                        expanded: false,
-                        order: 1,
-                        allowCreate: false, allowEdit: false, allowDelete: false
-                    }
-                },
-                children: [
-                    { path: 'mastersche', data: { menu: { title: 'Appointments', hidden: true } } },
-                    { path: 'checkIn', data: { menu: { title: 'Check - In' } } },
-                    { path: 'check-in-list', data: { menu: { title: 'Check Out' } } },
-                    { path: 'treatment-list', data: { menu: { title: 'Treatment Entry' } } },
-                    { path: 'treatment-details', data: { menu: { title: 'Treatment Details' } } },
-                    { path: 'appointment-requests', data: { menu: { title: "Appointment Requests" } } }
-                ]
-            },
-            {
-                path: 'masters',
-                data: {
-                    menu: {
-                        title: 'Masters',
-                        icon: 'ion-edit',
-                        selected: false,
-                        expanded: false,
-                        order: 2,
-                        allowCreate: false, allowEdit: false, allowDelete: false
-                    }
-                },
-                children: [
-                    { path: 'emp', data: { menu: { title: 'Employee' } } },
-                    { path: 'cus', data: { menu: { title: 'Customer', allowEdit: false, allowDelete: false } } },
-                    { path: 'room', data: { menu: { title: 'Room' } } },
-                    { path: 'ser', data: { menu: { title: 'Service' } } },
-                    { path: 'series', data: { menu: { title: 'Series' } } },
-                    { path: 'seriesSales', data: { menu: { title: 'Series Sales' } } },
-                    { path: 'disease', data: { menu: { title: 'Disease' } } },
-                    { path: 'medication', data: { menu: { title: 'Medication' } } },
-                    { path: 'prescription', data: { menu: { title: 'Prescription' } } },
-                    { path: 'holiday', data: { menu: { title: 'Holiday Entry' } } }
-                ]
-            }, {
-                path: 'userManager',
-                data: {
-                    menu: {
-                        title: 'User Manager',
-                        icon: 'ion-android-people',
-                        selected: false,
-                        expanded: false,
-                        order: 5,
-                        allowCreate: false, allowEdit: false, allowDelete: false
-                    }
-                },
-                children: [
-                    { path: 'userlist', data: { menu: { title: 'User List' } } },
-                    { path: 'roles', data: { menu: { title: 'Roles' } } }]
-            },
-            {
-                path: 'report',
-                data: {
-                    menu: {
-                        title: 'Reports',
-                        icon: 'ion-ios-list-outline',
-                        selected: false,
-                        expanded: false,
-                        order: 6,
-                        allowCreate: false, allowEdit: false, allowDelete: false
-                    }
-                },
-                children: [
-                    { path: 'cusReport', data: { menu: { title: 'Customer Report', allowCreate: false, allowEdit: false, allowDelete: false } } },
-                    { path: 'empReport', data: { menu: { title: 'Employee Report', allowCreate: false, allowEdit: false, allowDelete: false } } },
-                    { path: 'roomReport', data: { menu: { title: 'Room Report', allowCreate: false, allowEdit: false, allowDelete: false } } },
-                    { path: 'serviceReport', data: { menu: { title: 'Service Report', allowCreate: false, allowEdit: false, allowDelete: false } } },
-                    { path: 'seriesReport', data: { menu: { title: 'Series Report', allowCreate: false, allowEdit: false, allowDelete: false } } },
-                    { path: 'followupRecords', data: { menu: { title: 'Follow Up Report', allowCreate: false, allowEdit: false, allowDelete: false } } },
-                    { path: 'messageReport', data: { menu: { title: 'Message Report', allowCreate: false, allowEdit: false, allowDelete: false } } },
-                    { path: 'activityReport', data: { menu: { title: 'Activity Log', allowCreate: false, allowEdit: false, allowDelete: false } } }
-                ]
-            }
-        ]
-    }];
-/* harmony export (immutable) */ __webpack_exports__["a"] = PAGES_MENU;
-
-
-
-/***/ }),
-
-/***/ 649:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-=======
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__email_validator__ = __webpack_require__(874);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return __WEBPACK_IMPORTED_MODULE_0__email_validator__["a"]; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__equalPasswords_validator__ = __webpack_require__(875);
@@ -3188,9 +2868,9 @@ const PAGES_MENU = [
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", (function() { return __WEBPACK_IMPORTED_MODULE_1__theme_constants__["b"]; }));
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", (function() { return __WEBPACK_IMPORTED_MODULE_1__theme_constants__["c"]; }));
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", (function() { return __WEBPACK_IMPORTED_MODULE_1__theme_constants__["d"]; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__theme_configProvider__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__theme_configProvider__ = __webpack_require__(285);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", (function() { return __WEBPACK_IMPORTED_MODULE_2__theme_configProvider__["a"]; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_config__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_config__ = __webpack_require__(284);
 /* unused harmony namespace reexport */
 
 
@@ -3208,25 +2888,16 @@ const PAGES_MENU = [
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__global_state__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__theme_services__ = __webpack_require__(143);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_theme_config__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__theme_theme_constants__ = __webpack_require__(198);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_theme_config__ = __webpack_require__(284);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__theme_theme_constants__ = __webpack_require__(199);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_style_loader_app_scss__ = __webpack_require__(1356);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_style_loader_app_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_style_loader_app_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_style_loader_theme_initial_scss__ = __webpack_require__(1355);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_style_loader_theme_initial_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_style_loader_theme_initial_scss__);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(327);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(328);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_service__ = __webpack_require__(159);
 
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -3241,8 +2912,10 @@ const PAGES_MENU = [
  * Top Level Component
  */
 let App = class App {
-    constructor(_state, _imageLoader, _spinner, viewContainerRef, themeConfig, http, disableDateService) {
+    constructor(_state, zone, appService, _imageLoader, _spinner, viewContainerRef, themeConfig, http, disableDateService) {
         this._state = _state;
+        this.zone = zone;
+        this.appService = appService;
         this._imageLoader = _imageLoader;
         this._spinner = _spinner;
         this.viewContainerRef = viewContainerRef;
@@ -3250,33 +2923,12 @@ let App = class App {
         this.http = http;
         this.disableDateService = disableDateService;
         this.isMenuCollapsed = false;
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-=======
         this.eventSource = null;
         this.reconnectInterval = 5000; // 5 seconds
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
         themeConfig.config();
         this._loadImages();
         this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
             this.isMenuCollapsed = isCollapsed;
-        });
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-        this.http.get("/appConfig.json")
-            .map(res => res.json())
-            .subscribe(data => {
-            this._state.setGlobalSetting("apiUrl", [data.apiUrl]);
-            this._state.setGlobalSetting("contentUrl", [data.contentUrl]);
-            this.disableDateService.getDisableDates();
-        }, error => {
-            this._state.setGlobalSetting("apiUrl", ["http://localhost:1782/api"]);
-            //this._state.setGlobalSetting("apiUrl",["http://imsnepal.com:1050/api"])
-=======
-        this.http.get("assets/label-dictionary.json")
-            .map(res => res.json())
-            .subscribe(data => {
-            this._state.setGlobalSetting("label-dictionary", data);
-            sessionStorage.setItem("label-dictionary", JSON.stringify(data));
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
         });
         this.http.get("assets/label-dictionary.json")
             .map(res => res.json())
@@ -3287,17 +2939,6 @@ let App = class App {
         //Uncomment following line to disable all logs
         //console.log = function() {}
     }
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-    ngAfterViewInit() {
-        // hide spinner once all loaders are completed
-        __WEBPACK_IMPORTED_MODULE_2__theme_services__["c" /* BaThemePreloader */].load().then((values) => {
-            this._spinner.hide();
-        });
-    }
-    _loadImages() {
-        // register some loaders
-        __WEBPACK_IMPORTED_MODULE_2__theme_services__["c" /* BaThemePreloader */].registerLoader(this._imageLoader.load(__WEBPACK_IMPORTED_MODULE_4__theme_theme_constants__["b" /* layoutPaths */].images.root + 'sky-bg.jpg'));
-=======
     ngOnInit() {
         this.loadAppConfig().then(() => {
             this.listenToAppointmentNotifications(); // only after config is ready
@@ -3360,7 +3001,6 @@ let App = class App {
             this.eventSource.close();
             this.stopAppointmentNotifications();
         }
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
     }
     ngAfterViewInit() {
         // hide spinner once all loaders are completed
@@ -3383,7 +3023,7 @@ App = __decorate([
     </main>
   `
     }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__global_state__["a" /* GlobalState */], __WEBPACK_IMPORTED_MODULE_2__theme_services__["b" /* BaImageLoaderService */], __WEBPACK_IMPORTED_MODULE_2__theme_services__["d" /* BaThemeSpinner */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_3__theme_theme_config__["a" /* BaThemeConfig */], __WEBPACK_IMPORTED_MODULE_5__angular_http__["d" /* Http */], __WEBPACK_IMPORTED_MODULE_8__common_services_disable_date_picker_disable_date_picker_service__["a" /* DisableDateService */]])
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__global_state__["a" /* GlobalState */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"], __WEBPACK_IMPORTED_MODULE_9__app_service__["a" /* AppState */], __WEBPACK_IMPORTED_MODULE_2__theme_services__["b" /* BaImageLoaderService */], __WEBPACK_IMPORTED_MODULE_2__theme_services__["d" /* BaThemeSpinner */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], __WEBPACK_IMPORTED_MODULE_3__theme_theme_config__["a" /* BaThemeConfig */], __WEBPACK_IMPORTED_MODULE_5__angular_http__["d" /* Http */], __WEBPACK_IMPORTED_MODULE_8__common_services_disable_date_picker_disable_date_picker_service__["a" /* DisableDateService */]])
 ], App);
 
 
@@ -3395,36 +3035,12 @@ App = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AppModule; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(100);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(101);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angularclass_hmr__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angularclass_hmr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__angularclass_hmr__);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environment__ = __webpack_require__(326);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing__ = __webpack_require__(811);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(809);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_service__ = __webpack_require__(812);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__global_state__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__theme_nga_module__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_pages_module__ = __webpack_require__(816);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__common_repositories__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__common_services_permission__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_login__ = __webpack_require__(814);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_forms_components_inputs_components_datepicker_datepicker_component__ = __webpack_require__(645);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_forms_components_inputs_components_timepicker_timepicker_component__ = __webpack_require__(647);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_forms_components_inputs_components_employee_selector_employee_selector_component__ = __webpack_require__(646);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__app_common_services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(327);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__theme_pipes_label_pipe__ = __webpack_require__(328);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__common_services_common_service__ = __webpack_require__(329);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__common_services_time_format_service__ = __webpack_require__(644);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__common_services_cache_service__ = __webpack_require__(420);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environment__ = __webpack_require__(327);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing__ = __webpack_require__(812);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(810);
@@ -3443,7 +3059,6 @@ App = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__common_services_common_service__ = __webpack_require__(330);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__common_services_time_format_service__ = __webpack_require__(645);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__common_services_cache_service__ = __webpack_require__(421);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -3571,48 +3186,6 @@ const routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModul
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AppState; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-
-let AppState = class AppState {
-    constructor() {
-        this._state = {};
-    }
-    // already return a clone of the current state
-    get state() {
-        return this._state = this._clone(this._state);
-    }
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-    // never allow mutation
-    set state(value) {
-        throw new Error('do not mutate the `.state` directly');
-    }
-    get(prop) {
-        // use our state getter for the clone
-        const state = this.state;
-        return state.hasOwnProperty(prop) ? state[prop] : state;
-    }
-    set(prop, value) {
-        // internally mutate our state
-        return this._state[prop] = value;
-    }
-    _clone(object) {
-        // simple object clone
-        return JSON.parse(JSON.stringify(object));
-    }
-};
-AppState = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
-    __metadata('design:paramtypes', [])
-], AppState);
-
-
-/***/ }),
-
-/***/ 813:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* unused harmony export SessionStorage */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 
@@ -3623,8 +3196,6 @@ let SessionStorage = class SessionStorage {
     remove(key) {
         window.sessionStorage.removeItem(key);
     }
-=======
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
     set(key, data) {
         window.sessionStorage.setItem(key, JSON.stringify(data));
     }
@@ -3648,9 +3219,9 @@ SessionStorage = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__login_component__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__login_component__ = __webpack_require__(283);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__loginService_service__ = __webpack_require__(422);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__loginService_service__ = __webpack_require__(423);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return __WEBPACK_IMPORTED_MODULE_1__loginService_service__["a"]; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_module__ = __webpack_require__(331);
 /* unused harmony namespace reexport */
@@ -3666,7 +3237,7 @@ SessionStorage = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_component__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_component__ = __webpack_require__(283);
 
 
 // noinspection TypeScriptValidateTypes
@@ -3697,15 +3268,9 @@ const routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModul
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_routing__ = __webpack_require__(817);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_component__ = __webpack_require__(423);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_export_as__ = __webpack_require__(650);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(223);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_component__ = __webpack_require__(424);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_export_as__ = __webpack_require__(651);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -3730,7 +3295,7 @@ PagesModule = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_component__ = __webpack_require__(423);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_component__ = __webpack_require__(424);
 
 
 // noinspection TypeScriptValidateTypes
@@ -4960,11 +4525,8 @@ BaMultiCheckbox = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_services_permission_authService_service__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories__ = __webpack_require__(119);
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_service__ = __webpack_require__(159);
 
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -4972,16 +4534,13 @@ BaMultiCheckbox = __decorate([
 
 
 let BaPageTop = class BaPageTop {
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-    constructor(_state, _authService, router, service) {
-=======
     constructor(_state, _authService, appService, router, service) {
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
         this._state = _state;
         this._authService = _authService;
         this.appService = appService;
         this.router = router;
         this.service = service;
+        this.hasNewNotification = false;
         this.isScrolled = false;
         this.isMenuCollapsed = false;
         var setting = _authService.getSetting();
@@ -4995,8 +4554,6 @@ let BaPageTop = class BaPageTop {
         }
         this.getSmsCredit();
     }
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-=======
     ngOnInit() {
         this.appService.notification$.subscribe(data => {
             console.log(data);
@@ -5014,7 +4571,6 @@ let BaPageTop = class BaPageTop {
     clearNotification() {
         this.hasNewNotification = false;
     }
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
     getSmsCredit() {
         this.service.getSmsCredit().subscribe((res) => {
             var data = res.json();
@@ -5035,16 +4591,16 @@ let BaPageTop = class BaPageTop {
         this.isScrolled = isScrolled;
     }
 };
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('notificationAudio'), 
+    __metadata('design:type', Object)
+], BaPageTop.prototype, "notificationAudio", void 0);
 BaPageTop = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'ba-page-top',
         template: __webpack_require__(1093),
     }), 
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__global_state__["a" /* GlobalState */], __WEBPACK_IMPORTED_MODULE_3__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */]])
-=======
     __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__global_state__["a" /* GlobalState */], __WEBPACK_IMPORTED_MODULE_3__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_6__app_service__["a" /* AppState */], __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */]])
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 ], BaPageTop);
 
 
@@ -5067,7 +4623,7 @@ BaPageTop = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return BaPictureUploader; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ngx_uploader__ = __webpack_require__(582);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ngx_uploader__ = __webpack_require__(583);
 
 
 let BaPictureUploader = class BaPictureUploader {
@@ -5965,16 +5521,11 @@ class EqualPasswordsValidator {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["main"] = main;
-<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_environment__ = __webpack_require__(326);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_environment__ = __webpack_require__(327);
->>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angularclass_hmr__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angularclass_hmr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__angularclass_hmr__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app__ = __webpack_require__(615);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app__ = __webpack_require__(616);
 
 
 
