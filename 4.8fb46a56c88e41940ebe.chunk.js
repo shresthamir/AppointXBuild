@@ -9,7 +9,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(26);
+<<<<<<< Updated upstream:4.8fb46a56c88e41940ebe.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(222);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(223);
+>>>>>>> Stashed changes:4.85fa3612ce52dcf12ac0.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__register_component__ = __webpack_require__(1524);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__register_routing__ = __webpack_require__(1559);
 
@@ -46,7 +50,11 @@ RegisterModule = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return Register; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(26);
+<<<<<<< Updated upstream:4.8fb46a56c88e41940ebe.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__theme_validators__ = __webpack_require__(649);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__theme_validators__ = __webpack_require__(650);
+>>>>>>> Stashed changes:4.85fa3612ce52dcf12ac0.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_register_scss__ = __webpack_require__(1620);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_register_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_style_loader_register_scss__);
 

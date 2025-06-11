@@ -340,7 +340,11 @@ module.exports = "@-webkit-keyframes pulsate{30%{-webkit-transform:scale(0.1, 0.
 /***/ 1079:
 /***/ (function(module, exports) {
 
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 module.exports = "@-webkit-keyframes pulsate{30%{-webkit-transform:scale(0.1, 0.1);opacity:0.0}35%{opacity:1.0}40%{-webkit-transform:scale(1.2, 1.2);opacity:0.0}}.al-msg-center{float:right;padding:0;list-style:none;margin:13px 47px 0 0}.al-msg-center li{list-style:none;float:left;margin-left:30px}.al-msg-center li:first-child{margin-left:0}.al-msg-center li>a{color:#fff;text-decoration:none;font-size:13px;position:relative}.al-msg-center li>a span{display:inline-block;min-width:10px;padding:2px 4px 2px 4px;color:#fff;vertical-align:baseline;white-space:nowrap;text-align:center;border-radius:13px;text-shadow:none;line-height:11px;background-color:#e85656;position:absolute;top:-5px;right:-14px;font-size:11px}.al-msg-center li>a .notification-ring{border:1px solid #e85656;border-radius:100px;height:40px;width:40px;position:absolute;top:-18px;right:-27px;animation:pulsate 8s ease-out;animation-iteration-count:infinite;opacity:0.0}.al-msg-center li>a:hover{color:#e85656}.al-msg-center li>a:hover.msg{color:#209e91}.al-msg-center li>a.msg span{background-color:#209e91}.al-msg-center li>a.msg .notification-ring{border-color:#209e91}.al-msg-center li.open>a{color:#e85656}.al-msg-center li.open>a.msg{color:#209e91}@media (max-width: 435px){.al-msg-center{margin-right:20px}.al-msg-center li{margin-left:20px}.al-msg-center li:first-child{margin-left:0}}.msg-block-header{display:inline-block;padding:0;font-size:13px;margin:0 0 0 6px}.top-dropdown-menu{width:316px;left:auto;right:-47px;top:26px}.top-dropdown-menu ::-webkit-scrollbar{width:1em;height:1em}.top-dropdown-menu ::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.5);cursor:pointer}.top-dropdown-menu ::-webkit-scrollbar-track{background:#fff}.top-dropdown-menu body{scrollbar-face-color:rgba(0,0,0,0.5);scrollbar-track-color:#fff}.top-dropdown-menu .header{padding:10px 12px;border-bottom:1px solid #fff;font-size:12px}.top-dropdown-menu .header strong{float:left;color:#7d7d7d}.top-dropdown-menu .header>a{float:right;margin-left:12px;text-decoration:none}.top-dropdown-menu .header>a:hover{color:#7d7d7d}.top-dropdown-menu .msg-list{max-height:296px;overflow:scroll;overflow-x:hidden}.top-dropdown-menu .msg-list>a{border-top:1px solid #fff;padding:10px 12px;display:block;text-decoration:none;color:#7d7d7d;font-size:12px}.top-dropdown-menu .msg-list>a:first-child{border-top:none}.top-dropdown-menu .msg-list>a .img-area{float:left;width:36px}.top-dropdown-menu .msg-list>a .img-area img{width:36px;height:36px}.top-dropdown-menu .msg-list>a .img-area img.photo-msg-item{border-radius:18px}.top-dropdown-menu .msg-list>a .img-area>div{width:36px;height:36px;border-radius:4px;font-size:24px;text-align:center}.top-dropdown-menu .msg-list>a .img-area>div.comments{color:#dfb81c}.top-dropdown-menu .msg-list>a .img-area>div.orders{color:#dfb81c}.top-dropdown-menu .msg-list>a .img-area>div i{width:36px;line-height:36px}.top-dropdown-menu .msg-list>a .msg-area{float:right;width:230px}.top-dropdown-menu .msg-list>a .msg-area div{max-height:34px;overflow:hidden;text-overflow:ellipsis}.top-dropdown-menu .msg-list>a .msg-area span{font-style:italic;text-align:right;display:block;font-size:11px}.top-dropdown-menu .msg-list>a:hover{background:#E2F0FF}.top-dropdown-menu>a{border-top:1px solid #fff;display:block;text-align:center;padding:10px;font-size:12px;text-decoration:none}.top-dropdown-menu>a:hover{color:#7d7d7d}.top-dropdown-menu.profile-dropdown{width:145px;top:55px;right:-25px}.top-dropdown-menu.profile-dropdown a{text-align:left;border:none;text-decoration:none;color:#7d7d7d;padding:4px 16px 4px 20px}.top-dropdown-menu.profile-dropdown a.signout{border-top:1px solid #fff}.top-dropdown-menu.profile-dropdown a i{margin-right:10px}.top-dropdown-menu.profile-dropdown a:hover{background:#f4fcff}.top-dropdown-menu.profile-dropdown i.dropdown-arr{right:25px}.top-dropdown-menu i.dropdown-arr{position:absolute;top:-22px;right:42px;display:block;width:0;height:0;border:11px solid transparent;border-bottom-color:rgba(0,0,0,0.15)}.top-dropdown-menu i.dropdown-arr:after{top:-9px;left:0px;margin-left:-10px;content:\" \";position:absolute;display:block;width:0;height:0;border:10px solid transparent;border-bottom-color:#fff}@media (max-width: 415px){.top-dropdown-menu{right:-81px}.top-dropdown-menu i.dropdown-arr{right:75px}}.page-top{background-color:#1C2B36;position:fixed;z-index:904;box-shadow:2px 0 3px rgba(0,0,0,0.5);height:66px;width:100%;min-width:320px;padding:0 32px 0 40px}.page-top .dropdown-toggle::after{display:none}.blur .page-top.scrolled{background-color:rgba(0,0,0,0.85)}a.al-logo{color:#fff;display:block;font-size:24px;font-family:\"Roboto\",sans-serif;white-space:nowrap;float:left;outline:none !important;line-height:60px}a.al-logo span{color:#209e91}a.al-logo:hover{color:#209e91}.user-profile{float:right;min-width:230px;margin-top:10px;color:white}.al-user-profile{float:right;margin-right:12px;transition:all .15s ease-in-out;padding:0;width:36px;height:36px;border:0;opacity:1;position:relative}.al-user-profile a{display:block}.al-user-profile img{width:45px;height:45px;border-radius:50%}a.refresh-data{color:#fff;font-size:13px;text-decoration:none;font-weight:400;float:right;margin-top:13px;margin-right:26px}a.refresh-data:hover{color:#dfb81c !important}a.collapse-menu-link{font-size:31px;cursor:pointer;display:block;text-decoration:none;line-height:42px;color:#fff;padding:0;float:left;margin:11px 0 0 25px}a.collapse-menu-link:hover{text-decoration:none;color:#dfb81c}.al-skin-dropdown{float:right;margin-top:14px;margin-right:26px}.al-skin-dropdown .tpl-skin-panel{max-height:300px;overflow-y:scroll;overflow-x:hidden}.icon-palette{display:inline-block;width:14px;height:13px;background:url(\"assets/img/theme/palette.png\");background-size:cover}.search{text-shadow:none;font-size:13px;line-height:25px;transition:all 0.5s ease;white-space:nowrap;overflow:hidden;width:162px;float:left;margin:20px 0 0 30px}.search label{cursor:pointer}.search i{width:16px;display:inline-block;cursor:pointer;padding-left:1px;font-size:16px;margin-right:13px}.search input{color:#fff;background:none;border:none;outline:none;width:120px;padding:0;margin:0 0 0 -3px;height:27px}@media screen and (max-width: 660px){.search{display:none}}@media screen and (max-width: 500px){.page-top{padding:0 20px}}@media (max-width: 435px){.user-profile{min-width:136px}a.refresh-data{margin-right:10px}a.collapse-menu-link{margin-left:10px}.al-skin-dropdown{display:none}}.profile-toggle-link{cursor:pointer}\n"
+=======
+module.exports = "@-webkit-keyframes pulsate{30%{-webkit-transform:scale(0.1, 0.1);opacity:0.0}35%{opacity:1.0}40%{-webkit-transform:scale(1.2, 1.2);opacity:0.0}}.al-msg-center{float:right;padding:0;list-style:none;margin:13px 47px 0 0}.al-msg-center li{list-style:none;float:left;margin-left:30px}.al-msg-center li:first-child{margin-left:0}.al-msg-center li>a{color:#fff;text-decoration:none;font-size:13px;position:relative}.al-msg-center li>a span{display:inline-block;min-width:10px;padding:2px 4px 2px 4px;color:#fff;vertical-align:baseline;white-space:nowrap;text-align:center;border-radius:13px;text-shadow:none;line-height:11px;background-color:#e85656;position:absolute;top:-5px;right:-14px;font-size:11px}.al-msg-center li>a .notification-ring{border:1px solid #e85656;border-radius:100px;height:40px;width:40px;position:absolute;top:-18px;right:-27px;animation:pulsate 8s ease-out;animation-iteration-count:infinite;opacity:0.0}.al-msg-center li>a:hover{color:#e85656}.al-msg-center li>a:hover.msg{color:#209e91}.al-msg-center li>a.msg span{background-color:#209e91}.al-msg-center li>a.msg .notification-ring{border-color:#209e91}.al-msg-center li.open>a{color:#e85656}.al-msg-center li.open>a.msg{color:#209e91}@media (max-width: 435px){.al-msg-center{margin-right:20px}.al-msg-center li{margin-left:20px}.al-msg-center li:first-child{margin-left:0}}.msg-block-header{display:inline-block;padding:0;font-size:13px;margin:0 0 0 6px}.top-dropdown-menu{width:316px;left:auto;right:-47px;top:26px}.top-dropdown-menu ::-webkit-scrollbar{width:1em;height:1em}.top-dropdown-menu ::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.5);cursor:pointer}.top-dropdown-menu ::-webkit-scrollbar-track{background:#fff}.top-dropdown-menu body{scrollbar-face-color:rgba(0,0,0,0.5);scrollbar-track-color:#fff}.top-dropdown-menu .header{padding:10px 12px;border-bottom:1px solid #fff;font-size:12px}.top-dropdown-menu .header strong{float:left;color:#7d7d7d}.top-dropdown-menu .header>a{float:right;margin-left:12px;text-decoration:none}.top-dropdown-menu .header>a:hover{color:#7d7d7d}.top-dropdown-menu .msg-list{max-height:296px;overflow:scroll;overflow-x:hidden}.top-dropdown-menu .msg-list>a{border-top:1px solid #fff;padding:10px 12px;display:block;text-decoration:none;color:#7d7d7d;font-size:12px}.top-dropdown-menu .msg-list>a:first-child{border-top:none}.top-dropdown-menu .msg-list>a .img-area{float:left;width:36px}.top-dropdown-menu .msg-list>a .img-area img{width:36px;height:36px}.top-dropdown-menu .msg-list>a .img-area img.photo-msg-item{border-radius:18px}.top-dropdown-menu .msg-list>a .img-area>div{width:36px;height:36px;border-radius:4px;font-size:24px;text-align:center}.top-dropdown-menu .msg-list>a .img-area>div.comments{color:#dfb81c}.top-dropdown-menu .msg-list>a .img-area>div.orders{color:#dfb81c}.top-dropdown-menu .msg-list>a .img-area>div i{width:36px;line-height:36px}.top-dropdown-menu .msg-list>a .msg-area{float:right;width:230px}.top-dropdown-menu .msg-list>a .msg-area div{max-height:34px;overflow:hidden;text-overflow:ellipsis}.top-dropdown-menu .msg-list>a .msg-area span{font-style:italic;text-align:right;display:block;font-size:11px}.top-dropdown-menu .msg-list>a:hover{background:#E2F0FF}.top-dropdown-menu>a{border-top:1px solid #fff;display:block;text-align:center;padding:10px;font-size:12px;text-decoration:none}.top-dropdown-menu>a:hover{color:#7d7d7d}.top-dropdown-menu.profile-dropdown{width:145px;top:55px;right:-25px}.top-dropdown-menu.profile-dropdown a{text-align:left;border:none;text-decoration:none;color:#7d7d7d;padding:4px 16px 4px 20px}.top-dropdown-menu.profile-dropdown a.signout{border-top:1px solid #fff}.top-dropdown-menu.profile-dropdown a i{margin-right:10px}.top-dropdown-menu.profile-dropdown a:hover{background:#f4fcff}.top-dropdown-menu.profile-dropdown i.dropdown-arr{right:25px}.top-dropdown-menu i.dropdown-arr{position:absolute;top:-22px;right:42px;display:block;width:0;height:0;border:11px solid transparent;border-bottom-color:rgba(0,0,0,0.15)}.top-dropdown-menu i.dropdown-arr:after{top:-9px;left:0px;margin-left:-10px;content:\" \";position:absolute;display:block;width:0;height:0;border:10px solid transparent;border-bottom-color:#fff}@media (max-width: 415px){.top-dropdown-menu{right:-81px}.top-dropdown-menu i.dropdown-arr{right:75px}}.page-top{background-color:#1C2B36;position:fixed;z-index:904;box-shadow:2px 0 3px rgba(0,0,0,0.5);height:66px;width:100%;min-width:320px;padding:0 32px 0 40px}.page-top .dropdown-toggle::after{display:none}.blur .page-top.scrolled{background-color:rgba(0,0,0,0.85)}a.al-logo{color:#fff;display:block;font-size:24px;font-family:\"Roboto\",sans-serif;white-space:nowrap;float:left;outline:none !important;line-height:60px}a.al-logo span{color:#209e91}a.al-logo:hover{color:#209e91}.user-profile{float:right;min-width:230px;margin-top:10px;color:white}.al-user-profile{float:right;margin-right:12px;transition:all .15s ease-in-out;padding:0;width:36px;height:36px;border:0;opacity:1;position:relative}.al-user-profile a{display:block}.al-user-profile img{width:45px;height:45px;border-radius:50%}a.refresh-data{color:#fff;font-size:13px;text-decoration:none;font-weight:400;float:right;margin-top:13px;margin-right:26px}a.refresh-data:hover{color:#dfb81c !important}a.collapse-menu-link{font-size:31px;cursor:pointer;display:block;text-decoration:none;line-height:42px;color:#fff;padding:0;float:left;margin:11px 0 0 25px}a.collapse-menu-link:hover{text-decoration:none;color:#dfb81c}.al-skin-dropdown{float:right;margin-top:14px;margin-right:26px}.al-skin-dropdown .tpl-skin-panel{max-height:300px;overflow-y:scroll;overflow-x:hidden}.icon-palette{display:inline-block;width:14px;height:13px;background:url(\"assets/img/theme/palette.png\");background-size:cover}.search{text-shadow:none;font-size:13px;line-height:25px;transition:all 0.5s ease;white-space:nowrap;overflow:hidden;width:162px;float:left;margin:20px 0 0 30px}.search label{cursor:pointer}.search i{width:16px;display:inline-block;cursor:pointer;padding-left:1px;font-size:16px;margin-right:13px}.search input{color:#fff;background:none;border:none;outline:none;width:120px;padding:0;margin:0 0 0 -3px;height:27px}@media screen and (max-width: 660px){.search{display:none}}@media screen and (max-width: 500px){.page-top{padding:0 20px}}@media (max-width: 435px){.user-profile{min-width:136px}a.refresh-data{margin-right:10px}a.collapse-menu-link{margin-left:10px}.al-skin-dropdown{display:none}}.profile-toggle-link{cursor:pointer}.fa-bell{color:white;transition:color 0.3s, text-shadow 0.3s}.fa-bell.notified{color:red;text-shadow:0 0 5px red, 0 0 10px red;animation:vibrate 1s linear infinite;transform-origin:top center}@keyframes vibrate{0%{transform:rotate(0deg)}10%{transform:rotate(-10deg)}20%{transform:rotate(10deg)}30%{transform:rotate(-10deg)}40%{transform:rotate(10deg)}50%{transform:rotate(0deg)}100%{transform:rotate(0deg)}}\n"
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 /***/ }),
 
@@ -438,7 +442,11 @@ module.exports = "<div class=\"{{baMultiCheckboxClass}}\">\r\n  <ba-checkbox *ng
 /***/ 1093:
 /***/ (function(module, exports) {
 
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 module.exports = "<div class=\"page-top clearfix\" baScrollPosition maxHeight=\"50\" (scrollChange)=\"scrolledChanged($event)\"\r\n  [ngClass]=\"{scrolled: isScrolled}\">\r\n  <a *ngIf=\"EnableTreatment && !EnableAppointment\" routerLink=\"/pages/schedule/treatment-list\"\r\n    class=\"al-logo clearfix\"><span>IMS</span>-AppointX</a>\r\n  <a *ngIf=\"EnableAppointment\" routerLink=\"/pages/schedule/mastersche\"\r\n    class=\"al-logo clearfix\"><span>IMS</span>-AppointX</a>\r\n  <a href (click)=\"toggleMenu()\" class=\"collapse-menu-link ion-navicon\"></a>\r\n\r\n  <div class=\"search\">\r\n    <i class=\"ion-ios-search-strong\" ng-click=\"startSearch()\"></i>\r\n    <input id=\"searchInput\" type=\"text\" placeholder=\"Search for...\">\r\n  </div>\r\n\r\n  <div class=\"user-profile clearfix\">\r\n    <a class=\"userLink\">User :{{user}}<br>SMS Credits : {{smsCredits}}</a>\r\n\r\n    <div style=\"vertical-align: middle;\" class=\"btn-group\" dropdown>\r\n      <button type=\"button\" class=\"btn btn-primary\" (click)=\"LogoutClick()\">\r\n        Logout\r\n      </button>\r\n      <ul class=\"dropdown-menu\" dropdownMenu>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Action</a></li>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Another action</a></li>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Something else here</a></li>\r\n        <li class=\"dropdown-divider\"></li>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Separated link</a></li>\r\n      </ul>\r\n    </div>\r\n\r\n    <!--<div class=\"dropdown al-user-profile\">\r\n      <a class=\"profile-toggle-link dropdown-toggle\" id=\"user-profile-dd\" data-toggle=\"dropdown\" aria-expanded=\"false\">\r\n        <img src=\"{{ ( 'Nasta' | baProfilePicture ) }}\">\r\n      </a>\r\n      <ul class=\"dropdown-menu top-dropdown-menu profile-dropdown\" aria-labelledby=\"user-profile-dd\">\r\n        <li class=\"dropdown-item\"><i class=\"dropdown-arr\"></i></li>\r\n        <li class=\"dropdown-item\"><a href><i class=\"fa fa-user\"></i>Profile</a></li>\r\n        <li class=\"dropdown-item\"><a href><i class=\"fa fa-cog\"></i>Settings</a></li>\r\n        <li class=\"dropdown-item\"><a href class=\"signout\"><i class=\"fa fa-power-off\"></i>Sign out</a></li>\r\n      </ul>\r\n    </div>!-->\r\n    <ba-msg-center></ba-msg-center>\r\n  </div>\r\n</div>"
+=======
+module.exports = "<div class=\"page-top clearfix\" baScrollPosition maxHeight=\"50\" (scrollChange)=\"scrolledChanged($event)\"\r\n  [ngClass]=\"{scrolled: isScrolled}\">\r\n  <a *ngIf=\"EnableTreatment && !EnableAppointment\" routerLink=\"/pages/schedule/treatment-list\"\r\n    class=\"al-logo clearfix\"><span>IMS</span>-AppointX</a>\r\n  <a *ngIf=\"EnableAppointment\" routerLink=\"/pages/schedule/mastersche\"\r\n    class=\"al-logo clearfix\"><span>IMS</span>-AppointX</a>\r\n  <a href (click)=\"toggleMenu()\" class=\"collapse-menu-link ion-navicon\"></a>\r\n\r\n  <div class=\"search\">\r\n    <i class=\"ion-ios-search-strong\" ng-click=\"startSearch()\"></i>\r\n    <input id=\"searchInput\" type=\"text\" placeholder=\"Search for...\">\r\n  </div>\r\n\r\n  <div class=\"user-profile clearfix\">\r\n    <a class=\"userLink\">User :{{user}}<br>SMS Credits : {{smsCredits}}</a>\r\n\r\n    <div style=\"vertical-align: middle;\" class=\"btn-group\" dropdown>\r\n      <button type=\"button\" class=\"btn btn-primary\" (click)=\"LogoutClick()\">\r\n        Logout\r\n      </button>\r\n      <ul class=\"dropdown-menu\" dropdownMenu>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Action</a></li>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Another action</a></li>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Something else here</a></li>\r\n        <li class=\"dropdown-divider\"></li>\r\n        <li class=\"dropdown-item\"><a href=\"#\">Separated link</a></li>\r\n      </ul>\r\n    </div>\r\n\r\n    <div style=\"float: right;margin-left: 10px;margin-top: 2px\">\r\n      <a  class=\"notification notification-sticky\">\r\n        <span><i class=\"fa fa-bell\"\r\n          [ngClass]=\"{ 'notified': hasNewNotification }\"\r\n          (click)=\"clearNotification()\">\r\n       </i>\r\n       </span>\r\n        </a>\r\n    </div>\r\n   \r\n    <audio #notificationAudio src=\"assets/sounds/notification-sound.mp3\"></audio>\r\n\r\n    <!--<div class=\"dropdown al-user-profile\">\r\n      <a class=\"profile-toggle-link dropdown-toggle\" id=\"user-profile-dd\" data-toggle=\"dropdown\" aria-expanded=\"false\">\r\n        <img src=\"{{ ( 'Nasta' | baProfilePicture ) }}\">\r\n      </a>\r\n      <ul class=\"dropdown-menu top-dropdown-menu profile-dropdown\" aria-labelledby=\"user-profile-dd\">\r\n        <li class=\"dropdown-item\"><i class=\"dropdown-arr\"></i></li>\r\n        <li class=\"dropdown-item\"><a href><i class=\"fa fa-user\"></i>Profile</a></li>\r\n        <li class=\"dropdown-item\"><a href><i class=\"fa fa-cog\"></i>Settings</a></li>\r\n        <li class=\"dropdown-item\"><a href class=\"signout\"><i class=\"fa fa-power-off\"></i>Sign out</a></li>\r\n      </ul>\r\n    </div>!-->\r\n    <ba-msg-center></ba-msg-center>\r\n  </div>\r\n</div>"
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 /***/ }),
 
@@ -462,7 +470,11 @@ module.exports = "<aside class=\"al-sidebar\" sidebarResize>\r\n  <ba-menu [menu
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AuthService; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cacheService_service__ = __webpack_require__(421);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cacheService_service__ = __webpack_require__(422);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(42);
 
 
@@ -576,7 +588,11 @@ AuthService = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__masterRepo_service__ = __webpack_require__(638);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__masterRepo_service__ = __webpack_require__(639);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return __WEBPACK_IMPORTED_MODULE_0__masterRepo_service__["a"]; }));
 
 
@@ -887,7 +903,60 @@ if(false) {
 
 /***/ }),
 
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /***/ 198:
+=======
+/***/ 159:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AppState; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs__);
+
+
+let AppState = class AppState {
+    constructor() {
+        this._state = {};
+        this.notificationSubject = new __WEBPACK_IMPORTED_MODULE_1_rxjs__["Subject"]();
+        this.notification$ = this.notificationSubject.asObservable();
+    }
+    publishNotification(data) {
+        this.notificationSubject.next(data);
+    }
+    // already return a clone of the current state
+    get state() {
+        return this._state = this._clone(this._state);
+    }
+    // never allow mutation
+    set state(value) {
+        throw new Error('do not mutate the `.state` directly');
+    }
+    get(prop) {
+        // use our state getter for the clone
+        const state = this.state;
+        return state.hasOwnProperty(prop) ? state[prop] : state;
+    }
+    set(prop, value) {
+        // internally mutate our state
+        return this._state[prop] = value;
+    }
+    _clone(object) {
+        // simple object clone
+        return JSON.parse(JSON.stringify(object));
+    }
+};
+AppState = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+    __metadata('design:paramtypes', [])
+], AppState);
+
+
+/***/ }),
+
+/***/ 199:
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -951,17 +1020,25 @@ const isMobile = () => (/android|webos|iphone|ipad|ipod|blackberry|windows phone
 
 /***/ }),
 
-/***/ 221:
+/***/ 222:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__guard_service__ = __webpack_require__(639);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__guard_service__ = __webpack_require__(640);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", (function() { return __WEBPACK_IMPORTED_MODULE_0__guard_service__["a"]; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sessionStorage_service__ = __webpack_require__(813);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__authService_service__ = __webpack_require__(118);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return __WEBPACK_IMPORTED_MODULE_2__authService_service__["a"]; }));
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cacheService_service__ = __webpack_require__(421);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cacheService_service__ = __webpack_require__(422);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", (function() { return __WEBPACK_IMPORTED_MODULE_3__cacheService_service__["a"]; }));
 
 
@@ -971,7 +1048,7 @@ const isMobile = () => (/android|webos|iphone|ipad|ipod|blackberry|windows phone
 
 /***/ }),
 
-/***/ 222:
+/***/ 223:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -980,16 +1057,27 @@ const isMobile = () => (/android|webos|iphone|ipad|ipod|blackberry|windows phone
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ngx_uploader__ = __webpack_require__(582);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__theme_config__ = __webpack_require__(283);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__theme_configProvider__ = __webpack_require__(284);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ngx_uploader__ = __webpack_require__(583);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__theme_config__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__theme_configProvider__ = __webpack_require__(285);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components__ = __webpack_require__(850);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_baCard_baCardBlur_directive__ = __webpack_require__(824);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives__ = __webpack_require__(857);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pipes__ = __webpack_require__(864);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services__ = __webpack_require__(143);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__validators__ = __webpack_require__(649);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pipes_label_pipe__ = __webpack_require__(328);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__validators__ = __webpack_require__(650);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pipes_label_pipe__ = __webpack_require__(329);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -1083,7 +1171,11 @@ NgaModule = NgaModule_1 = __decorate([
 
 /***/ }),
 
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /***/ 282:
+=======
+/***/ 283:
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1093,7 +1185,11 @@ NgaModule = NgaModule_1 = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_style_loader_login_scss__ = __webpack_require__(1357);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_style_loader_login_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_style_loader_login_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__loginService_service__ = __webpack_require__(422);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__loginService_service__ = __webpack_require__(423);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(42);
 
 
@@ -1187,8 +1283,13 @@ Login = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return BaThemeConfig; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme_configProvider__ = __webpack_require__(284);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__theme_constants__ = __webpack_require__(198);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme_configProvider__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__theme_constants__ = __webpack_require__(199);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -1253,9 +1354,9 @@ BaThemeConfig = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return BaThemeConfigProvider; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash__ = __webpack_require__(219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__theme_constants__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__theme_constants__ = __webpack_require__(199);
 
 
 
@@ -1339,11 +1440,15 @@ BaThemeConfigProvider = __decorate([
 
 /***/ }),
 
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /***/ 326:
+=======
+/***/ 327:
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 
 
@@ -1388,7 +1493,11 @@ const ENV_PROVIDERS = [
 
 /***/ }),
 
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /***/ 327:
+=======
+/***/ 328:
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1429,7 +1538,11 @@ DisableDateService = __decorate([
 
 /***/ }),
 
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /***/ 328:
+=======
+/***/ 329:
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1458,6 +1571,7 @@ LabelPipe = __decorate([
 
 /***/ }),
 
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /***/ 329:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1510,7 +1624,61 @@ CommonService = __decorate([
 
 /***/ }),
 
+=======
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ 330:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return CommonService; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(26);
+
+
+let CommonService = class CommonService {
+    setFormPreference(form, fields) {
+        fields.forEach((field) => {
+            if (field.hidden)
+                form.removeControl(field.fieldName);
+            if (field.required)
+                this.addValidation(form, field.fieldName, [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required]);
+        });
+    }
+    addValidation(form, controlName, validations) {
+        const control = form.get(controlName);
+        if (control) {
+            control.setValidators(validations); // Set the new validators
+            control.updateValueAndValidity(); // Refresh the validation state
+        }
+    }
+    getFormValue(form, fieldName) {
+        if (form.contains(fieldName))
+            return form.get(fieldName).value;
+    }
+    recursiveForEach(array, callback) {
+        array.forEach(item => {
+            callback(item);
+            if (Array.isArray(item)) {
+                this.recursiveForEach(item, callback);
+            }
+            else if (Array.isArray(item.children)) {
+                this.recursiveForEach(item.children, callback);
+            }
+        });
+    }
+    coalesce(value, defaultValue) {
+        return value != null ? value : defaultValue;
+    }
+};
+CommonService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+    __metadata('design:paramtypes', [])
+], CommonService);
+
+
+/***/ }),
+
+/***/ 331:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1519,8 +1687,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(26);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_component__ = __webpack_require__(282);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_component__ = __webpack_require__(283);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_routing__ = __webpack_require__(815);
 
 
@@ -1550,14 +1723,39 @@ LoginModule = __decorate([
 
 /***/ }),
 
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /***/ 420:
+=======
+/***/ 421:
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return TTLCacheService; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 
 let TTLCacheService = class TTLCacheService {
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_service__ = __webpack_require__(159);
+
+
+let TTLCacheService = class TTLCacheService {
+    constructor(appState) {
+        this.appState = appState;
+        this.appState.notification$.subscribe((data) => {
+            debugger;
+            if (data.nType === 1 && data.Data.action === 'clear-cache') {
+                for (let i = localStorage.length - 1; i >= 0; i--) {
+                    const key = localStorage.key(i);
+                    if (key && key.startsWith(data.Data.key)) {
+                        localStorage.removeItem(key);
+                    }
+                }
+            }
+        });
+    }
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
     set(key, data, ttlMinutes) {
         const expires = new Date().getTime() + ttlMinutes * 60 * 1000;
         const payload = { data, expires };
@@ -1581,13 +1779,21 @@ let TTLCacheService = class TTLCacheService {
 };
 TTLCacheService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
     __metadata('design:paramtypes', [])
+=======
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__app_service__["a" /* AppState */]])
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 ], TTLCacheService);
 
 
 /***/ }),
 
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /***/ 421:
+=======
+/***/ 422:
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1648,7 +1854,11 @@ CacheService = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return LoginService; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(42);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_permission__ = __webpack_require__(221);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_permission__ = __webpack_require__(222);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global_state__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(34);
 
@@ -1732,10 +1942,17 @@ LoginService = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return Pages; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme__ = __webpack_require__(78);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_menu__ = __webpack_require__(648);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_services_permission__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_repositories__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_services_common_service__ = __webpack_require__(329);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_menu__ = __webpack_require__(649);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_services_permission__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_repositories__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_services_common_service__ = __webpack_require__(330);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -1880,7 +2097,7 @@ exports.ad2bs = ad2bs;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_module__ = __webpack_require__(810);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_module__ = __webpack_require__(811);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return __WEBPACK_IMPORTED_MODULE_0__app_module__["a"]; }));
 
 
@@ -1895,14 +2112,22 @@ exports.ad2bs = ad2bs;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_permission_authService_service__ = __webpack_require__(118);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__(101);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__(86);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__global_state__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_cache_service__ = __webpack_require__(420);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_cache_service__ = __webpack_require__(421);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -1992,7 +2217,7 @@ let MasterRepo = class MasterRepo {
             .flatMap(res => res.json() || []);
     }
     getRoomList(refresh = false) {
-        return this.http.get(this.apiUrl + '/getRoomList', this.getRequestOption())
+        return this.http.get(this.apiUrl + '/getRoomList?includeInactive=true', this.getRequestOption())
             .flatMap(res => res.json() || []);
     }
     getServiceList(refresh = false) {
@@ -2383,7 +2608,11 @@ let MasterRepo = class MasterRepo {
             return this.toBSDate(adDate);
         }
         else {
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
             var nepFunction = __webpack_require__(613);
+=======
+            var nepFunction = __webpack_require__(614);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
             var bsDate = nepFunction.ad2bs(date);
             return bsDate.year + '-' + bsDate.month.toString().padStart(2, '0') + '-' + bsDate.day.toString().padStart(2, '0');
         }
@@ -2472,6 +2701,7 @@ CanActivateTeam = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["Injectable"])(), 
     __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_3__global_state__["a" /* GlobalState */], __WEBPACK_IMPORTED_MODULE_1__authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_4__repositories_index__["a" /* MasterRepo */]])
 ], CanActivateTeam);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 
 
 /***/ }),
@@ -2510,6 +2740,8 @@ TimeFormatService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
     __metadata('design:paramtypes', [])
 ], TimeFormatService);
+=======
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 /***/ }),
@@ -2518,9 +2750,47 @@ TimeFormatService = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return TimeFormatService; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+
+let TimeFormatService = class TimeFormatService {
+    // Convert time to 12-hour format
+    to12HourFormat(time) {
+        const [hours, minutes] = time.split(':').map(Number);
+        const period = hours >= 12 ? 'PM' : 'AM';
+        const adjustedHours = hours % 12 || 12; // Convert 0 to 12 for 12-hour format
+        return `${this.padZero(adjustedHours)}:${this.padZero(minutes)} ${period}`;
+    }
+    // Convert time to 24-hour format
+    to24HourFormat(time12) {
+        const [time, modifier] = time12.trim().toUpperCase().split(' ');
+        let [hour, minute] = time.split(':').map(str => parseInt(str, 10));
+        if (modifier === 'PM' && hour < 12)
+            hour += 12;
+        if (modifier === 'AM' && hour === 12)
+            hour = 0;
+        return `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+    }
+    // Helper method to pad single-digit numbers with a leading zero
+    padZero(num) {
+        return num < 10 ? `0${num}` : `${num}`;
+    }
+};
+TimeFormatService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+    __metadata('design:paramtypes', [])
+], TimeFormatService);
+
+
+/***/ }),
+
+/***/ 646:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return DatePicker; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_smart_table__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_smart_table__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_ng2_smart_table__);
 
 
@@ -2569,13 +2839,13 @@ DatePicker = __decorate([
 
 /***/ }),
 
-/***/ 646:
+/***/ 647:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return EmployeeSelector; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_smart_table__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_smart_table__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_ng2_smart_table__);
 
 
@@ -2613,13 +2883,13 @@ EmployeeSelector = __decorate([
 
 /***/ }),
 
-/***/ 647:
+/***/ 648:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return TimePicker; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_smart_table__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_smart_table__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_ng2_smart_table__);
 
 
@@ -2664,10 +2934,123 @@ TimePicker = __decorate([
 
 /***/ }),
 
-/***/ 648:
+/***/ 649:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+const PAGES_MENU = [
+    {
+        path: 'pages',
+        children: [
+            // {
+            //   path: 'dashboard',
+            //   data: {
+            //     menu: {
+            //       title: 'Dashboard',re
+            //       icon: 'ion-android-home',
+            //       selected: false,
+            //       expanded: false,
+            //       order: 0
+            //     }
+            //   }
+            // },
+            {
+                path: 'schedule',
+                data: {
+                    menu: {
+                        title: 'Schedule',
+                        icon: 'ion-android-home',
+                        selected: false,
+                        expanded: false,
+                        order: 1,
+                        allowCreate: false, allowEdit: false, allowDelete: false
+                    }
+                },
+                children: [
+                    { path: 'mastersche', data: { menu: { title: 'Appointments', hidden: true } } },
+                    { path: 'checkIn', data: { menu: { title: 'Check - In' } } },
+                    { path: 'check-in-list', data: { menu: { title: 'Check Out' } } },
+                    { path: 'treatment-list', data: { menu: { title: 'Treatment Entry' } } },
+                    { path: 'treatment-details', data: { menu: { title: 'Treatment Details' } } },
+                    { path: 'appointment-requests', data: { menu: { title: "Appointment Requests" } } }
+                ]
+            },
+            {
+                path: 'masters',
+                data: {
+                    menu: {
+                        title: 'Masters',
+                        icon: 'ion-edit',
+                        selected: false,
+                        expanded: false,
+                        order: 2,
+                        allowCreate: false, allowEdit: false, allowDelete: false
+                    }
+                },
+                children: [
+                    { path: 'emp', data: { menu: { title: 'Employee' } } },
+                    { path: 'cus', data: { menu: { title: 'Customer', allowEdit: false, allowDelete: false } } },
+                    { path: 'room', data: { menu: { title: 'Room' } } },
+                    { path: 'ser', data: { menu: { title: 'Service' } } },
+                    { path: 'series', data: { menu: { title: 'Series' } } },
+                    { path: 'seriesSales', data: { menu: { title: 'Series Sales' } } },
+                    { path: 'disease', data: { menu: { title: 'Disease' } } },
+                    { path: 'medication', data: { menu: { title: 'Medication' } } },
+                    { path: 'prescription', data: { menu: { title: 'Prescription' } } },
+                    { path: 'holiday', data: { menu: { title: 'Holiday Entry' } } }
+                ]
+            }, {
+                path: 'userManager',
+                data: {
+                    menu: {
+                        title: 'User Manager',
+                        icon: 'ion-android-people',
+                        selected: false,
+                        expanded: false,
+                        order: 5,
+                        allowCreate: false, allowEdit: false, allowDelete: false
+                    }
+                },
+                children: [
+                    { path: 'userlist', data: { menu: { title: 'User List' } } },
+                    { path: 'roles', data: { menu: { title: 'Roles' } } }]
+            },
+            {
+                path: 'report',
+                data: {
+                    menu: {
+                        title: 'Reports',
+                        icon: 'ion-ios-list-outline',
+                        selected: false,
+                        expanded: false,
+                        order: 6,
+                        allowCreate: false, allowEdit: false, allowDelete: false
+                    }
+                },
+                children: [
+                    { path: 'cusReport', data: { menu: { title: 'Customer Report', allowCreate: false, allowEdit: false, allowDelete: false } } },
+                    { path: 'empReport', data: { menu: { title: 'Employee Report', allowCreate: false, allowEdit: false, allowDelete: false } } },
+                    { path: 'roomReport', data: { menu: { title: 'Room Report', allowCreate: false, allowEdit: false, allowDelete: false } } },
+                    { path: 'serviceReport', data: { menu: { title: 'Service Report', allowCreate: false, allowEdit: false, allowDelete: false } } },
+                    { path: 'seriesReport', data: { menu: { title: 'Series Report', allowCreate: false, allowEdit: false, allowDelete: false } } },
+                    { path: 'followupRecords', data: { menu: { title: 'Follow Up Report', allowCreate: false, allowEdit: false, allowDelete: false } } },
+                    { path: 'messageReport', data: { menu: { title: 'Message Report', allowCreate: false, allowEdit: false, allowDelete: false } } },
+                    { path: 'activityReport', data: { menu: { title: 'Activity Log', allowCreate: false, allowEdit: false, allowDelete: false } } }
+                ]
+            }
+        ]
+    }];
+/* harmony export (immutable) */ __webpack_exports__["a"] = PAGES_MENU;
+
+
+
+/***/ }),
+
+/***/ 650:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 const PAGES_MENU = [
     {
         path: 'pages',
@@ -2780,6 +3163,8 @@ const PAGES_MENU = [
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+=======
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__email_validator__ = __webpack_require__(874);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return __WEBPACK_IMPORTED_MODULE_0__email_validator__["a"]; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__equalPasswords_validator__ = __webpack_require__(875);
@@ -2799,7 +3184,7 @@ const PAGES_MENU = [
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__services__ = __webpack_require__(143);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return __WEBPACK_IMPORTED_MODULE_0__services__["a"]; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme_constants__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme_constants__ = __webpack_require__(199);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", (function() { return __WEBPACK_IMPORTED_MODULE_1__theme_constants__["b"]; }));
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", (function() { return __WEBPACK_IMPORTED_MODULE_1__theme_constants__["c"]; }));
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", (function() { return __WEBPACK_IMPORTED_MODULE_1__theme_constants__["d"]; }));
@@ -2815,7 +3200,7 @@ const PAGES_MENU = [
 
 /***/ }),
 
-/***/ 809:
+/***/ 810:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2823,14 +3208,25 @@ const PAGES_MENU = [
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__global_state__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__theme_services__ = __webpack_require__(143);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_theme_config__ = __webpack_require__(283);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__theme_theme_constants__ = __webpack_require__(198);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_theme_config__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__theme_theme_constants__ = __webpack_require__(199);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_style_loader_app_scss__ = __webpack_require__(1356);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_style_loader_app_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_style_loader_app_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_style_loader_theme_initial_scss__ = __webpack_require__(1355);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_style_loader_theme_initial_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_style_loader_theme_initial_scss__);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(327);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_service__ = __webpack_require__(159);
+
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -2854,11 +3250,17 @@ let App = class App {
         this.http = http;
         this.disableDateService = disableDateService;
         this.isMenuCollapsed = false;
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
+=======
+        this.eventSource = null;
+        this.reconnectInterval = 5000; // 5 seconds
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
         themeConfig.config();
         this._loadImages();
         this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
             this.isMenuCollapsed = isCollapsed;
         });
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
         this.http.get("/appConfig.json")
             .map(res => res.json())
             .subscribe(data => {
@@ -2868,6 +3270,13 @@ let App = class App {
         }, error => {
             this._state.setGlobalSetting("apiUrl", ["http://localhost:1782/api"]);
             //this._state.setGlobalSetting("apiUrl",["http://imsnepal.com:1050/api"])
+=======
+        this.http.get("assets/label-dictionary.json")
+            .map(res => res.json())
+            .subscribe(data => {
+            this._state.setGlobalSetting("label-dictionary", data);
+            sessionStorage.setItem("label-dictionary", JSON.stringify(data));
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
         });
         this.http.get("assets/label-dictionary.json")
             .map(res => res.json())
@@ -2877,6 +3286,81 @@ let App = class App {
         });
         //Uncomment following line to disable all logs
         //console.log = function() {}
+    }
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
+    ngAfterViewInit() {
+        // hide spinner once all loaders are completed
+        __WEBPACK_IMPORTED_MODULE_2__theme_services__["c" /* BaThemePreloader */].load().then((values) => {
+            this._spinner.hide();
+        });
+    }
+    _loadImages() {
+        // register some loaders
+        __WEBPACK_IMPORTED_MODULE_2__theme_services__["c" /* BaThemePreloader */].registerLoader(this._imageLoader.load(__WEBPACK_IMPORTED_MODULE_4__theme_theme_constants__["b" /* layoutPaths */].images.root + 'sky-bg.jpg'));
+=======
+    ngOnInit() {
+        this.loadAppConfig().then(() => {
+            this.listenToAppointmentNotifications(); // only after config is ready
+        });
+    }
+    loadAppConfig() {
+        return new Promise((resolve) => {
+            this.http
+                .get("/appConfig.json")
+                .map((res) => res.json())
+                .subscribe((data) => {
+                this._state.setGlobalSetting("apiUrl", [data.apiUrl]);
+                this._state.setGlobalSetting("contentUrl", [data.contentUrl]);
+                resolve();
+            }, (error) => {
+                // fallback URL
+                this._state.setGlobalSetting("apiUrl", [
+                    "http://localhost:1782/api",
+                ]);
+                resolve();
+            });
+        });
+    }
+    listenToAppointmentNotifications() {
+        if (this.eventSource) {
+            this.eventSource.close();
+        }
+        const url = this._state.getGlobalSetting("apiUrl")[0] + "/Events/AppointmentNotification";
+        this.eventSource = new EventSource(url);
+        //use eventsource and ngzone for SSE
+        this.eventSource.onmessage = (event) => {
+            this.zone.run(() => {
+                const data = JSON.parse(event.data);
+                this.appService.publishNotification(data);
+            });
+        };
+        this.eventSource.onerror = (error) => {
+            console.error("SSE Error:", error);
+            this.eventSource.close();
+            this.eventSource = null;
+            if (this.reconnectTimeout)
+                clearTimeout(this.reconnectTimeout);
+            this.reconnectTimeout = setTimeout(() => {
+                console.warn("Reconnecting to SSE...");
+                this.listenToAppointmentNotifications();
+            }, this.reconnectInterval);
+        };
+    }
+    stopAppointmentNotifications() {
+        if (this.eventSource) {
+            this.eventSource.close();
+            this.eventSource = null;
+        }
+        if (this.reconnectTimeout) {
+            clearTimeout(this.reconnectTimeout);
+        }
+    }
+    ngOnDestroy() {
+        if (this.eventSource) {
+            this.eventSource.close();
+            this.stopAppointmentNotifications();
+        }
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
     }
     ngAfterViewInit() {
         // hide spinner once all loaders are completed
@@ -2905,18 +3389,23 @@ App = __decorate([
 
 /***/ }),
 
-/***/ 810:
+/***/ 811:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AppModule; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(100);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(101);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angularclass_hmr__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angularclass_hmr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__angularclass_hmr__);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environment__ = __webpack_require__(326);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing__ = __webpack_require__(811);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(809);
@@ -2935,6 +3424,26 @@ App = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__common_services_common_service__ = __webpack_require__(329);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__common_services_time_format_service__ = __webpack_require__(644);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__common_services_cache_service__ = __webpack_require__(420);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environment__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing__ = __webpack_require__(812);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(810);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_service__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__global_state__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__theme_nga_module__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_pages_module__ = __webpack_require__(816);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__common_repositories__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__common_services_permission__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_login__ = __webpack_require__(814);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_forms_components_inputs_components_datepicker_datepicker_component__ = __webpack_require__(646);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_forms_components_inputs_components_timepicker_timepicker_component__ = __webpack_require__(648);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_forms_components_inputs_components_employee_selector_employee_selector_component__ = __webpack_require__(647);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__app_common_services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__theme_pipes_label_pipe__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__common_services_common_service__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__common_services_time_format_service__ = __webpack_require__(645);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__common_services_cache_service__ = __webpack_require__(421);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -3039,7 +3548,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 811:
+/***/ 812:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3058,7 +3567,7 @@ const routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModul
 
 /***/ }),
 
-/***/ 812:
+/***/ 813:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3073,6 +3582,7 @@ let AppState = class AppState {
     get state() {
         return this._state = this._clone(this._state);
     }
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
     // never allow mutation
     set state(value) {
         throw new Error('do not mutate the `.state` directly');
@@ -3113,6 +3623,8 @@ let SessionStorage = class SessionStorage {
     remove(key) {
         window.sessionStorage.removeItem(key);
     }
+=======
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
     set(key, data) {
         window.sessionStorage.setItem(key, JSON.stringify(data));
     }
@@ -3140,7 +3652,7 @@ SessionStorage = __decorate([
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__loginService_service__ = __webpack_require__(422);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return __WEBPACK_IMPORTED_MODULE_1__loginService_service__["a"]; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_module__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_module__ = __webpack_require__(331);
 /* unused harmony namespace reexport */
 
 
@@ -3185,9 +3697,15 @@ const routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModul
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_routing__ = __webpack_require__(817);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_component__ = __webpack_require__(423);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_export_as__ = __webpack_require__(650);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_component__ = __webpack_require__(424);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_export_as__ = __webpack_require__(651);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -3220,7 +3738,7 @@ PagesModule = __decorate([
 const routes = [
     {
         path: 'login',
-        loadChildren: function() { return new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 330))  .then( (function(module) { return module['LoginModule']; }) ); }
+        loadChildren: function() { return new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 331))  .then( (function(module) { return module['LoginModule']; }) ); }
     },
     {
         path: 'register',
@@ -4442,6 +4960,11 @@ BaMultiCheckbox = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_services_permission_authService_service__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories__ = __webpack_require__(119);
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_service__ = __webpack_require__(159);
+
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 
 
 
@@ -4449,9 +4972,14 @@ BaMultiCheckbox = __decorate([
 
 
 let BaPageTop = class BaPageTop {
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
     constructor(_state, _authService, router, service) {
+=======
+    constructor(_state, _authService, appService, router, service) {
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
         this._state = _state;
         this._authService = _authService;
+        this.appService = appService;
         this.router = router;
         this.service = service;
         this.isScrolled = false;
@@ -4467,6 +4995,26 @@ let BaPageTop = class BaPageTop {
         }
         this.getSmsCredit();
     }
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
+=======
+    ngOnInit() {
+        this.appService.notification$.subscribe(data => {
+            console.log(data);
+            if (data.nType == 0) {
+                this.hasNewNotification = true;
+                this.playNotificationSound();
+            }
+        });
+    }
+    playNotificationSound() {
+        if (this.notificationAudio && this.notificationAudio.nativeElement) {
+            this.notificationAudio.nativeElement.play().catch((err) => console.warn('Audio play failed:', err));
+        }
+    }
+    clearNotification() {
+        this.hasNewNotification = false;
+    }
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
     getSmsCredit() {
         this.service.getSmsCredit().subscribe((res) => {
             var data = res.json();
@@ -4492,7 +5040,11 @@ BaPageTop = __decorate([
         selector: 'ba-page-top',
         template: __webpack_require__(1093),
     }), 
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
     __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__global_state__["a" /* GlobalState */], __WEBPACK_IMPORTED_MODULE_3__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */]])
+=======
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__global_state__["a" /* GlobalState */], __WEBPACK_IMPORTED_MODULE_3__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_6__app_service__["a" /* AppState */], __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */]])
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 ], BaPageTop);
 
 
@@ -5103,7 +5655,7 @@ BaImageLoaderService = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return BaMenuService; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lodash__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lodash__ = __webpack_require__(219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_lodash__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__);
@@ -5413,8 +5965,13 @@ class EqualPasswordsValidator {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["main"] = main;
+<<<<<<< Updated upstream:main.5d7ce4adec6d675bf336.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_environment__ = __webpack_require__(326);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_environment__ = __webpack_require__(327);
+>>>>>>> Stashed changes:main.a235f79cca518cc4d700.bundle.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angularclass_hmr__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angularclass_hmr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__angularclass_hmr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app__ = __webpack_require__(615);

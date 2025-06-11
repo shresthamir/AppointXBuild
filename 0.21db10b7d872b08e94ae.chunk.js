@@ -9,13 +9,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(26);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__ = __webpack_require__(220);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__ = __webpack_require__(221);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__ = __webpack_require__(1378);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__masters_routing__ = __webpack_require__(1558);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__masters_component__ = __webpack_require__(1523);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_services_permission_guard_service__ = __webpack_require__(639);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_services_permission_guard_service__ = __webpack_require__(640);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Employee_EmployeeList_component__ = __webpack_require__(1508);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_Customer_CustomerList_component__ = __webpack_require__(1504);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_Customer_AddCustomer_component__ = __webpack_require__(1503);
@@ -7336,7 +7345,7 @@ var TypeaheadMatch = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_filter__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_map__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_mergeMap__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_mergeMap__ = __webpack_require__(224);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_mergeMap__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_toArray__ = __webpack_require__(643);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_toArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_toArray__);
@@ -8476,7 +8485,11 @@ var AngularMultiSelectModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return DataService; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs__ = __webpack_require__(101);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs__ = __webpack_require__(86);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs__);
 
 
@@ -9314,7 +9327,11 @@ var MyException = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__repositories__ = __webpack_require__(119);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(327);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(328);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__(41);
 
 
@@ -9477,7 +9494,11 @@ module.exports = "<div class=\"input-group\" style=\"height: 30px, i !important;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_repositories__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_services_permission_authService_service__ = __webpack_require__(118);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_common_service__ = __webpack_require__(329);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_common_service__ = __webpack_require__(330);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 
 
 
@@ -9762,14 +9783,22 @@ AddCustomer = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1378);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(221);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1410);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories_masterRepo_service__ = __webpack_require__(638);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_http__ = __webpack_require__(42);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__theme_pipes_label_pipe__ = __webpack_require__(328);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__theme_pipes_label_pipe__ = __webpack_require__(329);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 
 
 
@@ -10123,7 +10152,11 @@ AddDisease = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1378);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(221);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1410);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
@@ -10462,7 +10495,11 @@ AddEmployee = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1378);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(221);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1410);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
@@ -10623,7 +10660,11 @@ EmployeeList = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1378);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_repositories__ = __webpack_require__(119);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(327);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(328);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__(41);
 
 
@@ -10870,10 +10911,17 @@ AddHolidayComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_bootstrap__ = __webpack_require__(1378);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission__ = __webpack_require__(221);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_repositories__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission__ = __webpack_require__(222);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 
 
 
@@ -11174,7 +11222,11 @@ AddMedication = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1378);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(221);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1410);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
@@ -11463,7 +11515,11 @@ AddPrescription = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1378);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(221);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1410);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
@@ -11635,7 +11691,13 @@ let AddRoom = class AddRoom {
             ROOMNO: [''],
             DESCRIPTION: [''],
             CAPACITY: [0],
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
             branch: [{}]
+=======
+            branch: [{}],
+            IsActive: [true],
+            StatusRemarks: ['']
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
         });
         this.masterRepo.getBranchList().subscribe((response) => {
             this.branches = response.json();
@@ -11651,6 +11713,11 @@ let AddRoom = class AddRoom {
                             ROOMNO: loadedValue.ROOMNO,
                             DESCRIPTION: loadedValue.DESCRIPTION,
                             CAPACITY: loadedValue.CAPACITY,
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
+=======
+                            IsActive: loadedValue.IsActive,
+                            StatusRemarks: loadedValue.StatusRemarks,
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
                             branch: branch });
                     }
                 }
@@ -11738,6 +11805,13 @@ AddRoom = __decorate([
         input{
             color: black;
         }
+        .status{ 
+            color: black;
+            float: left;
+            width: 20px;
+            margin-left: 15px;
+            margin-top: 12px;
+        }
     `],
     }), 
     __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"], __WEBPACK_IMPORTED_MODULE_5__common_repositories__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__app_global_state__["a" /* GlobalState */]])
@@ -11754,7 +11828,11 @@ AddRoom = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1378);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(221);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1410);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
@@ -11786,7 +11864,19 @@ let RoomList = class RoomList {
                 DESCRIPTION: {
                     title: 'Room Description',
                     type: 'string'
-                }
+                },
+                CAPACITY: {
+                    title: 'Capacity',
+                    type: 'number'
+                },
+                IsActive: {
+                    title: 'Is Active',
+                    type: 'boolean',
+                },
+                StatusRemarks: {
+                    title: 'Status Remarks',
+                    type: 'string'
+                },
             }
         };
         this.subcriptions = [];
@@ -12098,7 +12188,11 @@ AddSeriesSales = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1378);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(221);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1410);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
@@ -12431,7 +12525,11 @@ AddSeries = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1378);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(221);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1410);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
@@ -12589,7 +12687,11 @@ SeriesList = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_repositories__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_services_permission_authService_service__ = __webpack_require__(118);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_common_service__ = __webpack_require__(329);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_common_service__ = __webpack_require__(330);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 
 
 
@@ -12811,7 +12913,11 @@ AddService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_authService_service__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_bootstrap__ = __webpack_require__(1378);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(220);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__ = __webpack_require__(221);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_smart_table__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__ = __webpack_require__(1410);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_style_loader_smartTables_scss__);
@@ -12985,7 +13091,11 @@ Masters = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__masters_component__ = __webpack_require__(1523);
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__ = __webpack_require__(639);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_permission_guard_service__ = __webpack_require__(640);
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Employee_EmployeeList_component__ = __webpack_require__(1508);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Employee_AddEmployee_component__ = __webpack_require__(1507);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Customer_CustomerList_component__ = __webpack_require__(1504);
@@ -13151,7 +13261,11 @@ module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <butto
 /***/ 1582:
 /***/ (function(module, exports) {
 
+<<<<<<< Updated upstream:0.21db10b7d872b08e94ae.chunk.js
 module.exports = "<div>\r\n    <form id=formId class=\"form-horizontal\" [formGroup]=\"form\">\r\n        <ba-card [title]=\"modeTitle\">\r\n\r\n            <div class=\"form-group row \">\r\n                <label for=\"roomno\" class=\"col-sm-2 form-control-label \">Room No</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [style.background-color]=\"disabled()\" style=\"color:black\" type=\"text \" class=\"form-control \" name=\"roomno\" id=\"roomno\" formControlName=\"ROOMNO\" [readOnly]=\"mode=='edit'?true:false\"\r\n                        placeholder=\"Room number\">\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group row \">\r\n                <label for=\"description\" class=\"col-sm-2 form-control-label \">Description</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\" type=\"text \" class=\"form-control \" name=\"description\" id=\"description\" formControlName=\"DESCRIPTION\" placeholder=\"Room Description\">\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group row \">\r\n                <label for=\"capacity\" class=\"col-sm-2 form-control-label \">Capacity</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\" type=\"text \" class=\"form-control \" name=\"capacity\" id=\"capacity\" formControlName=\"CAPACITY\" placeholder=\"Room Capacity\">\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group row\">\r\n                <label for=\"branch\" class=\"col-sm-2 form-control-label\">Outlet</label>\r\n                <div class=\"col-sm-5\">\r\n                    <select class=\"form-control\" formControlName=\"branch\" id=\"branch\">\r\n                        <option *ngFor = \"let branch of branches\" [ngValue]=\"branch\">{{branch.branchName}}</option>\r\n                    </select>\r\n                </div>\r\n            </div>\r\n           \r\n        </ba-card>\r\n        <div style=\"padding-bottom: 10px; margin-top: -8px;\">\r\n            <button *ngIf=\"mode=='add' || mode=='edit'\" (click)=\"onSave()\" style=\"margin-right: 4px;\" class=\"btn btn-primary \" [disabled]=\"!form.valid\">Save</button>\r\n            <button type=\"button \" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-sm\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    <div class=\"modal-body\">\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                    <!--<div class=\"modal-footer\">\r\n                        <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                    </div>!-->\r\n\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </form>\r\n\r\n</div>"
+=======
+module.exports = "<div>\r\n    <form id=formId class=\"form-horizontal\" [formGroup]=\"form\">\r\n        <ba-card [title]=\"modeTitle\">\r\n\r\n            <div class=\"form-group row \">\r\n                <label for=\"roomno\" class=\"col-sm-2 form-control-label \">Room No</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [style.background-color]=\"disabled()\" style=\"color:black\" type=\"text \" class=\"form-control \" name=\"roomno\" id=\"roomno\" formControlName=\"ROOMNO\" [readOnly]=\"mode=='edit'?true:false\"\r\n                        placeholder=\"Room number\">\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group row \">\r\n                <label for=\"description\" class=\"col-sm-2 form-control-label \">Description</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\" type=\"text \" class=\"form-control \" name=\"description\" id=\"description\" formControlName=\"DESCRIPTION\" placeholder=\"Room Description\">\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group row \">\r\n                <label for=\"capacity\" class=\"col-sm-2 form-control-label \">Capacity</label>\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\" type=\"text \" class=\"form-control \" name=\"capacity\" id=\"capacity\" formControlName=\"CAPACITY\" placeholder=\"Room Capacity\">\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group row\">\r\n                <label for=\"branch\" class=\"col-sm-2 form-control-label\">Outlet</label>\r\n                <div class=\"col-sm-5\">\r\n                    <select class=\"form-control\" formControlName=\"branch\" id=\"branch\">\r\n                        <option *ngFor = \"let branch of branches\" [ngValue]=\"branch\">{{branch.branchName}}</option>\r\n                    </select>\r\n                </div>\r\n            </div>\r\n             <div *ngIf=\"mode=='edit'\" class=\"form-group row \">\r\n                <label for=\"capacity\" class=\"col-sm-2 form-control-label \">Active</label>\r\n                <input [readOnly]=\"viewMode == true\" type=\"checkbox\"  [style.background-color]=\"disabled()\" class=\"form-control status\" name=\"isActive\" id=\"isActive\" formControlName=\"IsActive\">\r\n                <div class=\"col-sm-6 \">\r\n                    <input [readOnly]=\"viewMode == true\" style=\"color:black\" [style.background-color]=\"disabled()\" type=\"text \" class=\"form-control \" name=\"statusRemarks\" id=\"statusRemarks\" formControlName=\"StatusRemarks\" placeholder=\"Status Remarks\">\r\n                </div>\r\n            </div>\r\n           \r\n        </ba-card>\r\n        <div style=\"padding-bottom: 10px; margin-top: -8px;\">\r\n            <button *ngIf=\"mode=='add' || mode=='edit'\" (click)=\"onSave()\" style=\"margin-right: 4px;\" class=\"btn btn-primary \" [disabled]=\"!form.valid\">Save</button>\r\n            <button type=\"button \" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-sm\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    <div class=\"modal-body\">\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                    <!--<div class=\"modal-footer\">\r\n                        <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                    </div>!-->\r\n\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </form>\r\n\r\n</div>"
+>>>>>>> Stashed changes:0.2bca8173f5d117f2b12d.chunk.js
 
 /***/ }),
 
