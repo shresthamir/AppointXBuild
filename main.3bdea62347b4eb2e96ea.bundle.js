@@ -1038,7 +1038,7 @@ const isMobile = () => (/android|webos|iphone|ipad|ipod|blackberry|windows phone
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pipes__ = __webpack_require__(864);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__validators__ = __webpack_require__(650);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pipes_label_pipe__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pipes_label_pipe__ = __webpack_require__(328);
 
 
 
@@ -1441,6 +1441,35 @@ const ENV_PROVIDERS = [
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return LabelPipe; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__global_state__ = __webpack_require__(49);
+
+
+let LabelPipe = class LabelPipe {
+    constructor(state) {
+        this.state = state;
+    }
+    transform(input, params) {
+        let data = this.state.getGlobalSetting("label-dictionary");
+        if (!data)
+            data = JSON.parse(sessionStorage.getItem("label-dictionary"));
+        return data.filter(item => item.key === input)[0].value;
+    }
+};
+LabelPipe = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'labelPipe' }),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__global_state__["a" /* GlobalState */]])
+], LabelPipe);
+
+
+/***/ }),
+
+/***/ 329:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return DisableDateService; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__repositories__ = __webpack_require__(119);
@@ -1474,35 +1503,6 @@ DisableDateService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
     __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__repositories__["a" /* MasterRepo */]])
 ], DisableDateService);
-
-
-/***/ }),
-
-/***/ 329:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return LabelPipe; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__global_state__ = __webpack_require__(49);
-
-
-let LabelPipe = class LabelPipe {
-    constructor(state) {
-        this.state = state;
-    }
-    transform(input, params) {
-        let data = this.state.getGlobalSetting("label-dictionary");
-        if (!data)
-            data = JSON.parse(sessionStorage.getItem("label-dictionary"));
-        return data.filter(item => item.key === input)[0].value;
-    }
-};
-LabelPipe = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'labelPipe' }),
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__global_state__["a" /* GlobalState */]])
-], LabelPipe);
 
 
 /***/ }),
@@ -1612,7 +1612,6 @@ let TTLCacheService = class TTLCacheService {
     constructor(appState) {
         this.appState = appState;
         this.appState.notification$.subscribe((data) => {
-            debugger;
             if (data.nType === 1 && data.Data.action === 'clear-cache') {
                 for (let i = localStorage.length - 1; i >= 0; i--) {
                     const key = localStorage.key(i);
@@ -2895,7 +2894,7 @@ const PAGES_MENU = [
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_style_loader_app_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_style_loader_app_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_style_loader_theme_initial_scss__ = __webpack_require__(1355);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_style_loader_theme_initial_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_style_loader_theme_initial_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(329);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_service__ = __webpack_require__(159);
 
 
@@ -3054,8 +3053,8 @@ App = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_forms_components_inputs_components_datepicker_datepicker_component__ = __webpack_require__(646);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_forms_components_inputs_components_timepicker_timepicker_component__ = __webpack_require__(648);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_forms_components_inputs_components_employee_selector_employee_selector_component__ = __webpack_require__(647);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__app_common_services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(328);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__theme_pipes_label_pipe__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__app_common_services_disable_date_picker_disable_date_picker_service__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__theme_pipes_label_pipe__ = __webpack_require__(328);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__common_services_common_service__ = __webpack_require__(330);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__common_services_time_format_service__ = __webpack_require__(645);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__common_services_cache_service__ = __webpack_require__(421);

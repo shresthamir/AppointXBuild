@@ -2,5 +2,9 @@
     {
         "key" : "customer",
         "value" : "Guest"
+    },
+    {
+        "key" : "employee",
+        "value" : "Therapist"
     }
 ]

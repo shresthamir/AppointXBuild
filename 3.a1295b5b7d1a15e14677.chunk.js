@@ -1,32 +1,27 @@
-webpackJsonp([2],{
+webpackJsonp([3],{
 
-/***/ 1375:
+/***/ 1377:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReportsModule", (function() { return ReportsModule; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_messageReport_component__ = __webpack_require__(1529);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_bootstrap__ = __webpack_require__(1378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__report_routing__ = __webpack_require__(1560);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__report_component__ = __webpack_require__(1536);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_services_permission_guard_service__ = __webpack_require__(640);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_report_service__ = __webpack_require__(1412);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__theme_nga_module__ = __webpack_require__(223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_customerReport_component__ = __webpack_require__(1526);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserManagerModule", (function() { return UserManagerModule; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__userManager_component__ = __webpack_require__(1555);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_services_permission_guard_service__ = __webpack_require__(640);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_userManger_adduser_component__ = __webpack_require__(1551);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_userManger_userList_component__ = __webpack_require__(1554);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_forms__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__theme_nga_module__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_smart_table__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_ng2_smart_table__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ng2_bootstrap__ = __webpack_require__(1378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__userManager_routing__ = __webpack_require__(1565);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__login_login_module__ = __webpack_require__(331);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_roomReport_component__ = __webpack_require__(1533);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_employeeReport_component__ = __webpack_require__(1527);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_serviceReport_component__ = __webpack_require__(1535);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_seriesReport_component__ = __webpack_require__(1534);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_followupReport_component__ = __webpack_require__(1528);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_activityReport_component__ = __webpack_require__(1525);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_previews_schedulePreview_component__ = __webpack_require__(1531);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_previews_treatmentPreview_treatmentPreview_component__ = __webpack_require__(1532);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_previews_EditDetailPreview_editDetailPreview_component__ = __webpack_require__(1530);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_multiselect_dropdown__ = __webpack_require__(1495);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_userManger_roles_roleList_component__ = __webpack_require__(1553);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_userManger_roles_addRole_component__ = __webpack_require__(1552);
 
 
 
@@ -42,44 +37,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-
-
-
-
-
-let ReportsModule = class ReportsModule {
+let UserManagerModule = class UserManagerModule {
 };
-ReportsModule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
+UserManagerModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_core__["NgModule"])({
         imports: [
-            __WEBPACK_IMPORTED_MODULE_2__angular_common__["CommonModule"],
-            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormsModule"], __WEBPACK_IMPORTED_MODULE_3__angular_forms__["ReactiveFormsModule"],
-            __WEBPACK_IMPORTED_MODULE_9__theme_nga_module__["a" /* NgaModule */],
-            __WEBPACK_IMPORTED_MODULE_5__report_routing__["a" /* routing */],
-            __WEBPACK_IMPORTED_MODULE_4_ng2_bootstrap__["a" /* ModalModule */].forRoot(),
-            __WEBPACK_IMPORTED_MODULE_11__login_login_module__["LoginModule"]
+            __WEBPACK_IMPORTED_MODULE_5__angular_common__["CommonModule"],
+            __WEBPACK_IMPORTED_MODULE_7__theme_nga_module__["a" /* NgaModule */],
+            __WEBPACK_IMPORTED_MODULE_10__userManager_routing__["a" /* routing */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_forms__["FormsModule"],
+            __WEBPACK_IMPORTED_MODULE_8_ng2_smart_table__["Ng2SmartTableModule"],
+            __WEBPACK_IMPORTED_MODULE_6__angular_forms__["ReactiveFormsModule"],
+            __WEBPACK_IMPORTED_MODULE_9_ng2_bootstrap__["a" /* ModalModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_11__login_login_module__["LoginModule"],
+            __WEBPACK_IMPORTED_MODULE_12_angular2_multiselect_dropdown__["a" /* AngularMultiSelectModule */]
         ],
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_6__report_component__["a" /* Reports */],
-            __WEBPACK_IMPORTED_MODULE_10__components_customerReport_component__["a" /* CustomerReport */],
-            __WEBPACK_IMPORTED_MODULE_12__components_roomReport_component__["a" /* RoomReport */],
-            __WEBPACK_IMPORTED_MODULE_13__components_employeeReport_component__["a" /* EmployeeReport */],
-            __WEBPACK_IMPORTED_MODULE_14__components_serviceReport_component__["a" /* ServiceReport */],
-            __WEBPACK_IMPORTED_MODULE_15__components_seriesReport_component__["a" /* SeriesReport */],
-            __WEBPACK_IMPORTED_MODULE_16__components_followupReport_component__["a" /* FollowupReport */],
-            __WEBPACK_IMPORTED_MODULE_0__components_messageReport_component__["a" /* MessageReport */],
-            __WEBPACK_IMPORTED_MODULE_17__components_activityReport_component__["a" /* ActivityReport */],
-            __WEBPACK_IMPORTED_MODULE_18__components_previews_schedulePreview_component__["a" /* SchedulePreview */],
-            __WEBPACK_IMPORTED_MODULE_19__components_previews_treatmentPreview_treatmentPreview_component__["a" /* TreatmentPreview */],
-            __WEBPACK_IMPORTED_MODULE_20__components_previews_EditDetailPreview_editDetailPreview_component__["a" /* EditDetailPreview */]
+            __WEBPACK_IMPORTED_MODULE_2__components_userManger_adduser_component__["a" /* AddUser */], __WEBPACK_IMPORTED_MODULE_0__userManager_component__["a" /* UserManager */], __WEBPACK_IMPORTED_MODULE_3__components_userManger_userList_component__["a" /* UserList */], __WEBPACK_IMPORTED_MODULE_13__components_userManger_roles_roleList_component__["a" /* RoleList */], __WEBPACK_IMPORTED_MODULE_14__components_userManger_roles_addRole_component__["a" /* AddRole */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_7__common_services_permission_guard_service__["a" /* CanActivateTeam */], __WEBPACK_IMPORTED_MODULE_8__components_report_service__["a" /* ReportService */]
+            __WEBPACK_IMPORTED_MODULE_1__common_services_permission_guard_service__["a" /* CanActivateTeam */]
         ]
     }), 
     __metadata('design:paramtypes', [])
-], ReportsModule);
+], UserManagerModule);
 
 
 /***/ }),
@@ -2357,52 +2338,98 @@ function OnChange(defaultValue) {
 
 /***/ }),
 
-/***/ 1411:
-/***/ (function(module, exports) {
-
-module.exports = "select{max-height:35px}input{max-height:35px}.time-slot label{padding:10px 20px;color:#FFF;cursor:pointer;background:darkred;border-radius:5px;transition:0.3s ease all;font-size:small}.time-slot label:hover{transform:scale(1.3)}.employeeRow{border-bottom:1px solid rgba(0,0,0,0.12);box-shadow:0 1px 0 0 rgba(255,255,255,0.12)}#tblSchedule{overflow-x:scroll;margin-left:135px;margin-right:5px;overflow-y:visible;padding:0}table,tr{border-collapse:collapse}table#dayWiseSchedule tr{height:30px}table#dayWiseSchedule td{width:30px}table#dayWiseSchedule{width:-moz-available;color:black;background:white;text-align:center;box-shadow:0px 10px 10px #888888;height:100%}.dayWiseSchedule{color:black;background:white;text-align:center;box-shadow:0px 10px 10px #888888}.headcol{position:absolute;width:5em;left:50px;top:auto}.branchHeader{position:absolute;width:auto;left:50px;top:auto;font-size:11px;font-weight:bold;padding:5px 2px;height:30px}table#tblPatientInfo{text-align:left}table#tblPatientInfo tr{height:25px}table#tblPatientInfo td:nth-child(1){width:100px}table#tblPatientInfo td:nth-child(2){width:350px;font-weight:600}table#tblPatientInfo td:nth-child(3){width:100px}table#tblPatientInfo td:nth-child(4){width:150px;font-weight:600}.verticalTimeTableLabel label{display:block;overflow:hidden;background-color:#98D6EB;width:100px;margin:0px;border:1px solid darkblue;background:#4286f4;color:white;font-size:11px}.tabelRowWithAutoScroll div{overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;scrollbar-shadow-color:#0033CC}.timeline{display:inline-block;position:relative;overflow:hidden;background-color:#98D6EB;height:50px;margin:0px;border:1px solid darkblue;background:#4286f4;color:white;font-size:10px;width:100%;border-radius:5px}.emptooltip{position:relative;flex:1}.tooltiptext{display:none;width:200px;border:1px solid #4286f4;background:white;padding:5px 0;border-radius:6px;font-family:calibri;padding:2px;position:absolute;z-index:100;top:40px;left:40px}table#tooltipTable{text-align:left;border-collapse:collapse}table#tooltipTable tr{height:20px}.emptooltip:hover span.tooltiptext{display:block}.close-pdf{position:absolute;height:5px;width:5px;padding:0px;left:107px}.d-none{display:none !important}.d-inline{display:inline !important}.d-inline-block{display:inline-block !important}.d-block{display:block !important}.d-table{display:table !important}.d-table-row{display:table-row !important}.d-table-cell{display:table-cell !important}.d-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}.d-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}@media (min-width: 576px){.d-sm-none{display:none !important}.d-sm-inline{display:inline !important}.d-sm-inline-block{display:inline-block !important}.d-sm-block{display:block !important}.d-sm-table{display:table !important}.d-sm-table-row{display:table-row !important}.d-sm-table-cell{display:table-cell !important}.d-sm-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}.d-sm-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}}@media (min-width: 768px){.d-md-none{display:none !important}.d-md-inline{display:inline !important}.d-md-inline-block{display:inline-block !important}.d-md-block{display:block !important}.d-md-table{display:table !important}.d-md-table-row{display:table-row !important}.d-md-table-cell{display:table-cell !important}.d-md-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}.d-md-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}}@media (min-width: 992px){.d-lg-none{display:none !important}.d-lg-inline{display:inline !important}.d-lg-inline-block{display:inline-block !important}.d-lg-block{display:block !important}.d-lg-table{display:table !important}.d-lg-table-row{display:table-row !important}.d-lg-table-cell{display:table-cell !important}.d-lg-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}.d-lg-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}}@media (min-width: 1200px){.d-xl-none{display:none !important}.d-xl-inline{display:inline !important}.d-xl-inline-block{display:inline-block !important}.d-xl-block{display:block !important}.d-xl-table{display:table !important}.d-xl-table-row{display:table-row !important}.d-xl-table-cell{display:table-cell !important}.d-xl-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}.d-xl-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}}@media (min-width: 1800px){.col-xxl-1{float:left;width:10%}.col-xxl-3{float:left;width:30%}.col-xxl-4{float:left;width:40%}.col-xxl-6{float:left;width:60%}}@media (min-width: 2160px){.col-xxxl-1{float:left;width:8.3333%}.col-xxxl-4{float:left;width:33.3333%}.col-xxxl-6{float:left;width:50%}}.switch{position:relative;display:inline-block;width:42px;height:20px}.switch input{opacity:0;width:0;height:0}.slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s}.slider:before{position:absolute;content:\"\";height:14px;width:14px;left:4px;bottom:3px;background-color:white;-webkit-transition:.4s;transition:.4s}input:checked+.slider{background-color:#2196F3}input:focus+.slider{box-shadow:0 0 1px #2196F3}input:checked+.slider:before{-webkit-transform:translateX(20px);-ms-transform:translateX(20px);transform:translateX(20px)}.slider.round{border-radius:26px}.slider.round:before{border-radius:50%}.centeredColumn{text-align:center}.disabledFont{color:#666666 !important}.table{width:100%;margin-bottom:1rem;background-color:transparent}.table td,.table th{padding:1rem;vertical-align:top;border-top:1px solid #e9ecef}.table thead th{vertical-align:bottom;border-bottom:2px solid #e9ecef}.table tbody+tbody{border-top:2px solid #e9ecef}.table .table{background-color:#f8f9fe}.table-sm td,.table-sm th{padding:0.5rem}.table-bordered,.table-bordered td,.table-bordered th{border:1px solid #e9ecef}.table-bordered thead td,.table-bordered thead th{border-bottom-width:2px}.table-borderless tbody+tbody,.table-borderless td,.table-borderless th,.table-borderless thead th{border:0}.table-striped tbody tr:nth-of-type(odd){background-color:rgba(0,0,0,0.05)}.table-hover tbody tr:hover{background-color:#f6f9fc}.table-primary,.table-primary>td,.table-primary>th{background-color:#d2d8f7}.table-hover .table-primary:hover,.table-hover .table-primary:hover>td,.table-hover .table-primary:hover>th{background-color:#bcc5f3}.table-secondary,.table-secondary>td,.table-secondary>th{background-color:#fdfefe}.table-hover .table-secondary:hover,.table-hover .table-secondary:hover>td,.table-hover .table-secondary:hover>th{background-color:#ecf6f6}.table-success,.table-success>td,.table-success>th{background-color:#c4f1de}.table-hover .table-success:hover,.table-hover .table-success:hover>td,.table-hover .table-success:hover>th{background-color:#afecd2}.table-info,.table-info>td,.table-info>th{background-color:#bcf1fb}.table-hover .table-info:hover,.table-hover .table-info:hover>td,.table-hover .table-info:hover>th{background-color:#a4ecfa}.table-warning,.table-warning>td,.table-warning>th{background-color:#fed3ca}.table-hover .table-warning:hover,.table-hover .table-warning:hover>td,.table-hover .table-warning:hover>th{background-color:#febeb1}.table-danger,.table-danger>td,.table-danger>th{background-color:#fcc7d1}.table-hover .table-danger:hover,.table-hover .table-danger:hover>td,.table-hover .table-danger:hover>th{background-color:#fbafbd}.table-light,.table-light>td,.table-light>th{background-color:#e8eaed}.table-hover .table-light:hover,.table-hover .table-light:hover>td,.table-hover .table-light:hover>th{background-color:#dadde2}.table-dark,.table-dark>td,.table-dark>th{background-color:#c1c2c3}.table-hover .table-dark:hover,.table-hover .table-dark:hover>td,.table-hover .table-dark:hover>th{background-color:#b4b5b6}.table-default,.table-default>td,.table-default>th{background-color:#bec4cd}.table-hover .table-default:hover,.table-hover .table-default:hover>td,.table-hover .table-default:hover>th{background-color:#b0b7c2}.table-white,.table-white>td,.table-white>th{background-color:#fff}.table-hover .table-white:hover,.table-hover .table-white:hover>td,.table-hover .table-white:hover>th{background-color:#f2f2f2}.table-neutral,.table-neutral>td,.table-neutral>th{background-color:#fff}.table-hover .table-neutral:hover,.table-hover .table-neutral:hover>td,.table-hover .table-neutral:hover>th{background-color:#f2f2f2}.table-darker,.table-darker>td,.table-darker>th{background-color:#b8b8b8}.table-hover .table-darker:hover,.table-hover .table-darker:hover>td,.table-hover .table-darker:hover>th{background-color:#ababab}.table-active,.table-active>td,.table-active>th{background-color:#f6f9fc}.table-hover .table-active:hover,.table-hover .table-active:hover>td,.table-hover .table-active:hover>th{background-color:#e3ecf6}.table .thead-dark th{color:#f8f9fe;background-color:#172b4d;border-color:#1f3a68}.table .thead-light th{color:#495057;background-color:#e9ecef;border-color:#dee2e6}.table .tfoot-light th{color:#495057;background-color:#e9ecef;border-color:#dee2e6}.table-dark{color:#f8f9fe;background-color:#172b4d}.table-dark td,.table-dark th,.table-dark thead th{border-color:#1f3a68}.table-dark.table-bordered{border:0}.table-dark.table-striped tbody tr:nth-of-type(odd){background-color:rgba(255,255,255,0.05)}.table-dark.table-hover tbody tr:hover{background-color:rgba(255,255,255,0.075)}@media (max-width: 575.98px){.table-responsive-sm{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:-ms-autohiding-scrollbar}.table-responsive-sm>.table-bordered{border:0}}@media (max-width: 767.98px){.table-responsive-md{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:-ms-autohiding-scrollbar}.table-responsive-md>.table-bordered{border:0}}@media (max-width: 991.98px){.table-responsive-lg{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:-ms-autohiding-scrollbar}.table-responsive-lg>.table-bordered{border:0}}@media (max-width: 1199.98px){.table-responsive-xl{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:-ms-autohiding-scrollbar}.table-responsive-xl>.table-bordered{border:0}}.table-responsive{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:-ms-autohiding-scrollbar}.table-responsive>.table-bordered{border:0}.invalid-feedback{float:inline-start;display:none;width:100%;margin-top:0.25rem;font-size:80%;color:#fb6340}.d-block{display:block !important}.c-btn.disabled{background:none !important}.input-like{display:block;padding:6px 12px;border:1px solid #ccc;border-radius:4px;background-color:#fff;font-family:inherit;font-size:14px;line-height:1.5;color:#495057}.input-like.disabled{background-color:#e9ecef;color:#6c757d;cursor:not-allowed}\n"
-
-/***/ }),
-
-/***/ 1412:
+/***/ 1413:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return ReportService; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return Item; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", (function() { return Badge; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", (function() { return Search; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", (function() { return TemplateRenderer; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_services_permission_authService_service__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global_state__ = __webpack_require__(49);
 
-
-
-
-let ReportService = class ReportService {
-    constructor(http, authService, gblState) {
-        this.http = http;
-        this.authService = authService;
-        this.gblState = gblState;
-        let url = this.gblState.getGlobalSetting("apiUrl");
-        if (!!url && url.length > 0)
-            this.apiUrl = url[0];
+var Item = /** @class */ (function () {
+    function Item() {
     }
-    getReport(data, url) {
-        return this.http.post(this.apiUrl + url, data, this.authService.getRequestOption())
-            .map(res => res.json());
-    }
-    getForms() {
-        return this.http.get(this.apiUrl + "/getForms", this.authService.getRequestOption())
-            .flatMap(res => res.json() || []);
-    }
-    getLogDetail(logId) {
-        return this.http.get(this.apiUrl + "/GetLogDetail?logId=" + logId, this.authService.getRequestOption());
-    }
-};
-ReportService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */], __WEBPACK_IMPORTED_MODULE_2__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__global_state__["a" /* GlobalState */]])
-], ReportService);
+    Item.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"], args: [{
+                    selector: 'c-item',
+                    template: ""
+                },] },
+    ];
+    /** @nocollapse */
+    Item.ctorParameters = function () { return []; };
+    Item.propDecorators = {
+        'template': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChild"], args: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"],] },],
+    };
+    return Item;
+}());
 
+var Badge = /** @class */ (function () {
+    function Badge() {
+    }
+    Badge.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"], args: [{
+                    selector: 'c-badge',
+                    template: ""
+                },] },
+    ];
+    /** @nocollapse */
+    Badge.ctorParameters = function () { return []; };
+    Badge.propDecorators = {
+        'template': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChild"], args: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"],] },],
+    };
+    return Badge;
+}());
+
+var Search = /** @class */ (function () {
+    function Search() {
+    }
+    Search.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"], args: [{
+                    selector: 'c-search',
+                    template: ""
+                },] },
+    ];
+    /** @nocollapse */
+    Search.ctorParameters = function () { return []; };
+    Search.propDecorators = {
+        'template': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChild"], args: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"],] },],
+    };
+    return Search;
+}());
+
+var TemplateRenderer = /** @class */ (function () {
+    function TemplateRenderer(viewContainer) {
+        this.viewContainer = viewContainer;
+    }
+    TemplateRenderer.prototype.ngOnInit = function () {
+        this.view = this.viewContainer.createEmbeddedView(this.data.template, {
+            '\$implicit': this.data,
+            'item': this.item
+        });
+    };
+    TemplateRenderer.prototype.ngOnDestroy = function () {
+        this.view.destroy();
+    };
+    TemplateRenderer.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"], args: [{
+                    selector: 'c-templateRenderer',
+                    template: ""
+                },] },
+    ];
+    /** @nocollapse */
+    TemplateRenderer.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
+    ]; };
+    TemplateRenderer.propDecorators = {
+        'data': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+        'item': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    };
+    return TemplateRenderer;
+}());
+
+//# sourceMappingURL=menu-item.js.map
 
 /***/ }),
 
@@ -7684,6 +7711,729 @@ var Utils = (function () {
 
 /***/ }),
 
+/***/ 1466:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return ClickOutsideDirective; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", (function() { return ScrollDirective; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", (function() { return styleDirective; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", (function() { return setPosition; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+
+var ClickOutsideDirective = /** @class */ (function () {
+    function ClickOutsideDirective(_elementRef) {
+        this._elementRef = _elementRef;
+        this.clickOutside = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+    }
+    ClickOutsideDirective.prototype.onClick = function (event, targetElement) {
+        if (!targetElement) {
+            return;
+        }
+        var clickedInside = this._elementRef.nativeElement.contains(targetElement);
+        if (!clickedInside) {
+            this.clickOutside.emit(event);
+        }
+    };
+    ClickOutsideDirective.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{
+                    selector: '[clickOutside]'
+                },] },
+    ];
+    /** @nocollapse */
+    ClickOutsideDirective.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], },
+    ]; };
+    ClickOutsideDirective.propDecorators = {
+        'clickOutside': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"] },],
+        'onClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"], args: ['document:click', ['$event', '$event.target'],] }, { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"], args: ['document:touchstart', ['$event', '$event.target'],] },],
+    };
+    return ClickOutsideDirective;
+}());
+
+var ScrollDirective = /** @class */ (function () {
+    function ScrollDirective(_elementRef) {
+        this._elementRef = _elementRef;
+        this.scroll = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+    }
+    ScrollDirective.prototype.onClick = function (event, targetElement) {
+        this.scroll.emit(event);
+    };
+    ScrollDirective.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{
+                    selector: '[scroll]'
+                },] },
+    ];
+    /** @nocollapse */
+    ScrollDirective.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], },
+    ]; };
+    ScrollDirective.propDecorators = {
+        'scroll': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"] },],
+        'onClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"], args: ['scroll', ['$event'],] },],
+    };
+    return ScrollDirective;
+}());
+
+var styleDirective = /** @class */ (function () {
+    function styleDirective(el) {
+        this.el = el;
+    }
+    styleDirective.prototype.ngOnInit = function () {
+        this.el.nativeElement.style.top = this.styleVal;
+    };
+    styleDirective.prototype.ngOnChanges = function () {
+        this.el.nativeElement.style.top = this.styleVal;
+    };
+    styleDirective.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{
+                    selector: '[styleProp]'
+                },] },
+    ];
+    /** @nocollapse */
+    styleDirective.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], },
+    ]; };
+    styleDirective.propDecorators = {
+        'styleVal': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"], args: ['styleProp',] },],
+    };
+    return styleDirective;
+}());
+
+var setPosition = /** @class */ (function () {
+    function setPosition(el) {
+        this.el = el;
+    }
+    setPosition.prototype.ngOnInit = function () {
+        if (this.height) {
+            this.el.nativeElement.style.bottom = parseInt(this.height + 15 + "") + 'px';
+        }
+    };
+    setPosition.prototype.ngOnChanges = function () {
+        if (this.height) {
+            this.el.nativeElement.style.bottom = parseInt(this.height + 15 + "") + 'px';
+        }
+    };
+    setPosition.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{
+                    selector: '[setPosition]'
+                },] },
+    ];
+    /** @nocollapse */
+    setPosition.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], },
+    ]; };
+    setPosition.propDecorators = {
+        'height': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"], args: ['setPosition',] },],
+    };
+    return setPosition;
+}());
+
+//# sourceMappingURL=clickOutside.js.map
+
+/***/ }),
+
+/***/ 1467:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return ListFilterPipe; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__multiselect_service__ = __webpack_require__(1469);
+
+
+var ListFilterPipe = /** @class */ (function () {
+    function ListFilterPipe(ds) {
+        this.ds = ds;
+        this.filteredList = [];
+    }
+    ListFilterPipe.prototype.transform = function (items, filter, searchBy) {
+        var _this = this;
+        if (!items || !filter) {
+            this.ds.setData(items);
+            return items;
+        }
+        this.filteredList = items.filter((function (item) { return _this.applyFilter(item, filter, searchBy); }));
+        this.ds.setData(this.filteredList);
+        return this.filteredList;
+    };
+    ListFilterPipe.prototype.applyFilter = function (item, filter, searchBy) {
+        var found = false;
+        if (searchBy.length > 0) {
+            for (var t = 0; t < searchBy.length; t++) {
+                if (filter && item[searchBy[t]] && item[searchBy[t]] != "") {
+                    if (item[searchBy[t]].toString().toLowerCase().indexOf(filter.toLowerCase()) >= 0) {
+                        found = true;
+                    }
+                }
+            }
+        }
+        else {
+            for (var prop in item) {
+                if (filter && item[prop]) {
+                    if (item[prop].toString().toLowerCase().indexOf(filter.toLowerCase()) >= 0) {
+                        found = true;
+                    }
+                }
+            }
+        }
+        return found;
+    };
+    ListFilterPipe.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{
+                    name: 'listFilter',
+                    pure: true
+                },] },
+    ];
+    /** @nocollapse */
+    ListFilterPipe.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_1__multiselect_service__["a" /* DataService */], },
+    ]; };
+    return ListFilterPipe;
+}());
+
+//# sourceMappingURL=list-filter.js.map
+
+/***/ }),
+
+/***/ 1468:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export DROPDOWN_CONTROL_VALUE_ACCESSOR */
+/* unused harmony export DROPDOWN_CONTROL_VALIDATION */
+/* unused harmony export AngularMultiSelect */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AngularMultiSelectModule; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__multiselect_model__ = __webpack_require__(1496);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__clickOutside__ = __webpack_require__(1466);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__list_filter__ = __webpack_require__(1467);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__menu_item__ = __webpack_require__(1413);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__multiselect_service__ = __webpack_require__(1469);
+
+
+
+
+
+
+
+
+var DROPDOWN_CONTROL_VALUE_ACCESSOR = {
+    provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["NG_VALUE_ACCESSOR"],
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["forwardRef"])((function () { return AngularMultiSelect; })),
+    multi: true
+};
+var DROPDOWN_CONTROL_VALIDATION = {
+    provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["NG_VALIDATORS"],
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["forwardRef"])((function () { return AngularMultiSelect; })),
+    multi: true,
+};
+var noop = function () {
+};
+var AngularMultiSelect = /** @class */ (function () {
+    function AngularMultiSelect(_elementRef, cdr, ds) {
+        this._elementRef = _elementRef;
+        this.cdr = cdr;
+        this.ds = ds;
+        this.onSelect = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.onDeSelect = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.onSelectAll = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.onDeSelectAll = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.onOpen = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.onClose = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.isActive = false;
+        this.isSelectAll = false;
+        this.isFilterSelectAll = false;
+        this.isInfiniteFilterSelectAll = false;
+        this.chunkIndex = [];
+        this.cachedItems = [];
+        this.itemHeight = 41.6;
+        this.filterLength = 0;
+        this.infiniteFilterLength = 0;
+        this.defaultSettings = {
+            singleSelection: false,
+            text: 'Select',
+            enableCheckAll: true,
+            selectAllText: 'Select All',
+            unSelectAllText: 'UnSelect All',
+            filterSelectAllText: 'Select all filtered results',
+            filterUnSelectAllText: 'UnSelect all filtered results',
+            enableSearchFilter: false,
+            searchBy: [],
+            maxHeight: 300,
+            badgeShowLimit: 999999999999,
+            classes: '',
+            disabled: false,
+            searchPlaceholderText: 'Search',
+            showCheckbox: true,
+            noDataLabel: 'No Data Available',
+            searchAutofocus: true,
+            lazyLoading: false,
+            labelKey: 'itemName',
+            primaryKey: 'id',
+            position: 'bottom',
+            enableFilterSelectAll: true
+        };
+        this.filteredList = [];
+        this.onTouchedCallback = noop;
+        this.onChangeCallback = noop;
+    }
+    AngularMultiSelect.prototype.ngOnInit = function () {
+        var _this = this;
+        console.log(this.data);
+        this.settings = Object.assign(this.defaultSettings, this.settings);
+        if (this.settings.groupBy) {
+            this.groupedData = this.transformData(this.data, this.settings.groupBy);
+        }
+        this.totalRows = (this.data && this.data.length);
+        this.cachedItems = this.data;
+        this.screenItemsLen = Math.ceil(this.settings.maxHeight / this.itemHeight);
+        this.cachedItemsLen = this.screenItemsLen * 3;
+        this.totalHeight = this.itemHeight * this.totalRows;
+        this.maxBuffer = this.screenItemsLen * this.itemHeight;
+        this.lastScrolled = 0;
+        this.renderChunk(0, this.cachedItemsLen / 2);
+        if (this.settings.position == 'top') {
+            setTimeout((function () {
+                _this.selectedListHeight = { val: 0 };
+                _this.selectedListHeight.val = _this.selectedListElem.nativeElement.clientHeight;
+            }));
+        }
+        this.subscription = this.ds.getData().subscribe((function (data) {
+            _this.filterLength = data.length;
+            _this.onFilterChange(data);
+        }));
+    };
+    AngularMultiSelect.prototype.ngOnChanges = function (changes) {
+        if (changes.data && !changes.data.firstChange) {
+            if (this.settings.groupBy) {
+                this.groupedData = this.transformData(this.data, this.settings.groupBy);
+                if (this.data.length == 0) {
+                    this.selectedItems = [];
+                }
+            }
+        }
+        if (changes.settings && !changes.settings.firstChange) {
+            this.settings = Object.assign(this.defaultSettings, this.settings);
+        }
+    };
+    AngularMultiSelect.prototype.ngDoCheck = function () {
+        if (this.selectedItems) {
+            if (this.selectedItems.length == 0 || this.data.length == 0 || this.selectedItems.length < this.data.length) {
+                this.isSelectAll = false;
+            }
+        }
+    };
+    AngularMultiSelect.prototype.ngAfterViewInit = function () {
+        if (this.settings.lazyLoading) {
+            this._elementRef.nativeElement.getElementsByClassName("lazyContainer")[0].addEventListener('scroll', this.onScroll.bind(this));
+        }
+    };
+    AngularMultiSelect.prototype.ngAfterViewChecked = function () {
+        if (this.selectedListElem.nativeElement.clientHeight && this.settings.position == 'top' && this.selectedListHeight) {
+            this.selectedListHeight.val = this.selectedListElem.nativeElement.clientHeight;
+            this.cdr.detectChanges();
+        }
+    };
+    AngularMultiSelect.prototype.onItemClick = function (item, index, evt) {
+        if (this.settings.disabled) {
+            return false;
+        }
+        var found = this.isSelected(item);
+        var limit = this.selectedItems.length < this.settings.limitSelection ? true : false;
+        if (!found) {
+            if (this.settings.limitSelection) {
+                if (limit) {
+                    this.addSelected(item);
+                    this.onSelect.emit(item);
+                }
+            }
+            else {
+                this.addSelected(item);
+                this.onSelect.emit(item);
+            }
+        }
+        else {
+            this.removeSelected(item);
+            this.onDeSelect.emit(item);
+        }
+        if (this.isSelectAll || this.data.length > this.selectedItems.length) {
+            this.isSelectAll = false;
+        }
+        if (this.data.length == this.selectedItems.length) {
+            this.isSelectAll = true;
+        }
+    };
+    AngularMultiSelect.prototype.validate = function (c) {
+        return null;
+    };
+    AngularMultiSelect.prototype.writeValue = function (value) {
+        if (value !== undefined && value !== null) {
+            if (this.settings.singleSelection) {
+                try {
+                    if (value.length > 1) {
+                        this.selectedItems = [value[0]];
+                        throw new __WEBPACK_IMPORTED_MODULE_3__multiselect_model__["a" /* MyException */](404, { "msg": "Single Selection Mode, Selected Items cannot have more than one item." });
+                    }
+                    else {
+                        this.selectedItems = value;
+                    }
+                }
+                catch (e) {
+                    console.error(e.body.msg);
+                }
+            }
+            else {
+                if (this.settings.limitSelection) {
+                    this.selectedItems = value.slice(0, this.settings.limitSelection);
+                }
+                else {
+                    this.selectedItems = value;
+                }
+                if (this.selectedItems.length === this.data.length && this.data.length > 0) {
+                    this.isSelectAll = true;
+                }
+            }
+        }
+        else {
+            this.selectedItems = [];
+        }
+    };
+    //From ControlValueAccessor interface
+    AngularMultiSelect.prototype.registerOnChange = function (fn) {
+        this.onChangeCallback = fn;
+    };
+    //From ControlValueAccessor interface
+    AngularMultiSelect.prototype.registerOnTouched = function (fn) {
+        this.onTouchedCallback = fn;
+    };
+    AngularMultiSelect.prototype.trackByFn = function (index, item) {
+        return item[this.settings.primaryKey];
+    };
+    AngularMultiSelect.prototype.isSelected = function (clickedItem) {
+        var _this = this;
+        var found = false;
+        this.selectedItems && this.selectedItems.forEach((function (item) {
+            if (clickedItem[_this.settings.primaryKey] === item[_this.settings.primaryKey]) {
+                found = true;
+            }
+        }));
+        return found;
+    };
+    AngularMultiSelect.prototype.addSelected = function (item) {
+        if (this.settings.singleSelection) {
+            this.selectedItems = [];
+            this.selectedItems.push(item);
+            this.closeDropdown();
+        }
+        else
+            this.selectedItems.push(item);
+        this.onChangeCallback(this.selectedItems);
+        this.onTouchedCallback(this.selectedItems);
+    };
+    AngularMultiSelect.prototype.removeSelected = function (clickedItem) {
+        var _this = this;
+        this.selectedItems && this.selectedItems.forEach((function (item) {
+            if (clickedItem[_this.settings.primaryKey] === item[_this.settings.primaryKey]) {
+                _this.selectedItems.splice(_this.selectedItems.indexOf(item), 1);
+            }
+        }));
+        this.onChangeCallback(this.selectedItems);
+        this.onTouchedCallback(this.selectedItems);
+    };
+    AngularMultiSelect.prototype.toggleDropdown = function (evt) {
+        var _this = this;
+        if (this.settings.disabled) {
+            return false;
+        }
+        this.isActive = !this.isActive;
+        if (this.isActive && this.searchInput) {
+            if (this.settings.searchAutofocus && this.settings.enableSearchFilter && !this.searchTempl) {
+                setTimeout((function () {
+                    _this.searchInput.nativeElement.focus();
+                }), 0);
+            }
+            this.onOpen.emit(true);
+        }
+        else {
+            this.onClose.emit(false);
+        }
+        evt.preventDefault();
+    };
+    AngularMultiSelect.prototype.closeDropdown = function () {
+        if (this.searchInput && this.settings.lazyLoading) {
+            this.searchInput.nativeElement.value = "";
+            this.data = [];
+            this.data = this.cachedItems;
+            this.totalHeight = this.itemHeight * this.data.length;
+            this.totalRows = this.data.length;
+            this.updateView(this.scrollTop);
+        }
+        if (this.searchInput) {
+            this.searchInput.nativeElement.value = "";
+        }
+        this.filter = "";
+        this.isActive = false;
+        this.onClose.emit(false);
+    };
+    AngularMultiSelect.prototype.toggleSelectAll = function () {
+        console.log(this.ds.getData());
+        console.log(this.filter);
+        if (!this.isSelectAll) {
+            this.selectedItems = [];
+            this.selectedItems = this.data.slice();
+            this.isSelectAll = true;
+            this.onChangeCallback(this.selectedItems);
+            this.onTouchedCallback(this.selectedItems);
+            this.onSelectAll.emit(this.selectedItems);
+        }
+        else {
+            this.selectedItems = [];
+            this.isSelectAll = false;
+            this.onChangeCallback(this.selectedItems);
+            this.onTouchedCallback(this.selectedItems);
+            this.onDeSelectAll.emit(this.selectedItems);
+        }
+    };
+    AngularMultiSelect.prototype.toggleFilterSelectAll = function () {
+        var _this = this;
+        if (!this.isFilterSelectAll) {
+            this.ds.getFilteredData().forEach((function (item) {
+                if (!_this.isSelected(item)) {
+                    _this.addSelected(item);
+                }
+            }));
+            this.isFilterSelectAll = true;
+        }
+        else {
+            this.ds.getFilteredData().forEach((function (item) {
+                if (_this.isSelected(item)) {
+                    _this.removeSelected(item);
+                }
+            }));
+            this.isFilterSelectAll = false;
+        }
+    };
+    AngularMultiSelect.prototype.toggleInfiniteFilterSelectAll = function () {
+        var _this = this;
+        if (!this.isInfiniteFilterSelectAll) {
+            this.data.forEach((function (item) {
+                if (!_this.isSelected(item)) {
+                    _this.addSelected(item);
+                }
+            }));
+            this.isInfiniteFilterSelectAll = true;
+        }
+        else {
+            this.data.forEach((function (item) {
+                if (_this.isSelected(item)) {
+                    _this.removeSelected(item);
+                }
+            }));
+            this.isInfiniteFilterSelectAll = false;
+        }
+    };
+    AngularMultiSelect.prototype.clearSearch = function () {
+        this.filter = "";
+        this.isFilterSelectAll = false;
+    };
+    AngularMultiSelect.prototype.onFilterChange = function (data) {
+        var _this = this;
+        if (this.filter && this.filter == "" || data.length == 0) {
+            this.isFilterSelectAll = false;
+        }
+        var cnt = 0;
+        data.forEach((function (item) {
+            if (_this.isSelected(item)) {
+                cnt++;
+            }
+        }));
+        if (cnt > 0 && this.filterLength == cnt) {
+            this.isFilterSelectAll = true;
+        }
+        else if (cnt > 0 && this.filterLength != cnt) {
+            this.isFilterSelectAll = false;
+        }
+        this.cdr.detectChanges();
+    };
+    AngularMultiSelect.prototype.transformData = function (arr, field) {
+        var groupedObj = arr.reduce((function (prev, cur) {
+            if (!prev[cur[field]]) {
+                prev[cur[field]] = [cur];
+            }
+            else {
+                prev[cur[field]].push(cur);
+            }
+            return prev;
+        }), {});
+        var tempArr = [];
+        Object.keys(groupedObj).map((function (x) {
+            tempArr.push({ key: x, value: groupedObj[x] });
+        }));
+        return tempArr;
+    };
+    AngularMultiSelect.prototype.renderChunk = function (fromPos, howMany) {
+        this.chunkArray = [];
+        this.chunkIndex = [];
+        var finalItem = fromPos + howMany;
+        if (finalItem > this.totalRows)
+            finalItem = this.totalRows;
+        for (var i = fromPos; i < finalItem; i++) {
+            this.chunkIndex.push((i * this.itemHeight) + 'px');
+            this.chunkArray.push(this.data[i]);
+        }
+    };
+    AngularMultiSelect.prototype.onScroll = function (e) {
+        this.scrollTop = e.target.scrollTop;
+        this.updateView(this.scrollTop);
+    };
+    AngularMultiSelect.prototype.updateView = function (scrollTop) {
+        var scrollPos = scrollTop ? scrollTop : 0;
+        var first = (scrollPos / this.itemHeight) - this.screenItemsLen;
+        var firstTemp = "" + first;
+        first = parseInt(firstTemp) < 0 ? 0 : parseInt(firstTemp);
+        this.renderChunk(first, this.cachedItemsLen);
+        this.lastRepaintY = scrollPos;
+    };
+    AngularMultiSelect.prototype.filterInfiniteList = function (evt) {
+        var filteredElems = [];
+        this.data = this.cachedItems.slice();
+        if (evt.target.value.toString() != '') {
+            this.data.filter((function (el) {
+                for (var prop in el) {
+                    if (el[prop].toString().toLowerCase().indexOf(evt.target.value.toString().toLowerCase()) >= 0) {
+                        filteredElems.push(el);
+                        break;
+                    }
+                }
+            }));
+            //this.cachedItems = this.data;
+            this.totalHeight = this.itemHeight * filteredElems.length;
+            this.totalRows = filteredElems.length;
+            this.data = [];
+            this.data = filteredElems;
+            this.infiniteFilterLength = this.data.length;
+            this.updateView(this.scrollTop);
+        }
+        else if (evt.target.value.toString() == '' && this.cachedItems.length > 0) {
+            this.data = [];
+            this.data = this.cachedItems;
+            this.totalHeight = this.itemHeight * this.data.length;
+            this.totalRows = this.data.length;
+            this.infiniteFilterLength = 0;
+            this.updateView(this.scrollTop);
+        }
+    };
+    AngularMultiSelect.prototype.resetInfiniteSearch = function () {
+        this.filter = "";
+        this.isInfiniteFilterSelectAll = false;
+        this.data = [];
+        this.data = this.cachedItems;
+        this.totalHeight = this.itemHeight * this.data.length;
+        this.totalRows = this.data.length;
+        this.infiniteFilterLength = 0;
+        this.updateView(this.scrollTop);
+    };
+    AngularMultiSelect.prototype.ngOnDestroy = function () {
+        this.subscription.unsubscribe();
+    };
+    AngularMultiSelect.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"], args: [{
+                    selector: 'angular2-multiselect',
+                    template: "\n      <div class=\"cuppa-dropdown\" (clickOutside)=\"closeDropdown()\">\n          <div class=\"selected-list\" #selectedList>\n              <div class=\"c-btn form-control\" (click)=\"toggleDropdown($event)\" [ngClass]=\"{'disabled': settings.disabled}\" [attr.tabindex]=\"0\">\n                  <span *ngIf=\"selectedItems?.length == 0\">{{settings.text}}</span>\n                  <span *ngIf=\"settings.singleSelection && !badgeTempl\">\n                      <span *ngFor=\"let item of selectedItems;trackBy: trackByFn.bind(this);\">\n                          {{item[settings.labelKey]}}\n                      </span>\n                  </span>\n                  <span class=\"c-list\" *ngIf=\"selectedItems?.length > 0 && settings.singleSelection && badgeTempl \">\n                      <div class=\"c-token\" *ngFor=\"let item of selectedItems;trackBy: trackByFn.bind(this);let k = index\">\n                      <span *ngIf=\"!badgeTempl\" class=\"c-label\">{{item[settings.labelKey]}}</span>\n                  <span *ngIf=\"badgeTempl\" class=\"c-label\">\n                                  <c-templateRenderer [data]=\"badgeTempl\" [item]=\"item\"></c-templateRenderer>\n                              </span>\n                  <span class=\"c-remove\" (click)=\"onItemClick(item,k,$event)\">\n                                  <svg width=\"100%\" height=\"100%\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n              viewBox=\"0 0 47.971 47.971\" style=\"enable-background:new 0 0 47.971 47.971;\" xml:space=\"preserve\">\n          <g>\n              <path d=\"M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88\n                  c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242\n                  C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879\n                  s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z\"/>\n          </g>\n          </svg>\n\n                              </span>\n\n\n\n              </div>\n              </span>\n              <div class=\"c-list\" *ngIf=\"selectedItems?.length > 0 && !settings.singleSelection\">\n                  <div class=\"c-token\" *ngFor=\"let item of selectedItems;trackBy: trackByFn.bind(this);let k = index\" [hidden]=\"k > settings.badgeShowLimit-1\">\n                      <span *ngIf=\"!badgeTempl\" class=\"c-label\">{{item[settings.labelKey]}}</span>\n                      <span *ngIf=\"badgeTempl\" class=\"c-label\">\n                                  <c-templateRenderer [data]=\"badgeTempl\" [item]=\"item\"></c-templateRenderer>\n                              </span>\n                      <span class=\"c-remove\" (click)=\"onItemClick(item,k,$event)\">\n                                  <svg width=\"100%\" height=\"100%\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n              viewBox=\"0 0 47.971 47.971\" style=\"enable-background:new 0 0 47.971 47.971;\" xml:space=\"preserve\">\n          <g>\n              <path d=\"M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88\n                  c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242\n                  C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879\n                  s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z\"/>\n          </g>\n          </svg>\n\n                              </span>\n                  </div>\n              </div>\n              <span class=\"countplaceholder\" *ngIf=\"selectedItems?.length > settings.badgeShowLimit\">+{{selectedItems?.length - settings.badgeShowLimit }}</span>\n              <!--            <span class=\"fa\" [ngClass]=\"{'c-angle-down': !isActive,'fa-angle-up':isActive}\"></span>\n      --><span *ngIf=\"!isActive\" class=\"c-angle-down\">\n                      <svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n      \t width=\"100%\" height=\"100%\" viewBox=\"0 0 612 612\" style=\"enable-background:new 0 0 612 612;\" xml:space=\"preserve\">\n      <g>\n      \t<g id=\"_x31_0_34_\">\n      \t\t<g>\n      \t\t\t<path d=\"M604.501,134.782c-9.999-10.05-26.222-10.05-36.221,0L306.014,422.558L43.721,134.782\n      \t\t\t\tc-9.999-10.05-26.223-10.05-36.222,0s-9.999,26.35,0,36.399l279.103,306.241c5.331,5.357,12.422,7.652,19.386,7.296\n      \t\t\t\tc6.988,0.356,14.055-1.939,19.386-7.296l279.128-306.268C614.5,161.106,614.5,144.832,604.501,134.782z\"/>\n      \t\t</g>\n      \t</g>\n      </g>\n      </svg>\n\n                  </span>\n              <span *ngIf=\"isActive\" class=\"c-angle-up\">\n                      <svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n      \t width=\"100%\" height=\"100%\" viewBox=\"0 0 612 612\" style=\"enable-background:new 0 0 612 612;\" xml:space=\"preserve\">\n      <g>\n      \t<g id=\"_x39__30_\">\n      \t\t<g>\n      \t\t\t<path d=\"M604.501,440.509L325.398,134.956c-5.331-5.357-12.423-7.627-19.386-7.27c-6.989-0.357-14.056,1.913-19.387,7.27\n      \t\t\t\tL7.499,440.509c-9.999,10.024-9.999,26.298,0,36.323s26.223,10.024,36.222,0l262.293-287.164L568.28,476.832\n      \t\t\t\tc9.999,10.024,26.222,10.024,36.221,0C614.5,466.809,614.5,450.534,604.501,440.509z\"/>\n      \t\t</g>\n      \t</g>\n      </g>\n\n      </svg>\n\n                  </span>\n          </div>\n      </div>\n      <div [setPosition]=\"selectedListHeight?.val\" class=\"dropdown-list\" [ngClass]=\"{'dropdown-list-top': settings.position == 'top'}\"\n          [hidden]=\"!isActive\">\n          <div [ngClass]=\"{'arrow-up': settings.position == 'bottom', 'arrow-down': settings.position == 'top'}\" class=\"arrow-2\"></div>\n          <div [ngClass]=\"{'arrow-up': settings.position == 'bottom', 'arrow-down': settings.position == 'top'}\"></div>\n          <div class=\"list-area\">\n              <div class=\"pure-checkbox select-all\" *ngIf=\"settings.enableCheckAll && !settings.singleSelection && !settings.limitSelection && data?.length > 0\"\n                  (click)=\"toggleSelectAll()\">\n                  <input *ngIf=\"settings.showCheckbox\" type=\"checkbox\" [checked]=\"isSelectAll\" [disabled]=\"settings.limitSelection == selectedItems?.length\"\n                  />\n                  <label>\n                      <span [hidden]=\"isSelectAll\">{{settings.selectAllText}}</span>\n                      <span [hidden]=\"!isSelectAll\">{{settings.unSelectAllText}}</span>\n                  </label>\n              </div>\n              <div class=\"list-filter\" *ngIf=\"settings.enableSearchFilter\">\n                  <span class=\"c-search\">\n                          <svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n      \t width=\"100%\" height=\"100%\" viewBox=\"0 0 615.52 615.52\" style=\"enable-background:new 0 0 615.52 615.52;\"\n      \t xml:space=\"preserve\">\n      <g>\n      \t<g>\n      \t\t<g id=\"Search__x28_and_thou_shall_find_x29_\">\n      \t\t\t<g>\n      \t\t\t\t<path d=\"M602.531,549.736l-184.31-185.368c26.679-37.72,42.528-83.729,42.528-133.548C460.75,103.35,357.997,0,231.258,0\n      \t\t\t\t\tC104.518,0,1.765,103.35,1.765,230.82c0,127.47,102.753,230.82,229.493,230.82c49.53,0,95.271-15.944,132.78-42.777\n      \t\t\t\t\tl184.31,185.366c7.482,7.521,17.292,11.291,27.102,11.291c9.812,0,19.62-3.77,27.083-11.291\n      \t\t\t\t\tC617.496,589.188,617.496,564.777,602.531,549.736z M355.9,319.763l-15.042,21.273L319.7,356.174\n      \t\t\t\t\tc-26.083,18.658-56.667,28.526-88.442,28.526c-84.365,0-152.995-69.035-152.995-153.88c0-84.846,68.63-153.88,152.995-153.88\n      \t\t\t\t\ts152.996,69.034,152.996,153.88C384.271,262.769,374.462,293.526,355.9,319.763z\"/>\n      \t\t\t</g>\n      \t\t</g>\n      \t</g>\n      </g>\n\n      </svg>\n                      </span>\n                  <span *ngIf=\"!settings.lazyLoading\" [hidden]=\"filter == undefined || filter?.length == 0\" class=\"c-clear\" (click)=\"clearSearch()\">\n      <svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n      \t viewBox=\"0 0 51.976 51.976\" style=\"enable-background:new 0 0 51.976 51.976;\" xml:space=\"preserve\">\n      <g>\n      \t<path d=\"M44.373,7.603c-10.137-10.137-26.632-10.138-36.77,0c-10.138,10.138-10.137,26.632,0,36.77s26.632,10.138,36.77,0\n      \t\tC54.51,34.235,54.51,17.74,44.373,7.603z M36.241,36.241c-0.781,0.781-2.047,0.781-2.828,0l-7.425-7.425l-7.778,7.778\n      \t\tc-0.781,0.781-2.047,0.781-2.828,0c-0.781-0.781-0.781-2.047,0-2.828l7.778-7.778l-7.425-7.425c-0.781-0.781-0.781-2.048,0-2.828\n      \t\tc0.781-0.781,2.047-0.781,2.828,0l7.425,7.425l7.071-7.071c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828\n      \t\tl-7.071,7.071l7.425,7.425C37.022,34.194,37.022,35.46,36.241,36.241z\"/>\n      </g>\n      </svg>\n                      </span>\n                  <span *ngIf=\"settings.lazyLoading\" [hidden]=\"filter == undefined || filter?.length == 0\" class=\"c-clear\" (click)=\"resetInfiniteSearch()\">\n      <svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n      \t viewBox=\"0 0 51.976 51.976\" style=\"enable-background:new 0 0 51.976 51.976;\" xml:space=\"preserve\">\n      <g>\n      \t<path d=\"M44.373,7.603c-10.137-10.137-26.632-10.138-36.77,0c-10.138,10.138-10.137,26.632,0,36.77s26.632,10.138,36.77,0\n      \t\tC54.51,34.235,54.51,17.74,44.373,7.603z M36.241,36.241c-0.781,0.781-2.047,0.781-2.828,0l-7.425-7.425l-7.778,7.778\n      \t\tc-0.781,0.781-2.047,0.781-2.828,0c-0.781-0.781-0.781-2.047,0-2.828l7.778-7.778l-7.425-7.425c-0.781-0.781-0.781-2.048,0-2.828\n      \t\tc0.781-0.781,2.047-0.781,2.828,0l7.425,7.425l7.071-7.071c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828\n      \t\tl-7.071,7.071l7.425,7.425C37.022,34.194,37.022,35.46,36.241,36.241z\"/>\n      </g>\n      </svg>\n                      </span>\n\n                  <input class=\"c-input\" *ngIf=\"!settings.lazyLoading && !searchTempl\" #searchInput type=\"text\" [placeholder]=\"settings.searchPlaceholderText\"\n                      [(ngModel)]=\"filter\">\n                  <input class=\"c-input\" *ngIf=\"settings.lazyLoading && !searchTempl\" #searchInput type=\"text\" [placeholder]=\"settings.searchPlaceholderText\"\n                      [(ngModel)]=\"filter\" (keyup)=\"filterInfiniteList($event)\">\n                  <c-templateRenderer *ngIf=\"searchTempl\" [data]=\"searchTempl\" [item]=\"item\"></c-templateRenderer>\n              </div>\n              <div class=\"filter-select-all\" *ngIf=\"!settings.lazyLoading && settings.enableFilterSelectAll\">\n                  <div class=\"pure-checkbox select-all\" *ngIf=\"filter?.length > 0 && filterLength > 0\" (click)=\"toggleFilterSelectAll()\">\n                      <input type=\"checkbox\" [checked]=\"isFilterSelectAll\" [disabled]=\"settings.limitSelection == selectedItems?.length\" />\n                      <label>\n                      <span [hidden]=\"isFilterSelectAll\">{{settings.filterSelectAllText}}</span>\n                      <span [hidden]=\"!isFilterSelectAll\">{{settings.filterUnSelectAllText}}</span>\n                  </label>\n                  </div>\n                  <label *ngIf=\"filterLength == 0\" [hidden]=\"filter == undefined || filter?.length == 0\">{{settings.noDataLabel}}</label>\n              </div>\n              <div class=\"filter-select-all\" *ngIf=\"settings.lazyLoading && settings.enableFilterSelectAll\">\n                  <div class=\"pure-checkbox select-all\" *ngIf=\"filter?.length > 0 && infiniteFilterLength > 0\" (click)=\"toggleInfiniteFilterSelectAll()\">\n                      <input type=\"checkbox\" [checked]=\"isInfiniteFilterSelectAll\" [disabled]=\"settings.limitSelection == selectedItems?.length\"\n                      />\n                      <label>\n                      <span [hidden]=\"isInfiniteFilterSelectAll\">{{settings.filterSelectAllText}}</span>\n                      <span [hidden]=\"!isInfiniteFilterSelectAll\">{{settings.filterUnSelectAllText}}</span>\n                  </label>\n                  </div>\n              </div>\n              <ul *ngIf=\"!settings.groupBy\" [style.maxHeight]=\"settings.maxHeight+'px'\" class=\"lazyContainer\">\n                  <span *ngIf=\"itemTempl\">\n                  <li *ngFor=\"let item of data | listFilter: filter : settings.searchBy; let i = index;\" (click)=\"onItemClick(item,i,$event)\" class=\"pure-checkbox\">\n                  <input *ngIf=\"settings.showCheckbox\" type=\"checkbox\" [checked]=\"isSelected(item)\" [disabled]=\"settings.limitSelection == selectedItems?.length && !isSelected(item)\"/>\n                  <label></label>\n                  <c-templateRenderer [data]=\"itemTempl\" [item]=\"item\"></c-templateRenderer>\n              </li>\n              </span>\n                  <span *ngIf=\"!itemTempl && !settings.lazyLoading\">\n              <li *ngFor=\"let item of data | listFilter:filter : settings.searchBy; let i = index;\" (click)=\"onItemClick(item,i,$event)\" class=\"pure-checkbox\">\n                  <input *ngIf=\"settings.showCheckbox\" type=\"checkbox\" [checked]=\"isSelected(item)\" [disabled]=\"settings.limitSelection == selectedItems?.length && !isSelected(item)\"/>\n                  <label>{{item[settings.labelKey]}}</label>\n              </li>\n              </span>\n                  <span *ngIf=\"!itemTempl && settings.lazyLoading\">\n                  <div [ngStyle]=\"{'height':totalHeight+'px'}\" style=\"position: relative;\">\n\n            \n              <li *ngFor=\"let item of chunkArray ; let i = index;\" (click)=\"onItemClick(item,i,$event)\" style=\"position: absolute;width: 100%;\" class=\"pure-checkbox\" [styleProp]=\"chunkIndex[i]\">\n                  <input *ngIf=\"settings.showCheckbox\" type=\"checkbox\" [checked]=\"isSelected(item)\" [disabled]=\"settings.limitSelection == selectedItems?.length && !isSelected(item)\"/>\n                  <label>{{item[settings.labelKey]}}</label>\n              </li>\n              </div>\n              </span>\n              </ul>\n              <div *ngIf=\"settings.groupBy\" [style.maxHeight]=\"settings.maxHeight+'px'\" style=\"overflow: auto;\">\n                  <ul *ngFor=\"let obj of groupedData ; let i = index;\" class=\"list-grp\">\n                      <h4 *ngIf=\"(obj.value | listFilter:filter : settings.searchBy )?.length > 0\">{{obj.key}}</h4>\n                      <span *ngIf=\"itemTempl\">\n              <li *ngFor=\"let item of obj.value | listFilter:filter : settings.searchBy; let i = index;\" (click)=\"onItemClick(item,i,$event)\" class=\"pure-checkbox\">\n                  <input *ngIf=\"settings.showCheckbox\" type=\"checkbox\" [checked]=\"isSelected(item)\" [disabled]=\"settings.limitSelection == selectedItems?.length && !isSelected(item)\"/>\n                  <label></label>\n                  <c-templateRenderer [data]=\"itemTempl\" [item]=\"item\"></c-templateRenderer>\n              </li>\n              </span>\n                      <span *ngIf=\"!itemTempl\">\n              <li *ngFor=\"let item of obj.value | listFilter:filter : settings.searchBy; let i = index;\" (click)=\"onItemClick(item,i,$event)\" class=\"pure-checkbox\">\n                  <input *ngIf=\"settings.showCheckbox\" type=\"checkbox\" [checked]=\"isSelected(item)\" [disabled]=\"settings.limitSelection == selectedItems?.length && !isSelected(item)\"/>\n                  <label>{{item[settings.labelKey]}}</label>\n              </li>\n              </span>\n                  </ul>\n              </div>\n              <h5 class=\"list-message\" *ngIf=\"data?.length == 0\">{{settings.noDataLabel}}</h5>\n          </div>\n      </div>\n      </div>\n    ",
+                    host: { '[class]': 'defaultSettings.classes' },
+                    styles: ["\n      .cuppa-dropdown{position:relative}.c-btn{display:inline-block;background:#fff;border:1px solid #ccc;border-radius:3px;font-size:14px;color:#333}.c-btn.disabled{background:#ccc}.selected-list .c-list{float:left;padding:0px;margin:0px;width:calc(100% - 20px)}.selected-list .c-list .c-token{list-style:none;padding:2px 8px;background:#0079FE;color:#fff;border-radius:2px;margin-right:4px;margin-top:2px;float:left;position:relative;padding-right:25px}.selected-list .c-list .c-token .c-label{display:block;float:left}.selected-list .c-list .c-token .c-remove{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:10px}.selected-list .c-list .c-token .c-remove svg{fill:#fff}.selected-list .fa-angle-down,.selected-list .fa-angle-up{font-size:15pt;position:absolute;right:10px;top:50%;transform:translateY(-50%)}.selected-list .c-angle-down,.selected-list .c-angle-up{width:15px;height:15px;position:absolute;right:10px;top:50%;transform:translateY(-50%);pointer-events:none}.selected-list .c-angle-down svg,.selected-list .c-angle-up svg{fill:#333}.selected-list .countplaceholder{position:absolute;right:30px;top:50%;transform:translateY(-50%)}.selected-list .c-btn{width:100%;padding:10px;cursor:pointer;display:flex;position:relative}.selected-list .c-btn .c-icon{position:absolute;right:5px;top:50%;transform:translateY(-50%)}.dropdown-list{position:absolute;padding-top:14px;width:100%;z-index:9999}.dropdown-list ul{padding:0px;list-style:none;overflow:auto;margin:0px}.dropdown-list ul li{padding:10px 10px;cursor:pointer;text-align:left}.dropdown-list ul li:first-child{padding-top:10px}.dropdown-list ul li:last-child{padding-bottom:10px}.dropdown-list ul li:hover{background:#f5f5f5}.dropdown-list ::-webkit-scrollbar{width:8px}.dropdown-list ::-webkit-scrollbar-thumb{background:#cccccc;border-radius:5px}.dropdown-list ::-webkit-scrollbar-track{background:#f2f2f2}.arrow-up,.arrow-down{width:0;height:0;border-left:13px solid transparent;border-right:13px solid transparent;border-bottom:15px solid #fff;margin-left:15px;position:absolute;top:0}.arrow-down{bottom:-14px;top:unset;transform:rotate(180deg)}.arrow-2{border-bottom:15px solid #ccc;top:-1px}.arrow-down.arrow-2{top:unset;bottom:-16px}.list-area{border:1px solid #ccc;border-radius:3px;background:#fff;margin:0px;box-shadow:0px 1px 5px #959595}.select-all{padding:10px;border-bottom:1px solid #ccc;text-align:left}.list-filter{border-bottom:1px solid #ccc;position:relative;padding-left:35px;height:35px}.list-filter input{border:0px;width:100%;height:100%;padding:0px}.list-filter input:focus{outline:none}.list-filter .c-search{position:absolute;top:9px;left:10px;width:15px;height:15px}.list-filter .c-search svg{fill:#888}.list-filter .c-clear{position:absolute;top:10px;right:10px;width:15px;height:15px}.list-filter .c-clear svg{fill:#888}.pure-checkbox input[type=\"checkbox\"]{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.pure-checkbox input[type=\"checkbox\"]:focus+label:before,.pure-checkbox input[type=\"checkbox\"]:hover+label:before{border-color:#0079FE;background-color:#f2f2f2}.pure-checkbox input[type=\"checkbox\"]:active+label:before{transition-duration:0s}.pure-checkbox input[type=\"checkbox\"]+label{position:relative;padding-left:2em;vertical-align:middle;user-select:none;cursor:pointer;margin:0px;color:#000;font-weight:300}.pure-checkbox input[type=\"checkbox\"]+label:before{box-sizing:content-box;content:'';color:#0079FE;position:absolute;top:50%;left:0;width:14px;height:14px;margin-top:-9px;border:2px solid #0079FE;text-align:center;transition:all 0.4s ease}.pure-checkbox input[type=\"checkbox\"]+label:after{box-sizing:content-box;content:'';background-color:#0079FE;position:absolute;top:50%;left:4px;width:10px;height:10px;margin-top:-5px;transform:scale(0);transform-origin:50%;transition:transform 200ms ease-out}.pure-checkbox input[type=\"checkbox\"]:disabled+label:before{border-color:#cccccc}.pure-checkbox input[type=\"checkbox\"]:disabled:focus+label:before .pure-checkbox input[type=\"checkbox\"]:disabled:hover+label:before{background-color:inherit}.pure-checkbox input[type=\"checkbox\"]:disabled:checked+label:before{background-color:#cccccc}.pure-checkbox input[type=\"checkbox\"]+label:after{background-color:transparent;top:50%;left:4px;width:8px;height:3px;margin-top:-4px;border-style:solid;border-color:#ffffff;border-width:0 0 3px 3px;border-image:none;transform:rotate(-45deg) scale(0)}.pure-checkbox input[type=\"checkbox\"]:checked+label:after{content:'';transform:rotate(-45deg) scale(1);transition:transform 200ms ease-out}.pure-checkbox input[type=\"radio\"]:checked+label:before{background-color:white}.pure-checkbox input[type=\"radio\"]:checked+label:after{transform:scale(1)}.pure-checkbox input[type=\"radio\"]+label:before{border-radius:50%}.pure-checkbox input[type=\"checkbox\"]:checked+label:before{background:#0079FE}.pure-checkbox input[type=\"checkbox\"]:checked+label:after{transform:rotate(-45deg) scale(1)}.list-message{text-align:center;margin:0px;padding:15px 0px;font-size:initial}.list-grp{padding:0 15px !important}.list-grp h4{text-transform:capitalize;margin:15px 0px 0px 0px;font-size:14px;font-weight:700}.list-grp>li{padding-left:15px !important}\n    "],
+                    providers: [DROPDOWN_CONTROL_VALUE_ACCESSOR, DROPDOWN_CONTROL_VALIDATION],
+                },] },
+    ];
+    /** @nocollapse */
+    AngularMultiSelect.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"], },
+        { type: __WEBPACK_IMPORTED_MODULE_7__multiselect_service__["a" /* DataService */], },
+    ]; };
+    AngularMultiSelect.propDecorators = {
+        'data': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+        'settings': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+        'onSelect': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"], args: ['onSelect',] },],
+        'onDeSelect': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"], args: ['onDeSelect',] },],
+        'onSelectAll': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"], args: ['onSelectAll',] },],
+        'onDeSelectAll': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"], args: ['onDeSelectAll',] },],
+        'onOpen': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"], args: ['onOpen',] },],
+        'onClose': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"], args: ['onClose',] },],
+        'itemTempl': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChild"], args: [__WEBPACK_IMPORTED_MODULE_6__menu_item__["a" /* Item */],] },],
+        'badgeTempl': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChild"], args: [__WEBPACK_IMPORTED_MODULE_6__menu_item__["b" /* Badge */],] },],
+        'searchTempl': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChild"], args: [__WEBPACK_IMPORTED_MODULE_6__menu_item__["c" /* Search */],] },],
+        'searchInput': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"], args: ['searchInput',] },],
+        'selectedListElem': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"], args: ['selectedList',] },],
+    };
+    return AngularMultiSelect;
+}());
+
+var AngularMultiSelectModule = /** @class */ (function () {
+    function AngularMultiSelectModule() {
+    }
+    AngularMultiSelectModule.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"], args: [{
+                    imports: [__WEBPACK_IMPORTED_MODULE_2__angular_common__["CommonModule"], __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormsModule"]],
+                    declarations: [AngularMultiSelect, __WEBPACK_IMPORTED_MODULE_4__clickOutside__["a" /* ClickOutsideDirective */], __WEBPACK_IMPORTED_MODULE_4__clickOutside__["b" /* ScrollDirective */], __WEBPACK_IMPORTED_MODULE_4__clickOutside__["c" /* styleDirective */], __WEBPACK_IMPORTED_MODULE_5__list_filter__["a" /* ListFilterPipe */], __WEBPACK_IMPORTED_MODULE_6__menu_item__["a" /* Item */], __WEBPACK_IMPORTED_MODULE_6__menu_item__["d" /* TemplateRenderer */], __WEBPACK_IMPORTED_MODULE_6__menu_item__["b" /* Badge */], __WEBPACK_IMPORTED_MODULE_6__menu_item__["c" /* Search */], __WEBPACK_IMPORTED_MODULE_4__clickOutside__["d" /* setPosition */]],
+                    exports: [AngularMultiSelect, __WEBPACK_IMPORTED_MODULE_4__clickOutside__["a" /* ClickOutsideDirective */], __WEBPACK_IMPORTED_MODULE_4__clickOutside__["b" /* ScrollDirective */], __WEBPACK_IMPORTED_MODULE_4__clickOutside__["c" /* styleDirective */], __WEBPACK_IMPORTED_MODULE_5__list_filter__["a" /* ListFilterPipe */], __WEBPACK_IMPORTED_MODULE_6__menu_item__["a" /* Item */], __WEBPACK_IMPORTED_MODULE_6__menu_item__["d" /* TemplateRenderer */], __WEBPACK_IMPORTED_MODULE_6__menu_item__["b" /* Badge */], __WEBPACK_IMPORTED_MODULE_6__menu_item__["c" /* Search */], __WEBPACK_IMPORTED_MODULE_4__clickOutside__["d" /* setPosition */]],
+                    providers: [__WEBPACK_IMPORTED_MODULE_7__multiselect_service__["a" /* DataService */]]
+                },] },
+    ];
+    /** @nocollapse */
+    AngularMultiSelectModule.ctorParameters = function () { return []; };
+    return AngularMultiSelectModule;
+}());
+
+//# sourceMappingURL=multiselect.component.js.map
+
+/***/ }),
+
+/***/ 1469:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return DataService; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs__);
+
+
+var DataService = /** @class */ (function () {
+    function DataService() {
+        this.filteredData = [];
+        this.subject = new __WEBPACK_IMPORTED_MODULE_1_rxjs__["Subject"]();
+    }
+    DataService.prototype.setData = function (data) {
+        this.filteredData = data;
+        this.subject.next(data);
+    };
+    DataService.prototype.getData = function () {
+        return this.subject.asObservable();
+    };
+    DataService.prototype.getFilteredData = function () {
+        if (this.filteredData && this.filteredData.length > 0) {
+            return this.filteredData;
+        }
+        else {
+            return [];
+        }
+    };
+    DataService.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+    ];
+    /** @nocollapse */
+    DataService.ctorParameters = function () { return []; };
+    return DataService;
+}());
+
+//# sourceMappingURL=multiselect.service.js.map
+
+/***/ }),
+
 /***/ 1470:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8541,18 +9291,60 @@ AddUserService = __decorate([
 
 /***/ }),
 
-/***/ 1525:
+/***/ 1495:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return ActivityReport; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__multiselect_component__ = __webpack_require__(1468);
+/* unused harmony reexport AngularMultiSelect */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__clickOutside__ = __webpack_require__(1466);
+/* unused harmony reexport ClickOutsideDirective */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_filter__ = __webpack_require__(1467);
+/* unused harmony reexport ListFilterPipe */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__menu_item__ = __webpack_require__(1413);
+/* unused harmony reexport Item */
+/* unused harmony reexport TemplateRenderer */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return __WEBPACK_IMPORTED_MODULE_0__multiselect_component__["a"]; }));
+
+
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 1496:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return MyException; }));
+var MyException = /** @class */ (function () {
+    function MyException(status, body) {
+        this.status = status;
+        this.body = body;
+    }
+    return MyException;
+}());
+
+//# sourceMappingURL=multiselect.model.js.map
+
+/***/ }),
+
+/***/ 1551:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AddUser; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__userManager_components_userManger_adduser_service__ = __webpack_require__(1493);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__previews_EditDetailPreview_editDetailPreview_component__ = __webpack_require__(1530);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__previews_schedulePreview_component__ = __webpack_require__(1531);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__previews_treatmentPreview_treatmentPreview_component__ = __webpack_require__(1532);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__report_service__ = __webpack_require__(1412);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_grid_scss__ = __webpack_require__(1622);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_grid_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_style_loader_grid_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__adduser_service__ = __webpack_require__(1493);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__ = __webpack_require__(1378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_repositories__ = __webpack_require__(119);
 
 
 
@@ -8560,1273 +9352,734 @@ AddUserService = __decorate([
 
 
 
-// import { Followup } from '../../../common/interfaces/master.interface';
-let ActivityReport = class ActivityReport {
-    constructor(reportService, userService) {
-        this.reportService = reportService;
-        this.userService = userService;
-        this.DialogMessage = '';
-        this.reportObj = {};
-        this.reportList = [];
-        this.userList = [];
-        this.formList = [];
-        this.userService.getUserList()
-            .flatMap(d => d || [])
-            .subscribe((data) => {
-            this.userList.push(data);
-        }, Error => console.log(Error), () => {
-            console.log(Error);
+//import {BaCheckbox} from '../../../../theme/components'
+let AddUser = class AddUser {
+    //source: LocalDataSource = new LocalDataSource();
+    constructor(fb, addUserService, router, activatedRoute, service) {
+        this.fb = fb;
+        this.addUserService = addUserService;
+        this.router = router;
+        this.activatedRoute = activatedRoute;
+        this.service = service;
+        this.DialogMessage = "Saving data please wait ...";
+        this.mode = 'add'; //mode of the form add or edit
+        this.modeTitile = "Add user";
+        this.userMenuList = []; //list data menulist of user
+        this.items = []; //converted array of usermenu from main menu
+        this.userRightList = []; //list of rights of user or empty {right,description,value,valutype}
+        this.userType = "group"; //default user type ie, usergroup or user
+        this.branchList = [];
+        this.dropdownSettings = {};
+        this.selectedBranches = [];
+        this.roles = [];
+        //getting parameter passed
+        this.returnUrl = this.activatedRoute.snapshot.params['returnUrl'] || '';
+        this.user = this.activatedRoute.snapshot.params['user'] || '';
+        if (this.user && this.user !== '') {
+            this.mode = 'edit';
+            this.modeTitile = "Editing User";
+        }
+        else {
+            this.mode = 'add';
+            this.modeTitile = "Add User";
+        }
+    }
+    ngOnInit() {
+        this.service.getBranchList().subscribe((response) => {
+            this.branchList = response.json();
+        }, (err) => {
+            this.service.handleWebError(err);
         });
-        this.reportService.getForms()
-            .subscribe((data) => {
-            this.formList.push(data);
-        }, Error => console.log(Error), () => {
-            console.log(Error);
+        this.addUserService.getRoleNames().subscribe((data) => {
+            this.roles = data.json();
+        }, (error) => {
+            this.service.handleWebError(error);
         });
-        this.reportObj = {
-            Date1: new Date().toISOString().slice(0, 10),
-            Date2: new Date().toISOString().slice(0, 10)
+        this.userForm = this.fb.group({
+            UserId: ['', [__WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required]],
+            Name: ['', [__WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required]],
+            Password: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required],
+            email: [''],
+            Role: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required],
+            address: [''],
+            mobile: [''],
+            branches: [[]],
+            defaultBranch: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required]
+        });
+        if (this.mode == "edit") {
+            this.addUserService.getUserProfile(this.user)
+                .subscribe(data => {
+                this.userForm.patchValue({
+                    UserId: data.UserId,
+                    Name: data.Name,
+                    email: data.email,
+                    Role: data.Role,
+                    address: data.address,
+                    mobile: data.mobile,
+                    defaultBranch: data.defaultBranch,
+                });
+                this.selectedBranches = data.branches;
+            });
+        }
+        this.dropdownSettings = {
+            enableCheckAll: true,
+            text: 'Select Outlets',
+            enableSearchFilter: true,
+            labelKey: "branchName",
+            primaryKey: "branchId"
         };
-        //console.log({reportObj_ctor : this.reportObj});
     }
-    onClickClear() { }
-    loadReportEvent() {
-        this.DialogMessage = "Activty Log Loading.... Please Wait...";
-        this.childModal.show();
-        //console.log("LOAD REPORT EVENT");
+    saveData($event) {
         try {
-            let rparam = { rName: 'activityLog', rParam: this.reportObj };
-            this.reportService.getReport(rparam, '/GetReport')
+            this.addUserService.saveUser($event)
                 .subscribe(data => {
-                //console.log("DATA RESPONSE LOAD REPORT", data);
-                //  data.forEach(element => {
-                //       element.DATE=element.DATE.toString().substring(0, 10);
-                //   });
-                //   for(var element of data ){
-                //     element.DATE = element.DATE.toString().substring(0,10);
-                //   }
-                this.reportList = data;
-                //console.log("REPORT LIST LOAD REPORT", this.reportList, typeof(this.reportList[1].DATE));
-                this.DialogMessage = "Activity Log Loaded sucessfully...";
-                setTimeout(() => {
-                    this.childModal.hide();
-                }, 1000);
-            }, Error => {
-                try {
-                    let t = Error.json();
-                    //console.log(t);
-                    this.DialogMessage = t.result + "Please check and try again";
-                    //let p = t.json();
-                    if (t.result == "Authorization Failed") {
-                        //this.DialogMessage="erro in saving. " +Error._body;
-                        setTimeout(() => {
-                            this.childModal.hide();
-                            this.loginModal.show();
-                        }, 3000);
-                    }
-                    else {
-                        this.DialogMessage = "Error in Loading Data:" + t.result;
-                    }
+                if (data.status == 'ok') {
+                    this.DialogMessage = "User saved sucessfully";
                     setTimeout(() => {
                         this.childModal.hide();
-                    }, 5000);
-                }
-                catch (e) {
-                    this.DialogMessage = e;
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                }
-            });
-        }
-        catch (ex) {
-            alert(ex);
-            this.DialogMessage = ex;
-            setTimeout(() => {
-                this.childModal.hide();
-            }, 3000);
-        }
-    }
-    detailVisible(log) {
-        if (log.activity.toLowerCase() == "delete") {
-            switch (log.formName.toLowerCase()) {
-                case "appointment":
-                case "treatment master":
-                    return true;
-                default:
-                    return false;
-            }
-        }
-        else if (log.activity.toLowerCase() == "edit") {
-            return true;
-        }
-        return false;
-    }
-    viewLogDetail(log) {
-        console.log(log.formName.toLowerCase());
-        if (log.activity.toLowerCase() == "delete") {
-            switch (log.formName.toLowerCase()) {
-                case "appointment":
-                    this.childSchedulePreview.logId = log.logId;
-                    this.childSchedulePreview.showDialog();
-                    break;
-                case "treatment master":
-                    this.childTreatmentPreview.logId = log.logId;
-                    this.childTreatmentPreview.showDialog();
-                    break;
-            }
-        }
-        else if (log.activity.toLowerCase() == "edit") {
-            this.childEditDetail.logId = log.logId;
-            this.childEditDetail.showDialog();
-        }
-    }
-};
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('schedulePreview'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_4__previews_schedulePreview_component__["a" /* SchedulePreview */])
-], ActivityReport.prototype, "childSchedulePreview", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('treatmentPreview'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_5__previews_treatmentPreview_treatmentPreview_component__["a" /* TreatmentPreview */])
-], ActivityReport.prototype, "childTreatmentPreview", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('editDetailPreview'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_3__previews_EditDetailPreview_editDetailPreview_component__["a" /* EditDetailPreview */])
-], ActivityReport.prototype, "childEditDetail", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], ActivityReport.prototype, "childModal", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('loginModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], ActivityReport.prototype, "loginModal", void 0);
-ActivityReport = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'activity',
-        template: __webpack_require__(1591),
-        providers: [__WEBPACK_IMPORTED_MODULE_6__report_service__["a" /* ReportService */], __WEBPACK_IMPORTED_MODULE_2__userManager_components_userManger_adduser_service__["a" /* AddUserService */]]
-    }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__report_service__["a" /* ReportService */], __WEBPACK_IMPORTED_MODULE_2__userManager_components_userManger_adduser_service__["a" /* AddUserService */]])
-], ActivityReport);
-
-
-/***/ }),
-
-/***/ 1526:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return CustomerReport; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__ = __webpack_require__(639);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_services_permission_authService_service__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__report_service__ = __webpack_require__(1412);
-
-
-
-
-
-
-let CustomerReport = class CustomerReport {
-    constructor(masterService, _authService, router, reportService) {
-        this.masterService = masterService;
-        this._authService = _authService;
-        this.router = router;
-        this.reportService = reportService;
-        this.query = '';
-        this.DialogMessage = "You are not authorized";
-        this.subcriptions = [];
-        this.reportList = [];
-        this.reportObj = {};
-        this.CustomerList = [];
-    }
-    ngOnInit() {
-        if (this.masterService._customerList.length > 0) {
-            this.CustomerList = this.masterService._customerList;
-        }
-        else {
-            this.masterService.getCustomerList().subscribe((data) => {
-                this.CustomerList.push(data);
-            }, Error => console.log(Error), () => {
-                this.masterService._customerList = this.CustomerList;
-            });
-        }
-    }
-    onCancel() {
-        this.reportObj = {};
-        this.reportList = [];
-    }
-    loadReportEvent() {
-        this.DialogMessage = "Customer Report Loading.... Please Wait...";
-        this.childModal.show();
-        try {
-            let rparam = { rName: 'customerReport', rParam: this.reportObj };
-            this.reportService.getReport(rparam, '/GetReport')
-                .subscribe(data => {
-                data.forEach(element => {
-                    element.DATE = element.DATE.toString().substring(0, 10);
-                });
-                this.reportList = data;
-                this.DialogMessage = "Customer Report Loaded sucessfully...";
-                setTimeout(() => {
-                    this.childModal.hide();
-                }, 1000);
-            }, Error => {
-                try {
-                    let t = Error.json();
-                    //console.log(t);
-                    this.DialogMessage = t.result + "Please check and try again";
-                    //let p = t.json();
-                    if (t.result == "Authorization Failed") {
-                        //this.DialogMessage="erro in saving. " +Error._body;
-                        setTimeout(() => {
-                            this.childModal.hide();
-                            this.loginModal.show();
-                        }, 3000);
-                    }
-                    else {
-                        this.DialogMessage = "Error in Loading Data:" + t.result;
-                    }
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 5000);
-                }
-                catch (e) {
-                    this.DialogMessage = e;
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                }
-            });
-        }
-        catch (ex) {
-            alert(ex);
-            this.DialogMessage = ex;
-            setTimeout(() => {
-                this.childModal.hide();
-            }, 3000);
-        }
-    }
-};
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], CustomerReport.prototype, "childModal", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('loginModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], CustomerReport.prototype, "loginModal", void 0);
-CustomerReport = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'CR',
-        template: __webpack_require__(1592),
-        providers: [__WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* ReportService */]],
-    }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* ReportService */]])
-], CustomerReport);
-
-
-/***/ }),
-
-/***/ 1527:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return EmployeeReport; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__ = __webpack_require__(639);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_services_permission_authService_service__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__report_service__ = __webpack_require__(1412);
-
-
-
-
-
-
-let EmployeeReport = class EmployeeReport {
-    constructor(masterService, _authService, router, reportService) {
-        this.masterService = masterService;
-        this._authService = _authService;
-        this.router = router;
-        this.reportService = reportService;
-        this.query = '';
-        this.DialogMessage = "You are not authorized";
-        this.subcriptions = [];
-        this.reportList = [];
-        this.reportObj = {};
-        this.EmployeeList = [];
-    }
-    ngOnInit() {
-        if (this.masterService._employeeList.length > 0) {
-            this.EmployeeList = this.masterService._employeeList;
-        }
-        else {
-            this.masterService.getEmployeeList().subscribe((data) => {
-                this.EmployeeList.push(data);
-            }, Error => console.log(Error), () => {
-                this.masterService._employeeList = this.EmployeeList;
-            });
-        }
-    }
-    onCancel() {
-        this.reportObj = {};
-        this.reportList = [];
-    }
-    loadReportEvent() {
-        this.DialogMessage = "Employee Report Loading.... Please Wait...";
-        this.childModal.show();
-        try {
-            let rparam = { rName: 'employeeReport', rParam: this.reportObj };
-            this.reportService.getReport(rparam, '/GetReport')
-                .subscribe(data => {
-                data.forEach(element => {
-                    element.DATE = element.DATE.toString().substring(0, 10);
-                });
-                this.reportList = data;
-                this.DialogMessage = "Employee Report Loaded sucessfully...";
-                setTimeout(() => {
-                    this.childModal.hide();
-                }, 1000);
-            }, Error => {
-                try {
-                    let t = Error.json();
-                    //console.log(t);
-                    this.DialogMessage = t.result + "Please check and try again";
-                    //let p = t.json();
-                    if (t.result == "Authorization Failed") {
-                        //this.DialogMessage="erro in saving. " +Error._body;
-                        setTimeout(() => {
-                            this.childModal.hide();
-                            this.loginModal.show();
-                        }, 3000);
-                    }
-                    else {
-                        this.DialogMessage = "Error in Loading Data:" + t.result;
-                    }
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 5000);
-                }
-                catch (e) {
-                    this.DialogMessage = e;
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                }
-            });
-        }
-        catch (ex) {
-            alert(ex);
-            this.DialogMessage = ex;
-            setTimeout(() => {
-                this.childModal.hide();
-            }, 3000);
-        }
-    }
-};
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], EmployeeReport.prototype, "childModal", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('loginModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], EmployeeReport.prototype, "loginModal", void 0);
-EmployeeReport = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'ER',
-        template: __webpack_require__(1593),
-        providers: [__WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* ReportService */]],
-    }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* ReportService */]])
-], EmployeeReport);
-
-
-/***/ }),
-
-/***/ 1528:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return FollowupReport; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__ = __webpack_require__(639);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_services_permission_authService_service__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__report_service__ = __webpack_require__(1412);
-
-
-
-
-
-
-let FollowupReport = class FollowupReport {
-    constructor(masterService, _authService, router, reportService) {
-        this.masterService = masterService;
-        this._authService = _authService;
-        this.router = router;
-        this.reportService = reportService;
-        this.query = '';
-        this.DialogMessage = "You are not authorized";
-        this.subcriptions = [];
-        this.reportList = [];
-        this.reportObj = {};
-        this.FollowupList = [];
-    }
-    ngOnInit() {
-        //  if (this.masterService._followupList.length > 0) 
-        //  { this.FollowupList = this.masterService._followupList; }
-        //     else {
-        //         this.masterService.getFollowUpList().subscribe((data) => {
-        //             this.FollowupList.push(<Followup>data);
-        //         },
-        //             Error => console.log(Error),
-        //             () => {
-        //                 this.masterService._followupList = this.FollowupList;
-        //             });
-        //     }
-    }
-    onCancel() {
-        this.reportObj = {};
-        this.reportList = [];
-    }
-    loadReportEvent() {
-        this.DialogMessage = "Follow Up Report Loading.... Please Wait...";
-        this.childModal.show();
-        try {
-            let rparam = { rName: 'followupreport', rParam: this.reportObj };
-            this.reportService.getReport(rparam, '/GetReport')
-                .subscribe(data => {
-                data.forEach(element => {
-                    element.EntryDate = element.EntryDate.toString().substring(0, 10);
-                    element.FollowUpDate = element.FollowUpDate.toString().substring(0, 10);
-                });
-                this.reportList = data;
-                this.DialogMessage = "FOLLOWUP Report Loaded sucessfully...";
-                setTimeout(() => {
-                    this.childModal.hide();
-                }, 1000);
-            }, Error => {
-                try {
-                    let t = Error.json();
-                    console.log(t);
-                    this.DialogMessage = t.result + "Please check and try again";
-                    //let p = t.json();
-                    if (t.result == "Authorization Failed") {
-                        //this.DialogMessage="erro in saving. " +Error._body;
-                        setTimeout(() => {
-                            this.childModal.hide();
-                            this.loginModal.show();
-                        }, 3000);
-                    }
-                    else {
-                        this.DialogMessage = "Error in Loading Data:" + t.result;
-                    }
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 5000);
-                }
-                catch (e) {
-                    this.DialogMessage = e;
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                }
-            });
-        }
-        catch (ex) {
-            alert(ex);
-            this.DialogMessage = ex;
-            setTimeout(() => {
-                this.childModal.hide();
-            }, 3000);
-        }
-    }
-};
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], FollowupReport.prototype, "childModal", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('loginModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], FollowupReport.prototype, "loginModal", void 0);
-FollowupReport = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'followup',
-        template: __webpack_require__(1594),
-        providers: [__WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* ReportService */]],
-    }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* ReportService */]])
-], FollowupReport);
-
-
-/***/ }),
-
-/***/ 1529:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return MessageReport; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__ = __webpack_require__(639);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_services_permission_authService_service__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__report_service__ = __webpack_require__(1412);
-
-
-
-
-
-
-let MessageReport = class MessageReport {
-    constructor(masterService, _authService, router, reportService) {
-        this.masterService = masterService;
-        this._authService = _authService;
-        this.router = router;
-        this.reportService = reportService;
-        this.query = '';
-        this.DialogMessage = "You are not authorized";
-        this.subcriptions = [];
-        this.reportList = [];
-        this.reportObj = {};
-        this.FollowupList = [];
-    }
-    ngOnInit() {
-        //  if (this.masterService._followupList.length > 0) 
-        //  { this.FollowupList = this.masterService._followupList; }
-        //     else {
-        //         this.masterService.getFollowUpList().subscribe((data) => {
-        //             this.FollowupList.push(<Followup>data);
-        //         },
-        //             Error => console.log(Error),
-        //             () => {
-        //                 this.masterService._followupList = this.FollowupList;
-        //             });
-        //     }
-    }
-    onCancel() {
-        this.reportObj = {};
-        this.reportList = [];
-    }
-    loadReportEvent() {
-        this.DialogMessage = "Message Report Loading.... Please Wait...";
-        this.childModal.show();
-        try {
-            let rparam = { rName: 'messageReport', rParam: this.reportObj };
-            this.reportService.getReport(rparam, '/GetReport')
-                .subscribe(data => {
-                data.forEach(element => {
-                    element.DATE = element && element.DATE ? (element.DATE).substring(0, 10) : '';
-                });
-                this.reportList = data;
-                console.log(this.reportList, "reporttt");
-                this.DialogMessage = "Message Report Loaded sucessfully...";
-                setTimeout(() => {
-                    this.childModal.hide();
-                }, 1000);
-            }, Error => {
-                try {
-                    let t = Error.json();
-                    //console.log(t);
-                    this.DialogMessage = t.result + "Please check and try again";
-                    //let p = t.json();
-                    if (t.result == "Authorization Failed") {
-                        //this.DialogMessage="erro in saving. " +Error._body;
-                        setTimeout(() => {
-                            this.childModal.hide();
-                            this.loginModal.show();
-                        }, 3000);
-                    }
-                    else {
-                        this.DialogMessage = "Error in Loading Data:" + t.result;
-                    }
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 5000);
-                }
-                catch (e) {
-                    this.DialogMessage = e;
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                }
-            });
-        }
-        catch (ex) {
-            alert(ex);
-            this.DialogMessage = ex;
-            setTimeout(() => {
-                this.childModal.hide();
-            }, 3000);
-        }
-    }
-    selectedFromDate(event) {
-        this.from = event.target.value;
-    }
-    selectedToDate(event) {
-        this.to = event.target.value;
-    }
-};
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], MessageReport.prototype, "childModal", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('loginModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], MessageReport.prototype, "loginModal", void 0);
-MessageReport = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'messageReport',
-        template: __webpack_require__(1595),
-        providers: [__WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* ReportService */]],
-    }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* ReportService */]])
-], MessageReport);
-
-
-/***/ }),
-
-/***/ 1530:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return EditDetailPreview; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__report_service__ = __webpack_require__(1412);
-
-
-
-
-let EditDetailPreview = class EditDetailPreview {
-    constructor(router, reportService) {
-        this.router = router;
-        this.reportService = reportService;
-        this.logId = 0;
-        this.log = {};
-    }
-    ngOnInit() {
-        this.log = {};
-    }
-    showDialog() {
-        this.reportService.getLogDetail(this.logId).subscribe(res => {
-            var response = res.json();
-            this.log = response;
-            console.log(this.log);
-            setTimeout(() => {
-                this.childeditDetailPreviewModal.show();
-            }, 100);
-        }, Error => {
-            try {
-                let t = Error.json();
-                //console.log(t);
-                if (t.result == "Authorization Failed") {
-                    this.router.navigate(['/login', this.router.url]);
+                        this.router.navigate([this.returnUrl]);
+                    }, 1000);
                 }
                 else {
-                    alert("Error in Loading Data:" + t.result);
+                    if (data.result._body == "The ConnectionString property has not been initialized.") {
+                        this.loginModal.show();
+                        //this.router.navigate(['/login', this.router.url])
+                        return;
+                    }
+                    //Some other issues need to check
+                    this.DialogMessage = "Error in Saving Data:" + data.result._body;
+                    //console.log(data.result._body);
+                    setTimeout(() => {
+                        this.childModal.hide();
+                    }, 4000);
                 }
-            }
-            catch (e) {
-                alert(e);
-            }
-        });
+            }, Error => {
+                try {
+                    let t = Error.json();
+                    //console.log(t);
+                    this.DialogMessage = t.result + "Please check and try again";
+                    //let p = t.json();
+                    if (t.result == "The ConnectionString property has not been initialized.") {
+                        //this.DialogMessage="erro in saving. " +Error._body;
+                        setTimeout(() => {
+                            this.childModal.hide();
+                            this.loginModal.show();
+                        }, 3000);
+                    }
+                    setTimeout(() => {
+                        this.childModal.hide();
+                    }, 2000);
+                }
+                catch (e) {
+                    this.DialogMessage = e;
+                    setTimeout(() => {
+                        this.childModal.hide();
+                    }, 3000);
+                }
+            });
+        }
+        catch (ex) {
+            alert(ex);
+            this.DialogMessage = ex;
+            setTimeout(() => {
+                this.childModal.hide();
+            }, 3000);
+        }
     }
-    labelClickEvent(id) {
-        this.router.navigate(['/pages/schedule/scheInput', { mode: "edit", id: id, returnUrl: this.router.url }]);
+    ngOnChanges() {
+        //console.log(this.userForm);
+    }
+    onSubmit() {
+        this.childModal.show();
+        this.DialogMessage = "Saving data please wait ...";
+        let data = this.prepareToSave();
+        if (data) {
+            this.saveData(data);
+        }
+        else {
+            this.DialogMessage = "Invalid data. Please check the entry";
+            setTimeout(() => {
+                this.childModal.hide();
+            }, 3000);
+        }
+    }
+    prepareToSave() {
+        if (this.userForm.controls['UserId'].status == 'INVALID' ||
+            (this.mode == "add" && this.userForm.controls['Password'].status == 'INVALID') ||
+            this.userForm.controls['Role'].status == 'INVALID') {
+            return null;
+        }
+        this.userForm.patchValue({ branches: this.selectedBranches });
+        if (this.mode == 'edit') {
+            return { mode: 'edit', data: this.userForm.value };
+        }
+        else
+            return { mode: 'add', data: this.userForm.value };
+        //console.log(JSON.stringify(this.userForm.value.menuRights));
+    }
+    hideChildModal() {
+        this.childModal.hide();
+    }
+    hideloginModal() {
+        this.loginModal.hide();
+    }
+    back() {
+        //console.log(this.userForm);
+        //this.childModal.show();
+        //this.loginModal.show();
+        this.router.navigate([this.returnUrl]);
     }
 };
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('editDetailPreview'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], EditDetailPreview.prototype, "childeditDetailPreviewModal", void 0);
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__["b" /* ModalDirective */])
+], AddUser.prototype, "childModal", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
-    __metadata('design:type', Number)
-], EditDetailPreview.prototype, "logId", void 0);
-EditDetailPreview = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('loginModal'), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__["b" /* ModalDirective */])
+], AddUser.prototype, "loginModal", void 0);
+AddUser = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'editDetailPreview',
-        styles: [__webpack_require__(1411)],
-        template: __webpack_require__(1596)
+        selector: 'user-manager',
+        template: __webpack_require__(1616),
+        styles: [__webpack_require__(1557)],
+        providers: [__WEBPACK_IMPORTED_MODULE_4__adduser_service__["a" /* AddUserService */]]
     }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__report_service__["a" /* ReportService */]])
-], EditDetailPreview);
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"], __WEBPACK_IMPORTED_MODULE_4__adduser_service__["a" /* AddUserService */], __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_6__common_repositories__["a" /* MasterRepo */]])
+], AddUser);
 
 
 /***/ }),
 
-/***/ 1531:
+/***/ 1552:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return SchedulePreview; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return AddRole; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__adduser_service__ = __webpack_require__(1493);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__report_service__ = __webpack_require__(1412);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_repositories__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_menu__ = __webpack_require__(649);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__ = __webpack_require__(1378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_common_service__ = __webpack_require__(330);
 
 
 
 
-let SchedulePreview = class SchedulePreview {
-    constructor(router, reportService) {
+
+
+
+let AddRole = class AddRole {
+    constructor(addUserService, router, activatedRoute, service, common) {
+        this.addUserService = addUserService;
         this.router = router;
-        this.reportService = reportService;
-        this.logId = 0;
-        this.schedule = {};
-        this.schedule.customer = {};
+        this.activatedRoute = activatedRoute;
+        this.service = service;
+        this.common = common;
+        this.modeTitle = "Add Role";
+        this.DialogMessage = "Saving data please wait ...";
+        this.mode = "add"; //mode of the form add or edit
+        this.menuRights = [];
+        this.role = this.activatedRoute.snapshot.params["role"] || "";
+        if (this.role && this.role !== "") {
+            this.mode = "edit";
+            this.modeTitle = "Edit Role";
+        }
+        else {
+            this.mode = "add";
+            this.modeTitle = "Add Role";
+        }
     }
     ngOnInit() {
-        this.schedule = {};
-        this.schedule.customer = {};
+        this.common.recursiveForEach(__WEBPACK_IMPORTED_MODULE_4__pages_menu__["a" /* PAGES_MENU */], (item) => {
+            if (["pages", "treatment-list", "treatment-details", "series", "seriesSales", "disease", "medication", "prescription"].indexOf(item.path) !==
+                -1)
+                return;
+            var menu = item.data && item.data.menu;
+            this.menuRights.push({
+                menuId: item.path,
+                menuName: menu && menu.title,
+                allowCreate: this.common.coalesce(menu && menu.allowCreate, true),
+                allowEdit: this.common.coalesce(menu && menu.allowEdit, true),
+                allowDelete: this.common.coalesce(menu && menu.allowDelete, true),
+                create: this.common.coalesce(menu && menu.allowCreate, true),
+                edit: this.common.coalesce(menu && menu.allowEdit, true),
+                delete: this.common.coalesce(menu && menu.allowDelete, true),
+            });
+        });
+        if (this.mode === "edit") {
+            this.loadUserRights();
+        }
     }
-    showDialog() {
-        this.reportService.getLogDetail(this.logId).subscribe(res => {
-            var response = res.json();
-            this.schedule = response.model;
-            console.log({ response: this.schedule });
-            setTimeout(() => {
-                this.childschedulePreviewModal.show();
-            }, 100);
-        }, Error => {
-            try {
-                let t = Error.json();
-                //console.log(t);
-                if (t.result == "Authorization Failed") {
-                    this.router.navigate(['/login', this.router.url]);
+    loadUserRights() {
+        this.addUserService.getUserRole(this.role).subscribe((response) => {
+            this.menuRights.forEach((mRight) => {
+                var userRight = response.json().menuRights.find((menuRight) => menuRight.menuId === mRight.menuId);
+                if (userRight) {
+                    mRight.hidden = userRight.hidden;
+                    mRight.create = userRight.create;
+                    mRight.edit = userRight.edit;
+                    mRight.delete = userRight.delete;
                 }
                 else {
-                    alert("Error in Loading Data:" + t.result);
+                    mRight.hidden = true;
+                    mRight.create = false;
+                    mRight.edit = false;
+                    mRight.delete = false;
                 }
-            }
-            catch (e) {
-                alert(e);
-            }
+            });
+        }, (error) => {
+            this.service.handleWebError(error);
         });
     }
-    labelClickEvent(id) {
-        this.router.navigate(['/pages/schedule/scheInput', { mode: "edit", id: id, returnUrl: this.router.url }]);
+    back() {
+        this.router.navigate(["/pages/userManager/roleList"]);
     }
-};
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('schedulePreview'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], SchedulePreview.prototype, "childschedulePreviewModal", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
-    __metadata('design:type', Number)
-], SchedulePreview.prototype, "logId", void 0);
-SchedulePreview = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'schedulePreview',
-        template: __webpack_require__(1597)
-    }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__report_service__["a" /* ReportService */]])
-], SchedulePreview);
-
-
-/***/ }),
-
-/***/ 1532:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return TreatmentPreview; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__report_service__ = __webpack_require__(1412);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_repositories__ = __webpack_require__(119);
-
-
-
-
-
-let TreatmentPreview = class TreatmentPreview {
-    constructor(router, reportService, masterService) {
-        this.router = router;
-        this.reportService = reportService;
-        this.masterService = masterService;
-        this.logId = 0;
-        this.treatment = {};
-        this.treatment.customer = {};
-        this.treatment.healer = {};
-        this.contentUrl = masterService.contentUrl;
-    }
-    ngOnInit() {
-        this.treatment = {};
-        this.treatment.patient = {};
-        this.treatment.healer = {};
-    }
-    showDialog() {
-        this.reportService.getLogDetail(this.logId).subscribe(res => {
-            var response = res.json();
-            this.treatment = response.model;
-            document.getElementById("patientComplaint").innerHTML = this.treatment.patientComplaint;
-            document.getElementById("treatmentNotes").innerHTML = this.treatment.treatmentNotes;
-            setTimeout(() => {
-                this.childTreatmentPreviewModal.show();
-            }, 100);
-        }, Error => {
-            try {
-                let t = Error.json();
-                //console.log(t);
-                if (t.result == "Authorization Failed") {
-                    this.router.navigate(['/login', this.router.url]);
+    onSubmit() {
+        this.childModal.show();
+        this.DialogMessage = "Saving data please wait ...";
+        let data = {
+            mode: this.mode,
+            data: {
+                role: this.role,
+                menuRights: this.menuRights.map((x) => ({
+                    menuId: x.menuId,
+                    menuName: x.menuName,
+                    hidden: x.hidden || false,
+                    create: x.create,
+                    edit: x.edit,
+                    delete: x.delete,
+                })),
+            },
+        };
+        if (data) {
+            this.addUserService.saveRole(data).subscribe((response) => {
+                var result = response.json();
+                if (result.status == "ok") {
+                    this.DialogMessage = "Role saved sucessfully.";
+                    setTimeout(() => {
+                        this.childModal.hide();
+                        this.router.navigate(["/pages/userManager/roleList"]);
+                    }, 1000);
                 }
                 else {
-                    alert("Error in Loading Data:" + t.result);
+                    console.log({ response: response, result: result });
+                    this.DialogMessage = "Role could not be saved.";
+                    setTimeout(() => {
+                        this.childModal.hide();
+                    }, 1000);
                 }
-            }
-            catch (e) {
-                alert(e);
-            }
+            }, (error) => {
+                this.service.handleWebError(error);
+                this.childModal.hide();
+            });
+        }
+        else {
+            this.DialogMessage = "Invalid data. Please check the entry";
+            setTimeout(() => {
+                this.childModal.hide();
+            }, 3000);
+        }
+    }
+};
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])("childModal"), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap__["b" /* ModalDirective */])
+], AddRole.prototype, "childModal", void 0);
+AddRole = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: "role-form",
+        template: __webpack_require__(1617),
+        styles: [__webpack_require__(1557)],
+        providers: [__WEBPACK_IMPORTED_MODULE_1__adduser_service__["a" /* AddUserService */]],
+    }), 
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__adduser_service__["a" /* AddUserService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_3__common_repositories__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_6__common_services_common_service__["a" /* CommonService */]])
+], AddRole);
+
+
+/***/ }),
+
+/***/ 1553:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return RoleList; }));
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss__ = __webpack_require__(1558);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_services_permission_authService_service__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__adduser_service__ = __webpack_require__(1493);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_repositories_masterRepo_service__ = __webpack_require__(639);
+
+
+
+
+
+
+
+
+let RoleList = class RoleList {
+    constructor(adduserService, router, _authService, service) {
+        this.adduserService = adduserService;
+        this.router = router;
+        this._authService = _authService;
+        this.service = service;
+        this.DialogMessage = "You are not authorized";
+        this.settings = {
+            mode: "external",
+            edit: null,
+            delete: null,
+            columns: {
+                role: {
+                    title: "Role",
+                    type: "text",
+                },
+            },
+        };
+        this.source = new __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__["LocalDataSource"]();
+        this.loadUserRoles();
+        this.settings.delete = this.menuRight.delete ? {} : null;
+        this.settings.edit = this.menuRight.edit ? {} : null;
+    }
+    get disableAdd() {
+        return !this.menuRight.create;
+    }
+    get menuRight() {
+        var right = this._authService.getRole.menuRights.find(x => x.menuId === 'roles');
+        return right || { edit: true };
+    }
+    loadUserRoles() {
+        let data = [];
+        this.adduserService.getRoleNames().subscribe((res) => {
+            res
+                .json()
+                .map((x) => ({ role: x }))
+                .forEach((element) => {
+                data.push(element);
+            });
+            this.source.load(data);
+            console.log(data);
+        }, (error) => {
+            this.service.handleWebError(error);
         });
     }
-    labelClickEvent(id) {
-        this.router.navigate(['/pages/schedule/scheInput', { mode: "edit", id: id, returnUrl: this.router.url }]);
+    onDeleteConfirm(event) {
+        try {
+            this.selectedData = event.data;
+            this.deleteModal.show();
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    DeleteEvent() {
+        try {
+            let result = [];
+            this.deleteModal.hide();
+            this.DialogMessage = "Deleting please wait...";
+            this.childModal.show();
+            let sub = this.adduserService
+                .saveRole({ mode: "delete", data: this.selectedData })
+                .subscribe((response) => {
+                var result = response.json();
+                if (result.status == "ok") {
+                    this.DialogMessage = "Role deleted sucessfully.";
+                    this.loadUserRoles();
+                    setTimeout(() => {
+                        this.childModal.hide();
+                    }, 1000);
+                }
+                else {
+                    console.log({ response: response, result: result });
+                    this.DialogMessage = "Role could not be saved.";
+                    setTimeout(() => {
+                        this.childModal.hide();
+                    }, 1000);
+                }
+            }, (error) => {
+                this.service.handleWebError(error);
+                this.childModal.hide();
+            });
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    hideChildModal() {
+        this.childModal.hide();
+    }
+    onEditClick(event) {
+        this.router.navigate([
+            "pages/userManager/addRole",
+            { role: event.data.role, returnUrl: this.router.url },
+        ]);
     }
 };
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('treatmentPreview'), 
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])("childModal"), 
     __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], TreatmentPreview.prototype, "childTreatmentPreviewModal", void 0);
+], RoleList.prototype, "childModal", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
-    __metadata('design:type', Number)
-], TreatmentPreview.prototype, "logId", void 0);
-TreatmentPreview = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])("deleteModal"), 
+    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
+], RoleList.prototype, "deleteModal", void 0);
+RoleList = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'treatmentPreview',
-        styles: [__webpack_require__(1411)],
-        template: __webpack_require__(1598)
+        selector: "role-list",
+        template: __webpack_require__(1618),
+        providers: [__WEBPACK_IMPORTED_MODULE_6__adduser_service__["a" /* AddUserService */]],
     }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_3__report_service__["a" /* ReportService */], __WEBPACK_IMPORTED_MODULE_4__common_repositories__["a" /* MasterRepo */]])
-], TreatmentPreview);
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__adduser_service__["a" /* AddUserService */], __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_7__common_repositories_masterRepo_service__["a" /* MasterRepo */]])
+], RoleList);
 
 
 /***/ }),
 
-/***/ 1533:
+/***/ 1554:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return RoomReport; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return UserList; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__ = __webpack_require__(639);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_services_permission_authService_service__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__report_service__ = __webpack_require__(1412);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss__ = __webpack_require__(1558);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_style_loader_smartTables_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__adduser_service__ = __webpack_require__(1493);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_router__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__ = __webpack_require__(118);
 
 
 
 
 
 
-let RoomReport = class RoomReport {
-    constructor(masterService, _authService, router, reportService) {
-        this.masterService = masterService;
-        this._authService = _authService;
+
+let UserList = class UserList {
+    constructor(adduserService, router, _authService) {
+        this.adduserService = adduserService;
         this.router = router;
-        this.reportService = reportService;
+        this._authService = _authService;
         this.query = '';
         this.DialogMessage = "You are not authorized";
+        this.settings = {
+            mode: 'external',
+            edit: null,
+            delete: null,
+            columns: {
+                UserId: {
+                    title: 'User Id',
+                    type: 'text'
+                },
+                Name: {
+                    title: 'User Name',
+                    type: 'text'
+                },
+                Role: {
+                    title: 'Role',
+                    type: 'text'
+                },
+                email: {
+                    title: 'Email',
+                    type: 'text'
+                },
+                mobile: {
+                    title: 'Mobile',
+                    type: 'text'
+                },
+                address: {
+                    title: 'Address',
+                    type: 'text'
+                }
+            }
+        };
         this.subcriptions = [];
-        this.reportList = [];
-        this.reportObj = {};
-        this.RoomList = [];
+        this.source = new __WEBPACK_IMPORTED_MODULE_2_ng2_smart_table__["LocalDataSource"]();
+        let data = [];
+        this.adduserService.getUserList()
+            .flatMap(d => d || [])
+            .subscribe(res => {
+            data.push(res);
+            this.source.load(data);
+        }, error => {
+            this.router.navigate(["/login", { returnUrl: this.router.url }]);
+            //console.log(error);
+        });
+        this.settings.delete = this.menuRight.delete ? {} : null;
+        this.settings.edit = this.menuRight.edit ? {} : null;
     }
-    ngOnInit() {
-        if (this.masterService._roomList.length > 0) {
-            this.RoomList = this.masterService._roomList;
-        }
-        else {
-            this.masterService.getRoomList().subscribe((data) => {
-                this.RoomList.push(data);
-            }, Error => console.log(Error), () => {
-                this.masterService._roomList = this.RoomList;
-            });
-        }
+    get disableAdd() {
+        return !this.menuRight.create;
     }
-    onCancel() {
-        this.reportObj = {};
-        this.reportList = [];
+    get menuRight() {
+        var right = this._authService.getRole.menuRights.find(x => x.menuId === 'userlist');
+        return right || {};
     }
-    loadReportEvent() {
-        this.DialogMessage = "Room Report Loading.... Please Wait...";
-        this.childModal.show();
+    onAddClick(event) {
+        this.router.navigate(['/pages/userManager/adduser', { returnUrl: this.router.url }]);
+    }
+    onDeleteConfirm(event) {
         try {
-            let rparam = { rName: 'roomReport', rParam: this.reportObj };
-            this.reportService.getReport(rparam, '/GetReport')
-                .subscribe(data => {
-                data.forEach(element => {
-                    element.DATE = element.DATE.toString().substring(0, 10);
-                });
-                this.reportList = data;
-                this.DialogMessage = "Room Report Loaded sucessfully...";
-                setTimeout(() => {
-                    this.childModal.hide();
-                }, 1000);
-            }, Error => {
-                try {
-                    let t = Error.json();
-                    //console.log(t);
-                    this.DialogMessage = t.result + "Please check and try again";
-                    //let p = t.json();
-                    if (t.result == "Authorization Failed") {
-                        //this.DialogMessage="erro in saving. " +Error._body;
+            this.selectedData = event.data;
+            this.deleteModal.show();
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+    DeleteEvent() {
+        try {
+            let result = [];
+            this.deleteModal.hide();
+            this.DialogMessage = "Deleting please wait...";
+            this.childModal.show();
+            if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+                let sub = this.adduserService.saveUser({ mode: 'delete', data: this.selectedData })
+                    .subscribe(data => {
+                    if (data.status == 'ok') {
+                        this.adduserService.getUserList()
+                            .flatMap(d => d || [])
+                            .subscribe(res => {
+                            result.push(res);
+                            this.source.load(result);
+                        });
+                        //Displaying dialog message for save with timer of 1 secs
+                        this.DialogMessage = "Data Deleted Successfully";
                         setTimeout(() => {
                             this.childModal.hide();
-                            this.loginModal.show();
-                        }, 3000);
+                        }, 1000);
                     }
                     else {
-                        this.DialogMessage = "Error in Loading Data:" + t.result;
+                        //the ConnectionString in the server is not initialized means the the token 's user is not int the list of database user so it could't make connectionstring. Re authorization is requierd
+                        if (data.result._body == "The ConnectionString property has not been initialized.") {
+                            this.router.navigate(['/login', this.router.url]);
+                            return;
+                        }
+                        //Some other issues need to check
+                        alert("Error in Deleting Data:" + data.result._body);
+                        this.DialogMessage = "Error in Deleting Data:" + data.result._body;
+                        //console.log(data.result._body);
+                        setTimeout(() => {
+                            this.childModal.hide();
+                        }, 3000);
                     }
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 5000);
-                }
-                catch (e) {
-                    this.DialogMessage = e;
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                }
-            });
+                }, error => { alert(error); });
+                this.subcriptions.push(sub);
+            }
+            else {
+                this.DialogMessage = "You are not authorize to delete the user";
+                this.childModal.show();
+            }
         }
-        catch (ex) {
-            alert(ex);
-            this.DialogMessage = ex;
-            setTimeout(() => {
-                this.childModal.hide();
-            }, 3000);
+        catch (e) {
+            alert(e);
+        }
+    }
+    hideChildModal() {
+        this.childModal.hide();
+    }
+    onEditClick(event) {
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.router.navigate(["pages/userManager/adduser", { user: event.data.UserId, returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorize to edit the user";
+            this.childModal.show();
         }
     }
 };
 __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
     __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], RoomReport.prototype, "childModal", void 0);
+], UserList.prototype, "childModal", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('loginModal'), 
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('deleteModal'), 
     __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], RoomReport.prototype, "loginModal", void 0);
-RoomReport = __decorate([
+], UserList.prototype, "deleteModal", void 0);
+UserList = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'RR',
-        template: __webpack_require__(1599),
-        providers: [__WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* ReportService */]],
+        selector: 'user-list',
+        template: __webpack_require__(1619),
+        providers: [__WEBPACK_IMPORTED_MODULE_4__adduser_service__["a" /* AddUserService */]]
     }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* ReportService */]])
-], RoomReport);
+    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_4__adduser_service__["a" /* AddUserService */], __WEBPACK_IMPORTED_MODULE_5__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_6__common_services_permission_authService_service__["a" /* AuthService */]])
+], UserList);
 
 
 /***/ }),
 
-/***/ 1534:
+/***/ 1555:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return SeriesReport; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__ = __webpack_require__(639);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_services_permission_authService_service__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__report_service__ = __webpack_require__(1412);
-
-
-
-
-
-
-let SeriesReport = class SeriesReport {
-    constructor(masterService, _authService, router, reportService) {
-        this.masterService = masterService;
-        this._authService = _authService;
-        this.router = router;
-        this.reportService = reportService;
-        this.query = '';
-        this.DialogMessage = "You are not authorized";
-        this.subcriptions = [];
-        this.reportList = [];
-        this.reportObj = {};
-        this.CustomerList = [];
-        this.SeriesList = [];
-    }
-    ngOnInit() {
-        if (this.masterService._customerList.length > 0) {
-            this.CustomerList = this.masterService._customerList;
-        }
-        else {
-            this.masterService.getCustomerList().subscribe((data) => {
-                this.CustomerList.push(data);
-            }, Error => console.log(Error), () => {
-                this.masterService._customerList = this.CustomerList;
-            });
-        }
-        if (this.masterService._seriesList.length > 0) {
-            this.SeriesList = this.masterService._seriesList;
-        }
-        else {
-            this.masterService.getSeriesList().subscribe((data) => {
-                this.SeriesList.push(data);
-            }, Error => console.log(Error), () => {
-                this.masterService._seriesList = this.SeriesList;
-            });
-        }
-    }
-    onCancel() {
-        this.reportObj = {};
-        this.reportList = [];
-    }
-    loadReportEvent() {
-        this.DialogMessage = "Series Report Loading.... Please Wait...";
-        this.childModal.show();
-        try {
-            let rparam = { rName: 'seriesReport', rParam: this.reportObj };
-            this.reportService.getReport(rparam, '/GetReport')
-                .subscribe(data => {
-                data.forEach(element => {
-                    element.DATE = element.DATE.toString().substring(0, 10);
-                });
-                this.reportList = data;
-                this.DialogMessage = "Series Report Loaded sucessfully...";
-                setTimeout(() => {
-                    this.childModal.hide();
-                }, 1000);
-            }, Error => {
-                try {
-                    let t = Error.json();
-                    //console.log(t);
-                    this.DialogMessage = t.result + "Please check and try again";
-                    //let p = t.json();
-                    if (t.result == "Authorization Failed") {
-                        //this.DialogMessage="erro in saving. " +Error._body;
-                        setTimeout(() => {
-                            this.childModal.hide();
-                            this.loginModal.show();
-                        }, 3000);
-                    }
-                    else {
-                        this.DialogMessage = "Error in Loading Data:" + t.result;
-                    }
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 5000);
-                }
-                catch (e) {
-                    this.DialogMessage = e;
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                }
-            });
-        }
-        catch (ex) {
-            alert(ex);
-            this.DialogMessage = ex;
-            setTimeout(() => {
-                this.childModal.hide();
-            }, 3000);
-        }
-    }
-};
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], SeriesReport.prototype, "childModal", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('loginModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], SeriesReport.prototype, "loginModal", void 0);
-SeriesReport = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'seriesReport',
-        template: __webpack_require__(1600),
-        providers: [__WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* ReportService */]],
-    }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* ReportService */]])
-], SeriesReport);
-
-
-/***/ }),
-
-/***/ 1535:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return ServiceReport; }));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__ = __webpack_require__(1378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__ = __webpack_require__(639);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_services_permission_authService_service__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__report_service__ = __webpack_require__(1412);
-
-
-
-
-
-
-let ServiceReport = class ServiceReport {
-    constructor(masterService, _authService, router, reportService) {
-        this.masterService = masterService;
-        this._authService = _authService;
-        this.router = router;
-        this.reportService = reportService;
-        this.query = '';
-        this.DialogMessage = "You are not authorized";
-        this.subcriptions = [];
-        this.reportList = [];
-        this.reportObj = {};
-        this.ServiceList = [];
-    }
-    ngOnInit() {
-        if (this.masterService._roomList.length > 0) {
-            this.ServiceList = this.masterService._serviceList;
-        }
-        else {
-            this.masterService.getServiceList().subscribe((data) => {
-                this.ServiceList.push(data);
-            }, Error => console.log(Error), () => {
-                this.masterService._serviceList = this.ServiceList;
-            });
-        }
-    }
-    onCancel() {
-        this.reportObj = {};
-        this.reportList = [];
-    }
-    loadReportEvent() {
-        this.DialogMessage = "Service Report Loading.... Please Wait...";
-        this.childModal.show();
-        try {
-            let rparam = { rName: 'serviceReport', rParam: this.reportObj };
-            this.reportService.getReport(rparam, '/GetReport')
-                .subscribe(data => {
-                data.forEach(element => {
-                    element.DATE = element.DATE.toString().substring(0, 10);
-                });
-                this.reportList = data;
-                this.DialogMessage = "Service Report Loaded sucessfully...";
-                setTimeout(() => {
-                    this.childModal.hide();
-                }, 1000);
-            }, Error => {
-                try {
-                    let t = Error.json();
-                    //console.log(t);
-                    this.DialogMessage = t.result + "Please check and try again";
-                    //let p = t.json();
-                    if (t.result == "Authorization Failed") {
-                        //this.DialogMessage="erro in saving. " +Error._body;
-                        setTimeout(() => {
-                            this.childModal.hide();
-                            this.loginModal.show();
-                        }, 3000);
-                    }
-                    else {
-                        this.DialogMessage = "Error in Loading Data:" + t.result;
-                    }
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 5000);
-                }
-                catch (e) {
-                    this.DialogMessage = e;
-                    setTimeout(() => {
-                        this.childModal.hide();
-                    }, 3000);
-                }
-            });
-        }
-        catch (ex) {
-            alert(ex);
-            this.DialogMessage = ex;
-            setTimeout(() => {
-                this.childModal.hide();
-            }, 3000);
-        }
-    }
-};
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('childModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], ServiceReport.prototype, "childModal", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('loginModal'), 
-    __metadata('design:type', __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap__["b" /* ModalDirective */])
-], ServiceReport.prototype, "loginModal", void 0);
-ServiceReport = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'SR',
-        template: __webpack_require__(1601),
-        providers: [__WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* ReportService */]],
-    }), 
-    __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_3__common_repositories_masterRepo_service__["a" /* MasterRepo */], __WEBPACK_IMPORTED_MODULE_4__common_services_permission_authService_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* ReportService */]])
-], ServiceReport);
-
-
-/***/ }),
-
-/***/ 1536:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return Reports; }));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", (function() { return UserManager; }));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 
-let Reports = class Reports {
+let UserManager = class UserManager {
     constructor() {
     }
-    ;
 };
-Reports = __decorate([
+UserManager = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'reports',
+        selector: 'user-manager',
         template: '<router-outlet></router-outlet>'
     }), 
     __metadata('design:paramtypes', [])
-], Reports);
+], UserManager);
 
 
 /***/ }),
 
-/***/ 1560:
+/***/ 1557:
+/***/ (function(module, exports) {
+
+module.exports = ".modal{padding-top:300px}.modal .modal-content{color:#7d7d7d}.modal .modal-content .modal-header{border:none}.modal .modal-content .modal-footer{border:none}.modal .modal-content .close{outline:none}.modal-buttons .btn{margin-right:20px}\n"
+
+/***/ }),
+
+/***/ 1558:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1570);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(38)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../../../node_modules/raw-loader/index.js!../../../../../../node_modules/sass-loader/lib/loader.js!./smartTables.scss", (function() {
+			var newContent = require("!!../../../../../../node_modules/raw-loader/index.js!../../../../../../node_modules/sass-loader/lib/loader.js!./smartTables.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		}));
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose((function() { update(); }));
+}
+
+/***/ }),
+
+/***/ 1565:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_messageReport_component__ = __webpack_require__(1529);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_userManger_adduser_component__ = __webpack_require__(1551);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__report_component__ = __webpack_require__(1536);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__ = __webpack_require__(640);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_customerReport_component__ = __webpack_require__(1526);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_employeeReport_component__ = __webpack_require__(1527);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_roomReport_component__ = __webpack_require__(1533);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_serviceReport_component__ = __webpack_require__(1535);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_seriesReport_component__ = __webpack_require__(1534);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_followupReport_component__ = __webpack_require__(1528);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_activityReport_component__ = __webpack_require__(1525);
-
-
-
-
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__userManager_component__ = __webpack_require__(1555);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_userManger_userList_component__ = __webpack_require__(1554);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_userManger_roles_roleList_component__ = __webpack_require__(1553);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_userManger_roles_addRole_component__ = __webpack_require__(1552);
 
 
 
@@ -9836,17 +10089,12 @@ Reports = __decorate([
 const routes = [
     {
         path: '',
-        component: __WEBPACK_IMPORTED_MODULE_2__report_component__["a" /* Reports */],
+        component: __WEBPACK_IMPORTED_MODULE_2__userManager_component__["a" /* UserManager */],
         children: [
-            { path: 'cusReport', component: __WEBPACK_IMPORTED_MODULE_4__components_customerReport_component__["a" /* CustomerReport */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'empReport', component: __WEBPACK_IMPORTED_MODULE_5__components_employeeReport_component__["a" /* EmployeeReport */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'roomReport', component: __WEBPACK_IMPORTED_MODULE_6__components_roomReport_component__["a" /* RoomReport */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'serviceReport', component: __WEBPACK_IMPORTED_MODULE_7__components_serviceReport_component__["a" /* ServiceReport */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'seriesReport', component: __WEBPACK_IMPORTED_MODULE_8__components_seriesReport_component__["a" /* SeriesReport */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'patientRecords', component: __WEBPACK_IMPORTED_MODULE_8__components_seriesReport_component__["a" /* SeriesReport */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'followupRecords', component: __WEBPACK_IMPORTED_MODULE_9__components_followupReport_component__["a" /* FollowupReport */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'messageReport', component: __WEBPACK_IMPORTED_MODULE_0__components_messageReport_component__["a" /* MessageReport */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__["a" /* CanActivateTeam */]] },
-            { path: 'activityReport', component: __WEBPACK_IMPORTED_MODULE_10__components_activityReport_component__["a" /* ActivityReport */], canActivate: [__WEBPACK_IMPORTED_MODULE_3__common_services_permission_guard_service__["a" /* CanActivateTeam */]] }
+            { path: 'userlist', component: __WEBPACK_IMPORTED_MODULE_3__components_userManger_userList_component__["a" /* UserList */] },
+            { path: 'adduser', component: __WEBPACK_IMPORTED_MODULE_0__components_userManger_adduser_component__["a" /* AddUser */] },
+            { path: 'roles', component: __WEBPACK_IMPORTED_MODULE_4__components_userManger_roles_roleList_component__["a" /* RoleList */] },
+            { path: 'addRole', component: __WEBPACK_IMPORTED_MODULE_5__components_userManger_roles_addRole_component__["a" /* AddRole */] }
         ]
     }
 ];
@@ -9857,80 +10105,72 @@ const routing = __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModul
 
 /***/ }),
 
-/***/ 1591:
+/***/ 1569:
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"margin-bottom: 50px;\">\r\n    <div class=\"form-group row col-12\">\r\n        <div class=\"row col-sm-5 col-md-3 col-lg-2\">\r\n            <label for=\"date1\">From Date: </label>\r\n            <input type=\"date\" class=\"form-control\" id=\"date1\" [(ngModel)]=\"reportObj.Date1\">\r\n        </div>\r\n\r\n        <div class=\"row col-sm-5 col-md-3 col-lg-2 ml-sm-1\">\r\n            <label for=\"date2\">To Date: </label>\r\n            <input type=\"date\" class=\"form-control\" id=\"date2\" [(ngModel)]=\"reportObj.Date2\">\r\n        </div>\r\n\r\n        <div class=\"row col-sm-5 col-md-3 col-lg-2 ml-md-1\">\r\n            <label for=\"user\">User: </label>\r\n            <select class=\"form-control\" name=\"user\" id=\"user\"\r\n            [(ngModel)]=\"reportObj.user\">\r\n            <option *ngFor=\"let em of userList\" [ngValue]=\"em\">{{em.UserId}}</option>\r\n          </select>\r\n        </div>\r\n\r\n        <div class=\"row col-sm-5 col-md-3 col-lg-2 ml-sm-1\">\r\n            <label for=\"user\">User: </label>\r\n            <select class=\"form-control\" name=\"form\" id=\"form\"\r\n            [(ngModel)]=\"reportObj.form\">\r\n            <option *ngFor=\"let em of formList\" [ngValue]=\"em\">{{em}}</option>\r\n          </select>\r\n        </div>\r\n    </div>\r\n\r\n    \r\n    <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\"\r\n        [disabled]=\"!reportObj.Date1\">Load</button>\r\n    <button type=\"button\" class=\"btn btn-danger\" (click)=\"onClickClear()\">Clear</button>\r\n</div>\r\n\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n    <div style=\"width:100%;max-height:400px\" style=\"overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n        <tbody style=\"width: 100%;display: table;\">\r\n            <tr style=\"height:30px;width:100%\">\r\n                <th style=\"width:5%\">Date</th>\r\n                <th style=\"width:5%\">Time</th>\r\n                <th style=\"width:10%\">Form</th>\r\n                <th style=\"width:10%\">Activity</th>\r\n                <th style=\"width:10%\">Document Id</th>\r\n                <th style=\"width:10%\">User</th>\r\n            </tr>\r\n\r\n            <tr style=\"height: 28px;\" *ngFor=\"let r of reportList; let i=index\">\r\n                <td style=\"width: 10%;\">{{r.date}}</td>\r\n                <td style=\"width: 10%;\">{{r.time}}</td>\r\n                <td style=\"width: 20%;\">{{r.formName}}</td>\r\n                <td style=\"width: 20%;\">{{r.activity}}</td>\r\n                <td style=\"width: 20%;\">{{r.documentId}}</td>\r\n                <td style=\"width: 20%;\">{{r.user}}</td>\r\n                <td style=\"width:60px\">\r\n                    <button class=\"fa fa-eye\" *ngIf=\"detailVisible(r)\" (click)=\"viewLogDetail(r)\"></button>\r\n                </td>\r\n            </tr>\r\n        </tbody>\r\n\r\n    </div>\r\n</Table>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-sm\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Information</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                {{ DialogMessage }}\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div style=\"padding-top:20%\" class=\"modal fade\" bsModal #loginModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\"\r\n    tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog \">\r\n        <div class=\"modal-content\">\r\n            <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<schedulePreview #schedulePreview></schedulePreview> \r\n<treatmentPreview #treatmentPreview></treatmentPreview> \r\n<editDetailPreview #editDetailPreview></editDetailPreview> "
+module.exports = ".show-grid div[class^=col-]{padding:10px;box-sizing:border-box}.show-grid div[class^=col-] div{color:#666;text-align:center;font-size:18px;background-color:rgba(102,102,102,0.3);padding:12px 5px}.grid-h{margin-top:40px;margin-bottom:0}.grid-h:first-child{margin-top:0}\n"
 
 /***/ }),
 
-/***/ 1592:
+/***/ 1570:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-xlg-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12\" style=\"width:100%\">\r\n        <ba-card title=\"Report Parameters\">\r\n            <div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"customerselect\" style=\"float:left;width:10%\">Customer :</label>\r\n                    <select style=\"float:left;width:80%;height:28px;padding:0\" [(ngModel)]=\"reportObj.CUSID\" class=\"form-control\" name=\"customerselect\" id=\"customerselect\"> \r\n        <option *ngFor=\"let c of CustomerList\" [ngValue]=\"c.CUSID\">{{c.NAME}}</option>\r\n      </select>\r\n\r\n\r\n                </div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"date1\" style=\"float:left;width:10%\">From :</label>\r\n                    <input type=\"date\" style=\"float:left;width:30%;height:28px;padding:2px\" class=\"form-control\" id=\"date1\" [(ngModel)]=\"reportObj.Date1\">\r\n                     <label for=\"date2\" style=\"float:left;width:10%;margin-left:20px\">To :</label>\r\n                    <input type=\"date\" class=\"form-control\" id=\"date2\" [(ngModel)]=\"reportObj.Date2\" style=\"float:left;width:30%;height:28px;padding:2px\">\r\n\r\n                </div>\r\n                \r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\" [disabled]=\"reportObj.Date1==null || reportObj.Date2==null || reportObj.CUSID==null\">Load</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n     <div style=\"width:100%;max-height:400px\" style=\"overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n    \r\n        <tr style=\"height:30px;width:100%\">\r\n            <th style=\"width:5%\">SNo</th>\r\n            <th style=\"width:10%\">Date</th>\r\n            <th style=\"width:10%\">User</th>\r\n            <th style=\"width:15%\">Service</th>\r\n            <th style=\"width:10%\">Room</th>\r\n            <th style=\"width:15%\">Therapist</th>\r\n            <th style=\"width:5%\">Cus. Pref.</th>\r\n            <th style=\"width:10%\">StartTime</th>\r\n            <th style=\"width:10%\">FinishedTime</th>\r\n            <th style=\"width:10%\">Rate</th>\r\n        </tr>\r\n    \r\n   \r\n        <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n            <td style=\"width:5%\">{{i+1}}</td>\r\n            <td style=\"width:10%\">{{ir.DATE}}</td>\r\n            <td style=\"width:10%\">{{ir.USER}}</td>\r\n            <td style=\"width:15%\">{{ir.SERVICE}}</td>\r\n            <td style=\"width:10%\">{{ir.ROOM}}</td>\r\n            <td style=\"width:15%\">{{ir.EMPLOYEE}}</td>\r\n            <td style=\"width:5%\">{{ir.EMPLOYEE_PREFERED}}</td>\r\n            <td style=\"width:10%\">{{ir.STARTTIME}}</td>\r\n            <td style=\"width:10%\">{{ir.ENDTIME}}</td>\r\n            <td style=\"width:10%\">{{ir.RATE}}</td>\r\n        </tr>\r\n    </div>\r\n</Table>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-sm\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                <h4 class=\"modal-title\">Information</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                {{DialogMessage}}\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div style=\"padding-top:20%\" class=\"modal fade\" bsModal #loginModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\"\r\n    role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog \">\r\n        <div class=\"modal-content\">\r\n            <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = ".ng2-smart-table-container table.ng2-smart-table{color:#666}.ng2-smart-table-container table.ng2-smart-table th,.ng2-smart-table-container table.ng2-smart-table td{border:1px solid #dcdcdc !important;line-height:35px;vertical-align:middle}.ng2-smart-table-container table.ng2-smart-table input{line-height:1.5 !important}.ng2-smart-table-container table.ng2-smart-table tbody tr:hover{background:rgba(0,0,0,0.03)}.ng2-smart-table-container table.ng2-smart-table a.ng2-smart-sort-link{font-size:14px !important;color:#666;font-weight:500}.ng2-smart-table-container table.ng2-smart-table a.ng2-smart-sort-link.sort{font-weight:500 !important}.ng2-smart-table-container table.ng2-smart-table a.ng2-smart-sort-link.sort::after{border-bottom-color:#666 !important}.ng2-smart-table-container table.ng2-smart-table .ng2-smart-actions{width:70px;text-align:center}.ng2-smart-table-container table.ng2-smart-table .ng2-smart-actions .actions{float:none;text-align:center}.ng2-smart-table-container table.ng2-smart-table a.ng2-smart-action{font-size:14px !important;color:#666;padding:0 5px;display:inline-block}.ng2-smart-table-container table.ng2-smart-table a.ng2-smart-action.ng2-smart-action-add-add{font-size:0px !important}nav.ng2-smart-pagination-nav{display:flex;justify-content:center}\n"
 
 /***/ }),
 
-/***/ 1593:
+/***/ 1616:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-xlg-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12\" style=\"width:100%\">\r\n        <ba-card title=\"Report Parameters\">\r\n            <div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"employeeselect\" style=\"float:left;width:10%\">Employee :</label>\r\n                    <select style=\"float:left;width:80%;height:28px;padding:0\" [(ngModel)]=\"reportObj.EMPLOYEEID\"\r\n                        class=\"form-control\" id=\"employeeselect\">\r\n                        <option *ngFor=\"let c of EmployeeList\" [ngValue]=\"c.EMPLOYEEID\">{{c.NAME}}</option>\r\n                    </select>\r\n\r\n\r\n                </div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"date1\" style=\"float:left;width:10%\">From :</label>\r\n                    <input type=\"date\" style=\"float:left;width:30%;height:28px;padding:2px\" class=\"form-control\"\r\n                        id=\"date1\" [(ngModel)]=\"reportObj.Date1\">\r\n                    <label for=\"date2\" style=\"float:left;width:10%;margin-left:20px\">To :</label>\r\n                    <input type=\"date\" class=\"form-control\" id=\"date2\" [(ngModel)]=\"reportObj.Date2\"\r\n                        style=\"float:left;width:30%;height:28px;padding:2px\">\r\n\r\n                </div>\r\n\r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\"\r\n                [disabled]=\"reportObj.Date1==null || reportObj.Date2==null || reportObj.EMPLOYEEID==null\">Load</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n    <div style=\"width:100%;max-height:400px\" style=\"overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n        <tr style=\"height:30px;width:100%\">\r\n            <th style=\"width:5%\">SNo</th>\r\n            <th style=\"width:10%\">Date</th>\r\n            <th style=\"width:10%\">User</th>\r\n            <th style=\"width:15%\">Service</th>\r\n            <th style=\"width:10%\">Room</th>\r\n            <th style=\"width:15%\">Customer</th>\r\n            <th style=\"width:5%\">Cus. Pref.</th>\r\n            <th style=\"width:10%\">StartTime</th>\r\n            <th style=\"width:10%\">FinishedTime</th>\r\n            <th style=\"width:10%\">Rate</th>\r\n        </tr>\r\n\r\n\r\n        <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n            <td style=\"width:5%\">{{i+1}}</td>\r\n            <td style=\"width:10%\">{{ir.DATE}}</td>\r\n            <td style=\"width:10%\">{{ir.USER}}</td>\r\n            <td style=\"width:15%\">{{ir.SERVICE}}</td>\r\n            <td style=\"width:10%\">{{ir.ROOM}}</td>\r\n            <td style=\"width:15%\">{{ir.CUSTOMER}}</td>\r\n            <td style=\"width:5%\">{{ir.EMPLOYEE_PREFERED}}</td>\r\n            <td style=\"width:10%\">{{ir.STARTTIME}}</td>\r\n            <td style=\"width:10%\">{{ir.ENDTIME}}</td>\r\n            <td style=\"width:10%\">{{ir.RATE}}</td>\r\n        </tr>\r\n    </div>\r\n</Table>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-sm\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n\r\n                </button>\r\n                <h4 class=\"modal-title\">Information</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                {{DialogMessage}}\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div style=\"padding-top:20%\" class=\"modal fade\" bsModal #loginModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\"\r\n    tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog \">\r\n        <div class=\"modal-content\">\r\n            <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div>\r\n\r\n    <form [formGroup]=\"userForm\" novalidate>\r\n        <div class=\"widgets\">\r\n            <ba-card [title]=\"modeTitile\" baCardClass=\"with-scroll\">\r\n                <ba-card>\r\n                     <div class=\"form-group row\">\r\n                        <label for=\"inputUserId99\" class=\"col-sm-2 form-control-label\">User Id</label>\r\n                        <div class=\"col-sm-5\">\r\n                            <input type=\"text\"  class=\"form-control\" formControlName=\"UserId\" id=\"inputUserId99\" placeholder=\"User Id\" [readOnly]=\"mode == 'edit'\">\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"inputName99\" class=\"col-sm-2 form-control-label\">User Name</label>\r\n                        <div class=\"col-sm-5\">\r\n                            <input type=\"text\"  class=\"form-control\" formControlName=\"Name\" id=\"inputName99\" placeholder=\"User Name\">\r\n                        </div>\r\n\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"Password99\" class=\"col-sm-2 form-control-label\">Password</label>\r\n                        <div class=\"col-sm-5\">\r\n                            <input type=\"password\" class=\"form-control\" formControlName=\"Password\" id=\"Password99\" placeholder=\"Password\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"branches\" class=\"col-md-2 fontweight\">Outlets</label>\r\n                        <div class=\"col-md-4\">\r\n                            <angular2-multiselect [data]=\"branchList\" [settings]=\"dropdownSettings\" [(ngModel)]=\"selectedBranches\" [ngModelOptions]=\"{standalone: true}\">\r\n                            </angular2-multiselect>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"defaultBranch\" class=\"col-sm-2 form-control-label\">Default Outlet</label>\r\n                        <div class=\"col-sm-5\">\r\n                            <select class=\"form-control\" formControlName=\"defaultBranch\" id=\"defaultBranch\">\r\n                                <option *ngFor = \"let branch of selectedBranches\" value=\"{{branch.branchId}}\">{{branch.branchName}}</option>\r\n                            </select>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"inputmobile\" class=\"col-sm-2 form-control-label\">Role</label>\r\n                        <div class=\"col-sm-5\">\r\n                            <select class=\"form-control\" formControlName=\"Role\" id=\"inputmobile\">\r\n                                <option *ngFor = \"let role of roles\" value=\"{{role}}\">{{role}}</option>\r\n                            </select>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"inputEmail\" class=\"col-sm-2 form-control-label\">Email</label>\r\n                        <div class=\"col-sm-5\">\r\n                            <input type=\"email\" class=\"form-control\" formControlName=\"email\" id=\"inputEmail\" placeholder=\"Email\">\r\n                        </div>\r\n                    </div>\r\n                      <div class=\"form-group row\">\r\n                        <label for=\"mobile3\" class=\"col-sm-2 form-control-label\">Mobile</label>\r\n                        <div class=\"col-sm-5\">\r\n                            <input type=\"text\" class=\"form-control\" formControlName=\"mobile\" id=\"mobile3\" placeholder=\"Mobile No.\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"address\" class=\"col-sm-2 form-control-label\">Address</label>\r\n                        <div class=\"col-sm-5\">\r\n                            <input type=\"text\" class=\"form-control\" formControlName=\"address\" id=\"address\" placeholder=\"Address\">\r\n                        </div>\r\n                    </div>                    \r\n                </ba-card>\r\n\r\n\r\n            </ba-card>\r\n        </div>\r\n        <div>\r\n\r\n        </div>\r\n        <button type=\"submit\" [disabled]=\"userForm.controls['UserId'].invalid || (mode == 'add' && userForm.controls['Password'].invalid) || userForm.controls['Role'].invalid\"\r\n            class=\"btn btn-primary\" style=\"margin-bottom: 10px;\" (click)=\"onSubmit()\">Save</button>\r\n        <button type=\"button\" class=\"btn btn-primary\" style=\"margin-bottom: 10px;\" (click)=\"back()\">Cancel</button>\r\n\r\n        <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-sm\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    <div class=\"modal-body\">\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                    <!--<div class=\"modal-footer\">\r\n                        <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                    </div>!-->\r\n\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #loginModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog \">\r\n                <div class=\"modal-content\">\r\n                    <login (signedIn)=\"hideloginModal()\" toUrl=\"test\"></login>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </form>\r\n\r\n\r\n</div>"
 
 /***/ }),
 
-/***/ 1594:
+/***/ 1617:
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n    <div class=\"form-group row\">\r\n\r\n        <label for=\"date1\" style=\"float:left;width:10%\">From :</label>\r\n        <input type=\"date\" style=\"float:left;width:30%;height:28px;padding:2px\" class=\"form-control\" id=\"date1\"\r\n            [(ngModel)]=\"reportObj.Date1\">\r\n\r\n\r\n    </div>\r\n    <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\">Load</button>\r\n    <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n    <div style=\"width:100%;max-height:400px\" style=\"overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n   \r\n       <tr style=\"height:30px;width:100%\">\r\n           <th style=\"width:5%\">SNo</th>\r\n           <th style=\"width:10%\">Customer Name</th>\r\n           <th style=\"width:10%\">Customer Mobile</th>\r\n           <th style=\"width:10%\">Entry Date</th>\r\n           <th style=\"width:10%\">Follow up(In Days)</th>\r\n           <th style=\"width:10%\">FollowUp Date</th>\r\n           <!-- <th style=\"width:10%\">Patient ID</th>\r\n           <th style=\"width:10%\">Customer Name</th>\r\n           <th style=\"width:10%\">Follow up</th> -->\r\n       </tr>\r\n   \r\n  \r\n       <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n           <td style=\"width:5%\">{{i+1}}</td>\r\n           <td style=\"width:10%\">{{ir.Customer}}</td>\r\n           <td style=\"width:10%\">{{ir.Mobile}}</td>\r\n           <td style=\"width:10%\">{{ir.EntryDate}}</td>\r\n           <td style=\"width:10%\">{{ir.FollowUp}}</td>\r\n           <td style=\"width:10%\">{{ir.FollowUpDate}}</td>\r\n       </tr>\r\n\r\n   </div>\r\n</Table>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-sm\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n\r\n                </button>\r\n                <h4 class=\"modal-title\">Information</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                {{DialogMessage}}\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div style=\"padding-top:20%\" class=\"modal fade\" bsModal #loginModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\"\r\n    tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog \">\r\n        <div class=\"modal-content\">\r\n            <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div>\r\n    <div class=\"widgets\">\r\n        <ba-card [title]=\"modeTitle\" baCardClass=\"with-scroll\">\r\n            <ba-card>\r\n                <div class=\"form-group row\">\r\n                    <label for=\"inputUserId99\" class=\"col-sm-2 form-control-label\">Role</label>\r\n                    <div class=\"col-sm-5\">\r\n                        <input type=\"text\" class=\"form-control\" id=\"inputUserId99\" placeholder=\"Role Name\"\r\n                            [(ngModel)]=\"role\" [readOnly]=\"mode == 'edit'\">\r\n                    </div>\r\n                </div>\r\n                <table class=\"table\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th style=\"width: 250px;\">Form</th>\r\n                            <th style=\"width: 70px;\">Hidden</th>\r\n                            <th style=\"width: 70px;\">Create</th>\r\n                            <th style=\"width: 70px;\">Edit</th>\r\n                            <th style=\"width: 70px;\">Delete</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let menu of menuRights\">\r\n                            <td style=\"width: 250px;text-align: left;\">{{ menu.menuName }}</td>\r\n                            <td style=\"width: 70px;\">\r\n                                <input type=\"checkbox\" [(ngModel)]=\"menu.hidden\"/>\r\n                            </td>\r\n                            <td style=\"width: 70px;\">\r\n                                <input *ngIf=\"menu.allowCreate\" type=\"checkbox\" [(ngModel)]=\"menu.create\" />\r\n                            </td>\r\n                            <td style=\"width: 70px;\">\r\n                                <input *ngIf=\"menu.allowEdit\" type=\"checkbox\" [(ngModel)]=\"menu.edit\" />\r\n                            </td>\r\n                            <td style=\"width: 70px;\">\r\n                                <input *ngIf=\"menu.allowDelete\" type=\"checkbox\" [(ngModel)]=\"menu.delete\" />\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n                <button type=\"submit\" [disabled]=\"role==='' || role === undefined || role === null\"\r\n                    class=\"btn btn-primary\" style=\"margin-bottom: 10px;\" (click)=\"onSubmit()\">Save</button>\r\n                <button type=\"button\" class=\"btn btn-primary\" style=\"margin-bottom: 10px;\"\r\n                    (click)=\"back()\">Cancel</button>\r\n            </ba-card>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-sm\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"hideChildModal()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Information</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                {{DialogMessage}}\r\n            </div>\r\n            <!--<div class=\"modal-footer\">\r\n                        <button class=\"btn btn-primary confirm-btn\" (click)=\"hideChildModal()\">Save changes</button>\r\n                        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=onsubmit()>Save</button>\r\n                    </div>!-->\r\n\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
-/***/ 1595:
+/***/ 1618:
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div>\r\n    <div class=\"form-group row\">\r\n\r\n           \r\n\r\n                <label for=\"date1\" style=\"float:left;width:10%\">From :</label>\r\n                <input type=\"date\" style=\"float:left;width:30%;height:28px;padding:2px\" class=\"form-control\" id=\"date1\" [(ngModel)]=\"reportObj.Date1\">\r\n                 <label for=\"date2\" style=\"float:left;width:10%;margin-left:20px\">To :</label>\r\n                <input type=\"date\" class=\"form-control\" id=\"date2\" [(ngModel)]=\"reportObj.Date2\" style=\"float:left;width:30%;height:28px;padding:2px\">\r\n\r\n            \r\n        </div>\r\n<button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\" [disabled]=\"!reportObj.Date1 || !reportObj.Date2\">Load</button>\r\n<button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n<div style=\"width:100%;max-height:400px\" style=\"overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n\r\n   <tr style=\"height:30px;width:100%\">\r\n       <th style=\"width:5%\">SNo</th>\r\n      \r\n       <th style=\"width:10%\">Customer Name</th>\r\n       <th style=\"width:10%\">Mobile</th>\r\n       <th style=\"width:10%\">Date</th>\r\n       <th style=\"width:10%\">Status</th>\r\n       <th style=\"width:10%\">Message</th>\r\n\r\n   </tr>\r\n\r\n\r\n   <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n       <td style=\"width:5%\">{{i+1}}</td>\r\n       <td style=\"width:10%\">{{ir.customerName}}</td>\r\n       <td style=\"width:10%\">{{ir.mobile}}</td>\r\n       <td style=\"width:10%\">{{ir.date}}</td>\r\n       <td style=\"width:10%\">{{ir.status}}</td>\r\n       <td style=\"width:10%\">{{ir.messageSend}}</td>\r\n\r\n   </tr>\r\n\r\n</div>\r\n</Table>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\naria-hidden=\"true\">\r\n<div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n        <div class=\"modal-header\">\r\n            <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n      <span aria-hidden=\"true\">&times;</span>\r\n      \r\n    </button>\r\n            <h4 class=\"modal-title\">Information</h4>\r\n        </div>\r\n        <div class=\"modal-body\">\r\n            {{DialogMessage}}\r\n        </div>\r\n    </div>\r\n</div>\r\n</div>\r\n\r\n<div style=\"padding-top:20%\" class=\"modal fade\" bsModal #loginModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\"\r\nrole=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n<div class=\"modal-dialog \">\r\n    <div class=\"modal-content\">\r\n        <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n    </div>\r\n</div>\r\n</div>"
+module.exports = "<div class=\"widgets\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;\" [disabled] = \"disableAdd\" routerLink=\"/pages/userManager/addRole\" >Add Role</button>\r\n    <div class=\"row\">\r\n      <ba-card title=\"User List\" baCardClass=\"with-scroll\">\r\n        <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\"></ng2-smart-table>\r\n      </ba-card>\r\n    </div>\r\n    \r\n  \r\n  </div>\r\n    <div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n              aria-hidden=\"true\">\r\n              <div class=\"modal-dialog modal-sm\">\r\n                  <div class=\"modal-content\">\r\n                      <div class=\"modal-header\">\r\n                          <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                              <span aria-hidden=\"true\">&times;</span>\r\n                          </button>\r\n                          <h4 class=\"modal-title\">Warning</h4>\r\n                      </div>\r\n                      <div class=\"modal-body\">\r\n                          Are you sure you want to delete this Role?\r\n                      </div>\r\n                      <div class=\"modal-footer\">\r\n                          <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n                          <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n                      </div>!\r\n  \r\n                  </div>\r\n              </div>\r\n          </div>\r\n          <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n              aria-hidden=\"true\">\r\n              <div class=\"modal-dialog modal-md\">\r\n                  <div class=\"modal-content\">\r\n                      <div class=\"modal-header\">\r\n                          <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n            \r\n          </button>\r\n                          <h4 class=\"modal-title\">Information</h4>\r\n                      </div>\r\n                      \r\n                      <div class=\"modal-body\">\r\n                        <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n                          {{DialogMessage}}\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>"
 
 /***/ }),
 
-/***/ 1596:
+/***/ 1619:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal fade\" bsModal #editDetailPreview=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-lg\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"editDetailPreview.hide()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Log Details:</h4>\r\n            </div>\r\n\r\n            <div class=\"modal-body\">\r\n                <div class=\"form-group\">\r\n                    <table id=\"tblLogDetail\">\r\n                        <tr>\r\n                            <td>Log Id</td>\r\n                            <td>: {{log.logId}}</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Date</td>\r\n                            <td>: {{log.date}}</td>\r\n                            <td>Time</td>\r\n                            <td>: {{log.time}}</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Form Name</td>\r\n                            <td>: {{log.formName}}</td>\r\n                            <td>User</td>\r\n                            <td>: {{log.user}}</td>\r\n                        </tr>\r\n                    </table>\r\n                </div>\r\n\r\n                <table class=\"table table-bordered table-hover\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th>Field Name</th>\r\n                            <th>Previous Value</th>\r\n                            <th>New Value</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let t of log.audits\">\r\n                            <td>{{t.fieldName}}</td>\r\n                            <td>{{t.oldValue}}</td>\r\n                            <td>{{t.newValue}}</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n\r\n\r\n                <div class=\"modal-footer\">\r\n                    <button class=\"btn btn-primary confirm-btn\" type=\"button\"\r\n                        (click)=\"editDetailPreview.hide()\">Close</button>\r\n                </div>\r\n\r\n            </div>\r\n        </div>\r\n    </div>"
+module.exports = "<div class=\"widgets\">\r\n  <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;\" [disabled] = \"disableAdd\" (click)=\"onAddClick();false\" >Add User</button>\r\n  <div class=\"row\">\r\n    <ba-card title=\"User List\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n  \r\n\r\n</div>\r\n  <div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-sm\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n                        <h4 class=\"modal-title\">Warning</h4>\r\n                    </div>\r\n                    <div class=\"modal-body\">\r\n                        Are U sure you want to delete this user?\r\n                    </div>\r\n                    <div class=\"modal-footer\">\r\n                        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n                        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n                    </div>!\r\n\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n            aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-md\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                        <h4 class=\"modal-title\">Information</h4>\r\n                    </div>\r\n                    \r\n                    <div class=\"modal-body\">\r\n                      <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n                        {{DialogMessage}}\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>"
 
 /***/ }),
 
-/***/ 1597:
-/***/ (function(module, exports) {
+/***/ 1622:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<div class=\"modal fade\" bsModal #schedulePreview=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-lg\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"CustomerSchedule.hide()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">{{'customer' | lablePipe}} Schedule:</h4>\r\n            </div>\r\n\r\n            <div class=\"modal-body\">\r\n                <div class=\"row\" id=\"customerSchedule\">\r\n                    <div class=\"col-5 col-sm-7 col-md-7\">\r\n                        <div class=\"input-group\">\r\n                            <span class=\"input-group-addon\" id=\"basic-addon1\">Patient Name</span>\r\n                            <input type=\"text\" class=\"form-control\" [(ngModel)]=\"schedule.customer.name\" readonly\r\n                                aria-label=\"Username\" aria-describedby=\"basic-addon1\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-5 col-sm-5 col-md-5\">\r\n                        <div class=\"input-group\">\r\n                            <span class=\"input-group-addon\" id=\"basic-addon1\">Mobile No</span>\r\n                            <input type=\"text\" class=\"form-control\" [(ngModel)]=\"schedule.customer.mobile\" readonly>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-5 col-sm-7 col-md-7\">\r\n                        <div class=\"input-group\">\r\n                            <span class=\"input-group-addon\" id=\"basic-addon1\">Address</span>\r\n                            <input type=\"text\" class=\"form-control\" [(ngModel)]=\"schedule.customer.address\" readonly\r\n                                aria-label=\"Username\" aria-describedby=\"basic-addon1\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-5 col-sm-5 col-md-5\">\r\n                        <div class=\"input-group\">\r\n                            <span class=\"input-group-addon\" id=\"basic-addon1\">Patient Id</span>\r\n                            <input type=\"text\" class=\"form-control\" [(ngModel)]=\"schedule.customer.patient_id\" readonly\r\n                                aria-label=\"Username\" aria-describedby=\"basic-addon1\">\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <table class=\"table table-bordered table-hover\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th>Sn.</th>\r\n                            <th>Date</th>\r\n                            <th>Time</th>\r\n                            <th>Employee</th>\r\n                            <th>Service</th>\r\n                            <th>Room</th>\r\n                            <th></th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let t of schedule.multipleServiceList\">\r\n                            <td>1</td>\r\n                            <td>{{schedule.date}}</td>\r\n                            <td>{{t.startTime}}</td>\r\n                            <td>{{t.employee.name}}</td>\r\n                            <td>{{t.service.description}}</td>\r\n                            <td>{{t.room.description}}</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n\r\n                <div class=\"modal-footer\">\r\n                    <button class=\"btn btn-primary confirm-btn\" type=\"button\"\r\n                        (click)=\"schedulePreview.hide()\">Close</button>\r\n                </div>\r\n\r\n            </div>\r\n        </div>\r\n    </div>"
+// style-loader: Adds some css to the DOM by adding a <style> tag
 
-/***/ }),
-
-/***/ 1598:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"modal fade\" bsModal #treatmentPreview=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n    aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-lg\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"treatmentPreview.hide()\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Treatment Details:</h4>\r\n            </div>\r\n\r\n            <div class=\"modal-body\">\r\n                <div class=\"form-group\">\r\n                    <table id=\"tblPatientInfo\">\r\n                        <tr>\r\n                            <td>Patient Name</td>\r\n                            <td>: {{treatment.patient.name}}</td>\r\n                            <td>Mobile No</td>\r\n                            <td>: {{treatment.patient.mobile}}</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Address</td>\r\n                            <td>: {{treatment.patient.address}}</td>\r\n                            <td>Patient Id</td>\r\n                            <td>: {{treatment.patient.patient_id}}</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Age</td>\r\n                            <td>: {{treatment.patient.age}}</td>\r\n                            <td>Gender</td>\r\n                            <td>: {{treatment.patient.gender}}</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Staff</td>\r\n                            <td>: {{treatment.healer.name}}</td>\r\n                            <td>Weight</td>\r\n                            <td>: {{treatment.patient.patient_weight}}</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Membership</td>\r\n                            <td>: {{treatment.patient.membership}}</td>\r\n                            <td>Email</td>\r\n                            <td style=\"width: 35%;\">: {{treatment.patient.email}}</td>\r\n                        </tr>\r\n                    </table>\r\n                </div>\r\n\r\n                <div class=\"row\">\r\n                    <div class=\"col-xl-6\">\r\n                        <ba-card title=\"Patient Complaint\">\r\n                            <div id=\"patientComplaint\"></div>\r\n                        </ba-card>\r\n                    </div>\r\n                    <div class=\"col-xl-6\">\r\n                        <ba-card title=\"Treatment Notes\">\r\n                            <div id=\"treatmentNotes\">\r\n                            </div>\r\n                        </ba-card>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"row\">\r\n                    <div class=\"col-xl-6\">\r\n                        <ba-card title=\"Disease & Medication\">\r\n                            <div class=\"form-group\">\r\n                                <label for=\"diseases\">Diseases: </label>\r\n                                <ol style=\"width: 300px\">\r\n                                    <li style=\"display: flex;\" *ngFor=\"let e of treatment.diseases;let i=index\">{{e}}\r\n                                    </li>\r\n                                </ol>\r\n                            </div>\r\n\r\n                            <div class=\"form-group\">\r\n                                <label for=\"medication\">Medication: </label>\r\n                                <ol style=\"width: 300px\">\r\n                                    <li style=\"display: flex;\" *ngFor=\"let e of treatment.medications;let i=index\">{{e}}\r\n                                    </li>\r\n                                </ol>\r\n                            </div>\r\n                        </ba-card>\r\n                    </div>\r\n\r\n                    <div class=\"col-xl-6\">\r\n                        <ba-card title=\"Prescriptions & Followup\">\r\n                            <div class=\"form-group\">\r\n                                <label for=\"prescription\">Prescriptions:</label>\r\n                                <ol style=\"width: 300px\">\r\n                                    <li style=\"display: flex;\" *ngFor=\"let e of treatment.prescriptions;let i=index\">\r\n                                        {{e}}</li>\r\n                                </ol>\r\n                            </div>\r\n\r\n                            <div class=\"form-group\" style=\"display: inline-block; vertical-align: top;\">\r\n                                <label for=\"followup\">Followup Period : {{treatment.followUpPeriod}}</label>\r\n                            </div>\r\n                        </ba-card>\r\n                    </div>\r\n                </div>\r\n\r\n                <ba-card title=\"Session Documents\">\r\n                    <div style=\"display: flex; margin-bottom: 10px; overflow: scroll; \">\r\n                        <li *ngFor=\"let f of treatment.treatmentDocuments\" style=\"margin-right: 5px;\">\r\n\r\n                            <ng-container *ngIf=\"!f.endsWith('pdf')\">\r\n                                <a target=\"_blank\" href=\"{{contentUrl + f}}\">\r\n                                    <img height=\"120px\" width=\"120px\" style=\"object-fit: contain;\"\r\n                                        src=\"{{contentUrl + f}}\" (click)=\"previewImage($event)\" />\r\n                                </a>\r\n                            </ng-container>\r\n\r\n                            <a *ngIf=\"f.endsWith('pdf')\" target=\"_blank\" href=\"{{contentUrl + f}}\">\r\n                                <img height=\"50px\"\r\n                                    src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/833px-PDF_file_icon.svg.png\" />\r\n                            </a>\r\n                        </li>\r\n                    </div>\r\n                </ba-card>\r\n\r\n                <ba-card title=\"NOTES & REMARKS\">\r\n                    <textarea class=\"form-control\" disabled>{{treatment.remarks}}</textarea>\r\n                </ba-card>\r\n\r\n\r\n                <div class=\"modal-footer\">\r\n                    <button class=\"btn btn-primary confirm-btn\" type=\"button\"\r\n                        (click)=\"treatmentPreview.hide()\">Close</button>\r\n                </div>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n    <!-- <div bsModal #childPreviewModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\"\r\n            aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n            <div class=\"modal-dialog modal-lg\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button class=\"close\" aria-label=\"Close\" (click)=\"childPreviewModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n                        <h4 class=\"modal-title\">Treatment Documents</h4>\r\n                    </div>\r\n                    <button id=\"button\" class=\"btn btn-primary confirm-btn\" (click)=\"nextImage($event)\">Next</button>\r\n                    <div id=\"container\" style=\"text-align: center;\">\r\n                        <img width=\"600px\" height=\"600px\" style=\"object-fit: contain;\" [src]=\"selectedImage\" id=\"image\" (click)=\"onImageClick($event)\" />\r\n                    </div>\r\n    \r\n                    <div class=\"modal-footer\" style=\"text-align: center;\">\r\n                        <img *ngFor=\"let e of uploadFilesUrl\" height=\"80px\" width=\"80px\" style=\"object-fit: contain;\" src=\"{{e}}\"\r\n                            (click)=\"changeImage($event)\" />\r\n    \r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div> -->"
-
-/***/ }),
-
-/***/ 1599:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-xlg-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12\" style=\"width:100%\">\r\n        <ba-card title=\"Report Parameters\">\r\n            <div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"roomselect\" style=\"float:left;width:10%\">Room :</label>\r\n                    <select style=\"float:left;width:80%;height:28px;padding:0\" [(ngModel)]=\"reportObj.ROOMNO\" class=\"form-control\"  id=\"roomselect\"> \r\n        <option *ngFor=\"let c of RoomList\" [ngValue]=\"c.ROOMNO\">{{c.DESCRIPTION}}({{c.ROOMNO}})</option>\r\n      </select>\r\n\r\n\r\n                </div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"date1\" style=\"float:left;width:10%\">From :</label>\r\n                    <input type=\"date\" style=\"float:left;width:30%;height:28px;padding:2px\" class=\"form-control\" id=\"date1\" [(ngModel)]=\"reportObj.Date1\">\r\n                     <label for=\"date2\" style=\"float:left;width:10%;margin-left:20px\">To :</label>\r\n                    <input type=\"date\" class=\"form-control\" id=\"date2\" [(ngModel)]=\"reportObj.Date2\" style=\"float:left;width:30%;height:28px;padding:2px\">\r\n\r\n                </div>\r\n                \r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\" [disabled]=\"reportObj.Date1==null || reportObj.Date2==null || reportObj.ROOMNO==null\">Load</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n <div  style=\"width:100%;max-height:400px;overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n        <tr style=\"height:30px;width:100%\">\r\n            <th style=\"width:5%\">SNo</th>\r\n            <th style=\"width:10%\">Date</th>\r\n            <th style=\"width:10%\">User</th>\r\n            <th style=\"width:15%\">Service</th>\r\n            <th style=\"width:10%\">Employee</th>\r\n            <th style=\"width:15%\">Customer</th>\r\n            <th style=\"width:5%\">Cus. Pref.</th>\r\n            <th style=\"width:10%\">StartTime</th>\r\n            <th style=\"width:10%\">FinishedTime</th>\r\n            <th style=\"width:10%\">Rate</th>\r\n        </tr>\r\n  \r\n   \r\n        <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n            <td style=\"width:5%\">{{i+1}}</td>\r\n            <td style=\"width:10%\">{{ir.DATE}}</td>\r\n            <td style=\"width:10%\">{{ir.USER}}</td>\r\n            <td style=\"width:15%\">{{ir.SERVICE}}</td>\r\n            <td style=\"width:10%\">{{ir.EMPLOYEE}}</td>\r\n            <td style=\"width:15%\">{{ir.CUSTOMER}}</td>\r\n            <td style=\"width:5%\">{{ir.EMPLOYEE_PREFERED}}</td>\r\n            <td style=\"width:10%\">{{ir.STARTTIME}}</td>\r\n            <td style=\"width:10%\">{{ir.ENDTIME}}</td>\r\n            <td style=\"width:10%\">{{ir.RATE}}</td>\r\n        </tr>\r\n    </div>\r\n</Table>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-sm\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                <h4 class=\"modal-title\">Information</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                {{DialogMessage}}\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div style=\"padding-top:20%\" class=\"modal fade\" bsModal #loginModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\"\r\n    role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog \">\r\n        <div class=\"modal-content\">\r\n            <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n        </div>\r\n    </div>\r\n</div>"
-
-/***/ }),
-
-/***/ 1600:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-xlg-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12\" style=\"width:100%\">\r\n        <ba-card title=\"Report Parameters\">\r\n            <div>\r\n                <div class=\"form-group row\">\r\n                    <label for=\"customerselect\" style=\"float:left;width:10%\">Customer :</label>\r\n                    <select style=\"float:left;width:80%;height:28px;padding:0\" [(ngModel)]=\"reportObj.CUSID\" class=\"form-control\" name=\"customerselect\" id=\"customerselect\"> \r\n                        <option *ngFor=\"let c of CustomerList\" [ngValue]=\"c.CUSID\">{{c.NAME}}</option>\r\n                    </select>\r\n                </div>\r\n                <div class=\"form-group row\">\r\n                    <label for=\"seriesselect\" style=\"float:left;width:10%\">Series :</label>\r\n                    <select style=\"float:left;width:80%;height:28px;padding:0\" [(ngModel)]=\"reportObj.MappingCode\" class=\"form-control\" name=\"seriesselect\" id=\"seriesselect\"> \r\n                        <option *ngFor=\"let c of SeriesList\" [ngValue]=\"c.MappingCode\">{{c.SeriesName}}</option>\r\n                    </select>\r\n                </div>\r\n                \r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\" [disabled]=\"reportObj.MappingCode == null || reportObj.CUSID==null\">Load</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n     <div style=\"width:100%;max-height:400px\" style=\"overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n    \r\n        <tr style=\"height:30px;width:100%\">\r\n            <th style=\"width:5%\">SNo</th>\r\n            <th style=\"width:10%\">Date</th>\r\n            <th style=\"width:15%\">Service</th>\r\n            <th style=\"width:10%\">Room</th>\r\n            <th style=\"width:15%\">Operator</th>\r\n            <th style=\"width:10%\">StartTime</th>\r\n            <th style=\"width:10%\">FinishedTime</th>\r\n        </tr>\r\n    \r\n   \r\n        <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n            <td style=\"width:5%\">{{i+1}}</td>\r\n            <td style=\"width:10%\">{{ir.DATE}}</td>\r\n            <td style=\"width:15%\">{{ir.Service}}</td>\r\n            <td style=\"width:10%\">{{ir.Room}}</td>\r\n            <td style=\"width:15%\">{{ir.Operator}}</td>\r\n            <td style=\"width:10%\">{{ir.StartTime}}</td>\r\n            <td style=\"width:10%\">{{ir.EndTime}}</td>\r\n        </tr>\r\n    </div>\r\n</Table>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-sm\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                <h4 class=\"modal-title\">Information</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                {{DialogMessage}}\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div style=\"padding-top:20%\" class=\"modal fade\" bsModal #loginModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\"\r\n    role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog \">\r\n        <div class=\"modal-content\">\r\n            <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n        </div>\r\n    </div>\r\n</div>"
-
-/***/ }),
-
-/***/ 1601:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-xlg-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12\" style=\"width:100%\">\r\n        <ba-card title=\"Report Parameters\">\r\n            <div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"roomselect\" style=\"float:left;width:10%\">Service :</label>\r\n                    <select style=\"float:left;width:80%;height:28px;padding:0\" [(ngModel)]=\"reportObj.SERVICEID\" class=\"form-control\"  id=\"roomselect\"> \r\n        <option *ngFor=\"let c of ServiceList\" [ngValue]=\"c.SERVICEID\">{{c.DESCRIPTION}}</option>\r\n      </select>\r\n\r\n\r\n                </div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"date1\" style=\"float:left;width:10%\">From :</label>\r\n                    <input type=\"date\" style=\"float:left;width:30%;height:28px;padding:2px\" class=\"form-control\" id=\"date1\" [(ngModel)]=\"reportObj.Date1\">\r\n                     <label for=\"date2\" style=\"float:left;width:10%;margin-left:20px\">To :</label>\r\n                    <input type=\"date\" class=\"form-control\" id=\"date2\" [(ngModel)]=\"reportObj.Date2\" style=\"float:left;width:30%;height:28px;padding:2px\">\r\n\r\n                </div>\r\n                \r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\" [disabled]=\"reportObj.Date1==null || reportObj.Date2==null || reportObj.SERVICEID==null\">Load</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n <div  style=\"width:100%;max-height:400px;overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n        <tr style=\"height:30px;width:100%\">\r\n            <th style=\"width:5%\">SNo</th>\r\n            <th style=\"width:8%\">Date</th>\r\n            <th style=\"width:8%\">User</th>\r\n            <th style=\"width:15%\">Room</th>\r\n            <th style=\"width:15%\">Therapist</th>\r\n            <th style=\"width:15%\">Customer</th>\r\n            <th style=\"width:7%\">Cus. Pref.</th>\r\n            <th style=\"width:9%\">StartTime</th>\r\n            <th style=\"width:9%\">FinishedTime</th>\r\n            <th style=\"width:9%\">Rate</th>\r\n        </tr>\r\n  \r\n   \r\n        <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n            <td style=\"width:5%\">{{i+1}}</td>\r\n            <td style=\"width:8%\">{{ir.DATE}}</td>\r\n            <td style=\"width:8%\">{{ir.USER}}</td>\r\n            <td style=\"width:15%\">{{ir.ROOM}}</td>\r\n            <td style=\"width:15%\">{{ir.EMPLOYEE}}</td>\r\n            <td style=\"width:15%\">{{ir.CUSTOMER}}</td>\r\n            <td style=\"width:7%\">{{ir.EMPLOYEE_PREFERED}}</td>\r\n            <td style=\"width:9%\">{{ir.STARTTIME}}</td>\r\n            <td style=\"width:9%\">{{ir.ENDTIME}}</td>\r\n            <td style=\"width:9%\">{{ir.RATE}}</td>\r\n        </tr>\r\n    </div>\r\n</Table>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-sm\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n                <h4 class=\"modal-title\">Information</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                {{DialogMessage}}\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div style=\"padding-top:20%\" class=\"modal fade\" bsModal #loginModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\"\r\n    role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog \">\r\n        <div class=\"modal-content\">\r\n            <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n        </div>\r\n    </div>\r\n</div>"
+// load the styles
+var content = __webpack_require__(1569);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(38)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../../../node_modules/raw-loader/index.js!../../../../../../node_modules/sass-loader/lib/loader.js!./grid.scss", (function() {
+			var newContent = require("!!../../../../../../node_modules/raw-loader/index.js!../../../../../../node_modules/sass-loader/lib/loader.js!./grid.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		}));
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose((function() { update(); }));
+}
 
 /***/ })
 
