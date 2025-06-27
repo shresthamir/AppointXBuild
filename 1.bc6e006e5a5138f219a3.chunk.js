@@ -8916,10 +8916,10 @@ let CustomerSelect = class CustomerSelect {
     }
     changeEntryDate(value, format) {
         if (format == "AD") {
-            this.ScheduleDateBS = this.masterService.toBSDate(value);
+            this.newCustomerBS_DOB = this.masterService.toBSDate(value);
         }
         else if (format == "BS") {
-            this.scheduleInput.DATE = this.masterService.toADDate(value);
+            this.newcustomerDOB = this.masterService.toADDate(value);
         }
     }
     onMobileChange(e) {
