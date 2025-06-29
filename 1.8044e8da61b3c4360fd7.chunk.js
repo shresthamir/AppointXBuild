@@ -9252,10 +9252,13 @@ let MasterSchedule = class MasterSchedule {
     }
     ngOnInit() {
         this.OnDateChangeEvent(new Date());
-        this.appService.notification$.subscribe((data) => {
+        this.notify = this.appService.notification$.subscribe((data) => {
             this.OnDateChangeEvent(new Date());
         });
         this.startRealTimeUpdate();
+    }
+    ngOnDestroy() {
+        this.notify.unsubscribe();
     }
     startRealTimeUpdate() {
         setInterval(() => {
