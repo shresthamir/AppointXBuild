@@ -2622,7 +2622,7 @@ let HttpInterceptorService = class HttpInterceptorService {
     }
     intercept(request, next) {
         let token = this.cache.get('TOKEN');
-        if (token) {
+        if (token && token !== "undefined") {
             request = this.addAuthHeader(request, token);
         }
         return next.handle(request).pipe(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_9_rxjs_operators__["catchError"])((error) => {

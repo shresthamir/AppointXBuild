@@ -6,5 +6,9 @@
     {
         "key" : "employee",
         "value" : "Therapist"
+    },
+    {
+        "key" : "employees",
+        "value" : "Therapists"
     }
 ]
