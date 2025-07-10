@@ -11419,13 +11419,6 @@ let ScheduleInput = class ScheduleInput {
         if (!!this.activatedRoute.snapshot.params['mode']) {
             this.mode = this.activatedRoute.snapshot.params['mode'];
         }
-        this.router.events.subscribe((val) => {
-            let data = {
-                GUID: this.scheduleInput.GUID,
-                SNO: 0
-            };
-            //this.masterService.postmaster('remove_row', data, "/DeleteTempSchedule")
-        });
         this.empSetting = {
             enableCheckAll: true,
             text: 'Select Employees',
@@ -11507,6 +11500,11 @@ let ScheduleInput = class ScheduleInput {
                 this.scheduleInput.GUID = respose.guid;
             });
         }
+    }
+    ngOnDestroy() {
+        this.subcriptions.forEach(sub => sub.unsubscribe());
+        this.subcriptions = [];
+        this.removeSchedule(null, false);
     }
     clearEmpRoom() {
         this.employeeList = [];
@@ -11668,6 +11666,7 @@ let ScheduleInput = class ScheduleInput {
     }
     AddClickEvent() {
         return __awaiter(this, void 0, void 0, (function* () {
+            const serviceGuid = crypto.randomUUID();
             try {
                 var isEmpAvailable = true;
                 this.multipleServiceObj.EMPLOYEE.forEach(element => {
@@ -11691,38 +11690,33 @@ let ScheduleInput = class ScheduleInput {
                 if (!(yield this.checkHoliday(this.scheduleInput.DATE, this.multipleServiceObj.EMPLOYEE.EMPLOYEEID, this.multipleServiceObj.STARTTIME, this.multipleServiceObj.ENDTIME)))
                     return;
                 this.showMessage("Validting Data please wait.", -1);
-                this.multipleServiceObj.EMPLOYEE.forEach(emp => {
-                    this.multipleServiceObj.ROOM.forEach((room) => __awaiter(this, void 0, void 0, (function* () {
-                        let data = {
-                            Date: this.scheduleInput.DATE,
-                            Service: this.multipleServiceObj.SERVICE,
-                            CustomerId: this.scheduleInput.CUSTOMER.CUSID,
-                            EmployeeId: emp.EMPLOYEEID,
-                            RoomNo: room.ROOMNO,
-                            STARTTIME: this.multipleServiceObj.STARTTIME,
-                            ENDTIME: this.multipleServiceObj.ENDTIME,
-                            StartTime: this.StartTime,
-                            EndTime: this.EndTime,
-                            GUID: this.scheduleInput.GUID,
-                            SNO: this.SNO + 1,
-                            ScheduleId: this.scheduleInput.ScheduleId
-                        };
-                        let result = yield this.masterService.postMasterAsync('validate', data, "/ValidateSchedule")
-                            .catch(error => {
-                            this.showMessage(this.masterRepo.handleWebError(error));
-                        });
-                        if (result) {
-                            if (result.status != "ok") {
-                                this.showMessage(result.result || result.message);
-                            }
-                        }
-                    })));
-                });
-                this.multipleServiceObj.EMPLOYEE.forEach(emp => {
-                    this.multipleServiceObj.ROOM.forEach(room => {
-                        this.multipleServiceList.push(Object.assign({}, this.multipleServiceObj, { SNO: ++this.SNO, EMPLOYEE: emp, ROOM: room }));
-                    });
-                });
+                const noOfService = this.multipleServiceObj.PAX * this.multipleServiceObj.SERVICE.noOfEmployees;
+                for (let i = 0; i < noOfService; i++) {
+                    const emp = this.multipleServiceObj.EMPLOYEE[i] || this.multipleServiceObj.EMPLOYEE[0];
+                    const room = this.multipleServiceObj.ROOM[i] || this.multipleServiceObj.ROOM[0];
+                    let data = {
+                        Date: this.scheduleInput.DATE,
+                        Service: this.multipleServiceObj.SERVICE,
+                        CustomerId: this.scheduleInput.CUSTOMER.CUSID,
+                        EmployeeId: emp.EMPLOYEEID,
+                        RoomNo: room.ROOMNO,
+                        STARTTIME: this.multipleServiceObj.STARTTIME,
+                        ENDTIME: this.multipleServiceObj.ENDTIME,
+                        StartTime: this.StartTime,
+                        EndTime: this.EndTime,
+                        GUID: this.scheduleInput.GUID,
+                        SNO: this.SNO + 1,
+                        ScheduleId: this.scheduleInput.ScheduleId,
+                        serviceGuid
+                    };
+                    let result = yield this.masterService.postMasterAsync('validate', data, "/ValidateSchedule");
+                }
+                for (let i = 0; i < noOfService; i++) {
+                    const emp = this.multipleServiceObj.EMPLOYEE[i] || this.multipleServiceObj.EMPLOYEE[0];
+                    const room = this.multipleServiceObj.ROOM[i] || this.multipleServiceObj.ROOM[0];
+                    let isAddOn = i % this.multipleServiceObj.SERVICE.noOfEmployees != 0;
+                    this.multipleServiceList.push(Object.assign({}, this.multipleServiceObj, { SNO: ++this.SNO, EMPLOYEE: emp, ROOM: room, isAddOn, serviceGuid }));
+                }
                 setTimeout(() => {
                     this.selectedService = [];
                     this.multipleServiceObj = { PAX: 1 };
@@ -11733,7 +11727,9 @@ let ScheduleInput = class ScheduleInput {
                 }, 1000);
             }
             catch (e) {
-                alert(e);
+                console.log("Validate Appointment Error :", e);
+                this.hideChildModal();
+                this.removeSchedule(serviceGuid, false);
             }
         }));
     }
@@ -11751,10 +11747,6 @@ let ScheduleInput = class ScheduleInput {
         try {
             console.log(this.multipleServiceList[index]);
             let selectedSchedule = this.multipleServiceList[index];
-            let data = {
-                GUID: this.scheduleInput.GUID,
-                SNO: this.multipleServiceObj.SNO
-            };
             this.selectedService = [selectedSchedule.SERVICE];
             this.multipleServiceObj = {
                 SERVICE: this.ServiceList.find(x => x.SERVICEID == selectedSchedule.SERVICE.SERVICEID),
@@ -11764,49 +11756,44 @@ let ScheduleInput = class ScheduleInput {
                 ENDTIME: selectedSchedule.ENDTIME,
                 EMPLOYEE_BOOKED_BYCUSTOMER: selectedSchedule.EMPLOYEE_BOOKED_BYCUSTOMER,
                 RATE: selectedSchedule.RATE,
-                TYPE: selectedSchedule.TYPE
+                TYPE: selectedSchedule.TYPE,
+                PAX: selectedSchedule.PAX,
             };
-            this.getEmployees(this.scheduleInput.branch.branchId, this.multipleServiceObj.SERVICE, [selectedSchedule.EMPLOYEE.EMPLOYEEID]);
+            let empList = this.multipleServiceList
+                .filter(x => x.guid == selectedSchedule.guid)
+                .map(x => x.EMPLOYEE.EMPLOYEEID);
+            console.log("empList", empList);
+            this.paxChanged(this.multipleServiceObj.PAX, this.multipleServiceObj.SERVICE.noOfEmployees);
+            this.getEmployees(this.scheduleInput.branch.branchId, this.multipleServiceObj.SERVICE, empList);
             this.getRooms(this.scheduleInput.branch.branchId, this.multipleServiceObj.SERVICE, [selectedSchedule.ROOM.ROOMNO]);
             this.starttimeChange(selectedSchedule.STARTTIME);
-            let sub = this.masterService.postmaster('remove_row', data, "/DeleteTempSchedule")
-                .subscribe(data => {
-                //console.log(data);
-                if (data.status == 'ok') {
-                    this.multipleServiceList.splice(index, 1);
-                }
-                else {
-                    this.showMessage(data.result);
-                }
-            }, error => { alert(error); });
+            this.removeSchedule(selectedSchedule.serviceGuid, false);
             this.enableServiceDetail();
         }
         catch (e) {
             alert(e);
         }
     }
-    removeSchedule(index) {
-        try {
-            let data = {
-                GUID: this.scheduleInput.GUID,
-                SNO: this.multipleServiceList[index].SNO
-            };
-            this.showMessage("Removing Schedule please wait.", -1);
-            let sub = this.masterService.postmaster('remove_row', data, "/DeleteTempSchedule")
-                .subscribe(data => {
-                //console.log(data);
-                if (data.status == 'ok') {
-                    this.multipleServiceList.splice(index, 1);
+    removeSchedule(serviceGuid, showMessage = true) {
+        const data = {
+            GUID: this.scheduleInput.GUID,
+            serviceGuid
+        };
+        if (showMessage)
+            this.showMessage("Removing Appointment please wait.", -1);
+        let sub = this.masterService.postmaster('remove_row', data, "/DeleteTempSchedule")
+            .subscribe(data => {
+            //console.log(data);
+            if (data.status == 'ok') {
+                this.multipleServiceList = this.multipleServiceList.filter(x => x.serviceGuid != serviceGuid);
+                if (showMessage)
                     this.showMessage("Success", 1000);
-                }
-                else {
+            }
+            else {
+                if (showMessage)
                     this.showMessage(data.result);
-                }
-            }, error => { alert(error); });
-        }
-        catch (e) {
-            alert(e);
-        }
+            }
+        });
     }
     getWeekDay(date) {
         switch (date.getDay()) {
@@ -13793,7 +13780,7 @@ module.exports = "<div class=\"row\">\r\n    <div class=\"row\">\r\n        <div
 /***/ 1385:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n  <div class=\"col-12\">\r\n    <ba-card title=\"Schedule Input\">\r\n      <div style=\"height: 100%;\">\r\n        <fieldset style=\" border: none;padding: 0; margin: 0;\" [disabled]=\"disableScheduleInput\">\r\n          <div class=\"form-group\" *ngIf=\"IntegrateTreatmentWithAppointment || mode != 'add'\">\r\n            <table id=\"tblPatientInfo\">\r\n              <tr>\r\n                <td>{{'customer' | labelPipe}} Name</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.NAME}}</td>\r\n                <td>Mobile No</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.MOBILE}}</td>\r\n              </tr>\r\n              <tr>\r\n                <td>Address</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.ADDRESS}}</td>\r\n                <td>{{'customer' | labelPipe}} Id</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.PATIENT_ID}}</td>\r\n              </tr>\r\n              <tr>\r\n                <td>Check In</td>\r\n                <td>: {{scheduleInput.checkInTime}}</td>\r\n                <td>Entry User</td>\r\n                <td>: {{scheduleInput.UserId}}</td>\r\n              </tr>\r\n            </table>\r\n          </div>\r\n          <customer-select (customerChanged)=\"customerChanged($event)\"\r\n            *ngIf=\"!IntegrateTreatmentWithAppointment && mode == 'add'\"></customer-select>\r\n\r\n          <div class=\"form-group\">\r\n            \r\n            <div class=\"row\">\r\n              <div class=\"form-group col-sm-12  col-md-3  col-lg-2 col-xxl-1\">\r\n                <label for=\"miti\">Miti</label>\r\n                <nepali-date-picker name=\"nepaliDateFrom\" [id]=\"'nepaliDatefrom'\"\r\n                  (change)=\"changeEntryDate($event.detail.value, 'BS')\" [label]=\"'yyyy-mm-dd'\"\r\n                  [(ngModel)]=\"ScheduleDateBS\">\r\n                </nepali-date-picker>\r\n              </div>\r\n              <div class=\"form-group col-sm-12  col-md-3  col-lg-2 col-xxl-1\">\r\n                <label for=\"date\">Date</label>\r\n                <input type=\"date\" class=\"form-control\" id=\"date\" \r\n                  [disabled]=\"multipleServiceList.length>0 || mode=='edit'\" [(ngModel)]=\"scheduleInput.DATE\"\r\n                  (change)=\"changeEntryDate($event.target.value, 'AD')\">\r\n              </div>\r\n\r\n              <div class=\"form-group col-sm-12  col-md-6 col-lg-4 col-xxl-3\">\r\n                <label for=\"outlet\">Outlet</label>\r\n                <select class=\"form-control\" id=\"outlet\" [(ngModel)] = \"scheduleInput.branch\"\r\n                (ngModelChange)=\"getServices(scheduleInput.branch.branchId)\">\r\n                    <option *ngFor = \"let branch of userBranches\" [ngValue]=\"branch\">{{branch.branchName}}</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n          </div>\r\n            \r\n          <div class=\"row\" *ngIf=\"mode=='edit' && !enableCheckIn\">\r\n            <div class=\"form-group col-md-4 col-xl-3\">\r\n              <label for=\"Status\">Status</label>\r\n              <select class=\"form-control\" name=\"Status\" id=\"Status\" [(ngModel)]=\"scheduleInput.STATUS\">\r\n                <option *ngFor=\"let s of statusList\" [ngValue]=\"s.status\">{{s.description}}</option>\r\n              </select>\r\n            </div>\r\n          </div>\r\n\r\n          <div style=\" border: 1px solid #dcdcdc;padding:10px;\" class=\"col-12 col-xxl-6\">\r\n            <fieldset style=\" border: none;padding: 0; margin: 0;\"\r\n              [disabled]=\"scheduleInput.DATE == null || scheduleInput.DATE == ''\">\r\n              <div class=\"row\">\r\n                <div class=\"form-group col-md-6\">\r\n                  <label for=\"sserviceselect\">Service</label>\r\n                  <angular2-multiselect [data]=\"ServiceList\" [settings]=\"serviceSetting\" (ngModelChange)=\"serviceChangeEvent($event)\" [(ngModel)]=\"selectedService\">\r\n                  </angular2-multiselect>\r\n                </div>\r\n                <div class=\"form-group col-md-2 col-lg-1\">\r\n                  <label for=\"pax\">Pax</label>\r\n                    <input  class=\"form-control\" name=\"pax\" id=\"pax\" (change)=\"paxChanged($event.target.value, multipleServiceObj.SERVICE.noOfEmployees)\" [(ngModel)]=\"multipleServiceObj.PAX\"/>\r\n                </div>\r\n                <div class=\"form-group col-lg-5 col-md-4\">\r\n                  <label for=\"employeeselect\" style=\"margin-left:10px\">Staff</label>\r\n                  <label style=\"width: 160px;font-size: 13px;margin-left:10px\">\r\n                    <input type=\"checkbox\" style=\"vertical-align: middle\"\r\n                      (change)=\"$event.target.checked?(multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER=1):(multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER=0)\"\r\n                      [checked]=\"multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER==1\"\r\n                      [disabled]=\"mode == 'edit' && multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER==1 && user.Role == 'user' && multipleServiceObj.SNO > 0\">\r\n                    Is Booked By {{'customer' | labelPipe}}\r\n                  </label>\r\n\r\n                  <angular2-multiselect [data]=\"employeeList\" [settings]=\"empSetting\" [(ngModel)]=\"multipleServiceObj.EMPLOYEE\">\r\n                  </angular2-multiselect>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"form-group col-md-6\">\r\n                  <label for=\"roomselect\">Room</label>\r\n                  <angular2-multiselect [data]=\"roomList\" [settings]=\"roomSetting\" [(ngModel)]=\"multipleServiceObj.ROOM\">\r\n                  </angular2-multiselect>\r\n                </div>\r\n\r\n                <div class=\"form-group col-12 col-md-6\">\r\n                  <label for=\"roomselect\">Fee</label>\r\n                  <select class=\"form-control\" name=\"typeselect\" id=\"typeselect\" [(ngModel)]=\"multipleServiceObj.TYPE\"\r\n                    (ngModelChange)=\"TypeChange(multipleServiceObj.TYPE)\">\r\n                    <option Value=\"NotPaid\">NotPaid </option>\r\n                    <option Value=\"Paid\">Paid</option>\r\n                    <option Value=\"Free\">Free</option>\r\n                  </select>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\" style=\"margin: 20px;\">\r\n                <button type=\"button\" *ngFor=\"let time of appTimeSlots\"\r\n                    class=\"btn btn-primary\" (click)=\"selectAppointmentTime(time)\" style=\"margin-right: 10px;\">{{time.time}}</button>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"form-group col-12 col-md-10 col-sm-10 col-xs-8\">\r\n                  <label for=\"time\">Time</label>\r\n                  <!--<input type=\"input\" class=\"form-control\" id=\"time\" [(ngModel)]=\"scheduleInput.startTime\">-->\r\n                  <div class=\"demo row\">\r\n                    <div class=\"col-12 col-md-5 col-sm-4 col-xs-3\">\r\n                      <input type=\"time\" class=\"form-control\" style=\"width: 150px;\"\r\n                        (change)=\"starttimeChange($event.target.value)\" [(ngModel)]=\"StartTime\" />\r\n                    </div>\r\n                    <div class=\"col-12 col-md-1 col-sm-1  col-xs-1\">\r\n                      <label style=\"margin: 10px;\">To</label>\r\n                    </div>\r\n                    <div class=\"col-12 col-md-5 col-sm-4  col-xs-3\">\r\n                      <input type=\"time\" class=\"form-control\" style=\"width: 150px;\" disabled [(ngModel)]=\"EndTime\" />\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-12 col-md-2 col-sm-2 col-xs-2\">\r\n                  <button type=\"button\"\r\n                    [disabled]=\"multipleServiceObj==null|| multipleServiceObj.SERVICE==null || multipleServiceObj.EMPLOYEE==null || multipleServiceObj.ROOM==null || scheduleInput.billableSchedule==1\"\r\n                    class=\"btn btn-primary\" (click)=\"AddClickEvent()\" style=\"margin-top:20px;\">Add</button>\r\n                </div>\r\n              </div>\r\n\r\n              <Table id=\"BlueHeaderResizableTable\" style=\"width:100%;max-height:300px\">\r\n                <thead>\r\n                  <tr>\r\n                    <th style=\"width:30px\">SN.</th>\r\n                    <th style=\"width:35%\">Service</th>\r\n                    <th style=\"width:35%\">Therapist</th>\r\n                    <th style=\"width:20%\">Room</th>\r\n                    <th style=\"width:10%\">Time</th>\r\n                    <th style=\"width:60px\"></th>\r\n                  </tr>\r\n                </thead>\r\n                <tbody class=\"tabelRowWithAutoScroll\">\r\n                  <tr *ngFor=\"let ir of multipleServiceList;let i=index\" style=\"height:28px;font-size:small\">\r\n                    <td style=\"width:30px\">{{i+1}}</td>\r\n                    <td style=\"width:35%\">{{ir.SERVICE.DESCRIPTION}}</td>\r\n                    <td style=\"width:35%\">{{ir.EMPLOYEE.NAME}}</td>\r\n                    <td style=\"width:20%\">{{ir.ROOM.ROOMNO}}</td>\r\n                    <td style=\"width:10%\">{{ir.STARTTIME}}</td>\r\n                    <td>\r\n                      <button class=\"glyphicon glyphicon-edit\" (click)=\"editSchedule(i)\"\r\n                        [disabled]=\"scheduleInput.billableSchedule==1\"></button>\r\n                      <button class=\"glyphicon glyphicon-remove\" (click)=\"removeSchedule(i)\" style=\"float: right;\"\r\n                        [disabled]=\"(mode == 'edit' && ir.EMPLOYEE_BOOKED_BYCUSTOMER==1 && user.Role == 'user') || scheduleInput.billableSchedule==1\"></button>\r\n                    </td>\r\n                  </tr>\r\n                </tbody>\r\n              </Table>\r\n            </fieldset>\r\n          </div>\r\n        </fieldset>\r\n\r\n        <button type=\"submit\" class=\"btn btn-primary\"\r\n          *ngIf=\"false && mode=='edit' && canBeBillable() && scheduleInput.billableSchedule!=1\" (click)=\"ProceedBill()\">\r\n          Proceed To Bill\r\n        </button>\r\n        <button type=\"button\" class=\"btn btn-primary\"\r\n          *ngIf=\"mode=='edit' && canBeBillable() && scheduleInput.billableSchedule==1\" (click)=\"CancelBill()\">\r\n          Cancel Bill\r\n        </button>\r\n        <button type=\"submit\" class=\"btn btn-primary\" (click)=\"SaveClickEvent()\"\r\n          [disabled]=\"multipleServiceList.length==0 || scheduleInput.CUSTOMER==null || scheduleInput.DATE==null ||disableScheduleInput || scheduleInput.billableSchedule==1\">Submit</button>\r\n        <button type=\"button\" class=\"btn btn-danger\" (click)=\"DeleteConformation()\"\r\n          *ngIf=\"mode=='edit'&& disableScheduleInput==false && scheduleInput.billableSchedule!=1\">Delete</button>\r\n        <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n      </div>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div bsModal #childEmployeeModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\"\r\n  aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childEmployeeModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n        <h4 class=\"modal-title\">Replace Therapist</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        <label for=\"employeeselectForEdit\">Available Therapist</label>\r\n        <select class=\"form-control\" name=\"employeeselectForEdit\" id=\"employeeselectForEdit\"\r\n          [(ngModel)]=\"ReplacedEmployee\">\r\n          <option *ngFor=\"let em of replacementEmployeeList\" [ngValue]=\"em\">{{em.NAME}}</option>\r\n        </select>\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"saveChildModal(ReplacedEmployee)\">Save changes</button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n  aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n\r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        {{DialogMessage}}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n  aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the schedule you can't recover it back. Are U sure you want to delete this Schedule?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>\r\n\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"row\">\r\n  <div class=\"col-12\">\r\n    <ba-card title=\"Schedule Input\">\r\n      <div style=\"height: 100%;\">\r\n        <fieldset style=\" border: none;padding: 0; margin: 0;\" [disabled]=\"disableScheduleInput\">\r\n          <div class=\"form-group\" *ngIf=\"IntegrateTreatmentWithAppointment || mode != 'add'\">\r\n            <table id=\"tblPatientInfo\">\r\n              <tr>\r\n                <td>{{'customer' | labelPipe}} Name</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.NAME}}</td>\r\n                <td>Mobile No</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.MOBILE}}</td>\r\n              </tr>\r\n              <tr>\r\n                <td>Address</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.ADDRESS}}</td>\r\n                <td>{{'customer' | labelPipe}} Id</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.PATIENT_ID}}</td>\r\n              </tr>\r\n              <tr>\r\n                <td>Check In</td>\r\n                <td>: {{scheduleInput.checkInTime}}</td>\r\n                <td>Entry User</td>\r\n                <td>: {{scheduleInput.UserId}}</td>\r\n              </tr>\r\n            </table>\r\n          </div>\r\n          <customer-select (customerChanged)=\"customerChanged($event)\"\r\n            *ngIf=\"!IntegrateTreatmentWithAppointment && mode == 'add'\"></customer-select>\r\n\r\n          <div class=\"form-group\">\r\n            \r\n            <div class=\"row\">\r\n              <div class=\"form-group col-sm-12  col-md-3  col-lg-2 col-xxl-1\">\r\n                <label for=\"miti\">Miti</label>\r\n                <nepali-date-picker name=\"nepaliDateFrom\" [id]=\"'nepaliDatefrom'\"\r\n                  (change)=\"changeEntryDate($event.detail.value, 'BS')\" [label]=\"'yyyy-mm-dd'\"\r\n                  [(ngModel)]=\"ScheduleDateBS\">\r\n                </nepali-date-picker>\r\n              </div>\r\n              <div class=\"form-group col-sm-12  col-md-3  col-lg-2 col-xxl-1\">\r\n                <label for=\"date\">Date</label>\r\n                <input type=\"date\" class=\"form-control\" id=\"date\" \r\n                  [disabled]=\"multipleServiceList.length>0 || mode=='edit'\" [(ngModel)]=\"scheduleInput.DATE\"\r\n                  (change)=\"changeEntryDate($event.target.value, 'AD')\">\r\n              </div>\r\n\r\n              <div class=\"form-group col-sm-12  col-md-6 col-lg-4 col-xxl-3\">\r\n                <label for=\"outlet\">Outlet</label>\r\n                <select class=\"form-control\" id=\"outlet\" [(ngModel)] = \"scheduleInput.branch\"\r\n                (ngModelChange)=\"getServices(scheduleInput.branch.branchId)\">\r\n                    <option *ngFor = \"let branch of userBranches\" [ngValue]=\"branch\">{{branch.branchName}}</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n          </div>\r\n            \r\n          <div class=\"row\" *ngIf=\"mode=='edit' && !enableCheckIn\">\r\n            <div class=\"form-group col-md-4 col-xl-3\">\r\n              <label for=\"Status\">Status</label>\r\n              <select class=\"form-control\" name=\"Status\" id=\"Status\" [(ngModel)]=\"scheduleInput.STATUS\">\r\n                <option *ngFor=\"let s of statusList\" [ngValue]=\"s.status\">{{s.description}}</option>\r\n              </select>\r\n            </div>\r\n          </div>\r\n\r\n          <div style=\" border: 1px solid #dcdcdc;padding:10px;\" class=\"col-12 col-xxl-6\">\r\n            <fieldset style=\" border: none;padding: 0; margin: 0;\"\r\n              [disabled]=\"scheduleInput.DATE == null || scheduleInput.DATE == ''\">\r\n              <div class=\"row\">\r\n                <div class=\"form-group col-md-6\">\r\n                  <label for=\"sserviceselect\">Service</label>\r\n                  <angular2-multiselect [data]=\"ServiceList\" [settings]=\"serviceSetting\" (ngModelChange)=\"serviceChangeEvent($event)\" [(ngModel)]=\"selectedService\">\r\n                  </angular2-multiselect>\r\n                </div>\r\n                <div class=\"form-group col-md-2 col-lg-1\">\r\n                  <label for=\"pax\">Pax</label>\r\n                    <input  class=\"form-control\" name=\"pax\" id=\"pax\" (change)=\"paxChanged($event.target.value, multipleServiceObj.SERVICE.noOfEmployees)\" [(ngModel)]=\"multipleServiceObj.PAX\"/>\r\n                </div>\r\n                <div class=\"form-group col-lg-5 col-md-4\">\r\n                  <label for=\"employeeselect\" style=\"margin-left:10px\">Staff</label>\r\n                  <label style=\"width: 160px;font-size: 13px;margin-left:10px\">\r\n                    <input type=\"checkbox\" style=\"vertical-align: middle\"\r\n                      (change)=\"$event.target.checked?(multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER=1):(multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER=0)\"\r\n                      [checked]=\"multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER==1\"\r\n                      [disabled]=\"mode == 'edit' && multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER==1 && user.Role == 'user' && multipleServiceObj.SNO > 0\">\r\n                    Is Booked By {{'customer' | labelPipe}}\r\n                  </label>\r\n\r\n                  <angular2-multiselect [data]=\"employeeList\" [settings]=\"empSetting\" [(ngModel)]=\"multipleServiceObj.EMPLOYEE\">\r\n                  </angular2-multiselect>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"form-group col-md-6\">\r\n                  <label for=\"roomselect\">Room</label>\r\n                  <angular2-multiselect [data]=\"roomList\" [settings]=\"roomSetting\" [(ngModel)]=\"multipleServiceObj.ROOM\">\r\n                  </angular2-multiselect>\r\n                </div>\r\n\r\n                <div class=\"form-group col-12 col-md-6\">\r\n                  <label for=\"roomselect\">Fee</label>\r\n                  <select class=\"form-control\" name=\"typeselect\" id=\"typeselect\" [(ngModel)]=\"multipleServiceObj.TYPE\"\r\n                    (ngModelChange)=\"TypeChange(multipleServiceObj.TYPE)\">\r\n                    <option Value=\"NotPaid\">NotPaid </option>\r\n                    <option Value=\"Paid\">Paid</option>\r\n                    <option Value=\"Free\">Free</option>\r\n                  </select>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\" style=\"margin: 20px;\">\r\n                <button type=\"button\" *ngFor=\"let time of appTimeSlots\"\r\n                    class=\"btn btn-primary\" (click)=\"selectAppointmentTime(time)\" style=\"margin-right: 10px;\">{{time.time}}</button>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"form-group col-12 col-md-10 col-sm-10 col-xs-8\">\r\n                  <label for=\"time\">Time</label>\r\n                  <!--<input type=\"input\" class=\"form-control\" id=\"time\" [(ngModel)]=\"scheduleInput.startTime\">-->\r\n                  <div class=\"demo row\">\r\n                    <div class=\"col-12 col-md-5 col-sm-4 col-xs-3\">\r\n                      <input type=\"time\" class=\"form-control\" style=\"width: 150px;\"\r\n                        (change)=\"starttimeChange($event.target.value)\" [(ngModel)]=\"StartTime\" />\r\n                    </div>\r\n                    <div class=\"col-12 col-md-1 col-sm-1  col-xs-1\">\r\n                      <label style=\"margin: 10px;\">To</label>\r\n                    </div>\r\n                    <div class=\"col-12 col-md-5 col-sm-4  col-xs-3\">\r\n                      <input type=\"time\" class=\"form-control\" style=\"width: 150px;\" disabled [(ngModel)]=\"EndTime\" />\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-12 col-md-2 col-sm-2 col-xs-2\">\r\n                  <button type=\"button\"\r\n                    [disabled]=\"multipleServiceObj==null|| multipleServiceObj.SERVICE==null || multipleServiceObj.EMPLOYEE==null || multipleServiceObj.ROOM==null || scheduleInput.billableSchedule==1\"\r\n                    class=\"btn btn-primary\" (click)=\"AddClickEvent()\" style=\"margin-top:20px;\">Add</button>\r\n                </div>\r\n              </div>\r\n\r\n              <Table id=\"BlueHeaderResizableTable\" style=\"width:100%;max-height:300px\">\r\n                <thead>\r\n                  <tr>\r\n                    <th style=\"width:30px\">SN.</th>\r\n                    <th style=\"width:35%\">Service</th>\r\n                    <th style=\"width:35%\">Therapist</th>\r\n                    <th style=\"width:20%\">Room</th>\r\n                    <th style=\"width:10%\">Time</th>\r\n                    <th style=\"width:60px\"></th>\r\n                  </tr>\r\n                </thead>\r\n                <tbody class=\"tabelRowWithAutoScroll\">\r\n                  <tr *ngFor=\"let ir of multipleServiceList;let i=index\" style=\"height:28px;font-size:small\">\r\n                    <td style=\"width:30px\">{{i+1}}</td>\r\n                    <td style=\"width:35%\">{{ir.SERVICE.DESCRIPTION}}</td>\r\n                    <td style=\"width:35%\">{{ir.EMPLOYEE.NAME}}</td>\r\n                    <td style=\"width:20%\">{{ir.ROOM.ROOMNO}}</td>\r\n                    <td style=\"width:10%\">{{ir.STARTTIME}}</td>\r\n                    <td>\r\n                      <button class=\"glyphicon glyphicon-edit\" (click)=\"editSchedule(i)\"\r\n                        [disabled]=\"scheduleInput.billableSchedule==1\"></button>\r\n                      <button class=\"glyphicon glyphicon-remove\" (click)=\"removeSchedule(ir.serviceGuid)\" style=\"float: right;\"\r\n                        [disabled]=\"(mode == 'edit' && ir.EMPLOYEE_BOOKED_BYCUSTOMER==1 && user.Role == 'user') || scheduleInput.billableSchedule==1\"></button>\r\n                    </td>\r\n                  </tr>\r\n                </tbody>\r\n              </Table>\r\n            </fieldset>\r\n          </div>\r\n        </fieldset>\r\n\r\n        <button type=\"submit\" class=\"btn btn-primary\"\r\n          *ngIf=\"false && mode=='edit' && canBeBillable() && scheduleInput.billableSchedule!=1\" (click)=\"ProceedBill()\">\r\n          Proceed To Bill\r\n        </button>\r\n        <button type=\"button\" class=\"btn btn-primary\"\r\n          *ngIf=\"mode=='edit' && canBeBillable() && scheduleInput.billableSchedule==1\" (click)=\"CancelBill()\">\r\n          Cancel Bill\r\n        </button>\r\n        <button type=\"submit\" class=\"btn btn-primary\" (click)=\"SaveClickEvent()\"\r\n          [disabled]=\"multipleServiceList.length==0 || scheduleInput.CUSTOMER==null || scheduleInput.DATE==null ||disableScheduleInput || scheduleInput.billableSchedule==1\">Submit</button>\r\n        <button type=\"button\" class=\"btn btn-danger\" (click)=\"DeleteConformation()\"\r\n          *ngIf=\"mode=='edit'&& disableScheduleInput==false && scheduleInput.billableSchedule!=1\">Delete</button>\r\n        <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n      </div>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div bsModal #childEmployeeModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\"\r\n  aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childEmployeeModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n        <h4 class=\"modal-title\">Replace Therapist</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        <label for=\"employeeselectForEdit\">Available Therapist</label>\r\n        <select class=\"form-control\" name=\"employeeselectForEdit\" id=\"employeeselectForEdit\"\r\n          [(ngModel)]=\"ReplacedEmployee\">\r\n          <option *ngFor=\"let em of replacementEmployeeList\" [ngValue]=\"em\">{{em.NAME}}</option>\r\n        </select>\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"saveChildModal(ReplacedEmployee)\">Save changes</button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n  aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n\r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        {{DialogMessage}}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n  aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the schedule you can't recover it back. Are U sure you want to delete this Schedule?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>\r\n\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 

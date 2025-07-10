@@ -10358,7 +10358,7 @@ let AddEmployee = class AddEmployee {
             }
         }
         this.masterRepo.getBranchList().subscribe((response) => {
-            this.branches = response.json();
+            this.branches = response;
             if (this.mode == "edit") {
                 if (this.employeeObj && this.employeeObj.branch) {
                     let branch = this.branches.find((x) => x.branchId == this.employeeObj.branch.branchId);
@@ -11670,7 +11670,7 @@ let AddRoom = class AddRoom {
             StatusRemarks: ['']
         });
         this.masterRepo.getBranchList().subscribe((response) => {
-            this.branches = response.json();
+            this.branches = response;
             if (this.mode == "edit") {
                 if (!!this.activatedRoute.snapshot.params['id']) {
                     let id = this.activatedRoute.snapshot.params['id'];
@@ -12698,7 +12698,7 @@ let AddService = class AddService {
     ngOnInit() {
         this.ItemList = [];
         this.masterRepo.getBranchList().subscribe((response) => {
-            this.branchList = response.json();
+            this.branchList = response;
         }, (err) => {
             this.masterRepo.handleWebError(err);
         });
@@ -12753,10 +12753,10 @@ let AddService = class AddService {
             }
         }
         this.masterRepo.getEmployees().subscribe((response) => {
-            this.empList = response.json();
+            this.empList = response;
         });
         this.masterRepo.getRooms().subscribe((response) => {
-            this.roomList = response.json();
+            this.roomList = response;
         });
         this.masterRepo.getItemList().subscribe((data) => {
             this.ItemList.push(data);
