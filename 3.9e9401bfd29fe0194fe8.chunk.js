@@ -9384,7 +9384,8 @@ let AddUser = class AddUser {
     }
     ngOnInit() {
         this.service.getBranchList().subscribe((response) => {
-            this.branchList = response.json();
+			console.log(response);
+            this.branchList = response;
         }, (err) => {
             this.service.handleWebError(err);
         });

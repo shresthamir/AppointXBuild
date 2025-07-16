@@ -9896,14 +9896,7 @@ let AppointmentRequestList = class AppointmentRequestList {
         this.branchChanged();
     }
     onEditClick(event) {
-        console.log(event);
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
-            this.router.navigate(["/pages/schedule/request-detail", { cartId: event.data.cartId, mode: "edit", returnUrl: this.router.url }]);
-        }
-        else {
-            this.DialogMessage = "You are not authorized to edit Customer.";
-            this.childModal.show();
-        }
+		this.router.navigate(["/pages/schedule/request-detail", { cartId: event.data.cartId, mode: "edit", returnUrl: this.router.url }]);
     }
     branchChanged() {
         let Clist = [];
