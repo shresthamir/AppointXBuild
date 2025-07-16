@@ -10006,6 +10006,14 @@ let AppointmentRequest = class AppointmentRequest {
             this.serviceList = services;
             this.appRequest.items.forEach(element => {
                 element.service = this.serviceList.filter(x => x.SERVICEID == element.serviceId)[0] || {};
+				element.empSetting = {
+                    enableCheckAll: true,
+                    text: 'Select Employees',
+                    enableSearchFilter: true,
+                    labelKey: "NAME",
+                    primaryKey: "EMPLOYEEID",
+                    limitSelection: element.quantity * element.service.noOfEmployees
+                };
             });
         });
     }
@@ -10035,15 +10043,7 @@ let AppointmentRequest = class AppointmentRequest {
             });
             this.appRequest.items = result;
             */
-            this.appRequest.items.forEach(element => {
-                element.empSetting = {
-                    enableCheckAll: true,
-                    text: 'Select Employees',
-                    enableSearchFilter: true,
-                    labelKey: "NAME",
-                    primaryKey: "EMPLOYEEID",
-                    limitSelection: element.quantity * element.service.noOfEmployees
-                };
+            this.appRequest.items.forEach(element => {                
                 element.roomSetting = {
                     enableCheckAll: true,
                     text: 'Select Rooms',
