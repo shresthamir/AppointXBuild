@@ -10042,7 +10042,7 @@ let AppointmentRequest = class AppointmentRequest {
                     enableSearchFilter: true,
                     labelKey: "NAME",
                     primaryKey: "EMPLOYEEID",
-                    limitSelection: element.quantity
+                    limitSelection: element.quantity * element.service.noOfEmployees
                 };
                 element.roomSetting = {
                     enableCheckAll: true,
