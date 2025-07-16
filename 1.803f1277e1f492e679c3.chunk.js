@@ -10647,14 +10647,7 @@ let CheckInList = class CheckInList {
         });
     }
     onEditClick(event) {
-        console.log(event);
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
-            this.router.navigate(["/pages/schedule/checkOut", { id: event.data.checkInId, mode: "edit", returnUrl: this.router.url }]);
-        }
-        else {
-            this.DialogMessage = "You are not authorized to edit Customer.";
-            this.childModal.show();
-        }
+		this.router.navigate(["/pages/schedule/checkOut", { id: event.data.checkInId, mode: "edit", returnUrl: this.router.url }]);
     }
 };
 __decorate([
@@ -13309,13 +13302,7 @@ let TreatmentList = class TreatmentList {
         this.router.navigate(["/pages/schedule/treatment", { id: event.data.DocumentId, mode: "view", returnUrl: this.router.url }]);
     }
     onEditClick(event) {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
-            this.router.navigate(["/pages/schedule/treatment", { id: event.data.DocumentId, mode: "edit", returnUrl: this.router.url }]);
-        }
-        else {
-            this.DialogMessage = "You are not authorized to edit Customer.";
-            this.childModal.show();
-        }
+		this.router.navigate(["/pages/schedule/treatment", { id: event.data.DocumentId, mode: "edit", returnUrl: this.router.url }]);
     }
     OnDateChangeEvent(v) {
         let Clist = [];
