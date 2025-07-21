@@ -186,26 +186,6 @@ var NepaliDateModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/data/disabeDates.ts":
-/*!*************************************!*\
-  !*** ./src/app/data/disabeDates.ts ***!
-  \*************************************/
-/*! exports provided: nepalidFormat, deleteSetting */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "nepalidFormat", function() { return nepalidFormat; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteSetting", function() { return deleteSetting; });
-var nepalidFormat = [];
-var deleteSetting = {
-    deleteButtonContent: '<i class="ion-trash-a"></i>',
-    confirmDelete: true
-};
-
-
-/***/ }),
-
 /***/ "./src/app/pages/masters/components/Customer/AddCustomer.component.html":
 /*!******************************************************************************!*\
   !*** ./src/app/pages/masters/components/Customer/AddCustomer.component.html ***!
@@ -1318,7 +1298,7 @@ var AddEmployee = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" [disabled]=\"disableAdd\" (click)=\"onAddClick()\">Add Employee</button>\r\n  </div>\r\n  <div>\r\n    <ba-card title=\"Employees\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-md\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n\r\n      <div class=\"modal-body\">\r\n        <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n        {{DialogMessage}}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the Employee you can't recover it back. Are you sure you want to delete this Employee?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>!\r\n\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" [disabled]=\"disableAdd\" (click)=\"onAddClick()\">Add Employee</button>\r\n  </div>\r\n  <div>\r\n    <ba-card title=\"Employees\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteConfirm($event)\"\r\n        (view)=\"onViewClick($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-md\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n          \r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n\r\n      <div class=\"modal-body\">\r\n        <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n        {{DialogMessage}}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the Employee you can't recover it back. Are you sure you want to delete this Employee?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>!\r\n\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -1341,8 +1321,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var style_loader_smartTables_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(style_loader_smartTables_scss__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../common/repositories/masterRepo.service */ "./src/app/common/repositories/masterRepo.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var src_app_data_disabeDates__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/data/disabeDates */ "./src/app/data/disabeDates.ts");
-
 
 
 
@@ -1396,7 +1374,7 @@ var EmployeeList = /** @class */ (function () {
             _this.service._employeeList = elist;
             _this.source.load(elist);
         });
-        this.settings.delete = this.menuRight.delete ? src_app_data_disabeDates__WEBPACK_IMPORTED_MODULE_8__["deleteSetting"] : null;
+        this.settings.delete = this.menuRight.delete ? {} : null;
         this.settings.edit = this.menuRight.edit ? {} : null;
     }
     Object.defineProperty(EmployeeList.prototype, "disableAdd", {
@@ -4427,4 +4405,4 @@ var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forCh
 /***/ })
 
 }]);
-//# sourceMappingURL=masters-masters-module.5a39a802fb9db3dea9eb.js.map
+//# sourceMappingURL=masters-masters-module.7417a967bb243585d03e.js.map

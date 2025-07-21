@@ -2102,7 +2102,7 @@ var HttpInterceptorService = /** @class */ (function () {
                 if (!error.url.endsWith('/jwt'))
                     return _this.handle401(request, next);
             }
-            return rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].throw(error);
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["throwError"])(function () { return error; });
         }));
     };
     HttpInterceptorService.prototype.handle401 = function (request, next) {
@@ -6484,4 +6484,4 @@ module.exports = __webpack_require__(/*! D:\Projects\Minor Projects\AppointX\App
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.7aead2cce06d9e41a032.js.map
+//# sourceMappingURL=main.f50c646d6ec5e10764a8.js.map
