@@ -3863,7 +3863,7 @@ var AddService = /** @class */ (function () {
             _this.roomList = response;
         });
         this.masterRepo.getItemList().subscribe(function (data) {
-            _this.ItemList.push(data);
+            _this.ItemList = data;
         }, function (Error) { return _this.masterRepo.handleWebError(Error); });
         this.masterRepo.getFormPreferences("Service").subscribe(function (result) {
             _this.common.setFormPreference(_this.form, result.fields);
@@ -4405,4 +4405,4 @@ var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forCh
 /***/ })
 
 }]);
-//# sourceMappingURL=masters-masters-module.7417a967bb243585d03e.js.map
+//# sourceMappingURL=masters-masters-module.5c179e8886371ad86602.js.map
