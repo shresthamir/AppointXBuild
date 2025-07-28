@@ -501,6 +501,46 @@ module.exports = v4;
 
 /***/ }),
 
+/***/ "./src/app/common/services/branch-setting.service.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/common/services/branch-setting.service.ts ***!
+  \***********************************************************/
+/*! exports provided: BranchSettingService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BranchSettingService", function() { return BranchSettingService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var BranchSettingService = /** @class */ (function () {
+    function BranchSettingService() {
+    }
+    BranchSettingService.prototype.getBranchSettings = function () {
+        return {
+            enableCheckAll: true,
+            text: 'Select Outlets',
+            enableSearchFilter: true,
+            labelKey: 'branchName',
+            primaryKey: 'branchId',
+            badgeShowLimit: 2
+        };
+    };
+    BranchSettingService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], BranchSettingService);
+    return BranchSettingService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/pages/schedule/components/AppointmentRequest/RequestList.component.html":
 /*!*****************************************************************************************!*\
   !*** ./src/app/pages/schedule/components/AppointmentRequest/RequestList.component.html ***!
@@ -508,7 +548,7 @@ module.exports = v4;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-10 col-md-4\" >\r\n        <select class=\"form-control\" id=\"outlet\" (change)=\"branchChanged()\" [(ngModel)] = \"selectedBranch\">\r\n            <option *ngFor = \"let branch of userBranches\" value=\"{{branch.branchId}}\">{{branch.branchName}}</option>\r\n        </select>\r\n    </div>\r\n  </div>\r\n  <div>\r\n    <ba-card title=\"Requests List\"  baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-md\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>          \r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n\r\n      <div class=\"modal-body\">\r\n        <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n        {{DialogMessage}}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the Treatment you can't recover it back. Are U sure you want to delete this Treatment?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>!\r\n\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"widgets\">\r\n   <div class=\"row\">\r\n    <div class=\"col-12 col-md-6 col-lg-4\">\r\n      <angular2-multiselect style=\"width: 100%;\" [data]=\"userBranches\" [settings]=\"branchSetting\"\r\n        [(ngModel)]=\"selectedBranch\" (ngModelChange)=\"branchChanged()\" aria-label=\"Select branches\">\r\n      </angular2-multiselect>\r\n    </div>\r\n  </div>\r\n  <div>\r\n    <ba-card title=\"Requests List\"  baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-md\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>          \r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n\r\n      <div class=\"modal-body\">\r\n        <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n        {{DialogMessage}}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"modal fade\" bsModal #deleteModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"deleteModal.hide()\">\r\n                            <span aria-hidden=\"true\">&times;</span>\r\n                        </button>\r\n        <h4 class=\"modal-title\">Warning</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        Once you delete the Treatment you can't recover it back. Are U sure you want to delete this Treatment?\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n        <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n      </div>!\r\n\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -533,6 +573,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _global_state__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../global.state */ "./src/app/global.state.ts");
 /* harmony import */ var _theme_pipes_label_pipe__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../theme/pipes/label.pipe */ "./src/app/theme/pipes/label.pipe.ts");
+/* harmony import */ var _common_services_branch_setting_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../common/services/branch-setting.service */ "./src/app/common/services/branch-setting.service.ts");
+
 
 
 
@@ -544,15 +586,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var AppointmentRequestList = /** @class */ (function () {
-    function AppointmentRequestList(service, _authService, router, state, labelPipe) {
+    function AppointmentRequestList(service, _authService, router, state, labelPipe, branchSettingService) {
+        var _this = this;
         this.service = service;
         this._authService = _authService;
         this.router = router;
         this.state = state;
         this.labelPipe = labelPipe;
+        this.branchSettingService = branchSettingService;
         this.query = '';
         this.DialogMessage = "You are not authorized";
         this.userBranches = [];
+        this.selectedBranch = [];
         this.settings = {
             mode: 'external',
             delete: null,
@@ -582,8 +627,9 @@ var AppointmentRequestList = /** @class */ (function () {
         };
         this.subcriptions = [];
         this.source = new _ng2_smart_table_ng2_smart_table__WEBPACK_IMPORTED_MODULE_4__["LocalDataSource"]();
+        this.branchSetting = this.branchSettingService.getBranchSettings();
         this.userBranches = this._authService.getUserProfile().branches;
-        this.selectedBranch = this._authService.getUserProfile().defaultBranch;
+        this.selectedBranch.push(this.userBranches.find(function (x) { return x.branchId == _this._authService.getUserProfile().defaultBranch; }));
         this.branchChanged();
     }
     AppointmentRequestList.prototype.onEditClick = function (event) {
@@ -592,8 +638,7 @@ var AppointmentRequestList = /** @class */ (function () {
     AppointmentRequestList.prototype.branchChanged = function () {
         var _this = this;
         var Clist = [];
-        this.service
-            .GetAppointmetRequests(encodeURIComponent(this.selectedBranch))
+        this.service.GetAppointmetRequests(this.selectedBranch.map(function (x) { return x.branchId; }))
             .subscribe(function (data) {
             Clist.push.apply(Clist, tslib__WEBPACK_IMPORTED_MODULE_0__["__spread"](data));
         }, function (Error) { return console.log(Error); }, function () {
@@ -620,7 +665,8 @@ var AppointmentRequestList = /** @class */ (function () {
             _common_services_permission_authService_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"],
             _angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"],
             _global_state__WEBPACK_IMPORTED_MODULE_8__["GlobalState"],
-            _theme_pipes_label_pipe__WEBPACK_IMPORTED_MODULE_9__["LabelPipe"]])
+            _theme_pipes_label_pipe__WEBPACK_IMPORTED_MODULE_9__["LabelPipe"],
+            _common_services_branch_setting_service__WEBPACK_IMPORTED_MODULE_10__["BranchSettingService"]])
     ], AppointmentRequestList);
     return AppointmentRequestList;
 }());
@@ -636,7 +682,7 @@ var AppointmentRequestList = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n  <div class=\"col-12\">\r\n    <ba-card>\r\n      <div style=\"height: 100%;\">\r\n        <fieldset style=\" border: none;padding: 0; margin: 0;\" [disabled]=\"disableScheduleInput\">\r\n          <div class=\"form-group\">\r\n            \r\n            <div class=\"row\">\r\n              <div class=\"form-group col-sm-12  col-md-3  col-lg-2 col-xxl-1\">\r\n                <label for=\"miti\">Miti</label>\r\n\r\n                <input type=\"text\" class=\"form-control disabledFont\" id=\"miti\" \r\n                  disabled [(ngModel)]=\"appRequest.miti\">\r\n              </div>\r\n              <div class=\"form-group col-sm-12  col-md-3  col-lg-2 col-xxl-1\">\r\n                <label for=\"date\">Date</label>\r\n                <span class=\"input-like\">{{appRequest.appointmentDate | date:'dd MMM yyyy'}}</span>\r\n              </div>\r\n\r\n              <div class=\"form-group col-sm-12  col-md-6 col-lg-4 col-xxl-3\">\r\n                <label for=\"outlet\">Outlet</label>\r\n                <input type=\"text\" class=\"form-control  disabledFont\" id=\"date\" \r\n                  disabled [(ngModel)]=\"appRequest.outlet.branchName\">\r\n              </div>\r\n            </div>\r\n          </div>\r\n          \r\n          <div class=\"form-group\">\r\n            <table id=\"tblPatientInfo\">\r\n                <tr>\r\n                    <td>{{'customer' | labelPipe}} Name</td>\r\n                    <td>: {{appRequest.Customer.NAME}}</td>\r\n                    <td>Mobile No</td>\r\n                    <td>: {{appRequest.Customer.MOBILE}}</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>Address</td>\r\n                    <td>: {{appRequest.Customer.ADDRESS}}</td>\r\n                    <td>{{'customer' | labelPipe}} Id</td>\r\n                    <td>: {{appRequest.Customer.PATIENT_ID}}</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>Age</td>\r\n                    <td>: {{appRequest.Customer.Age}}</td>\r\n                    <td>Gender</td>\r\n                    <td>: {{appRequest.Customer.GENDER}}</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>Membership</td>\r\n                    <td>: {{appRequest.Customer.Membership}}</td>\r\n                    <td>Email</td>\r\n                    <td style=\"width: 35%;\">: {{appRequest.Customer.EMAIL}}</td>\r\n                </tr>\r\n            </table>\r\n        </div>\r\n        </fieldset>\r\n      </div>          \r\n    </ba-card>\r\n      <ba-card title=\"Appointments\">\r\n        <div class=\"table-responsive mb-3\" style=\"height: 500px;\">\r\n          <table class=\"table align-items-center table-flush\">\r\n            <thead class=\"thead-light\">\r\n              <tr>\r\n                <th scope=\"col\" style=\"width: 50px;\">S.No.</th>\r\n                <th scope=\"col\" style=\"width: 40%;\">Service</th>\r\n                <th scope=\"col\" style=\"width: 80px;\">PAX</th>\r\n                <th scope=\"col\" style=\"width: 20%;\">Appointment Time</th>\r\n                <th scope=\"col\" style=\"width: 20%;\">Therapist</th>\r\n                <th scope=\"col\" style=\"width: 20%;\">Room</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <ng-container *ngIf=\"appRequest.items && appRequest.items.length > 0\">\r\n                <tr\r\n                  *ngFor=\"let app of appRequest.items;let i=index;\">\r\n                  <td scope=\"row\">{{i+1}}</td>  \r\n                  <td class=\"text-capitalize\">{{app.serviceName}}</td>\r\n                  <td class=\"text-capitalize\">{{app.quantity}}</td>\r\n                  <td class=\"text-capitalize\">\r\n                    <div class=\"row\">\r\n                      <!-- Display selected time if not editing -->\r\n                      <span *ngIf=\"!app.editTime\" style=\"width: 90%; display: inline-block !important;\">{{ app.displayTime }}</span>\r\n                    \r\n                      <!-- Time selection UI -->\r\n                      <div *ngIf=\"app.editTime\" style=\"width: 90%; display: inline-block !important;\">\r\n                        <!-- Dropdown for pre-calculated available time blocks -->\r\n                        <select class=\"form-control\" [(ngModel)]=\"app.selectedTimeBlock\" (change)=\"onTimeBlockChange(app)\">\r\n                          <option *ngFor=\"let block of app.freeBlocks\" [ngValue]=\"block\">\r\n                            {{ block.Start }} - {{ block.End }}\r\n                          </option>\r\n                          <option value=\"custom\">Other...</option>\r\n                        </select>\r\n                    \r\n                        <!-- Manual time input, only shown if 'Other...' is selected -->\r\n                        <input *ngIf=\"app.selectedTimeBlock === 'custom'\" type=\"time\" class=\"form-control mt-1\"\r\n                               [(ngModel)]=\"app.appointmentTime\" />\r\n                      </div>\r\n                    \r\n                      <!-- Edit icon -->\r\n                      <i class=\"fa fa-pencil\" *ngIf=\"!app.editTime\" (click)=\"editTime(app)\"></i>\r\n                    \r\n                      <!-- Confirm icon -->\r\n                      <i class=\"fa fa-check\" *ngIf=\"app.editTime\" (click)=\"confirmTime(app)\"></i>\r\n                    </div>\r\n                  </td>\r\n                  <td class=\"text-capitalize\">\r\n                    <angular2-multiselect [data]=\"app.employeeList\" [settings]=\"app.empSetting\" [(ngModel)]=\"app.employee\">\r\n                    </angular2-multiselect>\r\n                  </td>\r\n                  <td class=\"text-capitalize\">                    \r\n                    <angular2-multiselect [data]=\"app.roomList\" [settings]=\"app.roomSetting\" [(ngModel)]=\"app.room\">\r\n                    </angular2-multiselect>\r\n                  </td>                  \r\n                </tr>\r\n              </ng-container>\r\n            </tbody>\r\n          </table>\r\n        </div>\r\n      </ba-card>   \r\n          \r\n            \r\n          \r\n        \r\n\r\n      <button type=\"submit\" class=\"btn btn-primary\" (click)=\"SaveClickEvent()\">Submit</button>\r\n      <button type=\"button\" class=\"btn btn-danger\" (click)=\"DeleteConformation()\"\r\n        *ngIf=\"mode=='edit'&& disableScheduleInput==false && scheduleInput.billableSchedule!=1\">Delete</button>\r\n      <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n    </div>\r\n    \r\n  \r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n  aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n\r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        {{DialogMessage}}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n"
+module.exports = "<div class=\"row\">\r\n  <div class=\"col-12\">\r\n    <ba-card>\r\n      <div style=\"height: 100%;\">\r\n        <fieldset style=\" border: none;padding: 0; margin: 0;\" [disabled]=\"disableScheduleInput\">\r\n          <div class=\"form-group\">\r\n            \r\n            <div class=\"row\">\r\n              <div class=\"form-group col-sm-12  col-md-3  col-lg-2 col-xxl-1\">\r\n                <label for=\"miti\">Miti</label>\r\n\r\n                <input type=\"text\" class=\"form-control disabledFont\" id=\"miti\" \r\n                  disabled [(ngModel)]=\"appRequest.miti\">\r\n              </div>\r\n              <div class=\"form-group col-sm-12  col-md-3  col-lg-2 col-xxl-1\">\r\n                <label for=\"date\">Date</label>\r\n                <span class=\"input-like\">{{appRequest.appointmentDate | date:'dd MMM yyyy'}}</span>\r\n              </div>\r\n\r\n              <div class=\"form-group col-sm-12  col-md-6 col-lg-4 col-xxl-3\">\r\n                <label for=\"outlet\">Outlet</label>\r\n                <input type=\"text\" class=\"form-control  disabledFont\" id=\"date\" \r\n                  disabled [(ngModel)]=\"appRequest.outlet.branchName\">\r\n              </div>\r\n            </div>\r\n          </div>\r\n          \r\n          <div class=\"form-group\">\r\n            <table id=\"tblPatientInfo\">\r\n                <tr>\r\n                    <td>{{'customer' | labelPipe}} Name</td>\r\n                    <td>: {{appRequest.Customer.NAME}}</td>\r\n                    <td>Mobile No</td>\r\n                    <td>: {{appRequest.Customer.MOBILE}}</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>Address</td>\r\n                    <td>: {{appRequest.Customer.ADDRESS}}</td>\r\n                    <td>{{'customer' | labelPipe}} Id</td>\r\n                    <td>: {{appRequest.Customer.PATIENT_ID}}</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>Age</td>\r\n                    <td>: {{appRequest.Customer.Age}}</td>\r\n                    <td>Gender</td>\r\n                    <td>: {{appRequest.Customer.GENDER}}</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>Membership</td>\r\n                    <td>: {{appRequest.Customer.Membership}}</td>\r\n                    <td>Email</td>\r\n                    <td style=\"width: 35%;\">: {{appRequest.Customer.EMAIL}}</td>\r\n                </tr>\r\n            </table>\r\n        </div>\r\n        </fieldset>\r\n      </div>          \r\n    </ba-card>\r\n      <ba-card title=\"Appointments\">\r\n        <div class=\"table-responsive mb-3\" style=\"height: 500px;\">\r\n          <table class=\"table align-items-center table-flush\">\r\n            <thead class=\"thead-light\">\r\n              <tr>\r\n                <th scope=\"col\" style=\"width: 50px;\">S.No.</th>\r\n                <th scope=\"col\" style=\"width: 40%;\">Service</th>\r\n                <th scope=\"col\" style=\"width: 80px;\">PAX</th>\r\n                <th scope=\"col\" style=\"width: 20%;\">Appointment Time</th>\r\n                <th scope=\"col\" style=\"width: 20%;\">Therapist</th>\r\n                <th scope=\"col\" style=\"width: 20%;\">Room</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <ng-container *ngIf=\"appRequest.items && appRequest.items.length > 0\">\r\n                <tr\r\n                  *ngFor=\"let app of appRequest.items;let i=index;\">\r\n                  <td scope=\"row\">{{i+1}}</td>  \r\n                  <td class=\"text-capitalize\">{{app.serviceName}}</td>\r\n                  <td class=\"text-capitalize\">{{app.quantity}}</td>\r\n                  <td class=\"text-capitalize\">\r\n                    <div class=\"row\">\r\n                      <!-- Display selected time if not editing -->\r\n                      <span *ngIf=\"!app.editTime\" style=\"width: 90%; display: inline-block !important;\">{{ app.displayTime }}</span>\r\n                    \r\n                      <!-- Time selection UI -->\r\n                      <div *ngIf=\"app.editTime\" style=\"width: 90%; display: inline-block !important;\">\r\n                        <!-- Dropdown for pre-calculated available time blocks -->\r\n                        <select class=\"form-control\" [(ngModel)]=\"app.selectedTimeBlock\" (change)=\"onTimeBlockChange(app)\">\r\n                          <option *ngFor=\"let block of app.freeBlocks\" [ngValue]=\"block\">\r\n                            {{ block.Start }} - {{ block.End }}\r\n                          </option>\r\n                          <option value=\"custom\">Other...</option>\r\n                        </select>\r\n                    \r\n                        <!-- Manual time input, only shown if 'Other...' is selected -->\r\n                        <input *ngIf=\"app.selectedTimeBlock === 'custom'\" type=\"time\" class=\"form-control mt-1\"\r\n                               [(ngModel)]=\"app.appointmentTime\" />\r\n                      </div>\r\n                    \r\n                      <!-- Edit icon -->\r\n                      <i class=\"fa fa-pencil\" *ngIf=\"!app.editTime\" (click)=\"editTime(app)\"></i>\r\n                    \r\n                      <!-- Confirm icon -->\r\n                      <i class=\"fa fa-check\" *ngIf=\"app.editTime\" (click)=\"confirmTime(app)\"></i>\r\n                    </div>\r\n                  </td>\r\n                  <td class=\"text-capitalize\">\r\n                    <angular2-multiselect [data]=\"app.employeeList\" [settings]=\"app.empSetting\" [(ngModel)]=\"app.employee\">\r\n                    </angular2-multiselect>\r\n                  </td>\r\n                  <td class=\"text-capitalize\">                    \r\n                    <angular2-multiselect [data]=\"app.roomList\" [settings]=\"app.roomSetting\" [(ngModel)]=\"app.room\">\r\n                    </angular2-multiselect>\r\n                  </td>                  \r\n                </tr>\r\n              </ng-container>\r\n            </tbody>\r\n          </table>\r\n        </div>\r\n      </ba-card>   \r\n          \r\n            \r\n          \r\n        \r\n\r\n    <div *ngIf=\"showCancelConfirmation\" style=\"position: fixed; top: 18rem; left: 50%; transform: translateX(-50%); width: 500px; z-index: 1000; background: white; border: 1px solid #ccc; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\">\r\n      <h4 style=\"margin-bottom: 15px;\">Cancel Booking</h4>\r\n      <div class=\"form-group\">\r\n        <label for=\"cancelRemarks\">Remarks</label>\r\n        <textarea class=\"form-control\" id=\"cancelRemarks\" rows=\"4\" [(ngModel)]=\"cancelRemarks\" placeholder=\"Enter reason for cancellation\"></textarea>\r\n      </div>\r\n      <div class=\"mt-2 text-right\">\r\n        <button type=\"button\" class=\"btn btn-primary mr-2\" (click)=\"confirmCancel()\">Submit</button>\r\n        <button type=\"button\" class=\"btn btn-secondary\" (click)=\"closeCancelPopup()\">Close</button>\r\n      </div>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-primary mr-2\" (click)=\"SaveClickEvent()\">Approved</button>\r\n    <button type=\"button\" class=\"btn btn-danger mr-2\" (click)=\"onCancelBooking()\">Cancel Booking</button>\r\n    <button type=\"button\" class=\"btn btn-danger\" (click)=\"DeleteConformation()\"\r\n      *ngIf=\"mode=='edit' && disableScheduleInput==false && scheduleInput.billableSchedule!=1\">Delete</button>\r\n    <button type=\"button\" class=\"btn btn-secondary\" (click)=\"onCancel()\">Back</button>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\"\r\n  aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-sm\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n\r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        {{DialogMessage}}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -687,7 +733,9 @@ var AppointmentRequest = /** @class */ (function () {
         this.user = {};
         this.serviceList = [];
         this.roomList = [];
+        this.cancelRemarks = '';
         this.employeeList = [];
+        this.showCancelConfirmation = false;
         this.formatDates = [];
         this.userBranches = [];
         var today = new Date().toDateString();
@@ -755,8 +803,8 @@ var AppointmentRequest = /** @class */ (function () {
                     enableCheckAll: true,
                     text: 'Select Rooms',
                     enableSearchFilter: true,
-                    labelKey: "DESCRIPTION",
-                    primaryKey: "ROOMNO",
+                    labelKey: "ROOMNO",
+                    primaryKey: "ROOMID",
                     limitSelection: element.quantity
                 };
                 _this.getEmployees(_this.branchId, _this.appRequest.appointmentDate, element);
@@ -787,6 +835,40 @@ var AppointmentRequest = /** @class */ (function () {
             (_a = service.employeeList).push.apply(_a, tslib__WEBPACK_IMPORTED_MODULE_0__["__spread"](response));
         });
     };
+    AppointmentRequest.prototype.onCancelBooking = function () {
+        this.showCancelConfirmation = true;
+        this.cancelRemarks = '';
+    };
+    AppointmentRequest.prototype.closeCancelPopup = function () {
+        this.showCancelConfirmation = false;
+        this.cancelRemarks = '';
+    };
+    AppointmentRequest.prototype.confirmCancel = function () {
+        if (!this.cancelRemarks.trim()) {
+            this.showMessage('Please provide a reason for cancellation...');
+            return;
+        }
+        this.showMessage("Canceling Appointment Request please wait.", -1);
+        this.cancelAppointment();
+    };
+    AppointmentRequest.prototype.cancelAppointment = function () {
+        var _this = this;
+        this.masterService.RejectAppointment(this.appRequest.cartId, this.cancelRemarks).subscribe(function (response) {
+            if (response.status === 'ok') {
+                _this.showMessage("Request Cancelled Successfully.", 2000);
+                setTimeout(function () {
+                    _this.router.navigate([_this.returnUrl]);
+                }, 1000);
+            }
+            else {
+                _this.showMessage(response.result, 3000);
+            }
+        }, function (error) {
+            alert(error);
+        });
+        this.showCancelConfirmation = false;
+        this.cancelRemarks = '';
+    };
     AppointmentRequest.prototype.getRooms = function (branchId, appDate, service) {
         service.roomList = [];
         this.masterService
@@ -806,7 +888,6 @@ var AppointmentRequest = /** @class */ (function () {
     };
     AppointmentRequest.prototype.onsubmit = function () {
         var _this = this;
-        debugger;
         try {
             var a = this.appRequest.items.map(function (item, index) { return Array(item.quantity)
                 .fill(null)
@@ -1077,7 +1158,7 @@ var CheckIn = /** @class */ (function () {
         this.masterService.getRoomListNew(branchId).subscribe(function (branchRoom) {
             var serviceRoom = service.rooms;
             _this.addOnServices[index].roomList = branchRoom.filter(function (bRoom) {
-                return serviceRoom.some(function (room) { return bRoom.ROOMNO == room.id; });
+                return serviceRoom.some(function (room) { return bRoom.ROOMID == room.id; });
             });
         });
     };
@@ -1092,7 +1173,7 @@ var CheckIn = /** @class */ (function () {
             var abc = [];
             abc = this.addOnServices.map(function (x) { return ({
                 service: { id: x.service.SERVICEID, name: x.service.DESCRIPTION },
-                room: x.room ? { id: x.room.ROOMNO, name: x.room.DESCRIPTION } : null,
+                room: x.room ? { id: x.room.ROOMID, name: x.room.ROOMNO } : null,
                 employee: x.employee
                     ? { id: x.employee.EMPLOYEEID, name: x.employee.NAME }
                     : null,
@@ -1245,7 +1326,7 @@ var KOTPrintComponent = /** @class */ (function () {
         var tableData = "";
         services.forEach(function (service) {
             tableData += "<table style='font-size: 11px;font-family: Arial, Helvetica, sans-serif;\n              border-collapse: collapse;border-top: none;border-bottom: none;'>";
-            var head = _this.head(customer, service.service.name, service.employee.name, service.room.id, service.startTime);
+            var head = _this.head(customer, service.service.name, service.employee.name, service.room.id.toString(), service.startTime);
             tableData += head + "</table>";
         });
         popupWin = window.open("", "_blank", "top=0,left=0,height=50%,width=50%");
@@ -1289,7 +1370,7 @@ var KOTPrintComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"widgets\">\r\n  <div>\r\n    <ba-card title=\"Check - In List\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-md\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>          \r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n\r\n      <div class=\"modal-body\">\r\n        <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n        {{DialogMessage}}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <div class=\"col-12 col-md-6 col-lg-4\">\r\n      <angular2-multiselect style=\"width: 100%;\" [data]=\"userBranches\" [settings]=\"branchSetting\"\r\n        [(ngModel)]=\"selectedBranch\" (ngModelChange)=\"branchChanged()\" aria-label=\"Select branches\">\r\n      </angular2-multiselect>\r\n    </div>\r\n  </div>\r\n  <div>\r\n  <div>\r\n    <ba-card title=\"Check - In List\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"modal fade\" bsModal #childModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog modal-md\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button class=\"close\" aria-label=\"Close\" (click)=\"childModal.hide()\">\r\n          <span aria-hidden=\"true\">&times;</span>          \r\n        </button>\r\n        <h4 class=\"modal-title\">Information</h4>\r\n      </div>\r\n\r\n      <div class=\"modal-body\">\r\n        <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n        {{DialogMessage}}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -1314,6 +1395,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _global_state__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../global.state */ "./src/app/global.state.ts");
 /* harmony import */ var _theme_pipes_label_pipe__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../theme/pipes/label.pipe */ "./src/app/theme/pipes/label.pipe.ts");
+/* harmony import */ var _common_services_branch_setting_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../common/services/branch-setting.service */ "./src/app/common/services/branch-setting.service.ts");
+
 
 
 
@@ -1325,15 +1408,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var CheckInList = /** @class */ (function () {
-    function CheckInList(service, _authService, router, state, labelPipe) {
+    function CheckInList(service, _authService, router, state, labelPipe, branchSettingService) {
         var _this = this;
         this.service = service;
         this._authService = _authService;
         this.router = router;
         this.state = state;
         this.labelPipe = labelPipe;
+        this.branchSettingService = branchSettingService;
         this.query = '';
         this.DialogMessage = "You are not authorized";
+        this.userBranches = [];
+        this.selectedBranch = [];
         this.settings = {
             mode: 'external',
             delete: null,
@@ -1366,10 +1452,15 @@ var CheckInList = /** @class */ (function () {
         };
         this.subcriptions = [];
         this.source = new _ng2_smart_table_ng2_smart_table__WEBPACK_IMPORTED_MODULE_4__["LocalDataSource"]();
+        this.branchSetting = this.branchSettingService.getBranchSettings();
+        this.userBranches = this._authService.getUserProfile().branches;
+        this.selectedBranch.push(this.userBranches.find(function (x) { return x.branchId == _this._authService.getUserProfile().defaultBranch; }));
+        this.branchChanged();
+    }
+    CheckInList.prototype.branchChanged = function () {
+        var _this = this;
         var Clist = [];
-        var user = this._authService.getUserProfile();
-        this.service
-            .GetAllCheckIns(encodeURIComponent(user.defaultBranch))
+        this.service.GetAllCheckIns(this.selectedBranch.map(function (x) { return x.branchId; }))
             .subscribe(function (data) {
             Clist.push.apply(Clist, tslib__WEBPACK_IMPORTED_MODULE_0__["__spread"](data));
         }, function (Error) { return console.log(Error); }, function () {
@@ -1377,7 +1468,7 @@ var CheckInList = /** @class */ (function () {
             _this.source.load(Clist);
             console.log(_this.source);
         });
-    }
+    };
     CheckInList.prototype.onEditClick = function (event) {
         this.router.navigate(["/pages/schedule/checkOut", { id: event.data.checkInId, mode: "edit", returnUrl: this.router.url }]);
     };
@@ -1399,7 +1490,8 @@ var CheckInList = /** @class */ (function () {
             _common_services_permission_authService_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"],
             _angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"],
             _global_state__WEBPACK_IMPORTED_MODULE_8__["GlobalState"],
-            _theme_pipes_label_pipe__WEBPACK_IMPORTED_MODULE_9__["LabelPipe"]])
+            _theme_pipes_label_pipe__WEBPACK_IMPORTED_MODULE_9__["LabelPipe"],
+            _common_services_branch_setting_service__WEBPACK_IMPORTED_MODULE_10__["BranchSettingService"]])
     ], CheckInList);
     return CheckInList;
 }());
@@ -2105,7 +2197,6 @@ var TimelineContextMenuComponent = /** @class */ (function () {
     }
     Object.defineProperty(TimelineContextMenuComponent.prototype, "canCheckIn", {
         get: function () {
-            debugger;
             var date = new Date();
             var appDate = new Date(this.model.startDate);
             var dateOnly = new Date(date.getFullYear(), date.getMonth(), date.getDate());
@@ -2184,6 +2275,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ScheduleSearch_customer_all_schedule_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../ScheduleSearch/customer-all-schedule.component */ "./src/app/pages/schedule/components/ScheduleSearch/customer-all-schedule.component.ts");
 /* harmony import */ var _app_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../app.service */ "./src/app/app.service.ts");
 /* harmony import */ var _TimelineContextMenu_timelineContextMenu_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./TimelineContextMenu/timelineContextMenu.component */ "./src/app/pages/schedule/components/ScheduleInput/TimelineContextMenu/timelineContextMenu.component.ts");
+/* harmony import */ var _common_services_branch_setting_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../common/services/branch-setting.service */ "./src/app/common/services/branch-setting.service.ts");
+
 
 
 
@@ -2198,7 +2291,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var MasterSchedule = /** @class */ (function () {
-    function MasterSchedule(_authService, exportAsService, router, scheduleService, masterRepo, datePipe, appService) {
+    function MasterSchedule(_authService, exportAsService, router, scheduleService, masterRepo, datePipe, appService, branchSettingService) {
         var _this = this;
         this._authService = _authService;
         this.exportAsService = exportAsService;
@@ -2207,6 +2300,7 @@ var MasterSchedule = /** @class */ (function () {
         this.masterRepo = masterRepo;
         this.datePipe = datePipe;
         this.appService = appService;
+        this.branchSettingService = branchSettingService;
         // @ViewChild("scheduler") scheduler: DayPilot.Angular.Scheduler;
         this.DialogMessage = "You are not authorized";
         this.minList = [];
@@ -2233,14 +2327,7 @@ var MasterSchedule = /** @class */ (function () {
             type: 'pdf',
             elementIdOrContent: 'employeeSchedule'
         };
-        this.branchSetting = {
-            enableCheckAll: true,
-            text: 'Select Outlets',
-            enableSearchFilter: true,
-            labelKey: "branchName",
-            primaryKey: "branchId",
-            badgeShowLimit: 2
-        };
+        this.branchSetting = this.branchSettingService.getBranchSettings();
         var setting = _authService.getSetting();
         this.DisplayRoomTimeLine = setting.DisplayRoomTimeLine;
         this.TimeLineBlock = setting.TimeLineBlock;
@@ -2399,7 +2486,7 @@ var MasterSchedule = /** @class */ (function () {
                     finally { if (e_2) throw e_2.error; }
                 }
                 this.removeCellToSplice();
-                this.roomList.push({ ID: e.ROOMNO, NAME: e.DESCRIPTION, minList: this.mList });
+                this.roomList.push({ ID: e.ROOMID, NAME: e.ROOMNO, minList: this.mList });
             }
         }
         catch (e_1_1) { e_1 = { error: e_1_1 }; }
@@ -2637,7 +2724,8 @@ var MasterSchedule = /** @class */ (function () {
             _scheduleInput_service__WEBPACK_IMPORTED_MODULE_4__["ScheduleInputService"],
             _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_6__["MasterRepo"],
             _angular_common__WEBPACK_IMPORTED_MODULE_9__["DatePipe"],
-            _app_service__WEBPACK_IMPORTED_MODULE_11__["AppState"]])
+            _app_service__WEBPACK_IMPORTED_MODULE_11__["AppState"],
+            _common_services_branch_setting_service__WEBPACK_IMPORTED_MODULE_13__["BranchSettingService"]])
     ], MasterSchedule);
     return MasterSchedule;
 }());
@@ -2729,7 +2817,7 @@ var ScheduleInput = /** @class */ (function () {
         this.replacementEmployeeList = [];
         this.bookedEmployee = {};
         this.multipleServiceList = [];
-        this.multipleServiceObj = { PAX: 1 };
+        this.multipleServiceObj = {};
         this.disableScheduleInput = false;
         this.enableCheckIn = true;
         this.statusList = [];
@@ -2760,8 +2848,8 @@ var ScheduleInput = /** @class */ (function () {
             enableCheckAll: true,
             text: 'Select Rooms',
             enableSearchFilter: true,
-            labelKey: "DESCRIPTION",
-            primaryKey: "ROOMNO",
+            labelKey: "ROOMNO",
+            primaryKey: "ROOMID",
             disabled: true
         };
         this.serviceSetting = {
@@ -2774,6 +2862,7 @@ var ScheduleInput = /** @class */ (function () {
             showCheckbox: false,
             disabled: true
         };
+        this.multipleServiceObj.PAX = 1;
         this.paxChanged(1, 1);
     }
     ScheduleInput.prototype.ngAfterViewInit = function () {
@@ -2870,9 +2959,9 @@ var ScheduleInput = /** @class */ (function () {
             .subscribe(function (response) {
             var branchRoom = response;
             var serviceRoom = service.rooms;
-            _this.roomList = branchRoom.filter(function (bRoom) { return serviceRoom.some(function (room) { return bRoom.ROOMNO == room.id; }); });
+            _this.roomList = branchRoom.filter(function (bRoom) { return serviceRoom.some(function (room) { return bRoom.ROOMID == room.id; }); });
             if (sRoom) {
-                _this.multipleServiceObj.ROOM = _this.roomList.filter(function (x) { return sRoom.some(function (room) { return x.ROOMNO == room; }); });
+                _this.multipleServiceObj.ROOM = _this.roomList.filter(function (x) { return sRoom.some(function (room) { return x.ROOMID == room; }); });
             }
         });
     };
@@ -2981,7 +3070,12 @@ var ScheduleInput = /** @class */ (function () {
     ScheduleInput.prototype.onsubmit = function () {
         var _this = this;
         try {
-            //console.log("finaldata",this.scheduleInput);
+            var body = this.scheduleInput;
+            body.multipleServiceList.forEach(function (element) {
+                element.SERVICE.rooms = [];
+                element.SERVICE.employees = [];
+                element.SERVICE.branches = [];
+            });
             var sub = this.masterService.postmaster(this.mode, this.scheduleInput, "/saveSchedule")
                 .subscribe(function (data) {
                 if (data.status == 'ok') {
@@ -3031,7 +3125,7 @@ var ScheduleInput = /** @class */ (function () {
                             this.showMessage('Please set Appointment Time first');
                             return [2 /*return*/];
                         }
-                        return [4 /*yield*/, this.checkHoliday(this.scheduleInput.DATE, this.multipleServiceObj.EMPLOYEE.EMPLOYEEID, this.multipleServiceObj.STARTTIME, this.multipleServiceObj.ENDTIME)];
+                        return [4 /*yield*/, this.checkHoliday(this.scheduleInput.DATE, this.multipleServiceObj.EMPLOYEE[0].EMPLOYEEID, this.multipleServiceObj.STARTTIME, this.multipleServiceObj.ENDTIME)];
                     case 2:
                         if (!(_a.sent()))
                             return [2 /*return*/];
@@ -3048,7 +3142,7 @@ var ScheduleInput = /** @class */ (function () {
                             Service: this.multipleServiceObj.SERVICE,
                             CustomerId: this.scheduleInput.CUSTOMER.CUSID,
                             EmployeeId: emp.EMPLOYEEID,
-                            RoomNo: room.ROOMNO,
+                            RoomId: room.ROOMID,
                             STARTTIME: this.multipleServiceObj.STARTTIME,
                             ENDTIME: this.multipleServiceObj.ENDTIME,
                             StartTime: this.StartTime,
@@ -3107,24 +3201,14 @@ var ScheduleInput = /** @class */ (function () {
             console.log(this.multipleServiceList[index]);
             var selectedSchedule_1 = this.multipleServiceList[index];
             this.selectedService = [selectedSchedule_1.SERVICE];
-            this.multipleServiceObj = {
-                SERVICE: this.ServiceList.find(function (x) { return x.SERVICEID == selectedSchedule_1.SERVICE.SERVICEID; }),
-                SNO: selectedSchedule_1.SNO,
-                CUSTOMERID: selectedSchedule_1.CUSTOMERID,
-                STARTTIME: selectedSchedule_1.STARTTIME,
-                ENDTIME: selectedSchedule_1.ENDTIME,
-                EMPLOYEE_BOOKED_BYCUSTOMER: selectedSchedule_1.EMPLOYEE_BOOKED_BYCUSTOMER,
-                RATE: selectedSchedule_1.RATE,
-                TYPE: selectedSchedule_1.TYPE,
-                PAX: selectedSchedule_1.PAX,
-            };
+            this.multipleServiceObj = tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"]({}, this.multipleServiceObj, { SERVICE: this.ServiceList.find(function (x) { return x.SERVICEID == selectedSchedule_1.SERVICE.SERVICEID; }), SNO: selectedSchedule_1.SNO, CUSTOMERID: selectedSchedule_1.CUSTOMERID, STARTTIME: selectedSchedule_1.STARTTIME, ENDTIME: selectedSchedule_1.ENDTIME, EMPLOYEE_BOOKED_BYCUSTOMER: selectedSchedule_1.EMPLOYEE_BOOKED_BYCUSTOMER, RATE: selectedSchedule_1.RATE, TYPE: selectedSchedule_1.TYPE, PAX: selectedSchedule_1.PAX });
             var empList = this.multipleServiceList
                 .filter(function (x) { return x.guid == selectedSchedule_1.guid; })
                 .map(function (x) { return x.EMPLOYEE.EMPLOYEEID; });
             console.log("empList", empList);
             this.paxChanged(this.multipleServiceObj.PAX, this.multipleServiceObj.SERVICE.noOfEmployees);
             this.getEmployees(this.scheduleInput.branch.branchId, this.multipleServiceObj.SERVICE, empList);
-            this.getRooms(this.scheduleInput.branch.branchId, this.multipleServiceObj.SERVICE, [selectedSchedule_1.ROOM.ROOMNO]);
+            this.getRooms(this.scheduleInput.branch.branchId, this.multipleServiceObj.SERVICE, [selectedSchedule_1.ROOM.ROOMID]);
             this.starttimeChange(selectedSchedule_1.STARTTIME);
             this.removeSchedule(selectedSchedule_1.serviceGuid, false);
             this.enableServiceDetail();
@@ -3297,12 +3381,12 @@ var ScheduleInput = /** @class */ (function () {
             serviceId: this.multipleServiceObj.SERVICE.SERVICEID,
             appointmentDate: this.scheduleInput.DATE,
             employeeId: 0,
-            roomNo: ""
+            roomId: 0
         };
         if (this.multipleServiceObj.EMPLOYEE)
             model.employeeId = this.multipleServiceObj.EMPLOYEE.EMPLOYEEID;
         if (this.multipleServiceObj.ROOM)
-            model.roomNo = this.multipleServiceObj.ROOM.ROOMNO;
+            model.roomId = this.multipleServiceObj.ROOM.ROOMID;
         console.log(model);
         this.masterService.getTimeSlotForAppointment(model)
             .subscribe(function (response) {
@@ -3312,9 +3396,9 @@ var ScheduleInput = /** @class */ (function () {
     ScheduleInput.prototype.selectAppointmentTime = function (time) {
         this.starttimeChange(time.time);
         if (!this.multipleServiceObj.EMPLOYEE)
-            this.multipleServiceObj.EMPLOYEE = this.employeeList.find(function (x) { return x.EMPLOYEEID == time.employeeId; });
+            this.multipleServiceObj.EMPLOYEE = this.employeeList.filter(function (x) { return x.EMPLOYEEID == time.employeeId; });
         if (!this.multipleServiceObj.ROOM)
-            this.multipleServiceObj.ROOM = this.roomList.find(function (x) { return x.ROOMNO == time.roomNo; });
+            this.multipleServiceObj.ROOM = this.roomList.filter(function (x) { return x.ROOMID == time.roomId; });
     };
     ScheduleInput.prototype.paxChanged = function (pax, noOfEmpRequred) {
         var totalEmp = noOfEmpRequred * pax;
@@ -4999,4 +5083,4 @@ var ScheduleInputService = /** @class */ (function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=schedule-schedule-module.c020bc491455169997c4.js.map
+//# sourceMappingURL=schedule-schedule-module.159fcba7c9794777f5c0.js.map

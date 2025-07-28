@@ -1431,6 +1431,12 @@ var MasterRepo = /** @class */ (function () {
         if (refresh === void 0) { refresh = false; }
         return this.http.get(this.apiUrl + '/getServiceList', this.getRequestOption());
     };
+    MasterRepo.prototype.getEmployeeServices = function (id) {
+        return this.http.get(this.apiUrl + ("/getEmployeeService?EMPLOYEEID=" + id), this.getRequestOption());
+    };
+    MasterRepo.prototype.getRoomServices = function (id) {
+        return this.http.get(this.apiUrl + ("/getRoomService?ROOMID=" + id), this.getRequestOption());
+    };
     MasterRepo.prototype.getServiceListNew = function () {
         return this.http.get(this.apiUrl + '/getServiceList', this.getRequestOption());
     };
@@ -1535,7 +1541,7 @@ var MasterRepo = /** @class */ (function () {
         return this.http.post(this.apiUrl + '/GetAppointmentForCheckIn', model, this.getRequestOption());
     };
     MasterRepo.prototype.GetAppointmetRequests = function (branchId) {
-        return this.http.get(this.apiUrl + ("/AppointmentRequest/get?branchId=" + branchId), this.getRequestOption());
+        return this.http.post(this.apiUrl + "/AppointmentRequest/get", branchId, this.getRequestOption());
     };
     MasterRepo.prototype.GetAppointmetDetail = function (cartId) {
         return this.http.get(this.apiUrl + ("/AppointmentRequest/detail?cartId=" + cartId), this.getRequestOption());
@@ -1549,7 +1555,7 @@ var MasterRepo = /** @class */ (function () {
         return this.http.post(this.apiUrl + "/AppointmentRequest/reject", body, this.getRequestOption());
     };
     MasterRepo.prototype.GetAllCheckIns = function (branchId) {
-        return this.http.get(this.apiUrl + ("/GetCheckIns?branchId=" + branchId), this.getRequestOption());
+        return this.http.post(this.apiUrl + "/GetCheckIns", branchId, this.getRequestOption());
     };
     MasterRepo.prototype.getTreatmentHistory = function (cusid) {
         return this.http.get(this.apiUrl + '/getPatientTreatmentHistory?id=' + cusid + '&currentPage=1&maxResultCount=10', this.getRequestOption());
@@ -6484,4 +6490,4 @@ module.exports = __webpack_require__(/*! D:\Projects\Minor Projects\AppointX\App
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.50aa15871a4199b4767d.js.map
+//# sourceMappingURL=main.92b8756d3d55c660d3b7.js.map

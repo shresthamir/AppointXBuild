@@ -31525,10 +31525,7 @@ var ServerDataSource = /** @class */ (function (_super) {
     ServerDataSource.prototype.getElements = function () {
         var _this = this;
         return this.requestElements().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["map"])(function (res) {
-            debugger;
-            console.log(res);
             _this.lastRequestCount = _this.extractTotalFromResponse(res);
-            console.log(_this.lastRequestCount, "lastRequestCount");
             _this.data = _this.extractDataFromResponse(res);
             return _this.data;
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["catchError"])(function (error) { return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(console.log(_this.handleWebError(error))); })).toPromise();
@@ -31759,7 +31756,6 @@ var Grid = /** @class */ (function () {
         }
     };
     Grid.prototype.processDataChange = function (changes) {
-        debugger;
         if (this.shouldProcessChange(changes)) {
             this.dataSet.setData(changes['elements']);
             if (this.getSetting('selectMode') !== 'multi') {
@@ -32164,7 +32160,6 @@ var Ng2SmartTableComponent = /** @class */ (function () {
     };
     Ng2SmartTableComponent.prototype.initGrid = function () {
         var _this = this;
-        debugger;
         this.source = this.prepareSource();
         this.grid = new _lib_grid__WEBPACK_IMPORTED_MODULE_2__["Grid"](this.source, this.prepareSettings());
         this.grid.onSelectRow().subscribe(function (row) { return _this.onSelectRow(row); });
@@ -32292,4 +32287,4 @@ module.exports = "/deep/ table.ng2-smart-table{font-family:\"Open Sans\", \"Helv
 /***/ })
 
 }]);
-//# sourceMappingURL=masters-masters-module~reports-report-module~schedule-schedule-module~userManager-userManager-module.dfde82013a6b6b84e294.js.map
+//# sourceMappingURL=masters-masters-module~reports-report-module~schedule-schedule-module~userManager-userManager-module.175a3f20d543ffec0cf4.js.map
