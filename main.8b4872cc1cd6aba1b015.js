@@ -1917,6 +1917,9 @@ var TTLCacheService = /** @class */ (function () {
     TTLCacheService.prototype.clear = function (key) {
         localStorage.removeItem(key);
     };
+    TTLCacheService.prototype.clearAll = function () {
+        localStorage.clear();
+    };
     TTLCacheService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_app_service__WEBPACK_IMPORTED_MODULE_2__["AppState"]])
@@ -2197,8 +2200,7 @@ var AuthService = /** @class */ (function () {
         return this.isAuthenticated(profile);
     };
     AuthService.prototype.removeAuth = function () {
-        this.cacheService.remove('USER_PROFILE');
-        this.cacheService.remove('TOKEN');
+        this.cacheService.removeAll();
     };
     AuthService.prototype.isAuthenticated = function (profile) {
         return !!profile;
@@ -2321,11 +2323,12 @@ var CacheService = /** @class */ (function () {
     }
     CacheService.prototype.remove = function (key) {
         window.sessionStorage.removeItem(key);
-        //SessionStorage.remove(key);
+    };
+    CacheService.prototype.removeAll = function () {
+        window.sessionStorage.clear();
     };
     CacheService.prototype.exist = function (key) {
         return window.sessionStorage.getItem(key) != null;
-        //return sessionStorage.exist(key);
     };
     CacheService.prototype.get = function (key) {
         if (!this.exist(key)) {
@@ -2338,11 +2341,9 @@ var CacheService = /** @class */ (function () {
         catch (e) {
             return null;
         }
-        //return sessionStorage.get(key);
     };
     CacheService.prototype.set = function (key, data) {
         window.sessionStorage.setItem(key, JSON.stringify(data));
-        //return sessionStorage.set(key, data);
     };
     CacheService.prototype.checkUserRight = function (right) {
         var user_profile = window.sessionStorage.getItem('USER_PROFILE');
@@ -4762,6 +4763,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _common_repositories__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../common/repositories */ "./src/app/common/repositories/index.ts");
 /* harmony import */ var _app_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../app.service */ "./src/app/app.service.ts");
+/* harmony import */ var src_app_common_services_cache_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/common/services/cache.service */ "./src/app/common/services/cache.service.ts");
+
 
 
 
@@ -4771,12 +4774,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var BaPageTop = /** @class */ (function () {
-    function BaPageTop(_state, _authService, appService, router, service) {
+    function BaPageTop(_state, _authService, appService, router, cache, service) {
         var _this = this;
         this._state = _state;
         this._authService = _authService;
         this.appService = appService;
         this.router = router;
+        this.cache = cache;
         this.service = service;
         this.hasNewNotification = false;
         this.isScrolled = false;
@@ -4822,7 +4826,11 @@ var BaPageTop = /** @class */ (function () {
         return false;
     };
     BaPageTop.prototype.LogoutClick = function () {
-        this._authService.removeAuth();
+        var _this = this;
+        setTimeout(function () {
+            _this._authService.removeAuth();
+            _this.cache.clearAll();
+        }, 1000);
         this.router.navigate(['/login']);
     };
     BaPageTop.prototype.scrolledChanged = function (isScrolled) {
@@ -4841,6 +4849,7 @@ var BaPageTop = /** @class */ (function () {
             _common_services_permission_authService_service__WEBPACK_IMPORTED_MODULE_4__["AuthService"],
             _app_service__WEBPACK_IMPORTED_MODULE_7__["AppState"],
             _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"],
+            src_app_common_services_cache_service__WEBPACK_IMPORTED_MODULE_8__["TTLCacheService"],
             _common_repositories__WEBPACK_IMPORTED_MODULE_6__["MasterRepo"]])
     ], BaPageTop);
     return BaPageTop;
@@ -6490,4 +6499,4 @@ module.exports = __webpack_require__(/*! D:\Projects\Minor Projects\AppointX\App
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.92b8756d3d55c660d3b7.js.map
+//# sourceMappingURL=main.8b4872cc1cd6aba1b015.js.map
