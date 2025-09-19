@@ -501,6 +501,84 @@ module.exports = v4;
 
 /***/ }),
 
+/***/ "./src/app/common/interfaces/index.ts":
+/*!********************************************!*\
+  !*** ./src/app/common/interfaces/index.ts ***!
+  \********************************************/
+/*! exports provided: Service, Branch, BaseModel */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _master_interface__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./master.interface */ "./src/app/common/interfaces/master.interface.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Service", function() { return _master_interface__WEBPACK_IMPORTED_MODULE_0__["Service"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Branch", function() { return _master_interface__WEBPACK_IMPORTED_MODULE_0__["Branch"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BaseModel", function() { return _master_interface__WEBPACK_IMPORTED_MODULE_0__["BaseModel"]; });
+
+
+
+
+/***/ }),
+
+/***/ "./src/app/common/interfaces/master.interface.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/common/interfaces/master.interface.ts ***!
+  \*******************************************************/
+/*! exports provided: Service, Branch, BaseModel */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Service", function() { return Service; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Branch", function() { return Branch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BaseModel", function() { return BaseModel; });
+var Service = /** @class */ (function () {
+    function Service() {
+    }
+    Service.prototype.getCoreObject = function (service) {
+        return {
+            SERVICEID: service.SERVICEID,
+            DESCRIPTION: service.DESCRIPTION,
+            TIMEDURATION_MIN: service.TIMEDURATION_MIN,
+            RATE: service.RATE,
+            MappingCode: service.MappingCode,
+            SkipTimeValidation: service.SkipTimeValidation,
+            SkipTimeValidationSS: service.SkipTimeValidationSS,
+            SkipTimeValidationRoom: service.SkipTimeValidationRoom,
+            SkipTimeValidationRoomSS: service.SkipTimeValidationRoomSS,
+            SkipTimeValidationCustomer: service.SkipTimeValidationCustomer,
+            appointmentNotRequired: service.appointmentNotRequired,
+            noOfEmployees: service.noOfEmployees,
+            branches: null,
+            employees: null,
+            rooms: null
+        };
+    };
+    return Service;
+}());
+
+var Branch = /** @class */ (function () {
+    function Branch(branchId, branchName) {
+        this.branchId = branchId;
+        this.branchName = branchName;
+    }
+    return Branch;
+}());
+
+var BaseModel = /** @class */ (function () {
+    function BaseModel(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    return BaseModel;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/common/services/branch-setting.service.ts":
 /*!***********************************************************!*\
   !*** ./src/app/common/services/branch-setting.service.ts ***!
@@ -1188,15 +1266,20 @@ var CheckIn = /** @class */ (function () {
     CheckIn.prototype.onsubmit = function () {
         var _this = this;
         try {
-            var abc = [];
-            abc = this.addOnServices.map(function (x) { return ({
+            var addOns = [];
+            addOns = this.addOnServices.map(function (x) { return ({
                 service: { id: x.service.SERVICEID, name: x.service.DESCRIPTION },
                 room: x.room ? { id: x.room.ROOMID, name: x.room.ROOMNO } : null,
                 employee: x.employee
                     ? { id: x.employee.EMPLOYEEID, name: x.employee.NAME }
                     : null,
             }); });
-            this.checkIn.Services = tslib__WEBPACK_IMPORTED_MODULE_0__["__spread"](this.appointments.filter(function (x) { return x.isChecked; }), abc);
+            this.checkIn.Services = tslib__WEBPACK_IMPORTED_MODULE_0__["__spread"](this.appointments.filter(function (x) { return x.isChecked; }), addOns);
+            if (this.checkIn.Services.length == 0) {
+                this.DialogMessage = "Please select at least one service.";
+                this.childModal.show();
+                return;
+            }
             var sub = this.masterService
                 .postmaster(this.mode, this.checkIn, "/saveCheckIn")
                 .subscribe(function (data) {
@@ -2783,14 +2866,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _theme_components_baModal_baModal_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../theme/components/baModal/baModal.component */ "./src/app/theme/components/baModal/baModal.component.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _scheduleInput_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../scheduleInput.service */ "./src/app/pages/schedule/scheduleInput.service.ts");
-/* harmony import */ var style_loader_schedule_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! style-loader!../../schedule.scss */ "./node_modules/style-loader/index.js!./src/app/pages/schedule/schedule.scss");
-/* harmony import */ var style_loader_schedule_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(style_loader_schedule_scss__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../common/repositories/masterRepo.service */ "./src/app/common/repositories/masterRepo.service.ts");
-/* harmony import */ var _common_services_permission__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../common/services/permission */ "./src/app/common/services/permission/index.ts");
-/* harmony import */ var _common_services_disable_date_picker_disable_date_picker_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../common/services/disable-date-picker/disable-date-picker.service */ "./src/app/common/services/disable-date-picker/disable-date-picker.service.ts");
-/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/index.js");
-/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(uuid__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _common_interfaces__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../common/interfaces */ "./src/app/common/interfaces/index.ts");
+/* harmony import */ var style_loader_schedule_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! style-loader!../../schedule.scss */ "./node_modules/style-loader/index.js!./src/app/pages/schedule/schedule.scss");
+/* harmony import */ var style_loader_schedule_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(style_loader_schedule_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../common/repositories/masterRepo.service */ "./src/app/common/repositories/masterRepo.service.ts");
+/* harmony import */ var _common_services_permission__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../common/services/permission */ "./src/app/common/services/permission/index.ts");
+/* harmony import */ var _common_services_disable_date_picker_disable_date_picker_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../common/services/disable-date-picker/disable-date-picker.service */ "./src/app/common/services/disable-date-picker/disable-date-picker.service.ts");
+/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/index.js");
+/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(uuid__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
 
 
 
@@ -2948,7 +3033,7 @@ var ScheduleInput = /** @class */ (function () {
         var _this = this;
         this.masterService.getServices(branchId)
             .subscribe(function (services) {
-            _this.ServiceList = services;
+            _this.ServiceList = services.map(function (service) { return new _common_interfaces__WEBPACK_IMPORTED_MODULE_5__["Service"]().getCoreObject(service); });
             _this.clearEmpRoom();
         });
     };
@@ -3131,7 +3216,7 @@ var ScheduleInput = /** @class */ (function () {
             return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        serviceGuid = Object(uuid__WEBPACK_IMPORTED_MODULE_9__["v4"])();
+                        serviceGuid = Object(uuid__WEBPACK_IMPORTED_MODULE_10__["v4"])();
                         _a.label = 1;
                     case 1:
                         _a.trys.push([1, 7, , 8]);
@@ -3471,17 +3556,17 @@ var ScheduleInput = /** @class */ (function () {
             selector: 'schedule',
             styles: [__webpack_require__(/*! ../../schedule.scss */ "./src/app/pages/schedule/schedule.scss")],
             template: __webpack_require__(/*! ./schedule.html */ "./src/app/pages/schedule/components/ScheduleInput/schedule.html"),
-            providers: [_angular_common__WEBPACK_IMPORTED_MODULE_10__["DatePipe"]]
+            providers: [_angular_common__WEBPACK_IMPORTED_MODULE_11__["DatePipe"]]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_scheduleInput_service__WEBPACK_IMPORTED_MODULE_4__["ScheduleInputService"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
-            _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_6__["MasterRepo"],
+            _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_7__["MasterRepo"],
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
-            _common_services_permission__WEBPACK_IMPORTED_MODULE_7__["AuthService"],
-            _common_services_disable_date_picker_disable_date_picker_service__WEBPACK_IMPORTED_MODULE_8__["DisableDateService"],
-            _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_6__["MasterRepo"],
-            _angular_common__WEBPACK_IMPORTED_MODULE_10__["DatePipe"]])
+            _common_services_permission__WEBPACK_IMPORTED_MODULE_8__["AuthService"],
+            _common_services_disable_date_picker_disable_date_picker_service__WEBPACK_IMPORTED_MODULE_9__["DisableDateService"],
+            _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_7__["MasterRepo"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_11__["DatePipe"]])
     ], ScheduleInput);
     return ScheduleInput;
 }());
@@ -5115,4 +5200,4 @@ var ScheduleInputService = /** @class */ (function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=schedule-schedule-module.383eb95d990798172174.js.map
+//# sourceMappingURL=schedule-schedule-module.e39cdf2fbcdd35b67120.js.map
