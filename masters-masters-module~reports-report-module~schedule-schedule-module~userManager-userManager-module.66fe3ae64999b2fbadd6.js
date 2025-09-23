@@ -2494,7 +2494,7 @@ var RemoteData = (function (_super) {
 /*!****************************************************!*\
   !*** ./src/app/ng2-smart-table/ng2-smart-table.ts ***!
   \****************************************************/
-/*! exports provided: Cell, DefaultEditor, NG2_SMART_TABLE_DIRECTIVES, Ng2SmartTableComponent, Grid, Ng2SmartTableModule, DataSource, LocalDataSource, ServerDataSource */
+/*! exports provided: Cell, DefaultEditor, NG2_SMART_TABLE_DIRECTIVES, Ng2SmartTableComponent, Grid, DataSource, LocalDataSource, Ng2SmartTableModule, ServerDataSource */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
