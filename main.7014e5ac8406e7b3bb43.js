@@ -939,7 +939,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<main [ngClass]=\"{'menu-collapsed': isMenuCollapsed}\" baThemeRun>\r\n  <div class=\"additional-bg\"></div>\r\n  <router-outlet></router-outlet>\r\n  <app-update-notification></app-update-notification>\r\n</main>\r\n"
+module.exports = "<main [ngClass]=\"{'menu-collapsed': isMenuCollapsed}\" baThemeRun>\n  <div class=\"additional-bg\"></div>\n  <router-outlet></router-outlet>\n  <app-update-notification></app-update-notification>\n</main>\n"
 
 /***/ }),
 
@@ -6924,4 +6924,4 @@ module.exports = __webpack_require__(/*! D:\Projects\Minor Projects\AppointX\App
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.d515583ca1d6efcf5391.js.map
+//# sourceMappingURL=main.7014e5ac8406e7b3bb43.js.map

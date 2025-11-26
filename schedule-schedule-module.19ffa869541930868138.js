@@ -2908,6 +2908,7 @@ var ScheduleInput = /** @class */ (function () {
         this.user = {};
         this.SNO = 0;
         this.CustomerList = [];
+        this.serviceList = []; //Service List with Employee and Room
         this.ServiceList = [];
         this.roomList = [];
         this.employeeList = [];
@@ -3033,6 +3034,7 @@ var ScheduleInput = /** @class */ (function () {
         var _this = this;
         this.masterService.getServices(branchId)
             .subscribe(function (services) {
+            _this.serviceList = services;
             _this.ServiceList = services.map(function (service) { return new _common_interfaces__WEBPACK_IMPORTED_MODULE_5__["Service"]().getCoreObject(service); });
             _this.clearEmpRoom();
         });
@@ -3043,7 +3045,7 @@ var ScheduleInput = /** @class */ (function () {
         this.masterService.getEmployeeListNew(branchId)
             .subscribe(function (response) {
             var branchEmp = response;
-            var serviceEmp = service.employees;
+            var serviceEmp = _this.serviceList.find(function (x) { return x.SERVICEID == service.SERVICEID; }).employees || [];
             if (_this._authService.getSetting().MapEmpRoomToService)
                 _this.employeeList = branchEmp.filter(function (bEmp) { return serviceEmp.some(function (emp) { return bEmp.EMPLOYEEID == emp.id; }); });
             else
@@ -3059,7 +3061,7 @@ var ScheduleInput = /** @class */ (function () {
         this.masterService.getRoomListNew(branchId)
             .subscribe(function (response) {
             var branchRoom = response;
-            var serviceRoom = service.rooms;
+            var serviceRoom = _this.serviceList.find(function (x) { return x.SERVICEID == service.SERVICEID; }).rooms || [];
             if (_this._authService.getSetting().MapEmpRoomToService)
                 _this.roomList = branchRoom.filter(function (bRoom) { return serviceRoom.some(function (room) { return bRoom.ROOMID == room.id; }); });
             else
@@ -5200,4 +5202,4 @@ var ScheduleInputService = /** @class */ (function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=schedule-schedule-module.e39cdf2fbcdd35b67120.js.map
+//# sourceMappingURL=schedule-schedule-module.19ffa869541930868138.js.map
