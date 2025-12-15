@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"input-group mitipicker\" style=\"height: 30px, i !important;\">\r\n\r\n  <input type=\"text\" class=\"form-control\" [formControl]=\"dateControl\" placeholder=\"{{label}}\"\r\n    id=\"{{id}}Picker\" (mouseover)=\"$event.preventDefault()\" (keydown)=\"$event.preventDefault()\">\r\n  <span class=\"input-group-addon\" style=\"padding-top:5px\">\r\n    <i class=\"fa fa-calendar\" aria-hidden=\"true\" id=\"{{id}}\" style=\"cursor: pointer;\"></i>\r\n  </span>\r\n</div>"
+module.exports = "<div class=\"input-group mitipicker\" style=\"height: 30px, i !important;\">\r\n\r\n  <input type=\"text\" class=\"form-control\" [formControl]=\"dateControl\" placeholder=\"{{label}}\"\r\n    id=\"{{id}}Picker\" (mouseover)=\"$event.preventDefault()\" (keydown)=\"$event.preventDefault()\" [disabled]=\"disabled\">\r\n  <span class=\"input-group-addon\" style=\"padding-top:5px\">\r\n    <i class=\"fa fa-calendar\" aria-hidden=\"true\" id=\"{{id}}\" [style.cursor]=\"disabled ? 'not-allowed' : 'pointer'\" [style.opacity]=\"disabled ? '0.5' : '1'\"></i>\r\n  </span>\r\n</div>"
 
 /***/ }),
 
@@ -61,6 +61,7 @@ var NepaliDatePickerComponent = /** @class */ (function () {
         this.disableBefore = "";
         this.id = "";
         this.label = "";
+        this.disabled = false;
         this.disableDates = [];
         this.formatDates = [];
         this.dateControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]();
@@ -86,6 +87,12 @@ var NepaliDatePickerComponent = /** @class */ (function () {
     };
     NepaliDatePickerComponent.prototype.ngOnInit = function () {
         this.isNullOrEmpty(this.id);
+        this.updateDisabledState();
+    };
+    NepaliDatePickerComponent.prototype.ngOnChanges = function (changes) {
+        if (changes['disabled']) {
+            this.updateDisabledState();
+        }
     };
     NepaliDatePickerComponent.prototype.ngAfterViewInit = function () {
         var self = this;
@@ -105,6 +112,14 @@ var NepaliDatePickerComponent = /** @class */ (function () {
             });
         });
     };
+    NepaliDatePickerComponent.prototype.updateDisabledState = function () {
+        if (this.disabled) {
+            this.dateControl.disable();
+        }
+        else {
+            this.dateControl.enable();
+        }
+    };
     NepaliDatePickerComponent.prototype.isNullOrEmpty = function (val) {
         if (typeof val !== "string") {
             throw Error("Invalid Type for Id");
@@ -122,6 +137,10 @@ var NepaliDatePickerComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
     ], NepaliDatePickerComponent.prototype, "label", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Boolean)
+    ], NepaliDatePickerComponent.prototype, "disabled", void 0);
     NepaliDatePickerComponent = NepaliDatePickerComponent_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: "nepali-date-picker",
@@ -4448,4 +4467,4 @@ var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forCh
 /***/ })
 
 }]);
-//# sourceMappingURL=masters-masters-module.70aae1e590fb8f822fd6.js.map
+//# sourceMappingURL=masters-masters-module.f9a51638f539d4b99110.js.map
