@@ -619,6 +619,41 @@ var BranchSettingService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/common/services/state.service.ts":
+/*!**************************************************!*\
+  !*** ./src/app/common/services/state.service.ts ***!
+  \**************************************************/
+/*! exports provided: StateService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StateService", function() { return StateService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var StateService = /** @class */ (function () {
+    function StateService() {
+        // Store the form data here
+        this.stateData = new Map();
+    }
+    StateService.prototype.setStateData = function (key, data) {
+        this.stateData.set(key, data);
+    };
+    StateService.prototype.getStateData = function (key) {
+        return this.stateData.get(key);
+    };
+    StateService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' })
+    ], StateService);
+    return StateService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/pages/schedule/components/AppointmentRequest/RequestList.component.html":
 /*!*****************************************************************************************!*\
   !*** ./src/app/pages/schedule/components/AppointmentRequest/RequestList.component.html ***!
@@ -2172,6 +2207,467 @@ var MobilePipe = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/pages/schedule/components/EmployeeTransfer/TransferList.component.html":
+/*!****************************************************************************************!*\
+  !*** ./src/app/pages/schedule/components/EmployeeTransfer/TransferList.component.html ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" [disabled]=\"disableAdd \" (click)=\"onAddClick()\" >Add Transfer</button>\r\n    \r\n    <div class=\"col-12 col-md-6 col-lg-4\">\r\n      <angular2-multiselect style=\"width: 100%;\" [data]=\"userBranches\" [settings]=\"branchSetting\"\r\n        [(ngModel)]=\"selectedBranch\" (ngModelChange)=\"branchChanged()\" aria-label=\"Select branches\">\r\n      </angular2-multiselect>\r\n    </div>\r\n  </div>\r\n  <div>\r\n  <div>\r\n    <ba-card title=\"Employee Transfer List\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteClick($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<ba-modal #childModal title=\"Information\" size=\"md\">\r\n  <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n  {{DialogMessage}}\r\n  \r\n</ba-modal>\r\n\r\n<ba-modal #deleteModal title=\"Warning\" size=\"sm\">\r\n  <div class=\"modal-body\">\r\n    Are U sure you want to delete this entry?\r\n  </div>\r\n  <div class=\"modal-footer\">\r\n    <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\" >Yes</button>\r\n    <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n  </div>\r\n</ba-modal>"
+
+/***/ }),
+
+/***/ "./src/app/pages/schedule/components/EmployeeTransfer/TransferList.component.ts":
+/*!**************************************************************************************!*\
+  !*** ./src/app/pages/schedule/components/EmployeeTransfer/TransferList.component.ts ***!
+  \**************************************************************************************/
+/*! exports provided: TransferList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TransferList", function() { return TransferList; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _common_services_permission_authService_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../../../common/services/permission/authService.service */ "./src/app/common/services/permission/authService.service.ts");
+/* harmony import */ var _theme_components_baModal_baModal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../theme/components/baModal/baModal.component */ "./src/app/theme/components/baModal/baModal.component.ts");
+/* harmony import */ var _ng2_smart_table_ng2_smart_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../ng2-smart-table/ng2-smart-table */ "./src/app/ng2-smart-table/ng2-smart-table.ts");
+/* harmony import */ var style_loader_masters_components_smartTables_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! style-loader!../../../masters/components/smartTables.scss */ "./node_modules/style-loader/index.js!./src/app/pages/masters/components/smartTables.scss");
+/* harmony import */ var style_loader_masters_components_smartTables_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(style_loader_masters_components_smartTables_scss__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../common/repositories/masterRepo.service */ "./src/app/common/repositories/masterRepo.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _global_state__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../global.state */ "./src/app/global.state.ts");
+/* harmony import */ var _theme_pipes_label_pipe__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../theme/pipes/label.pipe */ "./src/app/theme/pipes/label.pipe.ts");
+/* harmony import */ var _common_services_branch_setting_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../common/services/branch-setting.service */ "./src/app/common/services/branch-setting.service.ts");
+
+
+
+
+
+
+
+
+
+
+
+var TransferList = /** @class */ (function () {
+    function TransferList(service, _authService, router, state, labelPipe, branchSettingService) {
+        var _this = this;
+        this.service = service;
+        this._authService = _authService;
+        this.router = router;
+        this.state = state;
+        this.labelPipe = labelPipe;
+        this.branchSettingService = branchSettingService;
+        this.query = '';
+        this.DialogMessage = "You are not authorized";
+        this.userBranches = [];
+        this.selectedBranch = [];
+        this.settings = {
+            mode: 'external',
+            edit: null,
+            delete: null,
+            columns: {
+                employee: {
+                    title: this.state.getGlobalSetting("label-dictionary").filter(function (item) { return item.key === 'employee'; })[0].value,
+                    type: 'string',
+                    valuePrepareFunction: function (CUSTOMER) {
+                        return CUSTOMER.NAME;
+                    },
+                    filterFunction: function (Patient, search) {
+                        if (search.length > 0) {
+                            return Patient.NAME.toLowerCase().match(search.toLowerCase());
+                        }
+                        else {
+                            return Patient.NAME;
+                        }
+                    }
+                },
+                branch: {
+                    title: "Transfer From",
+                    type: 'string',
+                    valuePrepareFunction: function (branch) {
+                        return branch.branchName;
+                    },
+                    filterFunction: function (branch, search) {
+                        if (search.length > 0) {
+                            return branch.branchName.toLowerCase().match(search.toLowerCase());
+                        }
+                        else {
+                            return branch.branchName;
+                        }
+                    }
+                },
+                transferTo: {
+                    title: "Transfer To",
+                    type: 'string',
+                    valuePrepareFunction: function (branch) {
+                        return branch.branchName;
+                    },
+                    filterFunction: function (branch, search) {
+                        if (search.length > 0) {
+                            return branch.branchName.toLowerCase().match(search.toLowerCase());
+                        }
+                        else {
+                            return branch.branchName;
+                        }
+                    }
+                },
+                date: {
+                    title: "Transfer Date",
+                    type: 'string'
+                },
+                startTime: {
+                    title: "Start Time",
+                    type: 'string'
+                },
+                endTime: {
+                    title: "End Time",
+                    type: 'string'
+                },
+                UserId: {
+                    title: "Transferred By",
+                    type: 'string'
+                }
+            }
+        };
+        this.subcriptions = [];
+        this.source = new _ng2_smart_table_ng2_smart_table__WEBPACK_IMPORTED_MODULE_4__["LocalDataSource"]();
+        this.branchSetting = this.branchSettingService.getBranchSettings();
+        this.userBranches = this._authService.getUserProfile().branches;
+        this.selectedBranch.push(this.userBranches.find(function (x) { return x.branchId == _this._authService.getUserProfile().defaultBranch; }));
+        this.branchChanged();
+        this.settings.delete = this.menuRight.delete ? {} : null;
+        this.settings.edit = this.menuRight.edit ? {} : null;
+    }
+    TransferList.prototype.branchChanged = function () {
+        var _this = this;
+        var Clist = [];
+        this.service.GetEmpTransferList(this.selectedBranch.map(function (x) { return x.branchId; }))
+            .subscribe(function (data) {
+            Clist.push.apply(Clist, tslib__WEBPACK_IMPORTED_MODULE_0__["__spread"](data));
+        }, function (Error) { return console.log(Error); }, function () {
+            _this.service._transferList = Clist;
+            _this.source.load(Clist);
+            console.log(_this.source);
+        });
+    };
+    TransferList.prototype.onAddClick = function () {
+        this.router.navigate(['/pages/schedule/transfer', { mode: "add", returnUrl: this.router.url }]);
+    };
+    Object.defineProperty(TransferList.prototype, "disableAdd", {
+        get: function () {
+            return !this.menuRight.create;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(TransferList.prototype, "menuRight", {
+        get: function () {
+            return this._authService.getRole.menuRights.find(function (x) { return x.menuId === 'employee-transfer'; });
+        },
+        enumerable: true,
+        configurable: true
+    });
+    TransferList.prototype.onEditClick = function (event) {
+        this.router.navigate(["/pages/schedule/transfer", { id: event.data.id, mode: "edit", returnUrl: this.router.url }]);
+    };
+    TransferList.prototype.onDeleteClick = function (event) {
+        this.selectedRow = event;
+        this.deleteModal.show();
+    };
+    TransferList.prototype.DeleteEvent = function () {
+        var _this = this;
+        this.deleteModal.hide();
+        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            this.DialogMessage = "Deleting please wait...";
+            this.childModal.show();
+            var sub = this.service.postmaster("delete", this.selectedRow.data, "/SaveTransfer")
+                .subscribe(function (data) {
+                if (data.status == 'ok') {
+                    //Displaying dialog message for save with timer of 1 secs
+                    if (_this.service._transferList.length > 0) {
+                        _this.service._transferList.splice(_this.service._transferList.indexOf(_this.selectedRow.data), 1);
+                        _this.source.load(_this.service._transferList);
+                    }
+                    _this.DialogMessage = "Data Deleted Successfully";
+                    setTimeout(function () {
+                        _this.childModal.hide();
+                    }, 1000);
+                }
+            });
+            this.subcriptions.push(sub);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to delete  room.";
+            this.childModal.show();
+        }
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('childModal'),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _theme_components_baModal_baModal_component__WEBPACK_IMPORTED_MODULE_3__["BaModalComponent"])
+    ], TransferList.prototype, "childModal", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('deleteModal'),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _theme_components_baModal_baModal_component__WEBPACK_IMPORTED_MODULE_3__["BaModalComponent"])
+    ], TransferList.prototype, "deleteModal", void 0);
+    TransferList = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'transfer-list',
+            template: __webpack_require__(/*! ./TransferList.component.html */ "./src/app/pages/schedule/components/EmployeeTransfer/TransferList.component.html"),
+            providers: [],
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_6__["MasterRepo"],
+            _common_services_permission_authService_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"],
+            _global_state__WEBPACK_IMPORTED_MODULE_8__["GlobalState"],
+            _theme_pipes_label_pipe__WEBPACK_IMPORTED_MODULE_9__["LabelPipe"],
+            _common_services_branch_setting_service__WEBPACK_IMPORTED_MODULE_10__["BranchSettingService"]])
+    ], TransferList);
+    return TransferList;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/schedule/components/EmployeeTransfer/employee-transfer.component.html":
+/*!*********************************************************************************************!*\
+  !*** ./src/app/pages/schedule/components/EmployeeTransfer/employee-transfer.component.html ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div>\r\n    <ba-card [title]=\"modeTitle\">\r\n\r\n        <div class=\"form-group row\">\r\n            <div class=\"col-2 col-lg-2 col-sm-6\">\r\n                <label for=\"employee\" class=\"form-control-label\">{{'employee' | labelPipe}}</label>\r\n            </div>\r\n\r\n            <div class=\"col-10 col-lg-6 col-sm-12\">\r\n                <angular2-multiselect [data]=\"employeeList\" [settings]=\"empSetting\" [(ngModel)]=\"sEmp\" (onSelect)=\"empChanged($event)\">\r\n                </angular2-multiselect>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"form-group row\">\r\n            <div class=\"col-2 col-lg-2 col-sm-6\">\r\n                <label for=\"transferTo\" class=\"form-control-label\">Transfer to</label>\r\n            </div>\r\n\r\n            <div class=\"col-10 col-lg-6 col-sm-12\">\r\n                <select class=\"form-control\" name=\"toOutlet\"\r\n                    [(ngModel)]=\"transfer.transferTo\">\r\n                    <option *ngFor=\"let em of branchList\" [ngValue]=\"em\">{{em.branchName}}</option>\r\n                  </select>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"form-group row\">\r\n\r\n            <div class=\"col-2 col-lg-2 col-sm-4\">\r\n                <label class=\"form-control-label\" for=\"nepaliDateFrom\"> On Date: </label>\r\n            </div>\r\n\r\n            <div class=\"col-2 col-lg-2 col-sm-4\">\r\n                <nepali-date-picker name=\"nepaliDateOn\" [id]=\"'nepaliDateon'\" [(ngModel)]=\"transfer.miti\"\r\n                    (change)=\"changeOnDate($event.detail.value,'BS')\" [label]=\"'yyyy-mm-dd'\">\r\n                </nepali-date-picker>\r\n            </div>\r\n            <div class=\"col-2 col-lg-2 col-sm-4\">\r\n                <input type=\"date\" (change)=\"changeOnDate($event.target.value,'AD')\" class=\"date-input form-control\"\r\n                    name=\"onDate\" [(ngModel)]=\"transfer.date\" style=\"width: 150px;\"\r\n                    placeholder=\"Year Start Date\">\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"form-group row\">\r\n            <div class=\"col-2 col-lg-2 col-sm-6\">\r\n                <label for=\"time\" class=\"form-control-label\">Time Period</label>\r\n            </div>\r\n\r\n            <div class=\"col-2 col-lg-2 col-sm-6\">\r\n                <input name=\"time\" type=\"time\" class=\"form-control\" style=\"width: 150px;\" [(ngModel)]=\"transfer.startTime\" />\r\n            </div>\r\n            <div class=\"col-2 col-lg-2 col-sm-6\">\r\n                <input name=\"toTime\" type=\"time\" class=\"form-control\" style=\"width: 150px;\" [(ngModel)]=\"transfer.endTime\" />\r\n            </div>\r\n        </div>\r\n        <div class=\"form-group row \">\r\n            <div class=\"col-2 col-lg-2 col-sm-4\">\r\n                <label for=\"remarks\" class=\"form-control-label \">Remarks</label>\r\n            </div>\r\n            <div class=\"col-10 col-lg-6 col-sm-12 \">\r\n                <input required type=\"text \" class=\"form-control \" name=\"remarks\" id=\"remarks\"\r\n                    [(ngModel)]=\"transfer.remarks\" placeholder=\"Remarks\">\r\n            </div>\r\n        </div>\r\n\r\n    </ba-card>\r\n\r\n    <button *ngIf=\"mode=='add' || mode=='edit'\" (click)=\"onSave()\" class=\"btn btn-primary \">Save</button>\r\n    <button type=\"button \" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n</div>\r\n\r\n\r\n<ba-modal #childModal title=\"Information\" size=\"sm\">\r\n    {{DialogMessage}}\r\n</ba-modal>"
+
+/***/ }),
+
+/***/ "./src/app/pages/schedule/components/EmployeeTransfer/employee-transfer.component.ts":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/pages/schedule/components/EmployeeTransfer/employee-transfer.component.ts ***!
+  \*******************************************************************************************/
+/*! exports provided: EmployeeTransfer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeeTransfer", function() { return EmployeeTransfer; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var src_app_theme_components_baModal_baModal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/theme/components/baModal/baModal.component */ "./src/app/theme/components/baModal/baModal.component.ts");
+/* harmony import */ var _common_repositories__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../common/repositories */ "./src/app/common/repositories/index.ts");
+/* harmony import */ var _common_services_disable_date_picker_disable_date_picker_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../common/services/disable-date-picker/disable-date-picker.service */ "./src/app/common/services/disable-date-picker/disable-date-picker.service.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var src_app_common_services_permission__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/common/services/permission */ "./src/app/common/services/permission/index.ts");
+
+
+
+
+
+
+
+
+var EmployeeTransfer = /** @class */ (function () {
+    function EmployeeTransfer(activatedRoute, router, masterRepo, disableDateService, datePipe, _authService) {
+        this.activatedRoute = activatedRoute;
+        this.router = router;
+        this.masterRepo = masterRepo;
+        this.disableDateService = disableDateService;
+        this.datePipe = datePipe;
+        this._authService = _authService;
+        this.DialogMessage = "Saving data please wait ...";
+        this.employeeList = [];
+        this.branchList = [];
+        this.modeTitle = "";
+        this.mode = "add";
+        this.transfer = {};
+        this.valid = true;
+        this.adisable = new Date('2077-12-09');
+        this.subscription = [];
+        this.options = {
+            disableDaysAfter: 3,
+            disableDaysBefore: 3
+        };
+        if (!!this.activatedRoute.snapshot.params['returnUrl']) {
+            this.returnUrl = this.activatedRoute.snapshot.params['returnUrl'];
+        }
+        if (!!this.activatedRoute.snapshot.params['mode']) {
+            this.mode = this.activatedRoute.snapshot.params['mode'];
+        }
+    }
+    EmployeeTransfer.prototype.ngOnInit = function () {
+        var _this = this;
+        var user = this._authService.getUserProfile();
+        this.masterRepo.getEmployeeListNew(user.defaultBranch)
+            .subscribe(function (data) {
+            _this.employeeList = data;
+        }, function (err) {
+            console.log(err);
+            _this.masterRepo.handleWebError(err);
+        }, function () {
+            _this.getBranchList(user);
+        });
+        this.empSetting = {
+            enableFilterSelectAll: false,
+            text: 'Select an Employee',
+            enableSearchFilter: true,
+            labelKey: "NAME",
+            primaryKey: "EMPLOYEEID",
+            singleSelection: true,
+            showCheckbox: false,
+        };
+    };
+    EmployeeTransfer.prototype.getBranchList = function (user) {
+        var _this = this;
+        this.masterRepo.getBranchList().subscribe(function (response) {
+            _this.branchList = response.filter(function (x) { return x.branchId != user.defaultBranch; });
+            _this.transfer.branch = response.filter(function (x) { return x.branchId == user.defaultBranch; })[0];
+            console.log("gg");
+        }, function (err) {
+            console.log(err);
+            _this.masterRepo.handleWebError(err);
+        }, function () {
+            _this.loadForm();
+        });
+    };
+    EmployeeTransfer.prototype.loadForm = function () {
+        if (this.mode == "edit") {
+            if (!!this.activatedRoute.snapshot.params['id']) {
+                var id_1 = this.activatedRoute.snapshot.params['id'];
+                var t_1 = this.masterRepo._transferList.filter(function (r) { return r.id == id_1; })[0];
+                this.transfer = {
+                    id: t_1.id,
+                    date: String(t_1.date).substring(0, 10),
+                    branch: t_1.branch,
+                    transferTo: this.branchList.find(function (x) { return x.branchId == t_1.transferTo.branchId; }),
+                    startTime: t_1.startTime,
+                    endTime: t_1.endTime,
+                    remarks: t_1.remarks,
+                    employee: t_1.employee,
+                    miti: this.masterRepo.toBSDate(String(t_1.date).substring(0, 10))
+                };
+                this.sEmp = this.employeeList.filter(function (x) { return x.EMPLOYEEID == t_1.employee.EMPLOYEEID; });
+                console.log(this.transfer);
+            }
+        }
+    };
+    EmployeeTransfer.prototype.onSave = function () {
+        this.DialogMessage = "Saving data please wait ...";
+        this.childModal.show();
+        this.onSubmit();
+    };
+    EmployeeTransfer.prototype.changeOnDate = function (value, format) {
+        if (format == "AD") {
+            this.transfer.miti = this.masterRepo.toBSDate(value);
+        }
+        else if (format == "BS") {
+            this.transfer.date = this.masterRepo.toADDate(value);
+        }
+    };
+    EmployeeTransfer.prototype.onSubmit = function () {
+        var _this = this;
+        try {
+            if (!this.transfer.employee) {
+                this.DialogMessage = "Please select an employee.";
+                this.childModal.show();
+                return;
+            }
+            if (!this.transfer.transferTo) {
+                this.DialogMessage = "Please select an outlet.";
+                this.childModal.show();
+                return;
+            }
+            if (isNaN(Date.parse(this.transfer.date))) {
+                this.DialogMessage = "Please enter a valid date.";
+                this.childModal.show();
+                return;
+            }
+            if (!this.validateTime())
+                return;
+            //console.log(this.holiday);
+            if (this.valid == true) {
+                //if (false) {
+                var sub_1 = this.masterRepo.postmaster(this.mode, this.transfer, "/SaveTransfer")
+                    .subscribe(function (data) {
+                    if (data.status == 'ok') {
+                        //Displaying dialog message for save with timer of 1 secs
+                        _this.DialogMessage = "Data Saved Successfully";
+                        setTimeout(function () {
+                            _this.childModal.hide();
+                            _this.router.navigate([_this.returnUrl]);
+                        }, 1000);
+                    }
+                    else {
+                        _this.DialogMessage = data.result;
+                        setTimeout(function () {
+                            _this.childModal.hide();
+                        }, 3000);
+                    }
+                }, function (error) { alert(error); });
+                (function () {
+                    //SEND TO NEPALIDATE PICKER FOR DISABLE
+                    _this.disableDateService.getDisableDates();
+                    _this.subscription.push(sub_1);
+                });
+            }
+            else {
+                this.DialogMessage = "Form is Invalid";
+                this.childModal.show();
+            }
+        }
+        catch (e) {
+            console.log(e);
+        }
+    };
+    EmployeeTransfer.prototype.hideChildModal = function () {
+        this.childModal.hide();
+    };
+    EmployeeTransfer.prototype.onCancel = function () {
+        this.router.navigate([this.returnUrl]);
+    };
+    EmployeeTransfer.prototype.validateTime = function () {
+        if (!(this.transfer.startTime && this.transfer.endTime)) {
+            this.DialogMessage = "Please select the time";
+            this.childModal.show();
+            return false;
+        }
+        else if (this.transfer.startTime > this.transfer.endTime) {
+            this.DialogMessage = "End time is earlier than Start Time";
+            this.childModal.show();
+            return false;
+        }
+        return true;
+    };
+    EmployeeTransfer.prototype.empChanged = function (e) {
+        console.log(this.sEmp);
+        this.transfer.employee = e;
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('childModal'),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", src_app_theme_components_baModal_baModal_component__WEBPACK_IMPORTED_MODULE_3__["BaModalComponent"])
+    ], EmployeeTransfer.prototype, "childModal", void 0);
+    EmployeeTransfer = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'employee-transfer',
+            template: __webpack_require__(/*! ./employee-transfer.component.html */ "./src/app/pages/schedule/components/EmployeeTransfer/employee-transfer.component.html"),
+            providers: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["DatePipe"]]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            _common_repositories__WEBPACK_IMPORTED_MODULE_4__["MasterRepo"],
+            _common_services_disable_date_picker_disable_date_picker_service__WEBPACK_IMPORTED_MODULE_5__["DisableDateService"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_6__["DatePipe"],
+            src_app_common_services_permission__WEBPACK_IMPORTED_MODULE_7__["AuthService"]])
+    ], EmployeeTransfer);
+    return EmployeeTransfer;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/pages/schedule/components/FollowUp/followup.component.html":
 /*!****************************************************************************!*\
   !*** ./src/app/pages/schedule/components/FollowUp/followup.component.html ***!
@@ -2404,6 +2900,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../app.service */ "./src/app/app.service.ts");
 /* harmony import */ var _TimelineContextMenu_timelineContextMenu_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./TimelineContextMenu/timelineContextMenu.component */ "./src/app/pages/schedule/components/ScheduleInput/TimelineContextMenu/timelineContextMenu.component.ts");
 /* harmony import */ var _common_services_branch_setting_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../common/services/branch-setting.service */ "./src/app/common/services/branch-setting.service.ts");
+/* harmony import */ var src_app_common_services_state_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! src/app/common/services/state.service */ "./src/app/common/services/state.service.ts");
+
 
 
 
@@ -2419,7 +2917,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var MasterSchedule = /** @class */ (function () {
-    function MasterSchedule(_authService, exportAsService, router, scheduleService, masterRepo, datePipe, appService, branchSettingService) {
+    function MasterSchedule(_authService, exportAsService, router, scheduleService, masterRepo, datePipe, appService, branchSettingService, stateService) {
         var _this = this;
         this._authService = _authService;
         this.exportAsService = exportAsService;
@@ -2429,6 +2927,7 @@ var MasterSchedule = /** @class */ (function () {
         this.datePipe = datePipe;
         this.appService = appService;
         this.branchSettingService = branchSettingService;
+        this.stateService = stateService;
         // @ViewChild("scheduler") scheduler: DayPilot.Angular.Scheduler;
         this.DialogMessage = "You are not authorized";
         this.minList = [];
@@ -2507,6 +3006,9 @@ var MasterSchedule = /** @class */ (function () {
         this.userBranches = this._authService.getUserProfile().branches;
         this.selectedBranch.push(this.userBranches.find(function (x) { return x.branchId == _this._authService.getUserProfile().defaultBranch; }));
     }
+    MasterSchedule.prototype.ngOnDestroy = function () {
+        this.stateService.setStateData("time-line", { date: this.ScheduleDateAD, branch: this.selectedBranch });
+    };
     MasterSchedule.prototype.changeEntryDate = function (value, format) {
         if (format == "AD") {
             this.ScheduleDateBS = this.masterRepo.toBSDate(value);
@@ -2574,8 +3076,15 @@ var MasterSchedule = /** @class */ (function () {
     };
     MasterSchedule.prototype.ngOnInit = function () {
         var _this = this;
-        var date = new Date();
-        this.ScheduleDateAD = date.getFullYear().toString() + "-" + (date.getMonth() + 1).toString().padStart(2, '0') + "-" + date.getDate().toString().padStart(2, '0');
+        var state = this.stateService.getStateData("time-line");
+        if (state) {
+            this.ScheduleDateAD = state.date,
+                this.selectedBranch = state.branch;
+        }
+        else {
+            var date = new Date();
+            this.ScheduleDateAD = date.getFullYear().toString() + "-" + (date.getMonth() + 1).toString().padStart(2, '0') + "-" + date.getDate().toString().padStart(2, '0');
+        }
         this.changeEntryDate(this.ScheduleDateAD, 'AD');
         this.appService.notification$.subscribe(function (data) {
             _this.OnDateChangeEvent(new Date());
@@ -2853,7 +3362,8 @@ var MasterSchedule = /** @class */ (function () {
             _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_6__["MasterRepo"],
             _angular_common__WEBPACK_IMPORTED_MODULE_9__["DatePipe"],
             _app_service__WEBPACK_IMPORTED_MODULE_11__["AppState"],
-            _common_services_branch_setting_service__WEBPACK_IMPORTED_MODULE_13__["BranchSettingService"]])
+            _common_services_branch_setting_service__WEBPACK_IMPORTED_MODULE_13__["BranchSettingService"],
+            src_app_common_services_state_service__WEBPACK_IMPORTED_MODULE_14__["StateService"]])
     ], MasterSchedule);
     return MasterSchedule;
 }());
@@ -2880,7 +3390,7 @@ module.exports = "<div class=\"row\">\r\n    <div class=\"row\" style=\"width: 1
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n  <div class=\"col-12\">\r\n    <ba-card title=\"Schedule Input\">\r\n      <div style=\"height: 100%;\">\r\n        <fieldset style=\" border: none;padding: 0; margin: 0;\" [disabled]=\"disableScheduleInput\">\r\n          <div class=\"form-group\" *ngIf=\"IntegrateTreatmentWithAppointment || mode != 'add'\">\r\n            <table id=\"tblPatientInfo\">\r\n              <tr>\r\n                <td>{{'customer' | labelPipe}} Name</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.NAME}}</td>\r\n                <td>Mobile No</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.MOBILE}}</td>\r\n              </tr>\r\n              <tr>\r\n                <td>Address</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.ADDRESS}}</td>\r\n                <td>{{'customer' | labelPipe}} Id</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.PATIENT_ID}}</td>\r\n              </tr>\r\n              <tr>\r\n                <td>Check In</td>\r\n                <td>: {{scheduleInput.checkInTime}}</td>\r\n                <td>Entry User</td>\r\n                <td>: {{scheduleInput.UserId}}</td>\r\n              </tr>\r\n            </table>\r\n          </div>\r\n          <customer-select (customerChanged)=\"customerChanged($event)\" [disabled]=\"multipleServiceList.length>0 || mode=='edit'\"\r\n            *ngIf=\"!IntegrateTreatmentWithAppointment && mode == 'add'\"></customer-select>\r\n\r\n          <div class=\"form-group\">\r\n            \r\n            <div class=\"row\">\r\n              <div class=\"form-group col-sm-12  col-md-3  col-lg-2 col-xxl-1\">\r\n                <label for=\"miti\">Miti</label>\r\n                <nepali-date-picker name=\"nepaliDateFrom\" [id]=\"'nepaliDatefrom'\" [disabled]=\"multipleServiceList.length>0 || mode=='edit'\" \r\n                  (change)=\"changeEntryDate($event.detail.value, 'BS')\" [label]=\"'yyyy-mm-dd'\"\r\n                  [(ngModel)]=\"ScheduleDateBS\">\r\n                </nepali-date-picker>\r\n              </div>\r\n              <div class=\"form-group col-sm-12  col-md-3  col-lg-2 col-xxl-1\">\r\n                <label for=\"date\">Date</label>\r\n                <input type=\"date\" class=\"form-control\" id=\"date\" \r\n                  [disabled]=\"multipleServiceList.length>0 || mode=='edit'\" [(ngModel)]=\"scheduleInput.DATE\"\r\n                  (change)=\"changeEntryDate($event.target.value, 'AD')\">\r\n              </div>\r\n\r\n              <div class=\"form-group col-sm-12  col-md-6 col-lg-4 col-xxl-3\">\r\n                <label for=\"outlet\">Outlet</label>\r\n                <select class=\"form-control\" id=\"outlet\" [(ngModel)] = \"scheduleInput.branch\" [disabled]=\"multipleServiceList.length>0 || mode=='edit'\"\r\n                (ngModelChange)=\"getServices(scheduleInput.branch.branchId)\">\r\n                    <option *ngFor = \"let branch of userBranches\" [ngValue]=\"branch\">{{branch.branchName}}</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n          </div>\r\n            \r\n          <div class=\"row\" *ngIf=\"mode=='edit' && !enableCheckIn\">\r\n            <div class=\"form-group col-md-4 col-xl-3\">\r\n              <label for=\"Status\">Status</label>\r\n              <select class=\"form-control\" name=\"Status\" id=\"Status\" [(ngModel)]=\"scheduleInput.STATUS\">\r\n                <option *ngFor=\"let s of statusList\" [ngValue]=\"s.status\">{{s.description}}</option>\r\n              </select>\r\n            </div>\r\n          </div>\r\n\r\n          <div style=\" border: 1px solid #dcdcdc;padding:10px;\" class=\"col-12 col-xxl-6\">\r\n            <fieldset style=\" border: none;padding: 0; margin: 0;\"\r\n              [disabled]=\"scheduleInput.DATE == null || scheduleInput.DATE == ''\">\r\n               <div class=\"row\">\r\n                <div class=\"form-group col-md-6 position-relative\">\r\n                  <label for=\"sserviceselect\">Service</label>\r\n                  <angular2-multiselect [data]=\"ServiceList\" [settings]=\"serviceSetting\"\r\n                    (ngModelChange)=\"serviceChangeEvent($event)\" (onFilterChange)=\"onServiceSearch($event)\"\r\n                    [(ngModel)]=\"selectedService\" [disabled]=\"isServiceLoading\">\r\n                  </angular2-multiselect>\r\n                  <div *ngIf=\"isServiceLoading\" class=\"spinner-border spinner-border-sm text-primary\" role=\"status\"\r\n                    style=\"position: absolute; top: 40%; right: 20px; z-index: 1000;\">\r\n                    <span class=\"sr-only\">Loading...</span>\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group col-md-2 col-lg-1\">\r\n                  <label for=\"pax\">Pax</label>\r\n                  <input class=\"form-control\" name=\"pax\" id=\"pax\" \r\n                    (change)=\"paxChanged($event.target.value, multipleServiceObj.SERVICE.noOfEmployees)\" \r\n                    [(ngModel)]=\"multipleServiceObj.PAX\"/>\r\n                </div>\r\n                <div class=\"form-group col-lg-5 col-md-4 position-relative\">\r\n                  <label for=\"employeeselect\" style=\"margin-left: 10px\">Staff</label>\r\n                  <label style=\"width: 160px; font-size: 13px; margin-left: 10px\">\r\n                    <input type=\"checkbox\" style=\"vertical-align: middle\"\r\n                      (change)=\"$event.target.checked ? (multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER=1) : (multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER=0)\"\r\n                      [checked]=\"multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER==1\"\r\n                      [disabled]=\"mode == 'edit' && multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER==1 && user.Role == 'user' && multipleServiceObj.SNO > 0\">\r\n                    Is Booked By {{'customer' | labelPipe}}\r\n                  </label>\r\n                  <angular2-multiselect [data]=\"employeeList\" [settings]=\"empSetting\" \r\n                    [(ngModel)]=\"multipleServiceObj.EMPLOYEE\" [disabled]=\"isEmployeeLoading\">\r\n                  </angular2-multiselect>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"form-group col-md-6\">\r\n                  <label for=\"roomselect\">Room</label>\r\n                  <angular2-multiselect [data]=\"roomList\" [settings]=\"roomSetting\" [(ngModel)]=\"multipleServiceObj.ROOM\">\r\n                  </angular2-multiselect>\r\n                </div>\r\n\r\n                <div class=\"form-group col-12 col-md-6\">\r\n                  <label for=\"roomselect\">Fee</label>\r\n                  <select class=\"form-control\" name=\"typeselect\" id=\"typeselect\" [(ngModel)]=\"multipleServiceObj.TYPE\"\r\n                    (ngModelChange)=\"TypeChange(multipleServiceObj.TYPE)\">\r\n                    <option Value=\"NotPaid\">NotPaid </option>\r\n                    <option Value=\"Paid\">Paid</option>\r\n                    <option Value=\"Free\">Free</option>\r\n                  </select>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\" style=\"margin: 20px;\">\r\n                <button type=\"button\" *ngFor=\"let time of appTimeSlots\"\r\n                    class=\"btn btn-primary\" (click)=\"selectAppointmentTime(time)\" style=\"margin-right: 10px;\">{{time.time}}</button>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"form-group col-12 col-md-10 col-sm-10 col-xs-8\">\r\n                  <label for=\"time\">Time</label>\r\n                  <!--<input type=\"input\" class=\"form-control\" id=\"time\" [(ngModel)]=\"scheduleInput.startTime\">-->\r\n                  <div class=\"demo row\">\r\n                    <div class=\"col-12 col-md-5 col-sm-4 col-xs-3\">\r\n                      <input type=\"time\" class=\"form-control\" style=\"width: 150px;\"\r\n                        (change)=\"starttimeChange($event.target.value)\" [(ngModel)]=\"StartTime\" />\r\n                    </div>\r\n                    <div class=\"col-12 col-md-1 col-sm-1  col-xs-1\">\r\n                      <label style=\"margin: 10px;\">To</label>\r\n                    </div>\r\n                    <div class=\"col-12 col-md-5 col-sm-4  col-xs-3\">\r\n                      <input type=\"time\" class=\"form-control\" style=\"width: 150px;\" disabled [(ngModel)]=\"EndTime\" />\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-12 col-md-2 col-sm-2 col-xs-2\">\r\n                  <button type=\"button\"\r\n                    [disabled]=\"multipleServiceObj==null|| multipleServiceObj.SERVICE==null || multipleServiceObj.EMPLOYEE==null || multipleServiceObj.ROOM==null || scheduleInput.billableSchedule==1\"\r\n                    class=\"btn btn-primary\" (click)=\"AddClickEvent()\" style=\"margin-top:20px;\">Add</button>\r\n                </div>\r\n              </div>\r\n\r\n              <Table id=\"BlueHeaderResizableTable\" style=\"width:100%;max-height:300px\">\r\n                <thead>\r\n                  <tr>\r\n                    <th style=\"width:30px\">SN.</th>\r\n                    <th style=\"width:35%\">Service</th>\r\n                    <th style=\"width:35%\">Therapist</th>\r\n                    <th style=\"width:20%\">Room</th>\r\n                    <th style=\"width:10%\">Time</th>\r\n                    <th style=\"width:60px\"></th>\r\n                  </tr>\r\n                </thead>\r\n                <tbody class=\"tabelRowWithAutoScroll\">\r\n                  <tr *ngFor=\"let ir of multipleServiceList;let i=index\" style=\"height:28px;font-size:small\">\r\n                    <td style=\"width:30px\">{{i+1}}</td>\r\n                    <td style=\"width:35%\">{{ir.SERVICE.DESCRIPTION}}</td>\r\n                    <td style=\"width:35%\">{{ir.EMPLOYEE.NAME}}</td>\r\n                    <td style=\"width:20%\">{{ir.ROOM.ROOMNO}}</td>\r\n                    <td style=\"width:10%\">{{ir.STARTTIME}}</td>\r\n                    <td>\r\n                      <button class=\"glyphicon glyphicon-edit\" (click)=\"editSchedule(i)\"\r\n                        [disabled]=\"scheduleInput.billableSchedule==1 || (enableCheckIn && scheduleInput.STATUS!=0)\"></button>\r\n                      <button class=\"glyphicon glyphicon-remove\" (click)=\"removeSchedule(ir.serviceGuid)\" style=\"float: right;\"\r\n                        [disabled]=\"(mode == 'edit' && ir.EMPLOYEE_BOOKED_BYCUSTOMER==1 && user.Role == 'user') || scheduleInput.billableSchedule==1 || (enableCheckIn && scheduleInput.STATUS!=0)\"></button>\r\n                    </td>\r\n                  </tr>\r\n                </tbody>\r\n              </Table>\r\n            </fieldset>\r\n          </div>\r\n        </fieldset>\r\n\r\n        <button type=\"submit\" class=\"btn btn-primary\"\r\n          *ngIf=\"false && mode=='edit' && canBeBillable() && scheduleInput.billableSchedule!=1\" (click)=\"ProceedBill()\">\r\n          Proceed To Bill\r\n        </button>\r\n        <button type=\"button\" class=\"btn btn-primary\"\r\n          *ngIf=\"mode=='edit' && canBeBillable() && scheduleInput.billableSchedule==1\" (click)=\"CancelBill()\">\r\n          Cancel Bill\r\n        </button>\r\n        <button type=\"submit\" class=\"btn btn-primary\" (click)=\"SaveClickEvent()\"\r\n          *ngIf=\"!enableCheckIn || scheduleInput.STATUS==0\"\r\n          [disabled]=\"multipleServiceList.length==0 || scheduleInput.CUSTOMER==null || scheduleInput.DATE==null ||disableScheduleInput || scheduleInput.billableSchedule==1\">Submit</button>\r\n        <button type=\"button\" class=\"btn btn-danger\" (click)=\"DeleteConformation()\"\r\n          *ngIf=\"mode=='edit'&& disableScheduleInput==false && scheduleInput.billableSchedule!=1 && (!enableCheckIn || scheduleInput.STATUS==0)\">Delete</button>\r\n        <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n      </div>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<ba-modal #childEmployeeModal title=\"Replace Therapist\" size=\"sm\">\r\n  <div>\r\n    <label for=\"employeeselectForEdit\">Available Therapist</label>\r\n    <select class=\"form-control\" name=\"employeeselectForEdit\" id=\"employeeselectForEdit\"\r\n      [(ngModel)]=\"ReplacedEmployee\">\r\n      <option *ngFor=\"let em of replacementEmployeeList\" [ngValue]=\"em\">{{em.NAME}}</option>\r\n    </select>\r\n  </div>\r\n  <div class=\"modal-footer\">\r\n    <button class=\"btn btn-primary confirm-btn\" (click)=\"saveChildModal(ReplacedEmployee)\">Save changes</button>\r\n  </div>\r\n  \r\n</ba-modal>\r\n<ba-modal #childModal title=\"Information\" size=\"sm\">\r\n  {{DialogMessage}}\r\n  \r\n  \r\n</ba-modal>\r\n<ba-modal #deleteModal title=\"Warning\" size=\"sm\">\r\n  <div>Once you delete the schedule you can't recover it back. Are U sure you want to delete this Schedule?</div>\r\n  <div class=\"modal-footer\">\r\n    <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n    <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n  </div>\r\n  \r\n</ba-modal>"
+module.exports = "<div class=\"row\">\r\n  <div class=\"col-12\">\r\n    <ba-card title=\"Schedule Input\">\r\n      <div style=\"height: 100%;\">\r\n        <fieldset style=\" border: none;padding: 0; margin: 0;\" [disabled]=\"disableScheduleInput\">\r\n          <div class=\"form-group\" *ngIf=\"IntegrateTreatmentWithAppointment || mode != 'add'\">\r\n            <table id=\"tblPatientInfo\">\r\n              <tr>\r\n                <td>{{'customer' | labelPipe}} Name</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.NAME}}</td>\r\n                <td>Mobile No</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.MOBILE}}</td>\r\n              </tr>\r\n              <tr>\r\n                <td>Address</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.ADDRESS}}</td>\r\n                <td>{{'customer' | labelPipe}} Id</td>\r\n                <td>: {{scheduleInput.CUSTOMER?.PATIENT_ID}}</td>\r\n              </tr>\r\n              <tr>\r\n                <td>Check In</td>\r\n                <td>: {{scheduleInput.checkInTime}}</td>\r\n                <td>Entry User</td>\r\n                <td>: {{scheduleInput.UserId}}</td>\r\n              </tr>\r\n            </table>\r\n          </div>\r\n          <customer-select (customerChanged)=\"customerChanged($event)\" [disabled]=\"multipleServiceList.length>0 || mode=='edit'\"\r\n            *ngIf=\"!IntegrateTreatmentWithAppointment && mode == 'add'\"></customer-select>\r\n\r\n          <div class=\"form-group\">\r\n            \r\n            <div class=\"row\">\r\n              <div class=\"form-group col-sm-12  col-md-3  col-lg-2 col-xxl-1\">\r\n                <label for=\"miti\">Miti</label>\r\n                <nepali-date-picker name=\"nepaliDateFrom\" [id]=\"'nepaliDatefrom'\" [disabled]=\"multipleServiceList.length>0 || mode=='edit'\" \r\n                  (change)=\"changeEntryDate($event.detail.value, 'BS')\" [label]=\"'yyyy-mm-dd'\"\r\n                  [(ngModel)]=\"ScheduleDateBS\">\r\n                </nepali-date-picker>\r\n              </div>\r\n              <div class=\"form-group col-sm-12  col-md-3  col-lg-2 col-xxl-1\">\r\n                <label for=\"date\">Date</label>\r\n                <input type=\"date\" class=\"form-control\" id=\"date\" \r\n                  [disabled]=\"multipleServiceList.length>0 || mode=='edit'\" [(ngModel)]=\"scheduleInput.DATE\"\r\n                  (change)=\"changeEntryDate($event.target.value, 'AD')\">\r\n              </div>\r\n\r\n              <div class=\"form-group col-sm-12  col-md-6 col-lg-4 col-xxl-3\">\r\n                <label for=\"outlet\">Outlet</label>\r\n                <select class=\"form-control\" id=\"outlet\" [(ngModel)] = \"scheduleInput.branch\" [disabled]=\"multipleServiceList.length>0 || mode=='edit'\"\r\n                (ngModelChange)=\"getServices(scheduleInput.branch.branchId)\">\r\n                    <option *ngFor = \"let branch of userBranches\" [ngValue]=\"branch\">{{branch.branchName}}</option>\r\n                </select>\r\n              </div>\r\n            </div>\r\n          </div>\r\n            \r\n          <div class=\"row\" *ngIf=\"mode=='edit' && !enableCheckIn\">\r\n            <div class=\"form-group col-md-4 col-xl-3\">\r\n              <label for=\"Status\">Status</label>\r\n              <select class=\"form-control\" name=\"Status\" id=\"Status\" [(ngModel)]=\"scheduleInput.STATUS\">\r\n                <option *ngFor=\"let s of statusList\" [ngValue]=\"s.status\">{{s.description}}</option>\r\n              </select>\r\n            </div>\r\n          </div>\r\n\r\n          <div style=\" border: 1px solid #dcdcdc;padding:10px;\" class=\"col-12 col-xxl-6\">\r\n            <fieldset style=\" border: none;padding: 0; margin: 0;\"\r\n              [disabled]=\"scheduleInput.DATE == null || scheduleInput.DATE == ''\">\r\n               <div class=\"row\">\r\n                <div class=\"form-group col-md-6 position-relative\">\r\n                  <label for=\"sserviceselect\">Service</label>\r\n                  <angular2-multiselect [data]=\"ServiceList\" [settings]=\"serviceSetting\"\r\n                    (ngModelChange)=\"serviceChangeEvent($event)\" (onFilterChange)=\"onServiceSearch($event)\"\r\n                    [(ngModel)]=\"selectedService\" [disabled]=\"isServiceLoading\">\r\n                  </angular2-multiselect>\r\n                  <div *ngIf=\"isServiceLoading\" class=\"spinner-border spinner-border-sm text-primary\" role=\"status\"\r\n                    style=\"position: absolute; top: 40%; right: 20px; z-index: 1000;\">\r\n                    <span class=\"sr-only\">Loading...</span>\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group col-md-2 col-lg-1\">\r\n                  <label for=\"pax\">Pax</label>\r\n                  <input class=\"form-control\" name=\"pax\" id=\"pax\" \r\n                    (change)=\"paxChanged($event.target.value, multipleServiceObj.SERVICE.noOfEmployees)\" \r\n                    [(ngModel)]=\"multipleServiceObj.PAX\"/>\r\n                </div>\r\n                <div class=\"form-group col-lg-5 col-md-4 position-relative\">\r\n                  <label for=\"employeeselect\" style=\"margin-left: 10px\">Staff</label>\r\n                  <label style=\"width: 160px; font-size: 13px; margin-left: 10px\">\r\n                    <input type=\"checkbox\" style=\"vertical-align: middle\"\r\n                      (change)=\"$event.target.checked ? (multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER=1) : (multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER=0)\"\r\n                      [checked]=\"multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER==1\"\r\n                      [disabled]=\"mode == 'edit' && multipleServiceObj.EMPLOYEE_BOOKED_BYCUSTOMER==1 && user.Role == 'user' && multipleServiceObj.SNO > 0\">\r\n                    Is Booked By {{'customer' | labelPipe}}\r\n                  </label>\r\n                  <div class=\"row align-items-center\">\r\n                    <div class=\"col\" style=\"padding-right: 5px;\">\r\n                      <angular2-multiselect [data]=\"employeeList\" [settings]=\"empSetting\" \r\n                        (ngModelChange)=\"EmployeeChange()\"\r\n                        [(ngModel)]=\"multipleServiceObj.EMPLOYEE\" [disabled]=\"isEmployeeLoading\">\r\n                      </angular2-multiselect>\r\n                    </div>\r\n                    <div class=\"col-auto\" style=\"width: 50px; padding-left: 5px;\">\r\n                      <img src=\"/assets/icon/add.svg\" alt=\"\" (click)=\"addTransferEmp()\" style=\"cursor: pointer; width: 24px; height: 24px;\">\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"form-group col-md-6\">\r\n                  <label for=\"roomselect\">Room</label>\r\n                  <angular2-multiselect [data]=\"roomList\" [settings]=\"roomSetting\" [(ngModel)]=\"multipleServiceObj.ROOM\">\r\n                  </angular2-multiselect>\r\n                </div>\r\n\r\n                <div class=\"form-group col-12 col-md-6\">\r\n                  <label for=\"roomselect\">Fee</label>\r\n                  <select class=\"form-control\" name=\"typeselect\" id=\"typeselect\" [(ngModel)]=\"multipleServiceObj.TYPE\"\r\n                    (ngModelChange)=\"TypeChange(multipleServiceObj.TYPE)\">\r\n                    <option Value=\"NotPaid\">NotPaid </option>\r\n                    <option Value=\"Paid\">Paid</option>\r\n                    <option Value=\"Free\">Free</option>\r\n                  </select>\r\n                </div>\r\n              </div>\r\n              <div class=\"row\" style=\"margin: 20px;\">\r\n                <button type=\"button\" *ngFor=\"let time of appTimeSlots\"\r\n                    class=\"btn btn-primary\" (click)=\"selectAppointmentTime(time)\" style=\"margin-right: 10px;\">{{time.time}}</button>\r\n              </div>\r\n              <div class=\"row\">\r\n                <div class=\"form-group col-12 col-md-10 col-sm-10 col-xs-8\">\r\n                  <label for=\"time\">Time</label>\r\n                  <!--<input type=\"input\" class=\"form-control\" id=\"time\" [(ngModel)]=\"scheduleInput.startTime\">-->\r\n                  <div class=\"demo row\">\r\n                    <div class=\"col-12 col-md-5 col-sm-4 col-xs-3\">\r\n                      <input type=\"time\" class=\"form-control\" style=\"width: 150px;\"\r\n                        (change)=\"starttimeChange($event.target.value)\" [(ngModel)]=\"StartTime\" />\r\n                    </div>\r\n                    <div class=\"col-12 col-md-1 col-sm-1  col-xs-1\">\r\n                      <label style=\"margin: 10px;\">To</label>\r\n                    </div>\r\n                    <div class=\"col-12 col-md-5 col-sm-4  col-xs-3\">\r\n                      <input type=\"time\" class=\"form-control\" style=\"width: 150px;\" disabled [(ngModel)]=\"EndTime\" />\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-12 col-md-2 col-sm-2 col-xs-2\">\r\n                  <button type=\"button\"\r\n                    [disabled]=\"multipleServiceObj==null|| multipleServiceObj.SERVICE==null || multipleServiceObj.EMPLOYEE==null || multipleServiceObj.ROOM==null || scheduleInput.billableSchedule==1\"\r\n                    class=\"btn btn-primary\" (click)=\"AddClickEvent()\" style=\"margin-top:20px;\">Add</button>\r\n                </div>\r\n              </div>\r\n\r\n              <Table id=\"BlueHeaderResizableTable\" style=\"width:100%;max-height:300px\">\r\n                <thead>\r\n                  <tr>\r\n                    <th style=\"width:30px\">SN.</th>\r\n                    <th style=\"width:35%\">Service</th>\r\n                    <th style=\"width:35%\">Therapist</th>\r\n                    <th style=\"width:20%\">Room</th>\r\n                    <th style=\"width:10%\">Time</th>\r\n                    <th style=\"width:60px\"></th>\r\n                  </tr>\r\n                </thead>\r\n                <tbody class=\"tabelRowWithAutoScroll\">\r\n                  <tr *ngFor=\"let ir of multipleServiceList;let i=index\" style=\"height:28px;font-size:small\">\r\n                    <td style=\"width:30px\">{{i+1}}</td>\r\n                    <td style=\"width:35%\">{{ir.SERVICE.DESCRIPTION}}</td>\r\n                    <td style=\"width:35%\">{{ir.EMPLOYEE.NAME}}</td>\r\n                    <td style=\"width:20%\">{{ir.ROOM.ROOMNO}}</td>\r\n                    <td style=\"width:10%\">{{ir.STARTTIME}}</td>\r\n                    <td>\r\n                      <button class=\"glyphicon glyphicon-edit\" (click)=\"editSchedule(i)\"\r\n                        [disabled]=\"scheduleInput.billableSchedule==1 || (enableCheckIn && scheduleInput.STATUS!=0)\"></button>\r\n                      <button class=\"glyphicon glyphicon-remove\" (click)=\"removeSchedule(ir.serviceGuid)\" style=\"float: right;\"\r\n                        [disabled]=\"(mode == 'edit' && ir.EMPLOYEE_BOOKED_BYCUSTOMER==1 && user.Role == 'user') || scheduleInput.billableSchedule==1 || (enableCheckIn && scheduleInput.STATUS!=0)\"></button>\r\n                    </td>\r\n                  </tr>\r\n                </tbody>\r\n              </Table>\r\n            </fieldset>\r\n          </div>\r\n        </fieldset>\r\n\r\n        <button type=\"submit\" class=\"btn btn-primary\"\r\n          *ngIf=\"false && mode=='edit' && canBeBillable() && scheduleInput.billableSchedule!=1\" (click)=\"ProceedBill()\">\r\n          Proceed To Bill\r\n        </button>\r\n        <button type=\"button\" class=\"btn btn-primary\"\r\n          *ngIf=\"mode=='edit' && canBeBillable() && scheduleInput.billableSchedule==1\" (click)=\"CancelBill()\">\r\n          Cancel Bill\r\n        </button>\r\n        <button type=\"submit\" class=\"btn btn-primary\" (click)=\"SaveClickEvent()\"\r\n          *ngIf=\"!enableCheckIn || scheduleInput.STATUS==0\"\r\n          [disabled]=\"multipleServiceList.length==0 || scheduleInput.CUSTOMER==null || scheduleInput.DATE==null ||disableScheduleInput || scheduleInput.billableSchedule==1\">Submit</button>\r\n        <button type=\"button\" class=\"btn btn-danger\" (click)=\"DeleteConformation()\"\r\n          *ngIf=\"mode=='edit'&& disableScheduleInput==false && scheduleInput.billableSchedule!=1 && (!enableCheckIn || scheduleInput.STATUS==0)\">Delete</button>\r\n        <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Back</button>\r\n      </div>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<ba-modal #childEmployeeModal title=\"Replace Therapist\" size=\"sm\">\r\n  <div>\r\n    <label for=\"employeeselectForEdit\">Available Therapist</label>\r\n    <select class=\"form-control\" name=\"employeeselectForEdit\" id=\"employeeselectForEdit\"\r\n      [(ngModel)]=\"ReplacedEmployee\">\r\n      <option *ngFor=\"let em of replacementEmployeeList\" [ngValue]=\"em\">{{em.NAME}}</option>\r\n    </select>\r\n  </div>\r\n  <div class=\"modal-footer\">\r\n    <button class=\"btn btn-primary confirm-btn\" (click)=\"saveChildModal(ReplacedEmployee)\">Save changes</button>\r\n  </div>\r\n  \r\n</ba-modal>\r\n<ba-modal #childModal title=\"Information\" size=\"sm\">\r\n  {{DialogMessage}}\r\n  \r\n  \r\n</ba-modal>\r\n<ba-modal #deleteModal title=\"Warning\" size=\"sm\">\r\n  <div>Once you delete the schedule you can't recover it back. Are U sure you want to delete this Schedule?</div>\r\n  <div class=\"modal-footer\">\r\n    <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\">Yes</button>\r\n    <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n  </div>\r\n  \r\n</ba-modal>"
 
 /***/ }),
 
@@ -2960,6 +3470,7 @@ var ScheduleInput = /** @class */ (function () {
         this.empSetting = {};
         this.serviceSetting = {};
         this.roomSetting = {};
+        this.transferList = [];
         var setting = this._authService.getSetting();
         this.IntegrateTreatmentWithAppointment = setting.IntegrateTreatmentWithAppointment;
         if (!!this.activatedRoute.snapshot.params['returnUrl']) {
@@ -3050,7 +3561,7 @@ var ScheduleInput = /** @class */ (function () {
             this._scheduleInputService.getGUID().subscribe(function (respose) {
                 _this.scheduleInput.GUID = respose.guid;
             });
-            this.scheduleInput.DATE = new Date();
+            this.scheduleInput.DATE = new Date().toLocaleDateString('en-CA');
             this.scheduleInput.STATUS = 0;
             this.changeEntryDate(this.scheduleInput.DATE, 'AD');
         }
@@ -3087,7 +3598,14 @@ var ScheduleInput = /** @class */ (function () {
             else
                 _this.employeeList = branchEmp;
             if (sEmp) {
-                _this.multipleServiceObj.EMPLOYEE = _this.employeeList.filter(function (x) { return sEmp.some(function (emp) { return x.EMPLOYEEID == emp; }); });
+                var emp = _this.employeeList.filter(function (x) { return sEmp.some(function (emp) { return x.EMPLOYEEID == emp.EMPLOYEEID; }); });
+                if (emp.length < sEmp.length) {
+                    sEmp.forEach(function (x) {
+                        if (!_this.employeeList.some(function (a) { return a.EMPLOYEEID == x.EMPLOYEEID; }))
+                            _this.employeeList.push(x);
+                    });
+                }
+                _this.multipleServiceObj.EMPLOYEE = _this.employeeList.filter(function (x) { return sEmp.some(function (emp) { return x.EMPLOYEEID == emp.EMPLOYEEID; }); });
             }
         });
     };
@@ -3249,7 +3767,7 @@ var ScheduleInput = /** @class */ (function () {
     };
     ScheduleInput.prototype.AddClickEvent = function () {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
-            var serviceGuid, isEmpAvailable, noOfService, i, emp, room, data, result, i, emp, room, isAddOn, e_1;
+            var serviceGuid, isEmpAvailable, noOfService, scheduleDateString, _loop_1, this_1, i, state_1, i, emp, room, isAddOn, e_1;
             var _this = this;
             return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
                 switch (_a.label) {
@@ -3283,31 +3801,60 @@ var ScheduleInput = /** @class */ (function () {
                             return [2 /*return*/];
                         this.showMessage("Validting Data please wait.", -1);
                         noOfService = this.multipleServiceObj.PAX * this.multipleServiceObj.SERVICE.noOfEmployees;
+                        scheduleDateString = this.scheduleInput.DATE instanceof Date
+                            ? this.scheduleInput.DATE.toISOString().split('T')[0]
+                            : String(this.scheduleInput.DATE).substring(0, 10);
+                        _loop_1 = function (i) {
+                            var emp, room, transfer, transferDateString, data, result;
+                            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                                switch (_a.label) {
+                                    case 0:
+                                        emp = this_1.multipleServiceObj.EMPLOYEE[i] || this_1.multipleServiceObj.EMPLOYEE[0];
+                                        room = this_1.multipleServiceObj.ROOM[i] || this_1.multipleServiceObj.ROOM[0];
+                                        transfer = this_1.transferList.find(function (x) { return x.employee.EMPLOYEEID === emp.EMPLOYEEID; });
+                                        if (transfer) {
+                                            transferDateString = String(transfer.date).substring(0, 10);
+                                            if (transferDateString === scheduleDateString) {
+                                                // Validate if schedule time is within transfer time range
+                                                if (!this_1.isTimeWithinTransfer(this_1.multipleServiceObj.STARTTIME, this_1.multipleServiceObj.ENDTIME, transfer.startTime, transfer.endTime)) {
+                                                    this_1.showMessage("Schedule time must be within transfer time range (" + transfer.startTime + " - " + transfer.endTime + ") for employee " + emp.NAME + ".");
+                                                    return [2 /*return*/, { value: void 0 }];
+                                                }
+                                            }
+                                        }
+                                        data = {
+                                            Date: this_1.scheduleInput.DATE,
+                                            Service: this_1.multipleServiceObj.SERVICE,
+                                            CustomerId: this_1.scheduleInput.CUSTOMER.CUSID,
+                                            EmployeeId: emp.EMPLOYEEID,
+                                            RoomId: room.ROOMID,
+                                            STARTTIME: this_1.multipleServiceObj.STARTTIME,
+                                            ENDTIME: this_1.multipleServiceObj.ENDTIME,
+                                            StartTime: this_1.StartTime,
+                                            EndTime: this_1.EndTime,
+                                            GUID: this_1.scheduleInput.GUID,
+                                            SNO: this_1.SNO + 1,
+                                            ScheduleId: this_1.scheduleInput.ScheduleId,
+                                            serviceGuid: serviceGuid,
+                                            branchId: this_1.scheduleInput.branch.branchId
+                                        };
+                                        return [4 /*yield*/, this_1.masterService.postMasterAsync('validate', data, "/ValidateSchedule")];
+                                    case 1:
+                                        result = _a.sent();
+                                        return [2 /*return*/];
+                                }
+                            });
+                        };
+                        this_1 = this;
                         i = 0;
                         _a.label = 3;
                     case 3:
                         if (!(i < noOfService)) return [3 /*break*/, 6];
-                        emp = this.multipleServiceObj.EMPLOYEE[i] || this.multipleServiceObj.EMPLOYEE[0];
-                        room = this.multipleServiceObj.ROOM[i] || this.multipleServiceObj.ROOM[0];
-                        data = {
-                            Date: this.scheduleInput.DATE,
-                            Service: this.multipleServiceObj.SERVICE,
-                            CustomerId: this.scheduleInput.CUSTOMER.CUSID,
-                            EmployeeId: emp.EMPLOYEEID,
-                            RoomId: room.ROOMID,
-                            STARTTIME: this.multipleServiceObj.STARTTIME,
-                            ENDTIME: this.multipleServiceObj.ENDTIME,
-                            StartTime: this.StartTime,
-                            EndTime: this.EndTime,
-                            GUID: this.scheduleInput.GUID,
-                            SNO: this.SNO + 1,
-                            ScheduleId: this.scheduleInput.ScheduleId,
-                            serviceGuid: serviceGuid,
-                            branchId: this.scheduleInput.branch.branchId
-                        };
-                        return [4 /*yield*/, this.masterService.postMasterAsync('validate', data, "/ValidateSchedule")];
+                        return [5 /*yield**/, _loop_1(i)];
                     case 4:
-                        result = _a.sent();
+                        state_1 = _a.sent();
+                        if (typeof state_1 === "object")
+                            return [2 /*return*/, state_1.value];
                         _a.label = 5;
                     case 5:
                         i++;
@@ -3357,7 +3904,7 @@ var ScheduleInput = /** @class */ (function () {
             this.multipleServiceObj = tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"]({}, this.multipleServiceObj, { SERVICE: this.ServiceList.find(function (x) { return x.SERVICEID == selectedSchedule_1.SERVICE.SERVICEID; }), SNO: selectedSchedule_1.SNO, CUSTOMERID: selectedSchedule_1.CUSTOMERID, STARTTIME: selectedSchedule_1.STARTTIME, ENDTIME: selectedSchedule_1.ENDTIME, EMPLOYEE_BOOKED_BYCUSTOMER: selectedSchedule_1.EMPLOYEE_BOOKED_BYCUSTOMER, RATE: selectedSchedule_1.RATE, TYPE: selectedSchedule_1.TYPE, PAX: selectedSchedule_1.PAX });
             var empList = this.multipleServiceList
                 .filter(function (x) { return x.guid == selectedSchedule_1.guid; })
-                .map(function (x) { return x.EMPLOYEE.EMPLOYEEID; });
+                .map(function (x) { return x.EMPLOYEE; });
             console.log("empList", empList);
             this.paxChanged(this.multipleServiceObj.PAX, this.multipleServiceObj.SERVICE.noOfEmployees);
             this.getEmployees(this.scheduleInput.branch.branchId, this.multipleServiceObj.SERVICE, empList);
@@ -3538,7 +4085,9 @@ var ScheduleInput = /** @class */ (function () {
             employeeId: 0,
             roomId: 0
         };
-        if (this.multipleServiceObj.EMPLOYEE)
+        if (Array.isArray(this.multipleServiceObj.EMPLOYEE) && this.multipleServiceObj.EMPLOYEE.length == 1)
+            model.employeeId = this.multipleServiceObj.EMPLOYEE[0].EMPLOYEEID;
+        else if (this.multipleServiceObj.EMPLOYEE)
             model.employeeId = this.multipleServiceObj.EMPLOYEE.EMPLOYEEID;
         if (this.multipleServiceObj.ROOM)
             model.roomId = this.multipleServiceObj.ROOM.ROOMID;
@@ -3576,6 +4125,60 @@ var ScheduleInput = /** @class */ (function () {
         this.serviceSetting = Object.assign({}, this.serviceSetting, { disabled: false });
         this.empSetting = Object.assign({}, this.empSetting, { disabled: false });
         this.roomSetting = Object.assign({}, this.roomSetting, { disabled: false });
+    };
+    // Convert time string (HH:MM AM/PM) to minutes since midnight
+    ScheduleInput.prototype.timeToMinutes = function (timeStr) {
+        if (!timeStr)
+            return 0;
+        var parts = timeStr.split(' ');
+        var timePart = parts[0];
+        var ampm = parts[1].toUpperCase();
+        var _a = tslib__WEBPACK_IMPORTED_MODULE_0__["__read"](timePart.split(':').map(Number), 2), hours = _a[0], minutes = _a[1];
+        var totalMinutes = hours * 60 + minutes;
+        if (ampm === 'PM' && hours !== 12) {
+            totalMinutes += 12 * 60;
+        }
+        else if (ampm === 'AM' && hours === 12) {
+            totalMinutes -= 12 * 60;
+        }
+        return totalMinutes;
+    };
+    // Convert 24-hour time string (HH:MM) to minutes since midnight
+    ScheduleInput.prototype.time24ToMinutes = function (timeStr) {
+        if (!timeStr)
+            return 0;
+        var _a = tslib__WEBPACK_IMPORTED_MODULE_0__["__read"](timeStr.split(':').map(Number), 2), hours = _a[0], minutes = _a[1];
+        return hours * 60 + minutes;
+    };
+    // Check if schedule time is within transfer time range
+    ScheduleInput.prototype.isTimeWithinTransfer = function (scheduleStartTime, scheduleEndTime, transferStartTime, transferEndTime) {
+        var scheduleStart = this.timeToMinutes(scheduleStartTime);
+        var scheduleEnd = this.timeToMinutes(scheduleEndTime);
+        var transferStart = this.time24ToMinutes(transferStartTime);
+        var transferEnd = this.time24ToMinutes(transferEndTime);
+        // Check if schedule time overlaps with transfer time
+        return scheduleStart >= transferStart && scheduleEnd <= transferEnd;
+    };
+    ScheduleInput.prototype.addTransferEmp = function () {
+        var _this = this;
+        var dateString = this.scheduleInput.DATE instanceof Date
+            ? this.scheduleInput.DATE.toISOString().split('T')[0]
+            : String(this.scheduleInput.DATE);
+        this.masterRepo.GetTransferEmp(this.scheduleInput.branch.branchId, dateString, this.selectedService[0].SERVICEID).subscribe(function (data) {
+            var count = 0;
+            data.forEach(function (emp) {
+                if (!_this.employeeList.some(function (existingEmp) { return existingEmp.EMPLOYEEID === emp.employee.EMPLOYEEID; })) {
+                    _this.employeeList.push(emp.employee);
+                    _this.transferList.push(emp);
+                    count++;
+                }
+            });
+            if (count > 0)
+                _this.showMessage(count + " employee added.", 1000);
+            else
+                _this.showMessage("Transferred employee not available.", 1000);
+            console.log(count);
+        }, function (error) { alert(error); });
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('childEmployeeModal'),
@@ -4995,6 +5598,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_AppointmentRequest_requestDetail_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/AppointmentRequest/requestDetail.component */ "./src/app/pages/schedule/components/AppointmentRequest/requestDetail.component.ts");
 /* harmony import */ var _components_CheckIn_kot_print_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/CheckIn/kot-print.component */ "./src/app/pages/schedule/components/CheckIn/kot-print.component.ts");
 /* harmony import */ var _components_ScheduleInput_TimelineContextMenu_timelineContextMenu_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/ScheduleInput/TimelineContextMenu/timelineContextMenu.component */ "./src/app/pages/schedule/components/ScheduleInput/TimelineContextMenu/timelineContextMenu.component.ts");
+/* harmony import */ var _components_EmployeeTransfer_TransferList_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/EmployeeTransfer/TransferList.component */ "./src/app/pages/schedule/components/EmployeeTransfer/TransferList.component.ts");
+/* harmony import */ var _components_EmployeeTransfer_employee_transfer_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/EmployeeTransfer/employee-transfer.component */ "./src/app/pages/schedule/components/EmployeeTransfer/employee-transfer.component.ts");
+
+
 
 
 
@@ -5052,7 +5659,7 @@ var ScheduleModule = /** @class */ (function () {
                 _components_TreatmentEntry_Treatment_component__WEBPACK_IMPORTED_MODULE_12__["TreatmentEntry"], _components_FollowUp_followup_component__WEBPACK_IMPORTED_MODULE_13__["FollowUp"], _components_CustomerSelect_customerSelect_component__WEBPACK_IMPORTED_MODULE_16__["CustomerSelect"], _components_TreatmentEntry_TreatmentList_component__WEBPACK_IMPORTED_MODULE_17__["TreatmentList"], _components_TreatmentEntry_TreatmentDetails_component__WEBPACK_IMPORTED_MODULE_18__["TreatmentDetails"],
                 _components_CustomerSelect_customerSelect_pipe__WEBPACK_IMPORTED_MODULE_19__["CustomerPipe"], _components_CustomerSelect_mobileSelect_pipe__WEBPACK_IMPORTED_MODULE_20__["MobilePipe"], _components_ScheduleSearch_customer_all_schedule_component__WEBPACK_IMPORTED_MODULE_22__["CustomerAllSchedule"],
                 _components_CheckIn_checkIn_component__WEBPACK_IMPORTED_MODULE_23__["CheckIn"], _components_CheckOut_CheckInList_component__WEBPACK_IMPORTED_MODULE_24__["CheckInList"], _components_CheckOut_CheckOut_component__WEBPACK_IMPORTED_MODULE_25__["CheckOutEntry"], _components_AppointmentRequest_RequestList_component__WEBPACK_IMPORTED_MODULE_27__["AppointmentRequestList"], _components_AppointmentRequest_requestDetail_component__WEBPACK_IMPORTED_MODULE_28__["AppointmentRequest"],
-                _components_CheckIn_kot_print_component__WEBPACK_IMPORTED_MODULE_29__["KOTPrintComponent"], _components_ScheduleInput_TimelineContextMenu_timelineContextMenu_component__WEBPACK_IMPORTED_MODULE_30__["TimelineContextMenuComponent"]
+                _components_CheckIn_kot_print_component__WEBPACK_IMPORTED_MODULE_29__["KOTPrintComponent"], _components_ScheduleInput_TimelineContextMenu_timelineContextMenu_component__WEBPACK_IMPORTED_MODULE_30__["TimelineContextMenuComponent"], _components_EmployeeTransfer_TransferList_component__WEBPACK_IMPORTED_MODULE_31__["TransferList"], _components_EmployeeTransfer_employee_transfer_component__WEBPACK_IMPORTED_MODULE_32__["EmployeeTransfer"]
             ],
             providers: [
                 _scheduleInput_service__WEBPACK_IMPORTED_MODULE_9__["ScheduleInputService"], _common_services_permission_guard_service__WEBPACK_IMPORTED_MODULE_10__["CanActivateTeam"], _components_CheckIn_kot_print_component__WEBPACK_IMPORTED_MODULE_29__["KOTPrintComponent"]
@@ -5091,6 +5698,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_CheckOut_CheckOut_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/CheckOut/CheckOut.component */ "./src/app/pages/schedule/components/CheckOut/CheckOut.component.ts");
 /* harmony import */ var _components_AppointmentRequest_RequestList_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/AppointmentRequest/RequestList.component */ "./src/app/pages/schedule/components/AppointmentRequest/RequestList.component.ts");
 /* harmony import */ var _components_AppointmentRequest_requestDetail_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/AppointmentRequest/requestDetail.component */ "./src/app/pages/schedule/components/AppointmentRequest/requestDetail.component.ts");
+/* harmony import */ var _components_EmployeeTransfer_TransferList_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/EmployeeTransfer/TransferList.component */ "./src/app/pages/schedule/components/EmployeeTransfer/TransferList.component.ts");
+/* harmony import */ var _components_EmployeeTransfer_employee_transfer_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/EmployeeTransfer/employee-transfer.component */ "./src/app/pages/schedule/components/EmployeeTransfer/employee-transfer.component.ts");
+
+
 
 
 
@@ -5121,8 +5732,9 @@ var routes = [
             { path: 'treatment-list', component: _components_TreatmentEntry_TreatmentList_component__WEBPACK_IMPORTED_MODULE_7__["TreatmentList"], canActivate: [_common_services_permission_guard_service__WEBPACK_IMPORTED_MODULE_1__["CanActivateTeam"]] },
             { path: 'treatment-details', component: _components_TreatmentEntry_TreatmentDetails_component__WEBPACK_IMPORTED_MODULE_8__["TreatmentDetails"], canActivate: [_common_services_permission_guard_service__WEBPACK_IMPORTED_MODULE_1__["CanActivateTeam"]] },
             { path: 'appointment-requests', component: _components_AppointmentRequest_RequestList_component__WEBPACK_IMPORTED_MODULE_12__["AppointmentRequestList"], canActivate: [_common_services_permission_guard_service__WEBPACK_IMPORTED_MODULE_1__["CanActivateTeam"]] },
-            { path: 'request-detail', component: _components_AppointmentRequest_requestDetail_component__WEBPACK_IMPORTED_MODULE_13__["AppointmentRequest"], canActivate: [_common_services_permission_guard_service__WEBPACK_IMPORTED_MODULE_1__["CanActivateTeam"]] }
-            // { path: 'schedule/scheInput', component: Schedule },
+            { path: 'request-detail', component: _components_AppointmentRequest_requestDetail_component__WEBPACK_IMPORTED_MODULE_13__["AppointmentRequest"], canActivate: [_common_services_permission_guard_service__WEBPACK_IMPORTED_MODULE_1__["CanActivateTeam"]] },
+            { path: 'employee-transfer', component: _components_EmployeeTransfer_TransferList_component__WEBPACK_IMPORTED_MODULE_14__["TransferList"], canActivate: [_common_services_permission_guard_service__WEBPACK_IMPORTED_MODULE_1__["CanActivateTeam"]] },
+            { path: 'transfer', component: _components_EmployeeTransfer_employee_transfer_component__WEBPACK_IMPORTED_MODULE_15__["EmployeeTransfer"], canActivate: [_common_services_permission_guard_service__WEBPACK_IMPORTED_MODULE_1__["CanActivateTeam"]] },
         ]
     },
 ];
@@ -5238,4 +5850,4 @@ var ScheduleInputService = /** @class */ (function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=schedule-schedule-module.d5802232ee869bf04f28.js.map
+//# sourceMappingURL=schedule-schedule-module.af71391b116436ee9ff2.js.map

@@ -1458,6 +1458,7 @@ var MasterRepo = /** @class */ (function () {
         this._diseaseList = [];
         this._medicationList = [];
         this._holidayList = [];
+        this._transferList = [];
         this.empListHttp$ = this.http.get(this.apiUrl + '/getEmployeeList', this.getRequestOption());
         this.cusListHttp$ = this.http.get(this.apiUrl + '/getCustomerList', this.getRequestOption());
         this.roomListHttp$ = this.http.get(this.apiUrl + '/getRoomList', this.getRequestOption());
@@ -1659,6 +1660,12 @@ var MasterRepo = /** @class */ (function () {
     };
     MasterRepo.prototype.GetAllCheckIns = function (branchId) {
         return this.http.post(this.apiUrl + "/GetCheckIns", branchId, this.getRequestOption());
+    };
+    MasterRepo.prototype.GetEmpTransferList = function (branches) {
+        return this.http.post(this.apiUrl + "/GetTransferList", branches, this.getRequestOption());
+    };
+    MasterRepo.prototype.GetTransferEmp = function (branch, date, serviceId) {
+        return this.http.get(this.apiUrl + ("/GetTransferList?branch=" + branch + "&date=" + date + "&serviceId=" + serviceId), this.getRequestOption());
     };
     MasterRepo.prototype.getTreatmentHistory = function (cusid) {
         return this.http.get(this.apiUrl + '/getPatientTreatmentHistory?id=' + cusid + '&currentPage=1&maxResultCount=10', this.getRequestOption());
@@ -3274,7 +3281,8 @@ var PAGES_MENU = [
                     { path: 'check-in-list', data: { menu: { title: 'Check Out' } } },
                     { path: 'treatment-list', data: { menu: { title: 'Treatment Entry' } } },
                     { path: 'treatment-details', data: { menu: { title: 'Treatment Details' } } },
-                    { path: 'appointment-requests', data: { menu: { title: "Appointment Requests" } } }
+                    { path: 'appointment-requests', data: { menu: { title: "Appointment Requests" } } },
+                    { path: 'employee-transfer', data: { menu: { title: "Employee Transfer" } } }
                 ]
                 //{ path: 'followup', data: { menu: { title: 'Followup Appointment' } } }]
             },
@@ -6924,4 +6932,4 @@ module.exports = __webpack_require__(/*! D:\Projects\Minor Projects\AppointX\App
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.7014e5ac8406e7b3bb43.js.map
+//# sourceMappingURL=main.aa00518b726432f971b9.js.map

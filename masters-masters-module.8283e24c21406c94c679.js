@@ -1899,7 +1899,7 @@ var HolidayEntryComponent = /** @class */ (function () {
             this.router.navigate(['/pages/masters/holiday/detail-holiday', { mode: "add", returnUrl: this.router.url }]);
         }
         else {
-            this.DialogMessage = "You are not authorized to add Medication.";
+            this.DialogMessage = "You are not authorized to add Holiday.";
             this.childModal.show();
         }
     };
@@ -3791,9 +3791,9 @@ var SeriesSalesList = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/pages/masters/components/Services/AddSerivce.component.html":
+/***/ "./src/app/pages/masters/components/Services/AddService.component.html":
 /*!*****************************************************************************!*\
-  !*** ./src/app/pages/masters/components/Services/AddSerivce.component.html ***!
+  !*** ./src/app/pages/masters/components/Services/AddService.component.html ***!
   \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -4035,7 +4035,7 @@ var AddService = /** @class */ (function () {
     AddService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'addService',
-            template: __webpack_require__(/*! ./AddSerivce.component.html */ "./src/app/pages/masters/components/Services/AddSerivce.component.html"),
+            template: __webpack_require__(/*! ./AddService.component.html */ "./src/app/pages/masters/components/Services/AddService.component.html"),
             providers: [],
             styles: ["\n        input{\n            color: black;\n        }\n    "],
         }),
@@ -4481,4 +4481,4 @@ var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forCh
 /***/ })
 
 }]);
-//# sourceMappingURL=masters-masters-module.f0ca97b35756ff472587.js.map
+//# sourceMappingURL=masters-masters-module.8283e24c21406c94c679.js.map
