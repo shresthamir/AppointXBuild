@@ -619,41 +619,6 @@ var BranchSettingService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/common/services/state.service.ts":
-/*!**************************************************!*\
-  !*** ./src/app/common/services/state.service.ts ***!
-  \**************************************************/
-/*! exports provided: StateService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StateService", function() { return StateService; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-
-
-var StateService = /** @class */ (function () {
-    function StateService() {
-        // Store the form data here
-        this.stateData = new Map();
-    }
-    StateService.prototype.setStateData = function (key, data) {
-        this.stateData.set(key, data);
-    };
-    StateService.prototype.getStateData = function (key) {
-        return this.stateData.get(key);
-    };
-    StateService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' })
-    ], StateService);
-    return StateService;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/pages/schedule/components/AppointmentRequest/RequestList.component.html":
 /*!*****************************************************************************************!*\
   !*** ./src/app/pages/schedule/components/AppointmentRequest/RequestList.component.html ***!
@@ -5854,4 +5819,4 @@ var ScheduleInputService = /** @class */ (function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=schedule-schedule-module.86cdfbfb105bdb077103.js.map
+//# sourceMappingURL=schedule-schedule-module.3df86082291a17bb87e7.js.map

@@ -2645,6 +2645,44 @@ var SessionStorage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/common/services/state.service.ts":
+/*!**************************************************!*\
+  !*** ./src/app/common/services/state.service.ts ***!
+  \**************************************************/
+/*! exports provided: StateService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StateService", function() { return StateService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var StateService = /** @class */ (function () {
+    function StateService() {
+        // Store the form data here
+        this.stateData = new Map();
+    }
+    StateService.prototype.setStateData = function (key, data) {
+        this.stateData.set(key, data);
+    };
+    StateService.prototype.getStateData = function (key) {
+        return this.stateData.get(key);
+    };
+    StateService.prototype.clearStateData = function () {
+        this.stateData.clear();
+    };
+    StateService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' })
+    ], StateService);
+    return StateService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/common/services/sw-update.service.ts":
 /*!******************************************************!*\
   !*** ./src/app/common/services/sw-update.service.ts ***!
@@ -5115,6 +5153,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_repositories__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../common/repositories */ "./src/app/common/repositories/index.ts");
 /* harmony import */ var _app_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../app.service */ "./src/app/app.service.ts");
 /* harmony import */ var src_app_common_services_cache_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/common/services/cache.service */ "./src/app/common/services/cache.service.ts");
+/* harmony import */ var src_app_common_services_state_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! src/app/common/services/state.service */ "./src/app/common/services/state.service.ts");
+
 
 
 
@@ -5125,13 +5165,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var BaPageTop = /** @class */ (function () {
-    function BaPageTop(_state, _authService, appService, router, cache, service) {
+    function BaPageTop(_state, _authService, appService, router, cache, stateService, service) {
         var _this = this;
         this._state = _state;
         this._authService = _authService;
         this.appService = appService;
         this.router = router;
         this.cache = cache;
+        this.stateService = stateService;
         this.service = service;
         this.hasNewNotification = false;
         this.showLogoutModal = false;
@@ -5188,6 +5229,7 @@ var BaPageTop = /** @class */ (function () {
         this.cache.clearAll();
         this.router.navigate(['/login']);
         this.closeLogoutModal();
+        this.stateService.clearStateData();
     };
     BaPageTop.prototype.changePassword = function () {
         this.router.navigate(['change-password']);
@@ -5211,6 +5253,7 @@ var BaPageTop = /** @class */ (function () {
             _app_service__WEBPACK_IMPORTED_MODULE_7__["AppState"],
             _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"],
             src_app_common_services_cache_service__WEBPACK_IMPORTED_MODULE_8__["TTLCacheService"],
+            src_app_common_services_state_service__WEBPACK_IMPORTED_MODULE_9__["StateService"],
             _common_repositories__WEBPACK_IMPORTED_MODULE_6__["MasterRepo"]])
     ], BaPageTop);
     return BaPageTop;
@@ -6932,4 +6975,4 @@ module.exports = __webpack_require__(/*! D:\Projects\Minor Projects\AppointX\App
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.aa00518b726432f971b9.js.map
+//# sourceMappingURL=main.c4cb8a3944b82103005e.js.map
