@@ -2657,15 +2657,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StateService", function() { return StateService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _permission__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./permission */ "./src/app/common/services/permission/index.ts");
+
 
 
 var StateService = /** @class */ (function () {
-    function StateService() {
-        // Store the form data here
+    function StateService(authService) {
+        this.authService = authService;
         this.stateData = new Map();
     }
+    // Store the form data here
     StateService.prototype.setStateData = function (key, data) {
-        this.stateData.set(key, data);
+        if (this.authService.getUserProfile())
+            this.stateData.set(key, data);
     };
     StateService.prototype.getStateData = function (key) {
         return this.stateData.get(key);
@@ -2674,7 +2678,8 @@ var StateService = /** @class */ (function () {
         this.stateData.clear();
     };
     StateService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' })
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_permission__WEBPACK_IMPORTED_MODULE_2__["AuthService"]])
     ], StateService);
     return StateService;
 }());
@@ -5420,7 +5425,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!*******************************************!*\
   !*** ./src/app/theme/components/index.ts ***!
   \*******************************************/
-/*! exports provided: BaPageTop, BaModalComponent, BaMsgCenter, BaSidebar, BaMenuItem, BaMenu, BaContentTop, BaCard, BaAmChart, BaChartistChart, BaBackTop, BaFullCalendar, BaCheckbox, BaMultiCheckbox */
+/*! exports provided: BaPageTop, BaMsgCenter, BaSidebar, BaMenuItem, BaMenu, BaContentTop, BaCard, BaAmChart, BaChartistChart, BaBackTop, BaFullCalendar, BaCheckbox, BaMultiCheckbox, BaModalComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6975,4 +6980,4 @@ module.exports = __webpack_require__(/*! D:\Projects\Minor Projects\AppointX\App
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.c4cb8a3944b82103005e.js.map
+//# sourceMappingURL=main.b6e43b3d9dc966060cae.js.map
