@@ -5425,7 +5425,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!*******************************************!*\
   !*** ./src/app/theme/components/index.ts ***!
   \*******************************************/
-/*! exports provided: BaPageTop, BaMsgCenter, BaSidebar, BaMenuItem, BaMenu, BaContentTop, BaCard, BaAmChart, BaChartistChart, BaBackTop, BaFullCalendar, BaCheckbox, BaMultiCheckbox, BaModalComponent */
+/*! exports provided: BaPageTop, BaModalComponent, BaMsgCenter, BaSidebar, BaMenuItem, BaMenu, BaContentTop, BaCard, BaAmChart, BaChartistChart, BaBackTop, BaFullCalendar, BaCheckbox, BaMultiCheckbox */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
