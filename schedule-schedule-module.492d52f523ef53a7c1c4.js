@@ -3778,8 +3778,10 @@ var ScheduleInput = /** @class */ (function () {
                             return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
                                 switch (_a.label) {
                                     case 0:
-                                        emp = this_1.multipleServiceObj.EMPLOYEE[i] || this_1.multipleServiceObj.EMPLOYEE[0];
+                                        emp = this_1.multipleServiceObj.EMPLOYEE[i];
                                         room = this_1.multipleServiceObj.ROOM[i] || this_1.multipleServiceObj.ROOM[0];
+                                        if (!emp)
+                                            return [2 /*return*/, "continue"];
                                         transfer = this_1.transferList.find(function (x) { return x.employee.EMPLOYEEID === emp.EMPLOYEEID; });
                                         if (transfer) {
                                             transferDateString = String(transfer.date).substring(0, 10);
@@ -3830,8 +3832,10 @@ var ScheduleInput = /** @class */ (function () {
                         return [3 /*break*/, 3];
                     case 6:
                         for (i = 0; i < noOfService; i++) {
-                            emp = this.multipleServiceObj.EMPLOYEE[i] || this.multipleServiceObj.EMPLOYEE[0];
+                            emp = this.multipleServiceObj.EMPLOYEE[i];
                             room = this.multipleServiceObj.ROOM[i] || this.multipleServiceObj.ROOM[0];
+                            if (!emp)
+                                continue;
                             isAddOn = i % this.multipleServiceObj.SERVICE.noOfEmployees != 0;
                             this.multipleServiceList.push(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"]({}, this.multipleServiceObj, { SNO: ++this.SNO, EMPLOYEE: emp, ROOM: room, isAddOn: isAddOn, serviceGuid: serviceGuid }));
                         }
@@ -5819,4 +5823,4 @@ var ScheduleInputService = /** @class */ (function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=schedule-schedule-module.e6d2419de5d58204310c.js.map
+//# sourceMappingURL=schedule-schedule-module.492d52f523ef53a7c1c4.js.map
