@@ -3056,7 +3056,12 @@ var MasterSchedule = /** @class */ (function () {
         }
         this.changeEntryDate(this.ScheduleDateAD, 'AD');
         this.appService.notification$.subscribe(function (data) {
-            _this.OnDateChangeEvent(new Date());
+            if (data.nType === 0 && data.Data.message === 'New Appointment') {
+                debugger;
+                if (data.Data.data.Date === _this.ScheduleDateAD && data.Data.data.branchId === _this.selectedBranch[0].branchId) {
+                    _this.OnDateChangeEvent(_this.ScheduleDateAD);
+                }
+            }
         });
     };
     MasterSchedule.prototype.customerSearchChange = function (event) {
@@ -5823,4 +5828,4 @@ var ScheduleInputService = /** @class */ (function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=schedule-schedule-module.492d52f523ef53a7c1c4.js.map
+//# sourceMappingURL=schedule-schedule-module.97f3414465bc5fe50889.js.map

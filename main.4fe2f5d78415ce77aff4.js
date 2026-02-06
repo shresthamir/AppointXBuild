@@ -999,6 +999,8 @@ var AppComponent = /** @class */ (function () {
         this.disableDateService = disableDateService;
         this.swUpdateService = swUpdateService;
         this.isMenuCollapsed = false;
+        this.channel = new BroadcastChannel('appointment_sse');
+        this.isLeader = !localStorage.getItem('sse_leader');
         this.eventSource = null;
         this.reconnectInterval = 5000; // 5 seconds
         themeConfig.config();
@@ -1045,44 +1047,42 @@ var AppComponent = /** @class */ (function () {
     };
     AppComponent.prototype.listenToAppointmentNotifications = function () {
         var _this = this;
-        if (this.eventSource) {
-            this.eventSource.close();
+        if (this.isLeader) {
+            localStorage.setItem('sse_leader', 'true');
+            var url_1 = this._state.getGlobalSetting('apiUrl')[0] +
+                '/Events/AppointmentNotification';
+            this.zone.runOutsideAngular(function () {
+                _this.eventSource = new EventSource(url_1);
+                _this.eventSource.onmessage = function (event) {
+                    _this.channel.postMessage(event.data);
+                };
+                _this.eventSource.onerror = function () {
+                    _this.cleanup();
+                    setTimeout(function () { return _this.listenToAppointmentNotifications(); }, 3000);
+                };
+            });
         }
-        var url = this._state.getGlobalSetting("apiUrl")[0] + "/Events/AppointmentNotification";
-        this.eventSource = new EventSource(url);
-        //use eventsource and ngzone for SSE
-        this.eventSource.onmessage = function (event) {
+        // ALL tabs listen here
+        this.channel.onmessage = function (msg) {
+            console.log('message received from SSE', msg.data);
             _this.zone.run(function () {
-                var data = JSON.parse(event.data);
+                var data = JSON.parse(msg.data);
                 _this.appService.publishNotification(data);
             });
         };
-        this.eventSource.onerror = function (error) {
-            console.error("SSE Error:", error);
-            _this.eventSource.close();
-            _this.eventSource = null;
-            if (_this.reconnectTimeout)
-                clearTimeout(_this.reconnectTimeout);
-            _this.reconnectTimeout = setTimeout(function () {
-                console.warn("Reconnecting to SSE...");
-                _this.listenToAppointmentNotifications();
-            }, _this.reconnectInterval);
-        };
     };
-    AppComponent.prototype.stopAppointmentNotifications = function () {
+    AppComponent.prototype.cleanup = function () {
         if (this.eventSource) {
             this.eventSource.close();
             this.eventSource = null;
         }
+        localStorage.removeItem('sse_leader');
         if (this.reconnectTimeout) {
             clearTimeout(this.reconnectTimeout);
         }
     };
     AppComponent.prototype.ngOnDestroy = function () {
-        if (this.eventSource) {
-            this.eventSource.close();
-            this.stopAppointmentNotifications();
-        }
+        this.cleanup();
     };
     AppComponent.prototype.ngAfterViewInit = function () {
         var _this = this;
@@ -6980,4 +6980,4 @@ module.exports = __webpack_require__(/*! D:\Projects\Minor Projects\AppointX\App
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.b6e43b3d9dc966060cae.js.map
+//# sourceMappingURL=main.4fe2f5d78415ce77aff4.js.map
