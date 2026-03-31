@@ -1748,344 +1748,6 @@ var CheckOutEntry = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/pages/schedule/components/CustomerSelect/CustomerSelect.html":
-/*!******************************************************************************!*\
-  !*** ./src/app/pages/schedule/components/CustomerSelect/CustomerSelect.html ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<style type=\"text/css\">\n  input{\n    margin-bottom: 2px;\n  }\n</style>\n<div class=\"form-group\">\n  <label for=\"customerEntry\" [style.cursor]=\"disabled ? 'not-allowed' : 'pointer'\" style=\"font-weight:600; font-size: 14px;\"\n    (click)=\"redirectToPatient()\">{{'customer' | labelPipe}}</label>\n  <button type=\"submit\" class=\"btn \" style=\"margin-left:20px;\" (click)=\"onAddNewCustomer()\" [disabled]=\"disabled\">New</button>\n  <div class=\"row\" *ngIf=\"!CustomerEntryVisible\">\n    <div class=\"col-sm-12  col-md-3  col-lg-2 col-xxl-1\">\n      <input [(ngModel)]=\"barcode\" style=\"color:black\" type=\"text\" class=\"form-control \" name=\"cusBarcode\"\n        id=\"cusBarcode\" [readOnly]=\"mode=='edit'?true:false || disabled\" [disabled]=\"disabled\" (input)=\"onBarcodeChange($event.target.value)\"\n        placeholder=\"Barcode\">\n    </div>\n\n    <div class=\"col-sm-12 col-md-3 col-lg-2 col-xxl-1\">\n      <div style=\"position: relative;\">\n        <input type=\"text\" (change)=\"mobileChange($event)\" id=\"customerSelectMobile\" list=\"mobileList\"\n          (keyup)=\"mobile_keyup($event)\" [(ngModel)]=\"MobileInput\" class=\"form-control\" autocomplete=\"off\"\n          [disabled]=\"disabled\" placeholder=\"Mobile No\" />\n        <!-- Spinner for mobile input -->\n        <div *ngIf=\"isLoading && activeSearchType === 'mobile'\" class=\"spinner-border spinner-border-sm text-primary\"\n          role=\"status\" style=\"position: absolute; top: 40%; right: 10px;\">\n          <span class=\"sr-only\">Loading...</span>\n        </div>\n      </div>\n      <div style=\"position: absolute; background-color: white; width: 100%;\">\n        <datalist *ngIf=\"!isLoading && CustomerList && CustomerList.length > 0 && !disabled\" id=\"mobileList\">\n          <option *ngFor=\"let r of CustomerList\" [value]=\"r.MOBILE\">\n            {{r.NAME}}\n          </option>\n        </datalist>\n      </div>\n    </div>\n\n    <div class=\"col-sm-12 col-md-6 col-lg-4 col-xxl-3\">\n      <div style=\"position: relative;\">\n        <input type=\"text\" (change)=\"customerChange($event)\" (keyup)=\"customer_keyup($event)\"\n          [(ngModel)]=\"CustomerInput\" id=\"customerSelect\" list=\"customerList\" class=\"form-control\" autocomplete=\"off\"\n          [disabled]=\"disabled\" placeholder=\"{{ 'customer' | labelPipe }} Name\" />\n        <!-- Spinner for customer input -->\n        <div *ngIf=\"isLoading && activeSearchType === 'customer'\" class=\"spinner-border spinner-border-sm text-primary\"\n          role=\"status\" style=\"position: absolute; top: 40%; right: 10px;\">\n          <span class=\"sr-only\">Loading...</span>\n        </div>\n      </div>\n      <div style=\"position: absolute; background-color: white; width: 100%;\">\n        <datalist *ngIf=\"!isLoading && CustomerList && CustomerList.length > 0 && !disabled\" id=\"customerList\">\n          <option *ngFor=\"let r of CustomerList\" [value]=\"r.NAME\">\n            {{ r.NAME }}\n          </option>\n        </datalist>\n      </div>\n    </div>\n  </div>\n  <div class=\"row\"  *ngIf=\"!CustomerEntryVisible\">\n    <table id=\"tblPatientInfo\" style=\"margin-left: 15px; margin-top: 10px;\">\n      <tr>\n          <td>Membership</td>\n          <td>: {{SelectedCustomer.Membership}}</td>\n          <td>Issued Date</td>\n          <td style=\"width: 35%;\">: {{SelectedCustomer.REGDATE | date:'dd MMM yyyy'}}</td>\n      </tr>\n      <tr>\n        <td>Balance</td>\n        <td>: {{SelectedCustomer.balance}}</td>\n        <td>Expiry Date</td>\n        <td style=\"width: 35%;\">: {{SelectedCustomer.EXPDATE | date:'dd MMM yyyy'}}</td>\n    </tr>\n    </table>\n  </div>\n  \n</div>\n<div *ngIf=\"CustomerEntryVisible\" class=\"form-group\">\n  <fieldset style=\"  border: 1px solid #dcdcdc; padding:10px; margin: 0;\">\n    <form id=formId class=\"form-horizontal\" [formGroup]=\"customerForm\" (ngSubmit)=\"saveCustomer()\">\n      <div class=\"form-group row \" *ngIf=\"customerForm.contains('NAME')\">\n        <label for=\"name\" class=\"col-sm-2 form-control-label \">{{'customer' | labelPipe}} Name</label>\n        <div class=\"col-sm-6 \">\n          <input style=\"color:black\" type=\"text \" class=\"form-control \" name=\"name\" id=\"name\" formControlName=\"NAME\"\n            placeholder=\"Name \">\n          <div\n            *ngIf=\"customerForm.controls['NAME'].invalid && (isSubmitting || customerForm.controls['NAME'].dirty || customerForm.controls['NAME'].touched)\"\n            class=\"invalid-feedback d-block\">\n            <small *ngIf=\"customerForm.controls['NAME'].errors.required\">{{'customer' | labelPipe}} Name is required.</small>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"form-group row \" *ngIf=\"customerForm.contains('ADDRESS')\">\n        <label for=\"address\" class=\"col-sm-2 form-control-label \">Address</label>\n        <div class=\"col-sm-6 \">\n          <input style=\"color:black\" type=\"text \" class=\"form-control \" name=\"address\"\n            id=\"address\" placeholder=\"Address\" formControlName=\"ADDRESS\">\n          <div\n            *ngIf=\"customerForm.controls['ADDRESS'].invalid && (isSubmitting || customerForm.controls['ADDRESS'].dirty || customerForm.controls['ADDRESS'].touched)\"\n            class=\"invalid-feedback d-block\">\n            <small *ngIf=\"customerForm.controls['ADDRESS'].errors.required\">Address is required.</small>\n          </div>\n        </div>\n      </div>\n      <div class=\"form-group row\" *ngIf=\"customerForm.contains('Membership')\">\n        <label for=\"Membership\" class=\"col-sm-2 form-control-label\">Membership</label>\n        <div class=\"col-sm-6 \">\n          <select class=\"form-control\" placeholder=\"Select Membership\" formControlName=\"Membership\">\n            <option value=\"Gold\">Gold</option>\n            <option value=\"Silver\">Silver</option>\n            <option value=\"Platinum\">Platinum</option>\n          </select>\n        </div>\n      </div>\n\n      <div class=\"form-group row \" *ngIf=\"customerForm.contains('MOBILE')\">\n        <label for=\"mobile\" class=\"col-sm-2 form-control-label \">Mobile</label>\n        <div class=\"col-sm-6 \">\n          <input style=\"color:black\" type=\"number\" (input)=\"onMobileChange($event)\" formControlName=\"MOBILE\"\n            class=\"form-control \" name=\"mobile\" id=\"mobile\" placeholder=\"Mobile No\">\n            <div\n                *ngIf=\"customerForm.controls['MOBILE'].invalid && (isSubmitting || customerForm.controls['MOBILE'].dirty || customerForm.controls['MOBILE'].touched)\"\n                class=\"invalid-feedback d-block\">\n                <small *ngIf=\"customerForm.controls['MOBILE'].errors.required\">Mobile is required.</small>\n            </div>\n        </div>\n      </div>   \n      <div class=\"form-group row\" *ngIf=\"customerForm.contains('DOB')\">\n        <label for=\"DOB\" class=\"col-sm-2 form-control-label\">DOB</label>\n        <div class=\"col-sm-6 \">\n          <input  (change)=\"changeDOB($event)\" style=\"color:black\" type=\"date\"\n            class=\"form-control \" name=\"DOB\" id=\"DOB\" placeholder=\"Date of Birth \" formControlName=\"DOB\">\n          <div\n            *ngIf=\"customerForm.controls['DOB'].invalid && (isSubmitting || customerForm.controls['DOB'].dirty || customerForm.controls['DOB'].touched)\"\n            class=\"invalid-feedback d-block\">\n            <small *ngIf=\"customerForm.controls['DOB'].errors.required\">Date of Birth is required.</small>\n          </div>\n        </div>\n      </div>\n      <div class=\"form-group row\" *ngIf=\"customerForm.contains('AGE')\">\n        <label for=\"gender\" class=\"col-sm-2 form-control-label\">Age</label>\n        <div class=\"col-sm-6 \">\n          <input style=\"color:black\" type=\"text \" class=\"form-control \" name=\"age\" id=\"age\"\n            placeholder=\"Age \" formControlName=\"AGE\">\n          <div\n            *ngIf=\"customerForm.controls['AGE'].invalid && (isSubmitting || customerForm.controls['AGE'].dirty || customerForm.controls['AGE'].touched)\"\n            class=\"invalid-feedback d-block\">\n            <small *ngIf=\"customerForm.controls['AGE'].errors.required\">Age is required.</small>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"form-group row\" *ngIf=\"customerForm.contains('GENDER')\">\n        <label for=\"gender\" class=\"col-sm-2 form-control-label\">Gender</label>\n        <div class=\"col-sm-6 \">\n          <select class=\"form-control\" [(ngModel)]=\"gender\" placeholder=\"Select Gender\" formControlName=\"GENDER\">\n            <option value=\"Male\">Male</option>\n            <option value=\"Female\">Female</option>\n            <option value=\"Others\">Others</option>\n          </select>\n        </div>\n      </div>\n\n\n      \n      <div class=\"form-group row \" *ngIf=\"customerForm.contains('EMAIL')\">\n        <label for=\"email\" class=\"col-sm-2 form-control-label \">Email</label>\n        <div class=\"col-sm-6 \">\n          <input style=\"color:black\" type=\"email\" class=\"form-control \" name=\"email\"\n            id=\"email\" placeholder=\"Email Address\" formControlName=\"EMAIL\">\n          <div\n            *ngIf=\"customerForm.controls['EMAIL'].invalid && (isSubmitting || customerForm.controls['EMAIL'].dirty || customerForm.controls['EMAIL'].touched)\"\n            class=\"invalid-feedback d-block\">\n            <small *ngIf=\"customerForm.controls['EMAIL'].errors.required\">Email Address is required.</small>\n            <small *ngIf=\"customerForm.controls['EMAIL'].errors.pattern\">Invalid Email Address.</small>\n          </div>\n        </div>\n      </div>\n\n\n      \n\n      <div class=\"form-group row \" *ngIf=\"customerForm.contains('PATIENT_ID')\">\n        <label for=\"patientid\" class=\"col-sm-2 form-control-label \">{{'customer' | labelPipe}} ID</label>\n        <div class=\"col-sm-6 \">\n          <input style=\"color:black\" type=\"text \" class=\"form-control \"\n            name=\"patientid\" id=\"patientid\" placeholder=\"{{'customer' | labelPipe}} ID\" formControlName=\"PATIENT_ID\">\n        </div>\n\n      </div>\n      <div class=\"form-group row \" *ngIf=\"customerForm.contains('Patient_Weight')\">\n        <label for=\"address\" class=\"col-sm-2 form-control-label \">{{'customer' | labelPipe}} Weight</label>\n        <div class=\"col-sm-6 \">\n          <input  style=\"color:black\" type=\"text \" class=\"form-control \" name=\"patientid\"\n            id=\"patientid\" placeholder=\"{{'customer' | labelPipe}} Weight\" formControlName=\"Patient_Weight\">\n        </div>\n        \n\n      </div>\n      <div class=\"form-group row \">\n        <button type=\"submit\" [disabled]=\"false\" class=\"btn btn-primary\" \n          style=\"margin-top:3px;margin-left: 10px;\">Save\n          {{'customer' | labelPipe}}</button>\n      </div>\n    </form>\n  </fieldset>\n</div>\n\n<ba-modal #childModal title=\"Information\" size=\"sm\">\n  {{DialogMessage}}\n  \n  \n</ba-modal>"
-
-/***/ }),
-
-/***/ "./src/app/pages/schedule/components/CustomerSelect/customerSelect.component.ts":
-/*!**************************************************************************************!*\
-  !*** ./src/app/pages/schedule/components/CustomerSelect/customerSelect.component.ts ***!
-  \**************************************************************************************/
-/*! exports provided: CustomerSelect */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CustomerSelect", function() { return CustomerSelect; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _theme_components_baModal_baModal_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../theme/components/baModal/baModal.component */ "./src/app/theme/components/baModal/baModal.component.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../common/repositories/masterRepo.service */ "./src/app/common/repositories/masterRepo.service.ts");
-/* harmony import */ var _common_services_permission__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../common/services/permission */ "./src/app/common/services/permission/index.ts");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _common_services_common_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../common/services/common.service */ "./src/app/common/services/common.service.ts");
-
-
-
-
-
-
-
-
-var CustomerSelect = /** @class */ (function () {
-    function CustomerSelect(router, masterService, _authService, fb, common) {
-        this.router = router;
-        this.masterService = masterService;
-        this._authService = _authService;
-        this.fb = fb;
-        this.common = common;
-        this.DialogMessage = "Saving data please wait ...";
-        this.subcriptions = [];
-        this.CustomerList = [];
-        this.isLoading = false;
-        this.mobileNo = '';
-        this.name = '';
-        this.SelectedCustomer = {};
-        this.disabled = false;
-        this.customerChanged = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.mobileChanged = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.ncw = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.historyChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.timeout = null;
-        this.isSubmitting = false;
-        this.activeSearchType = null;
-        var setting = this._authService.getSetting();
-        this.EnableCustomerEntryInAppointment = setting.EnableCustomerEntryInAppointment;
-    }
-    CustomerSelect.prototype.ngOnInit = function () {
-        var _this = this;
-        this.CustomerList = [];
-        this.customerForm = this.fb.group({
-            CUSID: [''],
-            NAME: [''],
-            ADDRESS: [''],
-            TELNO: [''],
-            MOBILE: [''],
-            IMOBILE: [''],
-            PANNO: [''],
-            EMAIL: [''],
-            DOB: [''],
-            Age: [''],
-            PATIENT_ID: [''],
-            Patient_Weight: [''],
-            MSTATUS: [''],
-            GENDER: [''],
-            OCCUPATION: [''],
-            EMERGENCYCONTACTNAME: [''],
-            EMERGENCYCONTACTNO: [''],
-            REGDATE: [''],
-            BARCODE: [''],
-            Membership: ['']
-        });
-        this.masterService.getFormPreferences("CustomerEntryCompact").subscribe(function (result) {
-            _this.common.setFormPreference(_this.customerForm, result.fields);
-        });
-        this.updateDisabledState();
-    };
-    CustomerSelect.prototype.ngOnChanges = function (changes) {
-        if (changes['disabled']) {
-            this.updateDisabledState();
-        }
-    };
-    CustomerSelect.prototype.updateDisabledState = function () {
-        if (this.disabled) {
-            if (this.customerForm) {
-                this.customerForm.disable();
-            }
-        }
-        else {
-            if (this.customerForm) {
-                this.customerForm.enable();
-            }
-        }
-    };
-    CustomerSelect.prototype.getCustomerList = function (name, mobile) {
-        var _this = this;
-        if (name === void 0) { name = ''; }
-        if (mobile === void 0) { mobile = ''; }
-        // Prevent new API call if already loading or disabled
-        if (this.isLoading || this.disabled)
-            return;
-        var pageNumber = 1;
-        var rowCount = 10;
-        this.CustomerList = [];
-        this.isLoading = true;
-        var sub = this.masterService.getPagedCustomerList(pageNumber, rowCount, name, mobile).subscribe(function (data) {
-            var _a;
-            var customers = data.result;
-            (_a = _this.CustomerList).push.apply(_a, tslib__WEBPACK_IMPORTED_MODULE_0__["__spread"](customers));
-            _this.isLoading = false;
-            _this.masterService._customerList = _this.CustomerList;
-            _this.activeSearchType = null;
-        }, function (error) {
-            _this.isLoading = false;
-            _this.activeSearchType = null;
-            _this.masterService.handleWebError(error);
-        });
-        this.subcriptions.push(sub);
-    };
-    CustomerSelect.prototype.searchKeyup = function (event, searchType) {
-        if (!event.keyCode || this.disabled)
-            return;
-        clearTimeout(this.timeout);
-        var searchTerm = event.target.value.trim();
-        var $this = this;
-        if (searchType === 'customer') {
-            this.MobileInput = '';
-        }
-        else {
-            this.CustomerInput = '';
-        }
-        if (searchTerm.length >= 1) {
-            this.activeSearchType = searchType;
-            this.timeout = setTimeout(function () {
-                // Only proceed if the current search type is still active
-                if ($this.activeSearchType === searchType) {
-                    var name_1 = searchType === 'customer' ? searchTerm : '';
-                    var mobile = searchType === 'mobile' ? searchTerm : '';
-                    $this.getCustomerList(name_1, mobile);
-                }
-            }, 500);
-        }
-        else {
-            this.CustomerList = [];
-            this.isLoading = false;
-            this.activeSearchType = null;
-        }
-    };
-    CustomerSelect.prototype.customer_keyup = function (event) {
-        this.searchKeyup(event, 'customer');
-    };
-    CustomerSelect.prototype.mobile_keyup = function (event) {
-        this.searchKeyup(event, 'mobile');
-    };
-    CustomerSelect.prototype.customerChange = function (event) {
-        if (this.disabled)
-            return;
-        var customer = this.CustomerList.filter(function (x) { return event.target.value == x.NAME; })[0];
-        if (customer) {
-            this.MobileInput = customer.MOBILE;
-            this.SelectedCustomer = customer;
-            this.customerChanged.emit(customer);
-        }
-    };
-    CustomerSelect.prototype.mobileChange = function (event) {
-        if (this.disabled)
-            return;
-        var customer = this.CustomerList.filter(function (x) { return event.target.value == x.MOBILE; })[0];
-        if (customer) {
-            this.CustomerInput = customer.NAME;
-            this.SelectedCustomer = customer;
-            this.customerChanged.emit(customer);
-        }
-    };
-    CustomerSelect.prototype.onAddNewCustomer = function () {
-        if (this.disabled)
-            return;
-        if (this.EnableCustomerEntryInAppointment) {
-            this.CustomerEntryVisible = true;
-        }
-        else {
-            this.router.navigate(['/pages/masters/cus/detail-cus', { mode: "add", returnUrl: "/pages/schedule/scheInput" }]);
-        }
-    };
-    CustomerSelect.prototype.redirectToPatient = function () {
-        if (this.disabled)
-            return;
-        if (this.CustomerEntryVisible) {
-            this.CustomerEntryVisible = false;
-        }
-    };
-    CustomerSelect.prototype.saveCustomer = function () {
-        var _this = this;
-        try {
-            if (!this.customerForm.valid) {
-                this.isSubmitting = true;
-                return;
-            }
-            this.DialogMessage = "Saving Data please wait...";
-            this.childModal.show();
-            var cus_1 = this.customerForm.value;
-            //console.log("CUSTOMER DETAILS", cus);
-            var sub = this.masterService.postmaster("add", cus_1, "/saveCustomer")
-                .subscribe(function (data) {
-                if (data.status == 'ok') {
-                    //Displaying dialog message for save with timer of 1 secs
-                    _this.DialogMessage = "Data Saved Successfully";
-                    _this.masterService.refreshCustomerList();
-                    _this.ncw.emit(_this.common.getFormValue(_this.customerForm, "Patient_Weight"));
-                    cus_1.CUSID = data.result.cusid;
-                    _this.customerChanged.emit(cus_1);
-                    var __this_1 = _this;
-                    _this.CustomerInput = data.result.name;
-                    _this.MobileInput = data.result.mobile;
-                    setTimeout(function () {
-                        __this_1.childModal.hide();
-                        __this_1.CustomerEntryVisible = false;
-                        __this_1.mobileNo = _this.common.getFormValue(_this.customerForm, "MOBILE");
-                        __this_1.SelectedCustomer = __this_1.SelectedCustomer;
-                        __this_1.CustomerList = __this_1.masterService._customerList;
-                        __this_1.onSearchChange(__this_1.mobileNo);
-                        _this.isSubmitting = false;
-                    }, 1000);
-                }
-                else {
-                    _this.DialogMessage = data.result;
-                    setTimeout(function () {
-                        _this.childModal.hide();
-                    }, 3000);
-                }
-            }, function (error) {
-                alert(error);
-            });
-            this.subcriptions.push(sub);
-        }
-        catch (e) {
-            alert(e);
-        }
-    };
-    CustomerSelect.prototype.changeDOB = function (event) {
-        var dob = event.target.value;
-        var birthDate = new Date(dob);
-        //console.log("NEW CUSTOMER DOB", this.newcustomerDOB);
-        var timeDiff = Math.abs(Date.now() - birthDate.getTime());
-        var age = Math.floor(timeDiff / (1000 * 3600 * 24) / 365.25);
-        //console.log('AGE',age)
-        this.customerForm.get("AGE").setValue(age);
-    };
-    CustomerSelect.prototype.onMobileChange = function (e) {
-        if (e.target.value.length >= 10) {
-            e.target.value = e.target.value.substring(0, 10);
-        }
-    };
-    CustomerSelect.prototype.onSearchChange = function (searchValue) {
-        var cus = this.CustomerList.find(function (x) { return x.MOBILE == searchValue; });
-        //console.log("cus",cus);
-        if (cus != null) {
-            this.SelectedCustomer = cus;
-            this.mobileNo = cus.MOBILE;
-            this.customerChanged.emit(cus);
-        }
-        //console.log(this.SelectedCustomer)
-    };
-    CustomerSelect.prototype.onBarcodeChange = function (searchValue) {
-        if (this.disabled)
-            return;
-        var cus = this.CustomerList.find(function (x) { return x.BARCODE == searchValue; });
-        //console.log("barcode",cus);
-        if (cus != null) {
-            this.SelectedCustomer = cus;
-            this.customerChanged.emit(cus);
-        }
-    };
-    CustomerSelect.prototype.selectedCustomerChanged = function (e) {
-        this.customerChanged.emit(this.SelectedCustomer);
-        this.mobileNo = this.SelectedCustomer.MOBILE;
-    };
-    CustomerSelect.prototype.selectCustomer = function (event) {
-        //console.log('EVENT', event);
-    };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('childModal'),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _theme_components_baModal_baModal_component__WEBPACK_IMPORTED_MODULE_2__["BaModalComponent"])
-    ], CustomerSelect.prototype, "childModal", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Boolean)
-    ], CustomerSelect.prototype, "disabled", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
-    ], CustomerSelect.prototype, "customerChanged", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
-    ], CustomerSelect.prototype, "mobileChanged", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
-    ], CustomerSelect.prototype, "ncw", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
-    ], CustomerSelect.prototype, "historyChange", void 0);
-    CustomerSelect = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'customer-select',
-            styles: [__webpack_require__(/*! ../../schedule.scss */ "./src/app/pages/schedule/schedule.scss")],
-            template: __webpack_require__(/*! ./CustomerSelect.html */ "./src/app/pages/schedule/components/CustomerSelect/CustomerSelect.html")
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
-            _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_4__["MasterRepo"],
-            _common_services_permission__WEBPACK_IMPORTED_MODULE_5__["AuthService"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormBuilder"],
-            _common_services_common_service__WEBPACK_IMPORTED_MODULE_7__["CommonService"]])
-    ], CustomerSelect);
-    return CustomerSelect;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/pages/schedule/components/CustomerSelect/customerSelect.pipe.ts":
 /*!*********************************************************************************!*\
   !*** ./src/app/pages/schedule/components/CustomerSelect/customerSelect.pipe.ts ***!
@@ -2179,7 +1841,7 @@ var MobilePipe = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" [disabled]=\"disableAdd \" (click)=\"onAddClick()\" >Add Transfer</button>\r\n    \r\n    <div class=\"col-12 col-md-6 col-lg-4\">\r\n      <angular2-multiselect style=\"width: 100%;\" [data]=\"userBranches\" [settings]=\"branchSetting\"\r\n        [(ngModel)]=\"selectedBranch\" (ngModelChange)=\"branchChanged()\" aria-label=\"Select branches\">\r\n      </angular2-multiselect>\r\n    </div>\r\n  </div>\r\n  <div>\r\n  <div>\r\n    <ba-card title=\"Employee Transfer List\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteClick($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<ba-modal #childModal title=\"Information\" size=\"md\">\r\n  <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n  {{DialogMessage}}\r\n  \r\n</ba-modal>\r\n\r\n<ba-modal #deleteModal title=\"Warning\" size=\"sm\">\r\n  <div class=\"modal-body\">\r\n    Are U sure you want to delete this entry?\r\n  </div>\r\n  <div class=\"modal-footer\">\r\n    <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\" >Yes</button>\r\n    <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n  </div>\r\n</ba-modal>"
+module.exports = "<div class=\"widgets\">\r\n  <div class=\"row\">\r\n    <button class=\"btn btn-primary\" style=\"margin-bottom: 10px;margin-left:18px\" [disabled]=\"disableAdd \" (click)=\"onAddClick()\" >Add Transfer</button>\r\n    \r\n    <div class=\"col-12 col-md-6 col-lg-4\">\r\n      <angular2-multiselect style=\"width: 100%;\" [data]=\"userBranches\" [settings]=\"branchSetting\"\r\n        [(ngModel)]=\"selectedBranch\" (ngModelChange)=\"branchChanged()\" aria-label=\"Select branches\">\r\n      </angular2-multiselect>\r\n    </div>\r\n  </div>\r\n  <div>\r\n    <ba-card title=\"Employee Transfer List\" baCardClass=\"with-scroll\">\r\n      <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (edit)=\"onEditClick($event)\" (delete)=\"onDeleteClick($event)\"></ng2-smart-table>\r\n    </ba-card>\r\n  </div>\r\n</div>\r\n\r\n<ba-modal #childModal title=\"Information\" size=\"md\">\r\n  <div class=\"modal-title glyphicon glyphicon-warning-sign\" style=\"display:inline-block\"></div>\r\n  {{DialogMessage}}\r\n  \r\n</ba-modal>\r\n\r\n<ba-modal #deleteModal title=\"Warning\" size=\"sm\">\r\n  <div class=\"modal-body\">\r\n    Are U sure you want to delete this entry?\r\n  </div>\r\n  <div class=\"modal-footer\">\r\n    <button class=\"btn btn-primary confirm-btn\" (click)=\"DeleteEvent()\" >Yes</button>\r\n    <button class=\"btn btn-primary confirm-btn\" type=\"button\" (click)=\"deleteModal.hide()\">Cancel</button>\r\n  </div>\r\n</ba-modal>"
 
 /***/ }),
 
@@ -2330,7 +1992,15 @@ var TransferList = /** @class */ (function () {
     });
     Object.defineProperty(TransferList.prototype, "menuRight", {
         get: function () {
-            return this._authService.getRole.menuRights.find(function (x) { return x.menuId === 'employee-transfer'; });
+            // `find()` may return `undefined` when the menu item isn't present for the current role.
+            // Return a safe default object to avoid runtime null/undefined dereference.
+            var right = this._authService.getRole.menuRights.find(function (x) { return x.menuId === 'employee-transfer'; });
+            if (right) {
+                return right;
+            }
+            else {
+                return { menuId: 'employee-transfer', create: false, edit: false, delete: false };
+            }
         },
         enumerable: true,
         configurable: true
@@ -2422,10 +2092,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var src_app_theme_components_baModal_baModal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/theme/components/baModal/baModal.component */ "./src/app/theme/components/baModal/baModal.component.ts");
-/* harmony import */ var _common_repositories__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../common/repositories */ "./src/app/common/repositories/index.ts");
-/* harmony import */ var _common_services_disable_date_picker_disable_date_picker_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../common/services/disable-date-picker/disable-date-picker.service */ "./src/app/common/services/disable-date-picker/disable-date-picker.service.ts");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var src_app_common_services_permission__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/common/services/permission */ "./src/app/common/services/permission/index.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _common_repositories__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../common/repositories */ "./src/app/common/repositories/index.ts");
+/* harmony import */ var _common_services_disable_date_picker_disable_date_picker_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../common/services/disable-date-picker/disable-date-picker.service */ "./src/app/common/services/disable-date-picker/disable-date-picker.service.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var src_app_common_services_permission__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/common/services/permission */ "./src/app/common/services/permission/index.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+
+
 
 
 
@@ -2464,9 +2138,11 @@ var EmployeeTransfer = /** @class */ (function () {
         this.userBranches = this._authService.getUserProfile().branches;
     }
     EmployeeTransfer.prototype.ngOnInit = function () {
+        var _this = this;
         var user = this._authService.getUserProfile();
-        this.getEmployeeList(user.defaultBranch);
-        this.getBranchList(user);
+        this.getEmployeeList(user.defaultBranch).subscribe(function (res) {
+            _this.getBranchList(user);
+        });
         this.empSetting = {
             enableFilterSelectAll: false,
             text: 'Select an Employee',
@@ -2479,10 +2155,11 @@ var EmployeeTransfer = /** @class */ (function () {
     };
     EmployeeTransfer.prototype.getEmployeeList = function (branchId) {
         var _this = this;
-        this.masterRepo.getEmployeeListNew(branchId)
-            .subscribe(function (data) {
+        return this.masterRepo.getEmployeeListNew(branchId)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["mergeMap"])(function (data) {
             _this.employeeList = data;
-        });
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(data);
+        }));
     };
     EmployeeTransfer.prototype.getBranchList = function (user) {
         var _this = this;
@@ -2506,7 +2183,7 @@ var EmployeeTransfer = /** @class */ (function () {
                 this.transfer = {
                     id: t_1.id,
                     date: String(t_1.date).substring(0, 10),
-                    branch: t_1.branch,
+                    branch: this.userBranches.find(function (x) { return x.branchId == t_1.branch.branchId; }),
                     transferTo: this.branchList.find(function (x) { return x.branchId == t_1.transferTo.branchId; }),
                     startTime: t_1.startTime,
                     endTime: t_1.endTime,
@@ -2515,7 +2192,6 @@ var EmployeeTransfer = /** @class */ (function () {
                     miti: this.masterRepo.toBSDate(String(t_1.date).substring(0, 10))
                 };
                 this.sEmp = this.employeeList.filter(function (x) { return x.EMPLOYEEID == t_1.employee.EMPLOYEEID; });
-                console.log(this.transfer);
             }
         }
     };
@@ -2571,8 +2247,7 @@ var EmployeeTransfer = /** @class */ (function () {
                             _this.childModal.hide();
                         }, 3000);
                     }
-                }, function (error) { alert(error); });
-                (function () {
+                }, function (error) { alert(error); }, function () {
                     //SEND TO NEPALIDATE PICKER FOR DISABLE
                     _this.disableDateService.getDisableDates();
                     _this.subscription.push(sub_1);
@@ -2621,14 +2296,14 @@ var EmployeeTransfer = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'employee-transfer',
             template: __webpack_require__(/*! ./employee-transfer.component.html */ "./src/app/pages/schedule/components/EmployeeTransfer/employee-transfer.component.html"),
-            providers: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["DatePipe"]]
+            providers: [_angular_common__WEBPACK_IMPORTED_MODULE_7__["DatePipe"]]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
-            _common_repositories__WEBPACK_IMPORTED_MODULE_4__["MasterRepo"],
-            _common_services_disable_date_picker_disable_date_picker_service__WEBPACK_IMPORTED_MODULE_5__["DisableDateService"],
-            _angular_common__WEBPACK_IMPORTED_MODULE_6__["DatePipe"],
-            src_app_common_services_permission__WEBPACK_IMPORTED_MODULE_7__["AuthService"]])
+            _common_repositories__WEBPACK_IMPORTED_MODULE_5__["MasterRepo"],
+            _common_services_disable_date_picker_disable_date_picker_service__WEBPACK_IMPORTED_MODULE_6__["DisableDateService"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_7__["DatePipe"],
+            src_app_common_services_permission__WEBPACK_IMPORTED_MODULE_8__["AuthService"]])
     ], EmployeeTransfer);
     return EmployeeTransfer;
 }());
@@ -5561,7 +5236,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ng2_ckeditor__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng2-ckeditor */ "./node_modules/ng2-ckeditor/lib/index.js");
 /* harmony import */ var ng2_ckeditor__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(ng2_ckeditor__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var _ng2_smart_table_ng2_smart_table__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../ng2-smart-table/ng2-smart-table */ "./src/app/ng2-smart-table/ng2-smart-table.ts");
-/* harmony import */ var _components_CustomerSelect_customerSelect_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/CustomerSelect/customerSelect.component */ "./src/app/pages/schedule/components/CustomerSelect/customerSelect.component.ts");
+/* harmony import */ var _components_CustomerSelect_customerSelect_module__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/CustomerSelect/customerSelect.module */ "./src/app/pages/schedule/components/CustomerSelect/customerSelect.module.ts");
 /* harmony import */ var _components_TreatmentEntry_TreatmentList_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/TreatmentEntry/TreatmentList.component */ "./src/app/pages/schedule/components/TreatmentEntry/TreatmentList.component.ts");
 /* harmony import */ var _components_TreatmentEntry_TreatmentDetails_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/TreatmentEntry/TreatmentDetails.component */ "./src/app/pages/schedule/components/TreatmentEntry/TreatmentDetails.component.ts");
 /* harmony import */ var _components_CustomerSelect_customerSelect_pipe__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/CustomerSelect/customerSelect.pipe */ "./src/app/pages/schedule/components/CustomerSelect/customerSelect.pipe.ts");
@@ -5627,14 +5302,15 @@ var ScheduleModule = /** @class */ (function () {
                 _ng2_smart_table_ng2_smart_table__WEBPACK_IMPORTED_MODULE_15__["Ng2SmartTableModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"],
                 _common_nepali_date_picker_nepali_date_picker_module__WEBPACK_IMPORTED_MODULE_21__["NepaliDateModule"],
-                angular2_multiselect_dropdown__WEBPACK_IMPORTED_MODULE_26__["AngularMultiSelectModule"]
+                angular2_multiselect_dropdown__WEBPACK_IMPORTED_MODULE_26__["AngularMultiSelectModule"],
+                _components_CustomerSelect_customerSelect_module__WEBPACK_IMPORTED_MODULE_16__["CustomerSelectModule"]
             ],
             declarations: [
                 //   DayPilot.Angular.Scheduler,
                 //  DayPilot.Angular.Modal,
                 //  DayPilot.Angular.Navigator,
                 _schedule_component__WEBPACK_IMPORTED_MODULE_6__["Schedule"], _components_ScheduleInput_masterSchedule_component__WEBPACK_IMPORTED_MODULE_8__["MasterSchedule"], _components_ScheduleInput_scheduleInput_component__WEBPACK_IMPORTED_MODULE_11__["ScheduleInput"],
-                _components_TreatmentEntry_Treatment_component__WEBPACK_IMPORTED_MODULE_12__["TreatmentEntry"], _components_FollowUp_followup_component__WEBPACK_IMPORTED_MODULE_13__["FollowUp"], _components_CustomerSelect_customerSelect_component__WEBPACK_IMPORTED_MODULE_16__["CustomerSelect"], _components_TreatmentEntry_TreatmentList_component__WEBPACK_IMPORTED_MODULE_17__["TreatmentList"], _components_TreatmentEntry_TreatmentDetails_component__WEBPACK_IMPORTED_MODULE_18__["TreatmentDetails"],
+                _components_TreatmentEntry_Treatment_component__WEBPACK_IMPORTED_MODULE_12__["TreatmentEntry"], _components_FollowUp_followup_component__WEBPACK_IMPORTED_MODULE_13__["FollowUp"], _components_TreatmentEntry_TreatmentList_component__WEBPACK_IMPORTED_MODULE_17__["TreatmentList"], _components_TreatmentEntry_TreatmentDetails_component__WEBPACK_IMPORTED_MODULE_18__["TreatmentDetails"],
                 _components_CustomerSelect_customerSelect_pipe__WEBPACK_IMPORTED_MODULE_19__["CustomerPipe"], _components_CustomerSelect_mobileSelect_pipe__WEBPACK_IMPORTED_MODULE_20__["MobilePipe"], _components_ScheduleSearch_customer_all_schedule_component__WEBPACK_IMPORTED_MODULE_22__["CustomerAllSchedule"],
                 _components_CheckIn_checkIn_component__WEBPACK_IMPORTED_MODULE_23__["CheckIn"], _components_CheckOut_CheckInList_component__WEBPACK_IMPORTED_MODULE_24__["CheckInList"], _components_CheckOut_CheckOut_component__WEBPACK_IMPORTED_MODULE_25__["CheckOutEntry"], _components_AppointmentRequest_RequestList_component__WEBPACK_IMPORTED_MODULE_27__["AppointmentRequestList"], _components_AppointmentRequest_requestDetail_component__WEBPACK_IMPORTED_MODULE_28__["AppointmentRequest"],
                 _components_CheckIn_kot_print_component__WEBPACK_IMPORTED_MODULE_29__["KOTPrintComponent"], _components_ScheduleInput_TimelineContextMenu_timelineContextMenu_component__WEBPACK_IMPORTED_MODULE_30__["TimelineContextMenuComponent"], _components_EmployeeTransfer_TransferList_component__WEBPACK_IMPORTED_MODULE_31__["TransferList"], _components_EmployeeTransfer_employee_transfer_component__WEBPACK_IMPORTED_MODULE_32__["EmployeeTransfer"]
@@ -5828,4 +5504,4 @@ var ScheduleInputService = /** @class */ (function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=schedule-schedule-module.97f3414465bc5fe50889.js.map
+//# sourceMappingURL=schedule-schedule-module.81e3a54c3db69f819011.js.map

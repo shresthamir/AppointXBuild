@@ -1,5 +1,42 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["reports-report-module"],{
 
+/***/ "./src/app/common/services/report-date-range.util.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/common/services/report-date-range.util.ts ***!
+  \***********************************************************/
+/*! exports provided: ReportDateRangeUtil */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReportDateRangeUtil", function() { return ReportDateRangeUtil; });
+var ReportDateRangeUtil = /** @class */ (function () {
+    function ReportDateRangeUtil() {
+    }
+    // Returns local timezone-safe `YYYY-MM-DD` strings.
+    ReportDateRangeUtil.formatDateYYYYMMDDLocal = function (d) {
+        var yyyy = d.getFullYear();
+        var mm = ('0' + (d.getMonth() + 1)).slice(-2);
+        var dd = ('0' + d.getDate()).slice(-2);
+        return yyyy + "-" + mm + "-" + dd;
+    };
+    // "AD month" interpreted as current Gregorian/AD month in the user's local timezone.
+    // Date1 => first day of current month, Date2 => today.
+    ReportDateRangeUtil.getCurrentAdMonthRange = function () {
+        var now = new Date();
+        var startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+        return {
+            Date1: this.formatDateYYYYMMDDLocal(startOfMonth),
+            Date2: this.formatDateYYYYMMDDLocal(now),
+        };
+    };
+    return ReportDateRangeUtil;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/pages/reports/components/EmployeeRoster/employeeRoster.component.html":
 /*!***************************************************************************************!*\
   !*** ./src/app/pages/reports/components/EmployeeRoster/employeeRoster.component.html ***!
@@ -185,6 +222,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _previews_treatmentPreview_treatmentPreview_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./previews/treatmentPreview/treatmentPreview.component */ "./src/app/pages/reports/components/previews/treatmentPreview/treatmentPreview.component.ts");
 /* harmony import */ var _report_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./report.service */ "./src/app/pages/reports/components/report.service.ts");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../common/services/report-date-range.util */ "./src/app/common/services/report-date-range.util.ts");
 
 
 
@@ -196,6 +234,7 @@ __webpack_require__.r(__webpack_exports__);
 // import { Subscription } from 'rxjs';
 // import { MasterRepo } from '../../../common/repositories/masterRepo.service';
 // import { AuthService } from '../../../common/services/permission/authService.service';
+
 
 
 // import { Followup } from '../../../common/interfaces/master.interface';
@@ -223,13 +262,21 @@ var ActivityReport = /** @class */ (function () {
         }, function (Error) { return console.log(Error); }, function () {
             console.log(Error);
         });
+        var range = _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_9__["ReportDateRangeUtil"].getCurrentAdMonthRange();
         this.reportObj = {
-            Date1: new Date().toISOString().slice(0, 10),
-            Date2: new Date().toISOString().slice(0, 10)
+            Date1: range.Date1,
+            Date2: range.Date2
         };
         //console.log({reportObj_ctor : this.reportObj});
     }
-    ActivityReport.prototype.onClickClear = function () { };
+    ActivityReport.prototype.onClickClear = function () {
+        var range = _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_9__["ReportDateRangeUtil"].getCurrentAdMonthRange();
+        this.reportObj = {
+            Date1: range.Date1,
+            Date2: range.Date2
+        };
+        this.reportList = [];
+    };
     ActivityReport.prototype.loadReportEvent = function () {
         var _this = this;
         this.DialogMessage = "Activty Log Loading.... Please Wait...";
@@ -357,7 +404,7 @@ var ActivityReport = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-xlg-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12\">\r\n        <ba-card title=\"Report Parameters\">\r\n            <div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"customerselect\" style=\"float:left;width:10%\">Customer :</label>\r\n                    <select style=\"float:left;width:80%;height:28px;padding:0\" [(ngModel)]=\"reportObj.CUSID\" class=\"form-control\" name=\"customerselect\" id=\"customerselect\"> \r\n        <option *ngFor=\"let c of CustomerList\" [ngValue]=\"c.CUSID\">{{c.NAME}}</option>\r\n      </select>\r\n\r\n\r\n                </div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"date1\" style=\"float:left;width:10%\">From :</label>\r\n                    <input type=\"date\" style=\"float:left;width:30%;height:28px;padding:2px\" class=\"form-control\" id=\"date1\" [(ngModel)]=\"reportObj.Date1\">\r\n                     <label for=\"date2\" style=\"float:left;width:10%;margin-left:20px\">To :</label>\r\n                    <input type=\"date\" class=\"form-control\" id=\"date2\" [(ngModel)]=\"reportObj.Date2\" style=\"float:left;width:30%;height:28px;padding:2px\">\r\n\r\n                </div>\r\n                \r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\" [disabled]=\"reportObj.Date1==null || reportObj.Date2==null || reportObj.CUSID==null\">Load</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n    <div style=\"width:100%;max-height:400px\" style=\"overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n        <tbody style=\"width: 100%;display: table;\">\r\n            <tr style=\"height:30px;width:100%\">\r\n                <th style=\"width:5%\">SNo</th>\r\n                <th style=\"width:10%\">Date</th>\r\n                <th style=\"width:10%\">User</th>\r\n                <th style=\"width:15%\">Service</th>\r\n                <th style=\"width:10%\">Room</th>\r\n                <th style=\"width:15%\">Therapist</th>\r\n                <th style=\"width:5%\">Cus. Pref.</th>\r\n                <th style=\"width:10%\">StartTime</th>\r\n                <th style=\"width:10%\">FinishedTime</th>\r\n                <th style=\"width:10%\">Rate</th>\r\n            </tr>\r\n        \r\n    \r\n            <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n                <td style=\"width:5%\">{{i+1}}</td>\r\n                <td style=\"width:10%\">{{ir.DATE}}</td>\r\n                <td style=\"width:10%\">{{ir.USER}}</td>\r\n                <td style=\"width:15%\">{{ir.SERVICE}}</td>\r\n                <td style=\"width:10%\">{{ir.ROOM}}</td>\r\n                <td style=\"width:15%\">{{ir.EMPLOYEE}}</td>\r\n                <td style=\"width:5%\">{{ir.EMPLOYEE_PREFERED}}</td>\r\n                <td style=\"width:10%\">{{ir.STARTTIME}}</td>\r\n                <td style=\"width:10%\">{{ir.ENDTIME}}</td>\r\n                <td style=\"width:10%\">{{ir.RATE}}</td>\r\n            </tr>\r\n        </tbody>\r\n    </div>\r\n</Table>\r\n\r\n<ba-modal #childModal title=\"Information\" size=\"sm\">\r\n    {{DialogMessage}}\r\n    \r\n    \r\n</ba-modal>\r\n\r\n<ba-modal #loginModal title=\"Login\" size=\"sm\">\r\n    <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n    \r\n</ba-modal>"
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-xlg-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12\">\r\n        <ba-card title=\"Report Parameters\">\r\n            <div>\r\n                <div class=\"form-group row\">\r\n                    \r\n                    <div style=\"float:left;width:80%\">\r\n                        <customer-select\r\n                            *ngIf=\"customerSelectVisible\"\r\n                            [showNewButton]=\"false\"\r\n                            (customerChanged)=\"reportObj.CUSID = $event && $event.CUSID\">\r\n                        </customer-select>\r\n                    </div>\r\n\r\n\r\n                </div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"date1\" style=\"float:left;width:10%\">From :</label>\r\n                    <input type=\"date\" style=\"float:left;width:30%;height:28px;padding:2px\" class=\"form-control\" id=\"date1\" [(ngModel)]=\"reportObj.Date1\">\r\n                     <label for=\"date2\" style=\"float:left;width:10%;margin-left:20px\">To :</label>\r\n                    <input type=\"date\" class=\"form-control\" id=\"date2\" [(ngModel)]=\"reportObj.Date2\" style=\"float:left;width:30%;height:28px;padding:2px\">\r\n\r\n                </div>\r\n                \r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\" [disabled]=\"reportObj.Date1==null || reportObj.Date2==null || reportObj.CUSID==null\">Load</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n    <div style=\"width:100%;max-height:400px\" style=\"overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n        <tbody style=\"width: 100%;display: table;\">\r\n            <tr style=\"height:30px;width:100%\">\r\n                <th style=\"width:5%\">SNo</th>\r\n                <th style=\"width:10%\">Date</th>\r\n                <th style=\"width:10%\">User</th>\r\n                <th style=\"width:15%\">Service</th>\r\n                <th style=\"width:10%\">Room</th>\r\n                <th style=\"width:15%\">Therapist</th>\r\n                <th style=\"width:5%\">Cus. Pref.</th>\r\n                <th style=\"width:10%\">StartTime</th>\r\n                <th style=\"width:10%\">FinishedTime</th>\r\n                <th style=\"width:10%\">Rate</th>\r\n            </tr>\r\n        \r\n    \r\n            <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n                <td style=\"width:5%\">{{i+1}}</td>\r\n                <td style=\"width:10%\">{{ir.DATE}}</td>\r\n                <td style=\"width:10%\">{{ir.USER}}</td>\r\n                <td style=\"width:15%\">{{ir.SERVICE}}</td>\r\n                <td style=\"width:10%\">{{ir.ROOM}}</td>\r\n                <td style=\"width:15%\">{{ir.EMPLOYEE}}</td>\r\n                <td style=\"width:5%\">{{ir.EMPLOYEE_PREFERED}}</td>\r\n                <td style=\"width:10%\">{{ir.STARTTIME}}</td>\r\n                <td style=\"width:10%\">{{ir.ENDTIME}}</td>\r\n                <td style=\"width:10%\">{{ir.RATE}}</td>\r\n            </tr>\r\n        </tbody>\r\n    </div>\r\n</Table>\r\n\r\n<ba-modal #childModal title=\"Information\" size=\"sm\">\r\n    {{DialogMessage}}\r\n    \r\n    \r\n</ba-modal>\r\n\r\n<ba-modal #loginModal title=\"Login\" size=\"sm\">\r\n    <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n    \r\n</ba-modal>"
 
 /***/ }),
 
@@ -378,6 +425,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../common/repositories/masterRepo.service */ "./src/app/common/repositories/masterRepo.service.ts");
 /* harmony import */ var _common_services_permission_authService_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../common/services/permission/authService.service */ "./src/app/common/services/permission/authService.service.ts");
 /* harmony import */ var _report_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./report.service */ "./src/app/pages/reports/components/report.service.ts");
+/* harmony import */ var _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../common/services/report-date-range.util */ "./src/app/common/services/report-date-range.util.ts");
+
 
 
 
@@ -397,9 +446,11 @@ var CustomerReport = /** @class */ (function () {
         this.reportList = [];
         this.reportObj = {};
         this.CustomerList = [];
+        this.customerSelectVisible = true;
     }
     CustomerReport.prototype.ngOnInit = function () {
         var _this = this;
+        this.setDefaultDateRangeToCurrentMonthAD();
         if (this.masterService._customerList.length > 0) {
             this.CustomerList = this.masterService._customerList;
         }
@@ -410,9 +461,19 @@ var CustomerReport = /** @class */ (function () {
             }, function (Error) { return console.log(Error); });
         }
     };
+    CustomerReport.prototype.setDefaultDateRangeToCurrentMonthAD = function () {
+        var range = _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_7__["ReportDateRangeUtil"].getCurrentAdMonthRange();
+        this.reportObj.Date1 = range.Date1;
+        this.reportObj.Date2 = range.Date2;
+    };
     CustomerReport.prototype.onCancel = function () {
+        var _this = this;
         this.reportObj = {};
+        this.setDefaultDateRangeToCurrentMonthAD();
         this.reportList = [];
+        // Recreate customer-select so its internal input state resets.
+        this.customerSelectVisible = false;
+        setTimeout(function () { return (_this.customerSelectVisible = true); }, 0);
     };
     CustomerReport.prototype.loadReportEvent = function () {
         var _this = this;
@@ -496,7 +557,7 @@ var CustomerReport = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-xlg-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12\">\r\n        <ba-card title=\"Report Parameters\">\r\n            <div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"employeeselect\" style=\"float:left;width:10%\">Employee :</label>\r\n                    <select style=\"float:left;width:80%;height:28px;padding:0\" [(ngModel)]=\"reportObj.EMPLOYEEID\"\r\n                        class=\"form-control\" id=\"employeeselect\">\r\n                        <option *ngFor=\"let c of EmployeeList\" [ngValue]=\"c.EMPLOYEEID\">{{c.NAME}}</option>\r\n                    </select>\r\n\r\n\r\n                </div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"date1\" style=\"float:left;width:10%\">From :</label>\r\n                    <input type=\"date\" style=\"float:left;width:30%;height:28px;padding:2px\" class=\"form-control\"\r\n                        id=\"date1\" [(ngModel)]=\"reportObj.Date1\">\r\n                    <label for=\"date2\" style=\"float:left;width:10%;margin-left:20px\">To :</label>\r\n                    <input type=\"date\" class=\"form-control\" id=\"date2\" [(ngModel)]=\"reportObj.Date2\"\r\n                        style=\"float:left;width:30%;height:28px;padding:2px\">\r\n\r\n                </div>\r\n\r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\"\r\n                [disabled]=\"reportObj.Date1==null || reportObj.Date2==null || reportObj.EMPLOYEEID==null\">Load</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n    <div style=\"width:100%;max-height:400px\" style=\"overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n        <tbody style=\"width: 100%;display: table;\">\r\n            <tr style=\"height:30px;width:100%\">\r\n                <th style=\"width:5%\">SNo</th>\r\n                <th style=\"width:10%\">Date</th>\r\n                <th style=\"width:10%\">User</th>\r\n                <th style=\"width:15%\">Service</th>\r\n                <th style=\"width:10%\">Room</th>\r\n                <th style=\"width:15%\">Customer</th>\r\n                <th style=\"width:5%\">Cus. Pref.</th>\r\n                <th style=\"width:10%\">StartTime</th>\r\n                <th style=\"width:10%\">FinishedTime</th>\r\n                <th style=\"width:10%\">Rate</th>\r\n            </tr>\r\n\r\n\r\n            <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n                <td style=\"width:5%\">{{i+1}}</td>\r\n                <td style=\"width:10%\">{{ir.DATE}}</td>\r\n                <td style=\"width:10%\">{{ir.USER}}</td>\r\n                <td style=\"width:15%\">{{ir.SERVICE}}</td>\r\n                <td style=\"width:10%\">{{ir.ROOM}}</td>\r\n                <td style=\"width:15%\">{{ir.CUSTOMER}}</td>\r\n                <td style=\"width:5%\">{{ir.EMPLOYEE_PREFERED}}</td>\r\n                <td style=\"width:10%\">{{ir.STARTTIME}}</td>\r\n                <td style=\"width:10%\">{{ir.ENDTIME}}</td>\r\n                <td style=\"width:10%\">{{ir.RATE}}</td>\r\n            </tr>\r\n        </tbody>\r\n    </div>\r\n</Table>\r\n\r\n<ba-modal #childModal title=\"Information\" size=\"sm\">\r\n    {{DialogMessage}}\r\n    \r\n    \r\n</ba-modal>\r\n\r\n<ba-modal #loginModal title=\"Login\" size=\"sm\">\r\n    <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n    \r\n</ba-modal>"
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-xlg-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12\">\r\n        <ba-card title=\"Report Parameters\">\r\n            <div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"employeeselect\" style=\"float:left;width:10%\">Employee :</label>\r\n                    <div style=\"float:left;width:80%\">\r\n                        <angular2-multiselect [data]=\"EmployeeList\" [settings]=\"employeeSetting\" [(ngModel)]=\"selectedEmployee\" \r\n                            (onSelect)=\"onEmployeeSelect($event)\" (onDeSelect)=\"onEmployeeDeselect($event)\" id=\"employeeselect\">\r\n                        </angular2-multiselect>\r\n                    </div>\r\n\r\n                </div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"date1\" style=\"float:left;width:10%\">From :</label>\r\n                    <input type=\"date\" style=\"float:left;width:30%;height:28px;padding:2px\" class=\"form-control\"\r\n                        id=\"date1\" [(ngModel)]=\"reportObj.Date1\">\r\n                    <label for=\"date2\" style=\"float:left;width:10%;margin-left:20px\">To :</label>\r\n                    <input type=\"date\" class=\"form-control\" id=\"date2\" [(ngModel)]=\"reportObj.Date2\"\r\n                        style=\"float:left;width:30%;height:28px;padding:2px\">\r\n\r\n                </div>\r\n\r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\"\r\n                [disabled]=\"reportObj.Date1==null || reportObj.Date2==null || reportObj.EMPLOYEEID==null\">Load</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n    <div style=\"width:100%;max-height:400px\" style=\"overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n        <tbody style=\"width: 100%;display: table;\">\r\n            <tr style=\"height:30px;width:100%\">\r\n                <th style=\"width:5%\">SNo</th>\r\n                <th style=\"width:10%\">Date</th>\r\n                <th style=\"width:10%\">User</th>\r\n                <th style=\"width:15%\">Service</th>\r\n                <th style=\"width:10%\">Room</th>\r\n                <th style=\"width:15%\">Customer</th>\r\n                <th style=\"width:5%\">Cus. Pref.</th>\r\n                <th style=\"width:10%\">StartTime</th>\r\n                <th style=\"width:10%\">FinishedTime</th>\r\n                <th style=\"width:10%\">Rate</th>\r\n            </tr>\r\n\r\n\r\n            <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n                <td style=\"width:5%\">{{i+1}}</td>\r\n                <td style=\"width:10%\">{{ir.DATE}}</td>\r\n                <td style=\"width:10%\">{{ir.USER}}</td>\r\n                <td style=\"width:15%\">{{ir.SERVICE}}</td>\r\n                <td style=\"width:10%\">{{ir.ROOM}}</td>\r\n                <td style=\"width:15%\">{{ir.CUSTOMER}}</td>\r\n                <td style=\"width:5%\">{{ir.EMPLOYEE_PREFERED}}</td>\r\n                <td style=\"width:10%\">{{ir.STARTTIME}}</td>\r\n                <td style=\"width:10%\">{{ir.ENDTIME}}</td>\r\n                <td style=\"width:10%\">{{ir.RATE}}</td>\r\n            </tr>\r\n        </tbody>\r\n    </div>\r\n</Table>\r\n\r\n<ba-modal #childModal title=\"Information\" size=\"sm\">\r\n    {{DialogMessage}}\r\n    \r\n    \r\n</ba-modal>\r\n\r\n<ba-modal #loginModal title=\"Login\" size=\"sm\">\r\n    <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n    \r\n</ba-modal>"
 
 /***/ }),
 
@@ -517,6 +578,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../common/repositories/masterRepo.service */ "./src/app/common/repositories/masterRepo.service.ts");
 /* harmony import */ var _common_services_permission_authService_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../common/services/permission/authService.service */ "./src/app/common/services/permission/authService.service.ts");
 /* harmony import */ var _report_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./report.service */ "./src/app/pages/reports/components/report.service.ts");
+/* harmony import */ var _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../common/services/report-date-range.util */ "./src/app/common/services/report-date-range.util.ts");
+
 
 
 
@@ -535,9 +598,22 @@ var EmployeeReport = /** @class */ (function () {
         this.reportList = [];
         this.reportObj = {};
         this.EmployeeList = [];
+        this.selectedEmployee = [];
+        this.employeeSetting = {};
     }
     EmployeeReport.prototype.ngOnInit = function () {
         var _this = this;
+        var range = _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_7__["ReportDateRangeUtil"].getCurrentAdMonthRange();
+        this.reportObj.Date1 = range.Date1;
+        this.reportObj.Date2 = range.Date2;
+        this.employeeSetting = {
+            enableCheckAll: false,
+            singleSelection: true,
+            text: 'Select Employee',
+            enableSearchFilter: true,
+            labelKey: "NAME",
+            primaryKey: "EMPLOYEEID"
+        };
         if (this.masterService._employeeList.length > 0) {
             this.EmployeeList = this.masterService._employeeList;
         }
@@ -550,8 +626,16 @@ var EmployeeReport = /** @class */ (function () {
         }
     };
     EmployeeReport.prototype.onCancel = function () {
-        this.reportObj = {};
+        var range = _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_7__["ReportDateRangeUtil"].getCurrentAdMonthRange();
+        this.reportObj = { Date1: range.Date1, Date2: range.Date2 };
         this.reportList = [];
+        this.selectedEmployee = [];
+    };
+    EmployeeReport.prototype.onEmployeeSelect = function (item) {
+        this.reportObj.EMPLOYEEID = item.EMPLOYEEID;
+    };
+    EmployeeReport.prototype.onEmployeeDeselect = function (item) {
+        this.reportObj.EMPLOYEEID = null;
     };
     EmployeeReport.prototype.loadReportEvent = function () {
         var _this = this;
@@ -785,6 +869,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../common/repositories/masterRepo.service */ "./src/app/common/repositories/masterRepo.service.ts");
 /* harmony import */ var _common_services_permission_authService_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../common/services/permission/authService.service */ "./src/app/common/services/permission/authService.service.ts");
 /* harmony import */ var _report_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./report.service */ "./src/app/pages/reports/components/report.service.ts");
+/* harmony import */ var _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../common/services/report-date-range.util */ "./src/app/common/services/report-date-range.util.ts");
+
 
 
 
@@ -806,6 +892,9 @@ var MessageReport = /** @class */ (function () {
         this.FollowupList = [];
     }
     MessageReport.prototype.ngOnInit = function () {
+        var range = _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_7__["ReportDateRangeUtil"].getCurrentAdMonthRange();
+        this.reportObj.Date1 = range.Date1;
+        this.reportObj.Date2 = range.Date2;
         //  if (this.masterService._followupList.length > 0) 
         //  { this.FollowupList = this.masterService._followupList; }
         //     else {
@@ -819,7 +908,8 @@ var MessageReport = /** @class */ (function () {
         //     }
     };
     MessageReport.prototype.onCancel = function () {
-        this.reportObj = {};
+        var range = _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_7__["ReportDateRangeUtil"].getCurrentAdMonthRange();
+        this.reportObj = { Date1: range.Date1, Date2: range.Date2 };
         this.reportList = [];
     };
     MessageReport.prototype.loadReportEvent = function () {
@@ -1254,7 +1344,7 @@ var ReportService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-xlg-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12\">\r\n        <ba-card title=\"Report Parameters\">\r\n            <div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"roomselect\" style=\"float:left;width:10%\">Room :</label>\r\n                    <select style=\"float:left;width:80%;height:28px;padding:0\" [(ngModel)]=\"reportObj.ROOMID\" class=\"form-control\"  id=\"roomselect\"> \r\n        <option *ngFor=\"let c of RoomList\" [ngValue]=\"c.ROOMID\">{{c.DESCRIPTION}}({{c.ROOMNO}})</option>\r\n      </select>\r\n\r\n\r\n                </div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"date1\" style=\"float:left;width:10%\">From :</label>\r\n                    <input type=\"date\" style=\"float:left;width:30%;height:28px;padding:2px\" class=\"form-control\" id=\"date1\" [(ngModel)]=\"reportObj.Date1\">\r\n                     <label for=\"date2\" style=\"float:left;width:10%;margin-left:20px\">To :</label>\r\n                    <input type=\"date\" class=\"form-control\" id=\"date2\" [(ngModel)]=\"reportObj.Date2\" style=\"float:left;width:30%;height:28px;padding:2px\">\r\n\r\n                </div>\r\n                \r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\" [disabled]=\"reportObj.Date1==null || reportObj.Date2==null || reportObj.ROOMID==null\">Load</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n    <div  style=\"width:100%;max-height:400px;overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n        <tbody style=\"width: 100%;display: table;\">\r\n            <tr style=\"height:30px;width:100%\">\r\n                <th style=\"width:5%\">SNo</th>\r\n                <th style=\"width:10%\">Date</th>\r\n                <th style=\"width:10%\">User</th>\r\n                <th style=\"width:15%\">Service</th>\r\n                <th style=\"width:10%\">Employee</th>\r\n                <th style=\"width:15%\">Customer</th>\r\n                <th style=\"width:5%\">Cus. Pref.</th>\r\n                <th style=\"width:10%\">StartTime</th>\r\n                <th style=\"width:10%\">FinishedTime</th>\r\n                <th style=\"width:10%\">Rate</th>\r\n            </tr>\r\n    \r\n    \r\n            <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n                <td style=\"width:5%\">{{i+1}}</td>\r\n                <td style=\"width:10%\">{{ir.DATE}}</td>\r\n                <td style=\"width:10%\">{{ir.USER}}</td>\r\n                <td style=\"width:15%\">{{ir.SERVICE}}</td>\r\n                <td style=\"width:10%\">{{ir.EMPLOYEE}}</td>\r\n                <td style=\"width:15%\">{{ir.CUSTOMER}}</td>\r\n                <td style=\"width:5%\">{{ir.EMPLOYEE_PREFERED}}</td>\r\n                <td style=\"width:10%\">{{ir.STARTTIME}}</td>\r\n                <td style=\"width:10%\">{{ir.ENDTIME}}</td>\r\n                <td style=\"width:10%\">{{ir.RATE}}</td>\r\n            </tr>\r\n        </tbody>\r\n    </div>\r\n</Table>\r\n\r\n<ba-modal #childModal title=\"Information\" size=\"sm\">\r\n    {{DialogMessage}}\r\n    \r\n    \r\n</ba-modal>\r\n\r\n<ba-modal #loginModal title=\"Login\" size=\"sm\">\r\n    <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n    \r\n</ba-modal>"
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-xlg-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12\">\r\n        <ba-card title=\"Report Parameters\">\r\n            <div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"roomselect\" style=\"float:left;width:10%\">Room :</label>\r\n                    <div style=\"float:left;width:80%\">\r\n                        <angular2-multiselect [data]=\"RoomList\" [settings]=\"roomSetting\" [(ngModel)]=\"selectedRoom\"\r\n                            (onSelect)=\"onRoomSelect($event)\" (onDeSelect)=\"onRoomDeselect($event)\" id=\"roomselect\">\r\n                        </angular2-multiselect>\r\n                    </div>\r\n\r\n\r\n                </div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"date1\" style=\"float:left;width:10%\">From :</label>\r\n                    <input type=\"date\" style=\"float:left;width:30%;height:28px;padding:2px\" class=\"form-control\" id=\"date1\" [(ngModel)]=\"reportObj.Date1\">\r\n                     <label for=\"date2\" style=\"float:left;width:10%;margin-left:20px\">To :</label>\r\n                    <input type=\"date\" class=\"form-control\" id=\"date2\" [(ngModel)]=\"reportObj.Date2\" style=\"float:left;width:30%;height:28px;padding:2px\">\r\n\r\n                </div>\r\n                \r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\" [disabled]=\"reportObj.Date1==null || reportObj.Date2==null || reportObj.ROOMID==null\">Load</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n    <div  style=\"width:100%;max-height:400px;overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n        <tbody style=\"width: 100%;display: table;\">\r\n            <tr style=\"height:30px;width:100%\">\r\n                <th style=\"width:5%\">SNo</th>\r\n                <th style=\"width:10%\">Date</th>\r\n                <th style=\"width:10%\">User</th>\r\n                <th style=\"width:15%\">Service</th>\r\n                <th style=\"width:10%\">Employee</th>\r\n                <th style=\"width:15%\">Customer</th>\r\n                <th style=\"width:5%\">Cus. Pref.</th>\r\n                <th style=\"width:10%\">StartTime</th>\r\n                <th style=\"width:10%\">FinishedTime</th>\r\n                <th style=\"width:10%\">Rate</th>\r\n            </tr>\r\n    \r\n    \r\n            <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n                <td style=\"width:5%\">{{i+1}}</td>\r\n                <td style=\"width:10%\">{{ir.DATE}}</td>\r\n                <td style=\"width:10%\">{{ir.USER}}</td>\r\n                <td style=\"width:15%\">{{ir.SERVICE}}</td>\r\n                <td style=\"width:10%\">{{ir.EMPLOYEE}}</td>\r\n                <td style=\"width:15%\">{{ir.CUSTOMER}}</td>\r\n                <td style=\"width:5%\">{{ir.EMPLOYEE_PREFERED}}</td>\r\n                <td style=\"width:10%\">{{ir.STARTTIME}}</td>\r\n                <td style=\"width:10%\">{{ir.ENDTIME}}</td>\r\n                <td style=\"width:10%\">{{ir.RATE}}</td>\r\n            </tr>\r\n        </tbody>\r\n    </div>\r\n</Table>\r\n\r\n<ba-modal #childModal title=\"Information\" size=\"sm\">\r\n    {{DialogMessage}}\r\n    \r\n    \r\n</ba-modal>\r\n\r\n<ba-modal #loginModal title=\"Login\" size=\"sm\">\r\n    <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n    \r\n</ba-modal>"
 
 /***/ }),
 
@@ -1275,6 +1365,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../common/repositories/masterRepo.service */ "./src/app/common/repositories/masterRepo.service.ts");
 /* harmony import */ var _common_services_permission_authService_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../common/services/permission/authService.service */ "./src/app/common/services/permission/authService.service.ts");
 /* harmony import */ var _report_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./report.service */ "./src/app/pages/reports/components/report.service.ts");
+/* harmony import */ var _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../common/services/report-date-range.util */ "./src/app/common/services/report-date-range.util.ts");
+
 
 
 
@@ -1294,9 +1386,22 @@ var RoomReport = /** @class */ (function () {
         this.reportList = [];
         this.reportObj = {};
         this.RoomList = [];
+        this.selectedRoom = [];
+        this.roomSetting = {};
     }
     RoomReport.prototype.ngOnInit = function () {
         var _this = this;
+        var range = _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_7__["ReportDateRangeUtil"].getCurrentAdMonthRange();
+        this.reportObj.Date1 = range.Date1;
+        this.reportObj.Date2 = range.Date2;
+        this.roomSetting = {
+            enableCheckAll: false,
+            singleSelection: true,
+            text: 'Select Room',
+            enableSearchFilter: true,
+            labelKey: "DESCRIPTION",
+            primaryKey: "ROOMID"
+        };
         if (this.masterService._roomList.length > 0) {
             this.RoomList = this.masterService._roomList;
         }
@@ -1308,8 +1413,16 @@ var RoomReport = /** @class */ (function () {
         }
     };
     RoomReport.prototype.onCancel = function () {
-        this.reportObj = {};
+        var range = _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_7__["ReportDateRangeUtil"].getCurrentAdMonthRange();
+        this.reportObj = { Date1: range.Date1, Date2: range.Date2 };
         this.reportList = [];
+        this.selectedRoom = [];
+    };
+    RoomReport.prototype.onRoomSelect = function (item) {
+        this.reportObj.ROOMID = item.ROOMID;
+    };
+    RoomReport.prototype.onRoomDeselect = function (item) {
+        this.reportObj.ROOMID = null;
     };
     RoomReport.prototype.loadReportEvent = function () {
         var _this = this;
@@ -1544,7 +1657,7 @@ var SeriesReport = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-xlg-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12\">\r\n        <ba-card title=\"Report Parameters\">\r\n            <div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"roomselect\" style=\"float:left;width:10%\">Service :</label>\r\n                    <select style=\"float:left;width:80%;height:28px;padding:0\" [(ngModel)]=\"reportObj.SERVICEID\" class=\"form-control\"  id=\"roomselect\"> \r\n        <option *ngFor=\"let c of ServiceList\" [ngValue]=\"c.SERVICEID\">{{c.DESCRIPTION}}</option>\r\n      </select>\r\n\r\n\r\n                </div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"date1\" style=\"float:left;width:10%\">From :</label>\r\n                    <input type=\"date\" style=\"float:left;width:30%;height:28px;padding:2px\" class=\"form-control\" id=\"date1\" [(ngModel)]=\"reportObj.Date1\">\r\n                     <label for=\"date2\" style=\"float:left;width:10%;margin-left:20px\">To :</label>\r\n                    <input type=\"date\" class=\"form-control\" id=\"date2\" [(ngModel)]=\"reportObj.Date2\" style=\"float:left;width:30%;height:28px;padding:2px\">\r\n\r\n                </div>\r\n                \r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\" [disabled]=\"reportObj.Date1==null || reportObj.Date2==null || reportObj.SERVICEID==null\">Load</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n    <div  style=\"width:100%;max-height:400px;overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n        <tbody style=\"width: 100%;display: table;\">\r\n            <tr style=\"height:30px;width:100%\">\r\n                <th style=\"width:5%\">SNo</th>\r\n                <th style=\"width:8%\">Date</th>\r\n                <th style=\"width:8%\">User</th>\r\n                <th style=\"width:15%\">Room</th>\r\n                <th style=\"width:15%\">Therapist</th>\r\n                <th style=\"width:15%\">Customer</th>\r\n                <th style=\"width:7%\">Cus. Pref.</th>\r\n                <th style=\"width:9%\">StartTime</th>\r\n                <th style=\"width:9%\">FinishedTime</th>\r\n                <th style=\"width:9%\">Rate</th>\r\n            </tr>\r\n    \r\n    \r\n            <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n                <td style=\"width:5%\">{{i+1}}</td>\r\n                <td style=\"width:8%\">{{ir.DATE}}</td>\r\n                <td style=\"width:8%\">{{ir.USER}}</td>\r\n                <td style=\"width:15%\">{{ir.ROOM}}</td>\r\n                <td style=\"width:15%\">{{ir.EMPLOYEE}}</td>\r\n                <td style=\"width:15%\">{{ir.CUSTOMER}}</td>\r\n                <td style=\"width:7%\">{{ir.EMPLOYEE_PREFERED}}</td>\r\n                <td style=\"width:9%\">{{ir.STARTTIME}}</td>\r\n                <td style=\"width:9%\">{{ir.ENDTIME}}</td>\r\n                <td style=\"width:9%\">{{ir.RATE}}</td>\r\n            </tr>\r\n        </tbody>\r\n    </div>\r\n</Table>\r\n\r\n<ba-modal #childModal title=\"Information\" size=\"sm\">\r\n    {{DialogMessage}}\r\n    \r\n    \r\n</ba-modal>\r\n\r\n<ba-modal #loginModal title=\"Login\" size=\"sm\">\r\n    <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n    \r\n</ba-modal>"
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-xlg-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12\">\r\n        <ba-card title=\"Report Parameters\">\r\n            <div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"serviceselect\" style=\"float:left;width:10%\">Service :</label>\r\n                    <div style=\"float:left;width:80%\">\r\n                        <angular2-multiselect [data]=\"ServiceList\" [settings]=\"serviceSetting\" [(ngModel)]=\"selectedService\"\r\n                            (onSelect)=\"onServiceSelect($event)\" (onDeSelect)=\"onServiceDeselect($event)\" id=\"serviceselect\">\r\n                        </angular2-multiselect>\r\n                    </div>\r\n\r\n\r\n                </div>\r\n                <div class=\"form-group row\">\r\n\r\n                    <label for=\"date1\" style=\"float:left;width:10%\">From :</label>\r\n                    <input type=\"date\" style=\"float:left;width:30%;height:28px;padding:2px\" class=\"form-control\" id=\"date1\" [(ngModel)]=\"reportObj.Date1\">\r\n                     <label for=\"date2\" style=\"float:left;width:10%;margin-left:20px\">To :</label>\r\n                    <input type=\"date\" class=\"form-control\" id=\"date2\" [(ngModel)]=\"reportObj.Date2\" style=\"float:left;width:30%;height:28px;padding:2px\">\r\n\r\n                </div>\r\n                \r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"loadReportEvent()\" [disabled]=\"reportObj.Date1==null || reportObj.Date2==null || reportObj.SERVICEID==null\">Load</button>\r\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"onCancel()\">Clear</button>\r\n        </ba-card>\r\n    </div>\r\n</div>\r\n<Table id=\"BlueHeaderResizableTable\" style=\"width:100%\">\r\n    <div  style=\"width:100%;max-height:400px;overflow:auto;scrollbar-3dlight-color:#FFFFFF;scrollbar-arrow-color:#000000;scrollbar-base-color:#FF9999;scrollbar-darkshadow-color:#000000;scrollbar-face-color:#000000;scrollbar-highlight-color:#000000;\r\nscrollbar-shadow-color:#0033CC\">\r\n        <tbody style=\"width: 100%;display: table;\">\r\n            <tr style=\"height:30px;width:100%\">\r\n                <th style=\"width:5%\">SNo</th>\r\n                <th style=\"width:8%\">Date</th>\r\n                <th style=\"width:8%\">User</th>\r\n                <th style=\"width:15%\">Room</th>\r\n                <th style=\"width:15%\">Therapist</th>\r\n                <th style=\"width:15%\">Customer</th>\r\n                <th style=\"width:7%\">Cus. Pref.</th>\r\n                <th style=\"width:9%\">StartTime</th>\r\n                <th style=\"width:9%\">FinishedTime</th>\r\n                <th style=\"width:9%\">Rate</th>\r\n            </tr>\r\n    \r\n    \r\n            <tr *ngFor=\"let ir of reportList;let i=index\" style=\"height:28px\">\r\n                <td style=\"width:5%\">{{i+1}}</td>\r\n                <td style=\"width:8%\">{{ir.DATE}}</td>\r\n                <td style=\"width:8%\">{{ir.USER}}</td>\r\n                <td style=\"width:15%\">{{ir.ROOM}}</td>\r\n                <td style=\"width:15%\">{{ir.EMPLOYEE}}</td>\r\n                <td style=\"width:15%\">{{ir.CUSTOMER}}</td>\r\n                <td style=\"width:7%\">{{ir.EMPLOYEE_PREFERED}}</td>\r\n                <td style=\"width:9%\">{{ir.STARTTIME}}</td>\r\n                <td style=\"width:9%\">{{ir.ENDTIME}}</td>\r\n                <td style=\"width:9%\">{{ir.RATE}}</td>\r\n            </tr>\r\n        </tbody>\r\n    </div>\r\n</Table>\r\n\r\n<ba-modal #childModal title=\"Information\" size=\"sm\">\r\n    {{DialogMessage}}\r\n    \r\n    \r\n</ba-modal>\r\n\r\n<ba-modal #loginModal title=\"Login\" size=\"sm\">\r\n    <login (signedIn)=\"loginModal.hide()\" toUrl=\"test\"></login>\r\n    \r\n</ba-modal>"
 
 /***/ }),
 
@@ -1565,6 +1678,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_repositories_masterRepo_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../common/repositories/masterRepo.service */ "./src/app/common/repositories/masterRepo.service.ts");
 /* harmony import */ var _common_services_permission_authService_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../common/services/permission/authService.service */ "./src/app/common/services/permission/authService.service.ts");
 /* harmony import */ var _report_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./report.service */ "./src/app/pages/reports/components/report.service.ts");
+/* harmony import */ var _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../common/services/report-date-range.util */ "./src/app/common/services/report-date-range.util.ts");
+
 
 
 
@@ -1584,9 +1699,22 @@ var ServiceReport = /** @class */ (function () {
         this.reportList = [];
         this.reportObj = {};
         this.ServiceList = [];
+        this.selectedService = [];
+        this.serviceSetting = {};
     }
     ServiceReport.prototype.ngOnInit = function () {
         var _this = this;
+        var range = _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_7__["ReportDateRangeUtil"].getCurrentAdMonthRange();
+        this.reportObj.Date1 = range.Date1;
+        this.reportObj.Date2 = range.Date2;
+        this.serviceSetting = {
+            enableCheckAll: false,
+            singleSelection: true,
+            text: 'Select Service',
+            enableSearchFilter: true,
+            labelKey: "DESCRIPTION",
+            primaryKey: "SERVICEID"
+        };
         if (this.masterService._serviceList.length > 0) {
             this.ServiceList = this.masterService._serviceList;
         }
@@ -1598,8 +1726,16 @@ var ServiceReport = /** @class */ (function () {
         }
     };
     ServiceReport.prototype.onCancel = function () {
-        this.reportObj = {};
+        var range = _common_services_report_date_range_util__WEBPACK_IMPORTED_MODULE_7__["ReportDateRangeUtil"].getCurrentAdMonthRange();
+        this.reportObj = { Date1: range.Date1, Date2: range.Date2 };
         this.reportList = [];
+        this.selectedService = [];
+    };
+    ServiceReport.prototype.onServiceSelect = function (item) {
+        this.reportObj.SERVICEID = item.SERVICEID;
+    };
+    ServiceReport.prototype.onServiceDeselect = function (item) {
+        this.reportObj.SERVICEID = null;
     };
     ServiceReport.prototype.loadReportEvent = function () {
         var _this = this;
@@ -1744,6 +1880,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_ng2_smart_table_ng2_smart_table__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! src/app/ng2-smart-table/ng2-smart-table */ "./src/app/ng2-smart-table/ng2-smart-table.ts");
 /* harmony import */ var src_app_common_nepali_date_picker_nepali_date_picker_module__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! src/app/common/nepali-date-picker/nepali-date-picker.module */ "./src/app/common/nepali-date-picker/nepali-date-picker.module.ts");
 /* harmony import */ var angular2_multiselect_dropdown__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! angular2-multiselect-dropdown */ "./node_modules/angular2-multiselect-dropdown/index.js");
+/* harmony import */ var _schedule_components_CustomerSelect_customerSelect_module__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../schedule/components/CustomerSelect/customerSelect.module */ "./src/app/pages/schedule/components/CustomerSelect/customerSelect.module.ts");
+
 
 
 
@@ -1782,6 +1920,7 @@ var ReportsModule = /** @class */ (function () {
                 src_app_ng2_smart_table_ng2_smart_table__WEBPACK_IMPORTED_MODULE_23__["Ng2SmartTableModule"],
                 src_app_common_nepali_date_picker_nepali_date_picker_module__WEBPACK_IMPORTED_MODULE_24__["NepaliDateModule"],
                 angular2_multiselect_dropdown__WEBPACK_IMPORTED_MODULE_25__["AngularMultiSelectModule"],
+                _schedule_components_CustomerSelect_customerSelect_module__WEBPACK_IMPORTED_MODULE_26__["CustomerSelectModule"],
                 _report_routing__WEBPACK_IMPORTED_MODULE_6__["routing"],
                 ngx_bootstrap__WEBPACK_IMPORTED_MODULE_5__["ModalModule"].forRoot(),
                 _login_login_module__WEBPACK_IMPORTED_MODULE_12__["LoginModule"]
@@ -1871,4 +2010,4 @@ var routing = _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forCh
 /***/ })
 
 }]);
-//# sourceMappingURL=reports-report-module.60d380f05e7481d4846f.js.map
+//# sourceMappingURL=reports-report-module.2796cdd938c63d2c4a0e.js.map
