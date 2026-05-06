@@ -3918,13 +3918,15 @@ var AddService = /** @class */ (function () {
         this.masterRepo.getRooms().subscribe(function (response) {
             _this.roomList = response;
         });
-        this.masterRepo.getItemList().subscribe(function (data) {
-            _this.ItemList = data.sort(function (a, b) {
-                var nameA = (a.ItemName || '').toLowerCase().trim();
-                var nameB = (b.ItemName || '').toLowerCase().trim();
-                return nameA.localeCompare(nameB);
-            });
-        }, function (Error) { return _this.masterRepo.handleWebError(Error); });
+        if (this.ShowPosItem) {
+            this.masterRepo.getItemList().subscribe(function (data) {
+                _this.ItemList = data.sort(function (a, b) {
+                    var nameA = (a.ItemName || '').toLowerCase().trim();
+                    var nameB = (b.ItemName || '').toLowerCase().trim();
+                    return nameA.localeCompare(nameB);
+                });
+            }, function (Error) { return _this.masterRepo.handleWebError(Error); });
+        }
         this.masterRepo.getFormPreferences("Service").subscribe(function (result) {
             _this.common.setFormPreference(_this.form, result.fields);
         });
@@ -4481,4 +4483,4 @@ var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forCh
 /***/ })
 
 }]);
-//# sourceMappingURL=masters-masters-module.8283e24c21406c94c679.js.map
+//# sourceMappingURL=masters-masters-module.fe5d32b7cdbe4405de77.js.map

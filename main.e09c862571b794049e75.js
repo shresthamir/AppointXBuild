@@ -5425,7 +5425,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!*******************************************!*\
   !*** ./src/app/theme/components/index.ts ***!
   \*******************************************/
-/*! exports provided: BaPageTop, BaModalComponent, BaMsgCenter, BaSidebar, BaMenuItem, BaMenu, BaContentTop, BaCard, BaAmChart, BaChartistChart, BaBackTop, BaFullCalendar, BaCheckbox, BaMultiCheckbox */
+/*! exports provided: BaPageTop, BaMsgCenter, BaSidebar, BaMenuItem, BaMenu, BaContentTop, BaCard, BaAmChart, BaChartistChart, BaBackTop, BaFullCalendar, BaCheckbox, BaMultiCheckbox, BaModalComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6311,7 +6311,7 @@ var BaMenuService = /** @class */ (function () {
         }
         var treatmentMenus = ["Treatment Entry", "Treatment Details", "Disease", "Medication", "Prescription", "Follow Up Report"];
         if (treatmentMenus.indexOf(prepared.title) != -1) {
-            prepared.hidden = !this.setting.EnableTreatment;
+            prepared.hidden = !this.setting.EnableTreatment || prepared.hidden;
         }
         var seriesMenus = ["Series", "Series Sales", "Series Report"];
         if (seriesMenus.indexOf(prepared.title) != -1) {
@@ -6980,4 +6980,4 @@ module.exports = __webpack_require__(/*! D:\Projects\Minor Projects\AppointX\App
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.4fe2f5d78415ce77aff4.js.map
+//# sourceMappingURL=main.e09c862571b794049e75.js.map

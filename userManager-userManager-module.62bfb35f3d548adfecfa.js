@@ -348,6 +348,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../../../pages.menu */ "./src/app/pages/pages.menu.ts");
 /* harmony import */ var _theme_components_baModal_baModal_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../../theme/components/baModal/baModal.component */ "./src/app/theme/components/baModal/baModal.component.ts");
 /* harmony import */ var _common_services_common_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../../common/services/common.service */ "./src/app/common/services/common.service.ts");
+/* harmony import */ var src_app_common_services_permission__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/common/services/permission */ "./src/app/common/services/permission/index.ts");
+
 
 
 
@@ -357,12 +359,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var AddRole = /** @class */ (function () {
-    function AddRole(addUserService, router, activatedRoute, service, common) {
+    function AddRole(addUserService, router, activatedRoute, service, common, authService) {
         this.addUserService = addUserService;
         this.router = router;
         this.activatedRoute = activatedRoute;
         this.service = service;
         this.common = common;
+        this.authService = authService;
         this.modeTitle = "Add Role";
         this.DialogMessage = "Saving data please wait ...";
         this.mode = "add"; //mode of the form add or edit
@@ -376,13 +379,20 @@ var AddRole = /** @class */ (function () {
             this.mode = "add";
             this.modeTitle = "Add Role";
         }
+        this.setting = this.authService.getSetting();
     }
     AddRole.prototype.ngOnInit = function () {
         var _this = this;
         this.common.recursiveForEach(_pages_menu__WEBPACK_IMPORTED_MODULE_5__["PAGES_MENU"], function (item) {
-            if (["pages", "treatment-list", "treatment-details", "series", "seriesSales", "disease", "medication", "prescription"].indexOf(item.path) !==
+            if (["pages", "series", "seriesSales"].indexOf(item.path) !==
                 -1)
                 return;
+            if (!_this.setting.EnableTreatment) {
+                var treatmentMenus = ["treatment-list", "treatment-details", "disease", "medication", "prescription"];
+                if (treatmentMenus.indexOf(item.path) != -1) {
+                    return;
+                }
+            }
             var menu = item.data && item.data.menu;
             _this.menuRights.push({
                 menuId: item.path,
@@ -486,7 +496,8 @@ var AddRole = /** @class */ (function () {
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
             _common_repositories__WEBPACK_IMPORTED_MODULE_4__["MasterRepo"],
-            _common_services_common_service__WEBPACK_IMPORTED_MODULE_7__["CommonService"]])
+            _common_services_common_service__WEBPACK_IMPORTED_MODULE_7__["CommonService"],
+            src_app_common_services_permission__WEBPACK_IMPORTED_MODULE_8__["AuthService"]])
     ], AddRole);
     return AddRole;
 }());
@@ -1015,4 +1026,4 @@ var routing = _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forCh
 /***/ })
 
 }]);
-//# sourceMappingURL=userManager-userManager-module.aa2a5fc5472ca920bf85.js.map
+//# sourceMappingURL=userManager-userManager-module.62bfb35f3d548adfecfa.js.map
