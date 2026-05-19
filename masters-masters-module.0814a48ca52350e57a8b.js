@@ -1157,6 +1157,7 @@ var AddEmployee = /** @class */ (function () {
             TELNO: [''],
             MOBILE: [''],
             DESIGNATION: [''],
+            SALESMANID: [''],
             OFFDAY: [''],
             EMERGENCYCONTACTNAME: [''],
             EMERGENCYCONTACTNO: [''],
@@ -1176,10 +1177,11 @@ var AddEmployee = /** @class */ (function () {
                         TELNO: this.employeeObj.TELNO,
                         MOBILE: this.employeeObj.MOBILE,
                         DESIGNATION: this.employeeObj.DESIGNATION,
+                        SALESMANID: this.employeeObj.SALESMANID,
                         OFFDAY: this.employeeObj.OFFDAY,
                         EMERGENCYCONTACTNAME: this.employeeObj.EMERGENCYCONTACTNAME,
                         EMERGENCYCONTACTNO: this.employeeObj.EMERGENCYCONTACTNO,
-                        Inactive: this.employeeObj.Inactive
+                        Inactive: this.employeeObj.Inactive,
                     });
                     try {
                         for (var _b = tslib__WEBPACK_IMPORTED_MODULE_0__["__values"](this.Days), _c = _b.next(); !_c.done; _c = _b.next()) {
@@ -4483,4 +4485,4 @@ var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forCh
 /***/ })
 
 }]);
-//# sourceMappingURL=masters-masters-module.fe5d32b7cdbe4405de77.js.map
+//# sourceMappingURL=masters-masters-module.0814a48ca52350e57a8b.js.map

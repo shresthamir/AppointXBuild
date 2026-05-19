@@ -1439,9 +1439,6 @@ __webpack_require__.r(__webpack_exports__);
 var MasterRepo = /** @class */ (function () {
     //constructor 
     function MasterRepo(http, authService, cache, state) {
-        //console.log({ authservice: authService });
-        // this._employeeList = [{ EMPLOYEEID: 1, ADDRESS: 'Thimi', DESIGNATION: 'NotMention', NAME: 'Sujeep', TELNO: '11111111', OFFDAY: ['monday', 'thursday'], MOBILE: '9999', FLGAVAILABLE: 0 },
-        // { EMPLOYEEID: 2, ADDRESS: 'Thimi2', DESIGNATION: 'NotMention2', NAME: 'Sujeep2', TELNO: '11111111', OFFDAY: [], MOBILE: '999999', FLGAVAILABLE: 0 }]
         this.http = http;
         this.authService = authService;
         this.cache = cache;
@@ -6980,4 +6977,4 @@ module.exports = __webpack_require__(/*! D:\Projects\Minor Projects\AppointX\App
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.e09c862571b794049e75.js.map
+//# sourceMappingURL=main.79052f21da289fc940e4.js.map
