@@ -2259,8 +2259,7 @@ var HttpInterceptorService = /** @class */ (function () {
             token = this.cache.get('TOKEN') || "";
         return request.clone({
             setHeaders: {
-                Authorization: token,
-                'Content-Type': 'application/json',
+                Authorization: token
             }
         });
     };
@@ -6977,4 +6976,4 @@ module.exports = __webpack_require__(/*! D:\Projects\Minor Projects\AppointX\App
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.79052f21da289fc940e4.js.map
+//# sourceMappingURL=main.c4f551f3fd8ae6da3f19.js.map

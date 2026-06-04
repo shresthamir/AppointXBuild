@@ -3730,6 +3730,8 @@ var ScheduleInput = /** @class */ (function () {
     };
     ScheduleInput.prototype.getTimeSlotForAppointment = function () {
         var _this = this;
+        if (!this._authService.getSetting().ShowSuggestionTimes)
+            return;
         var model = {
             customerId: this.scheduleInput.CUSTOMER.CUSID,
             outletId: this.scheduleInput.branch.branchId,
@@ -5043,29 +5045,17 @@ var TreatmentList = /** @class */ (function () {
         this.subcriptions = [];
         this.source = new _ng2_smart_table_ng2_smart_table__WEBPACK_IMPORTED_MODULE_4__["LocalDataSource"]();
         var Clist = [];
+        var date = new _angular_common__WEBPACK_IMPORTED_MODULE_8__["DatePipe"]("en-US").transform(Date.now(), "MM/dd/yyyy");
         if (this.service.selected_Date != null) {
-            //console.log('VALIDATED');
-            // var date = new DatePipe("en-US").transform(Date.now(), "MM/dd/yyyy");
-            //console.log(this.service.selected_Date, typeof this.service.selected_Date);
             var date = this.service.getDate();
-            //console.log('saveDate',date,typeof date)
-            this.service.getTreatmentListDetails(encodeURIComponent(date)).subscribe(function (data) {
-                Clist.push(data);
-            }, function (Error) { return console.log(Error); }, function () {
-                //console.log(Clist, "CLIST NG2")
-                _this.service._treatmentList = Clist;
-                _this.source.load(Clist);
-            });
         }
-        else {
-            var date = new _angular_common__WEBPACK_IMPORTED_MODULE_8__["DatePipe"]("en-US").transform(Date.now(), "MM/dd/yyyy");
-            this.service.getTreatmentListDetails(encodeURIComponent(date)).subscribe(function (data) {
-                Clist.push(data);
-            }, function (Error) { return console.log(Error); }, function () {
-                _this.service._treatmentList = Clist;
-                _this.source.load(Clist);
-            });
-        }
+        this.service.getTreatmentListDetails(encodeURIComponent(date)).subscribe(function (data) {
+            var treatments = data;
+            Clist.push.apply(Clist, tslib__WEBPACK_IMPORTED_MODULE_0__["__spread"](treatments));
+        }, function (Error) { return console.log(Error); }, function () {
+            _this.service._treatmentList = Clist;
+            _this.source.load(Clist);
+        });
     }
     TreatmentList.prototype.onAddClick = function () {
         if (this._authService.getUserProfile()) {
@@ -5147,8 +5137,10 @@ var TreatmentList = /** @class */ (function () {
         var date = v;
         //console.log('before date:',date,typeof date)
         this.service.saveDate(date);
+        console.log('source', this.source);
         this.service.getTreatmentListDetails(encodeURIComponent(date)).subscribe(function (data) {
-            Clist.push(data);
+            var treatments = data;
+            Clist.push.apply(Clist, tslib__WEBPACK_IMPORTED_MODULE_0__["__spread"](treatments));
         }, function (Error) { return console.log(Error); }, function () {
             _this.service._treatmentList = Clist;
             _this.source.load(Clist);
@@ -5504,4 +5496,4 @@ var ScheduleInputService = /** @class */ (function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=schedule-schedule-module.81e3a54c3db69f819011.js.map
+//# sourceMappingURL=schedule-schedule-module.defd5303f125fe6ba9ea.js.map
