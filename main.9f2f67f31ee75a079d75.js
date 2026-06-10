@@ -1605,10 +1605,11 @@ var MasterRepo = /** @class */ (function () {
         if (cached) {
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(cached);
         }
+        console.log(this.apiUrl + ("/getEmployeeList?branchId=" + branchId));
         return this.http.get(this.apiUrl + ("/getEmployeeList?branchId=" + branchId), this.getRequestOption())
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["mergeMap"])(function (res) {
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["tap"])(function (res) {
             _this.cache.set(cacheKey, res, 10); // TTL: 10 minutes
-            return Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(res);
+            console.log('API RESPONSE', res);
         }));
     };
     MasterRepo.prototype.getRoomListNew = function (branchId) {
@@ -6976,4 +6977,4 @@ module.exports = __webpack_require__(/*! D:\Projects\Minor Projects\AppointX\App
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.c4f551f3fd8ae6da3f19.js.map
+//# sourceMappingURL=main.9f2f67f31ee75a079d75.js.map

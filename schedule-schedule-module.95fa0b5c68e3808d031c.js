@@ -2092,13 +2092,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var src_app_theme_components_baModal_baModal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/theme/components/baModal/baModal.component */ "./src/app/theme/components/baModal/baModal.component.ts");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
-/* harmony import */ var _common_repositories__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../common/repositories */ "./src/app/common/repositories/index.ts");
-/* harmony import */ var _common_services_disable_date_picker_disable_date_picker_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../common/services/disable-date-picker/disable-date-picker.service */ "./src/app/common/services/disable-date-picker/disable-date-picker.service.ts");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var src_app_common_services_permission__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/common/services/permission */ "./src/app/common/services/permission/index.ts");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-
+/* harmony import */ var _common_repositories__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../common/repositories */ "./src/app/common/repositories/index.ts");
+/* harmony import */ var _common_services_disable_date_picker_disable_date_picker_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../common/services/disable-date-picker/disable-date-picker.service */ "./src/app/common/services/disable-date-picker/disable-date-picker.service.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var src_app_common_services_permission__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/common/services/permission */ "./src/app/common/services/permission/index.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 
 
 
@@ -2156,9 +2154,8 @@ var EmployeeTransfer = /** @class */ (function () {
     EmployeeTransfer.prototype.getEmployeeList = function (branchId) {
         var _this = this;
         return this.masterRepo.getEmployeeListNew(branchId)
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["mergeMap"])(function (data) {
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["tap"])(function (data) {
             _this.employeeList = data;
-            return Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(data);
         }));
     };
     EmployeeTransfer.prototype.getBranchList = function (user) {
@@ -2286,7 +2283,8 @@ var EmployeeTransfer = /** @class */ (function () {
         this.transfer.employee = e;
     };
     EmployeeTransfer.prototype.branchChanged = function (e) {
-        this.getEmployeeList(e.branchId);
+        this.getEmployeeList(e.branchId).subscribe(function (res) {
+        });
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('childModal'),
@@ -2296,14 +2294,14 @@ var EmployeeTransfer = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'employee-transfer',
             template: __webpack_require__(/*! ./employee-transfer.component.html */ "./src/app/pages/schedule/components/EmployeeTransfer/employee-transfer.component.html"),
-            providers: [_angular_common__WEBPACK_IMPORTED_MODULE_7__["DatePipe"]]
+            providers: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["DatePipe"]]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
-            _common_repositories__WEBPACK_IMPORTED_MODULE_5__["MasterRepo"],
-            _common_services_disable_date_picker_disable_date_picker_service__WEBPACK_IMPORTED_MODULE_6__["DisableDateService"],
-            _angular_common__WEBPACK_IMPORTED_MODULE_7__["DatePipe"],
-            src_app_common_services_permission__WEBPACK_IMPORTED_MODULE_8__["AuthService"]])
+            _common_repositories__WEBPACK_IMPORTED_MODULE_4__["MasterRepo"],
+            _common_services_disable_date_picker_disable_date_picker_service__WEBPACK_IMPORTED_MODULE_5__["DisableDateService"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_6__["DatePipe"],
+            src_app_common_services_permission__WEBPACK_IMPORTED_MODULE_7__["AuthService"]])
     ], EmployeeTransfer);
     return EmployeeTransfer;
 }());
@@ -5496,4 +5494,4 @@ var ScheduleInputService = /** @class */ (function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=schedule-schedule-module.defd5303f125fe6ba9ea.js.map
+//# sourceMappingURL=schedule-schedule-module.95fa0b5c68e3808d031c.js.map
