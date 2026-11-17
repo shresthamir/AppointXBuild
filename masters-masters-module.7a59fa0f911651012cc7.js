@@ -622,7 +622,13 @@ var CustomerList = /** @class */ (function () {
         //console.log(this.settings.mode);
     };
     CustomerList.prototype.onAddClick = function () {
-        this.router.navigate(['/pages/masters/cus/detail-cus', { mode: "add", returnUrl: this.router.url }]);
+        if (this.menuRight.create) {
+            this.router.navigate(['/pages/masters/cus/detail-cus', { mode: "add", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to add Customer.";
+            this.childModal.show();
+        }
     };
     CustomerList.prototype.onDeleteConfirm = function (event) {
         this.selectedRow = event;
@@ -631,7 +637,7 @@ var CustomerList = /** @class */ (function () {
     CustomerList.prototype.DeleteEvent = function () {
         var _this = this;
         this.deleteModal.hide();
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.delete) {
             try {
                 this.DialogMessage = "Deleting please wait...";
                 this.childModal.show();
@@ -668,7 +674,13 @@ var CustomerList = /** @class */ (function () {
         this.router.navigate(["/pages/masters/cus/detail-cus", { id: event.data.CUSID, mode: "view", returnUrl: this.router.url }]);
     };
     CustomerList.prototype.onEditClick = function (event) {
-        this.router.navigate(["/pages/masters/cus/detail-cus", { id: event.data.CUSID, mode: "edit", returnUrl: this.router.url }]);
+        if (this.menuRight.edit) {
+            this.router.navigate(["/pages/masters/cus/detail-cus", { id: event.data.CUSID, mode: "edit", returnUrl: this.router.url }]);
+        }
+        else {
+            this.DialogMessage = "You are not authorized to edit customer.";
+            this.childModal.show();
+        }
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('childModal'),
@@ -980,13 +992,20 @@ var DiseaseList = /** @class */ (function () {
             console.log('Disease list fetched successfully');
         });
     }
+    Object.defineProperty(DiseaseList.prototype, "menuRight", {
+        get: function () {
+            return this._authService.getRole.menuRights.find(function (x) { return x.menuId === 'disease'; });
+        },
+        enumerable: true,
+        configurable: true
+    });
     DiseaseList.prototype.setMode = function () {
         // this.divService.create();
         //this.settings.mode='inline';
         //console.log(this.settings.mode);
     };
     DiseaseList.prototype.onAddClick = function () {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.create) {
             this.router.navigate(['/pages/masters/disease/detail-disease', { mode: "add", returnUrl: this.router.url }]);
         }
         else {
@@ -1001,7 +1020,7 @@ var DiseaseList = /** @class */ (function () {
     DiseaseList.prototype.DeleteEvent = function () {
         var _this = this;
         this.deleteModal.hide();
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.delete) {
             try {
                 this.DialogMessage = "Deleting please wait...";
                 this.childModal.show();
@@ -1037,8 +1056,7 @@ var DiseaseList = /** @class */ (function () {
         }
     };
     DiseaseList.prototype.onEditClick = function (event) {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
-            //console.log("edit",event.data);
+        if (this.menuRight.edit) {
             this.router.navigate(["/pages/masters/disease/detail-disease", { id: event.data.DISEASEID, mode: "edit", returnUrl: this.router.url }]);
         }
         else {
@@ -1147,8 +1165,8 @@ var AddEmployee = /** @class */ (function () {
         }
     }
     AddEmployee.prototype.ngOnInit = function () {
-        var _this = this;
         var e_1, _a;
+        var _this = this;
         var self = this;
         this.form = this.fb.group({
             EMPLOYEEID: [''],
@@ -1254,8 +1272,8 @@ var AddEmployee = /** @class */ (function () {
         this.childModal.hide();
     };
     AddEmployee.prototype.onsubmit = function () {
-        var _this = this;
         var e_2, _a;
+        var _this = this;
         try {
             var offDays = [];
             try {
@@ -1433,7 +1451,7 @@ var EmployeeList = /** @class */ (function () {
         configurable: true
     });
     EmployeeList.prototype.onAddClick = function () {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.create) {
             this.router.navigate(['/pages/masters/emp/detail-emp', { mode: "add", returnUrl: this.router.url }]);
         }
         else {
@@ -1448,7 +1466,7 @@ var EmployeeList = /** @class */ (function () {
     EmployeeList.prototype.DeleteEvent = function () {
         var _this = this;
         this.deleteModal.hide();
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.delete) {
             try {
                 this.DialogMessage = "Deleting please wait...";
                 this.childModal.show();
@@ -1487,7 +1505,7 @@ var EmployeeList = /** @class */ (function () {
         this.router.navigate(["/pages/masters/emp/detail-emp", { mode: "view", returnUrl: this.router.url, id: event.data.EMPLOYEEID }]);
     };
     EmployeeList.prototype.onEditClick = function (event) {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.edit) {
             this.router.navigate(["/pages/masters/emp/detail-emp", { mode: "edit", returnUrl: this.router.url, id: event.data.EMPLOYEEID }]);
         }
         else {
@@ -1897,7 +1915,7 @@ var HolidayEntryComponent = /** @class */ (function () {
         configurable: true
     });
     HolidayEntryComponent.prototype.onAddClick = function () {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.create) {
             this.router.navigate(['/pages/masters/holiday/detail-holiday', { mode: "add", returnUrl: this.router.url }]);
         }
         else {
@@ -1906,12 +1924,11 @@ var HolidayEntryComponent = /** @class */ (function () {
         }
     };
     HolidayEntryComponent.prototype.onEditClick = function (event) {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
-            //console.log("ID OF HOLIDAY", event.data.HOLIDAYID)
+        if (this.menuRight.edit) {
             this.router.navigate(["/pages/masters/holiday/detail-holiday", { id: event.data.HOLIDAYID, mode: "edit", returnUrl: this.router.url }]);
         }
         else {
-            this.DialogMessage = "You are not authorized to edit room.";
+            this.DialogMessage = "You are not authorized to edit holiday.";
             this.childModal.show();
         }
     };
@@ -1922,7 +1939,7 @@ var HolidayEntryComponent = /** @class */ (function () {
     HolidayEntryComponent.prototype.DeleteEvent = function () {
         var _this = this;
         this.deleteModal.hide();
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.delete) {
             try {
                 this.DialogMessage = "Deleting please wait...";
                 this.childModal.show();
@@ -1953,7 +1970,7 @@ var HolidayEntryComponent = /** @class */ (function () {
             }
         }
         else {
-            this.DialogMessage = "You are not authorized to delete  room.";
+            this.DialogMessage = "You are not authorized to delete holiday.";
             this.childModal.show();
         }
     };
@@ -2221,8 +2238,15 @@ var MedicationList = /** @class */ (function () {
             _this.source = new _ng2_smart_table_ng2_smart_table__WEBPACK_IMPORTED_MODULE_4__["LocalDataSource"](Mlist);
         });
     }
+    Object.defineProperty(MedicationList.prototype, "menuRight", {
+        get: function () {
+            return this._authService.getRole.menuRights.find(function (x) { return x.menuId === 'medication'; });
+        },
+        enumerable: true,
+        configurable: true
+    });
     MedicationList.prototype.onAddClick = function () {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.create) {
             this.router.navigate(['/pages/masters/medication/detail-medication', { mode: "add", returnUrl: this.router.url }]);
         }
         else {
@@ -2237,7 +2261,7 @@ var MedicationList = /** @class */ (function () {
     MedicationList.prototype.DeleteEvent = function () {
         var _this = this;
         this.deleteModal.hide();
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.delete) {
             try {
                 this.DialogMessage = "Deleting please wait...";
                 this.childModal.show();
@@ -2268,12 +2292,12 @@ var MedicationList = /** @class */ (function () {
             }
         }
         else {
-            this.DialogMessage = "You are not authorized to delete  room.";
+            this.DialogMessage = "You are not authorized to delete medication.";
             this.childModal.show();
         }
     };
     MedicationList.prototype.onEditClick = function (event) {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.edit) {
             this.router.navigate(["/pages/masters/medication/detail-medication", { id: event.data.MEDICATIONID, mode: "edit", returnUrl: this.router.url }]);
         }
         else {
@@ -2546,8 +2570,15 @@ var PrescriptionList = /** @class */ (function () {
             _this.source = new _ng2_smart_table_ng2_smart_table__WEBPACK_IMPORTED_MODULE_4__["LocalDataSource"](Plist);
         });
     }
+    Object.defineProperty(PrescriptionList.prototype, "menuRight", {
+        get: function () {
+            return this._authService.getRole.menuRights.find(function (x) { return x.menuId === 'prescription'; });
+        },
+        enumerable: true,
+        configurable: true
+    });
     PrescriptionList.prototype.onAddClick = function () {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.create) {
             this.router.navigate(['/pages/masters/prescription/detail-prescription', { mode: "add", returnUrl: this.router.url }]);
         }
         else {
@@ -2562,7 +2593,7 @@ var PrescriptionList = /** @class */ (function () {
     PrescriptionList.prototype.DeleteEvent = function () {
         var _this = this;
         this.deleteModal.hide();
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.delete) {
             try {
                 this.DialogMessage = "Deleting please wait...";
                 this.childModal.show();
@@ -2598,7 +2629,7 @@ var PrescriptionList = /** @class */ (function () {
         }
     };
     PrescriptionList.prototype.onEditClick = function (event) {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.edit) {
             this.router.navigate(["/pages/masters/prescription/detail-prescription", { id: event.data.id, mode: "edit", returnUrl: this.router.url }]);
         }
         else {
@@ -2941,7 +2972,7 @@ var RoomList = /** @class */ (function () {
         configurable: true
     });
     RoomList.prototype.onAddClick = function () {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.create) {
             this.router.navigate(['/pages/masters/room/detail-room', { mode: "add", returnUrl: this.router.url }]);
         }
         else {
@@ -2956,7 +2987,7 @@ var RoomList = /** @class */ (function () {
     RoomList.prototype.DeleteEvent = function () {
         var _this = this;
         this.deleteModal.hide();
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.delete) {
             try {
                 this.DialogMessage = "Deleting please wait...";
                 this.childModal.show();
@@ -2987,12 +3018,12 @@ var RoomList = /** @class */ (function () {
             }
         }
         else {
-            this.DialogMessage = "You are not authorized to delete  room.";
+            this.DialogMessage = "You are not authorized to delete room.";
             this.childModal.show();
         }
     };
     RoomList.prototype.onEditClick = function (event) {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.edit) {
             this.router.navigate(["/pages/masters/room/detail-room", { id: event.data.ROOMID, mode: "edit", returnUrl: this.router.url }]);
         }
         else {
@@ -4145,7 +4176,7 @@ var ServiceList = /** @class */ (function () {
         configurable: true
     });
     ServiceList.prototype.onAddClick = function () {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.create) {
             this.router.navigate(['/pages/masters/ser/detail-ser', { mode: "add", returnUrl: this.router.url }]);
         }
         else {
@@ -4160,7 +4191,7 @@ var ServiceList = /** @class */ (function () {
     ServiceList.prototype.DeleteEvent = function () {
         var _this = this;
         this.deleteModal.hide();
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.delete) {
             try {
                 this.DialogMessage = "Deleting please wait...";
                 this.childModal.show();
@@ -4204,7 +4235,7 @@ var ServiceList = /** @class */ (function () {
     //   }
     // }
     ServiceList.prototype.onEditClick = function (event) {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.edit) {
             this.router.navigate(["/pages/masters/ser/detail-ser", { id: event.data.SERVICEID, mode: "edit", returnUrl: this.router.url }]);
         }
         else {
@@ -4485,4 +4516,4 @@ var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forCh
 /***/ })
 
 }]);
-//# sourceMappingURL=masters-masters-module.0814a48ca52350e57a8b.js.map
+//# sourceMappingURL=masters-masters-module.7a59fa0f911651012cc7.js.map

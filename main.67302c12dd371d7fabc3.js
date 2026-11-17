@@ -1035,8 +1035,12 @@ var AppComponent = /** @class */ (function () {
                 .subscribe(function (data) {
                 _this._state.setGlobalSetting("apiUrl", [data.apiUrl]);
                 _this._state.setGlobalSetting("contentUrl", [data.contentUrl]);
+                if (data.enableConsoleLog !== true) {
+                    console.log = function () { };
+                }
                 resolve();
             }, function (error) {
+                console.error("Failed to load appConfig.json:", error);
                 // fallback URL
                 _this._state.setGlobalSetting("apiUrl", [
                     "http://localhost:1782/api",
@@ -1605,11 +1609,9 @@ var MasterRepo = /** @class */ (function () {
         if (cached) {
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(cached);
         }
-        console.log(this.apiUrl + ("/getEmployeeList?branchId=" + branchId));
         return this.http.get(this.apiUrl + ("/getEmployeeList?branchId=" + branchId), this.getRequestOption())
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["tap"])(function (res) {
             _this.cache.set(cacheKey, res, 10); // TTL: 10 minutes
-            console.log('API RESPONSE', res);
         }));
     };
     MasterRepo.prototype.getRoomListNew = function (branchId) {
@@ -2465,7 +2467,8 @@ var CacheService = /** @class */ (function () {
         }
         var data = window.sessionStorage.getItem(key);
         try {
-            return JSON.parse(data);
+            var result = JSON.parse(data);
+            return result;
         }
         catch (e) {
             return null;
@@ -6977,4 +6980,4 @@ module.exports = __webpack_require__(/*! D:\Projects\Minor Projects\AppointX\App
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.aedbad9563e13352c92d.js.map
+//# sourceMappingURL=main.67302c12dd371d7fabc3.js.map

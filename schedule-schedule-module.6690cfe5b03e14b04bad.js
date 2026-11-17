@@ -2692,28 +2692,30 @@ var MasterSchedule = /** @class */ (function () {
         this.scheduleService.getRoomSchedule({ FDate: v, branches: this.selectedBranch.map(function (x) { return x.branchId; }) }).subscribe(function (data) {
             var e_1, _a;
             console.log(data, "room data");
-            _this.rt = data[0];
-            //console.log("room",this.rt);
-            //console.log("rt.DATE",this.rt.DATE)
-            var rtNewDate = new Date(_this.rt.DATE);
-            _this.rtFormat = _this.datePipe.transform(rtNewDate, "yyyy-MM-dd");
-            _this.rtFormatNepali = _this.masterRepo.toBSDate(_this.rtFormat);
-            _this.roomtimeTableMaker();
-            try {
-                for (var _b = tslib__WEBPACK_IMPORTED_MODULE_0__["__values"](_this.rt.ROOMS), _c = _b.next(); !_c.done; _c = _b.next()) {
-                    var r = _c.value;
-                    var bt = r.BOOKEDTIMES;
-                    //console.log("before",r)
-                    r.BOOKEDTIMES = bt.sort(function (x, y) { return new Date(x.STARTDATETIME).getTime() - new Date(y.STARTDATETIME).getTime(); });
-                    //console.log("after",r);
-                }
-            }
-            catch (e_1_1) { e_1 = { error: e_1_1 }; }
-            finally {
+            if (data && data.length > 0) {
+                _this.rt = data[0];
+                //console.log("room",this.rt);
+                //console.log("rt.DATE",this.rt.DATE)
+                var rtNewDate = new Date(_this.rt.DATE);
+                _this.rtFormat = _this.datePipe.transform(rtNewDate, "yyyy-MM-dd");
+                _this.rtFormatNepali = _this.masterRepo.toBSDate(_this.rtFormat);
+                _this.roomtimeTableMaker();
                 try {
-                    if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+                    for (var _b = tslib__WEBPACK_IMPORTED_MODULE_0__["__values"](_this.rt.ROOMS), _c = _b.next(); !_c.done; _c = _b.next()) {
+                        var r = _c.value;
+                        var bt = r.BOOKEDTIMES;
+                        //console.log("before",r)
+                        r.BOOKEDTIMES = bt.sort(function (x, y) { return new Date(x.STARTDATETIME).getTime() - new Date(y.STARTDATETIME).getTime(); });
+                        //console.log("after",r);
+                    }
                 }
-                finally { if (e_1) throw e_1.error; }
+                catch (e_1_1) { e_1 = { error: e_1_1 }; }
+                finally {
+                    try {
+                        if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+                    }
+                    finally { if (e_1) throw e_1.error; }
+                }
             }
         });
         $('div#tblSchedule').scrollLeft(this.DefaultTimeLineScroll);
@@ -5509,4 +5511,4 @@ var ScheduleInputService = /** @class */ (function () {
 /***/ })
 
 }]);
-//# sourceMappingURL=schedule-schedule-module.bcce63bac700e3810eca.js.map
+//# sourceMappingURL=schedule-schedule-module.6690cfe5b03e14b04bad.js.map

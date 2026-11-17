@@ -403,6 +403,7 @@ var AddRole = /** @class */ (function () {
                 create: _this.common.coalesce(menu && menu.allowCreate, true),
                 edit: _this.common.coalesce(menu && menu.allowEdit, true),
                 delete: _this.common.coalesce(menu && menu.allowDelete, true),
+                hidden: _this.common.coalesce(menu && menu.hidden, false)
             });
         });
         if (this.mode === "edit") {
@@ -806,7 +807,7 @@ var UserList = /** @class */ (function () {
             this.deleteModal.hide();
             this.DialogMessage = "Deleting please wait...";
             this.childModal.show();
-            if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+            if (this.menuRight.delete) {
                 var sub = this.adduserService.saveUser({ mode: 'delete', data: this.selectedData })
                     .subscribe(function (data) {
                     if (data.status == 'ok') {
@@ -851,7 +852,7 @@ var UserList = /** @class */ (function () {
         this.childModal.hide();
     };
     UserList.prototype.onEditClick = function (event) {
-        if (this._authService.getUserProfile() && this._authService.getUserProfile().Role == "admin") {
+        if (this.menuRight.edit) {
             this.router.navigate(["pages/userManager/adduser", { user: event.data.UserId, returnUrl: this.router.url }]);
         }
         else {
@@ -1026,4 +1027,4 @@ var routing = _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forCh
 /***/ })
 
 }]);
-//# sourceMappingURL=userManager-userManager-module.62bfb35f3d548adfecfa.js.map
+//# sourceMappingURL=userManager-userManager-module.6a3071da7e5f9aaf5329.js.map
